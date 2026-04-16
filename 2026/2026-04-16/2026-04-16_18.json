@@ -1,0 +1,28 @@
+{
+  "scan_time": "2026-04-16T18:01:00.446343",
+  "stats": {
+    "total_articles": 1875,
+    "matched_articles": 117,
+    "new_alerts": 1,
+    "cve_count": 0,
+    "ioc_count": 0,
+    "dedup_count": 0,
+    "date_filtered": 94,
+    "merged_count": 0
+  },
+  "alerts": [
+    {
+      "type": "single",
+      "title": "Newly Discovered PowMix Botnet Hits Czech Workers Using Randomized C2 TrafficApr 16, 2026Botnet / CryptominingCybersecurity researchers have warned of an active malicious campaign that's targeting th",
+      "url": "https://thehackernews.com/2026/04/newly-discovered-powmix-botnet-hits.html",
+      "source": "The Hacker News (보안뉴스 종합)",
+      "published": null,
+      "keywords": [
+        "Botnet"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
