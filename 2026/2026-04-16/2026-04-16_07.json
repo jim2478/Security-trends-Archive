@@ -1,0 +1,28 @@
+{
+  "scan_time": "2026-04-16T07:01:26.994949",
+  "stats": {
+    "total_articles": 1865,
+    "matched_articles": 110,
+    "new_alerts": 1,
+    "cve_count": 0,
+    "ioc_count": 0,
+    "dedup_count": 0,
+    "date_filtered": 92,
+    "merged_count": 0
+  },
+  "alerts": [
+    {
+      "type": "single",
+      "title": "UAC-0247 Targets Ukrainian Clinics and Government in Data-Theft Malware CampaignApr 16, 2026Malware / Threat IntelligenceThe Computer Emergencies Response Team of Ukraine (CERT-UA) has disclosed  det",
+      "url": "https://thehackernews.com/2026/04/uac-0247-targets-ukrainian-clinics-and.html",
+      "source": "The Hacker News (보안뉴스 종합)",
+      "published": null,
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
