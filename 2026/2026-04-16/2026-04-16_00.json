@@ -1,0 +1,347 @@
+{
+  "scan_time": "2026-04-16T00:45:42.378537",
+  "stats": {
+    "total_articles": 1875,
+    "matched_articles": 109,
+    "new_alerts": 19,
+    "cve_count": 7,
+    "ioc_count": 78,
+    "dedup_count": 2,
+    "date_filtered": 88,
+    "merged_count": 0
+  },
+  "alerts": [
+    {
+      "type": "single",
+      "title": "Actively Exploited nginx-ui Flaw (CVE-2026-33032) Enables Full Nginx Server TakeoverApr 15, 2026Web Security / VulnerabilityA recently disclosed critical security flaw impacting nginx-ui, an open-sou",
+      "url": "https://thehackernews.com/2026/04/critical-nginx-ui-vulnerability-cve.html",
+      "source": "The Hacker News (보안뉴스 종합)",
+      "published": null,
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-33032"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-33032",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-306 (Missing Authentication)",
+          "description": "Nginx UI is a web user interface for the Nginx web server. In versions 2.3.5 and prior, the nginx-ui MCP (Model Context Protocol) integration exposes two HTTP endpoints: /mcp and /mcp_message. While /mcp requires both IP whitelisting and authentication (AuthRequired() middleware), the /mcp_message endpoint only applies IP whitelisting - and the default IP whitelist is empty, which the middleware treats as \"allow all\". This means any network attacker can invoke all MCP tools without authenticatio",
+          "epss_score": 0.0006,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "type": "single",
+      "title": "The Threat That Can’t Be Ignored: CVE-2023-46604 in Apache ActiveMQ",
+      "url": "https://www.cybersecurity-insiders.com/the-threat-that-cant-be-ignored-cve-2023-46604-in-apache-activemq-2/",
+      "source": "Cybersecurity Insiders (보안인사이트)",
+      "published": null,
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2023-46604"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2023-46604",
+          "cvss_score": 10.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-502 (Deserialization)",
+          "description": "The Java OpenWire protocol marshaller is vulnerable to Remote Code \nExecution. This vulnerability may allow a remote attacker with network \naccess to either a Java-based OpenWire broker or client to run arbitrary\n shell commands by manipulating serialized class types in the OpenWire \nprotocol to cause either the client or the broker (respectively) to \ninstantiate any class on the classpath.\n\nUsers are recommended to upgrade\n both brokers and clients to version 5.15.16, 5.16.7, 5.17.6, or 5.18.3 ",
+          "epss_score": 0.94436,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "type": "single",
+      "title": "Adobe issues emergency fix for Acrobat Reader flaw exploited in the wild (CVE-2026-34621)",
+      "url": "https://www.helpnetsecurity.com/2026/04/13/adobe-acrobat-reader-cve-2026-34621-emergency-fix/",
+      "source": "Help Net Security (보안뉴스/제품리뷰)",
+      "published": null,
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-34621"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-34621",
+          "cvss_score": 8.6,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-1321 (CWE-1321)",
+          "description": "Acrobat Reader versions 24.001.30356, 26.001.21367 and earlier are affected by an Improperly Controlled Modification of Object Prototype Attributes ('Prototype Pollution') vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
+          "epss_score": 0.06081,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "type": "single",
+      "title": "Breaking the Sound Barrier, Part II: Exploiting CVE-2024-54529",
+      "url": "https://projectzero.google/2026/01/sound-barrier-2.html",
+      "source": "Google Project Zero (제로데이연구)",
+      "published": null,
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2024-54529",
+        "CVE-2025-31235"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2024-54529",
+          "cvss_score": 7.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-94 (Code Injection)",
+          "description": "A logic issue was addressed with improved checks. This issue is fixed in macOS Sequoia 15.2, macOS Sonoma 14.7.2, macOS Ventura 13.7.2. An app may be able to execute arbitrary code out of its sandbox or with certain elevated privileges.",
+          "epss_score": 0.00175,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2025-31235",
+          "cvss_score": 6.5,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-415 (CWE-415)",
+          "description": "A double free issue was addressed with improved memory management. This issue is fixed in iPadOS 17.7.7, macOS Sequoia 15.5, macOS Sonoma 14.7.6, macOS Ventura 13.7.6. An app may be able to cause unexpected system termination.",
+          "epss_score": 0.00068,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "type": "single",
+      "title": "VShell and SparkRAT Observed in Exploitation of BeyondTrust Critical Vulnerability (CVE-2026-1731)",
+      "url": "https://unit42.paloaltonetworks.com/beyondtrust-cve-2026-1731/",
+      "source": "Palo Alto Unit42 (위협리서치)",
+      "published": null,
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "23.162.40[.]187\n37.19.221[.]180\n45.61.150[.]96\n70.23.0[.]66\n82.29.53[.]187\n82.29.72[.]16\n83.138.53[.]139\n85.155.186[.]121\n92.223.44[.]134\n98.10.233[.]76\n134.122.13[.]34\n138.197.14[.]95\n142.111.152[.]50\n144.172.103[.]200/4444\n155.2.215[.]64\n178.128.212[.]209\n179.43.146[.]42\n45.61.150[.]96/4444\n138.197.14[.]95/ws (SparkRAT)\nhxxp[:]//64.31.28[.]221/support\naliyundunupdate[.]xyz:8084/slt (VShell)\nd65sb7ngveucv5k2nm508abdsjmbn7qmn.oast[.]pro\nq0r2e5q2dzbykcox9qmkptm12s8mwb.oastify[.]com\nhxxp[:]//134.122.13[.]34:8979/c (SparkRAT)\nhxxp[:]//82.29.53[.]187:8778/app_cli\nhxxps[:]//transfer.weepee[.]io/7nZw7/blue.drx\nhxxp[://]85.155.186[.]121/access (SimpleHelp)\nhxxps[:]//temp[.]sh/tQTSs/storm.exe\nhxxps[:]//64.95.10[.]115:23011/update.sh\nhxxps[:]//judiemkqjajsfzpidfjlowgl8nyrtd49x.oast[.]fun\nhxxps[:]//raw.githubusercontent[.]com/nezhahq/scripts/main/agent/install.ps1\nhxxp[:]//39uchxifap4cvgzsuirom0szrrg.d65lre9sfqnlcv49317gcis6pyjsatzho.oast[.]pro\nhxxps[:]//85.155.186[.]121/access/Remote%20Access-linux64-offline.tar?language=en&app=76049110434275449312180081368257747094\nhxxps[:]//github[.]com/nicocha30/ligolo-ng/releases/download/v0.8.2/ligolo-ng_agent_0.8.2_linux_amd64.tar.gz\n9f431d5549a03aee92cfd2bdbbe90f1c91e965c99e90a0c9ad5a001f4e80c350 (SparkRAT)\n98a7b0900a9072bb40af579ec372da7b27af12b15868394df51fefe290ab176b (VShell)\n66cceb2c2f1d9988b501832fd3b559775982e2fce4ab38fc4ffe71b74eafc726 (maintenance.php)\n679ee05d92a858b6fe70aeb6072eb804548f1732e18b6c181af122b833386afb (d6)\n4762e944a0ce1f9aef243e11538f84f16b6f36560ed6e32dfd9a5f99e17e8e50 (Installer for SimpleHelp)\n98442387d466f27357d727b3706037a4df12a78602b93df973b063462a677761 (aws.php)\ncc2bc3750cc5125a50466f66ae4f2bedf1cac0e43477a78ed2fd88f3e987a292 (Bash Script)\ncf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce (file_save.php)\n0ecc867ce916d01640d76ec03de24d1d23585eb582e9c48a0364c62a590548ac\nUpdated Feb. 20, 2026, at 9:50 a.m. PT to adjust the number of exposed instances identified by Cortex Xpanse.",
+      "cve_ids": [
+        "CVE-2026-1731"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-1731",
+          "cvss_score": 9.9,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-78 (OS Command Injection)",
+          "description": "BeyondTrust Remote Support (RS) and certain older versions of Privileged Remote Access (PRA) contain a critical pre-authentication remote code execution vulnerability. By sending specially crafted requests, an unauthenticated remote attacker may be able to execute operating system commands in the context of the site user.",
+          "epss_score": 0.80065,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "type": "single",
+      "title": "Vulnerabilities and ExploitsFortiGate CVE-2025-59718 Exploitation: Incident Response FindingsEric Carey, Olivia Henderson +1",
+      "url": "https://www.rapid7.com/blog/post/ve-fortigate-cve-2025-59718-exploitation-incident-response-ir-findings/",
+      "source": "Rapid7 Blog (취약점/모의침투)",
+      "published": null,
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "IOC | Description\nAdvanced_IP_Scanner_2.5.4594.1.exe | Advanced IP Scanner tool utilized by the attacker.\nadvanced_ip_scanner.exe | Advanced IP Scanner tool utilized by the attacker.\nmimikatz.exe | An open-source post-exploitation tool utilized by the attacker to extract sensitive authentication credentials.\nAdvanced_port_scanner_2.5.3869.exe | An open-source network utility utilized by the attacker to quickly map active devices and identify open ports.\n23.163.8[.]21 | Attacker IP address that targeted FortiGate device.\n45.32.216[.]250 | IP address used by the attacker during FortiGate configuration changes.\n45.84.107[.]17 | IP address identified in malicious interaction with SSLVPN.\n45.80.186[.]84 | IP address identified in malicious interaction with SSLVPN.\n185.219.157[.]127 | IP address identified in malicious interaction with SSLVPN.\n185.175.59[.]238 | IP address identified in malicious interaction with SSLVPN.\n198.98.54[.]209 | Attacker IP address that targeted FortiGate device and SSO login.\n45.80.184[.]229 | Attacker IP address that targeted FortiGate device and SSLVPN.\n45.80.184[.]241 | Attacker IP address that targeted FortiGate device and SSLVPN.\n42.200.230[.]178 | Attacker IP address that targeted FortiGate device and SSLVPN.\n103.20.235[.]155 | IP address identified in malicious authentications to SSO login.\n104.28.227[.]105 | IP address identified in attacker download of FortiGate configuration file.",
+      "cve_ids": [
+        "CVE-2025-59718"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2025-59718",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-347 (CWE-347)",
+          "description": "A improper verification of cryptographic signature vulnerability in Fortinet FortiOS 7.6.0 through 7.6.3, FortiOS 7.4.0 through 7.4.8, FortiOS 7.2.0 through 7.2.11, FortiOS 7.0.0 through 7.0.17, FortiProxy 7.6.0 through 7.6.3, FortiProxy 7.4.0 through 7.4.10, FortiProxy 7.2.0 through 7.2.14, FortiProxy 7.0.0 through 7.0.21, FortiSwitchManager 7.2.0 through 7.2.6, FortiSwitchManager 7.0.0 through 7.0.5 allows an unauthenticated attacker to bypass the FortiCloud SSO login authentication via a craf",
+          "epss_score": 0.07624,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "type": "single",
+      "title": "Fake Claude AI Installer Targets Windows Users with PlugX Malware",
+      "url": "https://hackread.com/fake-claude-ai-installer-plugx-malware-windows-users/",
+      "source": "HackRead (해킹/데이터유출)",
+      "published": null,
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "type": "single",
+      "title": "13.5M Device Botnet Drives 2 Tbps DDoS Attacks on FinTech, Qrator Finds",
+      "url": "https://hackread.com/botnet-device-drives-2-tbps-ddos-attacks-fintech/",
+      "source": "HackRead (해킹/데이터유출)",
+      "published": null,
+      "keywords": [
+        "DDoS",
+        "Botnet"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "type": "single",
+      "title": "n8n Webhooks Abused Since October 2025 to Deliver Malware via Phishing EmailsApr 15, 2026Threat Intelligence / Cloud SecurityThreat actors have been observed weaponizing n8n , a popular artificial in",
+      "url": "https://thehackernews.com/2026/04/n8n-webhooks-abused-since-october-2025.html",
+      "source": "The Hacker News (보안뉴스 종합)",
+      "published": null,
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "type": "single",
+      "title": "Microsoft Warns of WhatsApp-Delivered VBS Malware Hijacking Windows via UAC Bypass",
+      "url": "https://thehackernews.com/2026/04/microsoft-warns-of-whatsapp-delivered.html",
+      "source": "The Hacker News (보안뉴스 종합)",
+      "published": null,
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "type": "single",
+      "title": "Malware & Threats",
+      "url": "https://www.securityweek.com/category/malware-cyber-threats/",
+      "source": "SecurityWeek (보안뉴스 종합)",
+      "published": null,
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "type": "single",
+      "title": "Feds Disrupt IoT Botnets Behind Huge DDoS Attacks",
+      "url": "https://krebsonsecurity.com/2026/03/feds-disrupt-iot-botnets-behind-huge-ddos-attacks/",
+      "source": "Krebs on Security (사이버범죄/보안심층분석)",
+      "published": null,
+      "keywords": [
+        "DDoS",
+        "Botnet"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "type": "single",
+      "title": "New AgingFly malware used in attacks on Ukraine govt, hospitals",
+      "url": "https://www.bleepingcomputer.com/news/security/new-agingfly-malware-used-in-attacks-on-ukraine-govt-hospitals/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어)",
+      "published": null,
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "type": "single",
+      "title": "WordPress plugin suite hacked to push malware to thousands of sites",
+      "url": "https://www.bleepingcomputer.com/news/security/wordpress-plugin-suite-hacked-to-push-malware-to-thousands-of-sites/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어)",
+      "published": null,
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "type": "single",
+      "title": "GlassWorm Malware Hits macOS Through Trusted Open VSX Extensions",
+      "url": "https://www.techworm.net/2026/02/glassworm-malware-macos-through-trusted-open-vsx-extensions.html",
+      "source": "TechWorm (보안뉴스)",
+      "published": null,
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "type": "single",
+      "title": "Aisuru Botnet Sets New Global DDoS Record With 31.4 Tbps",
+      "url": "https://www.techworm.net/2026/02/aisuru-botnet-global-ddos-record-31-4-tbps.html",
+      "source": "TechWorm (보안뉴스)",
+      "published": null,
+      "keywords": [
+        "DDoS",
+        "Botnet"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "type": "single",
+      "title": "Android Malware23",
+      "url": "https://research.checkpoint.com/category/android-malware/",
+      "source": "Check Point Research (취약점/위협연구)",
+      "published": null,
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "type": "single",
+      "title": "NIST to limit work on CVE entries as submissions surge",
+      "url": "https://therecord.media/nist-to-limit-work-on-cve-entries-surge",
+      "source": "The Record by Recorded Future (위협뉴스) [RSS]",
+      "published": "2026-04-15T20:11:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "type": "single",
+      "title": "Inside a Multi-Stage Windows Malware Campaign",
+      "url": "https://www.fortinet.com/blog/threat-research/inside-a-multi-stage-windows-malware-campaign",
+      "source": "Fortinet FortiGuard Labs (위협연구)",
+      "published": null,
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "URLs\nhxxps://github[.]com/Mafin111/MafinREP111\nhxxps://dl.dropboxusercontent.com/scl/fi/fvugw0l9x7ty665esaul3/svchost.scr?rlkey=urzegysuk9bkrw2b8zmx31457&st=gbhmc2su\nLNK\n7b8cf0ef390a7d6126c5e7bf835af5c5ce32c70c0d58ca4ddc9c238b2d3f059a\nScripts\n1828614be6d9bdd92f7ee30e12c8aac8eba33a6df2c92995f9bf930c3f1b992b\n3aa6ebb73390d304eef8fd897994906c05f3e967f8f6f6a7904c6156cf8819f9\n263b5ba921e478215dc9e3a397157badab415fc775cfb4681821b7446c14fb1a\n5443232a367a83ac2899b37c066dae3ec2010df292291db24ce3d744133218a6\nPayloads\n359fe8df31c903153667fbe93795929ad6172540b3ee7f9eff4bcc1da6d08478\n6222775b877b4be4f5407525d52c5889739b96c302e5a204ef369b4a51c6dab2\n71069a5d2a80a047ca36ca82e630d353829726d4f03a74c7522b7700c5c2bb59\n45e942ba59f3876b263a03ed7e5d5b1b250e84a0a4b4093b3c13b5fca4e12b21\ne6ca6bab85ae1eff08a59b46b7905ae0568110da172dec8367f32779094bdd08\n7de56603a7b41fca9313231df6105dbb8148d3b0d80dfbc00e71e1d88f871915",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
