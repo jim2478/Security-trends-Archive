@@ -1,0 +1,41 @@
+{
+  "scan_time": "2026-04-16T10:41:51.862314",
+  "stats": {
+    "total_articles": 1875,
+    "matched_articles": 110,
+    "new_alerts": 2,
+    "cve_count": 0,
+    "ioc_count": 14,
+    "dedup_count": 0,
+    "date_filtered": 92,
+    "merged_count": 0
+  },
+  "alerts": [
+    {
+      "type": "single",
+      "title": "Cargo theft malware actor spent a month inside a decoy network before researchers pulled the plug",
+      "url": "https://www.helpnetsecurity.com/2026/04/16/cargo-theft-malware-actor-decoy-network/",
+      "source": "Help Net Security (보안뉴스/제품리뷰)",
+      "published": "2026-04-16T10:18:27+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "type": "single",
+      "title": "PowMix botnet targets Czech workforce",
+      "url": "https://blog.talosintelligence.com/powmix-botnet-targets-czech-workforce/",
+      "source": "Cisco Talos Intelligence (위협분석)",
+      "published": "2026-04-16T10:00:33.000Z",
+      "keywords": [
+        "Botnet"
+      ],
+      "ioc_raw_text": "The IOCs for this threat are also available at our GitHub repository\nhere\nIntegrated Coverage\nNetwork Security\nCisco Talos\nNetwork Intrusion Prevention\nWeb Security\nCisco Talos\nDNS Security\nMalware Defense\nCisco Talos\nAntivirus\nRead more\nabout Cisco Talos Intelligence Integrations in our data sheet on Cisco.com.",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
