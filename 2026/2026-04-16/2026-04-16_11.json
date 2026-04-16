@@ -1,0 +1,28 @@
+{
+  "scan_time": "2026-04-16T11:01:04.842609",
+  "stats": {
+    "total_articles": 1895,
+    "matched_articles": 111,
+    "new_alerts": 1,
+    "cve_count": 0,
+    "ioc_count": 0,
+    "dedup_count": 0,
+    "date_filtered": 92,
+    "merged_count": 0
+  },
+  "alerts": [
+    {
+      "type": "single",
+      "title": "NIST Prioritizes NVD Enrichment for CVEs in CISA KEV, Critical Software",
+      "url": "https://www.securityweek.com/nist-prioritizes-nvd-enrichment-for-cves-in-cisa-kev-critical-software/",
+      "source": "SecurityWeek [RSS]",
+      "published": "2026-04-16T10:47:14+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
