@@ -1,0 +1,28 @@
+{
+  "scan_time": "2026-04-16T14:01:09.079984",
+  "stats": {
+    "total_articles": 1895,
+    "matched_articles": 113,
+    "new_alerts": 1,
+    "cve_count": 0,
+    "ioc_count": 0,
+    "dedup_count": 0,
+    "date_filtered": 92,
+    "merged_count": 0
+  },
+  "alerts": [
+    {
+      "type": "single",
+      "title": "Ukrainian emergency services and hospitals hit by espionage campaign using new AgingFly malware",
+      "url": "https://therecord.media/aging-fly-espionage-campaign-targets-ukraine-emergency-services",
+      "source": "The Record by Recorded Future (위협뉴스) [RSS]",
+      "published": "2026-04-16T12:00:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
