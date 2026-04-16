@@ -1,0 +1,66 @@
+{
+  "scan_time": "2026-04-16T23:01:12.493555",
+  "stats": {
+    "total_articles": 1875,
+    "matched_articles": 119,
+    "new_alerts": 3,
+    "cve_count": 1,
+    "ioc_count": 66,
+    "dedup_count": 2,
+    "date_filtered": 94,
+    "merged_count": 0
+  },
+  "alerts": [
+    {
+      "type": "single",
+      "title": "A Deep Dive Into Attempted Exploitation of CVE-2023-33538",
+      "url": "https://unit42.paloaltonetworks.com/exploitation-of-cve-2023-33538/",
+      "source": "Palo Alto Unit42 (위협리서치)",
+      "published": "2026-04-16T22:00:13+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "Malicious files from the activity:\nSHA256 hash: 3fbd2a2e82ceb5e91eadbad02cb45ac618324da9b1895d81ebe7de765dca30e7 File size: 130.75 KB (133,888 bytes) Filename: arm File type: ELF 32-bit LSB executable, ARM, version 1 (ARM), statically linked, stripped File description: ELF binary archive downloaded from a malicious server\nFile size: 130.75 KB (133,888 bytes)\nFilename: arm\nFile type: ELF 32-bit LSB executable, ARM, version 1 (ARM), statically linked, stripped\nFile description: ELF binary archive downloaded from a malicious server\nSHA256 hash: 4caaa18982cd4056fead54b98d57f9a2a1ddd654cf19a7ba2366dfadbd6033da File size: 126.75 KB (129,792 bytes) Filename: arm5 File type: ELF 32-bit LSB executable, ARM, version 1 (ARM), statically linked, stripped File description: ELF binary archive downloaded from a malicious server\nFile size: 126.75 KB (129,792 bytes)\nFilename: arm5\nFile type: ELF 32-bit LSB executable, ARM, version 1 (ARM), statically linked, stripped\nFile description: ELF binary archive downloaded from a malicious server\nSHA256 hash: 9df711c3aef2bba17b622ddfd955452f8d8eb55899528fbc13d9540c52f13402 File size: 139.93 KB (143,292 bytes) Filename: arm6 File type: ELF 32-bit LSB executable, ARM, EABI4 version 1 (SYSV), statically linked, stripped File description: ELF binary archive downloaded from a malicious server\nFile size: 139.93 KB (143,292 bytes)\nFilename: arm6\nFile type: ELF 32-bit LSB executable, ARM, EABI4 version 1 (SYSV), statically linked, stripped\nFile description: ELF binary archive downloaded from a malicious server\nSHA256 hash: 7bbb21fec19512d932b7a92652ed0c8f0fedea89f34b9d6f267cf39de0eb9b20 File size: 175.60 KB (179,813 bytes) Filename: arm7 File type: ELF 32-bit LSB executable, ARM, EABI4 version 1 (SYSV), statically linked, with debug_info, not stripped File description: ELF binary archive downloaded from a malicious server\nFile size: 175.60 KB (179,813 bytes)\nFilename: arm7\nFile type: ELF 32-bit LSB executable, ARM, EABI4 version 1 (SYSV), statically linked, with debug_info, not stripped\nFile description: ELF binary archive downloaded from a malicious server\nSHA256 hash: 00078aeeaca54b5d3c1237e964e9f956690b782e4ea160d81edc3c6b44e7f620 File size: (1,731,152 bytes) Filename: httpd File type: ELF 32-bit MSB executable, MIPS, MIPS32 rel2 version 1 (SYSV), dynamically linked File description: ELF binary extracted from the firmware downloaded from TP-Link website\nFile size: (1,731,152 bytes)\nFilename: httpd\nFile type: ELF 32-bit MSB executable, MIPS, MIPS32 rel2 version 1 (SYSV), dynamically linked\nFile description: ELF binary extracted from the firmware downloaded from TP-Link website\nSHA256 hash: 534b654531a6a540a144da9545ee343e1046f843d7de4c1091b46c3ee66a508b File size: 169.72 KB (173,796 bytes) Filename: mips File type: ELF 32-bit MSB executable, MIPS, MIPS-I version 1 (SYSV), statically linked, stripped File description: ELF binary archive downloaded from a malicious server\nFile size: 169.72 KB (173,796 bytes)\nFilename: mips\nFile type: ELF 32-bit MSB executable, MIPS, MIPS-I version 1 (SYSV), statically linked, stripped\nFile description: ELF binary archive downloaded from a malicious server\nSHA256 hash: 919f292a07a37f163f88527e725406187c8ecc637387ad24853fe49ce4e6ddf4 File size: 114.81 KB (117,568 bytes) Filename: sh4 File type: ELF 32-bit LSB executable, Renesas SH, version 1 (SYSV), statically link File description: ELF binary archive downloaded from a malicious server\nFile size: 114.81 KB (117,568 bytes)\nFilename: sh4\nFile type: ELF 32-bit LSB executable, Renesas SH, version 1 (SYSV), statically link\nFile description: ELF binary archive downloaded from a malicious server\nSHA256 hash: c321933e4e5970ba7299fe21778dab9398994c22ca0ba0422c6cbc3fbb95ea26 File size: 3.9 MB Filename: wr940n_us_3_16_9_up_boot(160617).bin File type: firmware 940 v4 TP-Link Technologies version 1.0, version 3.16.9, 4,063,744 bytes or less, at 0x200 865,629 bytes, at 0x100000 2,883,584 bytes File description: Firmware downloaded from TP-Link website\nFile size: 3.9 MB\nFilename: wr940n_us_3_16_9_up_boot(160617).bin\nFile type: firmware 940 v4 TP-Link Technologies version 1.0, version 3.16.9, 4,063,744 bytes or less, at 0x200 865,629 bytes, at 0x100000 2,883,584 bytes\nFile description: Firmware downloaded from TP-Link website\nSHA256 hash: 56f21f412e898ad9e3ee05d5f44c44d9d7bcb9ecbfbdb9de11b8fa5a637aeef6 File size: 136.30 KB (139,576 bytes) Filename: x86_64 File type: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, stripped File description: ELF binary archive downloaded from a malicious server\nFile size: 136.30 KB (139,576 bytes)\nFilename: x86_64\nFile type: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, stripped\nFile description: ELF binary archive downloaded from a malicious server\nURLs:\nhxxp[:]//bot.ddosvps[.]cc/top1hbt[.]arm\nhxxp[:]//bot.ddosvps[.]cc/top1hbt[.]arm5\nhxxp[:]//bot.ddosvps[.]cc/top1hbt[.]arm6\nhxxp[:]//bot.ddosvps[.]cc/top1hbt[.]arm7\nhxxp[:]//bot.ddosvps[.]cc/top1hbt[.]mips\nhxxp[:]//bot.ddosvps[.]cc/top1hbt[.]mpsl\nhxxp[:]//bot.ddosvps[.]cc/top1hbt[.]x86_64\nhxxp[:]//bot.ddosvps[.]cc/top1hbt[.]sh4\nhxxp[:]//51.38.137[.]113/arm\nhxxp[:]//51.38.137[.]113/arm5\nhxxp[:]//51.38.137[.]113/arm6\nhxxp[:]//51.38.137[.]113/arm7\nhxxp[:]//51.38.137[.]113/x86_64\nhxxp[:]//51.38.137[.]113/mips\nhxxp[:]//51.38.137[.]113/sh4\nC2 servers:\n51.38.137[.]113\ncnc.vietdediserver[.]shop\nbot.ddosvps[.]cc",
+      "cve_ids": [
+        "CVE-2023-33538"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2023-33538",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-77 (Command Injection)",
+          "description": "TP-Link TL-WR940N V2/V4, TL-WR841N V8/V10, and TL-WR740N V1/V2 was discovered to contain a command injection vulnerability via the component /userRpm/WlanNetworkRpm .",
+          "epss_score": 0.91474,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "type": "single",
+      "title": "Operation PowerOFF identifies 75k DDoS users, takes down 53 domains",
+      "url": "https://www.bleepingcomputer.com/news/security/operation-poweroff-identifies-75k-ddos-users-takes-down-53-domains/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어)",
+      "published": "2026-04-16T18:26:34-04:00",
+      "keywords": [
+        "DDoS"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "type": "single",
+      "title": "ZionSiphon malware designed to sabotage water treatment systems",
+      "url": "https://www.bleepingcomputer.com/news/security/zionsiphon-malware-designed-to-sabotage-water-treatment-systems/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어)",
+      "published": "2026-04-16T18:04:53-04:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
