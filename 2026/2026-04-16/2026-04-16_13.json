@@ -1,0 +1,80 @@
+{
+  "scan_time": "2026-04-16T13:01:46.779020",
+  "stats": {
+    "total_articles": 1915,
+    "matched_articles": 113,
+    "new_alerts": 1,
+    "cve_count": 5,
+    "ioc_count": 0,
+    "dedup_count": 0,
+    "date_filtered": 93,
+    "merged_count": 0
+  },
+  "alerts": [
+    {
+      "type": "single",
+      "title": "Fortinet fixes critical FortiSandbox vulnerabilities (CVE-2026-39813, CVE-2026-39808)",
+      "url": "https://www.helpnetsecurity.com/2026/04/16/fortinet-fortisandbox-vulnerabilities-cve-2026-39813-cve-2026-39808/",
+      "source": "Help Net Security (보안뉴스/제품리뷰)",
+      "published": "2026-04-16T12:48:26+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2025-61886",
+        "CVE-2026-25691",
+        "CVE-2026-39808",
+        "CVE-2026-39812",
+        "CVE-2026-39813"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2025-61886",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-25691",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-39808",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-78 (OS Command Injection)",
+          "description": "A improper neutralization of special elements used in an os command ('os command injection') vulnerability in Fortinet FortiSandbox 4.4.0 through 4.4.8 may allow attacker to execute unauthorized code or commands via <insert attack vector here>",
+          "epss_score": 0.00292,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-39812",
+          "cvss_score": 4.8,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-79 (XSS)",
+          "description": "A improper neutralization of input during web page generation ('cross-site scripting') vulnerability in Fortinet FortiSandbox 5.0.0 through 5.0.5, FortiSandbox 4.4.0 through 4.4.8, FortiSandbox 4.2 all versions, FortiSandbox PaaS 5.0.0 through 5.0.5, FortiSandbox PaaS 4.4.0 through 4.4.8, FortiSandbox PaaS 4.2 all versions may allow attacker to execute unauthorized code or commands via <insert attack vector here>",
+          "epss_score": 0.00028,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-39813",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-24 (CWE-24)",
+          "description": "A path traversal: '../filedir' vulnerability in Fortinet FortiSandbox 5.0.0 through 5.0.5, FortiSandbox 4.4.0 through 4.4.8 may allow attacker to escalation of privilege via <insert attack vector here>",
+          "epss_score": 0.00058,
+          "kev": false
+        }
+      ]
+    }
+  ]
+}
