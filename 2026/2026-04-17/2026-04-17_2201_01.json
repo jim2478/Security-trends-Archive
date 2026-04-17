@@ -1,0 +1,50 @@
+{
+  "scan_time_kst": "2026-04-17T22:01:10.045768+09:00",
+  "stats": {
+    "total_articles": 1895,
+    "matched_articles": 127,
+    "new_alerts": 1,
+    "cve_count": 2,
+    "ioc_count": 20,
+    "dedup_count": 0,
+    "date_filtered": 97,
+    "merged_count": 0
+  },
+  "alerts": [
+    {
+      "type": "single",
+      "title": "Tracking Mirai Variant Nexcorium: A Vulnerability-Driven IoT Botnet Campaign",
+      "url": "https://www.fortinet.com/blog/threat-research/tracking-mirai-variant-nexcorium-a-vulnerability-driven-iot-botnet-campaign",
+      "source": "Fortinet FortiGuard Labs (위협연구)",
+      "published": "2026-04-17T13:00:00.000Z",
+      "keywords": [
+        "Botnet"
+      ],
+      "ioc_raw_text": "Hosts\n84[.]200[.]87[.]36\n176[.]65[.]148[.]186\nr3brqw3d[.]b0ats[.]top\nFiles\nDownloader\n696aeb6321313919f0a41a520e6fa715450bbfb271a9add1e54efe16484a9c35\nNexcorium\n37132e804ccb3fc4ba1f72205da70c3d7a6e66b43178707a9d8ee1156d815c21\ne4789416c35b345e75c023a8c07c207c79937c6a5444e1c29d85d18d2f660d8c\n0b510f93f47590791626d2fa74ddd62ba6eb8a5a5bb7b8476c0ceffc7be94ebe\n9b805585c457811d2c5c5664ede9ee869b53e3c9999100505d7ee8de7f855fdf\n95d1eb12d58206319c514c7240d058c512bb22b31f6ea22ed8be3ae44305c9f7\n7c01d5b53861cd34e10a79fdea16dcf08bce9c78ed72abd6d6f3e9ce75a24734\n838e35b62a6b38675e467301166cdcc54f98d528fe43d56936caeffec88ac696\n2ccf23b8165e8c05899aa7ba4755b896ebf1d20d3b701cffdc768482486b0a74\n29404df12a7723ce46c8b199c88a808aa315dd8ff8fd1e06a34ccd3d16f4553b\nb1274de00a7f3d7ab9792ec3456e9d5bf057738666f34183f1d72060e2d4f678\n721c7cb2109ec97c14413cb8b58ddce0ecf0c1f13f22ee4f72eed79b57592cf5\n89dae116c77b0035277d39dfe01043624427c119ddee8883a3ba54a42a6ae400",
+      "cve_ids": [
+        "CVE-2017-17215",
+        "CVE-2024-3721"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2017-17215",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-20 (Improper Input Validation)",
+          "description": "Huawei HG532 with some customized versions has a remote code execution vulnerability. An authenticated attacker could send malicious packets to port 37215 to launch attacks. Successful exploit could lead to the remote execution of arbitrary code.",
+          "epss_score": 0.92531,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2024-3721",
+          "cvss_score": 6.3,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-78 (OS Command Injection)",
+          "description": "A vulnerability was found in TBK DVR-4104 and DVR-4216 up to 20240412 and classified as critical. This issue affects some unknown processing of the file /device.rsp?opt=sys&cmd=___S_O_S_T_R_E_A_MAX___. The manipulation of the argument mdb/mdc leads to os command injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-260573 was assigned to this vulnerability.",
+          "epss_score": 0.83865,
+          "kev": false
+        }
+      ]
+    }
+  ]
+}
