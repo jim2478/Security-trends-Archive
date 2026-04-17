@@ -1,0 +1,54 @@
+{
+  "scan_time_kst": "2026-04-17T23:01:20.337470+09:00",
+  "stats": {
+    "total_articles": 1875,
+    "matched_articles": 128,
+    "new_alerts": 3,
+    "cve_count": 0,
+    "ioc_count": 0,
+    "dedup_count": 0,
+    "date_filtered": 96,
+    "merged_count": 0
+  },
+  "alerts": [
+    {
+      "type": "single",
+      "title": "Bluesky under “sophisticated” DDoS attack",
+      "url": "https://cybernews.com/news/bluesky-under-sophisticated-ddos-attack/",
+      "source": "CyberNews [RSS]",
+      "published": "2026-04-17T13:02:20+00:00",
+      "keywords": [
+        "DDoS"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "type": "single",
+      "title": "외교부 홈페이지 오후 한때 먹통…“디도스 공격 발생”",
+      "url": "https://www.joongang.co.kr/article/25421128",
+      "source": "중앙일보 (정치) [RSS]",
+      "published": "2026-04-17T13:25:28+00:00",
+      "keywords": [
+        "DDoS"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "type": "single",
+      "title": "Hackers leverage leaked government intelligence tools to target everyday iOS users | Kaspersky official blog",
+      "url": "https://www.kaspersky.co.uk/blog/ios-exploits-darksword-and-coruna-in-mass-attacks/30261/",
+      "source": "Kaspersky Blog UK (보안뉴스) [RSS]",
+      "published": "2026-04-17T13:20:08+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
