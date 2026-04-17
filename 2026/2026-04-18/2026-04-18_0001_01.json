@@ -1,0 +1,28 @@
+{
+  "scan_time_kst": "2026-04-18T00:01:03.411777+09:00",
+  "stats": {
+    "total_articles": 1895,
+    "matched_articles": 126,
+    "new_alerts": 1,
+    "cve_count": 0,
+    "ioc_count": 0,
+    "dedup_count": 0,
+    "date_filtered": 97,
+    "merged_count": 0
+  },
+  "alerts": [
+    {
+      "type": "single",
+      "title": "New Mirai Variant Nexcorium Hijacks DVR Devices for DDoS Attacks",
+      "url": "https://hackread.com/mirai-variant-nexcorium-dvr-devices-ddos-attacks/",
+      "source": "HackRead (해킹/데이터유출)",
+      "published": "2026-04-17T15:00:59+01:00",
+      "keywords": [
+        "DDoS"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
