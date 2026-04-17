@@ -1,0 +1,28 @@
+{
+  "scan_time_kst": "2026-04-17T18:00:58.308587+09:00",
+  "stats": {
+    "total_articles": 1895,
+    "matched_articles": 120,
+    "new_alerts": 1,
+    "cve_count": 0,
+    "ioc_count": 0,
+    "dedup_count": 0,
+    "date_filtered": 96,
+    "merged_count": 0
+  },
+  "alerts": [
+    {
+      "type": "single",
+      "title": "ZionSiphon Malware Targets ICS in Water Facilities",
+      "url": "https://www.securityweek.com/zionsiphon-malware-targets-ics-in-water-facilities/",
+      "source": "SecurityWeek [RSS]",
+      "published": "2026-04-17T08:30:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
