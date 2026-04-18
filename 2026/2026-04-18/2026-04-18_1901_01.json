@@ -1,0 +1,28 @@
+{
+  "scan_time_kst": "2026-04-18T19:01:04.829650+09:00",
+  "stats": {
+    "total_articles": 1875,
+    "matched_articles": 130,
+    "new_alerts": 1,
+    "cve_count": 0,
+    "ioc_count": 0,
+    "dedup_count": 0,
+    "date_filtered": 102,
+    "merged_count": 0
+  },
+  "alerts": [
+    {
+      "type": "single",
+      "title": "미라이 변종 넥스코리움, 구형 DVR·공유기 파고들어 디도스 공격 시도중",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=206308",
+      "source": "데일리시큐 (이슈) [RSS]",
+      "published": "2026-04-18T18:19:54+00:00",
+      "keywords": [
+        "봇넷"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
