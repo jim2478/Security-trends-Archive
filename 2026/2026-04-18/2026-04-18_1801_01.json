@@ -1,0 +1,28 @@
+{
+  "scan_time_kst": "2026-04-18T18:01:01.242656+09:00",
+  "stats": {
+    "total_articles": 1895,
+    "matched_articles": 128,
+    "new_alerts": 1,
+    "cve_count": 0,
+    "ioc_count": 0,
+    "dedup_count": 0,
+    "date_filtered": 102,
+    "merged_count": 0
+  },
+  "alerts": [
+    {
+      "type": "single",
+      "title": "CVE 263% 폭증 충격…NIST, ‘중요 취약점만 본다’ 선언",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=206307",
+      "source": "데일리시큐 (이슈) [RSS]",
+      "published": "2026-04-18T17:49:58+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
