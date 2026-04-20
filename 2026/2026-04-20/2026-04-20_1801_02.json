@@ -1,0 +1,53 @@
+{
+  "scan_time_kst": "2026-04-20T18:01:11.250004+09:00",
+  "stats": {
+    "total_articles": 1841,
+    "matched_articles": 155,
+    "new_alerts": 2,
+    "cve_count": 1,
+    "ioc_count": 0,
+    "dedup_count": 3,
+    "date_filtered": 142,
+    "merged_count": 0
+  },
+  "alerts": [
+    {
+      "type": "single",
+      "title": "Detecting CVE-2026-20929: Kerberos Authentication Relay via CNAME Abuse",
+      "url": "https://www.crowdstrike.com/en-us/blog/detecting-kerberos-relay-attack-via-dns-cname-abuse/",
+      "source": "CrowdStrike Blog (APT/위협인텔리전스) [RSS]",
+      "published": null,
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-20929"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-20929",
+          "cvss_score": 7.5,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-284 (Improper Access Control)",
+          "description": "Improper access control in Windows HTTP.sys allows an authorized attacker to elevate privileges over a network.",
+          "epss_score": 0.00045,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "type": "single",
+      "title": "Researchers Detect ZionSiphon Malware Targeting Israeli Water, Desalination OT Systems",
+      "url": "https://thehackernews.com/2026/04/researchers-detect-zionsiphon-malware.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-04-20T07:34:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
