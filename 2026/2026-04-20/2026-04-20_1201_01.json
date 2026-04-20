@@ -1,0 +1,95 @@
+{
+  "scan_time_kst": "2026-04-20T12:01:15.530792+09:00",
+  "stats": {
+    "total_articles": 1910,
+    "matched_articles": 129,
+    "new_alerts": 1,
+    "cve_count": 20,
+    "ioc_count": 0,
+    "dedup_count": 0,
+    "date_filtered": 100,
+    "merged_count": 0
+  },
+  "alerts": [
+    {
+      "type": "single",
+      "title": "Apple 제품 보안 업데이트 권고",
+      "url": "https://isarc.tachyonlab.com/533783",
+      "source": "Tachyon ISARC (악성코드분석) [RSS]",
+      "published": "2026-04-20T02:14:37+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2025-14524",
+        "CVE-2025-43376",
+        "CVE-2025-43534",
+        "CVE-2025-64505",
+        "CVE-2026-20637",
+        "CVE-2026-20643",
+        "CVE-2026-20657",
+        "CVE-2026-20665",
+        "CVE-2026-20668",
+        "CVE-2026-20687",
+        "CVE-2026-20690",
+        "CVE-2026-28852",
+        "CVE-2026-28861",
+        "CVE-2026-28864",
+        "CVE-2026-28865",
+        "CVE-2026-28866",
+        "CVE-2026-28867",
+        "CVE-2026-28868",
+        "CVE-2026-28871",
+        "CVE-2026-28876"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2025-14524",
+          "cvss_score": 5.3,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-601 (CWE-601)",
+          "description": "When an OAuth2 bearer token is used for an HTTP(S) transfer, and that transfer\nperforms a cross-protocol redirect to a second URL that uses an IMAP, LDAP,\nPOP3 or SMTP scheme, curl might wrongly pass on the bearer token to the new\ntarget host.",
+          "epss_score": 0.00026,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2025-43376",
+          "cvss_score": 7.5,
+          "cvss_severity": "HIGH",
+          "cwe": null,
+          "description": "A logic issue was addressed with improved state management. This issue is fixed in Safari 26, iOS 18.7.7 and iPadOS 18.7.7, iOS 26 and iPadOS 26, macOS Tahoe 26, tvOS 26, visionOS 26, watchOS 26. A remote attacker may be able to view leaked DNS queries with Private Relay turned on.",
+          "epss_score": 0.00083,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2025-43534",
+          "cvss_score": 6.8,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-284 (Improper Access Control)",
+          "description": "A path handling issue was addressed with improved validation. This issue is fixed in iOS 18.7.7 and iPadOS 18.7.7, iOS 26.2 and iPadOS 26.2. A user with physical access to an iOS device may be able to bypass Activation Lock.",
+          "epss_score": 0.00021,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2025-64505",
+          "cvss_score": 6.1,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-125 (Out-of-bounds Read)",
+          "description": "LIBPNG is a reference library for use in applications that read, create, and manipulate PNG (Portable Network Graphics) raster image files. Prior to version 1.6.51, a heap buffer over-read vulnerability exists in libpng's png_do_quantize function when processing PNG files with malformed palette indices. The vulnerability occurs when palette_lookup array bounds are not validated against externally-supplied image data, allowing an attacker to craft a PNG file with out-of-range palette indices that",
+          "epss_score": 0.00026,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-20637",
+          "cvss_score": 6.2,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-416 (Use After Free)",
+          "description": "A use after free issue was addressed with improved memory management. This issue is fixed in iOS 18.7.7 and iPadOS 18.7.7, iOS 26.3 and iPadOS 26.3, macOS Sequoia 15.7.5, macOS Sonoma 14.8.5, macOS Tahoe 26.3, tvOS 26.3, visionOS 26.3, watchOS 26.3. An app may be able to cause unexpected system termination.",
+          "epss_score": 0.00014,
+          "kev": false
+        }
+      ]
+    }
+  ]
+}
