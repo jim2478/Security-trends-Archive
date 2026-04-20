@@ -1,0 +1,66 @@
+{
+  "scan_time_kst": "2026-04-20T16:01:18.809927+09:00",
+  "stats": {
+    "total_articles": 1895,
+    "matched_articles": 134,
+    "new_alerts": 3,
+    "cve_count": 1,
+    "ioc_count": 0,
+    "dedup_count": 0,
+    "date_filtered": 102,
+    "merged_count": 0
+  },
+  "alerts": [
+    {
+      "type": "single",
+      "title": "CISA, 아파치 액티브MQ ‘코드 주입’ 비상... KEV 목록 긴급 추가",
+      "url": "http://www.boannews.com/media/view.asp?idx=143276&kind=&sub_kind=",
+      "source": "보안뉴스 (전체) [RSS]",
+      "published": "2026-04-20T05:38:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-34197"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-34197",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-20 (Improper Input Validation)",
+          "description": "Improper Input Validation, Improper Control of Generation of Code ('Code Injection') vulnerability in Apache ActiveMQ Broker, Apache ActiveMQ.\n\nApache ActiveMQ Classic exposes the Jolokia JMX-HTTP bridge at /api/jolokia/ on the web console. The default Jolokia access policy permits exec operations on all ActiveMQ MBeans (org.apache.activemq:*), including\nBrokerService.addNetworkConnector(String) and BrokerService.addConnector(String).\n\nAn authenticated attacker can invoke these operations with a",
+          "epss_score": 0.46638,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "type": "single",
+      "title": "Handling the CVE Flood With EPSS, (Mon, Apr 20th)",
+      "url": "https://isc.sans.edu/diary/rss/32914",
+      "source": "SANS ISC (인터넷폭풍센터) [RSS]",
+      "published": "2026-04-20T06:43:22+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "type": "single",
+      "title": "취약점 폭증에 백기 든  NIST... 주요 결함 위주로 대응",
+      "url": "http://www.boannews.com/media/view.asp?idx=143257&kind=&sub_kind=",
+      "source": "보안뉴스 (전체) [RSS]",
+      "published": "2026-04-20T05:42:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
