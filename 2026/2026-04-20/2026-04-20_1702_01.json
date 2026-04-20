@@ -1,0 +1,28 @@
+{
+  "scan_time_kst": "2026-04-20T17:02:55.969424+09:00",
+  "stats": {
+    "total_articles": 1875,
+    "matched_articles": 130,
+    "new_alerts": 1,
+    "cve_count": 0,
+    "ioc_count": 0,
+    "dedup_count": 0,
+    "date_filtered": 102,
+    "merged_count": 0
+  },
+  "alerts": [
+    {
+      "type": "single",
+      "title": "Researchers Detect ZionSiphon Malware Targeting Israeli Water, Desalination OT SystemsApr 20, 2026Malware / Threat IntelligenceCybersecurity researchers have flagged a new malware called ZionSiphon t",
+      "url": "https://thehackernews.com/2026/04/researchers-detect-zionsiphon-malware.html",
+      "source": "The Hacker News (보안뉴스 종합)",
+      "published": null,
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
