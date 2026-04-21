@@ -1,0 +1,40 @@
+{
+  "scan_time_kst": "2026-04-21T16:00:53.994303+09:00",
+  "stats": {
+    "total_articles": 1841,
+    "matched_articles": 148,
+    "new_alerts": 1,
+    "cve_count": 1,
+    "ioc_count": 0,
+    "dedup_count": 0,
+    "date_filtered": 138,
+    "merged_count": 0
+  },
+  "alerts": [
+    {
+      "type": "single",
+      "title": "CISA Adds 8 Exploited Flaws to KEV, Sets April-May 2026 Federal Deadlines",
+      "url": "https://thehackernews.com/2026/04/cisa-adds-8-exploited-flaws-to-kev-sets.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-04-21T06:23:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2023-27351"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2023-27351",
+          "cvss_score": 7.5,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-287 (Authentication Bypass)",
+          "description": "This vulnerability allows remote attackers to bypass authentication on affected installations of PaperCut NG 22.0.5 (Build 63914). Authentication is not required to exploit this vulnerability. The specific flaw exists within the SecurityRequestFilter class. The issue results from improper implementation of the authentication algorithm. An attacker can leverage this vulnerability to bypass authentication on the system. Was ZDI-CAN-19226.",
+          "epss_score": 0.44629,
+          "kev": true
+        }
+      ]
+    }
+  ]
+}
