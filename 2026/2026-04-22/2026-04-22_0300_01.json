@@ -1,0 +1,40 @@
+{
+  "scan_time_kst": "2026-04-22T03:00:54.678603+09:00",
+  "stats": {
+    "total_articles": 1841,
+    "matched_articles": 146,
+    "new_alerts": 1,
+    "cve_count": 1,
+    "ioc_count": 0,
+    "dedup_count": 0,
+    "date_filtered": 135,
+    "merged_count": 0
+  },
+  "alerts": [
+    {
+      "type": "single",
+      "title": "Surge in Bomgar RMM Exploitation Demonstrates Supply Chain Risk",
+      "url": "https://www.darkreading.com/cyberattacks-data-breaches/surge-bomgar-rmm-exploitation-demonstrates-supply-chain-risk",
+      "source": "Dark Reading (보안뉴스 종합) [RSS]",
+      "published": "2026-04-21T15:29:17+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-1731"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-1731",
+          "cvss_score": 9.9,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-78 (OS Command Injection)",
+          "description": "BeyondTrust Remote Support (RS) and certain older versions of Privileged Remote Access (PRA) contain a critical pre-authentication remote code execution vulnerability. By sending specially crafted requests, an unauthenticated remote attacker may be able to execute operating system commands in the context of the site user.",
+          "epss_score": 0.81502,
+          "kev": true
+        }
+      ]
+    }
+  ]
+}
