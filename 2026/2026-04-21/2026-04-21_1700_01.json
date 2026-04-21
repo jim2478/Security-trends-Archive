@@ -1,0 +1,28 @@
+{
+  "scan_time_kst": "2026-04-21T17:00:59.900818+09:00",
+  "stats": {
+    "total_articles": 1841,
+    "matched_articles": 149,
+    "new_alerts": 1,
+    "cve_count": 0,
+    "ioc_count": 0,
+    "dedup_count": 0,
+    "date_filtered": 138,
+    "merged_count": 0
+  },
+  "alerts": [
+    {
+      "type": "single",
+      "title": "A .WAV With A Payload, (Tue, Apr 21st)",
+      "url": "https://isc.sans.edu/diary/rss/32910",
+      "source": "SANS ISC (인터넷폭풍센터) [RSS]",
+      "published": "2026-04-21T07:14:56+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
