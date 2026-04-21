@@ -1,0 +1,28 @@
+{
+  "scan_time_kst": "2026-04-21T20:03:02.727807+09:00",
+  "stats": {
+    "total_articles": 1801,
+    "matched_articles": 153,
+    "new_alerts": 1,
+    "cve_count": 0,
+    "ioc_count": 0,
+    "dedup_count": 1,
+    "date_filtered": 137,
+    "merged_count": 0
+  },
+  "alerts": [
+    {
+      "type": "single",
+      "title": "$290 Million Kelp DAO Crypto Heist Blamed on North Korea",
+      "url": "https://www.securityweek.com/290-million-kelp-dao-crypto-heist-blamed-on-north-korea/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-04-21T10:02:09+00:00",
+      "keywords": [
+        "DDoS"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
