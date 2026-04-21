@@ -1,0 +1,96 @@
+{
+  "scan_time_kst": "2026-04-21T21:01:12.589137+09:00",
+  "stats": {
+    "total_articles": 1841,
+    "matched_articles": 153,
+    "new_alerts": 2,
+    "cve_count": 8,
+    "ioc_count": 0,
+    "dedup_count": 0,
+    "date_filtered": 135,
+    "merged_count": 0
+  },
+  "alerts": [
+    {
+      "type": "single",
+      "title": "CISA flags another Cisco Catalyst SD-WAN Manager bug as exploited (CVE-2026-20133)",
+      "url": "https://www.helpnetsecurity.com/2026/04/21/cisa-flags-another-cisco-catalyst-sd-wan-manager-bug-as-exploited-cve-2026-20133/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-04-21T11:26:38+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2023-27351",
+        "CVE-2024-27199",
+        "CVE-2025-2749",
+        "CVE-2025-32975",
+        "CVE-2025-48700",
+        "CVE-2026-20122",
+        "CVE-2026-20128",
+        "CVE-2026-20133"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2023-27351",
+          "cvss_score": 7.5,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-287 (Authentication Bypass)",
+          "description": "This vulnerability allows remote attackers to bypass authentication on affected installations of PaperCut NG 22.0.5 (Build 63914). Authentication is not required to exploit this vulnerability. The specific flaw exists within the SecurityRequestFilter class. The issue results from improper implementation of the authentication algorithm. An attacker can leverage this vulnerability to bypass authentication on the system. Was ZDI-CAN-19226.",
+          "epss_score": 0.44629,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2024-27199",
+          "cvss_score": 7.3,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-22 (Path Traversal)",
+          "description": "In JetBrains TeamCity before 2023.11.4 path traversal allowing to perform limited admin actions  was possible",
+          "epss_score": 0.82472,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2025-2749",
+          "cvss_score": 7.2,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-22 (Path Traversal)",
+          "description": "An authenticated remote code execution in Kentico Xperience allows authenticated users Staging Sync Server to upload arbitrary data to path relative locations. This results in path traversal and arbitrary file upload, including content that can be executed server side leading to remote code execution.This issue affects Kentico Xperience through 13.0.178.",
+          "epss_score": 0.01227,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2025-32975",
+          "cvss_score": 10.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-287 (Authentication Bypass)",
+          "description": "Quest KACE Systems Management Appliance (SMA) 13.0.x before 13.0.385, 13.1.x before 13.1.81, 13.2.x before 13.2.183, 14.0.x before 14.0.341 (Patch 5), and 14.1.x before 14.1.101 (Patch 4) contains an authentication bypass vulnerability that allows attackers to impersonate legitimate users without valid credentials. The vulnerability exists in the SSO authentication handling mechanism and can lead to complete administrative takeover.",
+          "epss_score": 0.00543,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2025-48700",
+          "cvss_score": 6.1,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-79 (XSS)",
+          "description": "An issue was discovered in Zimbra Collaboration (ZCS) 8.8.15 and 9.0 and 10.0 and 10.1. A Cross-Site Scripting (XSS) vulnerability in the Zimbra Classic UI allows attackers to execute arbitrary JavaScript within the user's session, potentially leading to unauthorized access to sensitive information. This issue arises from insufficient sanitization of HTML content, specifically involving crafted tag structures and attribute values that include an @import directive and other script injection vecto",
+          "epss_score": 0.00181,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "type": "single",
+      "title": "NGate Campaign Targets Brazil, Trojanizes HandyPay to Steal NFC Data and PINs",
+      "url": "https://thehackernews.com/2026/04/ngate-campaign-targets-brazil.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-04-21T10:40:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
