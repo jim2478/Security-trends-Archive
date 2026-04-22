@@ -1,0 +1,28 @@
+{
+  "scan_time_kst": "2026-04-22T11:00:48.666818+09:00",
+  "stats": {
+    "total_articles": 1831,
+    "matched_articles": 146,
+    "new_alerts": 1,
+    "cve_count": 0,
+    "ioc_count": 0,
+    "dedup_count": 0,
+    "date_filtered": 136,
+    "merged_count": 0
+  },
+  "alerts": [
+    {
+      "type": "single",
+      "title": "분산형 소셜 미디어 블루스카이, 친이란 해커 그룹  공격에 서비스 장애",
+      "url": "http://www.boannews.com/media/view.asp?idx=143303&kind=&sub_kind=",
+      "source": "보안뉴스 (전체) [RSS]",
+      "published": "2026-04-22T01:41:00+00:00",
+      "keywords": [
+        "DDoS"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
