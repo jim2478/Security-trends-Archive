@@ -1,0 +1,41 @@
+{
+  "scan_time_kst": "2026-04-22T21:03:06.393003+09:00",
+  "stats": {
+    "total_articles": 1791,
+    "matched_articles": 149,
+    "new_alerts": 2,
+    "cve_count": 0,
+    "ioc_count": 0,
+    "dedup_count": 1,
+    "date_filtered": 131,
+    "merged_count": 0
+  },
+  "alerts": [
+    {
+      "type": "single",
+      "title": "Mirai Botnet Targets Flaw in Discontinued D-Link Routers",
+      "url": "https://www.securityweek.com/mirai-botnet-targets-flaw-in-discontinued-d-link-routers/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-04-22T11:44:07+00:00",
+      "keywords": [
+        "Botnet"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "type": "single",
+      "title": "Lotus Wiper Malware Targets Venezuelan Energy Systems in Destructive Attack",
+      "url": "https://thehackernews.com/2026/04/lotus-wiper-malware-targets-venezuelan.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-04-22T10:55:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
