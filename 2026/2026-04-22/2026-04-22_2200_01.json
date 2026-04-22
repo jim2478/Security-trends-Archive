@@ -1,0 +1,28 @@
+{
+  "scan_time_kst": "2026-04-22T22:00:55.192781+09:00",
+  "stats": {
+    "total_articles": 1811,
+    "matched_articles": 153,
+    "new_alerts": 1,
+    "cve_count": 0,
+    "ioc_count": 0,
+    "dedup_count": 2,
+    "date_filtered": 132,
+    "merged_count": 0
+  },
+  "alerts": [
+    {
+      "type": "single",
+      "title": "Bluesky Back Online After DDoS Attack, as Iran-Linked 313 Team Takes Credit",
+      "url": "https://hackread.com/bluesky-online-ddos-attack-iran-313-team/",
+      "source": "HackRead (해킹/데이터유출) [RSS]",
+      "published": "2026-04-22T12:33:28+00:00",
+      "keywords": [
+        "DDoS"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
