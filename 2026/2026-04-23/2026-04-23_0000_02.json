@@ -1,0 +1,41 @@
+{
+  "scan_time_kst": "2026-04-23T00:00:58.719794+09:00",
+  "stats": {
+    "total_articles": 1831,
+    "matched_articles": 156,
+    "new_alerts": 2,
+    "cve_count": 0,
+    "ioc_count": 0,
+    "dedup_count": 1,
+    "date_filtered": 134,
+    "merged_count": 0
+  },
+  "alerts": [
+    {
+      "type": "single",
+      "title": "After Bluesky, Mastodon Targeted in DDoS Attack",
+      "url": "https://www.securityweek.com/after-bluesky-mastodon-targeted-in-ddos-attack/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-04-22T14:26:00+00:00",
+      "keywords": [
+        "DDoS"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "type": "single",
+      "title": "DPRK Fake Job Scams Self-Propagate in 'Contagious Interview'",
+      "url": "https://www.darkreading.com/cyberattacks-data-breaches/dprk-fake-job-scams-self-propagate-contagious-interview",
+      "source": "Dark Reading (보안뉴스 종합) [RSS]",
+      "published": "2026-04-22T14:48:05+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
