@@ -1,0 +1,76 @@
+{
+  "scan_time_kst": "2026-04-24T01:01:33.085579+09:00",
+  "stats": {
+    "total_articles": 1851,
+    "matched_articles": 152,
+    "new_alerts": 3,
+    "cve_count": 2,
+    "ioc_count": 21,
+    "dedup_count": 0,
+    "date_filtered": 139,
+    "merged_count": 0
+  },
+  "alerts": [
+    {
+      "type": "single",
+      "title": "UAT-4356's Targeting of Cisco Firepower Devices",
+      "url": "https://blog.talosintelligence.com/uat-4356-firestarter/",
+      "source": "Cisco Talos Intelligence (위협분석) [RSS]",
+      "published": "2026-04-23T15:10:57+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2025-20333",
+        "CVE-2025-20362"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2025-20333",
+          "cvss_score": 9.9,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-120 (CWE-120)",
+          "description": "A vulnerability in the VPN web server of Cisco Secure Firewall Adaptive Security Appliance (ASA) Software and Cisco Secure Firewall Threat Defense (FTD) Software could allow an authenticated, remote attacker to execute arbitrary code on an affected device.\r\n\r This vulnerability is due to improper validation of user-supplied input in HTTP(S) requests. An attacker with valid VPN user credentials could exploit this vulnerability by sending crafted HTTP requests to an affected device. A successful e",
+          "epss_score": 0.2221,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2025-20362",
+          "cvss_score": 6.5,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-862 (Missing Authorization)",
+          "description": "Update: On November 5, 2025, Cisco became aware of a new attack variant against devices running Cisco Secure ASA Software or Cisco Secure FTD Software releases that are affected by CVE-2025-20333 and CVE-2025-20362. This attack can cause unpatched devices to unexpectedly reload, leading to denial of service (DoS) conditions. Cisco strongly recommends that all customers upgrade to the fixed software releases that are listed in the Fixed Software [\"#fs\"] section of this advisory.\r\n\r A vulnerabilit",
+          "epss_score": 0.43635,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "type": "single",
+      "title": "Bitwarden CLI Hijacked on npm: Bun-Staged Credential Stealer Targets Developers, GitHub Actions, and AI Tools",
+      "url": "https://www.stepsecurity.io/blog/bitwarden-cli-hijacked-on-npm-bun-staged-credential-stealer-targets-developers-github-actions-and-ai-tools",
+      "source": "StepSecurity (CI/CD 보안) [RSS]",
+      "published": "2026-04-23T15:23:35+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "Package\nMalicious package@bitwarden/cli@2026.4.0\nSafe version@bitwarden/cli@2026.3.0 (and earlier)\nVersion mismatch indicatorpackage.json version 2026.4.0; embedded metadata references 2026.3.0\nXRAY-IDXRAY-969808\nFiles\nLoadernode_modules/@bitwarden/cli/bw_setup.js\nLoader SHA-25618f784b3bc9a0bcdcb1a8d7f51bc5f54323fc40cbd874119354ab609bef6e4cb\nPayloadnode_modules/@bitwarden/cli/bw1.js\nPayload SHA-2568605e365edf11160aad517c7d79a3b26b62290e5072ef97b102a01ddbb343f14\nNetwork\nPrimary C2 domainaudit.checkmarx.cx\nPrimary C2 IP94.154.172.43\nPrimary C2 endpointhttps://audit.checkmarx.cx/v1/telemetry\nBun runtime downloadgithub.com/oven-sh/bun/releases/download/bun-v1.3.13/\nCode Markers\nCommit C2 markerLongLiveTheResistanceAgainstMachines:<base64>\nDomain rotation markerbeautifulcastle <base64>.<base64>\nShell commandgh auth token\nGitHub PAT regexghp_[A-Za-z0-9]{36}\nnpm token regexnpm_[A-Za-z0-9]{36,}",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "type": "single",
+      "title": "FIRESTARTER Backdoor",
+      "url": "https://www.cisa.gov/news-events/analysis-reports/ar26-113a",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-04-23T12:00:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
