@@ -1,0 +1,228 @@
+{
+  "scan_time_kst": "2026-04-24T02:02:05.542231+09:00",
+  "stats": {
+    "total_articles": 1851,
+    "matched_articles": 152,
+    "new_alerts": 7,
+    "cve_count": 11,
+    "ioc_count": 0,
+    "dedup_count": 0,
+    "date_filtered": 133,
+    "merged_count": 0
+  },
+  "alerts": [
+    {
+      "type": "single",
+      "title": "Carlson Software VASCO-B GNSS Receiver",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-113-02",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-04-23T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-3893"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-3893",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "type": "single",
+      "title": "Hangzhou Xiongmai Technology Co., Ltd XM530 IP Camera",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-113-05",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-04-23T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2025-65856"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2025-65856",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-306 (Missing Authentication)",
+          "description": "Authentication bypass vulnerability in Xiongmai XM530 IP cameras on Firmware V5.00.R02.000807D8.10010.346624.S.ONVIF 21.06 allows unauthenticated remote attackers to access sensitive device information and live video streams. The ONVIF implementation fails to enforce authentication on 31 critical endpoints, enabling direct unauthorized video stream access.",
+          "epss_score": 0.00633,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "type": "single",
+      "title": "Yadea T5 Electric Bicycle",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-113-01",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-04-23T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2025-70994"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2025-70994",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": "Yadea T5 Electric Bicycles (models manufactured in/after 2024) have a weak authentication mechanism in their keyless entry system. The system utilizes the EV1527 fixed-code RF protocol without implementing rolling codes or cryptographic challenge-response mechanisms. This is vulnerable to signal forgery after a local attacker intercepts any legitimate key fob transmission, allowing for complete unauthorized vehicle operation via a replay attack.",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "type": "single",
+      "title": "Milesight Cameras",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-113-03",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-04-23T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-20766",
+        "CVE-2026-27785",
+        "CVE-2026-28747",
+        "CVE-2026-32644",
+        "CVE-2026-32649"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-20766",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-27785",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-28747",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-32644",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-32649",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "type": "single",
+      "title": "Intrado 911 Emergency Gateway (EGW)",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-113-06",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-04-23T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-6074"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-6074",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "type": "single",
+      "title": "SpiceJet Online Booking System",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-113-04",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-04-23T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-6375",
+        "CVE-2026-6376"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-6375",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-6376",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "type": "single",
+      "title": "Harvester APT Expands Spying Operations with New GoGra Linux Malware",
+      "url": "https://hackread.com/harvester-apt-spying-new-gogra-linux-malware/",
+      "source": "HackRead (해킹/데이터유출) [RSS]",
+      "published": "2026-04-23T16:42:05+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
