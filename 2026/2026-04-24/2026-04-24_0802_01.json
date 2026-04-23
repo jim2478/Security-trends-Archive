@@ -1,0 +1,28 @@
+{
+  "scan_time_kst": "2026-04-24T08:02:54.127710+09:00",
+  "stats": {
+    "total_articles": 1831,
+    "matched_articles": 151,
+    "new_alerts": 1,
+    "cve_count": 0,
+    "ioc_count": 0,
+    "dedup_count": 0,
+    "date_filtered": 138,
+    "merged_count": 0
+  },
+  "alerts": [
+    {
+      "type": "single",
+      "title": "China-Backed Hackers Are Industrializing Botnets",
+      "url": "https://www.darkreading.com/cyber-risk/china-hackers-industrializing-botnets",
+      "source": "Dark Reading (보안뉴스 종합) [RSS]",
+      "published": "2026-04-23T20:52:24+00:00",
+      "keywords": [
+        "Botnet"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
