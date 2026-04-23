@@ -1,0 +1,28 @@
+{
+  "scan_time_kst": "2026-04-24T04:00:56.063256+09:00",
+  "stats": {
+    "total_articles": 1851,
+    "matched_articles": 151,
+    "new_alerts": 1,
+    "cve_count": 0,
+    "ioc_count": 0,
+    "dedup_count": 0,
+    "date_filtered": 138,
+    "merged_count": 0
+  },
+  "alerts": [
+    {
+      "type": "single",
+      "title": "UNC6692 Impersonates IT Helpdesk via Microsoft Teams to Deploy SNOW Malware",
+      "url": "https://thehackernews.com/2026/04/unc6692-impersonates-it-helpdesk-via.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-04-23T18:16:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
