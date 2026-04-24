@@ -1,0 +1,28 @@
+{
+  "scan_time_kst": "2026-04-24T11:00:54.650407+09:00",
+  "stats": {
+    "total_articles": 1831,
+    "matched_articles": 152,
+    "new_alerts": 1,
+    "cve_count": 0,
+    "ioc_count": 0,
+    "dedup_count": 0,
+    "date_filtered": 142,
+    "merged_count": 0
+  },
+  "alerts": [
+    {
+      "type": "single",
+      "title": "[WIS 2026] KT, AI 기반 기업보안 솔루션 공개",
+      "url": "https://www.etnews.com/20260424000106?SNS=00001",
+      "source": "전자신문 (IT) [RSS]",
+      "published": "2026-04-24T01:09:56+00:00",
+      "keywords": [
+        "DDoS"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
