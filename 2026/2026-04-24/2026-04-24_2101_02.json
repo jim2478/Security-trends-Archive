@@ -1,0 +1,63 @@
+{
+  "scan_time_kst": "2026-04-24T21:01:14.893906+09:00",
+  "stats": {
+    "total_articles": 1851,
+    "matched_articles": 154,
+    "new_alerts": 2,
+    "cve_count": 2,
+    "ioc_count": 199,
+    "dedup_count": 1,
+    "date_filtered": 138,
+    "merged_count": 0
+  },
+  "alerts": [
+    {
+      "type": "single",
+      "title": "US Federal Agency’s Cisco Firewall Infected With ‘Firestarter’ Backdoor",
+      "url": "https://www.securityweek.com/us-federal-agencys-cisco-firewall-infected-with-firestarter-backdoor/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-04-24T11:26:09+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2025-20333",
+        "CVE-2025-20362"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2025-20333",
+          "cvss_score": 9.9,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-120 (CWE-120)",
+          "description": "A vulnerability in the VPN web server of Cisco Secure Firewall Adaptive Security Appliance (ASA) Software and Cisco Secure Firewall Threat Defense (FTD) Software could allow an authenticated, remote attacker to execute arbitrary code on an affected device.\r\n\r This vulnerability is due to improper validation of user-supplied input in HTTP(S) requests. An attacker with valid VPN user credentials could exploit this vulnerability by sending crafted HTTP requests to an affected device. A successful e",
+          "epss_score": 0.2221,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2025-20362",
+          "cvss_score": 6.5,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-862 (Missing Authorization)",
+          "description": "Update: On November 5, 2025, Cisco became aware of a new attack variant against devices running Cisco Secure ASA Software or Cisco Secure FTD Software releases that are affected by CVE-2025-20333 and CVE-2025-20362. This attack can cause unpatched devices to unexpectedly reload, leading to denial of service (DoS) conditions. Cisco strongly recommends that all customers upgrade to the fixed software releases that are listed in the Fixed Software [\"#fs\"] section of this advisory.\r\n\r A vulnerabilit",
+          "epss_score": 0.43635,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "type": "single",
+      "title": "Inside agenteV2: How Brazilian Attackers Use Fake Court Summons to Steal Banking Credentials in Real Time",
+      "url": "https://any.run/cybersecurity-blog/brazilian-banking-phishing-campaign/",
+      "source": "ANY.RUN (악성코드샌드박스분석) [RSS]",
+      "published": "2026-04-24T11:02:39+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "1. File Hashes\nAlgorithm\nHash\nFile\nMD5\n285fea57345d838916153c4d8f43ab6c\nintimacaojudicial.eml\t\t\t(initial sample)\nSHA1\n8a87d63110eeb782bb621b5f3154ca80bdcf5de7\nintimacaojudicial.eml\nSHA256\n5fd682cdfdf2de867be2a4bd378a2c206370c18a598975a11c99dba121e36b1b\nintimacaojudicial.eml\nssdeep\n768:1wxIS5yHtOJ3GsP80Nbt0m0mxGQd5fiCJxXFAwYNBYT:KkHtbo5+mxbnVr\nintimacaojudicial.eml\nMD5\n826d6350724f203b911aa6c8c4626391\nagenteV2_historico_detect.dll\t\t\t(core stealer)\nNetwork IOCs\nIndicator\nType\nReputation\nRole\nodaracani.online\nDomain\nMalicious\nPhishing\t\t\tgate per-victim unique tracker\nnuevaprodeciencia.club\nDomain\nMalicious\nPayload\t\t\tdistribution + C2 checkin endpoint\n69.49.241.120\nMalicious\nShared\t\t\tIP for both delivery domains\n38.242.246.176\nMalicious\nReal\t\t\tC2 server (Contabo VPS, Germany)\nvmi3003111.contaboserver.net\nFQDN\nMalicious\nC2\t\t\tserver hostname\n172.66.171.73\nSuspicious\nCloudflare\t\t\tproxy for Pastebin not directly malicious\npastebin.com/raw/0RmxqY57\nURL\nMalicious\nDead-drop\t\t\tresolver contains plaintext C2 IP:port\nMalicious URLs\nURL\nFunction\nhttps://odaracani.online/index.php?id=3df947b3\nGate\t\t\tunique per-victim tracking ID\nhttps://nuevaprodeciencia.club/cert.php\nRedirect\t\t\tchain step 1\nhttps://nuevaprodeciencia.club/cord.php\nRedirect\t\t\tchain step 2\nhttps://nuevaprodeciencia.club/br77b/download.php\nRedirect\t\t\tto payload landing\nhttps://nuevaprodeciencia.club/br77b/arquivos/download.php?id_69bb7d47c15e9\nPayload\t\t\tlanding page\nhttps://nuevaprodeciencia.club/br77b/arquivos/download/base.php?LpHQPCBwX=766760\nConfiguration\t\t\t/ stage data\nhttps://nuevaprodeciencia.club/br77b/arquivos/download/reiniciar.exe\nPayload:\t\t\treiniciar.exe (~6.4 MB)\nhttps://nuevaprodeciencia.club/br77b/arquivos/download/msedge03.exe\nPayload:\t\t\tmsedge03.exe\nhttps://nuevaprodeciencia.club/br77b/arquivos/download/msedge04.exe\nPayload:\t\t\twifi_driver.exe (served as msedge04.exe)\nhttps://nuevaprodeciencia.club/br77b/iayjaskyeiagds.php\nC2\t\t\tinitial checkin endpoint (called by VBS loader)\nhttps://pastebin.com/raw/0RmxqY57\nDead-drop\t\t\tresolver C2 IP:port\nHost-Based IOCs\nArtifact\nPath\t\t\t/ Value\nNotes\nVBS\t\t\tLoader (delivered)\nC:\\Users\\*\\Downloads\\0124_INTMACAO_.vbs\n16,739\t\t\tbytes obfuscated\nVBS\t\t\tLoader (decoded)\nC:\\Users\\*\\AppData\\Local\\Temp\\0124_INTMACAO_.vbs\n140,302\t\t\tbytes runtime-expanded\nContainer\t\t\tbinary\nC:\\Program\t\t\tFiles (x86)\\Wi-fi\\wifi_driver.exe\n13,177,856\t\t\tbytes onefile bundle\nSecondary\t\t\tcontainer\nC:\\Program\t\t\tFiles (x86)\\Wi-fi\\reiniciar.exe\n6,685,696\t\t\tbytes secondary onefile bundle\nCore\t\t\tstealer DLL\nC:\\Users\\*\\AppData\\Local\\Temp\\onefile_*\\agenteV2_historico_detect.dll\n27\t\t\tMB MD5: 826d6350724f203b911aa6c8c4626391\nScheduled\t\t\tTask\nRunAsAdmin_AutoUpdate\nExecutes\t\t\twifi_driver.exe at logon, /rl highest\nScheduled\t\t\tTask\nRunAsAdmin_Executar\nExecutes\t\t\treiniciar.exe at logon, /rl highest\nRegistry\t\t\tRun\nHKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\\MonitorSystem\nValue:\t\t\t...\\ONEFIL~1\\agenteV2_historico_detect.py\nInstall\t\t\tdirectory\nC:\\Program\t\t\tFiles (x86)\\Wi-fi\\\nCreated\t\t\tby malware masquerades as Wi-Fi driver folder\nTLS / Network Fingerprints\nType\nValue\nUse\nJA3\na48c0d5f95b1ef98f560f324fd275da1\nClient\t\t\tTLS fingerprint detect agenteV2 regardless of C2 IP rotation\nJA3S\n15af977ce25de452b96affa2addb1036\nServer\t\t\tTLS response fingerprint\nJARM\n00000000000000000000000000000000000000000000000000000000000000\nCloudflare\t\t\t(Pastebin) not C2 fingerprint\nIDS/IPS Signatures (Observed Suricata Alerts)\nSID\nMessage\nMeaning\n2022658\nET\t\t\tMALWARE Possible Malicious Macro DL EXE (WinHTTPRequest)\nEXE\t\t\tdownload via WinHTTP loader behavior\n2029840\nET\t\t\tHUNTING Request for EXE via WinHTTP M1\nWinHTTP\t\t\tEXE request pattern\n2022896\nET\t\t\tHUNTING SUSPICIOUS Firesale gTLD EXE DL with no Referer\nEXE\t\t\tfrom suspicious TLD without Referer\n2019822\nET\t\t\tINFO WinHttpRequest Downloading EXE\nConfirms\t\t\tWinHTTP EXE download\n2019823\nET\t\t\tEXPLOIT_KIT WinHttpRequest Downloading EXE Non-Port 80\nEXE\t\t\tdownload on non-standard port\n85005610\nET\t\t\tINFO PE EXE or DLL Windows file download HTTP\nPE\t\t\tfile transfer over HTTP\nIndicator\nType\nReputation\nRole\nodaracani.online\nDomain\nMalicious\nPhishing\t\t\tgate per-victim unique tracker\nnuevaprodeciencia.club\nDomain\nMalicious\nPayload\t\t\tdistribution + C2 checkin endpoint\n69.49.241.120\nMalicious\nShared\t\t\tIP for both delivery domains\n38.242.246.176\nMalicious\nReal\t\t\tC2 server (Contabo VPS, Germany)\nvmi3003111.contaboserver.net\nFQDN\nMalicious\nC2\t\t\tserver hostname\n172.66.171.73\nSuspicious\nCloudflare\t\t\tproxy for Pastebin not directly malicious\npastebin.com/raw/0RmxqY57\nURL\nMalicious\nDead-drop\t\t\tresolver contains plaintext C2 IP:port\nArtifact\nPath\t\t\t/ Value\nNotes\nVBS\t\t\tLoader (delivered)\nC:\\Users\\*\\Downloads\\0124_INTMACAO_.vbs\n16,739\t\t\tbytes obfuscated\nVBS\t\t\tLoader (decoded)\nC:\\Users\\*\\AppData\\Local\\Temp\\0124_INTMACAO_.vbs\n140,302\t\t\tbytes runtime-expanded\nContainer\t\t\tbinary\nC:\\Program\t\t\tFiles (x86)\\Wi-fi\\wifi_driver.exe\n13,177,856\t\t\tbytes onefile bundle\nSecondary\t\t\tcontainer\nC:\\Program\t\t\tFiles (x86)\\Wi-fi\\reiniciar.exe\n6,685,696\t\t\tbytes secondary onefile bundle\nCore\t\t\tstealer DLL\nC:\\Users\\*\\AppData\\Local\\Temp\\onefile_*\\agenteV2_historico_detect.dll\n27\t\t\tMB MD5: 826d6350724f203b911aa6c8c4626391\nScheduled\t\t\tTask\nRunAsAdmin_AutoUpdate\nExecutes\t\t\twifi_driver.exe at logon, /rl highest\nScheduled\t\t\tTask\nRunAsAdmin_Executar\nExecutes\t\t\treiniciar.exe at logon, /rl highest\nRegistry\t\t\tRun\nHKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\\MonitorSystem\nValue:\t\t\t...\\ONEFIL~1\\agenteV2_historico_detect.py\nInstall\t\t\tdirectory\nC:\\Program\t\t\tFiles (x86)\\Wi-fi\\\nCreated\t\t\tby malware masquerades as Wi-Fi driver folder",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
