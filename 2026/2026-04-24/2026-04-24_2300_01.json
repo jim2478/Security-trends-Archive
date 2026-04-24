@@ -1,0 +1,28 @@
+{
+  "scan_time_kst": "2026-04-24T23:00:52.897236+09:00",
+  "stats": {
+    "total_articles": 1851,
+    "matched_articles": 155,
+    "new_alerts": 1,
+    "cve_count": 0,
+    "ioc_count": 0,
+    "dedup_count": 0,
+    "date_filtered": 141,
+    "merged_count": 0
+  },
+  "alerts": [
+    {
+      "type": "single",
+      "title": "TeamPCP Hijacks Bitwarden CLI, Uses Dependabot to Deploy Shai-Hulud Malware",
+      "url": "https://hackread.com/teampcp-bitwarden-cli-dependabot-shai-hulud-malware/",
+      "source": "HackRead (해킹/데이터유출) [RSS]",
+      "published": "2026-04-24T13:58:55+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
