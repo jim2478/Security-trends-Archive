@@ -1,0 +1,63 @@
+{
+  "scan_time_kst": "2026-04-24T19:01:17.863918+09:00",
+  "stats": {
+    "total_articles": 1861,
+    "matched_articles": 156,
+    "new_alerts": 2,
+    "cve_count": 2,
+    "ioc_count": 0,
+    "dedup_count": 0,
+    "date_filtered": 141,
+    "merged_count": 0
+  },
+  "alerts": [
+    {
+      "type": "single",
+      "title": "New Cisco firewall malware can only be killed by pulling the plug",
+      "url": "https://www.helpnetsecurity.com/2026/04/24/cisco-firepower-firestarter-backdoor/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-04-24T09:56:31+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2025-20333",
+        "CVE-2025-20362"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2025-20333",
+          "cvss_score": 9.9,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-120 (CWE-120)",
+          "description": "A vulnerability in the VPN web server of Cisco Secure Firewall Adaptive Security Appliance (ASA) Software and Cisco Secure Firewall Threat Defense (FTD) Software could allow an authenticated, remote attacker to execute arbitrary code on an affected device.\r\n\r This vulnerability is due to improper validation of user-supplied input in HTTP(S) requests. An attacker with valid VPN user credentials could exploit this vulnerability by sending crafted HTTP requests to an affected device. A successful e",
+          "epss_score": 0.2221,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2025-20362",
+          "cvss_score": 6.5,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-862 (Missing Authorization)",
+          "description": "Update: On November 5, 2025, Cisco became aware of a new attack variant against devices running Cisco Secure ASA Software or Cisco Secure FTD Software releases that are affected by CVE-2025-20333 and CVE-2025-20362. This attack can cause unpatched devices to unexpectedly reload, leading to denial of service (DoS) conditions. Cisco strongly recommends that all customers upgrade to the fixed software releases that are listed in the Fixed Software [\"#fs\"] section of this advisory.\r\n\r A vulnerabilit",
+          "epss_score": 0.43635,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "type": "single",
+      "title": "Compromised everyday devices power Chinese cyber espionage operations",
+      "url": "https://www.helpnetsecurity.com/2026/04/24/ncsc-china-covert-networks-advisory/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-04-24T09:59:11+00:00",
+      "keywords": [
+        "Botnet"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
