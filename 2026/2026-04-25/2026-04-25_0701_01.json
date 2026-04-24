@@ -1,0 +1,28 @@
+{
+  "scan_time_kst": "2026-04-25T07:01:01.873563+09:00",
+  "stats": {
+    "total_articles": 1861,
+    "matched_articles": 158,
+    "new_alerts": 1,
+    "cve_count": 0,
+    "ioc_count": 41,
+    "dedup_count": 0,
+    "date_filtered": 147,
+    "merged_count": 0
+  },
+  "alerts": [
+    {
+      "type": "single",
+      "title": "The npm Threat Landscape: Attack Surface and Mitigations",
+      "url": "https://unit42.paloaltonetworks.com/monitoring-npm-supply-chain-attacks/",
+      "source": "Palo Alto Unit42 (위협리서치) [RSS]",
+      "published": "2026-04-24T21:40:33+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "Network Indicators\nTable 3 lists the network indicators from this activity.\nIndicator | Type\naudit.checkmarx[.]cx | C2 domain\n94.154.172[.]43 | C2 IP address\ncheckmarx[.]cx | Attacker-controlled domain\n91.195.240[.]123 | Attacker IP address\nTable 3. Network indicators.\nGitHub Indicators\nTable 4 lists the GitHub indicators from this activity.\nIndicator | Type\nhelloworm00/hello-world | Dead drop repository\nbc544f455d7c06c8a1f3446160a6d9a4a8236b11 | Dead drop commit SHA1 hash\nhelloworm00@proton[.]me | Attacker email address\nCommit messages matchingLongLiveTheResistanceAgainstMachines:* | Exfiltration staging\nPublic repositories named<dune-word>-<dune-word>-<3digits> with description \"Checkmarx Configuration Storage\" | Exfiltration repositories\nTable 4. GitHub indicators.\nFiles and Process Indicators\nTable 5 lists the file and process indicators from this activity.\nIndicator | Type | SHA256 hash\nbw_setup.js | Bootstrap script | f35475829991b303c5efc2ee0f343dd38f8614e8b5e69db683923135f85cf60d\nbw1.js | Obfuscated payload | 18f784b3bc9a0bcdcb1a8d7f51bc5f54323fc40cbd874119354ab609bef6e4cb\npackage.json | Malicious manifest | 167ce57ef59a32a6a0ef4137785828077879092d7f83ddbc1755d6e69116e0ad\nsetup.mjsin infected packages | Worm payload\nUnexpectedbunprocess execution | Runtime indicator\n.github/workflows/format-check.ymlon transient branches | Workflow injection\nformat-resultsworkflow artifact | Secret exfiltration\nTable 5. File and process indicators.\nnpm Indicators\nTable 6 lists the npm indicators from this activity.\nIndicator | Type\n@bitwarden/cli@2026.4.0 | Malicious package\nNewpreinstall: \"node setup.mjs\" in package.json | Injected hook\nTable 6. npm indicators.\nTable 3 lists the network indicators from this activity.\nIndicator | Type\naudit.checkmarx[.]cx | C2 domain\n94.154.172[.]43 | C2 IP address\ncheckmarx[.]cx | Attacker-controlled domain\n91.195.240[.]123 | Attacker IP address\nTable 3. Network indicators.",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
