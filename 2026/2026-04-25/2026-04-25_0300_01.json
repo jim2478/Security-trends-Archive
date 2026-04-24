@@ -1,0 +1,28 @@
+{
+  "scan_time_kst": "2026-04-25T03:00:51.048179+09:00",
+  "stats": {
+    "total_articles": 1841,
+    "matched_articles": 152,
+    "new_alerts": 1,
+    "cve_count": 0,
+    "ioc_count": 0,
+    "dedup_count": 0,
+    "date_filtered": 140,
+    "merged_count": 0
+  },
+  "alerts": [
+    {
+      "type": "single",
+      "title": "FIRESTARTER Backdoor Hit Federal Cisco Firepower Device, Survives Security Patches",
+      "url": "https://thehackernews.com/2026/04/firestarter-backdoor-hit-federal-cisco.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-04-24T17:06:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
