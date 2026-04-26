@@ -1,0 +1,60 @@
+{
+  "scan_time_kst": "2026-04-26T17:01:06.559716+09:00",
+  "stats": {
+    "total_articles": 1861,
+    "matched_articles": 159,
+    "new_alerts": 1,
+    "cve_count": 3,
+    "ioc_count": 0,
+    "dedup_count": 0,
+    "date_filtered": 150,
+    "merged_count": 0
+  },
+  "alerts": [
+    {
+      "type": "single",
+      "title": "Week in review: Claude Mythos finds 271 Firefox flaws, Vercel breach",
+      "url": "https://www.helpnetsecurity.com/2026/04/26/week-in-review-claude-mythos-finds-271-firefox-flaws-vercel-breach/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-04-26T08:00:32+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-20133",
+        "CVE-2026-21876",
+        "CVE-2026-28950"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-20133",
+          "cvss_score": 6.5,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-200 (Information Exposure)",
+          "description": "A vulnerability in Cisco Catalyst SD-WAN Software could allow an unauthenticated, remote attacker to view sensitive information on an affected system.\r\n\r This vulnerability is due to insufficient file system restrictions. An authenticated attacker with netadmin privileges could exploit this vulnerability by accessing the vshell of an affected system. A successful exploit could allow the attacker to read sensitive information on the underlying operating system.",
+          "epss_score": 0.01195,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-21876",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-794 (CWE-794)",
+          "description": "The OWASP core rule set (CRS) is a set of generic attack detection rules for use with compatible web application firewalls. Prior to versions 4.22.0 and 3.3.8, the current rule 922110 has a bug when processing multipart requests with multiple parts. When the first rule in a chain iterates over a collection (like `MULTIPART_PART_HEADERS`), the capture variables (`TX:0`, `TX:1`) get overwritten with each iteration. Only the last captured value is available to the chained rule, which means maliciou",
+          "epss_score": 0.00073,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-28950",
+          "cvss_score": 6.2,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-359 (CWE-359)",
+          "description": "A logging issue was addressed with improved data redaction. This issue is fixed in iOS 18.7.8 and iPadOS 18.7.8, iOS 26.4.2 and iPadOS 26.4.2. Notifications marked for deletion could be unexpectedly retained on the device.",
+          "epss_score": 0.00013,
+          "kev": false
+        }
+      ]
+    }
+  ]
+}
