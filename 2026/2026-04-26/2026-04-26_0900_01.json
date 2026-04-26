@@ -1,0 +1,28 @@
+{
+  "scan_time_kst": "2026-04-26T09:00:54.818757+09:00",
+  "stats": {
+    "total_articles": 1861,
+    "matched_articles": 159,
+    "new_alerts": 1,
+    "cve_count": 0,
+    "ioc_count": 0,
+    "dedup_count": 0,
+    "date_filtered": 150,
+    "merged_count": 0
+  },
+  "alerts": [
+    {
+      "type": "single",
+      "title": "해커의 도구가 된 내 컴퓨터 ‘봇넷·좀비PC’ [보안TMI]",
+      "url": "https://it.chosun.com/news/articleView.html?idxno=2023092160923",
+      "source": "IT조선 [RSS]",
+      "published": "2026-04-25T21:00:00+00:00",
+      "keywords": [
+        "봇넷"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
