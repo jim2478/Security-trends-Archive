@@ -1,0 +1,28 @@
+{
+  "scan_time_kst": "2026-04-27T11:00:50.683239+09:00",
+  "stats": {
+    "total_articles": 1861,
+    "matched_articles": 157,
+    "new_alerts": 1,
+    "cve_count": 0,
+    "ioc_count": 0,
+    "dedup_count": 0,
+    "date_filtered": 148,
+    "merged_count": 0
+  },
+  "alerts": [
+    {
+      "type": "single",
+      "title": "“공유기가 사이버 무기로”... 中 해커, 20만대 봇넷 동원해 글로벌 공격 은폐",
+      "url": "http://www.boannews.com/media/view.asp?idx=143358&kind=&sub_kind=",
+      "source": "보안뉴스 (전체) [RSS]",
+      "published": "2026-04-27T01:04:00+00:00",
+      "keywords": [
+        "봇넷"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
