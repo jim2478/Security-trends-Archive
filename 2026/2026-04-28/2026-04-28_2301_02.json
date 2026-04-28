@@ -1,0 +1,41 @@
+{
+  "scan_time_kst": "2026-04-28T23:01:14.292927+09:00",
+  "stats": {
+    "total_articles": 1871,
+    "matched_articles": 159,
+    "new_alerts": 2,
+    "cve_count": 0,
+    "ioc_count": 0,
+    "dedup_count": 0,
+    "date_filtered": 143,
+    "merged_count": 0
+  },
+  "alerts": [
+    {
+      "type": "single",
+      "title": "1. How is it possible that 12,4/15,9GB of my RAM are used up despite the first image showing that the programs with the most RAM usage dont even take up 5GB? 2. Why does Chrome say I have 39 tabs open even though I only have 21 tabs open?",
+      "url": "https://www.reddit.com/r/antivirus/comments/1sy1gyd/1_how_is_it_possible_that_124159gb_of_my_ram_are/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-04-28T13:28:28+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "type": "single",
+      "title": "Ayuda con esto, no se si es un falso positivo, uso uno de esos Windows modificados (MiniOS)",
+      "url": "https://www.reddit.com/r/antivirus/comments/1sy1rnw/ayuda_con_esto_no_se_si_es_un_falso_positivo_uso/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-04-28T13:40:11+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
