@@ -1,0 +1,40 @@
+{
+  "scan_time_kst": "2026-04-29T16:01:08.404652+09:00",
+  "stats": {
+    "total_articles": 1871,
+    "matched_articles": 161,
+    "new_alerts": 1,
+    "cve_count": 1,
+    "ioc_count": 0,
+    "dedup_count": 1,
+    "date_filtered": 149,
+    "merged_count": 0
+  },
+  "alerts": [
+    {
+      "type": "single",
+      "title": "Critical GitHub Vulnerability Exposed Millions of Repositories",
+      "url": "https://www.securityweek.com/critical-github-vulnerability-exposed-millions-of-repositories/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-04-29T06:27:49+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-3854"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-3854",
+          "cvss_score": 8.7,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-77 (Command Injection)",
+          "description": "An improper neutralization of special elements vulnerability was identified in GitHub Enterprise Server that allowed an attacker with push access to a repository to achieve remote code execution on the instance. During a git push operation, user-supplied push option values were not properly sanitized before being included in internal service headers. Because the internal header format used a delimiter character that could also appear in user input, an attacker could inject additional metadata fi",
+          "epss_score": 0.00391,
+          "kev": false
+        }
+      ]
+    }
+  ]
+}
