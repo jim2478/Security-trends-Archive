@@ -1,0 +1,40 @@
+{
+  "scan_time_kst": "2026-04-29T21:02:06.257966+09:00",
+  "stats": {
+    "total_articles": 1881,
+    "matched_articles": 168,
+    "new_alerts": 1,
+    "cve_count": 1,
+    "ioc_count": 0,
+    "dedup_count": 1,
+    "date_filtered": 148,
+    "merged_count": 0
+  },
+  "alerts": [
+    {
+      "type": "single",
+      "title": "윈도우 LNK 취약점 악용 확인…“5월 12일까지 패치”",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=206544",
+      "source": "데일리시큐 (IT&생활) [RSS]",
+      "published": "2026-04-29T11:33:45+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-32202"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-32202",
+          "cvss_score": 4.3,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-693 (CWE-693)",
+          "description": "Protection mechanism failure in Windows Shell allows an unauthorized attacker to perform spoofing over a network.",
+          "epss_score": 0.00092,
+          "kev": true
+        }
+      ]
+    }
+  ]
+}
