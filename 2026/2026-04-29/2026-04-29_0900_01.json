@@ -1,0 +1,28 @@
+{
+  "scan_time_kst": "2026-04-29T09:00:59.682081+09:00",
+  "stats": {
+    "total_articles": 1881,
+    "matched_articles": 166,
+    "new_alerts": 1,
+    "cve_count": 0,
+    "ioc_count": 0,
+    "dedup_count": 0,
+    "date_filtered": 150,
+    "merged_count": 0
+  },
+  "alerts": [
+    {
+      "type": "single",
+      "title": "My Computer might be infected",
+      "url": "https://www.reddit.com/r/antivirus/comments/1syhjo0/my_computer_might_be_infected/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-04-28T23:15:48+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
