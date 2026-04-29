@@ -1,0 +1,178 @@
+{
+  "scan_time_kst": "2026-04-30T03:01:49.285407+09:00",
+  "stats": {
+    "total_articles": 1871,
+    "matched_articles": 173,
+    "new_alerts": 7,
+    "cve_count": 6,
+    "ioc_count": 0,
+    "dedup_count": 1,
+    "date_filtered": 143,
+    "merged_count": 0
+  },
+  "alerts": [
+    {
+      "type": "single",
+      "title": "SEC Consult SA-20260427-0 :: Missing TLS Certificate Validation leading to RCE in DeskTime Time Tracking App",
+      "url": "https://seclists.org/fulldisclosure/2026/Apr/20",
+      "source": "SecLists Full Disclosure (취약점공개)",
+      "published": "2026-04-29T17:43:43+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2025-10539"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2025-10539",
+          "cvss_score": 4.8,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-295 (CWE-295)",
+          "description": "Due to improper TLS certificate validation in the DeskTime Time Tracking App before version 1.3.674, attackers who can position themselves in the network path between the client and the DeskTime update servers can return a malicious executable in response to an update request. This allows the attacker to achieve user-level remote code execution on the affected client.",
+          "epss_score": 0.00021,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "type": "single",
+      "title": "SEC Consult SA-20260423-0 :: DLL Hijacking in EfficientLab Controlio (cloud-based employee monitoring service)",
+      "url": "https://seclists.org/fulldisclosure/2026/Apr/19",
+      "source": "SecLists Full Disclosure (취약점공개)",
+      "published": "2026-04-29T17:43:40+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2025-10549"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2025-10549",
+          "cvss_score": 5.1,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-427 (CWE-427)",
+          "description": "EfficientLab Controlio before v1.3.95 contains a DLL hijacking vulnerability caused by weak folder permissions in the installation directory. A local attacker can place a specially crafted DLL in this directory and achieve arbitrary code execution with highest privileges, because the affected service runs as NT AUTHORITY\\SYSTEM.",
+          "epss_score": 6e-05,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "type": "single",
+      "title": "SEC Consult SA-20260421-0 :: Broken Access Control in Config Endpoint in LiteLLM",
+      "url": "https://seclists.org/fulldisclosure/2026/Apr/17",
+      "source": "SecLists Full Disclosure (취약점공개)",
+      "published": "2026-04-29T17:43:37+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-35029"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-35029",
+          "cvss_score": 8.7,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-863 (CWE-863)",
+          "description": "LiteLLM is a proxy server (AI Gateway) to call LLM APIs in OpenAI (or native) format. Prior to 1.83.0, the /config/update endpoint does not enforce admin role authorization. A user who is already authenticated into the platform can then use this endpoint to modify proxy configuration and environment variables, register custom pass-through endpoint handlers pointing to attacker-controlled Python code, achieving remote code execution, read arbitrary server files by setting UI_LOGO_PATH and fetchin",
+          "epss_score": 0.13296,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "type": "single",
+      "title": "SEC Consult SA-20260415-0 :: Exposed Private Key of X.509 Certificate in SAP HANA Cockpit & SAP HANA Database Explorer",
+      "url": "https://seclists.org/fulldisclosure/2026/Apr/16",
+      "source": "SecLists Full Disclosure (취약점공개)",
+      "published": "2026-04-29T17:43:35+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-34262"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-34262",
+          "cvss_score": 5.0,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-522 (CWE-522)",
+          "description": "Information Disclosure Vulnerability in SAP HANA Cockpit and HANA Database Explorer",
+          "epss_score": 0.00028,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "type": "single",
+      "title": "[SBA-ADV-20251120-01] CVE-2026-0972: GoAnywhere MFT Email HTML Injection",
+      "url": "https://seclists.org/fulldisclosure/2026/Apr/8",
+      "source": "SecLists Full Disclosure (취약점공개)",
+      "published": "2026-04-29T17:30:53+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-0972"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-0972",
+          "cvss_score": 5.4,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-74 (CWE-74)",
+          "description": "HTML injection is possible in system generated emails in Fortra's GoAnywhere MFT prior to 7.10.0.\n\n\nNote: The title, details, and description of this CVE were corrected post-publishing.",
+          "epss_score": 0.0003,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "type": "single",
+      "title": "The Internet Is Falling Down, Falling Down, Falling Down (cPanel & WHM Authentication Bypass CVE-2026-41940) - watchTowr Labs",
+      "url": "https://www.reddit.com/r/netsec/comments/1sz5aoi/the_internet_is_falling_down_falling_down_falling/",
+      "source": "Reddit r/netsec (보안커뮤니티) [RSS]",
+      "published": "2026-04-29T17:20:21+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-41940"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-41940",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-306 (Missing Authentication)",
+          "description": "cPanel and WHM versions prior to 11.110.0.97, 11.118.0.63, 11.126.0.54, 11.132.0.29, 11.134.0.20, and 11.136.0.5 contain an authentication bypass vulnerability in the login flow that allows unauthenticated remote attackers to gain unauthorized access to the control panel.",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "type": "single",
+      "title": "Trojan-Spy.Win32.Small / Remote Command Execution",
+      "url": "https://seclists.org/fulldisclosure/2026/Apr/10",
+      "source": "SecLists Full Disclosure (취약점공개)",
+      "published": "2026-04-29T17:34:03+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
