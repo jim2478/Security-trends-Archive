@@ -1,0 +1,78 @@
+{
+  "scan_time_kst": "2026-04-29T19:01:26.783806+09:00",
+  "stats": {
+    "total_articles": 1861,
+    "matched_articles": 168,
+    "new_alerts": 3,
+    "cve_count": 2,
+    "ioc_count": 0,
+    "dedup_count": 1,
+    "date_filtered": 151,
+    "merged_count": 0
+  },
+  "alerts": [
+    {
+      "type": "single",
+      "title": "Cursor AI IDE vulnerability allows code execution via hidden Git hooks",
+      "url": "https://hackread.com/cursor-ai-ide-vulnerability-code-execution-git-hooks/",
+      "source": "HackRead (해킹/데이터유출) [RSS]",
+      "published": "2026-04-29T09:01:56+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-26268"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-26268",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "type": "single",
+      "title": "깃허브 RCE 취약점 공개…저장소 푸시 권한만으로 원격 명령 실행 가능",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=206540",
+      "source": "데일리시큐 (IT&생활) [RSS]",
+      "published": "2026-04-29T09:14:45+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-3854"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-3854",
+          "cvss_score": 8.7,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-77 (Command Injection)",
+          "description": "An improper neutralization of special elements vulnerability was identified in GitHub Enterprise Server that allowed an attacker with push access to a repository to achieve remote code execution on the instance. During a git push operation, user-supplied push option values were not properly sanitized before being included in internal service headers. Because the internal header format used a delimiter character that could also appear in user input, an attacker could inject additional metadata fi",
+          "epss_score": 0.00391,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "type": "single",
+      "title": "Question about Mr Beast Virus",
+      "url": "https://www.reddit.com/r/antivirus/comments/1syu3jx/question_about_mr_beast_virus/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-04-29T09:46:23+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
