@@ -1,0 +1,128 @@
+{
+  "scan_time_kst": "2026-05-01T02:01:19.942886+09:00",
+  "stats": {
+    "total_articles": 1881,
+    "matched_articles": 171,
+    "new_alerts": 5,
+    "cve_count": 4,
+    "ioc_count": 0,
+    "dedup_count": 0,
+    "date_filtered": 148,
+    "merged_count": 0
+  },
+  "alerts": [
+    {
+      "type": "single",
+      "title": "ABB AWIN Gateways",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-120-05",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-04-30T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2025-13777"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2025-13777",
+          "cvss_score": 7.2,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-294 (CWE-294)",
+          "description": "Authentication bypass by capture-replay vulnerability in ABB AWIN GW100 rev.2, ABB AWIN GW120.This issue affects AWIN GW100 rev.2: 2.0-0, 2.0-1; AWIN GW120: 1.2-0, 1.2-1.",
+          "epss_score": 0.00029,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "type": "single",
+      "title": "ABB Edgenius Management Portal",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-120-03",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-04-30T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2025-10571"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2025-10571",
+          "cvss_score": 9.4,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-288 (CWE-288)",
+          "description": "Authentication Bypass Using an Alternate Path or Channel vulnerability in ABB ABB Ability Edgenius.This issue affects ABB Ability Edgenius: 3.2.0.0, 3.2.1.1.",
+          "epss_score": 0.00034,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "type": "single",
+      "title": "ABB Ability OPTIMAX",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-120-04",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-04-30T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2025-14510"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2025-14510",
+          "cvss_score": 9.2,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-303 (CWE-303)",
+          "description": "Incorrect Implementation of Authentication Algorithm vulnerability in ABB ABB Ability OPTIMAX.This issue affects ABB Ability OPTIMAX: 6.1, 6.2, from 6.3.0 before 6.3.1-251120, from 6.4.0 before 6.4.1-251120.",
+          "epss_score": 0.00031,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "type": "single",
+      "title": "ABB PCM600",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-120-02",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-04-30T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2018-1002208"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2018-1002208",
+          "cvss_score": 5.5,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-22 (Path Traversal)",
+          "description": "SharpZipLib before 1.0 RC1 is vulnerable to directory traversal, allowing attackers to write to arbitrary files via a ../ (dot dot slash) in a Zip archive entry that is mishandled during extraction. This vulnerability is also known as 'Zip-Slip'.",
+          "epss_score": 0.00605,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "type": "single",
+      "title": "Can Infostealer hackers start acting up later?",
+      "url": "https://www.reddit.com/r/antivirus/comments/1t013a4/can_infostealer_hackers_start_acting_up_later/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-04-30T16:20:27+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
