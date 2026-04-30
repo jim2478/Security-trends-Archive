@@ -1,0 +1,28 @@
+{
+  "scan_time_kst": "2026-05-01T01:01:06.081638+09:00",
+  "stats": {
+    "total_articles": 1881,
+    "matched_articles": 172,
+    "new_alerts": 1,
+    "cve_count": 0,
+    "ioc_count": 0,
+    "dedup_count": 0,
+    "date_filtered": 153,
+    "merged_count": 0
+  },
+  "alerts": [
+    {
+      "type": "single",
+      "title": "Can infostealer malware infect .sav files?",
+      "url": "https://www.reddit.com/r/antivirus/comments/1t00hh6/can_infostealer_malware_infect_sav_files/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-04-30T15:59:17+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
