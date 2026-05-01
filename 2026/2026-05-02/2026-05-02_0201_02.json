@@ -1,0 +1,53 @@
+{
+  "scan_time_kst": "2026-05-02T02:01:13.685702+09:00",
+  "stats": {
+    "total_articles": 1881,
+    "matched_articles": 174,
+    "new_alerts": 2,
+    "cve_count": 1,
+    "ioc_count": 0,
+    "dedup_count": 0,
+    "date_filtered": 156,
+    "merged_count": 0
+  },
+  "alerts": [
+    {
+      "type": "single",
+      "title": "Federal agencies must patch cPanel bug by Sunday, CISA says",
+      "url": "https://therecord.media/cisa-orders-federal-agencies-to-patch-cpanel-bug",
+      "source": "The Record by Recorded Future (위협뉴스) [RSS]",
+      "published": "2026-05-01T16:20:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-41940"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-41940",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-306 (Missing Authentication)",
+          "description": "cPanel and WHM versions after 11.40 contain an authentication bypass vulnerability in the login flow that allows unauthenticated remote attackers to gain unauthorized access to the control panel.",
+          "epss_score": 0.28361,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "type": "single",
+      "title": "Cmd.exe pop up (am I just being paranoid?)",
+      "url": "https://www.reddit.com/r/antivirus/comments/1t0ywig/cmdexe_pop_up_am_i_just_being_paranoid/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-01T16:48:57+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
