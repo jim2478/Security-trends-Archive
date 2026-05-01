@@ -1,0 +1,28 @@
+{
+  "scan_time_kst": "2026-05-01T09:01:06.387829+09:00",
+  "stats": {
+    "total_articles": 1861,
+    "matched_articles": 168,
+    "new_alerts": 1,
+    "cve_count": 0,
+    "ioc_count": 0,
+    "dedup_count": 0,
+    "date_filtered": 156,
+    "merged_count": 0
+  },
+  "alerts": [
+    {
+      "type": "single",
+      "title": "Malicious Pop-Up “Verification” Scam",
+      "url": "https://www.reddit.com/r/antivirus/comments/1t0d6qd/malicious_popup_verification_scam/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-04-30T23:56:50+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
