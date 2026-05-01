@@ -1,0 +1,28 @@
+{
+  "scan_time_kst": "2026-05-01T20:00:47.743700+09:00",
+  "stats": {
+    "total_articles": 1881,
+    "matched_articles": 172,
+    "new_alerts": 1,
+    "cve_count": 0,
+    "ioc_count": 0,
+    "dedup_count": 0,
+    "date_filtered": 157,
+    "merged_count": 0
+  },
+  "alerts": [
+    {
+      "type": "single",
+      "title": "Staying safe from infologgers from sailing the seas?",
+      "url": "https://www.reddit.com/r/antivirus/comments/1t0p8y4/staying_safe_from_infologgers_from_sailing_the/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-01T10:12:21+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
