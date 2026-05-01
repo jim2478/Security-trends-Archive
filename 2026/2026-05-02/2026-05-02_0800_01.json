@@ -1,0 +1,28 @@
+{
+  "scan_time_kst": "2026-05-02T08:00:51.831058+09:00",
+  "stats": {
+    "total_articles": 1851,
+    "matched_articles": 174,
+    "new_alerts": 1,
+    "cve_count": 0,
+    "ioc_count": 0,
+    "dedup_count": 0,
+    "date_filtered": 159,
+    "merged_count": 0
+  },
+  "alerts": [
+    {
+      "type": "single",
+      "title": "ArcSight Threat Intelligence flags support google",
+      "url": "https://www.reddit.com/r/antivirus/comments/1t185ed/arcsight_threat_intelligence_flags_support_google/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-01T22:33:32+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
