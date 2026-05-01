@@ -1,0 +1,40 @@
+{
+  "scan_time_kst": "2026-05-01T10:00:50.209221+09:00",
+  "stats": {
+    "total_articles": 1881,
+    "matched_articles": 173,
+    "new_alerts": 1,
+    "cve_count": 1,
+    "ioc_count": 0,
+    "dedup_count": 0,
+    "date_filtered": 160,
+    "merged_count": 0
+  },
+  "alerts": [
+    {
+      "type": "single",
+      "title": "티오리 ‘진트 코드’, 리눅스 루트 권한 탈취 취약점 ‘CopyFail’ 발견",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=206555",
+      "source": "데일리시큐 (이슈) [RSS]",
+      "published": "2026-05-01T09:12:12+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-31431"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-31431",
+          "cvss_score": 7.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-669 (CWE-669)",
+          "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ncrypto: algif_aead - Revert to operating out-of-place\n\nThis mostly reverts commit 72548b093ee3 except for the copying of\nthe associated data.\n\nThere is no benefit in operating in-place in algif_aead since the\nsource and destination come from different mappings.  Get rid of\nall the complexity added for in-place operation and just copy the\nAD directly.",
+          "epss_score": 9e-05,
+          "kev": false
+        }
+      ]
+    }
+  ]
+}
