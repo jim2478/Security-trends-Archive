@@ -1,0 +1,54 @@
+{
+  "scan_time_kst": "2026-05-02T01:01:05.517072+09:00",
+  "stats": {
+    "total_articles": 1871,
+    "matched_articles": 170,
+    "new_alerts": 3,
+    "cve_count": 0,
+    "ioc_count": 0,
+    "dedup_count": 0,
+    "date_filtered": 154,
+    "merged_count": 0
+  },
+  "alerts": [
+    {
+      "type": "single",
+      "title": "Iran Hackers target Canonical Ubuntu Software with DDoS Attack",
+      "url": "https://www.cybersecurity-insiders.com/iran-hackers-target-canonical-ubuntu-software-with-ddos-attack/",
+      "source": "Cybersecurity Insiders (보안인사이트)",
+      "published": "2026-05-01T15:36:15+00:00",
+      "keywords": [
+        "DDoS"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "type": "single",
+      "title": "am i still compromised",
+      "url": "https://www.reddit.com/r/antivirus/comments/1t0wmps/am_i_still_compromised/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-01T15:27:52+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "type": "single",
+      "title": "This selfie background editor is a password-stealing trap",
+      "url": "https://cybernews.com/security/selfie-background-editor-password-stealing-trap/",
+      "source": "CyberNews [RSS]",
+      "published": "2026-05-01T15:08:53+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
