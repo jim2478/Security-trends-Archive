@@ -1,0 +1,40 @@
+{
+  "scan_time_kst": "2026-05-02T10:00:54.892377+09:00",
+  "stats": {
+    "total_articles": 1861,
+    "matched_articles": 173,
+    "new_alerts": 1,
+    "cve_count": 1,
+    "ioc_count": 0,
+    "dedup_count": 1,
+    "date_filtered": 157,
+    "merged_count": 0
+  },
+  "alerts": [
+    {
+      "type": "single",
+      "title": "세미콜론 하나에 뚫린 깃허브... AI가 찾아낸 역대급 RCE 취약점",
+      "url": "http://www.boannews.com/media/view.asp?idx=143463&kind=&sub_kind=",
+      "source": "보안뉴스 (전체) [RSS]",
+      "published": "2026-05-02T00:37:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-3854"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-3854",
+          "cvss_score": 8.7,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-77 (Command Injection)",
+          "description": "An improper neutralization of special elements vulnerability was identified in GitHub Enterprise Server that allowed an attacker with push access to a repository to achieve remote code execution on the instance. During a git push operation, user-supplied push option values were not properly sanitized before being included in internal service headers. Because the internal header format used a delimiter character that could also appear in user input, an attacker could inject additional metadata fi",
+          "epss_score": 0.00353,
+          "kev": false
+        }
+      ]
+    }
+  ]
+}
