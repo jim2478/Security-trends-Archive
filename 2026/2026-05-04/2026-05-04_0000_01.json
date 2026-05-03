@@ -1,0 +1,28 @@
+{
+  "scan_time_kst": "2026-05-04T00:00:49.743445+09:00",
+  "stats": {
+    "total_articles": 1831,
+    "matched_articles": 159,
+    "new_alerts": 1,
+    "cve_count": 0,
+    "ioc_count": 0,
+    "dedup_count": 0,
+    "date_filtered": 148,
+    "merged_count": 0
+  },
+  "alerts": [
+    {
+      "type": "single",
+      "title": "Telegram Mini Apps abused for crypto scams, Android malware delivery",
+      "url": "https://www.bleepingcomputer.com/news/security/telegram-mini-apps-abused-for-crypto-scams-android-malware-delivery/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-05-03T14:11:21+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
