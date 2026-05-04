@@ -1,0 +1,63 @@
+{
+  "scan_time_kst": "2026-05-05T00:01:48.605652+09:00",
+  "stats": {
+    "total_articles": 1901,
+    "matched_articles": 171,
+    "new_alerts": 2,
+    "cve_count": 2,
+    "ioc_count": 0,
+    "dedup_count": 1,
+    "date_filtered": 154,
+    "merged_count": 0
+  },
+  "alerts": [
+    {
+      "type": "single",
+      "title": "Critical MOVEit Automation auth bypass vulnerability fixed (CVE-2026-4670)",
+      "url": "https://www.helpnetsecurity.com/2026/05/04/critical-moveit-automation-auth-bypass-vulnerability-fixed-cve-2026-4670/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-05-04T14:58:24+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-4670",
+        "CVE-2026-5174"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-4670",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-305 (CWE-305)",
+          "description": "Authentication bypass by primary weakness vulnerability in Progress Software MOVEit Automation allows Authentication Bypass.\n\nThis issue affects MOVEit Automation: from 2025.0.0 before 2025.0.9, from 2024.0.0 before 2024.1.8, versions prior to 2024.0.0.",
+          "epss_score": 0.00074,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-5174",
+          "cvss_score": 7.7,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-20 (Improper Input Validation)",
+          "description": "Improper input validation vulnerability in Progress Software MOVEit Automation allows Privilege Escalation.\n\nThis issue affects MOVEit Automation: from 2025.1.0 before 2025.1.5, from 2025.0.0 before 2025.0.9, from 2024.0.0 before 2024.1.8, versions prior to 2024.0.0.",
+          "epss_score": 0.00059,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "type": "single",
+      "title": "Silver Fox Springs Tax-Themed Attacks on Orgs in India, Russia",
+      "url": "https://www.darkreading.com/endpoint-security/silver-fox-tax-themed-attacks-india-russia",
+      "source": "Dark Reading (보안뉴스 종합) [RSS]",
+      "published": "2026-05-04T11:35:44+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
