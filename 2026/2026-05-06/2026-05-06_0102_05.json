@@ -1,0 +1,126 @@
+{
+  "scan_time_kst": "2026-05-06T01:02:43.506711+09:00",
+  "stats": {
+    "total_articles": 1901,
+    "matched_articles": 162,
+    "new_alerts": 5,
+    "cve_count": 4,
+    "ioc_count": 0,
+    "dedup_count": 0,
+    "date_filtered": 137,
+    "merged_count": 0
+  },
+  "alerts": [
+    {
+      "type": "single",
+      "title": "The EOL Blind Spot in Your CVE Feed: What SCA Tools Don't Check.",
+      "url": "https://www.bleepingcomputer.com/news/security/the-eol-blind-spot-in-your-cve-feed-what-sca-tools-dont-check/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-05-05T14:00:10+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-22732"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-22732",
+          "cvss_score": 9.1,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-425 (CWE-425)",
+          "description": "When applications specify HTTP response headers for servlet applications using Spring Security, there is the possibility that the HTTP Headers will not be written. \nThis issue affects Spring Security Servlet applications using lazy (default) writing of HTTP Headers:\n\n: from 5.7.0 through 5.7.21, from 5.8.0 through 5.8.23, from 6.3.0 through 6.3.14, from 6.4.0 through 6.4.14, from 6.5.0 through 6.5.8, from 7.0.0 through 7.0.3.",
+          "epss_score": 0.00027,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "type": "single",
+      "title": "Unpatched flaws turn Ollama’s auto-updater into a persistent RCE vector, researchers say",
+      "url": "https://www.helpnetsecurity.com/2026/05/05/ollama-windows-vulnerabilities-cve-2026-42248-cve-2026-42249/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-05-05T15:24:09+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-42248",
+        "CVE-2026-42249"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-42248",
+          "cvss_score": 7.7,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-494 (CWE-494)",
+          "description": "Ollama for Windows does not perform integrity or authenticity verification of downloaded update executables. Unlike other platforms, the Windows implementation of the update verification routine unconditionally returns success so no digital signature or trust validation is performed before staging or executing update payloads, enabling attacker‑supplied executables to be accepted and later executed by the application.\n\nCritically, Ollama for Windows performs silent automatic updates, so the mali",
+          "epss_score": 9e-05,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-42249",
+          "cvss_score": 7.7,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-22 (Path Traversal)",
+          "description": "Ollama for Windows contains a Remote Code Execution vulnerability in its update mechanism due to improper handling of attacker‑controlled HTTP response headers. When downloading updates, the application constructs local file paths using values derived from HTTP headers without validation. These values are passed directly to filepath.Join, allowing path traversal sequences (../) to be resolved and enabling files to be written outside the intended update staging directory.\nAn attacker who can infl",
+          "epss_score": 0.00042,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "type": "single",
+      "title": "구글, 안드로이드 원격 코드 실행 취약점 패치…사용자 조작 없이 악용 가능",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=206594",
+      "source": "데일리시큐 (이슈) [RSS]",
+      "published": "2026-05-05T23:03:22+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-0073"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-0073",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-303 (CWE-303)",
+          "description": "In adbd_tls_verify_cert of auth.cpp, there is a possible bypass of wireless ADB mutual authentication due to a logic error in the code. This could lead to remote (proximal/adjacent) code execution as the shell user with no additional execution privileges needed. User interaction is not needed for exploitation.",
+          "epss_score": 0.00011,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "type": "single",
+      "title": "China-Linked UAT-8302 Targets Governments Using Shared APT Malware Across Regions",
+      "url": "https://thehackernews.com/2026/05/china-linked-uat-8302-targets.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-05-05T14:19:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "type": "single",
+      "title": "Multiple trojans and malware on computer. Also, are these large files safe to delete?",
+      "url": "https://www.reddit.com/r/antivirus/comments/1t4idtq/multiple_trojans_and_malware_on_computer_also_are/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-05T15:14:13+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
