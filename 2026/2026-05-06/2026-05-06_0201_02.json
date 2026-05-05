@@ -1,0 +1,53 @@
+{
+  "scan_time_kst": "2026-05-06T02:01:19.973088+09:00",
+  "stats": {
+    "total_articles": 1901,
+    "matched_articles": 163,
+    "new_alerts": 2,
+    "cve_count": 1,
+    "ioc_count": 0,
+    "dedup_count": 0,
+    "date_filtered": 140,
+    "merged_count": 0
+  },
+  "alerts": [
+    {
+      "type": "single",
+      "title": "Critical Apache HTTP/2 Flaw (CVE-2026-23918) Enables DoS and Potential RCE",
+      "url": "https://thehackernews.com/2026/05/critical-apache-http2-flaw-cve-2026.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-05-05T16:19:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-23918"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-23918",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-415 (CWE-415)",
+          "description": "Double Free and possible RCE vulnerability in Apache HTTP Server with the HTTP/2 protocol.\n\nThis issue affects Apache HTTP Server: 2.4.66.\n\nUsers are recommended to upgrade to version 2.4.67, which fixes the issue.",
+          "epss_score": 0.00061,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "type": "single",
+      "title": "DAEMON Tools Supply Chain Attack Compromises Official Installers with Malware",
+      "url": "https://thehackernews.com/2026/05/daemon-tools-supply-chain-attack.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-05-05T16:07:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
