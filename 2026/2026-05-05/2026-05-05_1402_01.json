@@ -1,0 +1,40 @@
+{
+  "scan_time_kst": "2026-05-05T14:02:24.156463+09:00",
+  "stats": {
+    "total_articles": 1891,
+    "matched_articles": 163,
+    "new_alerts": 1,
+    "cve_count": 1,
+    "ioc_count": 0,
+    "dedup_count": 0,
+    "date_filtered": 152,
+    "merged_count": 0
+  },
+  "alerts": [
+    {
+      "type": "single",
+      "title": "시패널 보안취약점, 공개 직후 정부·군·호스팅망 공격에 악용",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=206585",
+      "source": "데일리시큐 (이슈) [RSS]",
+      "published": "2026-05-05T13:36:24+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-41940"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-41940",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-306 (Missing Authentication)",
+          "description": "cPanel and WHM versions after 11.40 contain an authentication bypass vulnerability in the login flow that allows unauthenticated remote attackers to gain unauthorized access to the control panel.",
+          "epss_score": 0.28361,
+          "kev": true
+        }
+      ]
+    }
+  ]
+}
