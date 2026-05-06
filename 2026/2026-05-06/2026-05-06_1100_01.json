@@ -1,0 +1,28 @@
+{
+  "scan_time_kst": "2026-05-06T11:00:50.273525+09:00",
+  "stats": {
+    "total_articles": 1871,
+    "matched_articles": 166,
+    "new_alerts": 1,
+    "cve_count": 0,
+    "ioc_count": 0,
+    "dedup_count": 0,
+    "date_filtered": 149,
+    "merged_count": 0
+  },
+  "alerts": [
+    {
+      "type": "single",
+      "title": "trying to download piper-tts, i downloaded piper. is it malware? it was via pip, you can look at the source code from pypi",
+      "url": "https://www.reddit.com/r/antivirus/comments/1t4yymd/trying_to_download_pipertts_i_downloaded_piper_is/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-06T01:39:09+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
