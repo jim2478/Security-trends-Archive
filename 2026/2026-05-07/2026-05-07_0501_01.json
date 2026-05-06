@@ -1,0 +1,28 @@
+{
+  "scan_time_kst": "2026-05-07T05:01:16.404520+09:00",
+  "stats": {
+    "total_articles": 1891,
+    "matched_articles": 168,
+    "new_alerts": 1,
+    "cve_count": 0,
+    "ioc_count": 0,
+    "dedup_count": 0,
+    "date_filtered": 153,
+    "merged_count": 0
+  },
+  "alerts": [
+    {
+      "type": "single",
+      "title": "Could this program be malware? Suspicious behaviour in VirusTotal",
+      "url": "https://www.reddit.com/r/antivirus/comments/1t5n3ni/could_this_program_be_malware_suspicious/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-06T19:26:19+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
