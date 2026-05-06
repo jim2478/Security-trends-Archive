@@ -1,0 +1,40 @@
+{
+  "scan_time_kst": "2026-05-06T22:00:59.152327+09:00",
+  "stats": {
+    "total_articles": 1891,
+    "matched_articles": 170,
+    "new_alerts": 1,
+    "cve_count": 1,
+    "ioc_count": 0,
+    "dedup_count": 0,
+    "date_filtered": 154,
+    "merged_count": 0
+  },
+  "alerts": [
+    {
+      "type": "single",
+      "title": "Critical Buffer Overflow Vulnerability in PAN-OS Exploited in-the-Wild",
+      "url": "https://www.wiz.io/blog/critical-vulnerability-in-pan-os-exploited-in-the-wild-cve-2026-0300",
+      "source": "Wiz Blog (클라우드보안) [RSS]",
+      "published": "2026-05-06T12:33:26+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-0300"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-0300",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    }
+  ]
+}
