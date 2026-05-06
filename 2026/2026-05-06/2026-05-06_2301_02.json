@@ -1,0 +1,41 @@
+{
+  "scan_time_kst": "2026-05-06T23:01:12.764906+09:00",
+  "stats": {
+    "total_articles": 1871,
+    "matched_articles": 171,
+    "new_alerts": 2,
+    "cve_count": 0,
+    "ioc_count": 32,
+    "dedup_count": 1,
+    "date_filtered": 153,
+    "merged_count": 0
+  },
+  "alerts": [
+    {
+      "type": "single",
+      "title": "OceanLotus suspected of using PyPI to deliver ZiChatBot malware",
+      "url": "https://securelist.com/oceanlotus-suspected-pypi-zichatbot-campaign/119603/",
+      "source": "Kaspersky Securelist (위협분석) [RSS]",
+      "published": "2026-05-06T13:00:34+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "Additional information about this activity, including indicators of compromise, is available to customers of the\nKaspersky Intelligence Reporting Service\n. If you are interested, please contact\nintelreports@kaspersky.com\nMalicious wheel packages\ntermncolor-3.1.0-py3-none-any.whl\n5152410aeef667ffaf42d40746af4d84\nuuid32_utils-1.x.x-py3-none-xxxx.whl\n0a5a06fa2e74a57fd5ed8e85f04a483a\ne4a0ad38fd18a0e11199d1c52751908b\n5598baa59c716590d8841c6312d8349e\n968782b4feb4236858e3253f77ecf4b0\nb55b6e364be44f27e3fecdce5ad69eca\n02f4701559fc40067e69bb426776a54f\ne200f2f6a2120286f9056743bc94a49d\n22538214a3c917ff3b13a9e2035ca521\ncolorinal-0.1.7-py3-none-xxxx.whl\nba2f1868f2af9e191ebf47a5fab5cbab\nDropper for ZiChatBot\nBackward.dll\nc33782c94c29dd268a42cbe03542bca5\n454b85dc32dc8023cd2be04e4501f16a\nBackward.so\nfce65c540d8186d9506e2f84c38a57c4\n652f4da6c467838957de19eed40d39da\nterminate.dll\n1995682d600e329b7833003a01609252\nterminate.so\n38b75af6cbdb60127decd59140d10640\nZiChatBot\nlibcef.dll\na26019b68ef060e593b8651262cbd0f6",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "type": "single",
+      "title": "Someone accessed my discord and ran that stupid Mr beast scam",
+      "url": "https://www.reddit.com/r/antivirus/comments/1t5ct7s/someone_accessed_my_discord_and_ran_that_stupid/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-06T13:22:49+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
