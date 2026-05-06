@@ -1,0 +1,53 @@
+{
+  "scan_time_kst": "2026-05-06T17:00:58.170466+09:00",
+  "stats": {
+    "total_articles": 1891,
+    "matched_articles": 171,
+    "new_alerts": 2,
+    "cve_count": 1,
+    "ioc_count": 0,
+    "dedup_count": 0,
+    "date_filtered": 155,
+    "merged_count": 0
+  },
+  "alerts": [
+    {
+      "type": "single",
+      "title": "Palo Alto PAN-OS Flaw Under Active Exploitation Enables Remote Code Execution",
+      "url": "https://thehackernews.com/2026/05/palo-alto-pan-os-flaw-under-active.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-05-06T06:14:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-0300"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-0300",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "type": "single",
+      "title": "Massive “Low and Slow” DDoS Attack Hits Platform With 2.45 Billion in 5 Hours",
+      "url": "https://hackread.com/low-and-slow-ddos-attack-hits-2-45-billion-5-hours/",
+      "source": "HackRead (해킹/데이터유출) [RSS]",
+      "published": "2026-05-06T07:59:56+00:00",
+      "keywords": [
+        "DDoS"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
