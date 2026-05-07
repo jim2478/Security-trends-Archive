@@ -1,0 +1,40 @@
+{
+  "scan_time_kst": "2026-05-08T00:01:15.360327+09:00",
+  "stats": {
+    "total_articles": 1891,
+    "matched_articles": 170,
+    "new_alerts": 1,
+    "cve_count": 1,
+    "ioc_count": 0,
+    "dedup_count": 0,
+    "date_filtered": 155,
+    "merged_count": 0
+  },
+  "alerts": [
+    {
+      "type": "single",
+      "title": "Bypassing Bitlocker under 5 min using downgrade attack on CVE-2025-48804",
+      "url": "https://www.reddit.com/r/netsec/comments/1t6cfwx/bypassing_bitlocker_under_5_min_using_downgrade/",
+      "source": "Reddit r/netsec (보안커뮤니티) [RSS]",
+      "published": "2026-05-07T14:37:36+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2025-48804"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2025-48804",
+          "cvss_score": 6.8,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-349 (CWE-349)",
+          "description": "Acceptance of extraneous untrusted data with trusted data in Windows BitLocker allows an unauthorized attacker to bypass a security feature with a physical attack.",
+          "epss_score": 0.00455,
+          "kev": false
+        }
+      ]
+    }
+  ]
+}
