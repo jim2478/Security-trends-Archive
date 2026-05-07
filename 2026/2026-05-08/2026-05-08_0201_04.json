@@ -1,0 +1,103 @@
+{
+  "scan_time_kst": "2026-05-08T02:01:19.928408+09:00",
+  "stats": {
+    "total_articles": 1876,
+    "matched_articles": 160,
+    "new_alerts": 4,
+    "cve_count": 3,
+    "ioc_count": 0,
+    "dedup_count": 0,
+    "date_filtered": 143,
+    "merged_count": 0
+  },
+  "alerts": [
+    {
+      "type": "single",
+      "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/05/07/cisa-adds-one-known-exploited-vulnerability-catalog",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-05-07T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-6973"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-6973",
+          "cvss_score": 7.2,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-20 (Improper Input Validation)",
+          "description": "An Improper Input Validation in Ivanti EPMM before versions 12.6.1.1, 12.7.0.1, and 12.8.0.1 allows a remotely authenticated user with administrative access to achieve remote code execution.",
+          "epss_score": null,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "type": "single",
+      "title": "MAXHUB Pivot Client Application",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-127-01",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-05-07T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-6411"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-6411",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "type": "single",
+      "title": "CVE-2026-42511 Breakdown: RCE in FreeBSD",
+      "url": "https://www.reddit.com/r/netsec/comments/1t6fsfr/cve202642511_breakdown_rce_in_freebsd/",
+      "source": "Reddit r/netsec (보안커뮤니티) [RSS]",
+      "published": "2026-05-07T16:34:50+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-42511"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-42511",
+          "cvss_score": 8.1,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-149 (CWE-149)",
+          "description": "The BOOTP file field is written to the lease file without escaping embedded double-quotes, allowing injection of arbitrary dhclient.conf directives.  When the lease file is subsequently re-parsed by dhclient, e.g., after a system restart, an attacker-controlled field from the lease is passed to dhclient-script(8), which evaluates it.\n\nA rogue DHCP server may be able to execute arbirary code as root on a system running dhclient.",
+          "epss_score": 0.00059,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "type": "single",
+      "title": "I got a trojan anyone can help ?",
+      "url": "https://www.reddit.com/r/antivirus/comments/1t6f7cy/i_got_a_trojan_anyone_can_help/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-07T16:14:11+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
