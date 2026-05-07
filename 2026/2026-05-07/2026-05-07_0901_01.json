@@ -1,0 +1,28 @@
+{
+  "scan_time_kst": "2026-05-07T09:01:22.871802+09:00",
+  "stats": {
+    "total_articles": 1851,
+    "matched_articles": 167,
+    "new_alerts": 1,
+    "cve_count": 0,
+    "ioc_count": 0,
+    "dedup_count": 0,
+    "date_filtered": 152,
+    "merged_count": 0
+  },
+  "alerts": [
+    {
+      "type": "single",
+      "title": "downloaded wrong pip package, is it malware?",
+      "url": "https://www.reddit.com/r/antivirus/comments/1t5u5uq/downloaded_wrong_pip_package_is_it_malware/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-06T23:54:44+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
