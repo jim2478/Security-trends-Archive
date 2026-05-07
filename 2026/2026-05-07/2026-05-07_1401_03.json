@@ -1,0 +1,54 @@
+{
+  "scan_time_kst": "2026-05-07T14:01:04.257280+09:00",
+  "stats": {
+    "total_articles": 1871,
+    "matched_articles": 167,
+    "new_alerts": 3,
+    "cve_count": 0,
+    "ioc_count": 0,
+    "dedup_count": 0,
+    "date_filtered": 148,
+    "merged_count": 0
+  },
+  "alerts": [
+    {
+      "type": "single",
+      "title": "What next after erasing drive for potential malware?",
+      "url": "https://www.reddit.com/r/antivirus/comments/1t60p4s/what_next_after_erasing_drive_for_potential/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-07T04:59:20+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "type": "single",
+      "title": "My bank says there is malware on my phone. What do I do?",
+      "url": "https://www.reddit.com/r/antivirus/comments/1t60h3q/my_bank_says_there_is_malware_on_my_phone_what_do/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-07T04:47:38+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "type": "single",
+      "title": "모니터랩, ‘AILabs 위협 보고서’ 개편... 사후 대처 넘어 선제적 방어 조준",
+      "url": "http://www.boannews.com/media/view.asp?idx=143512&kind=&sub_kind=",
+      "source": "보안뉴스 (전체) [RSS]",
+      "published": "2026-05-07T04:10:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
