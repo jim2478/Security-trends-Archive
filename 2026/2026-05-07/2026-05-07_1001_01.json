@@ -1,0 +1,40 @@
+{
+  "scan_time_kst": "2026-05-07T10:01:00.023074+09:00",
+  "stats": {
+    "total_articles": 1891,
+    "matched_articles": 167,
+    "new_alerts": 1,
+    "cve_count": 1,
+    "ioc_count": 11,
+    "dedup_count": 0,
+    "date_filtered": 151,
+    "merged_count": 0
+  },
+  "alerts": [
+    {
+      "type": "single",
+      "title": "Threat Brief: Exploitation of PAN-OS Captive Portal Zero-Day for Unauthenticated Remote Code Execution",
+      "url": "https://unit42.paloaltonetworks.com/captive-portal-zero-day/",
+      "source": "Palo Alto Unit42 (위협리서치) [RSS]",
+      "published": "2026-05-07T00:00:53+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "67.206.213[.]86\n136.0.8[.]48\n146.70.100[.]69 (C2 Staging)\n149.104.66[.]84\nhxxp[:]//146.70.100[.]69:8000/php_sess (EarthWorm Download)\nhxxps[:]//github[.]com/Acebond/ReverseSocks5/releases/download/v2.2.0/ReverseSocks5-v2.2.0-linux-amd64.tar[.]gz (ReverseSocks5 Download)\ne11f69b49b6f2e829454371c31ebf86893f82a042dae3f2faf63dcd84f97a584 (EarthWorm)\nSafari/532.31 Mozilla/5.5 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0 (Attacker User Agent String)\n/var/tmp/linuxap, /var/tmp/linuxda, /var/tmp/linuxupdate (Tunneling Tools)\n/tmp/.c (Unidentified Python Script)\n/tmp/R5, /var/R5 (ReverseSocks5)",
+      "cve_ids": [
+        "CVE-2026-0300"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-0300",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-787 (Out-of-bounds Write)",
+          "description": "A buffer overflow vulnerability in the User-ID™ Authentication Portal (aka Captive Portal) service of Palo Alto Networks PAN-OS software allows an unauthenticated attacker to execute arbitrary code with root privileges on the PA-Series and VM-Series firewalls by sending specially crafted packets. \n\nThe risk of this issue is greatly reduced if you secure access to the User-ID™ Authentication Portal per the  best practice guidelines https://knowledgebase.paloaltonetworks.com/KCSArticleDetail  by r",
+          "epss_score": null,
+          "kev": true
+        }
+      ]
+    }
+  ]
+}
