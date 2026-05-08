@@ -1,0 +1,63 @@
+{
+  "scan_time_kst": "2026-05-09T00:03:13.447413+09:00",
+  "stats": {
+    "total_articles": 1886,
+    "matched_articles": 170,
+    "new_alerts": 2,
+    "cve_count": 2,
+    "ioc_count": 0,
+    "dedup_count": 1,
+    "date_filtered": 153,
+    "merged_count": 0
+  },
+  "alerts": [
+    {
+      "type": "single",
+      "title": "Dirty Frag: Unpatched Linux vulnerability delivers root access",
+      "url": "https://www.helpnetsecurity.com/2026/05/08/dirty-frag-linux-vulnerability-cve-2026-43284-cve-2026-43500/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-05-08T14:13:04+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-43284",
+        "CVE-2026-43500"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-43284",
+          "cvss_score": 7.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-416 (Use After Free)",
+          "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nxfrm: esp: avoid in-place decrypt on shared skb frags\n\nMSG_SPLICE_PAGES can attach pages from a pipe directly to an skb. TCP\nmarks such skbs with SKBFL_SHARED_FRAG after skb_splice_from_iter(),\nso later paths that may modify packet data can first make a private\ncopy. The IPv4/IPv6 datagram append paths did not set this flag when\nsplicing pages into UDP skbs.\n\nThat leaves an ESP-in-UDP packet made from shared pipe pages looking\n",
+          "epss_score": 0.00014,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-43500",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "type": "single",
+      "title": "In Other News: Train Hacker Arrested, PamDOORa Linux Backdoor, New CISA Director Frontrunner",
+      "url": "https://www.securityweek.com/in-other-news-train-hacker-arrested-pamdoora-linux-backdoor-new-cisa-director-frontrunner/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-05-08T14:30:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
