@@ -1,0 +1,118 @@
+{
+  "scan_time_kst": "2026-05-08T18:03:28.923073+09:00",
+  "stats": {
+    "total_articles": 1886,
+    "matched_articles": 169,
+    "new_alerts": 3,
+    "cve_count": 6,
+    "ioc_count": 0,
+    "dedup_count": 1,
+    "date_filtered": 149,
+    "merged_count": 0
+  },
+  "alerts": [
+    {
+      "type": "single",
+      "title": "‘PCPJack’ Worm Removes TeamPCP Infections, Steals Credentials",
+      "url": "https://www.securityweek.com/pcpjack-worm-removes-teampcp-infections-steals-credentials/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-05-08T08:32:34+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2025-29927",
+        "CVE-2025-48703",
+        "CVE-2025-55182",
+        "CVE-2025-9501",
+        "CVE-2026-1357"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2025-29927",
+          "cvss_score": 9.1,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-863 (CWE-863)",
+          "description": "Next.js is a React framework for building full-stack web applications. Starting in version 1.11.4 and prior to versions 12.3.5, 13.5.9, 14.2.25, and 15.2.3, it is possible to bypass authorization checks within a Next.js application, if the authorization check occurs in middleware. If patching to a safe version is infeasible, it is recommend that you prevent external user requests which contain the x-middleware-subrequest header from reaching your Next.js application. This vulnerability is fixed ",
+          "epss_score": 0.92118,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2025-48703",
+          "cvss_score": 9.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-78 (OS Command Injection)",
+          "description": "CWP (aka Control Web Panel or CentOS Web Panel) before 0.9.8.1205 allows unauthenticated remote code execution via shell metacharacters in the t_total parameter in a filemanager changePerm request. A valid non-root username must be known.",
+          "epss_score": 0.62018,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2025-55182",
+          "cvss_score": 10.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-502 (Deserialization)",
+          "description": "A pre-authentication remote code execution vulnerability exists in React Server Components versions 19.0.0, 19.1.0, 19.1.1, and 19.2.0 including the following packages: react-server-dom-parcel, react-server-dom-turbopack, and react-server-dom-webpack. The vulnerable code unsafely deserializes payloads from HTTP requests to Server Function endpoints.",
+          "epss_score": 0.82011,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2025-9501",
+          "cvss_score": 9.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": null,
+          "description": "The W3 Total Cache WordPress plugin before 2.8.13 is vulnerable to command injection via the _parse_dynamic_mfunc function, allowing unauthenticated users to execute PHP commands by submitting a comment with a malicious payload to a post.",
+          "epss_score": 0.03796,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-1357",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-434 (Unrestricted File Upload)",
+          "description": "The Migration, Backup, Staging – WPvivid Backup & Migration plugin for WordPress is vulnerable to Unauthenticated Arbitrary File Upload in versions up to and including 0.9.123. This is due to improper error handling in the RSA decryption process combined with a lack of path sanitization when writing uploaded files. When the plugin fails to decrypt a session key using openssl_private_decrypt(), it does not terminate execution and instead passes the boolean false value to the phpseclib library's A",
+          "epss_score": 0.22419,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "type": "single",
+      "title": "CVE-2025-68670: discovering an RCE vulnerability in xrdp",
+      "url": "https://securelist.com/cve-2025-68670/119742/",
+      "source": "Kaspersky Securelist (위협분석) [RSS]",
+      "published": "2026-05-08T08:00:54+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2025-68670"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2025-68670",
+          "cvss_score": 9.1,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-787 (Out-of-bounds Write)",
+          "description": "xrdp is an open source RDP server. xrdp before v0.10.5 contains an unauthenticated stack-based buffer overflow vulnerability. The issue stems from improper bounds checking when processing user domain information during the connection sequence. If exploited, the vulnerability could allow remote attackers to execute arbitrary code on the target system. The vulnerability allows an attacker to overwrite the stack buffer and the return address, which could theoretically be used to redirect the execut",
+          "epss_score": 0.00123,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "type": "single",
+      "title": "Got hit with a LummaStealer32 couple days ago, here to check and see if I have any other holes to cover",
+      "url": "https://www.reddit.com/r/antivirus/comments/1t720yt/got_hit_with_a_lummastealer32_couple_days_ago/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-08T08:41:05+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
