@@ -1,0 +1,28 @@
+{
+  "scan_time_kst": "2026-05-09T18:03:06.357377+09:00",
+  "stats": {
+    "total_articles": 1866,
+    "matched_articles": 173,
+    "new_alerts": 1,
+    "cve_count": 0,
+    "ioc_count": 0,
+    "dedup_count": 1,
+    "date_filtered": 159,
+    "merged_count": 0
+  },
+  "alerts": [
+    {
+      "type": "single",
+      "title": "아이반티 EPMM 제로데이 취약점 악용 확인…관리자 계정 점검 시급",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=206644",
+      "source": "데일리시큐 (IT&생활) [RSS]",
+      "published": "2026-05-09T08:38:32+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
