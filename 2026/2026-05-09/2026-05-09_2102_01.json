@@ -1,0 +1,28 @@
+{
+  "scan_time_kst": "2026-05-09T21:02:59.527919+09:00",
+  "stats": {
+    "total_articles": 1886,
+    "matched_articles": 173,
+    "new_alerts": 1,
+    "cve_count": 0,
+    "ioc_count": 0,
+    "dedup_count": 0,
+    "date_filtered": 160,
+    "merged_count": 0
+  },
+  "alerts": [
+    {
+      "type": "single",
+      "title": "Scanners, antimalwares, etc feel like they're just trying to get me to subscribe to more stuff. Dunno what to do.",
+      "url": "https://www.reddit.com/r/antivirus/comments/1t8272a/scanners_antimalwares_etc_feel_like_theyre_just/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-09T11:17:30+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
