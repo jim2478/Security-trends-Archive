@@ -1,0 +1,28 @@
+{
+  "scan_time_kst": "2026-05-10T07:02:55.351184+09:00",
+  "stats": {
+    "total_articles": 1877,
+    "matched_articles": 178,
+    "new_alerts": 1,
+    "cve_count": 0,
+    "ioc_count": 0,
+    "dedup_count": 0,
+    "date_filtered": 161,
+    "merged_count": 0
+  },
+  "alerts": [
+    {
+      "type": "single",
+      "title": "How bad is it ?",
+      "url": "https://www.reddit.com/r/antivirus/comments/1t8ng52/how_bad_is_it/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-09T21:20:57+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
