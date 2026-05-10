@@ -1,0 +1,66 @@
+{
+  "scan_time_kst": "2026-05-11T02:03:06.747793+09:00",
+  "stats": {
+    "total_articles": 1877,
+    "matched_articles": 180,
+    "new_alerts": 3,
+    "cve_count": 1,
+    "ioc_count": 0,
+    "dedup_count": 0,
+    "date_filtered": 166,
+    "merged_count": 0
+  },
+  "alerts": [
+    {
+      "type": "single",
+      "title": "Hackers Trick DigiCert Into Issuing Certificates Used to Sign Malware",
+      "url": "https://hackread.com/hackers-digicert-issue-certificates-sign-malware/",
+      "source": "HackRead (해킹/데이터유출) [RSS]",
+      "published": "2026-05-10T16:53:52+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2025-0994"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2025-0994",
+          "cvss_score": 8.6,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-502 (Deserialization)",
+          "description": "Trimble Cityworks versions prior to 15.8.9 and Cityworks with office companion versions prior to 23.10 are vulnerable to a deserialization vulnerability. This could allow an authenticated user to perform a remote code execution attack against a customer’s Microsoft Internet Information Services (IIS) web server.",
+          "epss_score": 0.74864,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "type": "single",
+      "title": "Bitdefender removed a threat. Am I safe?",
+      "url": "https://www.reddit.com/r/antivirus/comments/1t9cdct/bitdefender_removed_a_threat_am_i_safe/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-10T16:59:10+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "type": "single",
+      "title": "Playing a Private Server game, Kaspersky detected a suspicious file (after weeks (?)) called \"UDS:Trojan.Win32.Agent.xcdvky",
+      "url": "https://www.reddit.com/r/antivirus/comments/1t9atno/playing_a_private_server_game_kaspersky_detected/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-10T16:00:39+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
