@@ -1,0 +1,28 @@
+{
+  "scan_time_kst": "2026-05-10T12:03:03.154277+09:00",
+  "stats": {
+    "total_articles": 1887,
+    "matched_articles": 181,
+    "new_alerts": 1,
+    "cve_count": 0,
+    "ioc_count": 0,
+    "dedup_count": 0,
+    "date_filtered": 170,
+    "merged_count": 0
+  },
+  "alerts": [
+    {
+      "type": "single",
+      "title": "i got sent well over 50k emails saying that everything on my pc would be leaked after 3 hours of me opening the email, are they serious??",
+      "url": "https://www.reddit.com/r/antivirus/comments/1t8umo6/i_got_sent_well_over_50k_emails_saying_that/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-10T02:42:37+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
