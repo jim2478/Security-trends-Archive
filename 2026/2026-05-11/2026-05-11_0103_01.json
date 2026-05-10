@@ -1,0 +1,28 @@
+{
+  "scan_time_kst": "2026-05-11T01:03:00.791636+09:00",
+  "stats": {
+    "total_articles": 1857,
+    "matched_articles": 178,
+    "new_alerts": 1,
+    "cve_count": 0,
+    "ioc_count": 0,
+    "dedup_count": 0,
+    "date_filtered": 166,
+    "merged_count": 0
+  },
+  "alerts": [
+    {
+      "type": "single",
+      "title": "Accidently downloaded PC APP STORE malware",
+      "url": "https://www.reddit.com/r/antivirus/comments/1t9akkt/accidently_downloaded_pc_app_store_malware/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-10T15:50:59+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
