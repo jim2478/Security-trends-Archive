@@ -1,0 +1,40 @@
+{
+  "scan_time_kst": "2026-05-10T19:03:03.448356+09:00",
+  "stats": {
+    "total_articles": 1877,
+    "matched_articles": 181,
+    "new_alerts": 1,
+    "cve_count": 1,
+    "ioc_count": 0,
+    "dedup_count": 0,
+    "date_filtered": 168,
+    "merged_count": 0
+  },
+  "alerts": [
+    {
+      "type": "single",
+      "title": "The compression of the exploit timeline: Why n-day gaps and 90-day embargoes are failing in practice.",
+      "url": "https://www.reddit.com/r/netsec/comments/1t92jb3/the_compression_of_the_exploit_timeline_why_nday/",
+      "source": "Reddit r/netsec (보안커뮤니티) [RSS]",
+      "published": "2026-05-10T09:46:46+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-23870"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-23870",
+          "cvss_score": 7.5,
+          "cvss_severity": "HIGH",
+          "cwe": null,
+          "description": "A denial of service vulnerability could be triggered by sending specially crafted HTTP requests to server function endpoints, this could lead to server crashes, out-of-memory exceptions or excessive CPU usage; affecting the following packages: react-server-dom-webpack, react-server-dom-parcel, react-server-dom-turbopack (versions 19.0.0 through 19.0.5, 19.1.0 through 19.1.6, and 19.2.0 through 19.2.5).",
+          "epss_score": 0.00322,
+          "kev": false
+        }
+      ]
+    }
+  ]
+}
