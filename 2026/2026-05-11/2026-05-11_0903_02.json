@@ -1,0 +1,41 @@
+{
+  "scan_time_kst": "2026-05-11T09:03:08.269919+09:00",
+  "stats": {
+    "total_articles": 1877,
+    "matched_articles": 179,
+    "new_alerts": 2,
+    "cve_count": 0,
+    "ioc_count": 0,
+    "dedup_count": 0,
+    "date_filtered": 169,
+    "merged_count": 0
+  },
+  "alerts": [
+    {
+      "type": "single",
+      "title": "20 year old file that may or may not be malware?? False positives??",
+      "url": "https://www.reddit.com/r/antivirus/comments/1t9muro/20_year_old_file_that_may_or_may_not_be_malware/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-10T23:51:24+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "type": "single",
+      "title": "Mythos, MOAK, CTEM and the End of CVE Chasing",
+      "url": "https://www.reddit.com/r/netsec/comments/1t9lzm9/mythos_moak_ctem_and_the_end_of_cve_chasing/",
+      "source": "Reddit r/netsec (보안커뮤니티) [RSS]",
+      "published": "2026-05-10T23:13:22+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
