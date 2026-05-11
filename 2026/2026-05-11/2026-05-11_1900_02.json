@@ -1,0 +1,41 @@
+{
+  "scan_time_kst": "2026-05-11T19:00:59.837261+09:00",
+  "stats": {
+    "total_articles": 1892,
+    "matched_articles": 189,
+    "new_alerts": 2,
+    "cve_count": 0,
+    "ioc_count": 0,
+    "dedup_count": 0,
+    "date_filtered": 175,
+    "merged_count": 0
+  },
+  "alerts": [
+    {
+      "type": "single",
+      "title": "TrickMo Android banker adopts TON blockchain for covert comms",
+      "url": "https://www.bleepingcomputer.com/news/security/trickmo-android-banker-adopts-ton-blockchain-for-covert-comms/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-05-11T09:03:02+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "type": "single",
+      "title": "Pc Virus Help",
+      "url": "https://www.reddit.com/r/antivirus/comments/1t9yidt/pc_virus_help/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-11T09:48:34+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
