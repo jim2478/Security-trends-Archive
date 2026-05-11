@@ -1,0 +1,28 @@
+{
+  "scan_time_kst": "2026-05-12T02:01:05.518700+09:00",
+  "stats": {
+    "total_articles": 1852,
+    "matched_articles": 175,
+    "new_alerts": 1,
+    "cve_count": 0,
+    "ioc_count": 0,
+    "dedup_count": 0,
+    "date_filtered": 163,
+    "merged_count": 0
+  },
+  "alerts": [
+    {
+      "type": "single",
+      "title": "MacOS flags ChatGPT as Malware and moves it to Bin",
+      "url": "https://www.cybersecurity-insiders.com/macos-flags-chatgpt-as-malware-and-moves-it-to-bin/",
+      "source": "Cybersecurity Insiders (보안인사이트)",
+      "published": "2026-05-11T15:22:28+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
