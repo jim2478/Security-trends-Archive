@@ -1,0 +1,28 @@
+{
+  "scan_time_kst": "2026-05-13T07:00:56.256461+09:00",
+  "stats": {
+    "total_articles": 1852,
+    "matched_articles": 166,
+    "new_alerts": 1,
+    "cve_count": 0,
+    "ioc_count": 0,
+    "dedup_count": 0,
+    "date_filtered": 152,
+    "merged_count": 0
+  },
+  "alerts": [
+    {
+      "type": "single",
+      "title": "I did a Malwarebytes scan and got 2 files flagged for malware",
+      "url": "https://www.reddit.com/r/antivirus/comments/1tbfgth/i_did_a_malwarebytes_scan_and_got_2_files_flagged/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-12T21:32:21+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
