@@ -1,0 +1,28 @@
+{
+  "scan_time_kst": "2026-05-13T08:01:01.261227+09:00",
+  "stats": {
+    "total_articles": 1852,
+    "matched_articles": 167,
+    "new_alerts": 1,
+    "cve_count": 0,
+    "ioc_count": 0,
+    "dedup_count": 0,
+    "date_filtered": 153,
+    "merged_count": 0
+  },
+  "alerts": [
+    {
+      "type": "single",
+      "title": "Fedora Hummingbird brings the container security model to a Linux host OS",
+      "url": "https://www.helpnetsecurity.com/2026/05/13/fedora-hummingbird-linux/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-05-12T22:30:26+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
