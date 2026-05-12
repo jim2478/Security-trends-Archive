@@ -1,0 +1,53 @@
+{
+  "scan_time_kst": "2026-05-13T03:01:01.909319+09:00",
+  "stats": {
+    "total_articles": 1852,
+    "matched_articles": 166,
+    "new_alerts": 2,
+    "cve_count": 1,
+    "ioc_count": 0,
+    "dedup_count": 0,
+    "date_filtered": 149,
+    "merged_count": 0
+  },
+  "alerts": [
+    {
+      "type": "single",
+      "title": "Dead.Letter (CVE-2026-45185) How XBOW found an unauthenticated RCE on Exim",
+      "url": "https://www.reddit.com/r/netsec/comments/1tb8vj3/deadletter_cve202645185_how_xbow_found_an/",
+      "source": "Reddit r/netsec (보안커뮤니티) [RSS]",
+      "published": "2026-05-12T17:41:33+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-45185"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-45185",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "type": "single",
+      "title": "Fake Claude Code Installer Targets Developers With Browser Credential Stealer",
+      "url": "https://hackread.com/fake-claude-code-installer-devs-browser-credential-stealer/",
+      "source": "HackRead (해킹/데이터유출) [RSS]",
+      "published": "2026-05-12T17:47:36+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
