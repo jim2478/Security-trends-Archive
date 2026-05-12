@@ -1,0 +1,190 @@
+{
+  "scan_time_kst": "2026-05-13T00:01:33.065602+09:00",
+  "stats": {
+    "total_articles": 1842,
+    "matched_articles": 166,
+    "new_alerts": 5,
+    "cve_count": 10,
+    "ioc_count": 0,
+    "dedup_count": 0,
+    "date_filtered": 146,
+    "merged_count": 0
+  },
+  "alerts": [
+    {
+      "type": "single",
+      "title": "ABB AC500 V3 Stack Buffer Overflow in Cryptographic Message Syntax",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-132-05",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-05-12T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2025-15467"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2025-15467",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-787 (Out-of-bounds Write)",
+          "description": "Issue summary: Parsing CMS AuthEnvelopedData or EnvelopedData message with\nmaliciously crafted AEAD parameters can trigger a stack buffer overflow.\n\nImpact summary: A stack buffer overflow may lead to a crash, causing Denial\nof Service, or potentially remote code execution.\n\nWhen parsing CMS (Auth)EnvelopedData structures that use AEAD ciphers such as\nAES-GCM, the IV (Initialization Vector) encoded in the ASN.1 parameters is\ncopied into a fixed-size stack buffer without verifying that its length",
+          "epss_score": 0.02099,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "type": "single",
+      "title": "Subnet Solutions PowerSYSTEM Center",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-132-02",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-05-12T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-26289",
+        "CVE-2026-33570",
+        "CVE-2026-35504",
+        "CVE-2026-35555"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-26289",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-33570",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-35504",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-35555",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "type": "single",
+      "title": "ABB AC500 V3 Multiple Vulnerabilities",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-132-03",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-05-12T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2025-2595",
+        "CVE-2025-41659",
+        "CVE-2025-41691"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2025-2595",
+          "cvss_score": 5.3,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-425 (CWE-425)",
+          "description": "An unauthenticated remote attacker can bypass the user management in CODESYS Visualization and read visualization template files or static elements by means of forced browsing.",
+          "epss_score": 0.00155,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2025-41659",
+          "cvss_score": 8.3,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-732 (CWE-732)",
+          "description": "A low-privileged attacker can remotely access the PKI folder of the CODESYS Control runtime system and thus read and write certificates and its keys. This allows sensitive data to be extracted or to accept certificates as trusted. Although all services remain available, only unencrypted communication is possible if the certificates are deleted.",
+          "epss_score": 0.00054,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2025-41691",
+          "cvss_score": 7.5,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-476 (CWE-476)",
+          "description": "An unauthenticated remote attacker may trigger a NULL pointer dereference in the affected CODESYS Control runtime systems by sending specially crafted communication requests, potentially leading to a denial-of-service (DoS) condition.",
+          "epss_score": 0.00154,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "type": "single",
+      "title": "ABB Automation Builder Gateway for Windows",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-132-04",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-05-12T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2024-41975"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2024-41975",
+          "cvss_score": 5.3,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-1188 (CWE-1188)",
+          "description": "An unauthenticated remote attacker can gain limited information of the PLC network but the user management of the PLCs prevents the actual access to the PLCs.",
+          "epss_score": 0.00387,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "type": "single",
+      "title": "Fuji Electric Tellus",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-132-01",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-05-12T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-8108"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-8108",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    }
+  ]
+}
