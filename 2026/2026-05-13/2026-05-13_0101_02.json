@@ -1,0 +1,41 @@
+{
+  "scan_time_kst": "2026-05-13T01:01:03.509797+09:00",
+  "stats": {
+    "total_articles": 1852,
+    "matched_articles": 169,
+    "new_alerts": 2,
+    "cve_count": 0,
+    "ioc_count": 0,
+    "dedup_count": 1,
+    "date_filtered": 148,
+    "merged_count": 0
+  },
+  "alerts": [
+    {
+      "type": "single",
+      "title": "ThreatDown ITDR prevents credential-based attacks",
+      "url": "https://www.helpnetsecurity.com/2026/05/12/threatdown-identity-threat-detection-and-response-itdr/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-05-12T15:21:56+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "type": "single",
+      "title": "Undermining the trust boundary: Investigating a stealthy intrusion through third-party compromise",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/05/12/undermining-the-trust-boundary-investigating-a-stealthy-intrusion-through-third-party-compromise/",
+      "source": "Microsoft Security Blog (보안업데이트) [RSS]",
+      "published": "2026-05-12T15:00:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
