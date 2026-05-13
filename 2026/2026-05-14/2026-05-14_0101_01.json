@@ -1,0 +1,28 @@
+{
+  "scan_time_kst": "2026-05-14T01:01:07.573609+09:00",
+  "stats": {
+    "total_articles": 1882,
+    "matched_articles": 156,
+    "new_alerts": 1,
+    "cve_count": 0,
+    "ioc_count": 0,
+    "dedup_count": 0,
+    "date_filtered": 142,
+    "merged_count": 0
+  },
+  "alerts": [
+    {
+      "type": "single",
+      "title": "Advice for further action? Please",
+      "url": "https://www.reddit.com/r/antivirus/comments/1tc2npc/advice_for_further_action_please/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-13T15:16:27+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
