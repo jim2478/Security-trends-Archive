@@ -1,0 +1,28 @@
+{
+  "scan_time_kst": "2026-05-13T09:00:59.416032+09:00",
+  "stats": {
+    "total_articles": 1852,
+    "matched_articles": 169,
+    "new_alerts": 1,
+    "cve_count": 0,
+    "ioc_count": 0,
+    "dedup_count": 0,
+    "date_filtered": 156,
+    "merged_count": 0
+  },
+  "alerts": [
+    {
+      "type": "single",
+      "title": "Battle.net Setup.exe flagged 1/70 on VirusTotal (Webroot) - False Positive?",
+      "url": "https://www.reddit.com/r/antivirus/comments/1tbi1l4/battlenet_setupexe_flagged_170_on_virustotal/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-12T23:14:29+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
