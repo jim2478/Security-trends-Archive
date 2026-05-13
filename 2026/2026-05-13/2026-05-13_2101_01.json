@@ -1,0 +1,28 @@
+{
+  "scan_time_kst": "2026-05-13T21:01:08.348462+09:00",
+  "stats": {
+    "total_articles": 1862,
+    "matched_articles": 165,
+    "new_alerts": 1,
+    "cve_count": 0,
+    "ioc_count": 0,
+    "dedup_count": 0,
+    "date_filtered": 149,
+    "merged_count": 0
+  },
+  "alerts": [
+    {
+      "type": "single",
+      "title": "A year of Apple Security Bounty research — 16 closed findings, full disclosure",
+      "url": "https://www.reddit.com/r/netsec/comments/1tbx9up/a_year_of_apple_security_bounty_research_16/",
+      "source": "Reddit r/netsec (보안커뮤니티) [RSS]",
+      "published": "2026-05-13T11:49:32+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
