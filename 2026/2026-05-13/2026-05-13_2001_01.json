@@ -1,0 +1,68 @@
+{
+  "scan_time_kst": "2026-05-13T20:01:10.801834+09:00",
+  "stats": {
+    "total_articles": 1832,
+    "matched_articles": 166,
+    "new_alerts": 1,
+    "cve_count": 4,
+    "ioc_count": 0,
+    "dedup_count": 1,
+    "date_filtered": 150,
+    "merged_count": 1
+  },
+  "alerts": [
+    {
+      "type": "merged",
+      "cve_ids": [
+        "CVE-2015-6172",
+        "CVE-2026-40361",
+        "CVE-2026-40364"
+      ],
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "sources": [
+        {
+          "title": "Microsoft’s agentic security system found four critical Windows RCE flaws",
+          "url": "https://www.helpnetsecurity.com/2026/05/13/microsoft-mdash-agentic-ai-security-system/",
+          "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]"
+        },
+        {
+          "title": "Microsoft Patches Critical Zero-Click Outlook Vulnerability Threatening Enterprises",
+          "url": "https://www.securityweek.com/microsoft-patches-critical-zero-click-outlook-vulnerability-threatening-enterprises/",
+          "source": "SecurityWeek (보안뉴스 종합) [RSS]"
+        }
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-40361",
+          "cvss_score": 8.4,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-416 (Use After Free)",
+          "description": "Use after free in Microsoft Office Word allows an unauthorized attacker to execute code locally.",
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-40364",
+          "cvss_score": 8.4,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-122 (CWE-122)",
+          "description": "Access of resource using incompatible type ('type confusion') in Microsoft Office Word allows an unauthorized attacker to execute code locally.",
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2015-6172",
+          "cvss_score": 9.3,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-20 (Improper Input Validation)",
+          "description": "Microsoft Word 2007 SP3, Office 2010 SP2, Word 2010 SP2, Word 2013 SP1, Word 2016, Word 2013 RT SP1, and Office Compatibility Pack SP3 allow remote attackers to execute arbitrary code via a crafted email message processed by Outlook, aka \"Microsoft Office RCE Vulnerability.\"",
+          "epss_score": 0.32798,
+          "kev": false
+        }
+      ]
+    }
+  ]
+}
