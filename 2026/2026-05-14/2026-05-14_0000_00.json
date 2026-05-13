@@ -1,0 +1,14 @@
+{
+  "scan_time_kst": "2026-05-14T00:00:58.373914+09:00",
+  "stats": {
+    "total_articles": 1882,
+    "matched_articles": 159,
+    "new_alerts": 0,
+    "cve_count": 0,
+    "ioc_count": 0,
+    "dedup_count": 0,
+    "date_filtered": 146,
+    "merged_count": 0
+  },
+  "alerts": []
+}
