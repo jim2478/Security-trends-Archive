@@ -1,0 +1,554 @@
+{
+  "date": "2026-04-29",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 24,
+    "total_articles_max": 1891,
+    "matched_articles_max": 168,
+    "new_alerts": 29,
+    "cve_count": 10,
+    "ioc_count": 0,
+    "merged_count": 0,
+    "unique_cves": [
+      "CVE-2024-1708",
+      "CVE-2026-26268",
+      "CVE-2026-32202",
+      "CVE-2026-3854",
+      "CVE-2026-42208",
+      "CVE-2026-6807"
+    ],
+    "keywords_hit": {
+      "Malware": 15,
+      "CVE": 12,
+      "DDoS": 2
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-04-29T01:01:19.974016+09:00",
+      "type": "single",
+      "title": "Securing GitHub: Wiz Research uncovers Remote Code Execution in GitHub.com and GitHub Enterprise Server (CVE-2026-3854)",
+      "url": "https://www.wiz.io/blog/github-rce-vulnerability-cve-2026-3854",
+      "source": "Wiz Blog (클라우드보안) [RSS]",
+      "published": "2026-04-28T15:30:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-3854"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-3854",
+          "cvss_score": 8.7,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-77 (Command Injection)",
+          "description": "An improper neutralization of special elements vulnerability was identified in GitHub Enterprise Server that allowed an attacker with push access to a repository to achieve remote code execution on the instance. During a git push operation, user-supplied push option values were not properly sanitized before being included in internal service headers. Because the internal header format used a delimiter character that could also appear in user input, an attacker could inject additional metadata fi",
+          "epss_score": 0.00391,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-04-29T01:01:19.974016+09:00",
+      "type": "single",
+      "title": "Fresh Wave of GlassWorm VS Code Extensions Slices Through Supply Chain",
+      "url": "https://www.darkreading.com/application-security/fresh-glassworm-vs-code-extensions-supply-chain",
+      "source": "Dark Reading (보안뉴스 종합) [RSS]",
+      "published": "2026-04-28T14:59:24+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-04-29T01:01:19.974016+09:00",
+      "type": "single",
+      "title": "Can Type C Earphones carry malware?",
+      "url": "https://www.reddit.com/r/antivirus/comments/1sy59sd/can_type_c_earphones_carry_malware/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-04-28T15:48:57+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-04-29T02:01:08.645784+09:00",
+      "type": "single",
+      "title": "NSA GRASSMARLIN",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-118-01",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-04-28T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-6807"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-6807",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-04-29T02:01:08.645784+09:00",
+      "type": "single",
+      "title": "[Research] Full-chain RCE in Microsoft Semantic Kernel & Agent Framework 1.0 (6 Bypasses)",
+      "url": "https://www.reddit.com/r/netsec/comments/1sy2k13/research_fullchain_rce_in_microsoft_semantic/",
+      "source": "Reddit r/netsec (보안커뮤니티) [RSS]",
+      "published": "2026-04-28T14:10:22+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-04-29T03:00:57.679480+09:00",
+      "type": "single",
+      "title": "Brazilian LofyGang Resurfaces After Three Years With Minecraft LofyStealer Campaign",
+      "url": "https://thehackernews.com/2026/04/brazilian-lofygang-resurfaces-after.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-04-28T17:39:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-04-29T03:00:57.679480+09:00",
+      "type": "single",
+      "title": "DDoS Cyber Attack makes eBay lose $200m per Day",
+      "url": "https://www.cybersecurity-insiders.com/ddos-cyber-attack-makes-ebay-lose-200m-per-day/",
+      "source": "Cybersecurity Insiders (보안인사이트)",
+      "published": "2026-04-28T15:33:36+00:00",
+      "keywords": [
+        "DDoS"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-04-29T05:01:11.728657+09:00",
+      "type": "single",
+      "title": "Researchers Discover Critical GitHub CVE-2026-3854 RCE Flaw Exploitable via Single Git Push",
+      "url": "https://thehackernews.com/2026/04/researchers-discover-critical-github.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-04-28T18:19:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-3854"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-3854",
+          "cvss_score": 8.7,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-77 (Command Injection)",
+          "description": "An improper neutralization of special elements vulnerability was identified in GitHub Enterprise Server that allowed an attacker with push access to a repository to achieve remote code execution on the instance. During a git push operation, user-supplied push option values were not properly sanitized before being included in internal service headers. Because the internal header format used a delimiter character that could also appear in user input, an attacker could inject additional metadata fi",
+          "epss_score": 0.00391,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-04-29T05:01:11.728657+09:00",
+      "type": "single",
+      "title": "Vidar Rises to Top of Chaotic Infostealer Market",
+      "url": "https://www.darkreading.com/vulnerabilities-threats/vidar-top-chaotic-infostealer-market",
+      "source": "Dark Reading (보안뉴스 종합) [RSS]",
+      "published": "2026-04-28T19:07:16+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-04-29T05:01:11.728657+09:00",
+      "type": "single",
+      "title": "I think there is something wrong with my laptop, what do i do?",
+      "url": "https://www.reddit.com/r/antivirus/comments/1sybvqx/i_think_there_is_something_wrong_with_my_laptop/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-04-28T19:39:44+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-04-29T07:01:10.289573+09:00",
+      "type": "single",
+      "title": "Hackers are exploiting a critical LiteLLM pre-auth SQLi flaw",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-are-exploiting-a-critical-litellm-pre-auth-sqli-flaw/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-04-28T21:07:23+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-42208"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-42208",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-04-29T07:01:10.289573+09:00",
+      "type": "single",
+      "title": "BlueNoroff Uses Fake Zoom Calls to Turn Victims Into Attack Lures",
+      "url": "https://www.darkreading.com/cyberattacks-data-breaches/bluenoroff-turns-victims-into-new-attack-lures",
+      "source": "Dark Reading (보안뉴스 종합) [RSS]",
+      "published": "2026-04-28T21:38:39+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-04-29T07:01:10.289573+09:00",
+      "type": "single",
+      "title": "my friend just downloaded spotify (not from store) and it was detected as malware",
+      "url": "https://www.reddit.com/r/antivirus/comments/1syfbab/my_friend_just_downloaded_spotify_not_from_store/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-04-28T21:45:09+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-04-29T09:00:59.682081+09:00",
+      "type": "single",
+      "title": "My Computer might be infected",
+      "url": "https://www.reddit.com/r/antivirus/comments/1syhjo0/my_computer_might_be_infected/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-04-28T23:15:48+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-04-29T11:00:59.330352+09:00",
+      "type": "single",
+      "title": "Mr Beast Scam Aftermath",
+      "url": "https://www.reddit.com/r/antivirus/comments/1sykvnv/mr_beast_scam_aftermath/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-04-29T01:43:57+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-04-29T13:00:56.653800+09:00",
+      "type": "single",
+      "title": "Next steps after deleting malware",
+      "url": "https://www.reddit.com/r/antivirus/comments/1syncw6/next_steps_after_deleting_malware/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-04-29T03:37:19+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-04-29T14:00:56.620681+09:00",
+      "type": "single",
+      "title": "Did I take all needed steps for safety?",
+      "url": "https://www.reddit.com/r/antivirus/comments/1syodds/did_i_take_all_needed_steps_for_safety/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-04-29T04:27:06+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-04-29T16:01:08.404652+09:00",
+      "type": "single",
+      "title": "Critical GitHub Vulnerability Exposed Millions of Repositories",
+      "url": "https://www.securityweek.com/critical-github-vulnerability-exposed-millions-of-repositories/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-04-29T06:27:49+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-3854"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-3854",
+          "cvss_score": 8.7,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-77 (Command Injection)",
+          "description": "An improper neutralization of special elements vulnerability was identified in GitHub Enterprise Server that allowed an attacker with push access to a repository to achieve remote code execution on the instance. During a git push operation, user-supplied push option values were not properly sanitized before being included in internal service headers. Because the internal header format used a delimiter character that could also appear in user input, an attacker could inject additional metadata fi",
+          "epss_score": 0.00391,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-04-29T18:01:18.497011+09:00",
+      "type": "single",
+      "title": "CISA Adds Actively Exploited ConnectWise and Windows Flaws to KEV",
+      "url": "https://thehackernews.com/2026/04/cisa-adds-actively-exploited.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-04-29T08:46:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2024-1708"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2024-1708",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-04-29T18:01:18.497011+09:00",
+      "type": "single",
+      "title": "Rapid Fire DDoS Tactics: The New Face of High-Speed Cyber Disruption",
+      "url": "https://www.cybersecurity-insiders.com/rapid-fire-ddos-tactics-the-new-face-of-high-speed-cyber-disruption/",
+      "source": "Cybersecurity Insiders (보안인사이트)",
+      "published": "2026-04-29T06:08:43+00:00",
+      "keywords": [
+        "DDoS"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-04-29T19:01:26.783806+09:00",
+      "type": "single",
+      "title": "Cursor AI IDE vulnerability allows code execution via hidden Git hooks",
+      "url": "https://hackread.com/cursor-ai-ide-vulnerability-code-execution-git-hooks/",
+      "source": "HackRead (해킹/데이터유출) [RSS]",
+      "published": "2026-04-29T09:01:56+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-26268"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-26268",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-04-29T19:01:26.783806+09:00",
+      "type": "single",
+      "title": "깃허브 RCE 취약점 공개…저장소 푸시 권한만으로 원격 명령 실행 가능",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=206540",
+      "source": "데일리시큐 (IT&생활) [RSS]",
+      "published": "2026-04-29T09:14:45+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-3854"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-3854",
+          "cvss_score": 8.7,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-77 (Command Injection)",
+          "description": "An improper neutralization of special elements vulnerability was identified in GitHub Enterprise Server that allowed an attacker with push access to a repository to achieve remote code execution on the instance. During a git push operation, user-supplied push option values were not properly sanitized before being included in internal service headers. Because the internal header format used a delimiter character that could also appear in user input, an attacker could inject additional metadata fi",
+          "epss_score": 0.00391,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-04-29T19:01:26.783806+09:00",
+      "type": "single",
+      "title": "Question about Mr Beast Virus",
+      "url": "https://www.reddit.com/r/antivirus/comments/1syu3jx/question_about_mr_beast_virus/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-04-29T09:46:23+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-04-29T20:01:03.032535+09:00",
+      "type": "single",
+      "title": "Keep getting hacked even after reinstalling windows via USB",
+      "url": "https://www.reddit.com/r/antivirus/comments/1syuxdg/keep_getting_hacked_even_after_reinstalling/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-04-29T10:32:14+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-04-29T20:01:03.032535+09:00",
+      "type": "single",
+      "title": "Is keeping malwarebytes installed only for monthly scan recommended?",
+      "url": "https://www.reddit.com/r/antivirus/comments/1syup5r/is_keeping_malwarebytes_installed_only_for/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-04-29T10:19:50+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-04-29T21:02:06.257966+09:00",
+      "type": "single",
+      "title": "윈도우 LNK 취약점 악용 확인…“5월 12일까지 패치”",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=206544",
+      "source": "데일리시큐 (IT&생활) [RSS]",
+      "published": "2026-04-29T11:33:45+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-32202"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-32202",
+          "cvss_score": 4.3,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-693 (CWE-693)",
+          "description": "Protection mechanism failure in Windows Shell allows an unauthorized attacker to perform spoofing over a network.",
+          "epss_score": 0.00092,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-04-29T22:02:07.869028+09:00",
+      "type": "single",
+      "title": "GitHub fixes RCE flaw that gave access to millions of private repos",
+      "url": "https://www.bleepingcomputer.com/news/security/github-fixes-rce-flaw-that-gave-access-to-millions-of-private-repos/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-04-29T12:41:17+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-3854"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-3854",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-04-29T23:01:12.529568+09:00",
+      "type": "single",
+      "title": "A sneaky cyber enemy is creeping into our browsers",
+      "url": "https://cybernews.com/security/a-sneaky-cyber-enemy-is-creeping-into-our-browsers-and-password-managers/",
+      "source": "CyberNews [RSS]",
+      "published": "2026-04-29T13:00:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-04-29T23:01:12.529568+09:00",
+      "type": "single",
+      "title": "Set up automated dependency scanning after the recent npm/PyPI supply chain attacks",
+      "url": "https://www.reddit.com/r/netsec/comments/1syyyea/set_up_automated_dependency_scanning_after_the/",
+      "source": "Reddit r/netsec (보안커뮤니티) [RSS]",
+      "published": "2026-04-29T13:33:04+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}

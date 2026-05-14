@@ -1,0 +1,178 @@
+{
+  "date": "2026-04-18",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 24,
+    "total_articles_max": 1915,
+    "matched_articles_max": 132,
+    "new_alerts": 9,
+    "cve_count": 2,
+    "ioc_count": 0,
+    "merged_count": 0,
+    "unique_cves": [
+      "CVE-2024-3721",
+      "CVE-2025-14847"
+    ],
+    "keywords_hit": {
+      "DDoS": 4,
+      "CVE": 4,
+      "Malware": 1,
+      "Botnet": 1,
+      "봇넷": 1
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-04-18T00:01:03.411777+09:00",
+      "type": "single",
+      "title": "New Mirai Variant Nexcorium Hijacks DVR Devices for DDoS Attacks",
+      "url": "https://hackread.com/mirai-variant-nexcorium-dvr-devices-ddos-attacks/",
+      "source": "HackRead (해킹/데이터유출)",
+      "published": "2026-04-17T15:00:59+01:00",
+      "keywords": [
+        "DDoS"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-04-18T04:01:02.264730+09:00",
+      "type": "single",
+      "title": "New RecruitRat, SaferRat, Astrinox, Massiv Android Malware Found Targeting 800 Apps",
+      "url": "https://hackread.com/recruitrat-saferrat-astrinox-massiv-android-malware/",
+      "source": "HackRead (해킹/데이터유출)",
+      "published": "2026-04-17T19:44:32+01:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-04-18T04:01:02.264730+09:00",
+      "type": "single",
+      "title": "Four arrested in latest ‘PowerOFF’ DDoS-for-hire takedown",
+      "url": "https://therecord.media/ddos-hire-europol-doj-crackdown",
+      "source": "The Record by Recorded Future (위협뉴스) [RSS]",
+      "published": "2026-04-17T18:30:00+00:00",
+      "keywords": [
+        "DDoS"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-04-18T06:01:03.152583+09:00",
+      "type": "single",
+      "title": "How NIST's Cutback of CVE Handling Impacts Cyber Teams",
+      "url": "https://www.darkreading.com/threat-intelligence/nist-cutbacks-nvd-handling-impacts-cyber-teams",
+      "source": "Dark Reading [RSS]",
+      "published": "2026-04-17T19:51:57+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-04-18T08:01:03.739156+09:00",
+      "type": "single",
+      "title": "Threat Brief: MongoDB Vulnerability (CVE-2025-14847)",
+      "url": "https://unit42.paloaltonetworks.com/mongobleed-cve-2025-14847/",
+      "source": "Palo Alto Unit42 (위협리서치)",
+      "published": "2026-01-13T20:30:02+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2025-14847"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2025-14847",
+          "cvss_score": 8.7,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-130 (CWE-130)",
+          "description": "Mismatched length fields in Zlib compressed protocol headers may allow a read of uninitialized heap memory by an unauthenticated client. This issue affects all MongoDB Server v7.0 prior to 7.0.28 versions, MongoDB Server v8.0 versions prior to 8.0.17, MongoDB Server v8.2 versions prior to 8.2.3, MongoDB Server v6.0 versions prior to 6.0.27, MongoDB Server v5.0 versions prior to 5.0.32, MongoDB Server v4.4 versions prior to 4.4.30, MongoDB Server v4.2 versions greater than or equal to 4.2.0, Mong",
+          "epss_score": 0.77511,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-04-18T16:01:03.465268+09:00",
+      "type": "single",
+      "title": "Mirai Variant Nexcorium Exploits CVE-2024-3721 to Hijack TBK DVRs for DDoS BotnetApr 18, 2026IoT Security / VulnerabilityThreat actors are exploiting security flaws in TBK DVR and end‑of‑life (EoL) T",
+      "url": "https://thehackernews.com/2026/04/mirai-variant-nexcorium-exploits-cve.html",
+      "source": "The Hacker News (보안뉴스 종합)",
+      "published": null,
+      "keywords": [
+        "DDoS",
+        "CVE",
+        "Botnet"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2024-3721"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2024-3721",
+          "cvss_score": 6.3,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-78 (OS Command Injection)",
+          "description": "A vulnerability was found in TBK DVR-4104 and DVR-4216 up to 20240412 and classified as critical. This issue affects some unknown processing of the file /device.rsp?opt=sys&cmd=___S_O_S_T_R_E_A_MAX___. The manipulation of the argument mdb/mdc leads to os command injection. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used. The identifier VDB-260573 was assigned to this vulnerability.",
+          "epss_score": 0.83865,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-04-18T18:01:01.242656+09:00",
+      "type": "single",
+      "title": "CVE 263% 폭증 충격…NIST, ‘중요 취약점만 본다’ 선언",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=206307",
+      "source": "데일리시큐 (이슈) [RSS]",
+      "published": "2026-04-18T17:49:58+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-04-18T19:01:04.829650+09:00",
+      "type": "single",
+      "title": "미라이 변종 넥스코리움, 구형 DVR·공유기 파고들어 디도스 공격 시도중",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=206308",
+      "source": "데일리시큐 (이슈) [RSS]",
+      "published": "2026-04-18T18:19:54+00:00",
+      "keywords": [
+        "봇넷"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-04-18T21:01:01.866884+09:00",
+      "type": "single",
+      "title": "Operation PowerOFF: 75K Users of DDoS-for-Hire Services Identified and Warned",
+      "url": "https://hackread.com/operation-poweroff-ddos-for-hire-services-identified/",
+      "source": "HackRead (해킹/데이터유출)",
+      "published": "2026-04-18T12:23:52+01:00",
+      "keywords": [
+        "DDoS"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}

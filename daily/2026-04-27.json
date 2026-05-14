@@ -1,0 +1,201 @@
+{
+  "date": "2026-04-27",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 24,
+    "total_articles_max": 1861,
+    "matched_articles_max": 160,
+    "new_alerts": 10,
+    "cve_count": 3,
+    "ioc_count": 0,
+    "merged_count": 0,
+    "unique_cves": [
+      "CVE-2021-44228",
+      "CVE-2026-40050",
+      "CVE-2026-6770"
+    ],
+    "keywords_hit": {
+      "Malware": 5,
+      "CVE": 4,
+      "봇넷": 1
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-04-27T11:00:50.683239+09:00",
+      "type": "single",
+      "title": "“공유기가 사이버 무기로”... 中 해커, 20만대 봇넷 동원해 글로벌 공격 은폐",
+      "url": "http://www.boannews.com/media/view.asp?idx=143358&kind=&sub_kind=",
+      "source": "보안뉴스 (전체) [RSS]",
+      "published": "2026-04-27T01:04:00+00:00",
+      "keywords": [
+        "봇넷"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-04-27T18:00:54.285575+09:00",
+      "type": "single",
+      "title": "Firefox Vulnerability Allows Tor User Fingerprinting",
+      "url": "https://www.securityweek.com/firefox-vulnerability-allows-tor-user-fingerprinting/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-04-27T08:39:28+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-6770"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-6770",
+          "cvss_score": 6.5,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-200 (Information Exposure)",
+          "description": "Other issue in the Storage: IndexedDB component. This vulnerability was fixed in Firefox 150, Firefox ESR 140.10, Thunderbird 150, and Thunderbird 140.10.",
+          "epss_score": 0.00044,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-04-27T19:01:05.513249+09:00",
+      "type": "single",
+      "title": "[인터뷰] “SW 공급망 보안, ‘실행 단계’에서 답 찾는다”",
+      "url": "http://www.itdaily.kr/news/articleView.html?idxno=239070",
+      "source": "아이티데일리 [RSS]",
+      "published": "2026-04-27T07:42:22+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2021-44228"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2021-44228",
+          "cvss_score": 10.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-917 (CWE-917)",
+          "description": "Apache Log4j2 2.0-beta9 through 2.15.0 (excluding security releases 2.12.2, 2.12.3, and 2.3.1) JNDI features used in configuration, log messages, and parameters do not protect against attacker controlled LDAP and other JNDI related endpoints. An attacker who can control log messages or log message parameters can execute arbitrary code loaded from LDAP servers when message lookup substitution is enabled. From log4j 2.15.0, this behavior has been disabled by default. From version 2.16.0 (along wit",
+          "epss_score": 0.94358,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-04-27T19:01:05.513249+09:00",
+      "type": "single",
+      "title": "크라우드스트라이크 로그스케일 치명적 취약점…인증 없이 파일 유출 가능",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=206479",
+      "source": "데일리시큐 (이슈) [RSS]",
+      "published": "2026-04-27T18:10:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-40050"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-40050",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-22 (Path Traversal)",
+          "description": "CrowdStrike has released security updates to address a critical unauthenticated path traversal vulnerability (CVE-2026-40050) in LogScale. This vulnerability only requires mitigation by customers that host specific versions of LogScale and does not affect Next-Gen SIEM customers. The vulnerability exists in a specific cluster API endpoint that, if exposed, allows a remote attacker to read arbitrary files from the server filesystem without authentication.\n\nNext-Gen SIEM customers are not affected",
+          "epss_score": 0.00265,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-04-27T19:01:05.513249+09:00",
+      "type": "single",
+      "title": "Two researchers stumble on pre-Stuxnet malware that may have targeted Iran's nuclear program",
+      "url": "https://cybernews.com/security/pre-stuxnet-malware-iran-nuclear-program/",
+      "source": "CyberNews [RSS]",
+      "published": "2026-04-27T07:35:48+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-04-27T20:00:57.416731+09:00",
+      "type": "single",
+      "title": "UNC6692 Uses Email Bombing, Social Engineering to Deploy ‘Snow’ Malware",
+      "url": "https://www.securityweek.com/unc6692-uses-email-bombing-social-engineering-to-deploy-snow-malware/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-04-27T10:44:55+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-04-27T22:01:00.816433+09:00",
+      "type": "single",
+      "title": "Researchers Uncover 73 Fake VS Code Extensions Delivering GlassWorm v2 Malware",
+      "url": "https://thehackernews.com/2026/04/researchers-uncover-73-fake-vs-code.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-04-27T11:23:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-04-27T23:01:05.004368+09:00",
+      "type": "single",
+      "title": "20-Year-Old Malware Rewrites History of Cyber Sabotage",
+      "url": "https://www.darkreading.com/cyber-risk/20-year-old-malware-rewrites-history-of-cyber-sabotage",
+      "source": "Dark Reading (보안뉴스 종합) [RSS]",
+      "published": "2026-04-27T13:09:54+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-04-27T23:01:05.004368+09:00",
+      "type": "single",
+      "title": "Hackers impersonate Microsoft Teams help desk to breach corporate networks",
+      "url": "https://therecord.media/microsoft-teams-hackers-mandiant",
+      "source": "The Record by Recorded Future (위협뉴스) [RSS]",
+      "published": "2026-04-27T13:30:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-04-27T23:01:05.004368+09:00",
+      "type": "single",
+      "title": "NIST NVD Update: What it Means For Vulnerability Management",
+      "url": "https://www.wiz.io/blog/nist-nvd-update",
+      "source": "Wiz Blog (클라우드보안) [RSS]",
+      "published": "2026-04-27T10:33:46+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}

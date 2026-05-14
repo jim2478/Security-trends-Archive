@@ -1,0 +1,280 @@
+{
+  "date": "2026-04-21",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 24,
+    "total_articles_max": 1841,
+    "matched_articles_max": 153,
+    "new_alerts": 12,
+    "cve_count": 10,
+    "ioc_count": 174,
+    "merged_count": 0,
+    "unique_cves": [
+      "CVE-2023-27351",
+      "CVE-2024-27199",
+      "CVE-2025-2749",
+      "CVE-2025-32975",
+      "CVE-2025-48700",
+      "CVE-2026-20122",
+      "CVE-2026-20128",
+      "CVE-2026-20133",
+      "CVE-2026-5760"
+    ],
+    "keywords_hit": {
+      "Malware": 7,
+      "CVE": 3,
+      "DDoS": 2,
+      "Botnet": 1
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-04-21T00:01:14.911377+09:00",
+      "type": "single",
+      "title": "⚡ Weekly Recap: Vercel Hack, Push Fraud, QEMU Abused, New Android RATs Emerge & More",
+      "url": "https://thehackernews.com/2026/04/weekly-recap-vercel-hack-push-fraud.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-04-20T13:41:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-04-21T04:00:55.750977+09:00",
+      "type": "single",
+      "title": "SGLang CVE-2026-5760 (CVSS 9.8) Enables RCE via Malicious GGUF Model Files",
+      "url": "https://thehackernews.com/2026/04/sglang-cve-2026-5760-cvss-98-enables.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-04-20T17:14:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-5760"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-5760",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-94 (Code Injection)",
+          "description": "SGLang's reranking endpoint (/v1/rerank) achieves Remote Code Execution (RCE) when a model file containing a malcious tokenizer.chat_template is loaded, as the Jinja2 chat templates are rendered using an unsandboxed jinja2.Environment().",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-04-21T06:00:53.530671+09:00",
+      "type": "single",
+      "title": "The Gentlemen ransomware now uses SystemBC for bot-powered attacks",
+      "url": "https://www.bleepingcomputer.com/news/security/the-gentlemen-ransomware-now-uses-systembc-for-bot-powered-attacks/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-04-20T20:02:37+00:00",
+      "keywords": [
+        "Botnet",
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-04-21T14:00:47.969168+09:00",
+      "type": "single",
+      "title": "북한 해커, 켈프DAO서 약 4200억원 탈취…올해 최대 암호화폐 해킹 벌어져",
+      "url": "https://www.ddaily.co.kr//page/view/2026042106094134562",
+      "source": "디지털데일리 [RSS]",
+      "published": "2026-04-21T00:00:00+00:00",
+      "keywords": [
+        "DDoS"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-04-21T16:00:53.994303+09:00",
+      "type": "single",
+      "title": "CISA Adds 8 Exploited Flaws to KEV, Sets April-May 2026 Federal Deadlines",
+      "url": "https://thehackernews.com/2026/04/cisa-adds-8-exploited-flaws-to-kev-sets.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-04-21T06:23:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2023-27351"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2023-27351",
+          "cvss_score": 7.5,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-287 (Authentication Bypass)",
+          "description": "This vulnerability allows remote attackers to bypass authentication on affected installations of PaperCut NG 22.0.5 (Build 63914). Authentication is not required to exploit this vulnerability. The specific flaw exists within the SecurityRequestFilter class. The issue results from improper implementation of the authentication algorithm. An attacker can leverage this vulnerability to bypass authentication on the system. Was ZDI-CAN-19226.",
+          "epss_score": 0.44629,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-04-21T17:00:59.900818+09:00",
+      "type": "single",
+      "title": "A .WAV With A Payload, (Tue, Apr 21st)",
+      "url": "https://isc.sans.edu/diary/rss/32910",
+      "source": "SANS ISC (인터넷폭풍센터) [RSS]",
+      "published": "2026-04-21T07:14:56+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-04-21T18:01:04.328174+09:00",
+      "type": "single",
+      "title": "NGate NFC malware targets Android users through trojanized payment app",
+      "url": "https://www.helpnetsecurity.com/2026/04/21/android-ngate-nfc-malware/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-04-21T09:00:14+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-04-21T18:01:04.328174+09:00",
+      "type": "single",
+      "title": "New Lazarus APT Campaign: “Mach-O Man” macOS Malware Kit Hits Businesses",
+      "url": "https://any.run/cybersecurity-blog/lazarus-macos-malware-mach-o-man/",
+      "source": "ANY.RUN (악성코드샌드박스분석) [RSS]",
+      "published": "2026-04-21T08:49:42+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "Network IOCs\nIP Addresses\n172[.]86[.]113[.]102\n144[.]172[.]114[.]220\nDomains\nupdate-teams[.]live\nlivemicrosft[.]com\nURLs\nh[tt]p://172[.]86[.]113[.]102/Onedrive\nh[tt]ps://update-teams[.]live/teams\nh[tt]p://172[.]86[.]113[.]102/localencode\nlivemicrosft[.]com/meet/89035563931?p=9jXK14VFM8fObdKxfkake8tD7rPhzs.1\nFile-based IOCs\nFile Names\nlocalencode\nOneDrive\nteamsSDK.bin\nD1YrHRTg.bin\nD1yCPUyk.bin\nminst2.bin\nmacrasv2\nFile Paths\n/Users/$USER/.local/bin/OneDrive\n~/Library/.initialized\n~/Library/LaunchAgents/com.onedrive.launcher.plist\n~/Library/LaunchAgents/com.onedrive.launcher.tmp\n$TMPDIR/OneDrive\n$TMPDIR/geniex_client_sleep_state\nbin.config\nFile Hashes (SHA256)\neb3eae776d175f7fb2fb9986c89154102ba8eabfde10a155af4dfb18f28be1b5 (com.onedrive.launcher.plist)\neb3eae776d175f7fb2fb9986c89154102ba8eabfde10a155af4dfb18f28be1b5 (com.onedrive.launcher.tmp)\n0f41fd82cac71e27c36eb90c0bf305d6006b4f3d59e8ba55faeacbe62aadef90 (D1yCPUyk.bin)\n0f41fd82cac71e27c36eb90c0bf305d6006b4f3d59e8ba55faeacbe62aadef90 (D1YrHRTg.bin)\na9562ab6bce06e92d4e428088eacc1e990e67ceae6f6940047360261b5599614 (localencode / OneDrive)\n85bed283ba95d40d99e79437e6a3161336c94ec0acbc0cd38599d0fc9b2e393c (macrasv2)\ncc31b3dc8aeed0af9dd24b7e739f183527d55d5b5ecd3d93ba45dd4aaa8ba260 (MauroDPRKSamples.zip)\n4b08a9e221a20b8024cf778d113732b3e12d363250231e78bae13b1f1dc1495b (minst2.bin)\n89616a503ffee8fc70f13c82c4a5e4fa4efafa61410971f4327ed38328af2938 (SystemApp.zip)\ndfee6ea9cafc674b93a8460b9e6beea7f0eb0c28e28d1190309347fd1514dbb6 (TeamsApp.zip)\n871d8f92b008a75607c9f1feb4922b9a02ac7bd2ed61b71ca752a5bed5448bf3 (teamsSDK.bin)\n24af069b8899893cfc7347a4e5b46d717d77994a4b140d58de0be029dba686c9 (ZoomApp.zip)\nHost-based IOCs\nPersistence Artifacts\n~/Library/LaunchAgents/com.onedrive.launcher.plist\n~/Library/LaunchAgents/com.onedrive.launcher.tmp\nSuspicious Directories / Files\n~/Library/.initialized\n/Users/$USER/.local/bin/OneDrive\n$TMPDIR/geniex_client_sleep_state\nCode / Binary Artifacts\nStrings\ngeniex-client/core\ngeniex-client/protocol\ngeniex-client/Internal/vss\ngeniex_client_sleep_state\ngeniex config file too short\ncom.onedrive.launcher\nDie command received, initiating self-destruction\nhobocopy_%d\nBuild Artifact\nGoBuildID: XSnX8a5Y1OweX0Ob6lfO/ZYlrxu-H_BNvt5ptXb3c/8HR_X2LwoFzXXN4Fti_K/xaM13na_g6snvgcy0x9t\nEncryption Keys\nRC4Key: a73ce18952b40fd621789e43c56b2af08d1497ce3560b2481fa973d8265ce491\nRC4Key: 5476bbf8ddb2fb056295f09ebe05e20a7d1cf29ea279cd4613c87544013e080fef35c97b3511ef9c0f12e505a1d805628ba10483dc9290508f94d153ee94d5c4\nATT&CK Matrix\nExecution\nUser Execution (T1204)\nPersistence\nCreate or Modify System Process: Launch Agent (T1543.001)\nPrivilege Escalation\nAbuse Elevation Control Mechanism: Sudo and Sudo Caching (T1548.003)\nDefense Evasion\nFile and Directory Permissions Modification (T1222)\nVirtualization/Sandbox Evasion (T1497)\nCredential Access\nCredentials from Password Stores (T1555)\nUnsecured Credentials (T1552)\nDiscovery & Collection\nSystem Information Discovery (T1082)\nProcess Discovery (T1057)\nSystem Time Discovery (T1124)\nFile and Directory Discovery (T1083)\nData from Local System (T1005)\nArchive Collected Data (T1560)\nExfiltration\nExfiltration Over Web Service: Exfiltration to Cloud Storage / Web Service (T1567)\nData is exfiltrated via Telegram bot API, using a legitimate web service to evade detection.\nReferences\nOriginal Quetzal Team Article:\nhttps://open.substack.com/pub/quetzalteam/p/north-koreas-safari-hunting-for-rats\nOriginal LevelBlue Labs Intelligence Pulse: https://otx.alienvault.com/pulse/69d9c62d24ae9bc8d5653f56\nSession 1:\nhttps://app.any.run/tasks/937afde2-5e3c-4eb0-a7d1-6124f0f3ed18\nSession 2:\nhttps://app.any.run/tasks/777b23e8-25ea-45b5-a998-d2e1c400c9d1\nSession 3:\nhttps://app.any.run/tasks/7f771a62-fcda-4a33-8e99-ab068fae8500\nSession 4: https://app.any.run/tasks/94b9bc1f-86 -4069-8222-1cb511d78ad9\nMauro Eldritch #molongui-disabled-link Smile, You're on Camera: A Live Stream from Inside Lazarus Group’s IT Workers Scheme\nMauro Eldritch #molongui-disabled-link FunkSec’s FunkLocker: How AI Is Powering the Next Wave of Ransomware\nMauro Eldritch #molongui-disabled-link PyLangGhost RAT: Rising Stealer from Lazarus Group Striking Finance and Technology\nMauro Eldritch #molongui-disabled-link DEVMAN Ransomware: Analysis of New DragonForce Variant\nShare post\nTwitter\nReddit\nLinkedIn\nANYRUN\ncybersecurity\nmalware analysis\nmalware behavior\nMauro Eldritch\nMauro Eldritch is an Argentinian-Uruguayan hacker, founder of BCA LTD and DC5411 (Argentina / Uruguay). He has spoken at various events, including DEF CON (12 times). He is passionate about Threat Intelligence and Biohacking. He currently leads Bitso’s Quetzal Team, the first in Latin America dedicated to Web3 Threat Research.\nFollow Mauro on:\nLinkedIn\nGitHub\nView all posts\nTwitter\nAwful\nAverage\nGreat\nFree malware research with ANY.RUN\nComment\nName\nEmail\nSave my name and email in this browser for the next time I comment.\n0 comments\nIP Addresses\n172[.]86[.]113[.]102\n144[.]172[.]114[.]220\nDomains\nupdate-teams[.]live\nlivemicrosft[.]com\nURLs\nh[tt]p://172[.]86[.]113[.]102/Onedrive\nh[tt]ps://update-teams[.]live/teams\nh[tt]p://172[.]86[.]113[.]102/localencode\nlivemicrosft[.]com/meet/89035563931?p=9jXK14VFM8fObdKxfkake8tD7rPhzs.1\nFile Names\nlocalencode\nOneDrive\nteamsSDK.bin\nD1YrHRTg.bin\nD1yCPUyk.bin\nminst2.bin\nmacrasv2\nFile Paths\n/Users/$USER/.local/bin/OneDrive\n~/Library/.initialized\n~/Library/LaunchAgents/com.onedrive.launcher.plist\n~/Library/LaunchAgents/com.onedrive.launcher.tmp\n$TMPDIR/OneDrive\n$TMPDIR/geniex_client_sleep_state\nbin.config\nFile Hashes (SHA256)\neb3eae776d175f7fb2fb9986c89154102ba8eabfde10a155af4dfb18f28be1b5 (com.onedrive.launcher.plist)\neb3eae776d175f7fb2fb9986c89154102ba8eabfde10a155af4dfb18f28be1b5 (com.onedrive.launcher.tmp)\n0f41fd82cac71e27c36eb90c0bf305d6006b4f3d59e8ba55faeacbe62aadef90 (D1yCPUyk.bin)\n0f41fd82cac71e27c36eb90c0bf305d6006b4f3d59e8ba55faeacbe62aadef90 (D1YrHRTg.bin)\na9562ab6bce06e92d4e428088eacc1e990e67ceae6f6940047360261b5599614 (localencode / OneDrive)\n85bed283ba95d40d99e79437e6a3161336c94ec0acbc0cd38599d0fc9b2e393c (macrasv2)\ncc31b3dc8aeed0af9dd24b7e739f183527d55d5b5ecd3d93ba45dd4aaa8ba260 (MauroDPRKSamples.zip)\n4b08a9e221a20b8024cf778d113732b3e12d363250231e78bae13b1f1dc1495b (minst2.bin)\n89616a503ffee8fc70f13c82c4a5e4fa4efafa61410971f4327ed38328af2938 (SystemApp.zip)\ndfee6ea9cafc674b93a8460b9e6beea7f0eb0c28e28d1190309347fd1514dbb6 (TeamsApp.zip)\n871d8f92b008a75607c9f1feb4922b9a02ac7bd2ed61b71ca752a5bed5448bf3 (teamsSDK.bin)\n24af069b8899893cfc7347a4e5b46d717d77994a4b140d58de0be029dba686c9 (ZoomApp.zip)\nPersistence Artifacts\n~/Library/LaunchAgents/com.onedrive.launcher.plist\n~/Library/LaunchAgents/com.onedrive.launcher.tmp\nSuspicious Directories / Files\n~/Library/.initialized\n/Users/$USER/.local/bin/OneDrive\n$TMPDIR/geniex_client_sleep_state",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-04-21T19:00:57.083496+09:00",
+      "type": "single",
+      "title": "NGate Android malware uses HandyPay NFC app to steal card data",
+      "url": "https://www.bleepingcomputer.com/news/security/ngate-android-malware-uses-handypay-nfc-app-to-steal-card-data/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-04-21T09:00:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-04-21T20:03:02.727807+09:00",
+      "type": "single",
+      "title": "$290 Million Kelp DAO Crypto Heist Blamed on North Korea",
+      "url": "https://www.securityweek.com/290-million-kelp-dao-crypto-heist-blamed-on-north-korea/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-04-21T10:02:09+00:00",
+      "keywords": [
+        "DDoS"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-04-21T21:01:12.589137+09:00",
+      "type": "single",
+      "title": "CISA flags another Cisco Catalyst SD-WAN Manager bug as exploited (CVE-2026-20133)",
+      "url": "https://www.helpnetsecurity.com/2026/04/21/cisa-flags-another-cisco-catalyst-sd-wan-manager-bug-as-exploited-cve-2026-20133/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-04-21T11:26:38+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2023-27351",
+        "CVE-2024-27199",
+        "CVE-2025-2749",
+        "CVE-2025-32975",
+        "CVE-2025-48700",
+        "CVE-2026-20122",
+        "CVE-2026-20128",
+        "CVE-2026-20133"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2023-27351",
+          "cvss_score": 7.5,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-287 (Authentication Bypass)",
+          "description": "This vulnerability allows remote attackers to bypass authentication on affected installations of PaperCut NG 22.0.5 (Build 63914). Authentication is not required to exploit this vulnerability. The specific flaw exists within the SecurityRequestFilter class. The issue results from improper implementation of the authentication algorithm. An attacker can leverage this vulnerability to bypass authentication on the system. Was ZDI-CAN-19226.",
+          "epss_score": 0.44629,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2024-27199",
+          "cvss_score": 7.3,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-22 (Path Traversal)",
+          "description": "In JetBrains TeamCity before 2023.11.4 path traversal allowing to perform limited admin actions  was possible",
+          "epss_score": 0.82472,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2025-2749",
+          "cvss_score": 7.2,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-22 (Path Traversal)",
+          "description": "An authenticated remote code execution in Kentico Xperience allows authenticated users Staging Sync Server to upload arbitrary data to path relative locations. This results in path traversal and arbitrary file upload, including content that can be executed server side leading to remote code execution.This issue affects Kentico Xperience through 13.0.178.",
+          "epss_score": 0.01227,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2025-32975",
+          "cvss_score": 10.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-287 (Authentication Bypass)",
+          "description": "Quest KACE Systems Management Appliance (SMA) 13.0.x before 13.0.385, 13.1.x before 13.1.81, 13.2.x before 13.2.183, 14.0.x before 14.0.341 (Patch 5), and 14.1.x before 14.1.101 (Patch 4) contains an authentication bypass vulnerability that allows attackers to impersonate legitimate users without valid credentials. The vulnerability exists in the SSO authentication handling mechanism and can lead to complete administrative takeover.",
+          "epss_score": 0.00543,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2025-48700",
+          "cvss_score": 6.1,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-79 (XSS)",
+          "description": "An issue was discovered in Zimbra Collaboration (ZCS) 8.8.15 and 9.0 and 10.0 and 10.1. A Cross-Site Scripting (XSS) vulnerability in the Zimbra Classic UI allows attackers to execute arbitrary JavaScript within the user's session, potentially leading to unauthorized access to sensitive information. This issue arises from insufficient sanitization of HTML content, specifically involving crafted tag structures and attribute values that include an @import directive and other script injection vecto",
+          "epss_score": 0.00181,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-04-21T21:01:12.589137+09:00",
+      "type": "single",
+      "title": "NGate Campaign Targets Brazil, Trojanizes HandyPay to Steal NFC Data and PINs",
+      "url": "https://thehackernews.com/2026/04/ngate-campaign-targets-brazil.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-04-21T10:40:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}

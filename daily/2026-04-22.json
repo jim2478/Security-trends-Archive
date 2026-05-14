@@ -1,0 +1,258 @@
+{
+  "date": "2026-04-22",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 24,
+    "total_articles_max": 1841,
+    "matched_articles_max": 153,
+    "new_alerts": 13,
+    "cve_count": 4,
+    "ioc_count": 0,
+    "merged_count": 0,
+    "unique_cves": [
+      "CVE-2026-1731",
+      "CVE-2026-40175",
+      "CVE-2026-40372",
+      "CVE-2026-5752"
+    ],
+    "keywords_hit": {
+      "Malware": 6,
+      "CVE": 4,
+      "Botnet": 2,
+      "DDoS": 2
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-04-22T03:00:54.678603+09:00",
+      "type": "single",
+      "title": "Surge in Bomgar RMM Exploitation Demonstrates Supply Chain Risk",
+      "url": "https://www.darkreading.com/cyberattacks-data-breaches/surge-bomgar-rmm-exploitation-demonstrates-supply-chain-risk",
+      "source": "Dark Reading (보안뉴스 종합) [RSS]",
+      "published": "2026-04-21T15:29:17+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-1731"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-1731",
+          "cvss_score": 9.9,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-78 (OS Command Injection)",
+          "description": "BeyondTrust Remote Support (RS) and certain older versions of Privileged Remote Access (PRA) contain a critical pre-authentication remote code execution vulnerability. By sending specially crafted requests, an unauthenticated remote attacker may be able to execute operating system commands in the context of the site user.",
+          "epss_score": 0.81502,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-04-22T04:00:56.666128+09:00",
+      "type": "single",
+      "title": "New Lotus data wiper used against Venezuelan energy, utility firms",
+      "url": "https://www.bleepingcomputer.com/news/security/new-lotus-data-wiper-used-against-venezuelan-energy-utility-firms/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-04-21T18:38:40+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-04-22T05:00:50.148634+09:00",
+      "type": "single",
+      "title": "SystemBC C2 Server Reveals 1,570+ Victims in The Gentlemen Ransomware Operation",
+      "url": "https://thehackernews.com/2026/04/systembc-c2-server-reveals-1570-victims.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-04-21T18:18:00+00:00",
+      "keywords": [
+        "Botnet",
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-04-22T11:00:48.666818+09:00",
+      "type": "single",
+      "title": "분산형 소셜 미디어 블루스카이, 친이란 해커 그룹  공격에 서비스 장애",
+      "url": "http://www.boannews.com/media/view.asp?idx=143303&kind=&sub_kind=",
+      "source": "보안뉴스 (전체) [RSS]",
+      "published": "2026-04-22T01:41:00+00:00",
+      "keywords": [
+        "DDoS"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-04-22T12:00:51.657158+09:00",
+      "type": "single",
+      "title": "악시오스(Axios) 헤더 주입 체인 취약점: CVE-2026-40175",
+      "url": "https://s2w.inc/ko/resource/detail/1047",
+      "source": "S2W Resources (위협인텔리전스) [RSS]",
+      "published": "2026-04-22T00:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-40175"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-40175",
+          "cvss_score": 4.8,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-113 (CWE-113)",
+          "description": "Axios is a promise based HTTP client for the browser and Node.js. Prior to 1.15.0 and 0.3.1, the Axios library is vulnerable to a specific \"Gadget\" attack chain that allows Prototype Pollution in any third-party dependency to be escalated into Remote Code Execution (RCE) or Full Cloud Compromise (via AWS IMDSv2 bypass). This vulnerability is fixed in 1.15.0 and 0.3.1.",
+          "epss_score": 0.00045,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-04-22T18:00:59.798269+09:00",
+      "type": "single",
+      "title": "Cohere AI Terrarium Sandbox Flaw Enables Root Code Execution, Container Escape",
+      "url": "https://thehackernews.com/2026/04/cohere-ai-terrarium-sandbox-flaw.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-04-22T07:16:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-5752"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-5752",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": null,
+          "description": "Sandbox Escape Vulnerability in Terrarium allows arbitrary code execution with root privileges on a host process via JavaScript prototype chain traversal.",
+          "epss_score": 0.00027,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-04-22T18:00:59.798269+09:00",
+      "type": "single",
+      "title": "Mustang Panda’s New LOTUSLITE Variant Targets India Banks, South Korea Policy Circles",
+      "url": "https://thehackernews.com/2026/04/mustang-pandas-new-lotuslite-variant.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-04-22T07:58:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-04-22T19:00:46.864252+09:00",
+      "type": "single",
+      "title": "Google Antigravity in Crosshairs of Security Researchers, Cybercriminals",
+      "url": "https://www.securityweek.com/google-antigravity-in-crosshairs-of-security-researchers-cybercriminals/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-04-22T09:53:05+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-04-22T20:01:02.762027+09:00",
+      "type": "single",
+      "title": "Microsoft Patches Critical ASP.NET Core CVE-2026-40372 Privilege Escalation Bug",
+      "url": "https://thehackernews.com/2026/04/microsoft-patches-critical-aspnet-core.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-04-22T09:29:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-40372"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-40372",
+          "cvss_score": 9.1,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-347 (CWE-347)",
+          "description": "Improper verification of cryptographic signature in ASP.NET Core allows an unauthorized attacker to elevate privileges over a network.",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-04-22T20:01:02.762027+09:00",
+      "type": "single",
+      "title": "New GoGra malware for Linux uses Microsoft Graph API for comms",
+      "url": "https://www.bleepingcomputer.com/news/security/new-gogra-malware-for-linux-uses-microsoft-graph-api-for-comms/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-04-22T10:00:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-04-22T21:03:06.393003+09:00",
+      "type": "single",
+      "title": "Mirai Botnet Targets Flaw in Discontinued D-Link Routers",
+      "url": "https://www.securityweek.com/mirai-botnet-targets-flaw-in-discontinued-d-link-routers/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-04-22T11:44:07+00:00",
+      "keywords": [
+        "Botnet"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-04-22T21:03:06.393003+09:00",
+      "type": "single",
+      "title": "Lotus Wiper Malware Targets Venezuelan Energy Systems in Destructive Attack",
+      "url": "https://thehackernews.com/2026/04/lotus-wiper-malware-targets-venezuelan.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-04-22T10:55:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-04-22T22:00:55.192781+09:00",
+      "type": "single",
+      "title": "Bluesky Back Online After DDoS Attack, as Iran-Linked 313 Team Takes Credit",
+      "url": "https://hackread.com/bluesky-online-ddos-attack-iran-313-team/",
+      "source": "HackRead (해킹/데이터유출) [RSS]",
+      "published": "2026-04-22T12:33:28+00:00",
+      "keywords": [
+        "DDoS"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}

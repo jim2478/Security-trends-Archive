@@ -1,0 +1,601 @@
+{
+  "date": "2026-05-13",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 24,
+    "total_articles_max": 1862,
+    "matched_articles_max": 169,
+    "new_alerts": 27,
+    "cve_count": 17,
+    "ioc_count": 0,
+    "merged_count": 1,
+    "unique_cves": [
+      "CVE-2015-6172",
+      "CVE-2024-41975",
+      "CVE-2025-15467",
+      "CVE-2025-2595",
+      "CVE-2025-41659",
+      "CVE-2025-41691",
+      "CVE-2026-26289",
+      "CVE-2026-33570",
+      "CVE-2026-35504",
+      "CVE-2026-35555",
+      "CVE-2026-40361",
+      "CVE-2026-40364",
+      "CVE-2026-41940",
+      "CVE-2026-45185",
+      "CVE-2026-8108"
+    ],
+    "keywords_hit": {
+      "Malware": 14,
+      "CVE": 12,
+      "DDoS": 1
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-05-13T00:01:33.065602+09:00",
+      "type": "single",
+      "title": "ABB AC500 V3 Stack Buffer Overflow in Cryptographic Message Syntax",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-132-05",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-05-12T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2025-15467"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2025-15467",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-787 (Out-of-bounds Write)",
+          "description": "Issue summary: Parsing CMS AuthEnvelopedData or EnvelopedData message with\nmaliciously crafted AEAD parameters can trigger a stack buffer overflow.\n\nImpact summary: A stack buffer overflow may lead to a crash, causing Denial\nof Service, or potentially remote code execution.\n\nWhen parsing CMS (Auth)EnvelopedData structures that use AEAD ciphers such as\nAES-GCM, the IV (Initialization Vector) encoded in the ASN.1 parameters is\ncopied into a fixed-size stack buffer without verifying that its length",
+          "epss_score": 0.02099,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-13T00:01:33.065602+09:00",
+      "type": "single",
+      "title": "Subnet Solutions PowerSYSTEM Center",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-132-02",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-05-12T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-26289",
+        "CVE-2026-33570",
+        "CVE-2026-35504",
+        "CVE-2026-35555"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-26289",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-33570",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-35504",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-35555",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-13T00:01:33.065602+09:00",
+      "type": "single",
+      "title": "ABB AC500 V3 Multiple Vulnerabilities",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-132-03",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-05-12T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2025-2595",
+        "CVE-2025-41659",
+        "CVE-2025-41691"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2025-2595",
+          "cvss_score": 5.3,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-425 (CWE-425)",
+          "description": "An unauthenticated remote attacker can bypass the user management in CODESYS Visualization and read visualization template files or static elements by means of forced browsing.",
+          "epss_score": 0.00155,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2025-41659",
+          "cvss_score": 8.3,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-732 (CWE-732)",
+          "description": "A low-privileged attacker can remotely access the PKI folder of the CODESYS Control runtime system and thus read and write certificates and its keys. This allows sensitive data to be extracted or to accept certificates as trusted. Although all services remain available, only unencrypted communication is possible if the certificates are deleted.",
+          "epss_score": 0.00054,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2025-41691",
+          "cvss_score": 7.5,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-476 (CWE-476)",
+          "description": "An unauthenticated remote attacker may trigger a NULL pointer dereference in the affected CODESYS Control runtime systems by sending specially crafted communication requests, potentially leading to a denial-of-service (DoS) condition.",
+          "epss_score": 0.00154,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-13T00:01:33.065602+09:00",
+      "type": "single",
+      "title": "ABB Automation Builder Gateway for Windows",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-132-04",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-05-12T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2024-41975"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2024-41975",
+          "cvss_score": 5.3,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-1188 (CWE-1188)",
+          "description": "An unauthenticated remote attacker can gain limited information of the PLC network but the user management of the PLCs prevents the actual access to the PLCs.",
+          "epss_score": 0.00387,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-13T00:01:33.065602+09:00",
+      "type": "single",
+      "title": "Fuji Electric Tellus",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-132-01",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-05-12T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-8108"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-8108",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-13T01:01:03.509797+09:00",
+      "type": "single",
+      "title": "ThreatDown ITDR prevents credential-based attacks",
+      "url": "https://www.helpnetsecurity.com/2026/05/12/threatdown-identity-threat-detection-and-response-itdr/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-05-12T15:21:56+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-13T01:01:03.509797+09:00",
+      "type": "single",
+      "title": "Undermining the trust boundary: Investigating a stealthy intrusion through third-party compromise",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/05/12/undermining-the-trust-boundary-investigating-a-stealthy-intrusion-through-third-party-compromise/",
+      "source": "Microsoft Security Blog (보안업데이트) [RSS]",
+      "published": "2026-05-12T15:00:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-13T02:01:07.010042+09:00",
+      "type": "single",
+      "title": "Defending consumer web properties against modern DDoS attacks",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/05/12/defending-consumer-web-properties-against-modern-ddos-attacks/",
+      "source": "Microsoft Security Blog (보안업데이트) [RSS]",
+      "published": "2026-05-12T16:00:00+00:00",
+      "keywords": [
+        "DDoS"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-13T03:01:01.909319+09:00",
+      "type": "single",
+      "title": "Dead.Letter (CVE-2026-45185) How XBOW found an unauthenticated RCE on Exim",
+      "url": "https://www.reddit.com/r/netsec/comments/1tb8vj3/deadletter_cve202645185_how_xbow_found_an/",
+      "source": "Reddit r/netsec (보안커뮤니티) [RSS]",
+      "published": "2026-05-12T17:41:33+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-45185"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-45185",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-13T03:01:01.909319+09:00",
+      "type": "single",
+      "title": "Fake Claude Code Installer Targets Developers With Browser Credential Stealer",
+      "url": "https://hackread.com/fake-claude-code-installer-devs-browser-credential-stealer/",
+      "source": "HackRead (해킹/데이터유출) [RSS]",
+      "published": "2026-05-12T17:47:36+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-13T04:00:57.343407+09:00",
+      "type": "single",
+      "title": "New Exim BDAT Vulnerability Exposes GnuTLS Builds to Potential Code Execution",
+      "url": "https://thehackernews.com/2026/05/new-exim-bdat-vulnerability-exposes.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-05-12T16:44:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-45185"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-45185",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-13T07:00:56.256461+09:00",
+      "type": "single",
+      "title": "I did a Malwarebytes scan and got 2 files flagged for malware",
+      "url": "https://www.reddit.com/r/antivirus/comments/1tbfgth/i_did_a_malwarebytes_scan_and_got_2_files_flagged/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-12T21:32:21+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-13T08:01:01.261227+09:00",
+      "type": "single",
+      "title": "Fedora Hummingbird brings the container security model to a Linux host OS",
+      "url": "https://www.helpnetsecurity.com/2026/05/13/fedora-hummingbird-linux/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-05-12T22:30:26+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-13T09:00:59.416032+09:00",
+      "type": "single",
+      "title": "Battle.net Setup.exe flagged 1/70 on VirusTotal (Webroot) - False Positive?",
+      "url": "https://www.reddit.com/r/antivirus/comments/1tbi1l4/battlenet_setupexe_flagged_170_on_virustotal/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-12T23:14:29+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-13T10:00:56.109087+09:00",
+      "type": "single",
+      "title": "How to be sure I’m safe after getting a malware and hacked on discord and insta?",
+      "url": "https://www.reddit.com/r/antivirus/comments/1tbk01q/how_to_be_sure_im_safe_after_getting_a_malware/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-13T00:37:47+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-13T11:00:55.526645+09:00",
+      "type": "single",
+      "title": "After deleting the Trojan Virus via Malwarebytes yesterday My roblox account got terminated",
+      "url": "https://www.reddit.com/r/antivirus/comments/1tbkvsn/after_deleting_the_trojan_virus_via_malwarebytes/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-13T01:17:07+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-13T11:00:55.526645+09:00",
+      "type": "single",
+      "title": "What's the best value for money Cyber Security/Anti Virus Service?",
+      "url": "https://www.reddit.com/r/antivirus/comments/1tblo7g/whats_the_best_value_for_money_cyber_securityanti/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-13T01:51:32+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-13T13:01:06.002496+09:00",
+      "type": "single",
+      "title": "Chromstera Browser hijack",
+      "url": "https://www.reddit.com/r/antivirus/comments/1tboeow/chromstera_browser_hijack/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-13T03:55:51+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-13T15:00:56.447675+09:00",
+      "type": "single",
+      "title": "Posible virus en android?",
+      "url": "https://www.reddit.com/r/antivirus/comments/1tbqcn9/posible_virus_en_android/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-13T05:33:23+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-13T15:00:56.447675+09:00",
+      "type": "single",
+      "title": "폰투온 베를린 2026 앞두고 쏟아진 마이크로소프트·어도비 5월 보안 패치",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=206712",
+      "source": "데일리시큐 (이슈) [RSS]",
+      "published": "2026-05-13T14:01:47+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-13T17:01:11.645516+09:00",
+      "type": "single",
+      "title": "Avast detecting jdownloader as a threat",
+      "url": "https://www.reddit.com/r/antivirus/comments/1tbstvp/avast_detecting_jdownloader_as_a_threat/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-13T07:51:56+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-13T17:01:11.645516+09:00",
+      "type": "single",
+      "title": "Microsoft Minebot Connection",
+      "url": "https://www.reddit.com/r/antivirus/comments/1tbs1qw/microsoft_minebot_connection/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-13T07:06:25+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-13T18:01:11.682323+09:00",
+      "type": "single",
+      "title": "AI로 만든 해킹 도구의 습격... ‘Mr_Rot13’, 정부·군사 기밀 4.37GB 빼돌려",
+      "url": "http://www.boannews.com/media/view.asp?idx=143608&kind=&sub_kind=",
+      "source": "보안뉴스 (전체) [RSS]",
+      "published": "2026-05-13T08:32:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-41940"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-41940",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-306 (Missing Authentication)",
+          "description": "cPanel and WHM versions after 11.40 contain an authentication bypass vulnerability in the login flow that allows unauthenticated remote attackers to gain unauthorized access to the control panel.",
+          "epss_score": 0.67014,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-13T19:01:10.973998+09:00",
+      "type": "single",
+      "title": "GemStuffer Abuses 150+ RubyGems to Exfiltrate Scraped U.K. Council Portal Data",
+      "url": "https://thehackernews.com/2026/05/gemstuffer-abuses-150-rubygems-to.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-05-13T08:08:54+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-13T20:01:10.801834+09:00",
+      "type": "merged",
+      "cve_ids": [
+        "CVE-2015-6172",
+        "CVE-2026-40361",
+        "CVE-2026-40364"
+      ],
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "sources": [
+        {
+          "title": "Microsoft’s agentic security system found four critical Windows RCE flaws",
+          "url": "https://www.helpnetsecurity.com/2026/05/13/microsoft-mdash-agentic-ai-security-system/",
+          "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]"
+        },
+        {
+          "title": "Microsoft Patches Critical Zero-Click Outlook Vulnerability Threatening Enterprises",
+          "url": "https://www.securityweek.com/microsoft-patches-critical-zero-click-outlook-vulnerability-threatening-enterprises/",
+          "source": "SecurityWeek (보안뉴스 종합) [RSS]"
+        }
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-40361",
+          "cvss_score": 8.4,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-416 (Use After Free)",
+          "description": "Use after free in Microsoft Office Word allows an unauthorized attacker to execute code locally.",
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-40364",
+          "cvss_score": 8.4,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-122 (CWE-122)",
+          "description": "Access of resource using incompatible type ('type confusion') in Microsoft Office Word allows an unauthorized attacker to execute code locally.",
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2015-6172",
+          "cvss_score": 9.3,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-20 (Improper Input Validation)",
+          "description": "Microsoft Word 2007 SP3, Office 2010 SP2, Word 2010 SP2, Word 2013 SP1, Word 2016, Word 2013 RT SP1, and Office Compatibility Pack SP3 allow remote attackers to execute arbitrary code via a crafted email message processed by Outlook, aka \"Microsoft Office RCE Vulnerability.\"",
+          "epss_score": 0.32798,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-13T21:01:08.348462+09:00",
+      "type": "single",
+      "title": "A year of Apple Security Bounty research — 16 closed findings, full disclosure",
+      "url": "https://www.reddit.com/r/netsec/comments/1tbx9up/a_year_of_apple_security_bounty_research_16/",
+      "source": "Reddit r/netsec (보안커뮤니티) [RSS]",
+      "published": "2026-05-13T11:49:32+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-13T22:01:00.860841+09:00",
+      "type": "single",
+      "title": "Weird shit happening on my laptop",
+      "url": "https://www.reddit.com/r/antivirus/comments/1tbyefo/weird_shit_happening_on_my_laptop/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-13T12:37:47+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}

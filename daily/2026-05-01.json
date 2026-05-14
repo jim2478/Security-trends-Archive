@@ -1,0 +1,376 @@
+{
+  "date": "2026-05-01",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 24,
+    "total_articles_max": 1881,
+    "matched_articles_max": 174,
+    "new_alerts": 17,
+    "cve_count": 9,
+    "ioc_count": 0,
+    "merged_count": 0,
+    "unique_cves": [
+      "CVE-2018-1002208",
+      "CVE-2023-1389",
+      "CVE-2025-10571",
+      "CVE-2025-13777",
+      "CVE-2025-14510",
+      "CVE-2026-21510",
+      "CVE-2026-31431",
+      "CVE-2026-32202"
+    ],
+    "keywords_hit": {
+      "Malware": 9,
+      "CVE": 7,
+      "DDoS": 1,
+      "Botnet": 1
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-05-01T00:01:06.713295+09:00",
+      "type": "single",
+      "title": "Anti-DDoS Firm Heaped Attacks on Brazilian ISPs",
+      "url": "https://krebsonsecurity.com/2026/04/anti-ddos-firm-heaped-attacks-on-brazilian-isps/",
+      "source": "Krebs on Security (사이버범죄/보안심층분석) [RSS]",
+      "published": "2026-04-30T14:04:26+00:00",
+      "keywords": [
+        "DDoS",
+        "Botnet"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2023-1389"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2023-1389",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-77 (Command Injection)",
+          "description": "TP-Link Archer AX21 (AX1800) firmware versions before 1.1.4 Build 20230219 contained a command injection vulnerability in the country form of the /cgi-bin/luci;stok=/locale endpoint on the web management interface. Specifically, the country parameter of the write operation was not sanitized before being used in a call to popen(), allowing an unauthenticated attacker to inject commands, which would be run as root, with a simple POST request.",
+          "epss_score": 0.93466,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-01T01:01:06.081638+09:00",
+      "type": "single",
+      "title": "Can infostealer malware infect .sav files?",
+      "url": "https://www.reddit.com/r/antivirus/comments/1t00hh6/can_infostealer_malware_infect_sav_files/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-04-30T15:59:17+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-01T02:01:19.942886+09:00",
+      "type": "single",
+      "title": "ABB AWIN Gateways",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-120-05",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-04-30T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2025-13777"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2025-13777",
+          "cvss_score": 7.2,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-294 (CWE-294)",
+          "description": "Authentication bypass by capture-replay vulnerability in ABB AWIN GW100 rev.2, ABB AWIN GW120.This issue affects AWIN GW100 rev.2: 2.0-0, 2.0-1; AWIN GW120: 1.2-0, 1.2-1.",
+          "epss_score": 0.00029,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-01T02:01:19.942886+09:00",
+      "type": "single",
+      "title": "ABB Edgenius Management Portal",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-120-03",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-04-30T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2025-10571"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2025-10571",
+          "cvss_score": 9.4,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-288 (CWE-288)",
+          "description": "Authentication Bypass Using an Alternate Path or Channel vulnerability in ABB ABB Ability Edgenius.This issue affects ABB Ability Edgenius: 3.2.0.0, 3.2.1.1.",
+          "epss_score": 0.00034,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-01T02:01:19.942886+09:00",
+      "type": "single",
+      "title": "ABB Ability OPTIMAX",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-120-04",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-04-30T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2025-14510"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2025-14510",
+          "cvss_score": 9.2,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-303 (CWE-303)",
+          "description": "Incorrect Implementation of Authentication Algorithm vulnerability in ABB ABB Ability OPTIMAX.This issue affects ABB Ability OPTIMAX: 6.1, 6.2, from 6.3.0 before 6.3.1-251120, from 6.4.0 before 6.4.1-251120.",
+          "epss_score": 0.00031,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-01T02:01:19.942886+09:00",
+      "type": "single",
+      "title": "ABB PCM600",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-120-02",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-04-30T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2018-1002208"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2018-1002208",
+          "cvss_score": 5.5,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-22 (Path Traversal)",
+          "description": "SharpZipLib before 1.0 RC1 is vulnerable to directory traversal, allowing attackers to write to arbitrary files via a ../ (dot dot slash) in a Zip archive entry that is mishandled during extraction. This vulnerability is also known as 'Zip-Slip'.",
+          "epss_score": 0.00605,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-01T02:01:19.942886+09:00",
+      "type": "single",
+      "title": "Can Infostealer hackers start acting up later?",
+      "url": "https://www.reddit.com/r/antivirus/comments/1t013a4/can_infostealer_hackers_start_acting_up_later/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-04-30T16:20:27+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-01T03:01:00.939343+09:00",
+      "type": "single",
+      "title": "Just asking for information if someon can help me.",
+      "url": "https://www.reddit.com/r/antivirus/comments/1t03s2f/just_asking_for_information_if_someon_can_help_me/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-04-30T17:56:27+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-01T03:01:00.939343+09:00",
+      "type": "single",
+      "title": "How to detect if your computer is infected by malware, coming from a malware author!",
+      "url": "https://www.reddit.com/r/antivirus/comments/1t03lxs/how_to_detect_if_your_computer_is_infected_by/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-04-30T17:50:37+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-01T06:00:56.179296+09:00",
+      "type": "single",
+      "title": "Discord Scam / Clean USB",
+      "url": "https://www.reddit.com/r/antivirus/comments/1t07n9m/discord_scam_clean_usb/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-04-30T20:15:10+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-01T06:00:56.179296+09:00",
+      "type": "single",
+      "title": "Looking for advice, phone malware?",
+      "url": "https://www.reddit.com/r/antivirus/comments/1t027jm/looking_for_advice_phone_malware/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-04-30T17:00:41+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-01T09:01:06.387829+09:00",
+      "type": "single",
+      "title": "Malicious Pop-Up “Verification” Scam",
+      "url": "https://www.reddit.com/r/antivirus/comments/1t0d6qd/malicious_popup_verification_scam/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-04-30T23:56:50+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-01T10:00:50.209221+09:00",
+      "type": "single",
+      "title": "티오리 ‘진트 코드’, 리눅스 루트 권한 탈취 취약점 ‘CopyFail’ 발견",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=206555",
+      "source": "데일리시큐 (이슈) [RSS]",
+      "published": "2026-05-01T09:12:12+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-31431"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-31431",
+          "cvss_score": 7.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-669 (CWE-669)",
+          "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ncrypto: algif_aead - Revert to operating out-of-place\n\nThis mostly reverts commit 72548b093ee3 except for the copying of\nthe associated data.\n\nThere is no benefit in operating in-place in algif_aead since the\nsource and destination come from different mappings.  Get rid of\nall the complexity added for in-place operation and just copy the\nAD directly.",
+          "epss_score": 9e-05,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-01T12:00:51.661435+09:00",
+      "type": "single",
+      "title": "제로데이 악용된 윈도우 취약점…CISA, 2주 내 긴급 패치 지시",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=206557",
+      "source": "데일리시큐 (이슈) [RSS]",
+      "published": "2026-05-01T11:46:05+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-21510",
+        "CVE-2026-32202"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-21510",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-693 (CWE-693)",
+          "description": "Protection mechanism failure in Windows Shell allows an unauthorized attacker to bypass a security feature over a network.",
+          "epss_score": 0.03346,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-32202",
+          "cvss_score": 4.3,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-693 (CWE-693)",
+          "description": "Protection mechanism failure in Windows Shell allows an unauthorized attacker to perform spoofing over a network.",
+          "epss_score": 0.07193,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-01T18:00:49.966548+09:00",
+      "type": "single",
+      "title": "Hugging Face, ClawHub Abused for Malware Distribution",
+      "url": "https://www.securityweek.com/hugging-face-clawhub-abused-for-malware-distribution/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-05-01T08:41:57+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-01T20:00:47.743700+09:00",
+      "type": "single",
+      "title": "Staying safe from infologgers from sailing the seas?",
+      "url": "https://www.reddit.com/r/antivirus/comments/1t0p8y4/staying_safe_from_infologgers_from_sailing_the/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-01T10:12:21+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-01T22:01:12.066976+09:00",
+      "type": "single",
+      "title": "Copy.Fail: Universal Linux Local Privilege Escalation Vulnerability",
+      "url": "https://www.wiz.io/blog/copyfail-cve-2026-31431-linux-privilege-escalation-vulnerability",
+      "source": "Wiz Blog (클라우드보안) [RSS]",
+      "published": "2026-05-01T12:38:09+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-31431"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-31431",
+          "cvss_score": 7.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-669 (CWE-669)",
+          "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ncrypto: algif_aead - Revert to operating out-of-place\n\nThis mostly reverts commit 72548b093ee3 except for the copying of\nthe associated data.\n\nThere is no benefit in operating in-place in algif_aead since the\nsource and destination come from different mappings.  Get rid of\nall the complexity added for in-place operation and just copy the\nAD directly.",
+          "epss_score": 9e-05,
+          "kev": false
+        }
+      ]
+    }
+  ]
+}

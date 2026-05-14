@@ -1,0 +1,61 @@
+{
+  "date": "2026-05-14",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 11,
+    "total_articles_max": 1882,
+    "matched_articles_max": 159,
+    "new_alerts": 3,
+    "cve_count": 0,
+    "ioc_count": 0,
+    "merged_count": 0,
+    "unique_cves": [],
+    "keywords_hit": {
+      "Malware": 3
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-05-14T01:01:07.573609+09:00",
+      "type": "single",
+      "title": "Advice for further action? Please",
+      "url": "https://www.reddit.com/r/antivirus/comments/1tc2npc/advice_for_further_action_please/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-13T15:16:27+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-14T03:01:30.812581+09:00",
+      "type": "single",
+      "title": "Windows Defender keeps detecting TrojanDownloader:MSIL/Heracles.MK!MTB at startup",
+      "url": "https://www.reddit.com/r/antivirus/comments/1tc64uc/windows_defender_keeps_detecting/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-13T17:13:36+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-14T05:01:03.126171+09:00",
+      "type": "single",
+      "title": "Help Understanding VirusTotal Report",
+      "url": "https://www.reddit.com/r/antivirus/comments/1tcabj9/help_understanding_virustotal_report/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-13T19:35:22+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}

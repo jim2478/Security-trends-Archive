@@ -1,0 +1,16 @@
+{
+  "date": "2026-04-19",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 24,
+    "total_articles_max": 1915,
+    "matched_articles_max": 132,
+    "new_alerts": 0,
+    "cve_count": 0,
+    "ioc_count": 0,
+    "merged_count": 0,
+    "unique_cves": [],
+    "keywords_hit": {}
+  },
+  "alerts": []
+}

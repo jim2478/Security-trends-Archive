@@ -1,0 +1,287 @@
+{
+  "date": "2026-05-11",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 24,
+    "total_articles_max": 1892,
+    "matched_articles_max": 189,
+    "new_alerts": 14,
+    "cve_count": 6,
+    "ioc_count": 0,
+    "merged_count": 0,
+    "unique_cves": [
+      "CVE-2025-0994",
+      "CVE-2026-31431",
+      "CVE-2026-43284",
+      "CVE-2026-43500"
+    ],
+    "keywords_hit": {
+      "Malware": 11,
+      "CVE": 3
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-05-11T01:03:00.791636+09:00",
+      "type": "single",
+      "title": "Accidently downloaded PC APP STORE malware",
+      "url": "https://www.reddit.com/r/antivirus/comments/1t9akkt/accidently_downloaded_pc_app_store_malware/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-10T15:50:59+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-11T02:03:06.747793+09:00",
+      "type": "single",
+      "title": "Hackers Trick DigiCert Into Issuing Certificates Used to Sign Malware",
+      "url": "https://hackread.com/hackers-digicert-issue-certificates-sign-malware/",
+      "source": "HackRead (해킹/데이터유출) [RSS]",
+      "published": "2026-05-10T16:53:52+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2025-0994"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2025-0994",
+          "cvss_score": 8.6,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-502 (Deserialization)",
+          "description": "Trimble Cityworks versions prior to 15.8.9 and Cityworks with office companion versions prior to 23.10 are vulnerable to a deserialization vulnerability. This could allow an authenticated user to perform a remote code execution attack against a customer’s Microsoft Internet Information Services (IIS) web server.",
+          "epss_score": 0.74864,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-11T02:03:06.747793+09:00",
+      "type": "single",
+      "title": "Bitdefender removed a threat. Am I safe?",
+      "url": "https://www.reddit.com/r/antivirus/comments/1t9cdct/bitdefender_removed_a_threat_am_i_safe/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-10T16:59:10+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-11T02:03:06.747793+09:00",
+      "type": "single",
+      "title": "Playing a Private Server game, Kaspersky detected a suspicious file (after weeks (?)) called \"UDS:Trojan.Win32.Agent.xcdvky",
+      "url": "https://www.reddit.com/r/antivirus/comments/1t9atno/playing_a_private_server_game_kaspersky_detected/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-10T16:00:39+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-11T03:03:02.670354+09:00",
+      "type": "single",
+      "title": "Hackers abuse Google ads, Claude.ai chats to push Mac malware",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-abuse-google-ads-claudeai-chats-to-push-mac-malware/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-05-10T17:52:15+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-11T09:03:08.269919+09:00",
+      "type": "single",
+      "title": "20 year old file that may or may not be malware?? False positives??",
+      "url": "https://www.reddit.com/r/antivirus/comments/1t9muro/20_year_old_file_that_may_or_may_not_be_malware/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-10T23:51:24+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-11T09:03:08.269919+09:00",
+      "type": "single",
+      "title": "Mythos, MOAK, CTEM and the End of CVE Chasing",
+      "url": "https://www.reddit.com/r/netsec/comments/1t9lzm9/mythos_moak_ctem_and_the_end_of_cve_chasing/",
+      "source": "Reddit r/netsec (보안커뮤니티) [RSS]",
+      "published": "2026-05-10T23:13:22+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-11T12:03:07.258840+09:00",
+      "type": "single",
+      "title": "Cmd prompts opening during malwarebytes scan",
+      "url": "https://www.reddit.com/r/antivirus/comments/1t9q30a/cmd_prompts_opening_during_malwarebytes_scan/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-11T02:19:22+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-11T13:02:57.793264+09:00",
+      "type": "single",
+      "title": "Got a confirmation code for my email login",
+      "url": "https://www.reddit.com/r/antivirus/comments/1t9rqou/got_a_confirmation_code_for_my_email_login/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-11T03:38:26+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-11T17:03:00.635105+09:00",
+      "type": "single",
+      "title": "Proper way of cleaning ssd for to transfer",
+      "url": "https://www.reddit.com/r/antivirus/comments/1t9wmpp/proper_way_of_cleaning_ssd_for_to_transfer/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-11T07:59:49+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-11T18:02:03.375992+09:00",
+      "type": "single",
+      "title": "New ‘Dirty Frag’ Linux Vulnerability Possibly Exploited in Attacks",
+      "url": "https://www.securityweek.com/new-dirty-frag-linux-vulnerability-possibly-exploited-in-attacks/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-05-11T08:15:28+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-43284",
+        "CVE-2026-43500"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-43284",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-123 (CWE-123)",
+          "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nxfrm: esp: avoid in-place decrypt on shared skb frags\n\nMSG_SPLICE_PAGES can attach pages from a pipe directly to an skb. TCP\nmarks such skbs with SKBFL_SHARED_FRAG after skb_splice_from_iter(),\nso later paths that may modify packet data can first make a private\ncopy. The IPv4/IPv6 datagram append paths did not set this flag when\nsplicing pages into UDP skbs.\n\nThat leaves an ESP-in-UDP packet made from shared pipe pages looking\n",
+          "epss_score": 8e-05,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-43500",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nrxrpc: Also unshare DATA/RESPONSE packets when paged frags are present\n\nThe DATA-packet handler in rxrpc_input_call_event() and the RESPONSE\nhandler in rxrpc_verify_response() copy the skb to a linear one before\ncalling into the security ops only when skb_cloned() is true.  An skb\nthat is not cloned but still carries externally-owned paged fragments\n(e.g. SKBFL_SHARED_FRAG set by splice() into a UDP socket via\n__ip_append_data,",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-11T19:00:59.837261+09:00",
+      "type": "single",
+      "title": "TrickMo Android banker adopts TON blockchain for covert comms",
+      "url": "https://www.bleepingcomputer.com/news/security/trickmo-android-banker-adopts-ton-blockchain-for-covert-comms/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-05-11T09:03:02+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-11T19:00:59.837261+09:00",
+      "type": "single",
+      "title": "Pc Virus Help",
+      "url": "https://www.reddit.com/r/antivirus/comments/1t9yidt/pc_virus_help/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-11T09:48:34+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-11T22:01:31.377468+09:00",
+      "type": "single",
+      "title": "Linux developers weigh emergency “killswitch” for vulnerable kernel functions",
+      "url": "https://www.helpnetsecurity.com/2026/05/11/linux-kernel-emergency-killswitch/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-05-11T12:55:27+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-31431",
+        "CVE-2026-43284",
+        "CVE-2026-43500"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-31431",
+          "cvss_score": 7.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-669 (CWE-669)",
+          "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ncrypto: algif_aead - Revert to operating out-of-place\n\nThis mostly reverts commit 72548b093ee3 except for the copying of\nthe associated data.\n\nThere is no benefit in operating in-place in algif_aead since the\nsource and destination come from different mappings.  Get rid of\nall the complexity added for in-place operation and just copy the\nAD directly.",
+          "epss_score": 0.03912,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-43284",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-123 (CWE-123)",
+          "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nxfrm: esp: avoid in-place decrypt on shared skb frags\n\nMSG_SPLICE_PAGES can attach pages from a pipe directly to an skb. TCP\nmarks such skbs with SKBFL_SHARED_FRAG after skb_splice_from_iter(),\nso later paths that may modify packet data can first make a private\ncopy. The IPv4/IPv6 datagram append paths did not set this flag when\nsplicing pages into UDP skbs.\n\nThat leaves an ESP-in-UDP packet made from shared pipe pages looking\n",
+          "epss_score": 8e-05,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-43500",
+          "cvss_score": 7.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-787 (Out-of-bounds Write)",
+          "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nrxrpc: Also unshare DATA/RESPONSE packets when paged frags are present\n\nThe DATA-packet handler in rxrpc_input_call_event() and the RESPONSE\nhandler in rxrpc_verify_response() copy the skb to a linear one before\ncalling into the security ops only when skb_cloned() is true.  An skb\nthat is not cloned but still carries externally-owned paged fragments\n(e.g. SKBFL_SHARED_FRAG set by splice() into a UDP socket via\n__ip_append_data,",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,354 @@
+{
+  "date": "2026-05-07",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 24,
+    "total_articles_max": 1901,
+    "matched_articles_max": 172,
+    "new_alerts": 19,
+    "cve_count": 5,
+    "ioc_count": 11,
+    "merged_count": 0,
+    "unique_cves": [
+      "CVE-2026-0300",
+      "CVE-2026-20188",
+      "CVE-2026-42208"
+    ],
+    "keywords_hit": {
+      "Malware": 13,
+      "CVE": 6,
+      "DDoS": 1,
+      "Botnet": 1
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-05-07T01:01:09.069286+09:00",
+      "type": "single",
+      "title": "CVE-2026-42208: Pre-Authentication SQL Injection in LiteLLM Proxy",
+      "url": "https://bishopfox.com/blog/cve-2026-42208-pre-authentication-sql-injection-in-litellm-proxy",
+      "source": "Bishop Fox (모의침투/취약점) [RSS]",
+      "published": "2026-05-06T13:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-42208"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-42208",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-07T02:01:05.277705+09:00",
+      "type": "single",
+      "title": "DAEMON Tools devs confirm breach, release malware-free version",
+      "url": "https://www.bleepingcomputer.com/news/security/daemon-tools-devs-confirm-breach-release-malware-free-version/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-05-06T16:43:30+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-07T03:00:56.061426+09:00",
+      "type": "single",
+      "title": "Downloaded a Virus.",
+      "url": "https://www.reddit.com/r/antivirus/comments/1t5jqgs/downloaded_a_virus/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-06T17:29:55+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-07T05:01:16.404520+09:00",
+      "type": "single",
+      "title": "Could this program be malware? Suspicious behaviour in VirusTotal",
+      "url": "https://www.reddit.com/r/antivirus/comments/1t5n3ni/could_this_program_be_malware_suspicious/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-06T19:26:19+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-07T06:01:16.726259+09:00",
+      "type": "single",
+      "title": "Palo Alto warns of critical software bug used in firewall attacks",
+      "url": "https://therecord.media/palo-alto-warns-of-critical-software-bug-firewalls",
+      "source": "The Record by Recorded Future (위협뉴스) [RSS]",
+      "published": "2026-05-06T20:33:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-0300"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-0300",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-787 (Out-of-bounds Write)",
+          "description": "A buffer overflow vulnerability in the User-ID™ Authentication Portal (aka Captive Portal) service of Palo Alto Networks PAN-OS software allows an unauthenticated attacker to execute arbitrary code with root privileges on the PA-Series and VM-Series firewalls by sending specially crafted packets. \n\nThe risk of this issue is greatly reduced if you secure access to the User-ID™ Authentication Portal per the  best practice guidelines https://knowledgebase.paloaltonetworks.com/KCSArticleDetail  by r",
+          "epss_score": null,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-07T06:01:16.726259+09:00",
+      "type": "single",
+      "title": "Mirai-Based xlabs_v1 Botnet Exploits ADB to Hijack IoT Devices for DDoS Attacks",
+      "url": "https://thehackernews.com/2026/05/mirai-based-xlabsv1-botnet-exploits-adb.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-05-06T20:21:00+00:00",
+      "keywords": [
+        "DDoS",
+        "Botnet",
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-07T06:01:16.726259+09:00",
+      "type": "single",
+      "title": "Malwares rolando solto no discord.",
+      "url": "https://www.reddit.com/r/antivirus/comments/1t5ohpq/malwares_rolando_solto_no_discord/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-06T20:15:11+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-07T09:01:22.871802+09:00",
+      "type": "single",
+      "title": "downloaded wrong pip package, is it malware?",
+      "url": "https://www.reddit.com/r/antivirus/comments/1t5u5uq/downloaded_wrong_pip_package_is_it_malware/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-06T23:54:44+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-07T10:01:00.023074+09:00",
+      "type": "single",
+      "title": "Threat Brief: Exploitation of PAN-OS Captive Portal Zero-Day for Unauthenticated Remote Code Execution",
+      "url": "https://unit42.paloaltonetworks.com/captive-portal-zero-day/",
+      "source": "Palo Alto Unit42 (위협리서치) [RSS]",
+      "published": "2026-05-07T00:00:53+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "67.206.213[.]86\n136.0.8[.]48\n146.70.100[.]69 (C2 Staging)\n149.104.66[.]84\nhxxp[:]//146.70.100[.]69:8000/php_sess (EarthWorm Download)\nhxxps[:]//github[.]com/Acebond/ReverseSocks5/releases/download/v2.2.0/ReverseSocks5-v2.2.0-linux-amd64.tar[.]gz (ReverseSocks5 Download)\ne11f69b49b6f2e829454371c31ebf86893f82a042dae3f2faf63dcd84f97a584 (EarthWorm)\nSafari/532.31 Mozilla/5.5 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0 (Attacker User Agent String)\n/var/tmp/linuxap, /var/tmp/linuxda, /var/tmp/linuxupdate (Tunneling Tools)\n/tmp/.c (Unidentified Python Script)\n/tmp/R5, /var/R5 (ReverseSocks5)",
+      "cve_ids": [
+        "CVE-2026-0300"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-0300",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-787 (Out-of-bounds Write)",
+          "description": "A buffer overflow vulnerability in the User-ID™ Authentication Portal (aka Captive Portal) service of Palo Alto Networks PAN-OS software allows an unauthenticated attacker to execute arbitrary code with root privileges on the PA-Series and VM-Series firewalls by sending specially crafted packets. \n\nThe risk of this issue is greatly reduced if you secure access to the User-ID™ Authentication Portal per the  best practice guidelines https://knowledgebase.paloaltonetworks.com/KCSArticleDetail  by r",
+          "epss_score": null,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-07T12:01:10.322270+09:00",
+      "type": "single",
+      "title": "시스코 CNC·NSO 취약점 패치… 원격 공격 시 시스템 마비 가능",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=206622",
+      "source": "데일리시큐 (IT&생활) [RSS]",
+      "published": "2026-05-07T02:35:54+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-20188"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-20188",
+          "cvss_score": 7.5,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-400 (Resource Exhaustion)",
+          "description": "A vulnerability in the connection-handling mechanism of Cisco Crosswork Network Controller (CNC) and Cisco Network Services Orchestrator (NSO) could allow an unauthenticated, remote attacker to cause a denial of service (DoS) condition on an affected system.\r\n\r\nThis vulnerability is due to an inadequate implementation of rate-limiting on incoming network connections. An attacker could exploit this vulnerability by sending a large number of connection requests to an affected system. A successful ",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-07T12:01:10.322270+09:00",
+      "type": "single",
+      "title": "Help, I think something is compromised.",
+      "url": "https://www.reddit.com/r/antivirus/comments/1t5x1yp/help_i_think_something_is_compromised/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-07T02:03:06+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-07T14:01:04.257280+09:00",
+      "type": "single",
+      "title": "What next after erasing drive for potential malware?",
+      "url": "https://www.reddit.com/r/antivirus/comments/1t60p4s/what_next_after_erasing_drive_for_potential/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-07T04:59:20+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-07T14:01:04.257280+09:00",
+      "type": "single",
+      "title": "My bank says there is malware on my phone. What do I do?",
+      "url": "https://www.reddit.com/r/antivirus/comments/1t60h3q/my_bank_says_there_is_malware_on_my_phone_what_do/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-07T04:47:38+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-07T14:01:04.257280+09:00",
+      "type": "single",
+      "title": "모니터랩, ‘AILabs 위협 보고서’ 개편... 사후 대처 넘어 선제적 방어 조준",
+      "url": "http://www.boannews.com/media/view.asp?idx=143512&kind=&sub_kind=",
+      "source": "보안뉴스 (전체) [RSS]",
+      "published": "2026-05-07T04:10:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-07T19:01:05.349060+09:00",
+      "type": "single",
+      "title": "PyPI Packages Deliver ZiChatBot Malware via Zulip APIs on Windows and Linux",
+      "url": "https://thehackernews.com/2026/05/pypi-packages-deliver-zichatbot-malware.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-05-07T09:20:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-07T20:01:15.477036+09:00",
+      "type": "single",
+      "title": "Fake Claude AI website delivers new 'Beagle' Windows malware",
+      "url": "https://www.bleepingcomputer.com/news/security/fake-claude-ai-website-delivers-new-beagle-windows-malware/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-05-07T10:02:35+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-07T21:01:04.156016+09:00",
+      "type": "single",
+      "title": "Infected with the Renpy infostealer",
+      "url": "https://www.reddit.com/r/antivirus/comments/1t68baf/infected_with_the_renpy_infostealer/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-07T11:55:41+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-07T22:01:04.572687+09:00",
+      "type": "single",
+      "title": "Advice against a hack",
+      "url": "https://www.reddit.com/r/antivirus/comments/1t68r1r/advice_against_a_hack/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-07T12:14:22+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-07T23:01:03.142261+09:00",
+      "type": "single",
+      "title": "PAN-OS RCE Exploit Under Active Use Enabling Root Access and Espionage",
+      "url": "https://thehackernews.com/2026/05/pan-os-rce-exploit-under-active-use.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-05-07T13:34:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-0300"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-0300",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-787 (Out-of-bounds Write)",
+          "description": "A buffer overflow vulnerability in the User-ID™ Authentication Portal (aka Captive Portal) service of Palo Alto Networks PAN-OS software allows an unauthenticated attacker to execute arbitrary code with root privileges on the PA-Series and VM-Series firewalls by sending specially crafted packets. \n\nThe risk of this issue is greatly reduced if you secure access to the User-ID™ Authentication Portal per the  best practice guidelines https://knowledgebase.paloaltonetworks.com/KCSArticleDetail  by r",
+          "epss_score": 0.14897,
+          "kev": true
+        }
+      ]
+    }
+  ]
+}

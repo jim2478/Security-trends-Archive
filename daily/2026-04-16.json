@@ -1,0 +1,632 @@
+{
+  "date": "2026-04-16",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 9,
+    "total_articles_max": 1915,
+    "matched_articles_max": 119,
+    "new_alerts": 31,
+    "cve_count": 14,
+    "ioc_count": 158,
+    "merged_count": 0,
+    "unique_cves": [
+      "CVE-2023-33538",
+      "CVE-2023-46604",
+      "CVE-2024-54529",
+      "CVE-2025-31235",
+      "CVE-2025-59718",
+      "CVE-2025-61886",
+      "CVE-2026-1731",
+      "CVE-2026-25691",
+      "CVE-2026-33032",
+      "CVE-2026-34621",
+      "CVE-2026-39808",
+      "CVE-2026-39812",
+      "CVE-2026-39813",
+      "CVE-2026-39987"
+    ],
+    "keywords_hit": {
+      "Malware": 14,
+      "CVE": 11,
+      "Botnet": 5,
+      "DDoS": 4
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "",
+      "type": "single",
+      "title": "Actively Exploited nginx-ui Flaw (CVE-2026-33032) Enables Full Nginx Server TakeoverApr 15, 2026Web Security / VulnerabilityA recently disclosed critical security flaw impacting nginx-ui, an open-sou",
+      "url": "https://thehackernews.com/2026/04/critical-nginx-ui-vulnerability-cve.html",
+      "source": "The Hacker News (보안뉴스 종합)",
+      "published": null,
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-33032"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-33032",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-306 (Missing Authentication)",
+          "description": "Nginx UI is a web user interface for the Nginx web server. In versions 2.3.5 and prior, the nginx-ui MCP (Model Context Protocol) integration exposes two HTTP endpoints: /mcp and /mcp_message. While /mcp requires both IP whitelisting and authentication (AuthRequired() middleware), the /mcp_message endpoint only applies IP whitelisting - and the default IP whitelist is empty, which the middleware treats as \"allow all\". This means any network attacker can invoke all MCP tools without authenticatio",
+          "epss_score": 0.0006,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "",
+      "type": "single",
+      "title": "The Threat That Can’t Be Ignored: CVE-2023-46604 in Apache ActiveMQ",
+      "url": "https://www.cybersecurity-insiders.com/the-threat-that-cant-be-ignored-cve-2023-46604-in-apache-activemq-2/",
+      "source": "Cybersecurity Insiders (보안인사이트)",
+      "published": null,
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2023-46604"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2023-46604",
+          "cvss_score": 10.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-502 (Deserialization)",
+          "description": "The Java OpenWire protocol marshaller is vulnerable to Remote Code \nExecution. This vulnerability may allow a remote attacker with network \naccess to either a Java-based OpenWire broker or client to run arbitrary\n shell commands by manipulating serialized class types in the OpenWire \nprotocol to cause either the client or the broker (respectively) to \ninstantiate any class on the classpath.\n\nUsers are recommended to upgrade\n both brokers and clients to version 5.15.16, 5.16.7, 5.17.6, or 5.18.3 ",
+          "epss_score": 0.94436,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "",
+      "type": "single",
+      "title": "Adobe issues emergency fix for Acrobat Reader flaw exploited in the wild (CVE-2026-34621)",
+      "url": "https://www.helpnetsecurity.com/2026/04/13/adobe-acrobat-reader-cve-2026-34621-emergency-fix/",
+      "source": "Help Net Security (보안뉴스/제품리뷰)",
+      "published": null,
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-34621"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-34621",
+          "cvss_score": 8.6,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-1321 (CWE-1321)",
+          "description": "Acrobat Reader versions 24.001.30356, 26.001.21367 and earlier are affected by an Improperly Controlled Modification of Object Prototype Attributes ('Prototype Pollution') vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
+          "epss_score": 0.06081,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "",
+      "type": "single",
+      "title": "Breaking the Sound Barrier, Part II: Exploiting CVE-2024-54529",
+      "url": "https://projectzero.google/2026/01/sound-barrier-2.html",
+      "source": "Google Project Zero (제로데이연구)",
+      "published": null,
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2024-54529",
+        "CVE-2025-31235"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2024-54529",
+          "cvss_score": 7.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-94 (Code Injection)",
+          "description": "A logic issue was addressed with improved checks. This issue is fixed in macOS Sequoia 15.2, macOS Sonoma 14.7.2, macOS Ventura 13.7.2. An app may be able to execute arbitrary code out of its sandbox or with certain elevated privileges.",
+          "epss_score": 0.00175,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2025-31235",
+          "cvss_score": 6.5,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-415 (CWE-415)",
+          "description": "A double free issue was addressed with improved memory management. This issue is fixed in iPadOS 17.7.7, macOS Sequoia 15.5, macOS Sonoma 14.7.6, macOS Ventura 13.7.6. An app may be able to cause unexpected system termination.",
+          "epss_score": 0.00068,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "",
+      "type": "single",
+      "title": "VShell and SparkRAT Observed in Exploitation of BeyondTrust Critical Vulnerability (CVE-2026-1731)",
+      "url": "https://unit42.paloaltonetworks.com/beyondtrust-cve-2026-1731/",
+      "source": "Palo Alto Unit42 (위협리서치)",
+      "published": null,
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "23.162.40[.]187\n37.19.221[.]180\n45.61.150[.]96\n70.23.0[.]66\n82.29.53[.]187\n82.29.72[.]16\n83.138.53[.]139\n85.155.186[.]121\n92.223.44[.]134\n98.10.233[.]76\n134.122.13[.]34\n138.197.14[.]95\n142.111.152[.]50\n144.172.103[.]200/4444\n155.2.215[.]64\n178.128.212[.]209\n179.43.146[.]42\n45.61.150[.]96/4444\n138.197.14[.]95/ws (SparkRAT)\nhxxp[:]//64.31.28[.]221/support\naliyundunupdate[.]xyz:8084/slt (VShell)\nd65sb7ngveucv5k2nm508abdsjmbn7qmn.oast[.]pro\nq0r2e5q2dzbykcox9qmkptm12s8mwb.oastify[.]com\nhxxp[:]//134.122.13[.]34:8979/c (SparkRAT)\nhxxp[:]//82.29.53[.]187:8778/app_cli\nhxxps[:]//transfer.weepee[.]io/7nZw7/blue.drx\nhxxp[://]85.155.186[.]121/access (SimpleHelp)\nhxxps[:]//temp[.]sh/tQTSs/storm.exe\nhxxps[:]//64.95.10[.]115:23011/update.sh\nhxxps[:]//judiemkqjajsfzpidfjlowgl8nyrtd49x.oast[.]fun\nhxxps[:]//raw.githubusercontent[.]com/nezhahq/scripts/main/agent/install.ps1\nhxxp[:]//39uchxifap4cvgzsuirom0szrrg.d65lre9sfqnlcv49317gcis6pyjsatzho.oast[.]pro\nhxxps[:]//85.155.186[.]121/access/Remote%20Access-linux64-offline.tar?language=en&app=76049110434275449312180081368257747094\nhxxps[:]//github[.]com/nicocha30/ligolo-ng/releases/download/v0.8.2/ligolo-ng_agent_0.8.2_linux_amd64.tar.gz\n9f431d5549a03aee92cfd2bdbbe90f1c91e965c99e90a0c9ad5a001f4e80c350 (SparkRAT)\n98a7b0900a9072bb40af579ec372da7b27af12b15868394df51fefe290ab176b (VShell)\n66cceb2c2f1d9988b501832fd3b559775982e2fce4ab38fc4ffe71b74eafc726 (maintenance.php)\n679ee05d92a858b6fe70aeb6072eb804548f1732e18b6c181af122b833386afb (d6)\n4762e944a0ce1f9aef243e11538f84f16b6f36560ed6e32dfd9a5f99e17e8e50 (Installer for SimpleHelp)\n98442387d466f27357d727b3706037a4df12a78602b93df973b063462a677761 (aws.php)\ncc2bc3750cc5125a50466f66ae4f2bedf1cac0e43477a78ed2fd88f3e987a292 (Bash Script)\ncf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce (file_save.php)\n0ecc867ce916d01640d76ec03de24d1d23585eb582e9c48a0364c62a590548ac\nUpdated Feb. 20, 2026, at 9:50 a.m. PT to adjust the number of exposed instances identified by Cortex Xpanse.",
+      "cve_ids": [
+        "CVE-2026-1731"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-1731",
+          "cvss_score": 9.9,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-78 (OS Command Injection)",
+          "description": "BeyondTrust Remote Support (RS) and certain older versions of Privileged Remote Access (PRA) contain a critical pre-authentication remote code execution vulnerability. By sending specially crafted requests, an unauthenticated remote attacker may be able to execute operating system commands in the context of the site user.",
+          "epss_score": 0.80065,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "",
+      "type": "single",
+      "title": "Vulnerabilities and ExploitsFortiGate CVE-2025-59718 Exploitation: Incident Response FindingsEric Carey, Olivia Henderson +1",
+      "url": "https://www.rapid7.com/blog/post/ve-fortigate-cve-2025-59718-exploitation-incident-response-ir-findings/",
+      "source": "Rapid7 Blog (취약점/모의침투)",
+      "published": null,
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "IOC | Description\nAdvanced_IP_Scanner_2.5.4594.1.exe | Advanced IP Scanner tool utilized by the attacker.\nadvanced_ip_scanner.exe | Advanced IP Scanner tool utilized by the attacker.\nmimikatz.exe | An open-source post-exploitation tool utilized by the attacker to extract sensitive authentication credentials.\nAdvanced_port_scanner_2.5.3869.exe | An open-source network utility utilized by the attacker to quickly map active devices and identify open ports.\n23.163.8[.]21 | Attacker IP address that targeted FortiGate device.\n45.32.216[.]250 | IP address used by the attacker during FortiGate configuration changes.\n45.84.107[.]17 | IP address identified in malicious interaction with SSLVPN.\n45.80.186[.]84 | IP address identified in malicious interaction with SSLVPN.\n185.219.157[.]127 | IP address identified in malicious interaction with SSLVPN.\n185.175.59[.]238 | IP address identified in malicious interaction with SSLVPN.\n198.98.54[.]209 | Attacker IP address that targeted FortiGate device and SSO login.\n45.80.184[.]229 | Attacker IP address that targeted FortiGate device and SSLVPN.\n45.80.184[.]241 | Attacker IP address that targeted FortiGate device and SSLVPN.\n42.200.230[.]178 | Attacker IP address that targeted FortiGate device and SSLVPN.\n103.20.235[.]155 | IP address identified in malicious authentications to SSO login.\n104.28.227[.]105 | IP address identified in attacker download of FortiGate configuration file.",
+      "cve_ids": [
+        "CVE-2025-59718"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2025-59718",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-347 (CWE-347)",
+          "description": "A improper verification of cryptographic signature vulnerability in Fortinet FortiOS 7.6.0 through 7.6.3, FortiOS 7.4.0 through 7.4.8, FortiOS 7.2.0 through 7.2.11, FortiOS 7.0.0 through 7.0.17, FortiProxy 7.6.0 through 7.6.3, FortiProxy 7.4.0 through 7.4.10, FortiProxy 7.2.0 through 7.2.14, FortiProxy 7.0.0 through 7.0.21, FortiSwitchManager 7.2.0 through 7.2.6, FortiSwitchManager 7.0.0 through 7.0.5 allows an unauthenticated attacker to bypass the FortiCloud SSO login authentication via a craf",
+          "epss_score": 0.07624,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "",
+      "type": "single",
+      "title": "Fake Claude AI Installer Targets Windows Users with PlugX Malware",
+      "url": "https://hackread.com/fake-claude-ai-installer-plugx-malware-windows-users/",
+      "source": "HackRead (해킹/데이터유출)",
+      "published": null,
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "",
+      "type": "single",
+      "title": "13.5M Device Botnet Drives 2 Tbps DDoS Attacks on FinTech, Qrator Finds",
+      "url": "https://hackread.com/botnet-device-drives-2-tbps-ddos-attacks-fintech/",
+      "source": "HackRead (해킹/데이터유출)",
+      "published": null,
+      "keywords": [
+        "DDoS",
+        "Botnet"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "",
+      "type": "single",
+      "title": "n8n Webhooks Abused Since October 2025 to Deliver Malware via Phishing EmailsApr 15, 2026Threat Intelligence / Cloud SecurityThreat actors have been observed weaponizing n8n , a popular artificial in",
+      "url": "https://thehackernews.com/2026/04/n8n-webhooks-abused-since-october-2025.html",
+      "source": "The Hacker News (보안뉴스 종합)",
+      "published": null,
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "",
+      "type": "single",
+      "title": "Microsoft Warns of WhatsApp-Delivered VBS Malware Hijacking Windows via UAC Bypass",
+      "url": "https://thehackernews.com/2026/04/microsoft-warns-of-whatsapp-delivered.html",
+      "source": "The Hacker News (보안뉴스 종합)",
+      "published": null,
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "",
+      "type": "single",
+      "title": "Malware & Threats",
+      "url": "https://www.securityweek.com/category/malware-cyber-threats/",
+      "source": "SecurityWeek (보안뉴스 종합)",
+      "published": null,
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "",
+      "type": "single",
+      "title": "Feds Disrupt IoT Botnets Behind Huge DDoS Attacks",
+      "url": "https://krebsonsecurity.com/2026/03/feds-disrupt-iot-botnets-behind-huge-ddos-attacks/",
+      "source": "Krebs on Security (사이버범죄/보안심층분석)",
+      "published": null,
+      "keywords": [
+        "DDoS",
+        "Botnet"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "",
+      "type": "single",
+      "title": "New AgingFly malware used in attacks on Ukraine govt, hospitals",
+      "url": "https://www.bleepingcomputer.com/news/security/new-agingfly-malware-used-in-attacks-on-ukraine-govt-hospitals/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어)",
+      "published": null,
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "",
+      "type": "single",
+      "title": "WordPress plugin suite hacked to push malware to thousands of sites",
+      "url": "https://www.bleepingcomputer.com/news/security/wordpress-plugin-suite-hacked-to-push-malware-to-thousands-of-sites/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어)",
+      "published": null,
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "",
+      "type": "single",
+      "title": "GlassWorm Malware Hits macOS Through Trusted Open VSX Extensions",
+      "url": "https://www.techworm.net/2026/02/glassworm-malware-macos-through-trusted-open-vsx-extensions.html",
+      "source": "TechWorm (보안뉴스)",
+      "published": null,
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "",
+      "type": "single",
+      "title": "Aisuru Botnet Sets New Global DDoS Record With 31.4 Tbps",
+      "url": "https://www.techworm.net/2026/02/aisuru-botnet-global-ddos-record-31-4-tbps.html",
+      "source": "TechWorm (보안뉴스)",
+      "published": null,
+      "keywords": [
+        "DDoS",
+        "Botnet"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "",
+      "type": "single",
+      "title": "Android Malware23",
+      "url": "https://research.checkpoint.com/category/android-malware/",
+      "source": "Check Point Research (취약점/위협연구)",
+      "published": null,
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "",
+      "type": "single",
+      "title": "NIST to limit work on CVE entries as submissions surge",
+      "url": "https://therecord.media/nist-to-limit-work-on-cve-entries-surge",
+      "source": "The Record by Recorded Future (위협뉴스) [RSS]",
+      "published": "2026-04-15T20:11:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "",
+      "type": "single",
+      "title": "Inside a Multi-Stage Windows Malware Campaign",
+      "url": "https://www.fortinet.com/blog/threat-research/inside-a-multi-stage-windows-malware-campaign",
+      "source": "Fortinet FortiGuard Labs (위협연구)",
+      "published": null,
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "URLs\nhxxps://github[.]com/Mafin111/MafinREP111\nhxxps://dl.dropboxusercontent.com/scl/fi/fvugw0l9x7ty665esaul3/svchost.scr?rlkey=urzegysuk9bkrw2b8zmx31457&st=gbhmc2su\nLNK\n7b8cf0ef390a7d6126c5e7bf835af5c5ce32c70c0d58ca4ddc9c238b2d3f059a\nScripts\n1828614be6d9bdd92f7ee30e12c8aac8eba33a6df2c92995f9bf930c3f1b992b\n3aa6ebb73390d304eef8fd897994906c05f3e967f8f6f6a7904c6156cf8819f9\n263b5ba921e478215dc9e3a397157badab415fc775cfb4681821b7446c14fb1a\n5443232a367a83ac2899b37c066dae3ec2010df292291db24ce3d744133218a6\nPayloads\n359fe8df31c903153667fbe93795929ad6172540b3ee7f9eff4bcc1da6d08478\n6222775b877b4be4f5407525d52c5889739b96c302e5a204ef369b4a51c6dab2\n71069a5d2a80a047ca36ca82e630d353829726d4f03a74c7522b7700c5c2bb59\n45e942ba59f3876b263a03ed7e5d5b1b250e84a0a4b4093b3c13b5fca4e12b21\ne6ca6bab85ae1eff08a59b46b7905ae0568110da172dec8367f32779094bdd08\n7de56603a7b41fca9313231df6105dbb8148d3b0d80dfbc00e71e1d88f871915",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "",
+      "type": "single",
+      "title": "UAC-0247 Targets Ukrainian Clinics and Government in Data-Theft Malware CampaignApr 16, 2026Malware / Threat IntelligenceThe Computer Emergencies Response Team of Ukraine (CERT-UA) has disclosed  det",
+      "url": "https://thehackernews.com/2026/04/uac-0247-targets-ukrainian-clinics-and.html",
+      "source": "The Hacker News (보안뉴스 종합)",
+      "published": null,
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "",
+      "type": "single",
+      "title": "Cargo theft malware actor spent a month inside a decoy network before researchers pulled the plug",
+      "url": "https://www.helpnetsecurity.com/2026/04/16/cargo-theft-malware-actor-decoy-network/",
+      "source": "Help Net Security (보안뉴스/제품리뷰)",
+      "published": "2026-04-16T10:18:27+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "",
+      "type": "single",
+      "title": "PowMix botnet targets Czech workforce",
+      "url": "https://blog.talosintelligence.com/powmix-botnet-targets-czech-workforce/",
+      "source": "Cisco Talos Intelligence (위협분석)",
+      "published": "2026-04-16T10:00:33.000Z",
+      "keywords": [
+        "Botnet"
+      ],
+      "ioc_raw_text": "The IOCs for this threat are also available at our GitHub repository\nhere\nIntegrated Coverage\nNetwork Security\nCisco Talos\nNetwork Intrusion Prevention\nWeb Security\nCisco Talos\nDNS Security\nMalware Defense\nCisco Talos\nAntivirus\nRead more\nabout Cisco Talos Intelligence Integrations in our data sheet on Cisco.com.",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "",
+      "type": "single",
+      "title": "NIST Prioritizes NVD Enrichment for CVEs in CISA KEV, Critical Software",
+      "url": "https://www.securityweek.com/nist-prioritizes-nvd-enrichment-for-cves-in-cisa-kev-critical-software/",
+      "source": "SecurityWeek [RSS]",
+      "published": "2026-04-16T10:47:14+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "",
+      "type": "single",
+      "title": "Fortinet fixes critical FortiSandbox vulnerabilities (CVE-2026-39813, CVE-2026-39808)",
+      "url": "https://www.helpnetsecurity.com/2026/04/16/fortinet-fortisandbox-vulnerabilities-cve-2026-39813-cve-2026-39808/",
+      "source": "Help Net Security (보안뉴스/제품리뷰)",
+      "published": "2026-04-16T12:48:26+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2025-61886",
+        "CVE-2026-25691",
+        "CVE-2026-39808",
+        "CVE-2026-39812",
+        "CVE-2026-39813"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2025-61886",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-25691",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-39808",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-78 (OS Command Injection)",
+          "description": "A improper neutralization of special elements used in an os command ('os command injection') vulnerability in Fortinet FortiSandbox 4.4.0 through 4.4.8 may allow attacker to execute unauthorized code or commands via <insert attack vector here>",
+          "epss_score": 0.00292,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-39812",
+          "cvss_score": 4.8,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-79 (XSS)",
+          "description": "A improper neutralization of input during web page generation ('cross-site scripting') vulnerability in Fortinet FortiSandbox 5.0.0 through 5.0.5, FortiSandbox 4.4.0 through 4.4.8, FortiSandbox 4.2 all versions, FortiSandbox PaaS 5.0.0 through 5.0.5, FortiSandbox PaaS 4.4.0 through 4.4.8, FortiSandbox PaaS 4.2 all versions may allow attacker to execute unauthorized code or commands via <insert attack vector here>",
+          "epss_score": 0.00028,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-39813",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-24 (CWE-24)",
+          "description": "A path traversal: '../filedir' vulnerability in Fortinet FortiSandbox 5.0.0 through 5.0.5, FortiSandbox 4.4.0 through 4.4.8 may allow attacker to escalation of privilege via <insert attack vector here>",
+          "epss_score": 0.00058,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "",
+      "type": "single",
+      "title": "Ukrainian emergency services and hospitals hit by espionage campaign using new AgingFly malware",
+      "url": "https://therecord.media/aging-fly-espionage-campaign-targets-ukraine-emergency-services",
+      "source": "The Record by Recorded Future (위협뉴스) [RSS]",
+      "published": "2026-04-16T12:00:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "",
+      "type": "single",
+      "title": "Hackers exploit Marimo flaw to deploy NKAbuse malware from Hugging Face",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-marimo-flaw-to-deploy-nkabuse-malware-from-hugging-face/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어)",
+      "published": "2026-04-16T12:58:06-04:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-39987"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-39987",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-306 (Missing Authentication)",
+          "description": "marimo is a reactive Python notebook. Prior to 0.23.0, Marimo has a Pre-Auth RCE vulnerability. The terminal WebSocket endpoint /terminal/ws lacks authentication validation, allowing an unauthenticated attacker to obtain a full PTY shell and execute arbitrary system commands. Unlike other WebSocket endpoints (e.g., /ws) that correctly call validate_auth() for authentication, the /terminal/ws endpoint only checks the running mode and platform support before accepting connections, completely skipp",
+          "epss_score": 0.03204,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "",
+      "type": "single",
+      "title": "NIST admits defeat on NVD backlog, will enrich only highest-risk CVEs going forward",
+      "url": "https://www.helpnetsecurity.com/2026/04/16/nist-national-vulnerability-database-nvd-enrichment/",
+      "source": "Help Net Security (보안뉴스/제품리뷰)",
+      "published": "2026-04-16T16:19:50+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "",
+      "type": "single",
+      "title": "Newly Discovered PowMix Botnet Hits Czech Workers Using Randomized C2 TrafficApr 16, 2026Botnet / CryptominingCybersecurity researchers have warned of an active malicious campaign that's targeting th",
+      "url": "https://thehackernews.com/2026/04/newly-discovered-powmix-botnet-hits.html",
+      "source": "The Hacker News (보안뉴스 종합)",
+      "published": null,
+      "keywords": [
+        "Botnet"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "",
+      "type": "single",
+      "title": "A Deep Dive Into Attempted Exploitation of CVE-2023-33538",
+      "url": "https://unit42.paloaltonetworks.com/exploitation-of-cve-2023-33538/",
+      "source": "Palo Alto Unit42 (위협리서치)",
+      "published": "2026-04-16T22:00:13+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "Malicious files from the activity:\nSHA256 hash: 3fbd2a2e82ceb5e91eadbad02cb45ac618324da9b1895d81ebe7de765dca30e7 File size: 130.75 KB (133,888 bytes) Filename: arm File type: ELF 32-bit LSB executable, ARM, version 1 (ARM), statically linked, stripped File description: ELF binary archive downloaded from a malicious server\nFile size: 130.75 KB (133,888 bytes)\nFilename: arm\nFile type: ELF 32-bit LSB executable, ARM, version 1 (ARM), statically linked, stripped\nFile description: ELF binary archive downloaded from a malicious server\nSHA256 hash: 4caaa18982cd4056fead54b98d57f9a2a1ddd654cf19a7ba2366dfadbd6033da File size: 126.75 KB (129,792 bytes) Filename: arm5 File type: ELF 32-bit LSB executable, ARM, version 1 (ARM), statically linked, stripped File description: ELF binary archive downloaded from a malicious server\nFile size: 126.75 KB (129,792 bytes)\nFilename: arm5\nFile type: ELF 32-bit LSB executable, ARM, version 1 (ARM), statically linked, stripped\nFile description: ELF binary archive downloaded from a malicious server\nSHA256 hash: 9df711c3aef2bba17b622ddfd955452f8d8eb55899528fbc13d9540c52f13402 File size: 139.93 KB (143,292 bytes) Filename: arm6 File type: ELF 32-bit LSB executable, ARM, EABI4 version 1 (SYSV), statically linked, stripped File description: ELF binary archive downloaded from a malicious server\nFile size: 139.93 KB (143,292 bytes)\nFilename: arm6\nFile type: ELF 32-bit LSB executable, ARM, EABI4 version 1 (SYSV), statically linked, stripped\nFile description: ELF binary archive downloaded from a malicious server\nSHA256 hash: 7bbb21fec19512d932b7a92652ed0c8f0fedea89f34b9d6f267cf39de0eb9b20 File size: 175.60 KB (179,813 bytes) Filename: arm7 File type: ELF 32-bit LSB executable, ARM, EABI4 version 1 (SYSV), statically linked, with debug_info, not stripped File description: ELF binary archive downloaded from a malicious server\nFile size: 175.60 KB (179,813 bytes)\nFilename: arm7\nFile type: ELF 32-bit LSB executable, ARM, EABI4 version 1 (SYSV), statically linked, with debug_info, not stripped\nFile description: ELF binary archive downloaded from a malicious server\nSHA256 hash: 00078aeeaca54b5d3c1237e964e9f956690b782e4ea160d81edc3c6b44e7f620 File size: (1,731,152 bytes) Filename: httpd File type: ELF 32-bit MSB executable, MIPS, MIPS32 rel2 version 1 (SYSV), dynamically linked File description: ELF binary extracted from the firmware downloaded from TP-Link website\nFile size: (1,731,152 bytes)\nFilename: httpd\nFile type: ELF 32-bit MSB executable, MIPS, MIPS32 rel2 version 1 (SYSV), dynamically linked\nFile description: ELF binary extracted from the firmware downloaded from TP-Link website\nSHA256 hash: 534b654531a6a540a144da9545ee343e1046f843d7de4c1091b46c3ee66a508b File size: 169.72 KB (173,796 bytes) Filename: mips File type: ELF 32-bit MSB executable, MIPS, MIPS-I version 1 (SYSV), statically linked, stripped File description: ELF binary archive downloaded from a malicious server\nFile size: 169.72 KB (173,796 bytes)\nFilename: mips\nFile type: ELF 32-bit MSB executable, MIPS, MIPS-I version 1 (SYSV), statically linked, stripped\nFile description: ELF binary archive downloaded from a malicious server\nSHA256 hash: 919f292a07a37f163f88527e725406187c8ecc637387ad24853fe49ce4e6ddf4 File size: 114.81 KB (117,568 bytes) Filename: sh4 File type: ELF 32-bit LSB executable, Renesas SH, version 1 (SYSV), statically link File description: ELF binary archive downloaded from a malicious server\nFile size: 114.81 KB (117,568 bytes)\nFilename: sh4\nFile type: ELF 32-bit LSB executable, Renesas SH, version 1 (SYSV), statically link\nFile description: ELF binary archive downloaded from a malicious server\nSHA256 hash: c321933e4e5970ba7299fe21778dab9398994c22ca0ba0422c6cbc3fbb95ea26 File size: 3.9 MB Filename: wr940n_us_3_16_9_up_boot(160617).bin File type: firmware 940 v4 TP-Link Technologies version 1.0, version 3.16.9, 4,063,744 bytes or less, at 0x200 865,629 bytes, at 0x100000 2,883,584 bytes File description: Firmware downloaded from TP-Link website\nFile size: 3.9 MB\nFilename: wr940n_us_3_16_9_up_boot(160617).bin\nFile type: firmware 940 v4 TP-Link Technologies version 1.0, version 3.16.9, 4,063,744 bytes or less, at 0x200 865,629 bytes, at 0x100000 2,883,584 bytes\nFile description: Firmware downloaded from TP-Link website\nSHA256 hash: 56f21f412e898ad9e3ee05d5f44c44d9d7bcb9ecbfbdb9de11b8fa5a637aeef6 File size: 136.30 KB (139,576 bytes) Filename: x86_64 File type: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, stripped File description: ELF binary archive downloaded from a malicious server\nFile size: 136.30 KB (139,576 bytes)\nFilename: x86_64\nFile type: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, stripped\nFile description: ELF binary archive downloaded from a malicious server\nURLs:\nhxxp[:]//bot.ddosvps[.]cc/top1hbt[.]arm\nhxxp[:]//bot.ddosvps[.]cc/top1hbt[.]arm5\nhxxp[:]//bot.ddosvps[.]cc/top1hbt[.]arm6\nhxxp[:]//bot.ddosvps[.]cc/top1hbt[.]arm7\nhxxp[:]//bot.ddosvps[.]cc/top1hbt[.]mips\nhxxp[:]//bot.ddosvps[.]cc/top1hbt[.]mpsl\nhxxp[:]//bot.ddosvps[.]cc/top1hbt[.]x86_64\nhxxp[:]//bot.ddosvps[.]cc/top1hbt[.]sh4\nhxxp[:]//51.38.137[.]113/arm\nhxxp[:]//51.38.137[.]113/arm5\nhxxp[:]//51.38.137[.]113/arm6\nhxxp[:]//51.38.137[.]113/arm7\nhxxp[:]//51.38.137[.]113/x86_64\nhxxp[:]//51.38.137[.]113/mips\nhxxp[:]//51.38.137[.]113/sh4\nC2 servers:\n51.38.137[.]113\ncnc.vietdediserver[.]shop\nbot.ddosvps[.]cc",
+      "cve_ids": [
+        "CVE-2023-33538"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2023-33538",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-77 (Command Injection)",
+          "description": "TP-Link TL-WR940N V2/V4, TL-WR841N V8/V10, and TL-WR740N V1/V2 was discovered to contain a command injection vulnerability via the component /userRpm/WlanNetworkRpm .",
+          "epss_score": 0.91474,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "",
+      "type": "single",
+      "title": "Operation PowerOFF identifies 75k DDoS users, takes down 53 domains",
+      "url": "https://www.bleepingcomputer.com/news/security/operation-poweroff-identifies-75k-ddos-users-takes-down-53-domains/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어)",
+      "published": "2026-04-16T18:26:34-04:00",
+      "keywords": [
+        "DDoS"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "",
+      "type": "single",
+      "title": "ZionSiphon malware designed to sabotage water treatment systems",
+      "url": "https://www.bleepingcomputer.com/news/security/zionsiphon-malware-designed-to-sabotage-water-treatment-systems/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어)",
+      "published": "2026-04-16T18:04:53-04:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}

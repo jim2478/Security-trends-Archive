@@ -1,0 +1,142 @@
+{
+  "date": "2026-04-25",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 24,
+    "total_articles_max": 1861,
+    "matched_articles_max": 158,
+    "new_alerts": 6,
+    "cve_count": 3,
+    "ioc_count": 41,
+    "merged_count": 0,
+    "unique_cves": [
+      "CVE-2025-20333",
+      "CVE-2025-20362",
+      "CVE-2026-41651"
+    ],
+    "keywords_hit": {
+      "Malware": 5,
+      "CVE": 1
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-04-25T00:00:55.623144+09:00",
+      "type": "single",
+      "title": "Pre-Stuxnet Sabotage Malware ‘Fast16’ Linked to US-Iran Cyber Tensions",
+      "url": "https://www.securityweek.com/pre-stuxnet-sabotage-malware-fast16-linked-to-us-iran-cyber-tensions/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-04-24T14:57:18+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-04-25T03:00:51.048179+09:00",
+      "type": "single",
+      "title": "FIRESTARTER Backdoor Hit Federal Cisco Firepower Device, Survives Security Patches",
+      "url": "https://thehackernews.com/2026/04/firestarter-backdoor-hit-federal-cisco.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-04-24T17:06:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-04-25T06:01:09.099001+09:00",
+      "type": "single",
+      "title": "Firestarter malware survives Cisco firewall updates, security patches",
+      "url": "https://www.bleepingcomputer.com/news/security/firestarter-malware-survives-cisco-firewall-updates-security-patches/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-04-24T20:34:08+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2025-20333",
+        "CVE-2025-20362"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2025-20333",
+          "cvss_score": 9.9,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-120 (CWE-120)",
+          "description": "A vulnerability in the VPN web server of Cisco Secure Firewall Adaptive Security Appliance (ASA) Software and Cisco Secure Firewall Threat Defense (FTD) Software could allow an authenticated, remote attacker to execute arbitrary code on an affected device.\r\n\r This vulnerability is due to improper validation of user-supplied input in HTTP(S) requests. An attacker with valid VPN user credentials could exploit this vulnerability by sending crafted HTTP requests to an affected device. A successful e",
+          "epss_score": 0.41431,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2025-20362",
+          "cvss_score": 6.5,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-862 (Missing Authorization)",
+          "description": "Update: On November 5, 2025, Cisco became aware of a new attack variant against devices running Cisco Secure ASA Software or Cisco Secure FTD Software releases that are affected by CVE-2025-20333 and CVE-2025-20362. This attack can cause unpatched devices to unexpectedly reload, leading to denial of service (DoS) conditions. Cisco strongly recommends that all customers upgrade to the fixed software releases that are listed in the Fixed Software [\"#fs\"] section of this advisory.\r\n\r A vulnerabilit",
+          "epss_score": 0.50686,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-04-25T07:01:01.873563+09:00",
+      "type": "single",
+      "title": "The npm Threat Landscape: Attack Surface and Mitigations",
+      "url": "https://unit42.paloaltonetworks.com/monitoring-npm-supply-chain-attacks/",
+      "source": "Palo Alto Unit42 (위협리서치) [RSS]",
+      "published": "2026-04-24T21:40:33+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "Network Indicators\nTable 3 lists the network indicators from this activity.\nIndicator | Type\naudit.checkmarx[.]cx | C2 domain\n94.154.172[.]43 | C2 IP address\ncheckmarx[.]cx | Attacker-controlled domain\n91.195.240[.]123 | Attacker IP address\nTable 3. Network indicators.\nGitHub Indicators\nTable 4 lists the GitHub indicators from this activity.\nIndicator | Type\nhelloworm00/hello-world | Dead drop repository\nbc544f455d7c06c8a1f3446160a6d9a4a8236b11 | Dead drop commit SHA1 hash\nhelloworm00@proton[.]me | Attacker email address\nCommit messages matchingLongLiveTheResistanceAgainstMachines:* | Exfiltration staging\nPublic repositories named<dune-word>-<dune-word>-<3digits> with description \"Checkmarx Configuration Storage\" | Exfiltration repositories\nTable 4. GitHub indicators.\nFiles and Process Indicators\nTable 5 lists the file and process indicators from this activity.\nIndicator | Type | SHA256 hash\nbw_setup.js | Bootstrap script | f35475829991b303c5efc2ee0f343dd38f8614e8b5e69db683923135f85cf60d\nbw1.js | Obfuscated payload | 18f784b3bc9a0bcdcb1a8d7f51bc5f54323fc40cbd874119354ab609bef6e4cb\npackage.json | Malicious manifest | 167ce57ef59a32a6a0ef4137785828077879092d7f83ddbc1755d6e69116e0ad\nsetup.mjsin infected packages | Worm payload\nUnexpectedbunprocess execution | Runtime indicator\n.github/workflows/format-check.ymlon transient branches | Workflow injection\nformat-resultsworkflow artifact | Secret exfiltration\nTable 5. File and process indicators.\nnpm Indicators\nTable 6 lists the npm indicators from this activity.\nIndicator | Type\n@bitwarden/cli@2026.4.0 | Malicious package\nNewpreinstall: \"node setup.mjs\" in package.json | Injected hook\nTable 6. npm indicators.\nTable 3 lists the network indicators from this activity.\nIndicator | Type\naudit.checkmarx[.]cx | C2 domain\n94.154.172[.]43 | C2 IP address\ncheckmarx[.]cx | Attacker-controlled domain\n91.195.240[.]123 | Attacker IP address\nTable 3. Network indicators.",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-04-25T15:03:02.936101+09:00",
+      "type": "single",
+      "title": "리눅스 기본 구성 뚫렸다…12년 잠복 ‘Pack2TheRoot’ 취약점으로 루트 권한 탈취 가능",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=206450",
+      "source": "데일리시큐 (이슈) [RSS]",
+      "published": "2026-04-25T14:16:50+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-41651"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-41651",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-367 (CWE-367)",
+          "description": "PackageKit is a a D-Bus abstraction layer that allows the user to manage packages in a secure way using a cross-distro, cross-architecture API. PackageKit between and including versions 1.0.2 and 1.3.4 is vulnerable to a time-of-check time-of-use (TOCTOU) race condition on transaction flags that allows unprivileged users to install packages as root and thus leads to a local privilege escalation. This is patched in version 1.3.5.\n\nA local unprivileged user can install arbitrary RPM packages as ro",
+          "epss_score": 0.00025,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-04-25T19:00:55.472641+09:00",
+      "type": "single",
+      "title": "Researchers Uncover Pre-Stuxnet ‘fast16’ Malware Targeting Engineering Software",
+      "url": "https://thehackernews.com/2026/04/researchers-uncover-pre-stuxnet-fast16.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-04-25T09:26:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}

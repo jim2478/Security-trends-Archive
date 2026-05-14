@@ -1,0 +1,216 @@
+{
+  "date": "2026-05-12",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 24,
+    "total_articles_max": 1852,
+    "matched_articles_max": 176,
+    "new_alerts": 12,
+    "cve_count": 2,
+    "ioc_count": 0,
+    "merged_count": 0,
+    "unique_cves": [
+      "CVE-2025-55182",
+      "CVE-2026-44413"
+    ],
+    "keywords_hit": {
+      "Malware": 11,
+      "CVE": 2
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-05-12T00:01:08.090878+09:00",
+      "type": "single",
+      "title": "Flash Alert: EtherRat and TukTuk C2 End in The Gentleman Ransomware",
+      "url": "https://thedfirreport.com/2026/05/11/flash-alert-etherrat-and-tuktuk-c2-end-in-the-gentleman-ransomware/",
+      "source": "The DFIR Report (침해사고분석/포렌식) [RSS]",
+      "published": "2026-05-11T14:05:04+00:00",
+      "keywords": [
+        "CVE",
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2025-55182"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2025-55182",
+          "cvss_score": 10.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-502 (Deserialization)",
+          "description": "A pre-authentication remote code execution vulnerability exists in React Server Components versions 19.0.0, 19.1.0, 19.1.1, and 19.2.0 including the following packages: react-server-dom-parcel, react-server-dom-turbopack, and react-server-dom-webpack. The vulnerable code unsafely deserializes payloads from HTTP requests to Server Function endpoints.",
+          "epss_score": 0.82011,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-12T01:01:13.235912+09:00",
+      "type": "single",
+      "title": "possible malware on mac. what do i do?",
+      "url": "https://www.reddit.com/r/antivirus/comments/1ta7j6q/possible_malware_on_mac_what_do_i_do/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-11T15:58:25+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-12T02:01:05.518700+09:00",
+      "type": "single",
+      "title": "MacOS flags ChatGPT as Malware and moves it to Bin",
+      "url": "https://www.cybersecurity-insiders.com/macos-flags-chatgpt-as-malware-and-moves-it-to-bin/",
+      "source": "Cybersecurity Insiders (보안인사이트)",
+      "published": "2026-05-11T15:22:28+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-12T06:01:03.368081+09:00",
+      "type": "single",
+      "title": "Disk usage jumped to 80% while gaming, and when open task manager it lowers/doesn’t show whats using the disk",
+      "url": "https://www.reddit.com/r/antivirus/comments/1tag972/disk_usage_jumped_to_80_while_gaming_and_when/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-11T20:57:13+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-12T07:00:53.569089+09:00",
+      "type": "single",
+      "title": "Ran Powershell command - malware",
+      "url": "https://www.reddit.com/r/antivirus/comments/1tahth1/ran_powershell_command_malware/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-11T21:54:48+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-12T09:00:53.474222+09:00",
+      "type": "single",
+      "title": "Can Microsoft Defender intercept infostealer before it does any damage?",
+      "url": "https://www.reddit.com/r/antivirus/comments/1tajhi8/can_microsoft_defender_intercept_infostealer/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-11T23:01:08+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-12T12:00:49.217030+09:00",
+      "type": "single",
+      "title": "I caught the renpy malware. Could I get help with FRST?",
+      "url": "https://www.reddit.com/r/antivirus/comments/1taopfv/i_caught_the_renpy_malware_could_i_get_help_with/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-12T02:46:18+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-12T17:01:03.280876+09:00",
+      "type": "single",
+      "title": "Can An Infected File Replace And Hide Itself With A Legitimate File",
+      "url": "https://www.reddit.com/r/antivirus/comments/1tau8i2/can_an_infected_file_replace_and_hide_itself_with/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-12T07:25:17+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-12T21:01:15.700515+09:00",
+      "type": "single",
+      "title": "Shai Hulud attack ships signed malicious TanStack, Mistral npm packages",
+      "url": "https://www.bleepingcomputer.com/news/security/shai-hulud-attack-ships-signed-malicious-tanstack-mistral-npm-packages/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-05-12T11:29:36+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-12T22:01:08.840003+09:00",
+      "type": "single",
+      "title": "JetBrains TeamCity vulnerability allows privilege escalation, API exposure (CVE-2026-44413)",
+      "url": "https://www.helpnetsecurity.com/2026/05/12/jetbrains-teamcity-vulnerability-cve-2026-44413/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-05-12T12:26:12+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-44413"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-44413",
+          "cvss_score": 8.2,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-306 (Missing Authentication)",
+          "description": "In JetBrains TeamCity before 2026.1\n2025.11.5 authenticated users could expose server API to unauthorised access",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-12T23:01:23.093937+09:00",
+      "type": "single",
+      "title": "Free OnlyFans Lure Used to Spread Cross-Platform CRPx0 Malware",
+      "url": "https://www.securityweek.com/free-onlyfans-lure-used-to-spread-cross-platform-crpx0-malware/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-05-12T13:46:49+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-12T23:01:23.093937+09:00",
+      "type": "single",
+      "title": "Hey guys i have a malware VirTool:PowerShell/MaleficAms.W",
+      "url": "https://www.reddit.com/r/antivirus/comments/1tb2agl/hey_guys_i_have_a_malware/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-12T13:51:59+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}

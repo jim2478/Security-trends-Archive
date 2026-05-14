@@ -1,0 +1,666 @@
+{
+  "date": "2026-04-30",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 24,
+    "total_articles_max": 1881,
+    "matched_articles_max": 174,
+    "new_alerts": 31,
+    "cve_count": 17,
+    "ioc_count": 73,
+    "merged_count": 0,
+    "unique_cves": [
+      "CVE-2025-10539",
+      "CVE-2025-10549",
+      "CVE-2025-59718",
+      "CVE-2026-0972",
+      "CVE-2026-31431",
+      "CVE-2026-33032",
+      "CVE-2026-34262",
+      "CVE-2026-34621",
+      "CVE-2026-35029",
+      "CVE-2026-40478",
+      "CVE-2026-41940"
+    ],
+    "keywords_hit": {
+      "Malware": 17,
+      "CVE": 14
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-04-30T01:03:16.245305+09:00",
+      "type": "single",
+      "title": "New Wave of DPRK Attacks Uses AI-Inserted npm Malware, Fake Firms, and RATs",
+      "url": "https://thehackernews.com/2026/04/new-wave-of-dprk-attacks-uses-ai.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-04-29T14:43:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-04-30T01:03:16.245305+09:00",
+      "type": "single",
+      "title": "How to get rid of \"hidden\" malware",
+      "url": "https://www.reddit.com/r/antivirus/comments/1sz1ogd/how_to_get_rid_of_hidden_malware/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-04-29T15:12:45+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-04-30T01:03:16.245305+09:00",
+      "type": "single",
+      "title": "Supply Chain Campaign Targets SAP npm Packages with Credential-Stealing Malware",
+      "url": "https://www.wiz.io/blog/mini-shai-hulud-supply-chain-sap-npm",
+      "source": "Wiz Blog (클라우드보안) [RSS]",
+      "published": "2026-04-29T15:14:27+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "@cap-js/postgres 2.2.2\nColumn A\nColumn B\nTarball   (3,409,213 bytes)\nSHA256: 1d9e4ece8e13c8eaf94cb858470d1bd8f81bb58f62583552303774fa1579edee\nTarball   (3,409,213 bytes)\nSHA1: e80824a19f48d778a746571bb15279b5679fd61c\nTarball   (3,409,213 bytes)\nMD5: e32eaf0c3cde9616831a1e92d42b0058\nexecution.js (11,723,748   bytes)\nSHA256: eb6eb4154b03ec73218727dc643d26f4e14dfda2438112926bb5daf37ae8bcdb\nexecution.js (11,723,748   bytes)\nSHA1: ca4a5bb85778ffcd2153ace88fe2d882c8ceeb23\nexecution.js (11,723,748   bytes)\nMD5: b523a69b27064d1715d1f0aaffcfae63\n@cap-js/db-service 2.10.1\nColumn A\nColumn B\nTarball   (3,490,641 bytes)\nSHA256: 258257560fe2f1c2cc3924eae40718c829085b52ae3436b4e46d2565f6996271\nTarball   (3,490,641 bytes)\nSHA1: 4b04304f6d51392e3f43856c94ca95800518a694\nTarball   (3,490,641 bytes)\nMD5: d468f16eafccbc54a994f3d675ace8ae\nexecution.js\nIdentical to @cap-js/postgres 2.2.2\n@cap-js/sqlite 2.2.2\nColumn A\nColumn B\nTarball   (3,395,651 bytes)\nSHA256: a1da198bb4e883d077a0e13351bf2c3acdea10497152292e873d79d4f7420211\nTarball   (3,395,651 bytes)\nSHA1: 7b6a28e92149637e5d7c7f4a2d3e54acd507c929\nTarball   (3,395,651 bytes)\nMD5: 8cd683f78735c9bfc32600c73d3d9abe\nexecution.js (11,729,871   bytes)\nSHA256: 6f933d00b7d05678eb43c90963a80b8947c4ae6830182f89df31da9f568fea95\nexecution.js (11,729,871   bytes)\nSHA1: bc95cc5dda788295aa0c9456791520599ef99526\nexecution.js (11,729,871   bytes)\nMD5: 6fb87d243b011b5445f379f80e1a6b4d\nmbt 1.2.48\nColumn A\nColumn B\nTarball   (3,373,788 bytes)\nSHA256: 86282ebcd3bebf50f087f2c6b00c62caa667cdcb53558033d85acd39e3d88b41\nTarball   (3,373,788 bytes)\nSHA1: 0af7415d65753f6aede8c9c0f39be478666b9c12\nTarball   (3,373,788 bytes)\nMD5: 04d8a99447b16f6839fff3b978f88d7e\nexecution.js (11,678,349   bytes)\nSHA256: 80a3d2877813968ef847ae73b5eeeb70b9435254e74d7f07d8cf4057f0a710ac\nexecution.js (11,678,349   bytes)\nSHA1: 6bc859aaee1f8885eec2a3016226e877e5adba08\nexecution.js (11,678,349   bytes)\nMD5: 45dc9c02f82b4370ca92785282d43a86\nShared Dropper (all 4 packages)\nColumn A\nColumn B\nsetup.mjs   (4,549 bytes)\nSHA256: 4066781fa830224c8bbcc3aa005a396657f9c8f9016f9a64ad44a9d7f5f45e34\nsetup.mjs   (4,549 bytes)\nSHA1: 307d0fa7407d40e67d14e9d5a4c61ac5b4f20431\nsetup.mjs   (4,549 bytes)\nMD5: 35baf8316645372eea40b91d48acb067",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-04-30T02:01:12.871017+09:00",
+      "type": "single",
+      "title": "The Thymeleaf Template Injection That Only Hurts If You Let It",
+      "url": "https://www.reddit.com/r/netsec/comments/1sz3u3l/the_thymeleaf_template_injection_that_only_hurts/",
+      "source": "Reddit r/netsec (보안커뮤니티) [RSS]",
+      "published": "2026-04-29T16:28:39+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-40478"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-40478",
+          "cvss_score": 9.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-917 (CWE-917)",
+          "description": "Thymeleaf is a server-side Java template engine for web and standalone environments. Versions 3.1.3.RELEASE and prior contain a security bypass vulnerability in the the expression execution mechanisms. Although the library provides mechanisms to prevent expression injection, it fails to properly neutralize specific syntax patterns that allow for the execution of unauthorized expressions. If an application developer passes unvalidated user input directly to the template engine, an unauthenticated",
+          "epss_score": 0.00051,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-04-30T02:01:12.871017+09:00",
+      "type": "single",
+      "title": "SAP npm Packages Compromised by “Mini Shai-Hulud” Credential-Stealing Malware",
+      "url": "https://thehackernews.com/2026/04/sap-npm-packages-compromised-by-mini.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-04-29T16:26:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-04-30T02:01:12.871017+09:00",
+      "type": "single",
+      "title": "Accidentally installed hardware detection virus?",
+      "url": "https://www.reddit.com/r/antivirus/comments/1sz41py/accidentally_installed_hardware_detection_virus/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-04-29T16:36:13+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-04-30T02:01:12.871017+09:00",
+      "type": "single",
+      "title": "Bitdefender antivirus VPN services",
+      "url": "https://www.reddit.com/r/antivirus/comments/1sz3hu6/bitdefender_antivirus_vpn_services/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-04-29T16:16:22+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-04-30T03:01:49.285407+09:00",
+      "type": "single",
+      "title": "SEC Consult SA-20260427-0 :: Missing TLS Certificate Validation leading to RCE in DeskTime Time Tracking App",
+      "url": "https://seclists.org/fulldisclosure/2026/Apr/20",
+      "source": "SecLists Full Disclosure (취약점공개)",
+      "published": "2026-04-29T17:43:43+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2025-10539"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2025-10539",
+          "cvss_score": 4.8,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-295 (CWE-295)",
+          "description": "Due to improper TLS certificate validation in the DeskTime Time Tracking App before version 1.3.674, attackers who can position themselves in the network path between the client and the DeskTime update servers can return a malicious executable in response to an update request. This allows the attacker to achieve user-level remote code execution on the affected client.",
+          "epss_score": 0.00021,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-04-30T03:01:49.285407+09:00",
+      "type": "single",
+      "title": "SEC Consult SA-20260423-0 :: DLL Hijacking in EfficientLab Controlio (cloud-based employee monitoring service)",
+      "url": "https://seclists.org/fulldisclosure/2026/Apr/19",
+      "source": "SecLists Full Disclosure (취약점공개)",
+      "published": "2026-04-29T17:43:40+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2025-10549"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2025-10549",
+          "cvss_score": 5.1,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-427 (CWE-427)",
+          "description": "EfficientLab Controlio before v1.3.95 contains a DLL hijacking vulnerability caused by weak folder permissions in the installation directory. A local attacker can place a specially crafted DLL in this directory and achieve arbitrary code execution with highest privileges, because the affected service runs as NT AUTHORITY\\SYSTEM.",
+          "epss_score": 6e-05,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-04-30T03:01:49.285407+09:00",
+      "type": "single",
+      "title": "SEC Consult SA-20260421-0 :: Broken Access Control in Config Endpoint in LiteLLM",
+      "url": "https://seclists.org/fulldisclosure/2026/Apr/17",
+      "source": "SecLists Full Disclosure (취약점공개)",
+      "published": "2026-04-29T17:43:37+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-35029"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-35029",
+          "cvss_score": 8.7,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-863 (CWE-863)",
+          "description": "LiteLLM is a proxy server (AI Gateway) to call LLM APIs in OpenAI (or native) format. Prior to 1.83.0, the /config/update endpoint does not enforce admin role authorization. A user who is already authenticated into the platform can then use this endpoint to modify proxy configuration and environment variables, register custom pass-through endpoint handlers pointing to attacker-controlled Python code, achieving remote code execution, read arbitrary server files by setting UI_LOGO_PATH and fetchin",
+          "epss_score": 0.13296,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-04-30T03:01:49.285407+09:00",
+      "type": "single",
+      "title": "SEC Consult SA-20260415-0 :: Exposed Private Key of X.509 Certificate in SAP HANA Cockpit & SAP HANA Database Explorer",
+      "url": "https://seclists.org/fulldisclosure/2026/Apr/16",
+      "source": "SecLists Full Disclosure (취약점공개)",
+      "published": "2026-04-29T17:43:35+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-34262"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-34262",
+          "cvss_score": 5.0,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-522 (CWE-522)",
+          "description": "Information Disclosure Vulnerability in SAP HANA Cockpit and HANA Database Explorer",
+          "epss_score": 0.00028,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-04-30T03:01:49.285407+09:00",
+      "type": "single",
+      "title": "[SBA-ADV-20251120-01] CVE-2026-0972: GoAnywhere MFT Email HTML Injection",
+      "url": "https://seclists.org/fulldisclosure/2026/Apr/8",
+      "source": "SecLists Full Disclosure (취약점공개)",
+      "published": "2026-04-29T17:30:53+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-0972"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-0972",
+          "cvss_score": 5.4,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-74 (CWE-74)",
+          "description": "HTML injection is possible in system generated emails in Fortra's GoAnywhere MFT prior to 7.10.0.\n\n\nNote: The title, details, and description of this CVE were corrected post-publishing.",
+          "epss_score": 0.0003,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-04-30T03:01:49.285407+09:00",
+      "type": "single",
+      "title": "The Internet Is Falling Down, Falling Down, Falling Down (cPanel & WHM Authentication Bypass CVE-2026-41940) - watchTowr Labs",
+      "url": "https://www.reddit.com/r/netsec/comments/1sz5aoi/the_internet_is_falling_down_falling_down_falling/",
+      "source": "Reddit r/netsec (보안커뮤니티) [RSS]",
+      "published": "2026-04-29T17:20:21+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-41940"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-41940",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-306 (Missing Authentication)",
+          "description": "cPanel and WHM versions prior to 11.110.0.97, 11.118.0.63, 11.126.0.54, 11.132.0.29, 11.134.0.20, and 11.136.0.5 contain an authentication bypass vulnerability in the login flow that allows unauthenticated remote attackers to gain unauthorized access to the control panel.",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-04-30T03:01:49.285407+09:00",
+      "type": "single",
+      "title": "Trojan-Spy.Win32.Small / Remote Command Execution",
+      "url": "https://seclists.org/fulldisclosure/2026/Apr/10",
+      "source": "SecLists Full Disclosure (취약점공개)",
+      "published": "2026-04-29T17:34:03+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-04-30T04:01:03.378408+09:00",
+      "type": "single",
+      "title": "fell for the captcha scam. what to do.",
+      "url": "https://www.reddit.com/r/antivirus/comments/1sz82j1/fell_for_the_captcha_scam_what_to_do/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-04-29T18:56:05+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-04-30T07:00:53.342512+09:00",
+      "type": "single",
+      "title": "Got hit with an infostealer. What else to do.",
+      "url": "https://www.reddit.com/r/antivirus/comments/1szbkia/got_hit_with_an_infostealer_what_else_to_do/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-04-29T21:02:35+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-04-30T08:01:10.772878+09:00",
+      "type": "single",
+      "title": "Copy Fail exploit lets 732 bytes hijack Linux systems and quietly grab root",
+      "url": "https://www.reddit.com/r/netsec/comments/1szduu3/copy_fail_exploit_lets_732_bytes_hijack_linux/",
+      "source": "Reddit r/netsec (보안커뮤니티) [RSS]",
+      "published": "2026-04-29T22:31:20+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-31431"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-31431",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-04-30T08:01:10.772878+09:00",
+      "type": "single",
+      "title": "PSA: If Chrome keeps opening a random YouTube music video every time you launch it, going through a redirect chain before landing on YouTube , I say Chrome being hijacked ? Here's the fix (demotrix.org malware)",
+      "url": "https://www.reddit.com/r/antivirus/comments/1sze6vt/psa_if_chrome_keeps_opening_a_random_youtube/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-04-29T22:45:17+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-04-30T09:00:56.770427+09:00",
+      "type": "single",
+      "title": "Malwarebytes & Windows Scan not getting rid of this trojan",
+      "url": "https://www.reddit.com/r/antivirus/comments/1szemgq/malwarebytes_windows_scan_not_getting_rid_of_this/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-04-29T23:03:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-04-30T10:00:57.955883+09:00",
+      "type": "single",
+      "title": "Got hit by Trojan:Win32/ClickFix.PJ!MTB, container, needs some advice",
+      "url": "https://www.reddit.com/r/antivirus/comments/1szgkzu/got_hit_by_trojanwin32clickfixpjmtb_container/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-04-30T00:27:37+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-04-30T16:00:55.567184+09:00",
+      "type": "single",
+      "title": "Trojan in OBS?",
+      "url": "https://www.reddit.com/r/antivirus/comments/1sznpio/trojan_in_obs/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-04-30T06:11:36+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-04-30T19:01:14.302825+09:00",
+      "type": "single",
+      "title": "New Linux 'Copy Fail' Vulnerability Enables Root Access on Major Distributions",
+      "url": "https://thehackernews.com/2026/04/new-linux-copy-fail-vulnerability.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-04-30T09:24:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-31431"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-31431",
+          "cvss_score": 7.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-669 (CWE-669)",
+          "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ncrypto: algif_aead - Revert to operating out-of-place\n\nThis mostly reverts commit 72548b093ee3 except for the copying of\nthe associated data.\n\nThere is no benefit in operating in-place in algif_aead since the\nsource and destination come from different mappings.  Get rid of\nall the complexity added for in-place operation and just copy the\nAD directly.",
+          "epss_score": 8e-05,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-04-30T19:01:14.302825+09:00",
+      "type": "single",
+      "title": "CVE-2026-41940: cPanel & WHM Authentication Bypass",
+      "url": "https://www.rapid7.com/blog/post/etr-cve-2026-41940-cpanel-whm-authentication-bypass/",
+      "source": "Rapid7 Blog (취약점/모의침투)",
+      "published": "2026-04-29T20:01:06.217Z",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2025-59718",
+        "CVE-2026-33032",
+        "CVE-2026-41940"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2025-59718",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-347 (CWE-347)",
+          "description": "A improper verification of cryptographic signature vulnerability in Fortinet FortiOS 7.6.0 through 7.6.3, FortiOS 7.4.0 through 7.4.8, FortiOS 7.2.0 through 7.2.11, FortiOS 7.0.0 through 7.0.17, FortiProxy 7.6.0 through 7.6.3, FortiProxy 7.4.0 through 7.4.10, FortiProxy 7.2.0 through 7.2.14, FortiProxy 7.0.0 through 7.0.21, FortiSwitchManager 7.2.0 through 7.2.6, FortiSwitchManager 7.0.0 through 7.0.5 allows an unauthenticated attacker to bypass the FortiCloud SSO login authentication via a craf",
+          "epss_score": 0.06538,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-33032",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-306 (Missing Authentication)",
+          "description": "Nginx UI is a web user interface for the Nginx web server. In versions 2.3.5 and prior, the nginx-ui MCP (Model Context Protocol) integration exposes two HTTP endpoints: /mcp and /mcp_message. While /mcp requires both IP whitelisting and authentication (AuthRequired() middleware), the /mcp_message endpoint only applies IP whitelisting - and the default IP whitelist is empty, which the middleware treats as \"allow all\". This means any network attacker can invoke all MCP tools without authenticatio",
+          "epss_score": 0.09321,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-41940",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-306 (Missing Authentication)",
+          "description": "cPanel and WHM versions after 11.40 contain an authentication bypass vulnerability in the login flow that allows unauthenticated remote attackers to gain unauthorized access to the control panel.",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-04-30T20:01:17.848572+09:00",
+      "type": "single",
+      "title": "Urgent warning over critical Linux kernel privilege escalation bug: tiny script grants root",
+      "url": "https://cybernews.com/security/critical-linux-kernel-bug-grants-root-privileges/",
+      "source": "CyberNews [RSS]",
+      "published": "2026-04-30T09:11:07+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-31431"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-31431",
+          "cvss_score": 7.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-669 (CWE-669)",
+          "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ncrypto: algif_aead - Revert to operating out-of-place\n\nThis mostly reverts commit 72548b093ee3 except for the copying of\nthe associated data.\n\nThere is no benefit in operating in-place in algif_aead since the\nsource and destination come from different mappings.  Get rid of\nall the complexity added for in-place operation and just copy the\nAD directly.",
+          "epss_score": 8e-05,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-04-30T20:01:17.848572+09:00",
+      "type": "single",
+      "title": "Fast16 Malware",
+      "url": "https://www.schneier.com/blog/archives/2026/04/fast16-malware.html",
+      "source": "Bruce Schneier (암호학/보안정책) [RSS]",
+      "published": "2026-04-30T10:22:02+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-04-30T21:01:11.404173+09:00",
+      "type": "single",
+      "title": "Critical cPanel and WHM bug exploited as a zero-day, PoC now available",
+      "url": "https://www.bleepingcomputer.com/news/security/critical-cpanel-and-whm-bug-exploited-as-a-zero-day-poc-now-available/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-04-30T11:40:31+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-41940"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-41940",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-306 (Missing Authentication)",
+          "description": "cPanel and WHM versions after 11.40 contain an authentication bypass vulnerability in the login flow that allows unauthenticated remote attackers to gain unauthorized access to the control panel.",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-04-30T21:01:11.404173+09:00",
+      "type": "single",
+      "title": "Release Notes: Expanded Threat Intelligence Access, AI Assisted Search 1,770 New Detections and More",
+      "url": "https://any.run/cybersecurity-blog/release-notes-april-2026/",
+      "source": "ANY.RUN (악성코드샌드박스분석) [RSS]",
+      "published": "2026-04-30T11:57:42+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-34621"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-34621",
+          "cvss_score": 8.6,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-1321 (CWE-1321)",
+          "description": "Acrobat Reader versions 24.001.30356, 26.001.21367 and earlier are affected by an Improperly Controlled Modification of Object Prototype Attributes ('Prototype Pollution') vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
+          "epss_score": 0.07596,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-04-30T21:01:11.404173+09:00",
+      "type": "single",
+      "title": "Help on Trojan Virus",
+      "url": "https://www.reddit.com/r/antivirus/comments/1sztkgt/help_on_trojan_virus/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-04-30T11:38:39+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-04-30T22:01:03.230754+09:00",
+      "type": "single",
+      "title": "Nine-year-old Linux kernel flaw enables reliable local privilege escalation (CVE-2026-31431)",
+      "url": "https://www.helpnetsecurity.com/2026/04/30/copyfail-linux-lpe-vulnerability-cve-2026-31431/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-04-30T11:41:56+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-31431"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-31431",
+          "cvss_score": 7.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-669 (CWE-669)",
+          "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ncrypto: algif_aead - Revert to operating out-of-place\n\nThis mostly reverts commit 72548b093ee3 except for the copying of\nthe associated data.\n\nThere is no benefit in operating in-place in algif_aead since the\nsource and destination come from different mappings.  Get rid of\nall the complexity added for in-place operation and just copy the\nAD directly.",
+          "epss_score": 8e-05,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-04-30T22:01:03.230754+09:00",
+      "type": "single",
+      "title": "The Recent Malware",
+      "url": "https://www.reddit.com/r/antivirus/comments/1szukrs/the_recent_malware/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-04-30T12:24:32+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-04-30T23:01:01.326784+09:00",
+      "type": "single",
+      "title": "cPanel zero-day exploited for months before patch release (CVE-2026-41940)",
+      "url": "https://www.helpnetsecurity.com/2026/04/30/cpanel-zero-day-vulnerability-cve-2026-41940-exploited/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-04-30T13:40:49+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "0-day\ncPanel\nCVE\nPoC\nRapid7\nsecurity update\nWatchTowr\nweb hosting",
+      "cve_ids": [
+        "CVE-2026-41940"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-41940",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-306 (Missing Authentication)",
+          "description": "cPanel and WHM versions after 11.40 contain an authentication bypass vulnerability in the login flow that allows unauthenticated remote attackers to gain unauthorized access to the control panel.",
+          "epss_score": 0.1652,
+          "kev": false
+        }
+      ]
+    }
+  ]
+}

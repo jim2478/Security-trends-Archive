@@ -1,0 +1,200 @@
+{
+  "date": "2026-04-28",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 24,
+    "total_articles_max": 1891,
+    "matched_articles_max": 162,
+    "new_alerts": 10,
+    "cve_count": 3,
+    "ioc_count": 0,
+    "merged_count": 0,
+    "unique_cves": [
+      "CVE-2026-25874",
+      "CVE-2026-32202",
+      "CVE-2026-33634"
+    ],
+    "keywords_hit": {
+      "Malware": 7,
+      "CVE": 3
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-04-28T00:01:28.423061+09:00",
+      "type": "single",
+      "title": "TeamPCP Supply Chain Campaign: Update 008 - 26-Day Pause Ends with Three Concurrent Compromises (Checkmarx KICS, Bitwarden CLI Cascade, xinference PyPI), CanisterSprawl npm Worm Identified, and Tier 1 Coverage Returns, (Mon, Apr 27th)",
+      "url": "https://isc.sans.edu/diary/rss/32926",
+      "source": "SANS ISC (인터넷폭풍센터) [RSS]",
+      "published": "2026-04-27T14:01:17+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-33634"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-33634",
+          "cvss_score": 9.4,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-506 (CWE-506)",
+          "description": "Trivy is a security scanner. On March 19, 2026, a threat actor used compromised credentials to publish a malicious Trivy v0.69.4 release, force-push 76 of 77 version tags in `aquasecurity/trivy-action` to credential-stealing malware, and replace all 7 tags in `aquasecurity/setup-trivy` with malicious commits. This incident is a continuation of the supply chain attack that began in late February 2026. Following the initial disclosure on March 1, credential rotation was performed but was not atomi",
+          "epss_score": 0.16827,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-04-28T01:01:04.472300+09:00",
+      "type": "single",
+      "title": "⚡ Weekly Recap: Fast16 Malware, XChat Launch, Federal Backdoor, AI Employee Tracking & More",
+      "url": "https://thehackernews.com/2026/04/weekly-recap-fast16-malware-xchat.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-04-27T13:30:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-04-28T16:00:59.150252+09:00",
+      "type": "single",
+      "title": "Microsoft Confirms Active Exploitation of Windows Shell CVE-2026-32202",
+      "url": "https://thehackernews.com/2026/04/microsoft-confirms-active-exploitation.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-04-28T05:50:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-32202"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-32202",
+          "cvss_score": 4.3,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-693 (CWE-693)",
+          "description": "Protection mechanism failure in Windows Shell allows an unauthorized attacker to perform spoofing over a network.",
+          "epss_score": 0.00092,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-04-28T20:01:03.960944+09:00",
+      "type": "single",
+      "title": "My accounts got compromised!",
+      "url": "https://www.reddit.com/r/antivirus/comments/1sxwboc/my_accounts_got_compromised/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-04-28T09:25:50+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-04-28T20:01:03.960944+09:00",
+      "type": "single",
+      "title": "Potential Malware on system,looking for assistance with FRST and Addition scanning.",
+      "url": "https://www.reddit.com/r/antivirus/comments/1sxwybx/potential_malware_on_systemlooking_for_assistance/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-04-28T10:01:15+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-04-28T20:01:03.960944+09:00",
+      "type": "single",
+      "title": "How badly did it hurt my system?",
+      "url": "https://www.reddit.com/r/antivirus/comments/1sxvs4i/how_badly_did_it_hurt_my_system/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-04-28T08:53:44+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-04-28T21:01:37.545256+09:00",
+      "type": "single",
+      "title": "Critical Unpatched Flaw Leaves Hugging Face LeRobot Open to Unauthenticated RCE",
+      "url": "https://thehackernews.com/2026/04/critical-cve-2026-25874-leaves-hugging.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-04-28T11:18:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-25874"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-25874",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-502 (Deserialization)",
+          "description": "LeRobot through 0.5.1 contains an unsafe deserialization vulnerability in the async inference pipeline where pickle.loads() is used to deserialize data received over unauthenticated gRPC channels without TLS in the policy server and robot client components. An unauthenticated network-reachable attacker can achieve arbitrary code execution on the server or client by sending a crafted pickle payload through the SendPolicyInstructions, SendObservations, or GetActions gRPC calls.",
+          "epss_score": 0.00062,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-04-28T22:01:05.731370+09:00",
+      "type": "single",
+      "title": "Dozens of Open VSX Extension Clones Linked to GlassWorm Malware",
+      "url": "https://www.securityweek.com/dozens-of-open-vsx-extension-clones-linked-to-glassworm-malware/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-04-28T12:40:24+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-04-28T23:01:14.292927+09:00",
+      "type": "single",
+      "title": "1. How is it possible that 12,4/15,9GB of my RAM are used up despite the first image showing that the programs with the most RAM usage dont even take up 5GB? 2. Why does Chrome say I have 39 tabs open even though I only have 21 tabs open?",
+      "url": "https://www.reddit.com/r/antivirus/comments/1sy1gyd/1_how_is_it_possible_that_124159gb_of_my_ram_are/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-04-28T13:28:28+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-04-28T23:01:14.292927+09:00",
+      "type": "single",
+      "title": "Ayuda con esto, no se si es un falso positivo, uso uno de esos Windows modificados (MiniOS)",
+      "url": "https://www.reddit.com/r/antivirus/comments/1sy1rnw/ayuda_con_esto_no_se_si_es_un_falso_positivo_uso/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-04-28T13:40:11+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}

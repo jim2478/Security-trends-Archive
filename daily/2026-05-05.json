@@ -1,0 +1,454 @@
+{
+  "date": "2026-05-05",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 23,
+    "total_articles_max": 1901,
+    "matched_articles_max": 171,
+    "new_alerts": 18,
+    "cve_count": 15,
+    "ioc_count": 75,
+    "merged_count": 0,
+    "unique_cves": [
+      "CVE-2024-43093",
+      "CVE-2024-50302",
+      "CVE-2025-0994",
+      "CVE-2025-38352",
+      "CVE-2025-48543",
+      "CVE-2026-0073",
+      "CVE-2026-0204",
+      "CVE-2026-0205",
+      "CVE-2026-0206",
+      "CVE-2026-22679",
+      "CVE-2026-29014",
+      "CVE-2026-41940",
+      "CVE-2026-4670",
+      "CVE-2026-5174"
+    ],
+    "keywords_hit": {
+      "Malware": 10,
+      "CVE": 7,
+      "DDoS": 1
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-05-05T00:01:48.605652+09:00",
+      "type": "single",
+      "title": "Critical MOVEit Automation auth bypass vulnerability fixed (CVE-2026-4670)",
+      "url": "https://www.helpnetsecurity.com/2026/05/04/critical-moveit-automation-auth-bypass-vulnerability-fixed-cve-2026-4670/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-05-04T14:58:24+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-4670",
+        "CVE-2026-5174"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-4670",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-305 (CWE-305)",
+          "description": "Authentication bypass by primary weakness vulnerability in Progress Software MOVEit Automation allows Authentication Bypass.\n\nThis issue affects MOVEit Automation: from 2025.0.0 before 2025.0.9, from 2024.0.0 before 2024.1.8, versions prior to 2024.0.0.",
+          "epss_score": 0.00074,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-5174",
+          "cvss_score": 7.7,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-20 (Improper Input Validation)",
+          "description": "Improper input validation vulnerability in Progress Software MOVEit Automation allows Privilege Escalation.\n\nThis issue affects MOVEit Automation: from 2025.1.0 before 2025.1.5, from 2025.0.0 before 2025.0.9, from 2024.0.0 before 2024.1.8, versions prior to 2024.0.0.",
+          "epss_score": 0.00059,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-05T00:01:48.605652+09:00",
+      "type": "single",
+      "title": "Silver Fox Springs Tax-Themed Attacks on Orgs in India, Russia",
+      "url": "https://www.darkreading.com/endpoint-security/silver-fox-tax-themed-attacks-india-russia",
+      "source": "Dark Reading (보안뉴스 종합) [RSS]",
+      "published": "2026-05-04T11:35:44+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-05T08:00:55.850168+09:00",
+      "type": "single",
+      "title": "Weaver E-cology critical bug exploited in attacks since March",
+      "url": "https://www.bleepingcomputer.com/news/security/weaver-e-cology-critical-bug-exploited-in-attacks-since-march/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-05-04T22:12:57+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-22679"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-22679",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-306 (Missing Authentication)",
+          "description": "Weaver (Fanwei) E-cology 10.0 versions prior to 20260312 contain an unauthenticated remote code execution vulnerability in the /papi/esearch/data/devops/dubboApi/debug/method endpoint that allows attackers to execute arbitrary commands by invoking exposed debug functionality. Attackers can craft POST requests with attacker-controlled interfaceName and methodName parameters to reach command-execution helpers and achieve arbitrary command execution on the system. Exploitation evidence was first ob",
+          "epss_score": 0.00181,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-05T14:02:24.156463+09:00",
+      "type": "single",
+      "title": "시패널 보안취약점, 공개 직후 정부·군·호스팅망 공격에 악용",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=206585",
+      "source": "데일리시큐 (이슈) [RSS]",
+      "published": "2026-05-05T13:36:24+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-41940"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-41940",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-306 (Missing Authentication)",
+          "description": "cPanel and WHM versions after 11.40 contain an authentication bypass vulnerability in the login flow that allows unauthenticated remote attackers to gain unauthorized access to the control panel.",
+          "epss_score": 0.28361,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-05T17:00:59.531106+09:00",
+      "type": "single",
+      "title": "Weaver E-cology RCE Flaw CVE-2026-22679 Actively Exploited via Debug API",
+      "url": "https://thehackernews.com/2026/05/weaver-e-cology-rce-flaw-cve-2026-22679.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-05-05T07:37:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-22679"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-22679",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-306 (Missing Authentication)",
+          "description": "Weaver (Fanwei) E-cology 10.0 versions prior to 20260312 contain an unauthenticated remote code execution vulnerability in the /papi/esearch/data/devops/dubboApi/debug/method endpoint that allows attackers to execute arbitrary commands by invoking exposed debug functionality. Attackers can craft POST requests with attacker-controlled interfaceName and methodName parameters to reach command-execution helpers and achieve arbitrary command execution on the system. Exploitation evidence was first ob",
+          "epss_score": 0.00181,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-05T18:01:04.026309+09:00",
+      "type": "single",
+      "title": "Trojan virus scan",
+      "url": "https://www.reddit.com/r/antivirus/comments/1t49cy0/trojan_virus_scan/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-05T08:29:46+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-05T19:01:02.594296+09:00",
+      "type": "single",
+      "title": "ScarCruft hackers push BirdCall Android malware via game platform",
+      "url": "https://www.bleepingcomputer.com/news/security/scarcruft-hackers-push-birdcall-android-malware-via-game-platform/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-05-05T09:04:13+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-05T19:01:02.594296+09:00",
+      "type": "single",
+      "title": "ScarCruft Hacks Gaming Platform to Deploy BirdCall Malware on Android and Windows",
+      "url": "https://thehackernews.com/2026/05/scarcruft-hacks-gaming-platform-to.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-05-05T09:07:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-05T19:01:02.594296+09:00",
+      "type": "single",
+      "title": "Is my PC safe now?",
+      "url": "https://www.reddit.com/r/antivirus/comments/1t4arki/is_my_pc_safe_now/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-05T09:52:12+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-05T20:01:05.962490+09:00",
+      "type": "single",
+      "title": "UAT-8302 and its box full of malware",
+      "url": "https://blog.talosintelligence.com/uat-8302/",
+      "source": "Cisco Talos Intelligence (위협분석) [RSS]",
+      "published": "2026-05-05T10:00:30+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "NetDraft, FringePorch\n1139b39d3cc151ddd3d574617cf113608127850197e9695fef0b6d78df82d6ca\nEe56c49f42522637f401d15ac2a2b6f3423bfb2d5d37d071f0172ce9dc688d4b\n51f0cf80a56f322892eed3b9f5ecae45f1431323600edbaea5cd1f28b437f6f2\nVSHELL\n35b2a5260b21ddb145486771ec2b1e4dc1f5b7f2275309e139e4abc1da0c614b\n199bd156c81b2ef4fb259467a20eacaa9d861eeb2002f1570727c2f9ff1d5dab\nZingDoor\n071e662fc5bc0e54bcfd49493467062570d0307dc46f0fb51a68239d281427c6\nGogo\nE74098b17d5d95e0014cf9c7f41f2a4e4be8baefc2b0eb42d39ae05a95b08ea5\n2b627f6afe1364a7d0d832ccba87ef33a8a39f30a70a5f395e2a3cb0e2161cb3\nStowaway\n7c593ca40725765a0747cc3100b43a29b88ad1708ef77e915ab02686c0153001\nF859a67ceebc52f0770a222b85a5002195089ee442eac4bea761c29be994e2ea\nanyproxy\n7d9c70fc36143eb33583c30430dcb40cf9d306067594cc30ffd113063acd6292\nQScan\n1bb59491f7289b94ab0130d7065d74d2459a802a7550ebf8cd0828f0a09c4d38\nDraculoader\n843f8aea7842126e906cadbad8d81fa456c184fb5372c6946978a4fe115edb1c\nDddd\n343105919aa6df8a75ecb8b06b74f23a7d3e221fca56c67b728c50ea141314bc\nHttpx\n4109f15056414f25140c7027092953264944664480dd53f086acb8e07d9fccab\nSoftEther VPN\n3dec6703b2cbc6157eb67e80061d27f9190c8301c9dd60eb0be1e8b096482d7e\nSharpGetUserLogin\n9f115e9b32111e4dc29343a2671ab10a2b38448657b24107766dc14ce528fceb\nB19bfca2fc3fdabf0d0551c2e66be895e49f92aedac56654b1b0f51ec66e7404\nNaabu\n45cd169bf9cd7298d972425ad0d4e98512f29de4560a155101ab7427e4f4123f\nPortQry\nFb6cebadd49d202c8c7b5cdd641bd16aac8258429e8face365a94bd32e253b00\nNetwork IOCs\nhxxps[://]www[.]drivelivelime[.]com\nhxxps[://]www[.]drivelivelime[.]com/x\nhxxps[://]www[.]drivelivelime[.]com/pw\nwww[.]drivelivelime[.]com\nhxxps[://]msiidentity[.]com\nhxxps[://]msiidentity[.]com/pw\nmsiidentity[.]com\nhxxp[://]trafficmanagerupdate[.]com/index[.]php\ntrafficmanagerupdate[.]com\nimage[.]update-kaspersky[.]workers[.]dev\nupdate-kaspersky[.]workers[.]dev\n85[.]209[.]156[.]3\n85[.]209[.]156[.]3:56456\n85[.]209[.]156[.]3:46389\nhxxp[://]85[.]209[.]156[.]3:8080/wagent[.]exe\nhxxp[://]85[.]209[.]156[.]3:8082/wagent[.]exe\n185[.]238[.]189[.]41\nhxxp[://]185[.]238[.]189[.]41:8080\n103[.]27[.]108[.]55\nhxxp[://]103[.]27[.]108[.]55:48265/\nhxxp[://]38[.]54[.]32[.]244/Rar[.]exe\n38[.]54[.]32[.]244\n45[.]140[.]168[.]62\n88[.]151[.]195[.]133\n156[.]238[.]224[.]82\n45[.]135[.]135[.]100\nIntegrated Coverage\nNetwork Security\nCisco Talos\nNetwork Intrusion Prevention\nWeb Security\nCisco Talos\nWeb Filtering\nMalware Defense\nCisco Talos\nMalware Protection\nCisco Talos\nAntivirus\nRead more\nabout Cisco Talos Intelligence Integrations in our data sheet on Cisco.com.",
+      "cve_ids": [
+        "CVE-2025-0994"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2025-0994",
+          "cvss_score": 8.6,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-502 (Deserialization)",
+          "description": "Trimble Cityworks versions prior to 15.8.9 and Cityworks with office companion versions prior to 23.10 are vulnerable to a deserialization vulnerability. This could allow an authenticated user to perform a remote code execution attack against a customer’s Microsoft Internet Information Services (IIS) web server.",
+          "epss_score": 0.74864,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-05T20:01:05.962490+09:00",
+      "type": "single",
+      "title": "CloudZ malware abuses Microsoft Phone Link to steal SMS and OTPs",
+      "url": "https://www.bleepingcomputer.com/news/security/cloudz-malware-abuses-microsoft-phone-link-to-steal-sms-and-otps/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-05-05T10:03:52+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-05T20:01:05.962490+09:00",
+      "type": "single",
+      "title": "Best Free Malware Removal Tool",
+      "url": "https://www.reddit.com/r/antivirus/comments/1t4bd1p/best_free_malware_removal_tool/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-05T10:24:19+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-05T20:01:05.962490+09:00",
+      "type": "single",
+      "title": "I downloaded a “free” Keynote template, and here I am with a virus on my Mac",
+      "url": "https://www.reddit.com/r/antivirus/comments/1t4b9cs/i_downloaded_a_free_keynote_template_and_here_i/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-05T10:18:54+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-05T21:03:24.516493+09:00",
+      "type": "single",
+      "title": "Critical Remote Code Execution Vulnerability Patched in Android",
+      "url": "https://www.securityweek.com/critical-remote-code-execution-vulnerability-patched-in-android-2/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-05-05T11:58:44+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2024-43093",
+        "CVE-2024-50302",
+        "CVE-2025-38352",
+        "CVE-2025-48543",
+        "CVE-2026-0073"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2024-43093",
+          "cvss_score": 7.3,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-176 (CWE-176)",
+          "description": "In shouldHideDocument of ExternalStorageProvider.java, there is a possible bypass of a file path filter designed to prevent access to sensitive directories due to  incorrect unicode normalization. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is needed for exploitation.",
+          "epss_score": 0.00182,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2024-50302",
+          "cvss_score": 5.5,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-908 (CWE-908)",
+          "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nHID: core: zero-initialize the report buffer\n\nSince the report buffer is used by all kinds of drivers in various ways, let's\nzero-initialize it during allocation to make sure that it can't be ever used\nto leak kernel memory via specially-crafted report.",
+          "epss_score": 0.01698,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2025-38352",
+          "cvss_score": 7.4,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-367 (CWE-367)",
+          "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nposix-cpu-timers: fix race between handle_posix_cpu_timers() and posix_cpu_timer_del()\n\nIf an exiting non-autoreaping task has already passed exit_notify() and\ncalls handle_posix_cpu_timers() from IRQ, it can be reaped by its parent\nor debugger right after unlock_task_sighand().\n\nIf a concurrent posix_cpu_timer_del() runs at that moment, it won't be\nable to detect timer->it.cpu.firing != 0: cpu_timer_task_rcu() and/or\nlock_task",
+          "epss_score": 0.00102,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2025-48543",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-416 (Use After Free)",
+          "description": "In multiple locations, there is a possible way to escape chrome sandbox to attack android system_server due to a use after free. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
+          "epss_score": 0.0031,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-0073",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-303 (CWE-303)",
+          "description": "In adbd_tls_verify_cert of auth.cpp, there is a possible bypass of wireless ADB mutual authentication due to a logic error in the code. This could lead to remote (proximal/adjacent) code execution as the shell user with no additional execution privileges needed. User interaction is not needed for exploitation.",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-05T21:03:24.516493+09:00",
+      "type": "single",
+      "title": "Microsoft Defender notification \"page not available\" Your IT admin has limited access to some areas of this app..",
+      "url": "https://www.reddit.com/r/antivirus/comments/1t4cpnh/microsoft_defender_notification_page_not/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-05T11:30:59+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-05T21:03:24.516493+09:00",
+      "type": "single",
+      "title": "VIAVI CyberFlood CF1000 pushes 400G validation for multi-terabit AI data centers",
+      "url": "https://www.helpnetsecurity.com/2026/05/05/viavi-cyberflood-cf1000-appliance/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-05-05T11:55:34+00:00",
+      "keywords": [
+        "DDoS"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-05T22:01:22.603312+09:00",
+      "type": "single",
+      "title": "MetInfo CMS CVE-2026-29014 Exploited for Remote Code Execution Attacks",
+      "url": "https://thehackernews.com/2026/05/metinfo-cms-cve-2026-29014-exploited.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-05-05T11:56:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-29014"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-29014",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-94 (Code Injection)",
+          "description": "MetInfo CMS versions 7.9, 8.0, and 8.1 contain an unauthenticated PHP code injection vulnerability that allows remote attackers to execute arbitrary code by sending crafted requests with malicious PHP code. Attackers can exploit insufficient input neutralization in the execution path to achieve remote code execution and gain full control over the affected server.",
+          "epss_score": 0.18256,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-05T22:01:22.603312+09:00",
+      "type": "single",
+      "title": "소닉월 방화벽 취약점 3건 패치 공개…“랜섬웨어 악용 전 업데이트 필요”",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=206589",
+      "source": "데일리시큐 (이슈) [RSS]",
+      "published": "2026-05-05T21:04:17+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-0204",
+        "CVE-2026-0205",
+        "CVE-2026-0206"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-0204",
+          "cvss_score": 8.0,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-306 (Missing Authentication)",
+          "description": "A vulnerability in the access control mechanism of SonicOS may allow certain management interface functions to be accessible under specific conditions.",
+          "epss_score": 4e-05,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-0205",
+          "cvss_score": 6.8,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-35 (CWE-35)",
+          "description": "A post-authentication Path Traversal vulnerability in SonicOS allows an attacker to interact with usually restricted services.",
+          "epss_score": 0.00012,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-0206",
+          "cvss_score": 4.9,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-121 (CWE-121)",
+          "description": "A post-authentication Stack-based Buffer Overflow vulnerabilities in SonicOS allows a remote attacker to crash a firewall.",
+          "epss_score": 0.00144,
+          "kev": false
+        }
+      ]
+    }
+  ]
+}

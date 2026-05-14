@@ -1,0 +1,206 @@
+{
+  "date": "2026-05-09",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 24,
+    "total_articles_max": 1886,
+    "matched_articles_max": 173,
+    "new_alerts": 9,
+    "cve_count": 5,
+    "ioc_count": 0,
+    "merged_count": 0,
+    "unique_cves": [
+      "CVE-2026-29201",
+      "CVE-2026-43284",
+      "CVE-2026-43500"
+    ],
+    "keywords_hit": {
+      "CVE": 5,
+      "Malware": 4
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-05-09T00:03:13.447413+09:00",
+      "type": "single",
+      "title": "Dirty Frag: Unpatched Linux vulnerability delivers root access",
+      "url": "https://www.helpnetsecurity.com/2026/05/08/dirty-frag-linux-vulnerability-cve-2026-43284-cve-2026-43500/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-05-08T14:13:04+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-43284",
+        "CVE-2026-43500"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-43284",
+          "cvss_score": 7.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-416 (Use After Free)",
+          "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nxfrm: esp: avoid in-place decrypt on shared skb frags\n\nMSG_SPLICE_PAGES can attach pages from a pipe directly to an skb. TCP\nmarks such skbs with SKBFL_SHARED_FRAG after skb_splice_from_iter(),\nso later paths that may modify packet data can first make a private\ncopy. The IPv4/IPv6 datagram append paths did not set this flag when\nsplicing pages into UDP skbs.\n\nThat leaves an ESP-in-UDP packet made from shared pipe pages looking\n",
+          "epss_score": 0.00014,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-43500",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-09T00:03:13.447413+09:00",
+      "type": "single",
+      "title": "In Other News: Train Hacker Arrested, PamDOORa Linux Backdoor, New CISA Director Frontrunner",
+      "url": "https://www.securityweek.com/in-other-news-train-hacker-arrested-pamdoora-linux-backdoor-new-cisa-director-frontrunner/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-05-08T14:30:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-09T04:03:05.974257+09:00",
+      "type": "single",
+      "title": "TCLBANKER Banking Trojan Targets Financial Platforms via WhatsApp and Outlook Worms",
+      "url": "https://thehackernews.com/2026/05/tclbanker-banking-trojan-targets.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-05-08T18:12:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-09T08:02:58.814054+09:00",
+      "type": "single",
+      "title": "log in attempts",
+      "url": "https://www.reddit.com/r/antivirus/comments/1t7mcrk/log_in_attempts/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-08T22:10:33+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-09T13:03:04.265484+09:00",
+      "type": "single",
+      "title": "CVE 발급보다 빠른 AI의 역추론, 길 잃은 ‘책임감 있는 공개’",
+      "url": "http://www.boannews.com/media/view.asp?idx=143537&kind=&sub_kind=",
+      "source": "보안뉴스 (전체) [RSS]",
+      "published": "2026-05-09T03:50:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-09T17:03:15.269062+09:00",
+      "type": "single",
+      "title": "cPanel, WHM Release Fixes for Three New Vulnerabilities — Patch Now",
+      "url": "https://thehackernews.com/2026/05/cpanel-whm-patch-3-new-vulnerabilities.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-05-09T07:16:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-29201"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-29201",
+          "cvss_score": 4.3,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-20 (Improper Input Validation)",
+          "description": "Insufficient input validation of the feature file name in `feature::LOADFEATUREFILE` adminbin call can cause arbitrary file read when a relative file path is passed.",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-09T17:03:15.269062+09:00",
+      "type": "single",
+      "title": "Dirty Frag: Using the Page Caches as an Attack Surface",
+      "url": "https://blog.qualys.com/category/vulnerabilities-threat-research",
+      "source": "Qualys Blog (취약점관리) [RSS]",
+      "published": "2026-05-09T07:22:34+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-43284",
+        "CVE-2026-43500"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-43284",
+          "cvss_score": 7.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-123 (CWE-123)",
+          "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nxfrm: esp: avoid in-place decrypt on shared skb frags\n\nMSG_SPLICE_PAGES can attach pages from a pipe directly to an skb. TCP\nmarks such skbs with SKBFL_SHARED_FRAG after skb_splice_from_iter(),\nso later paths that may modify packet data can first make a private\ncopy. The IPv4/IPv6 datagram append paths did not set this flag when\nsplicing pages into UDP skbs.\n\nThat leaves an ESP-in-UDP packet made from shared pipe pages looking\n",
+          "epss_score": 0.00014,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-43500",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-09T18:03:06.357377+09:00",
+      "type": "single",
+      "title": "아이반티 EPMM 제로데이 취약점 악용 확인…관리자 계정 점검 시급",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=206644",
+      "source": "데일리시큐 (IT&생활) [RSS]",
+      "published": "2026-05-09T08:38:32+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-09T21:02:59.527919+09:00",
+      "type": "single",
+      "title": "Scanners, antimalwares, etc feel like they're just trying to get me to subscribe to more stuff. Dunno what to do.",
+      "url": "https://www.reddit.com/r/antivirus/comments/1t8272a/scanners_antimalwares_etc_feel_like_theyre_just/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-09T11:17:30+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}

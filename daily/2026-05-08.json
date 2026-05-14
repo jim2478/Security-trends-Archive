@@ -1,0 +1,869 @@
+{
+  "date": "2026-05-08",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 24,
+    "total_articles_max": 1891,
+    "matched_articles_max": 170,
+    "new_alerts": 32,
+    "cve_count": 38,
+    "ioc_count": 5,
+    "merged_count": 0,
+    "unique_cves": [
+      "CVE-2022-0847",
+      "CVE-2025-29927",
+      "CVE-2025-48703",
+      "CVE-2025-48804",
+      "CVE-2025-55182",
+      "CVE-2025-68670",
+      "CVE-2025-9501",
+      "CVE-2026-0300",
+      "CVE-2026-1281",
+      "CVE-2026-1340",
+      "CVE-2026-1357",
+      "CVE-2026-23918",
+      "CVE-2026-31431",
+      "CVE-2026-42511",
+      "CVE-2026-43284",
+      "CVE-2026-43500",
+      "CVE-2026-5786",
+      "CVE-2026-5787",
+      "CVE-2026-5788",
+      "CVE-2026-6411",
+      "CVE-2026-6973",
+      "CVE-2026-7821",
+      "CVE-2026-7896"
+    ],
+    "keywords_hit": {
+      "Malware": 16,
+      "CVE": 15,
+      "DDoS": 1
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-05-08T00:01:15.360327+09:00",
+      "type": "single",
+      "title": "Bypassing Bitlocker under 5 min using downgrade attack on CVE-2025-48804",
+      "url": "https://www.reddit.com/r/netsec/comments/1t6cfwx/bypassing_bitlocker_under_5_min_using_downgrade/",
+      "source": "Reddit r/netsec (보안커뮤니티) [RSS]",
+      "published": "2026-05-07T14:37:36+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2025-48804"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2025-48804",
+          "cvss_score": 6.8,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-349 (CWE-349)",
+          "description": "Acceptance of extraneous untrusted data with trusted data in Windows BitLocker allows an unauthorized attacker to bypass a security feature with a physical attack.",
+          "epss_score": 0.00455,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-08T02:01:19.928408+09:00",
+      "type": "single",
+      "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/05/07/cisa-adds-one-known-exploited-vulnerability-catalog",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-05-07T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-6973"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-6973",
+          "cvss_score": 7.2,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-20 (Improper Input Validation)",
+          "description": "An Improper Input Validation in Ivanti EPMM before versions 12.6.1.1, 12.7.0.1, and 12.8.0.1 allows a remotely authenticated user with administrative access to achieve remote code execution.",
+          "epss_score": null,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-08T02:01:19.928408+09:00",
+      "type": "single",
+      "title": "MAXHUB Pivot Client Application",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-127-01",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-05-07T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-6411"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-6411",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-08T02:01:19.928408+09:00",
+      "type": "single",
+      "title": "CVE-2026-42511 Breakdown: RCE in FreeBSD",
+      "url": "https://www.reddit.com/r/netsec/comments/1t6fsfr/cve202642511_breakdown_rce_in_freebsd/",
+      "source": "Reddit r/netsec (보안커뮤니티) [RSS]",
+      "published": "2026-05-07T16:34:50+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-42511"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-42511",
+          "cvss_score": 8.1,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-149 (CWE-149)",
+          "description": "The BOOTP file field is written to the lease file without escaping embedded double-quotes, allowing injection of arbitrary dhclient.conf directives.  When the lease file is subsequently re-parsed by dhclient, e.g., after a system restart, an attacker-controlled field from the lease is passed to dhclient-script(8), which evaluates it.\n\nA rogue DHCP server may be able to execute arbirary code as root on a system running dhclient.",
+          "epss_score": 0.00059,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-08T02:01:19.928408+09:00",
+      "type": "single",
+      "title": "I got a trojan anyone can help ?",
+      "url": "https://www.reddit.com/r/antivirus/comments/1t6f7cy/i_got_a_trojan_anyone_can_help/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-07T16:14:11+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-08T04:01:25.193755+09:00",
+      "type": "single",
+      "title": "New PCPJack worm steals credentials, cleans TeamPCP infections",
+      "url": "https://www.bleepingcomputer.com/news/security/new-pcpjack-worm-steals-credentials-cleans-teampcp-infections/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-05-07T18:35:50+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2025-29927",
+        "CVE-2025-48703",
+        "CVE-2025-55182",
+        "CVE-2025-9501",
+        "CVE-2026-1357"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2025-29927",
+          "cvss_score": 9.1,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-863 (CWE-863)",
+          "description": "Next.js is a React framework for building full-stack web applications. Starting in version 1.11.4 and prior to versions 12.3.5, 13.5.9, 14.2.25, and 15.2.3, it is possible to bypass authorization checks within a Next.js application, if the authorization check occurs in middleware. If patching to a safe version is infeasible, it is recommend that you prevent external user requests which contain the x-middleware-subrequest header from reaching your Next.js application. This vulnerability is fixed ",
+          "epss_score": 0.92118,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2025-48703",
+          "cvss_score": 9.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-78 (OS Command Injection)",
+          "description": "CWP (aka Control Web Panel or CentOS Web Panel) before 0.9.8.1205 allows unauthenticated remote code execution via shell metacharacters in the t_total parameter in a filemanager changePerm request. A valid non-root username must be known.",
+          "epss_score": 0.62018,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2025-55182",
+          "cvss_score": 10.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-502 (Deserialization)",
+          "description": "A pre-authentication remote code execution vulnerability exists in React Server Components versions 19.0.0, 19.1.0, 19.1.1, and 19.2.0 including the following packages: react-server-dom-parcel, react-server-dom-turbopack, and react-server-dom-webpack. The vulnerable code unsafely deserializes payloads from HTTP requests to Server Function endpoints.",
+          "epss_score": 0.82011,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2025-9501",
+          "cvss_score": 9.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": null,
+          "description": "The W3 Total Cache WordPress plugin before 2.8.13 is vulnerable to command injection via the _parse_dynamic_mfunc function, allowing unauthenticated users to execute PHP commands by submitting a comment with a malicious payload to a post.",
+          "epss_score": 0.03796,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-1357",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-434 (Unrestricted File Upload)",
+          "description": "The Migration, Backup, Staging – WPvivid Backup & Migration plugin for WordPress is vulnerable to Unauthenticated Arbitrary File Upload in versions up to and including 0.9.123. This is due to improper error handling in the RSA decryption process combined with a lack of path sanitization when writing uploaded files. When the plugin fails to decrypt a session key using openssl_private_decrypt(), it does not terminate execution and instead passes the boolean false value to the phpseclib library's A",
+          "epss_score": 0.22419,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-08T04:01:25.193755+09:00",
+      "type": "single",
+      "title": "Ivanti EPMM CVE-2026-6973 RCE Under Active Exploitation Grants Admin-Level Access",
+      "url": "https://thehackernews.com/2026/05/ivanti-epmm-cve-2026-6973-rce-under.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-05-07T17:55:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-6973"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-6973",
+          "cvss_score": 7.2,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-20 (Improper Input Validation)",
+          "description": "An Improper Input Validation in Ivanti EPMM before versions 12.6.1.1, 12.7.0.1, and 12.8.0.1 allows a remotely authenticated user with administrative access to achieve remote code execution.",
+          "epss_score": null,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-08T04:01:25.193755+09:00",
+      "type": "single",
+      "title": "Australia warns of ClickFix attacks pushing Vidar Stealer malware",
+      "url": "https://www.bleepingcomputer.com/news/security/australia-warns-of-clickfix-attacks-pushing-vidar-stealer-malware/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-05-07T18:00:59+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-08T04:01:25.193755+09:00",
+      "type": "single",
+      "title": "PCPJack Credential Stealer Exploits 5 CVEs to Spread Worm-Like Across Cloud Systems",
+      "url": "https://thehackernews.com/2026/05/pcpjack-credential-stealer-exploits-5.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-05-07T17:45:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-08T05:01:02.750837+09:00",
+      "type": "single",
+      "title": "Dirty Frag - Linux LPE similiar to Copy Fail",
+      "url": "https://www.reddit.com/r/netsec/comments/1t6ldfh/dirty_frag_linux_lpe_similiar_to_copy_fail/",
+      "source": "Reddit r/netsec (보안커뮤니티) [RSS]",
+      "published": "2026-05-07T19:49:53+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2022-0847"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2022-0847",
+          "cvss_score": 7.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-665 (CWE-665)",
+          "description": "A flaw was found in the way the \"flags\" member of the new pipe buffer structure was lacking proper initialization in copy_page_to_iter_pipe and push_pipe functions in the Linux kernel and could thus contain stale values. An unprivileged local user could use this flaw to write to pages in the page cache backed by read only files and as such escalate their privileges on the system.",
+          "epss_score": 0.82337,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-08T05:01:02.750837+09:00",
+      "type": "single",
+      "title": "For gods sake stop telling people to reinstall their whole system because of a simple detection or popup.",
+      "url": "https://www.reddit.com/r/antivirus/comments/1t6lo7l/for_gods_sake_stop_telling_people_to_reinstall/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-07T20:00:21+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-08T06:03:11.142061+09:00",
+      "type": "single",
+      "title": "Telegram scammer",
+      "url": "https://www.reddit.com/r/antivirus/comments/1t6muzw/telegram_scammer/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-07T20:42:08+00:00",
+      "keywords": [
+        "DDoS"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-08T06:03:11.142061+09:00",
+      "type": "single",
+      "title": "Check my pc for malware",
+      "url": "https://www.reddit.com/r/antivirus/comments/1t6mj2v/check_my_pc_for_malware/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-07T20:30:09+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-08T07:00:59.293795+09:00",
+      "type": "single",
+      "title": "After Replacing TeamPCP Malware, 'PCPJack' Steals Cloud Secrets",
+      "url": "https://www.darkreading.com/cloud-security/teampcp-malware-pcpjack-steals-cloud-secrets",
+      "source": "Dark Reading (보안뉴스 종합) [RSS]",
+      "published": "2026-05-07T20:43:30+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-08T07:00:59.293795+09:00",
+      "type": "single",
+      "title": "Computer Trojan Virus Operating in Powershell",
+      "url": "https://www.reddit.com/r/antivirus/comments/1t6nvg6/computer_trojan_virus_operating_in_powershell/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-07T21:19:24+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-08T08:01:02.148620+09:00",
+      "type": "single",
+      "title": "New TCLBanker malware self-spreads over WhatsApp and Outlook",
+      "url": "https://www.bleepingcomputer.com/news/security/new-tclbanker-malware-self-spreads-over-whatsapp-and-outlook/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-05-07T22:06:52+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-08T08:01:02.148620+09:00",
+      "type": "single",
+      "title": "What actions to take after being affected by Daemon Tools Lite backdoor?",
+      "url": "https://www.reddit.com/r/antivirus/comments/1t6pa2j/what_actions_to_take_after_being_affected_by/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-07T22:14:36+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-08T09:01:11.138716+09:00",
+      "type": "single",
+      "title": "구글, 크롬 148 보안 업데이트 배포…취약점 127건 수정",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=206638",
+      "source": "데일리시큐 (이슈) [RSS]",
+      "published": "2026-05-08T08:56:51+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-7896"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-7896",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-472 (CWE-472)",
+          "description": "Integer overflow in Blink in Google Chrome prior to 148.0.7778.96 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: Critical)",
+          "epss_score": 0.00063,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-08T09:01:11.138716+09:00",
+      "type": "single",
+      "title": "아파치 HTTP 서버·MINA 취약점 패치…원격 코드 실행 위험 차단",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=206637",
+      "source": "데일리시큐 (이슈) [RSS]",
+      "published": "2026-05-08T08:47:59+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-23918"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-23918",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-415 (CWE-415)",
+          "description": "Double Free and possible RCE vulnerability in Apache HTTP Server with the HTTP/2 protocol.\n\nThis issue affects Apache HTTP Server: 2.4.66.\n\nUsers are recommended to upgrade to version 2.4.67, which fixes the issue.",
+          "epss_score": 0.00061,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-08T09:01:11.138716+09:00",
+      "type": "single",
+      "title": "Help with Phone Virus",
+      "url": "https://www.reddit.com/r/antivirus/comments/1t6lsqt/help_with_phone_virus/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-07T20:04:38+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-08T12:03:06.322427+09:00",
+      "type": "single",
+      "title": "“코드 10줄로 뚫린다”…리눅스 취약점 ‘카피페일’에 전 세계서 대응",
+      "url": "http://www.itdaily.kr/news/articleView.html?idxno=239216",
+      "source": "기타 뉴스 [RSS]",
+      "published": "2026-05-07T21:50:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-31431"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-31431",
+          "cvss_score": 7.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-669 (CWE-669)",
+          "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ncrypto: algif_aead - Revert to operating out-of-place\n\nThis mostly reverts commit 72548b093ee3 except for the copying of\nthe associated data.\n\nThere is no benefit in operating in-place in algif_aead since the\nsource and destination come from different mappings.  Get rid of\nall the complexity added for in-place operation and just copy the\nAD directly.",
+          "epss_score": 0.03912,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-08T15:03:43.708703+09:00",
+      "type": "single",
+      "title": "Ivanti Patches EPMM Zero-Day Exploited in Targeted Attacks",
+      "url": "https://www.securityweek.com/ivanti-patches-epmm-zero-day-exploited-in-targeted-attacks/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-05-08T05:41:30+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-1281",
+        "CVE-2026-1340",
+        "CVE-2026-5786",
+        "CVE-2026-5787",
+        "CVE-2026-5788",
+        "CVE-2026-6973",
+        "CVE-2026-7821"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-1281",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-94 (Code Injection)",
+          "description": "A code injection in Ivanti Endpoint Manager Mobile allowing attackers to achieve unauthenticated remote code execution.",
+          "epss_score": 0.8222,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-1340",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-94 (Code Injection)",
+          "description": "A code injection in Ivanti Endpoint Manager Mobile allowing attackers to achieve unauthenticated remote code execution.",
+          "epss_score": 0.70832,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-5786",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-284 (Improper Access Control)",
+          "description": "An Improper Access Control vulnerability in Ivanti EPMM before versions 12.6.1.1, 12.7.0.1, and 12.8.0.1 allows a remote authenticated attacker to gain administrative access.",
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-5787",
+          "cvss_score": 8.9,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-295 (CWE-295)",
+          "description": "An Improper Certificate Validation in Ivanti EPMM before versions 12.6.1.1, 12.7.0.1, and 12.8.0.1 allows a remote unauthenticated attacker to impersonate registered Sentry hosts and obtain valid CA-signed client certificates.",
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-5788",
+          "cvss_score": 7.0,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-284 (Improper Access Control)",
+          "description": "An Improper Access Control in Ivanti EPMM before versions 12.6.1.1, 12.7.0.1, and 12.8.0.1 allows a remote unauthenticated attacker to invoke arbitrary methods.",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-08T16:03:00.485821+09:00",
+      "type": "single",
+      "title": "방화벽이 뚫렸다... 팔로알토 PAN-OS, ‘루트 권한’ 내주는 중대 보안 구멍",
+      "url": "http://www.boannews.com/media/view.asp?idx=143530&kind=&sub_kind=",
+      "source": "보안뉴스 (전체) [RSS]",
+      "published": "2026-05-08T06:09:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-0300"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-0300",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-787 (Out-of-bounds Write)",
+          "description": "A buffer overflow vulnerability in the User-ID™ Authentication Portal (aka Captive Portal) service of Palo Alto Networks PAN-OS software allows an unauthenticated attacker to execute arbitrary code with root privileges on the PA-Series and VM-Series firewalls by sending specially crafted packets. \n\nThe risk of this issue is greatly reduced if you secure access to the User-ID™ Authentication Portal per the  best practice guidelines https://knowledgebase.paloaltonetworks.com/KCSArticleDetail  by r",
+          "epss_score": 0.14897,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-08T16:03:00.485821+09:00",
+      "type": "single",
+      "title": "Malware?? I did a scan and it didn't find anything, but google suggests that these (circled ones) are associated with malware? and can you see anything else there that looks suspicious?",
+      "url": "https://www.reddit.com/r/antivirus/comments/1t703eo/malware_i_did_a_scan_and_it_didnt_find_anything/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-08T06:50:18+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-08T18:03:28.923073+09:00",
+      "type": "single",
+      "title": "‘PCPJack’ Worm Removes TeamPCP Infections, Steals Credentials",
+      "url": "https://www.securityweek.com/pcpjack-worm-removes-teampcp-infections-steals-credentials/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-05-08T08:32:34+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2025-29927",
+        "CVE-2025-48703",
+        "CVE-2025-55182",
+        "CVE-2025-9501",
+        "CVE-2026-1357"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2025-29927",
+          "cvss_score": 9.1,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-863 (CWE-863)",
+          "description": "Next.js is a React framework for building full-stack web applications. Starting in version 1.11.4 and prior to versions 12.3.5, 13.5.9, 14.2.25, and 15.2.3, it is possible to bypass authorization checks within a Next.js application, if the authorization check occurs in middleware. If patching to a safe version is infeasible, it is recommend that you prevent external user requests which contain the x-middleware-subrequest header from reaching your Next.js application. This vulnerability is fixed ",
+          "epss_score": 0.92118,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2025-48703",
+          "cvss_score": 9.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-78 (OS Command Injection)",
+          "description": "CWP (aka Control Web Panel or CentOS Web Panel) before 0.9.8.1205 allows unauthenticated remote code execution via shell metacharacters in the t_total parameter in a filemanager changePerm request. A valid non-root username must be known.",
+          "epss_score": 0.62018,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2025-55182",
+          "cvss_score": 10.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-502 (Deserialization)",
+          "description": "A pre-authentication remote code execution vulnerability exists in React Server Components versions 19.0.0, 19.1.0, 19.1.1, and 19.2.0 including the following packages: react-server-dom-parcel, react-server-dom-turbopack, and react-server-dom-webpack. The vulnerable code unsafely deserializes payloads from HTTP requests to Server Function endpoints.",
+          "epss_score": 0.82011,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2025-9501",
+          "cvss_score": 9.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": null,
+          "description": "The W3 Total Cache WordPress plugin before 2.8.13 is vulnerable to command injection via the _parse_dynamic_mfunc function, allowing unauthenticated users to execute PHP commands by submitting a comment with a malicious payload to a post.",
+          "epss_score": 0.03796,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-1357",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-434 (Unrestricted File Upload)",
+          "description": "The Migration, Backup, Staging – WPvivid Backup & Migration plugin for WordPress is vulnerable to Unauthenticated Arbitrary File Upload in versions up to and including 0.9.123. This is due to improper error handling in the RSA decryption process combined with a lack of path sanitization when writing uploaded files. When the plugin fails to decrypt a session key using openssl_private_decrypt(), it does not terminate execution and instead passes the boolean false value to the phpseclib library's A",
+          "epss_score": 0.22419,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-08T18:03:28.923073+09:00",
+      "type": "single",
+      "title": "CVE-2025-68670: discovering an RCE vulnerability in xrdp",
+      "url": "https://securelist.com/cve-2025-68670/119742/",
+      "source": "Kaspersky Securelist (위협분석) [RSS]",
+      "published": "2026-05-08T08:00:54+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2025-68670"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2025-68670",
+          "cvss_score": 9.1,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-787 (Out-of-bounds Write)",
+          "description": "xrdp is an open source RDP server. xrdp before v0.10.5 contains an unauthenticated stack-based buffer overflow vulnerability. The issue stems from improper bounds checking when processing user domain information during the connection sequence. If exploited, the vulnerability could allow remote attackers to execute arbitrary code on the target system. The vulnerability allows an attacker to overwrite the stack buffer and the return address, which could theoretically be used to redirect the execut",
+          "epss_score": 0.00123,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-08T18:03:28.923073+09:00",
+      "type": "single",
+      "title": "Got hit with a LummaStealer32 couple days ago, here to check and see if I have any other holes to cover",
+      "url": "https://www.reddit.com/r/antivirus/comments/1t720yt/got_hit_with_a_lummastealer32_couple_days_ago/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-08T08:41:05+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-08T20:03:21.952196+09:00",
+      "type": "single",
+      "title": "Ivanti EPMM vulnerability exploited in zero-day attacks (CVE-2026-6973)",
+      "url": "https://www.helpnetsecurity.com/2026/05/08/ivanti-epmm-zero-day-cve-2026-6973/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-05-08T10:30:49+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "0-day\nendpoint management\nIvanti\nvulnerability\nShare",
+      "cve_ids": [
+        "CVE-2026-1281",
+        "CVE-2026-1340",
+        "CVE-2026-5786",
+        "CVE-2026-5787",
+        "CVE-2026-5788",
+        "CVE-2026-6973",
+        "CVE-2026-7821"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-1281",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-94 (Code Injection)",
+          "description": "A code injection in Ivanti Endpoint Manager Mobile allowing attackers to achieve unauthenticated remote code execution.",
+          "epss_score": 0.8222,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-1340",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-94 (Code Injection)",
+          "description": "A code injection in Ivanti Endpoint Manager Mobile allowing attackers to achieve unauthenticated remote code execution.",
+          "epss_score": 0.70832,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-5786",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-284 (Improper Access Control)",
+          "description": "An Improper Access Control vulnerability in Ivanti EPMM before versions 12.6.1.1, 12.7.0.1, and 12.8.0.1 allows a remote authenticated attacker to gain administrative access.",
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-5787",
+          "cvss_score": 8.9,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-295 (CWE-295)",
+          "description": "An Improper Certificate Validation in Ivanti EPMM before versions 12.6.1.1, 12.7.0.1, and 12.8.0.1 allows a remote unauthenticated attacker to impersonate registered Sentry hosts and obtain valid CA-signed client certificates.",
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-5788",
+          "cvss_score": 7.0,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-284 (Improper Access Control)",
+          "description": "An Improper Access Control in Ivanti EPMM before versions 12.6.1.1, 12.7.0.1, and 12.8.0.1 allows a remote unauthenticated attacker to invoke arbitrary methods.",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-08T20:03:21.952196+09:00",
+      "type": "single",
+      "title": "Dirty Frag: Linux Kernel Local Privilege Escalation via ESP and RxRPC",
+      "url": "https://www.wiz.io/blog/dirty-frag-linux-kernel-local-privilege-escalation-via-esp-and-rxrpc",
+      "source": "Wiz Blog (클라우드보안) [RSS]",
+      "published": "2026-05-08T08:57:17+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-31431",
+        "CVE-2026-43284",
+        "CVE-2026-43500"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-31431",
+          "cvss_score": 7.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-669 (CWE-669)",
+          "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ncrypto: algif_aead - Revert to operating out-of-place\n\nThis mostly reverts commit 72548b093ee3 except for the copying of\nthe associated data.\n\nThere is no benefit in operating in-place in algif_aead since the\nsource and destination come from different mappings.  Get rid of\nall the complexity added for in-place operation and just copy the\nAD directly.",
+          "epss_score": 0.03912,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-43284",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nxfrm: esp: avoid in-place decrypt on shared skb frags\n\nMSG_SPLICE_PAGES can attach pages from a pipe directly to an skb. TCP\nmarks such skbs with SKBFL_SHARED_FRAG after skb_splice_from_iter(),\nso later paths that may modify packet data can first make a private\ncopy. The IPv4/IPv6 datagram append paths did not set this flag when\nsplicing pages into UDP skbs.\n\nThat leaves an ESP-in-UDP packet made from shared pipe pages looking\n",
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-43500",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-08T20:03:21.952196+09:00",
+      "type": "single",
+      "title": "Needle crypto-stealer C2 analysis: API key embedded in plain text inside the Rust malware unlocked 1,932 victims and the operator's withdrawal config",
+      "url": "https://www.reddit.com/r/netsec/comments/1t73zot/needle_cryptostealer_c2_analysis_api_key_embedded/",
+      "source": "Reddit r/netsec (보안커뮤니티) [RSS]",
+      "published": "2026-05-08T10:30:29+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-08T22:03:07.382955+09:00",
+      "type": "single",
+      "title": "JDownloader's official website delivered Python RAT",
+      "url": "https://www.reddit.com/r/antivirus/comments/1t7741l/jdownloaders_official_website_delivered_python_rat/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-08T12:55:07+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-08T22:03:07.382955+09:00",
+      "type": "single",
+      "title": "False positives or malware ?",
+      "url": "https://www.reddit.com/r/antivirus/comments/1t76y6g/false_positives_or_malware/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-08T12:48:26+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}

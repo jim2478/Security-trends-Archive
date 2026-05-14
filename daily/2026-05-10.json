@@ -1,0 +1,400 @@
+{
+  "date": "2026-05-10",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 24,
+    "total_articles_max": 1887,
+    "matched_articles_max": 181,
+    "new_alerts": 21,
+    "cve_count": 7,
+    "ioc_count": 0,
+    "merged_count": 0,
+    "unique_cves": [
+      "CVE-2026-23870",
+      "CVE-2026-31431",
+      "CVE-2026-31432",
+      "CVE-2026-31433",
+      "CVE-2026-43284",
+      "CVE-2026-43500",
+      "CVE-2026-7482"
+    ],
+    "keywords_hit": {
+      "Malware": 17,
+      "CVE": 4
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-05-10T00:03:05.917976+09:00",
+      "type": "single",
+      "title": "Fake OpenAI repository on Hugging Face pushes infostealer malware",
+      "url": "https://www.bleepingcomputer.com/news/security/fake-openai-repository-on-hugging-face-pushes-infostealer-malware/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-05-09T14:26:03+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-10T00:03:05.917976+09:00",
+      "type": "single",
+      "title": "Why is windows flagging all these items in recycle bin (which I've emptied)",
+      "url": "https://www.reddit.com/r/antivirus/comments/1t86qp5/why_is_windows_flagging_all_these_items_in/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-09T14:37:55+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-10T03:03:02.733362+09:00",
+      "type": "single",
+      "title": "I run a malware and was wondering if its a rat or rootkit or dangerous stuff and how do i fix my pc",
+      "url": "https://www.reddit.com/r/antivirus/comments/1t8ajga/i_run_a_malware_and_was_wondering_if_its_a_rat_or/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-09T17:03:18+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-10T04:03:18.986411+09:00",
+      "type": "single",
+      "title": "Getting LLMs Drunk to Find Remote Linux Kernel OOB Writes (and More)",
+      "url": "https://www.reddit.com/r/netsec/comments/1t8cwyx/getting_llms_drunk_to_find_remote_linux_kernel/",
+      "source": "Reddit r/netsec (보안커뮤니티) [RSS]",
+      "published": "2026-05-09T18:31:10+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-31432",
+        "CVE-2026-31433"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-31432",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": null,
+          "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nksmbd: fix OOB write in QUERY_INFO for compound requests\n\nWhen a compound request such as READ + QUERY_INFO(Security) is received,\nand the first command (READ) consumes most of the response buffer,\nksmbd could write beyond the allocated buffer while building a security\ndescriptor.\n\nThe root cause was that smb2_get_info_sec() checked buffer space using\nppntsd_size from xattr, while build_sec_desc() often synthesized a\nsignifican",
+          "epss_score": 0.00024,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-31433",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": null,
+          "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nksmbd: fix potencial OOB in get_file_all_info() for compound requests\n\nWhen a compound request consists of QUERY_DIRECTORY + QUERY_INFO\n(FILE_ALL_INFORMATION) and the first command consumes nearly the entire\nmax_trans_size, get_file_all_info() would blindly call smbConvertToUTF16()\nwith PATH_MAX, causing out-of-bounds write beyond the response buffer.\nIn get_file_all_info(), there was a missing validation check for\nthe client-p",
+          "epss_score": 0.00037,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-10T04:03:18.986411+09:00",
+      "type": "single",
+      "title": "How to permanently remove Demon Tools?",
+      "url": "https://www.reddit.com/r/antivirus/comments/1t8dbhv/how_to_permanently_remove_demon_tools/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-09T18:46:39+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-10T04:03:18.986411+09:00",
+      "type": "single",
+      "title": "Technical Analysis of EagleSpy V6.0 (CraxsRAT Rebrand) Distributed Through Odysee and Telegram",
+      "url": "https://www.reddit.com/r/netsec/comments/1t8df0j/technical_analysis_of_eaglespy_v60_craxsrat/",
+      "source": "Reddit r/netsec (보안커뮤니티) [RSS]",
+      "published": "2026-05-09T18:50:28+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-10T05:03:05.886991+09:00",
+      "type": "single",
+      "title": "JDownloader site hacked to replace installers with Python RAT malware",
+      "url": "https://www.bleepingcomputer.com/news/security/jdownloader-site-hacked-to-replace-installers-with-python-rat-malware/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-05-09T19:27:58+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-10T05:03:05.886991+09:00",
+      "type": "single",
+      "title": "Website was blocked by malwarebytes browser extension",
+      "url": "https://www.reddit.com/r/antivirus/comments/1t8ewhi/website_was_blocked_by_malwarebytes_browser/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-09T19:12:56+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-10T06:02:59.146872+09:00",
+      "type": "single",
+      "title": "What type of Virus is this? and should i be worried?",
+      "url": "https://www.reddit.com/r/antivirus/comments/1t8ji5u/what_type_of_virus_is_this_and_should_i_be_worried/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-09T20:12:25+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-10T07:02:55.351184+09:00",
+      "type": "single",
+      "title": "How bad is it ?",
+      "url": "https://www.reddit.com/r/antivirus/comments/1t8ng52/how_bad_is_it/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-09T21:20:57+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-10T09:03:06.263627+09:00",
+      "type": "single",
+      "title": "리눅스 커널 취약점 2건 노출…암호화폐 업계 대응 부담 커져",
+      "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=664290",
+      "source": "디지털투데이 (전체기사) [RSS]",
+      "published": "2026-05-09T23:11:48+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-31431",
+        "CVE-2026-43284",
+        "CVE-2026-43500"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-31431",
+          "cvss_score": 7.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-669 (CWE-669)",
+          "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ncrypto: algif_aead - Revert to operating out-of-place\n\nThis mostly reverts commit 72548b093ee3 except for the copying of\nthe associated data.\n\nThere is no benefit in operating in-place in algif_aead since the\nsource and destination come from different mappings.  Get rid of\nall the complexity added for in-place operation and just copy the\nAD directly.",
+          "epss_score": 0.03912,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-43284",
+          "cvss_score": 7.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-123 (CWE-123)",
+          "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nxfrm: esp: avoid in-place decrypt on shared skb frags\n\nMSG_SPLICE_PAGES can attach pages from a pipe directly to an skb. TCP\nmarks such skbs with SKBFL_SHARED_FRAG after skb_splice_from_iter(),\nso later paths that may modify packet data can first make a private\ncopy. The IPv4/IPv6 datagram append paths did not set this flag when\nsplicing pages into UDP skbs.\n\nThat leaves an ESP-in-UDP packet made from shared pipe pages looking\n",
+          "epss_score": 8e-05,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-43500",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-10T09:03:06.263627+09:00",
+      "type": "single",
+      "title": "Sudden Adware and Trojan detection by Kaspersky",
+      "url": "https://www.reddit.com/r/antivirus/comments/1t8cwj0/sudden_adware_and_trojan_detection_by_kaspersky/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-09T18:30:42+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-10T10:02:57.969548+09:00",
+      "type": "single",
+      "title": "Second Opinion / Standalone Scanners with NO services",
+      "url": "https://www.reddit.com/r/antivirus/comments/1t8s2ae/second_opinion_standalone_scanners_with_no/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-10T00:40:46+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-10T12:03:03.154277+09:00",
+      "type": "single",
+      "title": "i got sent well over 50k emails saying that everything on my pc would be leaked after 3 hours of me opening the email, are they serious??",
+      "url": "https://www.reddit.com/r/antivirus/comments/1t8umo6/i_got_sent_well_over_50k_emails_saying_that/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-10T02:42:37+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-10T15:03:01.356284+09:00",
+      "type": "single",
+      "title": "Will Microsoft Defender be able to defend my computer if i Attach different SSD that's infected (which isn't the boot drive).",
+      "url": "https://www.reddit.com/r/antivirus/comments/1t8xkao/will_microsoft_defender_be_able_to_defend_my/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-10T05:08:23+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-10T16:02:56.839798+09:00",
+      "type": "single",
+      "title": "Norton Security ultra possible virus",
+      "url": "https://www.reddit.com/r/antivirus/comments/1t8z7w9/norton_security_ultra_possible_virus/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-10T06:35:40+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-10T17:02:57.306630+09:00",
+      "type": "single",
+      "title": "windows defender doesnt work all of a sudden",
+      "url": "https://www.reddit.com/r/antivirus/comments/1t8zokd/windows_defender_doesnt_work_all_of_a_sudden/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-10T07:01:10+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-10T19:03:03.448356+09:00",
+      "type": "single",
+      "title": "The compression of the exploit timeline: Why n-day gaps and 90-day embargoes are failing in practice.",
+      "url": "https://www.reddit.com/r/netsec/comments/1t92jb3/the_compression_of_the_exploit_timeline_why_nday/",
+      "source": "Reddit r/netsec (보안커뮤니티) [RSS]",
+      "published": "2026-05-10T09:46:46+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-23870"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-23870",
+          "cvss_score": 7.5,
+          "cvss_severity": "HIGH",
+          "cwe": null,
+          "description": "A denial of service vulnerability could be triggered by sending specially crafted HTTP requests to server function endpoints, this could lead to server crashes, out-of-memory exceptions or excessive CPU usage; affecting the following packages: react-server-dom-webpack, react-server-dom-parcel, react-server-dom-turbopack (versions 19.0.0 through 19.0.5, 19.1.0 through 19.1.6, and 19.2.0 through 19.2.5).",
+          "epss_score": 0.00322,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-10T20:02:56.778909+09:00",
+      "type": "single",
+      "title": "Hackers Hijack JDownloader Site to Deliver Malware Through Installers",
+      "url": "https://hackread.com/hackers-hijack-jdownloader-site-malware-installers/",
+      "source": "HackRead (해킹/데이터유출) [RSS]",
+      "published": "2026-05-10T10:27:32+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-10T21:03:01.602410+09:00",
+      "type": "single",
+      "title": "Is this something I should be worried about?",
+      "url": "https://www.reddit.com/r/antivirus/comments/1t94tzm/is_this_something_i_should_be_worried_about/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-10T11:50:42+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-10T22:03:03.693868+09:00",
+      "type": "single",
+      "title": "Ollama Out-of-Bounds Read Vulnerability Allows Remote Process Memory Leak",
+      "url": "https://thehackernews.com/2026/05/ollama-out-of-bounds-read-vulnerability.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-05-10T12:41:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-7482"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-7482",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-125 (Out-of-bounds Read)",
+          "description": "Ollama before 0.17.1 contains a heap out-of-bounds read vulnerability in the GGUF model loader. The /api/create endpoint accepts an attacker-supplied GGUF file in which the declared tensor offset and size exceed the file's actual length; during quantization in fs/ggml/gguf.go and server/quantization.go (WriteTo()), the server reads past the allocated heap buffer. The leaked memory contents may include environment variables, API keys, system prompts, and concurrent users' conversation data, and c",
+          "epss_score": 0.0009,
+          "kev": false
+        }
+      ]
+    }
+  ]
+}

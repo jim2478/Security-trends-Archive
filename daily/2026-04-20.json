@@ -1,0 +1,232 @@
+{
+  "date": "2026-04-20",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 24,
+    "total_articles_max": 1915,
+    "matched_articles_max": 155,
+    "new_alerts": 7,
+    "cve_count": 22,
+    "ioc_count": 0,
+    "merged_count": 0,
+    "unique_cves": [
+      "CVE-2025-14524",
+      "CVE-2025-43376",
+      "CVE-2025-43534",
+      "CVE-2025-64505",
+      "CVE-2026-20637",
+      "CVE-2026-20643",
+      "CVE-2026-20657",
+      "CVE-2026-20665",
+      "CVE-2026-20668",
+      "CVE-2026-20687",
+      "CVE-2026-20690",
+      "CVE-2026-20929",
+      "CVE-2026-28852",
+      "CVE-2026-28861",
+      "CVE-2026-28864",
+      "CVE-2026-28865",
+      "CVE-2026-28866",
+      "CVE-2026-28867",
+      "CVE-2026-28868",
+      "CVE-2026-28871",
+      "CVE-2026-28876",
+      "CVE-2026-34197"
+    ],
+    "keywords_hit": {
+      "CVE": 5,
+      "Malware": 2
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-04-20T12:01:15.530792+09:00",
+      "type": "single",
+      "title": "Apple 제품 보안 업데이트 권고",
+      "url": "https://isarc.tachyonlab.com/533783",
+      "source": "Tachyon ISARC (악성코드분석) [RSS]",
+      "published": "2026-04-20T02:14:37+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2025-14524",
+        "CVE-2025-43376",
+        "CVE-2025-43534",
+        "CVE-2025-64505",
+        "CVE-2026-20637",
+        "CVE-2026-20643",
+        "CVE-2026-20657",
+        "CVE-2026-20665",
+        "CVE-2026-20668",
+        "CVE-2026-20687",
+        "CVE-2026-20690",
+        "CVE-2026-28852",
+        "CVE-2026-28861",
+        "CVE-2026-28864",
+        "CVE-2026-28865",
+        "CVE-2026-28866",
+        "CVE-2026-28867",
+        "CVE-2026-28868",
+        "CVE-2026-28871",
+        "CVE-2026-28876"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2025-14524",
+          "cvss_score": 5.3,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-601 (CWE-601)",
+          "description": "When an OAuth2 bearer token is used for an HTTP(S) transfer, and that transfer\nperforms a cross-protocol redirect to a second URL that uses an IMAP, LDAP,\nPOP3 or SMTP scheme, curl might wrongly pass on the bearer token to the new\ntarget host.",
+          "epss_score": 0.00026,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2025-43376",
+          "cvss_score": 7.5,
+          "cvss_severity": "HIGH",
+          "cwe": null,
+          "description": "A logic issue was addressed with improved state management. This issue is fixed in Safari 26, iOS 18.7.7 and iPadOS 18.7.7, iOS 26 and iPadOS 26, macOS Tahoe 26, tvOS 26, visionOS 26, watchOS 26. A remote attacker may be able to view leaked DNS queries with Private Relay turned on.",
+          "epss_score": 0.00083,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2025-43534",
+          "cvss_score": 6.8,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-284 (Improper Access Control)",
+          "description": "A path handling issue was addressed with improved validation. This issue is fixed in iOS 18.7.7 and iPadOS 18.7.7, iOS 26.2 and iPadOS 26.2. A user with physical access to an iOS device may be able to bypass Activation Lock.",
+          "epss_score": 0.00021,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2025-64505",
+          "cvss_score": 6.1,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-125 (Out-of-bounds Read)",
+          "description": "LIBPNG is a reference library for use in applications that read, create, and manipulate PNG (Portable Network Graphics) raster image files. Prior to version 1.6.51, a heap buffer over-read vulnerability exists in libpng's png_do_quantize function when processing PNG files with malformed palette indices. The vulnerability occurs when palette_lookup array bounds are not validated against externally-supplied image data, allowing an attacker to craft a PNG file with out-of-range palette indices that",
+          "epss_score": 0.00026,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-20637",
+          "cvss_score": 6.2,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-416 (Use After Free)",
+          "description": "A use after free issue was addressed with improved memory management. This issue is fixed in iOS 18.7.7 and iPadOS 18.7.7, iOS 26.3 and iPadOS 26.3, macOS Sequoia 15.7.5, macOS Sonoma 14.8.5, macOS Tahoe 26.3, tvOS 26.3, visionOS 26.3, watchOS 26.3. An app may be able to cause unexpected system termination.",
+          "epss_score": 0.00014,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-04-20T16:01:18.809927+09:00",
+      "type": "single",
+      "title": "CISA, 아파치 액티브MQ ‘코드 주입’ 비상... KEV 목록 긴급 추가",
+      "url": "http://www.boannews.com/media/view.asp?idx=143276&kind=&sub_kind=",
+      "source": "보안뉴스 (전체) [RSS]",
+      "published": "2026-04-20T05:38:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-34197"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-34197",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-20 (Improper Input Validation)",
+          "description": "Improper Input Validation, Improper Control of Generation of Code ('Code Injection') vulnerability in Apache ActiveMQ Broker, Apache ActiveMQ.\n\nApache ActiveMQ Classic exposes the Jolokia JMX-HTTP bridge at /api/jolokia/ on the web console. The default Jolokia access policy permits exec operations on all ActiveMQ MBeans (org.apache.activemq:*), including\nBrokerService.addNetworkConnector(String) and BrokerService.addConnector(String).\n\nAn authenticated attacker can invoke these operations with a",
+          "epss_score": 0.46638,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-04-20T16:01:18.809927+09:00",
+      "type": "single",
+      "title": "Handling the CVE Flood With EPSS, (Mon, Apr 20th)",
+      "url": "https://isc.sans.edu/diary/rss/32914",
+      "source": "SANS ISC (인터넷폭풍센터) [RSS]",
+      "published": "2026-04-20T06:43:22+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-04-20T16:01:18.809927+09:00",
+      "type": "single",
+      "title": "취약점 폭증에 백기 든  NIST... 주요 결함 위주로 대응",
+      "url": "http://www.boannews.com/media/view.asp?idx=143257&kind=&sub_kind=",
+      "source": "보안뉴스 (전체) [RSS]",
+      "published": "2026-04-20T05:42:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-04-20T17:02:55.969424+09:00",
+      "type": "single",
+      "title": "Researchers Detect ZionSiphon Malware Targeting Israeli Water, Desalination OT SystemsApr 20, 2026Malware / Threat IntelligenceCybersecurity researchers have flagged a new malware called ZionSiphon t",
+      "url": "https://thehackernews.com/2026/04/researchers-detect-zionsiphon-malware.html",
+      "source": "The Hacker News (보안뉴스 종합)",
+      "published": null,
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-04-20T18:01:11.250004+09:00",
+      "type": "single",
+      "title": "Detecting CVE-2026-20929: Kerberos Authentication Relay via CNAME Abuse",
+      "url": "https://www.crowdstrike.com/en-us/blog/detecting-kerberos-relay-attack-via-dns-cname-abuse/",
+      "source": "CrowdStrike Blog (APT/위협인텔리전스) [RSS]",
+      "published": null,
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-20929"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-20929",
+          "cvss_score": 7.5,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-284 (Improper Access Control)",
+          "description": "Improper access control in Windows HTTP.sys allows an authorized attacker to elevate privileges over a network.",
+          "epss_score": 0.00045,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-04-20T18:01:11.250004+09:00",
+      "type": "single",
+      "title": "Researchers Detect ZionSiphon Malware Targeting Israeli Water, Desalination OT Systems",
+      "url": "https://thehackernews.com/2026/04/researchers-detect-zionsiphon-malware.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-04-20T07:34:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}

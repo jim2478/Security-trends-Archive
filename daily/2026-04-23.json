@@ -1,0 +1,278 @@
+{
+  "date": "2026-04-23",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 24,
+    "total_articles_max": 1861,
+    "matched_articles_max": 160,
+    "new_alerts": 12,
+    "cve_count": 7,
+    "ioc_count": 0,
+    "merged_count": 1,
+    "unique_cves": [
+      "CVE-2023-1389",
+      "CVE-2025-29635",
+      "CVE-2026-28950",
+      "CVE-2026-40372"
+    ],
+    "keywords_hit": {
+      "Malware": 7,
+      "CVE": 5,
+      "DDoS": 2,
+      "Botnet": 1,
+      "봇넷": 1
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-04-23T00:00:58.719794+09:00",
+      "type": "single",
+      "title": "After Bluesky, Mastodon Targeted in DDoS Attack",
+      "url": "https://www.securityweek.com/after-bluesky-mastodon-targeted-in-ddos-attack/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-04-22T14:26:00+00:00",
+      "keywords": [
+        "DDoS"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-04-23T00:00:58.719794+09:00",
+      "type": "single",
+      "title": "DPRK Fake Job Scams Self-Propagate in 'Contagious Interview'",
+      "url": "https://www.darkreading.com/cyberattacks-data-breaches/dprk-fake-job-scams-self-propagate-contagious-interview",
+      "source": "Dark Reading (보안뉴스 종합) [RSS]",
+      "published": "2026-04-22T14:48:05+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-04-23T01:01:04.374344+09:00",
+      "type": "single",
+      "title": "Harvester Deploys Linux GoGra Backdoor in South Asia Using Microsoft Graph API",
+      "url": "https://thehackernews.com/2026/04/harvester-deploys-linux-gogra-backdoor.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-04-22T15:28:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-04-23T01:01:04.374344+09:00",
+      "type": "single",
+      "title": "North Korean hackers built “shiny new” macOS malware — and got hacked for it",
+      "url": "https://cybernews.com/security/north-korean-hackers-new-malware-foiled-by-researcher/",
+      "source": "CyberNews [RSS]",
+      "published": "2026-04-22T13:29:14+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-04-23T04:00:54.609052+09:00",
+      "type": "single",
+      "title": "Hackers deployed wiper malware in destructive attacks on Venezuela’s energy sector",
+      "url": "https://therecord.media/hackers-venezuela-wiper-malware-oil",
+      "source": "The Record by Recorded Future (위협뉴스) [RSS]",
+      "published": "2026-04-22T19:00:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-04-23T06:01:06.126823+09:00",
+      "type": "single",
+      "title": "New Mirai campaign exploits RCE flaw in EoL D-Link routers",
+      "url": "https://www.bleepingcomputer.com/news/security/new-mirai-campaign-exploits-rce-flaw-in-eol-d-link-routers/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-04-22T20:04:46+00:00",
+      "keywords": [
+        "CVE",
+        "Botnet",
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2023-1389",
+        "CVE-2025-29635"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2023-1389",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-77 (Command Injection)",
+          "description": "TP-Link Archer AX21 (AX1800) firmware versions before 1.1.4 Build 20230219 contained a command injection vulnerability in the country form of the /cgi-bin/luci;stok=/locale endpoint on the web management interface. Specifically, the country parameter of the write operation was not sanitized before being used in a call to popen(), allowing an unauthenticated attacker to inject commands, which would be run as root, with a simple POST request.",
+          "epss_score": 0.93543,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2025-29635",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-77 (Command Injection)",
+          "description": "A command injection vulnerability in D-Link DIR-823X 240126 and 240802 allows an authorized attacker to execute arbitrary commands on remote devices by sending a POST request to /goform/set_prohibiting via the corresponding function, triggering remote command execution.",
+          "epss_score": 0.0125,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-04-23T06:01:06.126823+09:00",
+      "type": "single",
+      "title": "North Korean hackers siphon more than $12 million from crypto users in sprawling campaign",
+      "url": "https://therecord.media/north-korean-hackers-siphon-12-million-from-crypto-users",
+      "source": "The Record by Recorded Future (위협뉴스) [RSS]",
+      "published": "2026-04-22T20:48:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-04-23T11:00:58.559031+09:00",
+      "type": "single",
+      "title": "미라이 변종, 디링크 공유기 대규모 공격...패치 없는 취약점 악용 시작",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=206389",
+      "source": "데일리시큐 (이슈) [RSS]",
+      "published": "2026-04-23T09:59:09+00:00",
+      "keywords": [
+        "DDoS",
+        "CVE",
+        "봇넷"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2025-29635"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2025-29635",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-77 (Command Injection)",
+          "description": "A command injection vulnerability in D-Link DIR-823X 240126 and 240802 allows an authorized attacker to execute arbitrary commands on remote devices by sending a POST request to /goform/set_prohibiting via the corresponding function, triggering remote command execution.",
+          "epss_score": 0.0125,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-04-23T18:03:06.479543+09:00",
+      "type": "single",
+      "title": "Apple Patches iOS Flaw That Stored Deleted Signal Notifications in FBI Forensic Case",
+      "url": "https://thehackernews.com/2026/04/apple-patches-ios-flaw-that-stored.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-04-23T08:06:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-28950"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-28950",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": "A logging issue was addressed with improved data redaction. This issue is fixed in iOS 18.7.8 and iPadOS 18.7.8, iOS 26.4.2 and iPadOS 26.4.2. Notifications marked for deletion could be unexpectedly retained on the device.",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-04-23T18:03:06.479543+09:00",
+      "type": "single",
+      "title": "Checkmarx suffers second massive supply chain attack, infecting developers with malware",
+      "url": "https://cybernews.com/security/checkmarx-popular-tools-spread-credential-stealing-malware/",
+      "source": "CyberNews [RSS]",
+      "published": "2026-04-23T08:12:20+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-04-23T19:01:09.034584+09:00",
+      "type": "single",
+      "title": "마이크로소프트, ASP.NET Core 심각한 권한 상승 취약점 긴급 패치",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=206411",
+      "source": "데일리시큐 (IT&생활) [RSS]",
+      "published": "2026-04-23T09:04:26+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-40372"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-40372",
+          "cvss_score": 9.1,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-347 (CWE-347)",
+          "description": "Improper verification of cryptographic signature in ASP.NET Core allows an unauthorized attacker to elevate privileges over a network.",
+          "epss_score": 0.00039,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-04-23T20:01:02.931701+09:00",
+      "type": "merged",
+      "cve_ids": [
+        "CVE-2026-28950"
+      ],
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "sources": [
+        {
+          "title": "Apple Fixes iOS Flaw That Let FBI Recover Deleted Signal Messages",
+          "url": "https://thehackernews.com/2026/04/apple-patches-ios-flaw-that-stored.html",
+          "source": "The Hacker News (보안뉴스 종합) [RSS]"
+        },
+        {
+          "title": "Apple Patches Exploited Notification Flaw, (Thu, Apr 23rd)",
+          "url": "https://isc.sans.edu/diary/rss/32922",
+          "source": "SANS ISC (인터넷폭풍센터) [RSS]"
+        }
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-28950",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": "A logging issue was addressed with improved data redaction. This issue is fixed in iOS 18.7.8 and iPadOS 18.7.8, iOS 26.4.2 and iPadOS 26.4.2. Notifications marked for deletion could be unexpectedly retained on the device.",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    }
+  ]
+}

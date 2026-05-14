@@ -1,0 +1,274 @@
+{
+  "date": "2026-05-02",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 24,
+    "total_articles_max": 1881,
+    "matched_articles_max": 174,
+    "new_alerts": 16,
+    "cve_count": 2,
+    "ioc_count": 0,
+    "merged_count": 0,
+    "unique_cves": [
+      "CVE-2026-3854",
+      "CVE-2026-41940"
+    ],
+    "keywords_hit": {
+      "Malware": 12,
+      "DDoS": 2,
+      "CVE": 2,
+      "Botnet": 1
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-05-02T00:00:56.389420+09:00",
+      "type": "single",
+      "title": "Did I break my PC or am I hacked?",
+      "url": "https://www.reddit.com/r/antivirus/comments/1t0v2s9/did_i_break_my_pc_or_am_i_hacked/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-01T14:30:51+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-02T01:01:05.517072+09:00",
+      "type": "single",
+      "title": "Iran Hackers target Canonical Ubuntu Software with DDoS Attack",
+      "url": "https://www.cybersecurity-insiders.com/iran-hackers-target-canonical-ubuntu-software-with-ddos-attack/",
+      "source": "Cybersecurity Insiders (보안인사이트)",
+      "published": "2026-05-01T15:36:15+00:00",
+      "keywords": [
+        "DDoS"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-02T01:01:05.517072+09:00",
+      "type": "single",
+      "title": "am i still compromised",
+      "url": "https://www.reddit.com/r/antivirus/comments/1t0wmps/am_i_still_compromised/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-01T15:27:52+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-02T01:01:05.517072+09:00",
+      "type": "single",
+      "title": "This selfie background editor is a password-stealing trap",
+      "url": "https://cybernews.com/security/selfie-background-editor-password-stealing-trap/",
+      "source": "CyberNews [RSS]",
+      "published": "2026-05-01T15:08:53+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-02T02:01:13.685702+09:00",
+      "type": "single",
+      "title": "Federal agencies must patch cPanel bug by Sunday, CISA says",
+      "url": "https://therecord.media/cisa-orders-federal-agencies-to-patch-cpanel-bug",
+      "source": "The Record by Recorded Future (위협뉴스) [RSS]",
+      "published": "2026-05-01T16:20:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-41940"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-41940",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-306 (Missing Authentication)",
+          "description": "cPanel and WHM versions after 11.40 contain an authentication bypass vulnerability in the login flow that allows unauthenticated remote attackers to gain unauthorized access to the control panel.",
+          "epss_score": 0.28361,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-02T02:01:13.685702+09:00",
+      "type": "single",
+      "title": "Cmd.exe pop up (am I just being paranoid?)",
+      "url": "https://www.reddit.com/r/antivirus/comments/1t0ywig/cmdexe_pop_up_am_i_just_being_paranoid/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-01T16:48:57+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-02T03:01:05.806010+09:00",
+      "type": "single",
+      "title": "Hackers Use Jenkins Access to Deploy DDoS Botnet Against Gaming Servers",
+      "url": "https://hackread.com/hackers-jenkins-ddos-botnet-gaming-servers/",
+      "source": "HackRead (해킹/데이터유출) [RSS]",
+      "published": "2026-05-01T17:21:29+00:00",
+      "keywords": [
+        "DDoS",
+        "Botnet"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-02T05:01:08.800409+09:00",
+      "type": "single",
+      "title": "ACCIDENTALLY RUN A INFOSTEALER",
+      "url": "https://www.reddit.com/r/antivirus/comments/1t12oyl/accidentally_run_a_infostealer/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-01T19:04:20+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-02T06:00:52.721583+09:00",
+      "type": "single",
+      "title": "ReasonLabs Online Security appearing without me installing it",
+      "url": "https://www.reddit.com/r/antivirus/comments/1t14j3v/reasonlabs_online_security_appearing_without_me/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-01T20:11:59+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-02T08:00:51.831058+09:00",
+      "type": "single",
+      "title": "ArcSight Threat Intelligence flags support google",
+      "url": "https://www.reddit.com/r/antivirus/comments/1t185ed/arcsight_threat_intelligence_flags_support_google/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-01T22:33:32+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-02T10:00:54.892377+09:00",
+      "type": "single",
+      "title": "세미콜론 하나에 뚫린 깃허브... AI가 찾아낸 역대급 RCE 취약점",
+      "url": "http://www.boannews.com/media/view.asp?idx=143463&kind=&sub_kind=",
+      "source": "보안뉴스 (전체) [RSS]",
+      "published": "2026-05-02T00:37:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-3854"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-3854",
+          "cvss_score": 8.7,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-77 (Command Injection)",
+          "description": "An improper neutralization of special elements vulnerability was identified in GitHub Enterprise Server that allowed an attacker with push access to a repository to achieve remote code execution on the instance. During a git push operation, user-supplied push option values were not properly sanitized before being included in internal service headers. Because the internal header format used a delimiter character that could also appear in user input, an attacker could inject additional metadata fi",
+          "epss_score": 0.00353,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-02T11:00:49.011281+09:00",
+      "type": "single",
+      "title": "I did a routine scan with Adwcleaner... Is this a false positive?",
+      "url": "https://www.reddit.com/r/antivirus/comments/1t1coyr/i_did_a_routine_scan_with_adwcleaner_is_this_a/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-02T01:57:29+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-02T13:00:49.421482+09:00",
+      "type": "single",
+      "title": "Anti-virus fake positives?",
+      "url": "https://www.reddit.com/r/antivirus/comments/1t1ei79/antivirus_fake_positives/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-02T03:23:47+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-02T17:00:52.697605+09:00",
+      "type": "single",
+      "title": "recently got malware from a risk of rains mod, ran windows defender full scan and deleted the file, should that be enough",
+      "url": "https://www.reddit.com/r/antivirus/comments/1t1iylq/recently_got_malware_from_a_risk_of_rains_mod_ran/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-02T07:21:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-02T23:00:53.570054+09:00",
+      "type": "single",
+      "title": "Is Onedrivepatcher.exe safe",
+      "url": "https://www.reddit.com/r/antivirus/comments/1t1pc4f/is_onedrivepatcherexe_safe/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-02T13:03:41+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-02T23:00:53.570054+09:00",
+      "type": "single",
+      "title": "Do I factory reset my pc or not?",
+      "url": "https://www.reddit.com/r/antivirus/comments/1t1m9mm/do_i_factory_reset_my_pc_or_not/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-02T10:31:43+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
