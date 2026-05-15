@@ -2,16 +2,17 @@
   "date": "2026-05-16",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 1,
+    "scan_runs": 2,
     "total_articles_max": 1882,
-    "matched_articles_max": 164,
-    "new_alerts": 2,
+    "matched_articles_max": 168,
+    "new_alerts": 4,
     "cve_count": 0,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [],
     "keywords_hit": {
-      "Malware": 2
+      "Malware": 3,
+      "Botnet": 1
     }
   },
   "alerts": [
@@ -38,6 +39,34 @@
       "published": "2026-05-15T16:09:12+00:00",
       "keywords": [
         "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-16T03:00:56.079551+09:00",
+      "type": "single",
+      "title": "Popular node-ipc npm package compromised to steal credentials",
+      "url": "https://www.bleepingcomputer.com/news/security/popular-node-ipc-npm-package-compromised-to-steal-credentials/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-05-15T17:10:42+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-16T03:00:56.079551+09:00",
+      "type": "single",
+      "title": "Turla Turns Kazuar Backdoor Into Modular P2P Botnet for Persistent Access",
+      "url": "https://thehackernews.com/2026/05/turla-turns-kazuar-backdoor-into.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-05-15T17:10:25+00:00",
+      "keywords": [
+        "Botnet"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
