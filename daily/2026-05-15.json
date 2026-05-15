@@ -1,0 +1,186 @@
+{
+  "date": "2026-05-15",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 1,
+    "total_articles_max": 1882,
+    "matched_articles_max": 158,
+    "new_alerts": 5,
+    "cve_count": 8,
+    "ioc_count": 0,
+    "merged_count": 0,
+    "unique_cves": [
+      "CVE-2026-0265",
+      "CVE-2026-0300",
+      "CVE-2026-20127",
+      "CVE-2026-20182",
+      "CVE-2026-3055",
+      "CVE-2026-33032",
+      "CVE-2026-41940",
+      "CVE-2026-8181"
+    ],
+    "keywords_hit": {
+      "CVE": 3,
+      "DDoS": 1,
+      "Malware": 1
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-05-15T14:11:50.762886+09:00",
+      "type": "single",
+      "title": "20만 개 워드프레스 사이트 노린 인증 우회 취약점…관리자 계정 탈취 위험",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=206751",
+      "source": "데일리시큐 (이슈) [RSS]",
+      "published": "2026-05-15T13:55:51+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-8181"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-8181",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-287 (Authentication Bypass)",
+          "description": "The Burst Statistics – Privacy-Friendly WordPress Analytics (Google Analytics Alternative) plugin for WordPress is vulnerable to Authentication Bypass in versions 3.4.0 to 3.4.1.1. This is due to incorrect return-value handling in the `is_mainwp_authenticated()` function when validating application passwords from the Authorization header. This makes it possible for unauthenticated attackers, with knowledge of an administrator username, to impersonate that administrator for the duration of the re",
+          "epss_score": 0.0026,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-15T14:11:50.762886+09:00",
+      "type": "single",
+      "title": "CVE-2026-0265: Authentication Bypass in Palo Alto Networks PAN-OS",
+      "url": "https://www.rapid7.com/blog/post/etr-cve-2026-0265-authentication-bypass-in-palo-alto-networks-pan-os/",
+      "source": "Rapid7 Blog (취약점/모의침투)",
+      "published": "2026-05-14T19:22:30.158Z",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-0265",
+        "CVE-2026-0300",
+        "CVE-2026-3055",
+        "CVE-2026-33032",
+        "CVE-2026-41940"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-0265",
+          "cvss_score": 7.2,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-347 (CWE-347)",
+          "description": "An authentication bypass vulnerability in Palo Alto Networks PAN-OS® software enables an unauthenticated attacker with network access to bypass authentication controls when Cloud Authentication Service (CAS) is enabled.\n\n\n\nThe risk is higher if CAS is enabled on the management interface and lower when any other login interfaces are used.\n\nThe risk of this issue is greatly reduced if you secure access to the management web interface by restricting access to only trusted internal IP addresses acco",
+          "epss_score": 0.00076,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-0300",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-787 (Out-of-bounds Write)",
+          "description": "A buffer overflow vulnerability in the User-ID™ Authentication Portal (aka Captive Portal) service of Palo Alto Networks PAN-OS software allows an unauthenticated attacker to execute arbitrary code with root privileges on the PA-Series and VM-Series firewalls by sending specially crafted packets. \n\nThe risk of this issue is greatly reduced if you secure access to the User-ID™ Authentication Portal per the  best practice guidelines https://knowledgebase.paloaltonetworks.com/KCSArticleDetail  by r",
+          "epss_score": 0.14433,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-3055",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-125 (Out-of-bounds Read)",
+          "description": "Insufficient input validation in NetScaler ADC and NetScaler Gateway when configured as a SAML IDP leading to memory overread",
+          "epss_score": 0.74093,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-33032",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-306 (Missing Authentication)",
+          "description": "Nginx UI is a web user interface for the Nginx web server. In versions 2.3.5 and prior, the nginx-ui MCP (Model Context Protocol) integration exposes two HTTP endpoints: /mcp and /mcp_message. While /mcp requires both IP whitelisting and authentication (AuthRequired() middleware), the /mcp_message endpoint only applies IP whitelisting - and the default IP whitelist is empty, which the middleware treats as \"allow all\". This means any network attacker can invoke all MCP tools without authenticatio",
+          "epss_score": 0.18593,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-41940",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-306 (Missing Authentication)",
+          "description": "cPanel and WHM versions after 11.40 contain an authentication bypass vulnerability in the login flow that allows unauthenticated remote attackers to gain unauthorized access to the control panel.",
+          "epss_score": 0.74239,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-15T14:11:50.762886+09:00",
+      "type": "single",
+      "title": "CVE-2026-20182: Critical authentication bypass in Cisco Catalyst SD-WAN Controller (FIXED)",
+      "url": "https://www.rapid7.com/blog/post/ve-cve-2026-20182-critical-authentication-bypass-cisco-catalyst-sd-wan-controller-fixed/",
+      "source": "Rapid7 Blog (취약점/모의침투)",
+      "published": "2026-05-14T16:00:00.000Z",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-20127",
+        "CVE-2026-20182"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-20127",
+          "cvss_score": 10.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-287 (Authentication Bypass)",
+          "description": "A vulnerability in the peering authentication in Cisco Catalyst SD-WAN Controller, formerly SD-WAN vSmart, and Cisco Catalyst SD-WAN Manager, formerly SD-WAN vManage, could allow an unauthenticated, remote attacker to bypass authentication and obtain administrative privileges on an affected system.\r\n\r\nThis vulnerability exists because the peering authentication mechanism in an affected system is not working properly. An attacker could exploit this vulnerability by sending crafted requests to an ",
+          "epss_score": 0.5895,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-20182",
+          "cvss_score": 10.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-287 (Authentication Bypass)",
+          "description": "May 2026: This security advisory provides the details and fix information for a vulnerability that was discovered and fixed after the  was disclosed in February 2026. This new advisory is for a new vulnerability in the control connection handshaking. The  section of this advisory includes Show Control Connections guidance to help with system checks.&nbsp;\r\n\r\nA vulnerability in the peering authentication in Cisco Catalyst SD-WAN Controller, formerly SD-WAN vSmart, and Cisco Catalyst SD-WAN Manage",
+          "epss_score": null,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-15T14:11:50.762886+09:00",
+      "type": "single",
+      "title": "Iran launches DDoS Cyber Attack on Spotify says retaliation to Khamenei’s…",
+      "url": "https://www.cybersecurity-insiders.com/iran-launches-ddos-cyber-attack-on-spotify-says-retaliation-to-khameneis-killing/",
+      "source": "Cybersecurity Insiders (보안인사이트)",
+      "published": "2026-05-14T05:53:21+00:00",
+      "keywords": [
+        "DDoS"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-15T14:11:50.762886+09:00",
+      "type": "single",
+      "title": "i found malware disguised as one of my programs",
+      "url": "https://www.reddit.com/r/antivirus/comments/1tdlc3s/i_found_malware_disguised_as_one_of_my_programs/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-15T04:14:27+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
