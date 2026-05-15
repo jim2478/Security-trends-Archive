@@ -2,16 +2,16 @@
   "date": "2026-05-16",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
+    "scan_runs": 3,
     "total_articles_max": 1882,
     "matched_articles_max": 168,
-    "new_alerts": 4,
+    "new_alerts": 5,
     "cve_count": 0,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [],
     "keywords_hit": {
-      "Malware": 3,
+      "Malware": 4,
       "Botnet": 1
     }
   },
@@ -67,6 +67,20 @@
       "published": "2026-05-15T17:10:25+00:00",
       "keywords": [
         "Botnet"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-16T04:01:17.806814+09:00",
+      "type": "single",
+      "title": "2 credit card #s stolen in the last month... possible malware?",
+      "url": "https://www.reddit.com/r/antivirus/comments/1te4jm9/2_credit_card_s_stolen_in_the_last_month_possible/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-15T18:17:51+00:00",
+      "keywords": [
+        "Malware"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
