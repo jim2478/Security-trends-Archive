@@ -2,11 +2,11 @@
   "date": "2026-05-15",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 4,
+    "scan_runs": 5,
     "total_articles_max": 1882,
-    "matched_articles_max": 163,
-    "new_alerts": 11,
-    "cve_count": 16,
+    "matched_articles_max": 165,
+    "new_alerts": 12,
+    "cve_count": 17,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -25,7 +25,7 @@
       "CVE-2026-8181"
     ],
     "keywords_hit": {
-      "CVE": 6,
+      "CVE": 7,
       "Malware": 4,
       "DDoS": 1
     }
@@ -347,6 +347,32 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-15T22:01:11.799597+09:00",
+      "type": "single",
+      "title": "Cisco patches another actively exploited SD-WAN zero-day (CVE-2026-20182)",
+      "url": "https://www.helpnetsecurity.com/2026/05/15/cisco-sd-wan-zero-day-cve-2026-20182/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-05-15T12:43:27+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-20182"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-20182",
+          "cvss_score": 10.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-287 (Authentication Bypass)",
+          "description": "May 2026: This security advisory provides the details and fix information for a vulnerability that was discovered and fixed after the  was disclosed in February 2026. This new advisory is for a new vulnerability in the control connection handshaking. The  section of this advisory includes Show Control Connections guidance to help with system checks.&nbsp;\r\n\r\nA vulnerability in the peering authentication in Cisco Catalyst SD-WAN Controller, formerly SD-WAN vSmart, and Cisco Catalyst SD-WAN Manage",
+          "epss_score": null,
+          "kev": true
+        }
+      ]
     }
   ]
 }
