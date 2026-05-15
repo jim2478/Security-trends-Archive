@@ -1,0 +1,47 @@
+{
+  "date": "2026-05-16",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 1,
+    "total_articles_max": 1882,
+    "matched_articles_max": 164,
+    "new_alerts": 2,
+    "cve_count": 0,
+    "ioc_count": 0,
+    "merged_count": 0,
+    "unique_cves": [],
+    "keywords_hit": {
+      "Malware": 2
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-05-16T02:01:00.154399+09:00",
+      "type": "single",
+      "title": "Hackers Use PyInstaller and AMSI Patching to Deliver XWorm RAT v7.4",
+      "url": "https://hackread.com/hackers-pyinstaller-amsi-patching-xworm-rat-v7-4/",
+      "source": "HackRead (해킹/데이터유출) [RSS]",
+      "published": "2026-05-15T16:42:58+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-16T02:01:00.154399+09:00",
+      "type": "single",
+      "title": "Just want a second opinion if this is normal. I know an antivirus would disable another but it telling me im locked out by an \"IT admin\" and i cant uninstall??",
+      "url": "https://www.reddit.com/r/antivirus/comments/1te0v07/just_want_a_second_opinion_if_this_is_normal_i/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-15T16:09:12+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
