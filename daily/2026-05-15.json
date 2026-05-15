@@ -2,27 +2,32 @@
   "date": "2026-05-15",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
+    "scan_runs": 3,
     "total_articles_max": 1882,
-    "matched_articles_max": 159,
-    "new_alerts": 6,
-    "cve_count": 9,
+    "matched_articles_max": 163,
+    "new_alerts": 10,
+    "cve_count": 16,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
+      "CVE-2022-20775",
       "CVE-2026-0265",
       "CVE-2026-0300",
+      "CVE-2026-20122",
       "CVE-2026-20127",
+      "CVE-2026-20128",
+      "CVE-2026-20133",
       "CVE-2026-20182",
       "CVE-2026-3055",
       "CVE-2026-33032",
       "CVE-2026-41940",
+      "CVE-2026-42897",
       "CVE-2026-8181"
     ],
     "keywords_hit": {
-      "CVE": 4,
-      "DDoS": 1,
-      "Malware": 1
+      "CVE": 6,
+      "Malware": 3,
+      "DDoS": 1
     }
   },
   "alerts": [
@@ -207,6 +212,127 @@
           "kev": true
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-05-15T16:02:19.084337+09:00",
+      "type": "single",
+      "title": "Cisco Patches Another SD-WAN Zero-Day, the Sixth Exploited in 2026",
+      "url": "https://www.securityweek.com/cisco-patches-another-sd-wan-zero-day-the-sixth-exploited-in-2026/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-05-15T06:28:46+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2022-20775",
+        "CVE-2026-20122",
+        "CVE-2026-20127",
+        "CVE-2026-20128",
+        "CVE-2026-20133",
+        "CVE-2026-20182"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2022-20775",
+          "cvss_score": 7.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-25 (CWE-25)",
+          "description": "A vulnerability in the CLI of Cisco SD-WAN Software could allow an authenticated, local attacker to gain elevated privileges.\r\n\r\nThis vulnerability is due to improper access controls on commands within the application CLI. An attacker could exploit this vulnerability by running a maliciously crafted command on the application CLI. A successful exploit could allow the attacker to execute arbitrary commands as the root user.\r\nCisco has released software updates that address this vulnerability. The",
+          "epss_score": 0.00419,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-20122",
+          "cvss_score": 5.4,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-648 (CWE-648)",
+          "description": "A vulnerability in the API of Cisco Catalyst SD-WAN Manager could allow an authenticated, remote attacker to overwrite arbitrary files on the local file system. To exploit this vulnerability, the attacker must have valid read-only credentials with API access on the affected system.\r\n\r\nThis vulnerability is due to improper file handling on the API interface of an affected system. An attacker could exploit this vulnerability by uploading a malicious file on the local file system. A successful expl",
+          "epss_score": 0.01196,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-20127",
+          "cvss_score": 10.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-287 (Authentication Bypass)",
+          "description": "A vulnerability in the peering authentication in Cisco Catalyst SD-WAN Controller, formerly SD-WAN vSmart, and Cisco Catalyst SD-WAN Manager, formerly SD-WAN vManage, could allow an unauthenticated, remote attacker to bypass authentication and obtain administrative privileges on an affected system.\r\n\r\nThis vulnerability exists because the peering authentication mechanism in an affected system is not working properly. An attacker could exploit this vulnerability by sending crafted requests to an ",
+          "epss_score": 0.5895,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-20128",
+          "cvss_score": 7.5,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-257 (CWE-257)",
+          "description": "A vulnerability in the Data Collection Agent (DCA) feature of Cisco Catalyst SD-WAN Manager could allow an unauthenticated, remote attacker to gain DCA user privileges on an affected system.\r\n\r\nThis vulnerability is due to the presence of a credential file for the DCA user on an affected system. An attacker could exploit this vulnerability by sending a crafted HTTP request and reading the file that contains the DCA password from that affected system. A successful exploit could allow the attacker",
+          "epss_score": 0.00047,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-20133",
+          "cvss_score": 6.5,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-200 (Information Exposure)",
+          "description": "A vulnerability in Cisco Catalyst SD-WAN Software could allow an unauthenticated, remote attacker to view sensitive information on an affected system.\r\n\r This vulnerability is due to insufficient file system restrictions. An authenticated attacker with netadmin privileges could exploit this vulnerability by accessing the vshell of an affected system. A successful exploit could allow the attacker to read sensitive information on the underlying operating system.",
+          "epss_score": 0.01356,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-15T16:02:19.084337+09:00",
+      "type": "single",
+      "title": "On-Prem Microsoft Exchange Server CVE-2026-42897 Exploited via Crafted Email",
+      "url": "https://thehackernews.com/2026/05/on-prem-microsoft-exchange-server-cve.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-05-15T06:19:04+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-42897"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-42897",
+          "cvss_score": 8.1,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-79 (XSS)",
+          "description": "Improper neutralization of input during web page generation ('cross-site scripting') in Microsoft Exchange Server allows an unauthorized attacker to perform spoofing over a network.",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-15T16:02:19.084337+09:00",
+      "type": "single",
+      "title": "&#x5b;Guest Diary&#x5d;  New Malware Libraries means New Signatures, (Fri, May 15th)",
+      "url": "https://isc.sans.edu/diary/rss/32986",
+      "source": "SANS ISC (인터넷폭풍센터) [RSS]",
+      "published": "2026-05-15T06:38:33+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-15T16:02:19.084337+09:00",
+      "type": "single",
+      "title": "From Vercel Typosquatting to an Obfuscated macOS Malware Loader",
+      "url": "https://www.reddit.com/r/netsec/comments/1tdnqnn/from_vercel_typosquatting_to_an_obfuscated_macos/",
+      "source": "Reddit r/netsec (보안커뮤니티) [RSS]",
+      "published": "2026-05-15T06:18:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
