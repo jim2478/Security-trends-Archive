@@ -2,16 +2,16 @@
   "date": "2026-05-17",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 4,
+    "scan_runs": 5,
     "total_articles_max": 1882,
-    "matched_articles_max": 171,
-    "new_alerts": 5,
+    "matched_articles_max": 173,
+    "new_alerts": 7,
     "cve_count": 0,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [],
     "keywords_hit": {
-      "Malware": 4,
+      "Malware": 6,
       "CVE": 1
     }
   },
@@ -79,6 +79,34 @@
       "url": "https://www.reddit.com/r/antivirus/comments/1tf0np4/windows_defender_vs_secondary_av/",
       "source": "Reddit r/antivirus (커뮤니티) [RSS]",
       "published": "2026-05-16T17:53:50+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-17T04:02:50.842948+09:00",
+      "type": "single",
+      "title": "Fake CHATGPT website with real website mentioned titled!",
+      "url": "https://www.reddit.com/r/antivirus/comments/1tf2eso/fake_chatgpt_website_with_real_website_mentioned/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-16T19:00:09+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-17T04:02:50.842948+09:00",
+      "type": "single",
+      "title": "It detected riskware.",
+      "url": "https://www.reddit.com/r/antivirus/comments/1tf2at7/it_detected_riskware/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-16T18:55:50+00:00",
       "keywords": [
         "Malware"
       ],
