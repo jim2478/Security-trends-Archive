@@ -2,16 +2,17 @@
   "date": "2026-05-17",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
+    "scan_runs": 3,
     "total_articles_max": 1882,
-    "matched_articles_max": 168,
-    "new_alerts": 2,
+    "matched_articles_max": 170,
+    "new_alerts": 3,
     "cve_count": 0,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [],
     "keywords_hit": {
-      "Malware": 2
+      "Malware": 2,
+      "CVE": 1
     }
   },
   "alerts": [
@@ -38,6 +39,20 @@
       "published": "2026-05-16T15:22:15+00:00",
       "keywords": [
         "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-17T02:00:53.581244+09:00",
+      "type": "single",
+      "title": "Funnel Builder Flaw Under Active Exploitation Enables WooCommerce Checkout Skimming",
+      "url": "https://thehackernews.com/2026/05/funnel-builder-flaw-under-active.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-05-16T15:20:48+00:00",
+      "keywords": [
+        "CVE"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
