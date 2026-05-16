@@ -2,17 +2,17 @@
   "date": "2026-05-17",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 5,
+    "scan_runs": 6,
     "total_articles_max": 1882,
     "matched_articles_max": 173,
-    "new_alerts": 7,
+    "new_alerts": 8,
     "cve_count": 0,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [],
     "keywords_hit": {
       "Malware": 6,
-      "CVE": 1
+      "CVE": 2
     }
   },
   "alerts": [
@@ -109,6 +109,20 @@
       "published": "2026-05-16T18:55:50+00:00",
       "keywords": [
         "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-17T06:00:46.417233+09:00",
+      "type": "single",
+      "title": "Microsoft rejects critical Azure vulnerability report, no CVE issued",
+      "url": "https://www.bleepingcomputer.com/news/security/microsoft-rejects-critical-azure-vulnerability-report-no-cve-issued/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-05-16T20:55:44+00:00",
+      "keywords": [
+        "CVE"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
