@@ -2,16 +2,16 @@
   "date": "2026-05-17",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
+    "scan_runs": 4,
     "total_articles_max": 1882,
-    "matched_articles_max": 170,
-    "new_alerts": 3,
+    "matched_articles_max": 171,
+    "new_alerts": 5,
     "cve_count": 0,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [],
     "keywords_hit": {
-      "Malware": 2,
+      "Malware": 4,
       "CVE": 1
     }
   },
@@ -53,6 +53,34 @@
       "published": "2026-05-16T15:20:48+00:00",
       "keywords": [
         "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-17T03:00:57.289092+09:00",
+      "type": "single",
+      "title": "Downloaded a virus, did I react alright?",
+      "url": "https://www.reddit.com/r/antivirus/comments/1tf0ciw/downloaded_a_virus_did_i_react_alright/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-16T17:42:07+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-17T03:00:57.289092+09:00",
+      "type": "single",
+      "title": "Windows Defender Vs secondary AV",
+      "url": "https://www.reddit.com/r/antivirus/comments/1tf0np4/windows_defender_vs_secondary_av/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-16T17:53:50+00:00",
+      "keywords": [
+        "Malware"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
