@@ -1,0 +1,33 @@
+{
+  "date": "2026-05-17",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 1,
+    "total_articles_max": 1882,
+    "matched_articles_max": 168,
+    "new_alerts": 1,
+    "cve_count": 0,
+    "ioc_count": 0,
+    "merged_count": 0,
+    "unique_cves": [],
+    "keywords_hit": {
+      "Malware": 1
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-05-17T00:00:51.326968+09:00",
+      "type": "single",
+      "title": "AI-assisted cyberattacks are changing the threat landscape faster than most organizations realize.",
+      "url": "https://www.reddit.com/r/netsec/comments/1tevfd0/aiassisted_cyberattacks_are_changing_the_threat/",
+      "source": "Reddit r/netsec (보안커뮤니티) [RSS]",
+      "published": "2026-05-16T14:36:16+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
