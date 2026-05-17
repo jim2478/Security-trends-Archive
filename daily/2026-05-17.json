@@ -2,10 +2,10 @@
   "date": "2026-05-17",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 9,
+    "scan_runs": 10,
     "total_articles_max": 1882,
     "matched_articles_max": 175,
-    "new_alerts": 11,
+    "new_alerts": 12,
     "cve_count": 1,
     "ioc_count": 0,
     "merged_count": 0,
@@ -13,7 +13,7 @@
       "CVE-2026-20182"
     ],
     "keywords_hit": {
-      "Malware": 8,
+      "Malware": 9,
       "CVE": 3
     }
   },
@@ -177,6 +177,20 @@
       "url": "https://www.reddit.com/r/antivirus/comments/1tfh99k/new_tablet_and_potential_adware/",
       "source": "Reddit r/antivirus (커뮤니티) [RSS]",
       "published": "2026-05-17T06:18:31+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-17T23:00:57.941160+09:00",
+      "type": "single",
+      "title": "maono microphones",
+      "url": "https://www.reddit.com/r/antivirus/comments/1tfpdf1/maono_microphones/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-17T13:20:07+00:00",
       "keywords": [
         "Malware"
       ],
