@@ -2,10 +2,10 @@
   "date": "2026-05-18",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
+    "scan_runs": 3,
     "total_articles_max": 1882,
     "matched_articles_max": 172,
-    "new_alerts": 2,
+    "new_alerts": 3,
     "cve_count": 1,
     "ioc_count": 0,
     "merged_count": 0,
@@ -13,8 +13,8 @@
       "CVE-2026-42945"
     ],
     "keywords_hit": {
-      "CVE": 1,
-      "Malware": 1
+      "Malware": 2,
+      "CVE": 1
     }
   },
   "alerts": [
@@ -51,6 +51,20 @@
       "url": "https://www.reddit.com/r/antivirus/comments/1tfuix5/instagram_was_hacked_and_need_help_if_theres/",
       "source": "Reddit r/antivirus (커뮤니티) [RSS]",
       "published": "2026-05-17T16:36:46+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-18T05:00:47.365772+09:00",
+      "type": "single",
+      "title": "The ultimate guide to preventing malware for users",
+      "url": "https://www.reddit.com/r/antivirus/comments/1tfz2w4/the_ultimate_guide_to_preventing_malware_for_users/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-17T19:22:58+00:00",
       "keywords": [
         "Malware"
       ],
