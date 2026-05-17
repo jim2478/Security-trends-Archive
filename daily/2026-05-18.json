@@ -2,10 +2,10 @@
   "date": "2026-05-18",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 1,
+    "scan_runs": 2,
     "total_articles_max": 1882,
     "matched_articles_max": 172,
-    "new_alerts": 1,
+    "new_alerts": 2,
     "cve_count": 1,
     "ioc_count": 0,
     "merged_count": 0,
@@ -13,7 +13,8 @@
       "CVE-2026-42945"
     ],
     "keywords_hit": {
-      "CVE": 1
+      "CVE": 1,
+      "Malware": 1
     }
   },
   "alerts": [
@@ -42,6 +43,20 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-05-18T02:00:55.848146+09:00",
+      "type": "single",
+      "title": "Instagram was hacked and need help if theres still malware",
+      "url": "https://www.reddit.com/r/antivirus/comments/1tfuix5/instagram_was_hacked_and_need_help_if_theres/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-17T16:36:46+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
