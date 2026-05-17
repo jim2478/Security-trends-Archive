@@ -2,17 +2,19 @@
   "date": "2026-05-17",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 6,
+    "scan_runs": 7,
     "total_articles_max": 1882,
-    "matched_articles_max": 173,
-    "new_alerts": 8,
-    "cve_count": 0,
+    "matched_articles_max": 175,
+    "new_alerts": 9,
+    "cve_count": 1,
     "ioc_count": 0,
     "merged_count": 0,
-    "unique_cves": [],
+    "unique_cves": [
+      "CVE-2026-20182"
+    ],
     "keywords_hit": {
       "Malware": 6,
-      "CVE": 2
+      "CVE": 3
     }
   },
   "alerts": [
@@ -127,6 +129,32 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-17T11:00:53.709682+09:00",
+      "type": "single",
+      "title": "시스코, SD-WAN 인증 우회 취약점 긴급 패치…관리자 권한 탈취 주의",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=206761",
+      "source": "데일리시큐 (IT&생활) [RSS]",
+      "published": "2026-05-17T01:44:07+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-20182"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-20182",
+          "cvss_score": 10.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-287 (Authentication Bypass)",
+          "description": "May 2026: This security advisory provides the details and fix information for a vulnerability that was discovered and fixed after the  was disclosed in February 2026. This new advisory is for a new vulnerability in the control connection handshaking. The  section of this advisory includes Show Control Connections guidance to help with system checks.&nbsp;\r\n\r\nA vulnerability in the peering authentication in Cisco Catalyst SD-WAN Controller, formerly SD-WAN vSmart, and Cisco Catalyst SD-WAN Manage",
+          "epss_score": 0.37954,
+          "kev": true
+        }
+      ]
     }
   ]
 }
