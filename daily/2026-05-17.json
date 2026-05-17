@@ -2,10 +2,10 @@
   "date": "2026-05-17",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 7,
+    "scan_runs": 8,
     "total_articles_max": 1882,
     "matched_articles_max": 175,
-    "new_alerts": 9,
+    "new_alerts": 10,
     "cve_count": 1,
     "ioc_count": 0,
     "merged_count": 0,
@@ -13,7 +13,7 @@
       "CVE-2026-20182"
     ],
     "keywords_hit": {
-      "Malware": 6,
+      "Malware": 7,
       "CVE": 3
     }
   },
@@ -155,6 +155,20 @@
           "kev": true
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-05-17T14:00:48.853898+09:00",
+      "type": "single",
+      "title": "Why is my Antivirus blocking Archive.org?",
+      "url": "https://www.reddit.com/r/antivirus/comments/1tffp3n/why_is_my_antivirus_blocking_archiveorg/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-17T04:56:17+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
