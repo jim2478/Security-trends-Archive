@@ -2,16 +2,16 @@
   "date": "2026-05-19",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 1,
+    "scan_runs": 2,
     "total_articles_max": 1862,
     "matched_articles_max": 164,
-    "new_alerts": 1,
+    "new_alerts": 3,
     "cve_count": 0,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [],
     "keywords_hit": {
-      "Malware": 1
+      "Malware": 3
     }
   },
   "alerts": [
@@ -22,6 +22,34 @@
       "url": "https://www.itsecurityguru.org/2026/05/18/cyber-attackers-bypass-traditional-defences-as-user-driven-attacks-surge-bridewell-warns/?utm_source=rss&utm_medium=rss&utm_campaign=cyber-attackers-bypass-traditional-defences-as-user-driven-attacks-surge-bridewell-warns",
       "source": "IT Security Guru (보안뉴스) [RSS]",
       "published": "2026-05-18T14:28:03+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-19T03:01:04.060386+09:00",
+      "type": "single",
+      "title": "New Reaper Malware Uses Fake Microsoft Domain to Steal macOS Passwords",
+      "url": "https://hackread.com/reaper-malware-fake-microsoft-domain-macos-passwords/",
+      "source": "HackRead (해킹/데이터유출) [RSS]",
+      "published": "2026-05-18T17:37:08+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-19T03:01:04.060386+09:00",
+      "type": "single",
+      "title": "Leaked Shai-Hulud malware fuels new npm infostealer campaign",
+      "url": "https://www.bleepingcomputer.com/news/security/leaked-shai-hulud-malware-fuels-new-npm-infostealer-campaign/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-05-18T17:28:02+00:00",
       "keywords": [
         "Malware"
       ],
