@@ -2,10 +2,10 @@
   "date": "2026-05-19",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 5,
+    "scan_runs": 6,
     "total_articles_max": 1862,
-    "matched_articles_max": 166,
-    "new_alerts": 9,
+    "matched_articles_max": 167,
+    "new_alerts": 11,
     "cve_count": 2,
     "ioc_count": 0,
     "merged_count": 0,
@@ -14,7 +14,7 @@
       "CVE-2026-8043"
     ],
     "keywords_hit": {
-      "Malware": 7,
+      "Malware": 9,
       "CVE": 2
     }
   },
@@ -162,6 +162,34 @@
       "url": "https://www.reddit.com/r/antivirus/comments/1th2c28/bitdefender_is_trying_to_get_me_to_install_large/",
       "source": "Reddit r/antivirus (커뮤니티) [RSS]",
       "published": "2026-05-18T21:43:20+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-19T08:01:03.720022+09:00",
+      "type": "single",
+      "title": "INTERPOL ‘Operation Ramz’ seizes 53 malware, phishing servers",
+      "url": "https://www.bleepingcomputer.com/news/security/interpol-operation-ramz-seizes-53-malware-phishing-servers/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-05-18T22:15:30+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-19T08:01:03.720022+09:00",
+      "type": "single",
+      "title": "Ran a very suspicious malware code",
+      "url": "https://www.reddit.com/r/antivirus/comments/1th3lpm/ran_a_very_suspicious_malware_code/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-18T22:26:53+00:00",
       "keywords": [
         "Malware"
       ],
