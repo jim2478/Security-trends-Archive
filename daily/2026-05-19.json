@@ -1,0 +1,33 @@
+{
+  "date": "2026-05-19",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 1,
+    "total_articles_max": 1862,
+    "matched_articles_max": 164,
+    "new_alerts": 1,
+    "cve_count": 0,
+    "ioc_count": 0,
+    "merged_count": 0,
+    "unique_cves": [],
+    "keywords_hit": {
+      "Malware": 1
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-05-19T00:01:02.376000+09:00",
+      "type": "single",
+      "title": "Cyber attackers bypass traditional defences as ‘user-driven’ attacks surge, Bridewell warns",
+      "url": "https://www.itsecurityguru.org/2026/05/18/cyber-attackers-bypass-traditional-defences-as-user-driven-attacks-surge-bridewell-warns/?utm_source=rss&utm_medium=rss&utm_campaign=cyber-attackers-bypass-traditional-defences-as-user-driven-attacks-surge-bridewell-warns",
+      "source": "IT Security Guru (보안뉴스) [RSS]",
+      "published": "2026-05-18T14:28:03+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
