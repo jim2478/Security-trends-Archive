@@ -2,10 +2,10 @@
   "date": "2026-05-18",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 6,
+    "scan_runs": 7,
     "total_articles_max": 1882,
     "matched_articles_max": 172,
-    "new_alerts": 8,
+    "new_alerts": 9,
     "cve_count": 2,
     "ioc_count": 0,
     "merged_count": 0,
@@ -14,7 +14,7 @@
       "CVE-2026-42945"
     ],
     "keywords_hit": {
-      "Malware": 6,
+      "Malware": 7,
       "CVE": 2
     }
   },
@@ -148,6 +148,20 @@
       "url": "https://thehackernews.com/2026/05/pre-stuxnet-fast16-malware-tampered.html",
       "source": "The Hacker News (보안뉴스 종합) [RSS]",
       "published": "2026-05-18T06:46:37+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-18T19:00:59.986693+09:00",
+      "type": "single",
+      "title": "First Shai-Hulud Worm Clones Emerge",
+      "url": "https://www.securityweek.com/first-shai-hulud-worm-clones-emerge/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-05-18T09:45:15+00:00",
       "keywords": [
         "Malware"
       ],
