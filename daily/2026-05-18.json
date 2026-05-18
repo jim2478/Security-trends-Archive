@@ -2,20 +2,22 @@
   "date": "2026-05-18",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 7,
+    "scan_runs": 8,
     "total_articles_max": 1882,
     "matched_articles_max": 172,
-    "new_alerts": 9,
-    "cve_count": 2,
+    "new_alerts": 11,
+    "cve_count": 3,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
+      "CVE-2020-17103",
       "CVE-2026-40769",
       "CVE-2026-42945"
     ],
     "keywords_hit": {
-      "Malware": 7,
-      "CVE": 2
+      "Malware": 8,
+      "CVE": 3,
+      "DDoS": 1
     }
   },
   "alerts": [
@@ -163,6 +165,47 @@
       "source": "SecurityWeek (보안뉴스 종합) [RSS]",
       "published": "2026-05-18T09:45:15+00:00",
       "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-18T20:03:04.831233+09:00",
+      "type": "single",
+      "title": "Researcher Drops MiniPlasma Windows Exploit for Unpatched 2020 CVE",
+      "url": "https://www.securityweek.com/researcher-drops-miniplasma-windows-exploit-for-unpatched-2020-cve/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-05-18T10:38:22+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2020-17103"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2020-17103",
+          "cvss_score": 7.0,
+          "cvss_severity": "HIGH",
+          "cwe": "NVD-CWE-noinfo (Insufficient Information)",
+          "description": "Windows Cloud Files Mini Filter Driver Elevation of Privilege Vulnerability",
+          "epss_score": 0.00352,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-18T20:03:04.831233+09:00",
+      "type": "single",
+      "title": "Four Malicious npm Packages Deliver Infostealers and Phantom Bot DDoS Malware",
+      "url": "https://thehackernews.com/2026/05/four-malicious-npm-packages-deliver.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-05-18T08:57:26+00:00",
+      "keywords": [
+        "DDoS",
         "Malware"
       ],
       "ioc_raw_text": "",
