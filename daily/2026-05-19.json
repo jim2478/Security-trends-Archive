@@ -2,16 +2,16 @@
   "date": "2026-05-19",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
+    "scan_runs": 4,
     "total_articles_max": 1862,
     "matched_articles_max": 165,
-    "new_alerts": 5,
+    "new_alerts": 6,
     "cve_count": 0,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [],
     "keywords_hit": {
-      "Malware": 5
+      "Malware": 6
     }
   },
   "alerts": [
@@ -78,6 +78,20 @@
       "url": "https://www.reddit.com/r/antivirus/comments/1tgw4u5/trojan_virus_reset_my_laptop_now_this_is_happening/",
       "source": "Reddit r/antivirus (커뮤니티) [RSS]",
       "published": "2026-05-18T18:28:56+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-19T06:00:52.764718+09:00",
+      "type": "single",
+      "title": "Weird 2.65 terabytes app that I cannot uninstall or modify.",
+      "url": "https://www.reddit.com/r/antivirus/comments/1tgzg4u/weird_265_terabytes_app_that_i_cannot_uninstall/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-18T20:04:09+00:00",
       "keywords": [
         "Malware"
       ],
