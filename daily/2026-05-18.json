@@ -2,21 +2,22 @@
   "date": "2026-05-18",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 9,
+    "scan_runs": 10,
     "total_articles_max": 1882,
     "matched_articles_max": 172,
-    "new_alerts": 12,
-    "cve_count": 4,
+    "new_alerts": 14,
+    "cve_count": 5,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2020-17103",
+      "CVE-2026-20131",
       "CVE-2026-40769",
       "CVE-2026-42945",
       "CVE-2026-8043"
     ],
     "keywords_hit": {
-      "Malware": 8,
+      "Malware": 10,
       "CVE": 4,
       "DDoS": 1
     }
@@ -238,6 +239,46 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-05-18T22:01:05.047485+09:00",
+      "type": "single",
+      "title": "IT threat evolution in Q1 2026. Non-mobile statistics",
+      "url": "https://securelist.com/malware-report-q1-2026-pc-iot-statistics/119828/",
+      "source": "Kaspersky Securelist (위협분석) [RSS]",
+      "published": "2026-05-18T12:00:22+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-20131"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-20131",
+          "cvss_score": 10.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-502 (Deserialization)",
+          "description": "A vulnerability in the web-based management interface of Cisco Secure Firewall Management Center (FMC) Software could allow an unauthenticated, remote attacker to execute arbitrary Java code as root&nbsp;on an affected device.\r\n\r\nThis vulnerability is due to insecure deserialization of a user-supplied Java byte stream. An attacker could exploit this vulnerability by sending a crafted serialized Java object to the web-based management interface of an affected device. A successful exploit could al",
+          "epss_score": 0.0172,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-18T22:01:05.047485+09:00",
+      "type": "single",
+      "title": "Unsure on whether I have malware or not.",
+      "url": "https://www.reddit.com/r/antivirus/comments/1tgkism/unsure_on_whether_i_have_malware_or_not/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-18T12:03:09+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
