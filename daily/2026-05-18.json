@@ -2,10 +2,10 @@
   "date": "2026-05-18",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 4,
+    "scan_runs": 5,
     "total_articles_max": 1882,
     "matched_articles_max": 172,
-    "new_alerts": 4,
+    "new_alerts": 5,
     "cve_count": 1,
     "ioc_count": 0,
     "merged_count": 0,
@@ -13,7 +13,7 @@
       "CVE-2026-42945"
     ],
     "keywords_hit": {
-      "Malware": 3,
+      "Malware": 4,
       "CVE": 1
     }
   },
@@ -79,6 +79,20 @@
       "url": "https://www.reddit.com/r/antivirus/comments/1tg96wr/is_this_malware_and_do_i_need_to_set_fire_to_all/",
       "source": "Reddit r/antivirus (커뮤니티) [RSS]",
       "published": "2026-05-18T02:22:06+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-18T13:00:52.109663+09:00",
+      "type": "single",
+      "title": "Malwarebytes: scan says 11 threats, but next tab says nothing. Not sure what to do",
+      "url": "https://www.reddit.com/r/antivirus/comments/1tga0y2/malwarebytes_scan_says_11_threats_but_next_tab/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-18T03:00:48+00:00",
       "keywords": [
         "Malware"
       ],
