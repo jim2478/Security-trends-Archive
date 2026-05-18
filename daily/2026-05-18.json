@@ -2,21 +2,22 @@
   "date": "2026-05-18",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 8,
+    "scan_runs": 9,
     "total_articles_max": 1882,
     "matched_articles_max": 172,
-    "new_alerts": 11,
-    "cve_count": 3,
+    "new_alerts": 12,
+    "cve_count": 4,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2020-17103",
       "CVE-2026-40769",
-      "CVE-2026-42945"
+      "CVE-2026-42945",
+      "CVE-2026-8043"
     ],
     "keywords_hit": {
       "Malware": 8,
-      "CVE": 3,
+      "CVE": 4,
       "DDoS": 1
     }
   },
@@ -211,6 +212,32 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-18T21:01:05.299513+09:00",
+      "type": "single",
+      "title": "Ivanti, Fortinet, SAP, VMware, n8n Patch RCE, SQL Injection, Privilege Escalation Flaws",
+      "url": "https://thehackernews.com/2026/05/ivanti-fortinet-sap-vmware-n8n-patch.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-05-18T10:54:05+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-8043"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-8043",
+          "cvss_score": 9.6,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-73 (CWE-73)",
+          "description": "External control of a file name in Ivanti Xtraction before version 2026.2 allows a remote authenticated attacker to read sensitive files and write arbitrary HTML files to a web directory, leading to information disclosure and possible client-side attacks.",
+          "epss_score": 0.00088,
+          "kev": false
+        }
+      ]
     }
   ]
 }
