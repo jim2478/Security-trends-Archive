@@ -2,16 +2,16 @@
   "date": "2026-05-19",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
+    "scan_runs": 3,
     "total_articles_max": 1862,
-    "matched_articles_max": 164,
-    "new_alerts": 3,
+    "matched_articles_max": 165,
+    "new_alerts": 5,
     "cve_count": 0,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [],
     "keywords_hit": {
-      "Malware": 3
+      "Malware": 5
     }
   },
   "alerts": [
@@ -50,6 +50,34 @@
       "url": "https://www.bleepingcomputer.com/news/security/leaked-shai-hulud-malware-fuels-new-npm-infostealer-campaign/",
       "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
       "published": "2026-05-18T17:28:02+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-19T05:01:09.255283+09:00",
+      "type": "single",
+      "title": "Should I nuke my pc",
+      "url": "https://www.reddit.com/r/antivirus/comments/1tgy7k9/should_i_nuke_my_pc/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-18T19:24:17+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-19T05:01:09.255283+09:00",
+      "type": "single",
+      "title": "Trojan virus, reset my laptop, now this is happening",
+      "url": "https://www.reddit.com/r/antivirus/comments/1tgw4u5/trojan_virus_reset_my_laptop_now_this_is_happening/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-18T18:28:56+00:00",
       "keywords": [
         "Malware"
       ],
