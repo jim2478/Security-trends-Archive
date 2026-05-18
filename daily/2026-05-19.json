@@ -2,16 +2,20 @@
   "date": "2026-05-19",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 4,
+    "scan_runs": 5,
     "total_articles_max": 1862,
-    "matched_articles_max": 165,
-    "new_alerts": 6,
-    "cve_count": 0,
+    "matched_articles_max": 166,
+    "new_alerts": 9,
+    "cve_count": 2,
     "ioc_count": 0,
     "merged_count": 0,
-    "unique_cves": [],
+    "unique_cves": [
+      "CVE-2026-42897",
+      "CVE-2026-8043"
+    ],
     "keywords_hit": {
-      "Malware": 6
+      "Malware": 7,
+      "CVE": 2
     }
   },
   "alerts": [
@@ -92,6 +96,72 @@
       "url": "https://www.reddit.com/r/antivirus/comments/1tgzg4u/weird_265_terabytes_app_that_i_cannot_uninstall/",
       "source": "Reddit r/antivirus (커뮤니티) [RSS]",
       "published": "2026-05-18T20:04:09+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-19T07:00:57.685883+09:00",
+      "type": "single",
+      "title": "Microsoft Exchange Zero-Day Under Attack, No Patch Available",
+      "url": "https://www.darkreading.com/vulnerabilities-threats/microsoft-exchange-zero-day-no-patch",
+      "source": "Dark Reading (보안뉴스 종합) [RSS]",
+      "published": "2026-05-18T21:43:51+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-42897"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-42897",
+          "cvss_score": 8.1,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-79 (XSS)",
+          "description": "Improper neutralization of input during web page generation ('cross-site scripting') in Microsoft Exchange Server allows an unauthorized attacker to perform spoofing over a network.",
+          "epss_score": 0.12343,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-19T07:00:57.685883+09:00",
+      "type": "single",
+      "title": "이반티·포티넷·SAP·n8n·VMware 긴급 패치…인증 우회·원격코드실행 위험",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=206789",
+      "source": "데일리시큐 (이슈) [RSS]",
+      "published": "2026-05-19T06:41:04+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-8043"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-8043",
+          "cvss_score": 9.6,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-73 (CWE-73)",
+          "description": "External control of a file name in Ivanti Xtraction before version 2026.2 allows a remote authenticated attacker to read sensitive files and write arbitrary HTML files to a web directory, leading to information disclosure and possible client-side attacks.",
+          "epss_score": 0.00099,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-19T07:00:57.685883+09:00",
+      "type": "single",
+      "title": "Bitdefender is trying to get me to install large updates that don't exist in Windows Update",
+      "url": "https://www.reddit.com/r/antivirus/comments/1th2c28/bitdefender_is_trying_to_get_me_to_install_large/",
+      "source": "Reddit r/antivirus (커뮤니티) [RSS]",
+      "published": "2026-05-18T21:43:20+00:00",
       "keywords": [
         "Malware"
       ],
