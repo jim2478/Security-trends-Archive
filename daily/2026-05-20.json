@@ -2,10 +2,10 @@
   "date": "2026-05-20",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
+    "scan_runs": 4,
     "total_articles_max": 1822,
     "matched_articles_max": 153,
-    "new_alerts": 11,
+    "new_alerts": 12,
     "cve_count": 9,
     "ioc_count": 0,
     "merged_count": 0,
@@ -22,7 +22,7 @@
     ],
     "keywords_hit": {
       "CVE": 6,
-      "Malware": 5
+      "Malware": 6
     }
   },
   "alerts": [
@@ -275,6 +275,20 @@
       "url": "https://therecord.media/microsoft-disrupts-fox-tempest-malware-signing-service",
       "source": "The Record by Recorded Future (위협뉴스) [RSS]",
       "published": "2026-05-19T16:36:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-20T07:00:52.240027+09:00",
+      "type": "single",
+      "title": "Cybercrime service disrupted for abusing Microsoft platform to sign malware",
+      "url": "https://www.bleepingcomputer.com/news/security/cybercrime-service-disrupted-for-abusing-microsoft-platform-to-sign-malware/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-05-19T21:47:31+00:00",
       "keywords": [
         "Malware"
       ],
