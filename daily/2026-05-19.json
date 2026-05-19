@@ -2,10 +2,10 @@
   "date": "2026-05-19",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 10,
+    "scan_runs": 11,
     "total_articles_max": 1862,
     "matched_articles_max": 169,
-    "new_alerts": 16,
+    "new_alerts": 17,
     "cve_count": 4,
     "ioc_count": 16,
     "merged_count": 0,
@@ -16,7 +16,7 @@
       "CVE-2026-8153"
     ],
     "keywords_hit": {
-      "Malware": 12,
+      "Malware": 13,
       "CVE": 4
     }
   },
@@ -286,6 +286,20 @@
       "url": "https://cybernews.com/security/shai-hulud-strikes-again-massive-npm-compromise/",
       "source": "CyberNews [RSS]",
       "published": "2026-05-19T09:23:50+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-19T22:00:57.096374+09:00",
+      "type": "single",
+      "title": "Legacy Windows Tool MSHTA Fuels Surge in Silent Malware Attacks",
+      "url": "https://www.securityweek.com/legacy-windows-tool-mshta-fuels-surge-in-silent-malware-attacks/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-05-19T13:00:00+00:00",
       "keywords": [
         "Malware"
       ],
