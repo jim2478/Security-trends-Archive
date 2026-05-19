@@ -2,10 +2,10 @@
   "date": "2026-05-20",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 1,
+    "scan_runs": 2,
     "total_articles_max": 1822,
-    "matched_articles_max": 149,
-    "new_alerts": 2,
+    "matched_articles_max": 150,
+    "new_alerts": 4,
     "cve_count": 1,
     "ioc_count": 0,
     "merged_count": 0,
@@ -13,8 +13,8 @@
       "CVE-2026-31635"
     ],
     "keywords_hit": {
-      "CVE": 1,
-      "Malware": 1
+      "Malware": 3,
+      "CVE": 1
     }
   },
   "alerts": [
@@ -51,6 +51,34 @@
       "url": "https://www.bleepingcomputer.com/news/security/new-shai-hulud-malware-wave-compromises-600-npm-packages/",
       "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
       "published": "2026-05-19T14:30:22+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-20T01:01:06.674514+09:00",
+      "type": "single",
+      "title": "Exposing Fox Tempest: A malware-signing service operation",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/05/19/exposing-fox-tempest-a-malware-signing-service-operation/",
+      "source": "Microsoft Security Blog (보안업데이트) [RSS]",
+      "published": "2026-05-19T15:07:01+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-20T01:01:06.674514+09:00",
+      "type": "single",
+      "title": "Cybercriminals massively abusing obsolete Windows tool MSHTA to deliver infostealers",
+      "url": "https://cybernews.com/security/hackers-abuse-mshta-to-deliver-windows-malware/",
+      "source": "CyberNews [RSS]",
+      "published": "2026-05-19T14:47:29+00:00",
       "keywords": [
         "Malware"
       ],
