@@ -2,21 +2,22 @@
   "date": "2026-05-19",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 8,
+    "scan_runs": 9,
     "total_articles_max": 1862,
-    "matched_articles_max": 167,
-    "new_alerts": 13,
-    "cve_count": 3,
+    "matched_articles_max": 169,
+    "new_alerts": 14,
+    "cve_count": 4,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2026-29205",
       "CVE-2026-42897",
-      "CVE-2026-8043"
+      "CVE-2026-8043",
+      "CVE-2026-8153"
     ],
     "keywords_hit": {
       "Malware": 10,
-      "CVE": 3
+      "CVE": 4
     }
   },
   "alerts": [
@@ -234,6 +235,32 @@
           "cwe": "CWE-250 (CWE-250)",
           "description": "Incorrect privileges management and insufficient path filtering allow to read arbitrary file on the server via the cpdavd attachment download endpoints.",
           "epss_score": 0.00042,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-19T16:01:02.974195+09:00",
+      "type": "single",
+      "title": "Critical Vulnerability Exposes Industrial Robot Fleets to Hacking",
+      "url": "https://www.securityweek.com/critical-vulnerability-exposes-industrial-robot-fleets-to-hacking/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-05-19T06:18:51+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-8153"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-8153",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-78 (OS Command Injection)",
+          "description": "OS command injection in Dashboard Server interface in Universal Robots PolyScope versions prior to 5.25.1 allows unauthenticated attacker to craft commands that will execute code on the robot's OS.",
+          "epss_score": 0.01532,
           "kev": false
         }
       ]
