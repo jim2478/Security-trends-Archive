@@ -2,19 +2,27 @@
   "date": "2026-05-20",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
+    "scan_runs": 3,
     "total_articles_max": 1822,
-    "matched_articles_max": 150,
-    "new_alerts": 4,
-    "cve_count": 1,
+    "matched_articles_max": 153,
+    "new_alerts": 11,
+    "cve_count": 9,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
-      "CVE-2026-31635"
+      "CVE-2025-3465",
+      "CVE-2026-0300",
+      "CVE-2026-31635",
+      "CVE-2026-4293",
+      "CVE-2026-8598",
+      "CVE-2026-8602",
+      "CVE-2026-8603",
+      "CVE-2026-8604",
+      "CVE-2026-8605"
     ],
     "keywords_hit": {
-      "Malware": 3,
-      "CVE": 1
+      "CVE": 6,
+      "Malware": 5
     }
   },
   "alerts": [
@@ -79,6 +87,194 @@
       "url": "https://cybernews.com/security/hackers-abuse-mshta-to-deliver-windows-malware/",
       "source": "CyberNews [RSS]",
       "published": "2026-05-19T14:47:29+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-20T02:01:43.378543+09:00",
+      "type": "single",
+      "title": "Kieback & Peter DDC Building Controllers",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-139-05",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-05-19T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-4293"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-4293",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-20T02:01:43.378543+09:00",
+      "type": "single",
+      "title": "Siemens RUGGEDCOM APE1808 Devices",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-139-02",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-05-19T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-0300"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-0300",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-787 (Out-of-bounds Write)",
+          "description": "A buffer overflow vulnerability in the User-ID™ Authentication Portal (aka Captive Portal) service of Palo Alto Networks PAN-OS software allows an unauthenticated attacker to execute arbitrary code with root privileges on the PA-Series and VM-Series firewalls by sending specially crafted packets. \n\nThe risk of this issue is greatly reduced if you secure access to the User-ID™ Authentication Portal per the  best practice guidelines https://knowledgebase.paloaltonetworks.com/KCSArticleDetail  by r",
+          "epss_score": 0.14433,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-20T02:01:43.378543+09:00",
+      "type": "single",
+      "title": "ABB CoreSense HM and CoreSense M10",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-139-01",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-05-19T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2025-3465"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2025-3465",
+          "cvss_score": 8.2,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-22 (Path Traversal)",
+          "description": "Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability in ABB CoreSense™ HM, ABB CoreSense™ M10.This issue affects CoreSense™ HM: through 2.3.1; CoreSense™ M10: through 1.4.1.12.",
+          "epss_score": 0.00018,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-20T02:01:43.378543+09:00",
+      "type": "single",
+      "title": "ScadaBR",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-139-03",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-05-19T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-8602",
+        "CVE-2026-8603",
+        "CVE-2026-8604",
+        "CVE-2026-8605"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-8602",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-8603",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-8604",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-8605",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-20T02:01:43.378543+09:00",
+      "type": "single",
+      "title": "ZKTeco CCTV Cameras",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-139-04",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-05-19T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-8598"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-8598",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-20T02:01:43.378543+09:00",
+      "type": "single",
+      "title": "Microsoft Disrupts Malware-Signing Service Run by ‘Fox Tempest’",
+      "url": "https://www.securityweek.com/microsoft-disrupts-malware-signing-service-run-by-fox-tempest/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-05-19T16:06:22+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-20T02:01:43.378543+09:00",
+      "type": "single",
+      "title": "Microsoft disrupts Fox Tempest malware-signing-as-a-service platform tied to ransomware gangs",
+      "url": "https://therecord.media/microsoft-disrupts-fox-tempest-malware-signing-service",
+      "source": "The Record by Recorded Future (위협뉴스) [RSS]",
+      "published": "2026-05-19T16:36:00+00:00",
       "keywords": [
         "Malware"
       ],
