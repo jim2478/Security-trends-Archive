@@ -2,12 +2,12 @@
   "date": "2026-05-19",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 9,
+    "scan_runs": 10,
     "total_articles_max": 1862,
     "matched_articles_max": 169,
-    "new_alerts": 14,
+    "new_alerts": 16,
     "cve_count": 4,
-    "ioc_count": 0,
+    "ioc_count": 16,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2026-29205",
@@ -16,7 +16,7 @@
       "CVE-2026-8153"
     ],
     "keywords_hit": {
-      "Malware": 10,
+      "Malware": 12,
       "CVE": 4
     }
   },
@@ -264,6 +264,34 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-05-19T19:01:06.299564+09:00",
+      "type": "single",
+      "title": "From PDB strings to MaaS: Tracking a commodity BadIIS ecosystem used by Chinese-speaking threat",
+      "url": "https://blog.talosintelligence.com/from-pdb-strings-to-maas-tracking-a-commodity-badiis-ecosystem/",
+      "source": "Cisco Talos Intelligence (위협분석) [RSS]",
+      "published": "2026-05-19T10:00:20+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "The IOCs can also be found in our GitHub repository\nhere\nIntegrated Coverage\nNetwork Security\nCisco Talos\nNetwork Intrusion Prevention\nWeb Security\nCisco Talos\nWeb Filtering\nMalware Defense\nCisco Talos\nMalware Protection\nCisco Talos\nAntivirus\nRead more\nabout Cisco Talos Intelligence Integrations in our data sheet on Cisco.com.",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-19T19:01:06.299564+09:00",
+      "type": "single",
+      "title": "One NPM accoun poisons over 600 packages with millions of weekly downloads in a new supply chain attack",
+      "url": "https://cybernews.com/security/shai-hulud-strikes-again-massive-npm-compromise/",
+      "source": "CyberNews [RSS]",
+      "published": "2026-05-19T09:23:50+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
