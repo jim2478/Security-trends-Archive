@@ -2,10 +2,10 @@
   "date": "2026-05-19",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 6,
+    "scan_runs": 7,
     "total_articles_max": 1862,
     "matched_articles_max": 167,
-    "new_alerts": 11,
+    "new_alerts": 12,
     "cve_count": 2,
     "ioc_count": 0,
     "merged_count": 0,
@@ -14,7 +14,7 @@
       "CVE-2026-8043"
     ],
     "keywords_hit": {
-      "Malware": 9,
+      "Malware": 10,
       "CVE": 2
     }
   },
@@ -190,6 +190,20 @@
       "url": "https://www.reddit.com/r/antivirus/comments/1th3lpm/ran_a_very_suspicious_malware_code/",
       "source": "Reddit r/antivirus (커뮤니티) [RSS]",
       "published": "2026-05-18T22:26:53+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-19T10:00:48.531483+09:00",
+      "type": "single",
+      "title": "How Storm-2949 turned a compromised identity into a cloud-wide breach",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/05/18/storm-2949-turned-compromised-identity-into-cloud-wide-breach/",
+      "source": "Microsoft Security Blog (보안업데이트) [RSS]",
+      "published": "2026-05-18T22:42:50+00:00",
       "keywords": [
         "Malware"
       ],
