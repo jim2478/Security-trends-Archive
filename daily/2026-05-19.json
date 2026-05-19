@@ -2,20 +2,21 @@
   "date": "2026-05-19",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 7,
+    "scan_runs": 8,
     "total_articles_max": 1862,
     "matched_articles_max": 167,
-    "new_alerts": 12,
-    "cve_count": 2,
+    "new_alerts": 13,
+    "cve_count": 3,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
+      "CVE-2026-29205",
       "CVE-2026-42897",
       "CVE-2026-8043"
     ],
     "keywords_hit": {
       "Malware": 10,
-      "CVE": 2
+      "CVE": 3
     }
   },
   "alerts": [
@@ -210,6 +211,32 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-19T12:00:54.606533+09:00",
+      "type": "single",
+      "title": "New Age of Collisions: Reading Arbitrary Files Pre-Auth as root in cPanel (CVE-2026-29205)",
+      "url": "https://www.reddit.com/r/netsec/comments/1th9bpu/new_age_of_collisions_reading_arbitrary_files/",
+      "source": "Reddit r/netsec (보안커뮤니티) [RSS]",
+      "published": "2026-05-19T02:23:33+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-29205"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-29205",
+          "cvss_score": 8.6,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-250 (CWE-250)",
+          "description": "Incorrect privileges management and insufficient path filtering allow to read arbitrary file on the server via the cpdavd attachment download endpoints.",
+          "epss_score": 0.00042,
+          "kev": false
+        }
+      ]
     }
   ]
 }
