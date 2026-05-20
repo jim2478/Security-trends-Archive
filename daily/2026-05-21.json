@@ -2,10 +2,10 @@
   "date": "2026-05-21",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
+    "scan_runs": 4,
     "total_articles_max": 1822,
     "matched_articles_max": 145,
-    "new_alerts": 3,
+    "new_alerts": 4,
     "cve_count": 2,
     "ioc_count": 0,
     "merged_count": 0,
@@ -15,7 +15,7 @@
     ],
     "keywords_hit": {
       "CVE": 2,
-      "Malware": 1
+      "Malware": 2
     }
   },
   "alerts": [
@@ -78,6 +78,20 @@
       "url": "https://www.microsoft.com/en-us/security/blog/2026/05/20/mini-shai-hulud-compromised-antv-npm-packages-enable-ci-cd-credential-theft/",
       "source": "Microsoft Security Blog (보안업데이트) [RSS]",
       "published": "2026-05-20T17:48:44+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-21T07:00:50.433955+09:00",
+      "type": "single",
+      "title": "Ukraine identifies infostealer operator tied to 28,000 stolen accounts",
+      "url": "https://www.bleepingcomputer.com/news/security/ukraine-identifies-infostealer-operator-tied-to-28-000-stolen-accounts/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-05-20T21:36:24+00:00",
       "keywords": [
         "Malware"
       ],
