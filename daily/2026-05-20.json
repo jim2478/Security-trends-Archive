@@ -2,11 +2,11 @@
   "date": "2026-05-20",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 5,
+    "scan_runs": 6,
     "total_articles_max": 1822,
     "matched_articles_max": 153,
-    "new_alerts": 15,
-    "cve_count": 9,
+    "new_alerts": 17,
+    "cve_count": 10,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -14,6 +14,7 @@
       "CVE-2026-0300",
       "CVE-2026-31635",
       "CVE-2026-4293",
+      "CVE-2026-45585",
       "CVE-2026-8598",
       "CVE-2026-8602",
       "CVE-2026-8603",
@@ -21,8 +22,8 @@
       "CVE-2026-8605"
     ],
     "keywords_hit": {
-      "CVE": 7,
-      "Malware": 7,
+      "CVE": 8,
+      "Malware": 8,
       "DDoS": 1
     }
   },
@@ -334,6 +335,46 @@
       "published": "2026-05-20T06:38:00+00:00",
       "keywords": [
         "DDoS"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-20T18:01:00.313328+09:00",
+      "type": "single",
+      "title": "Microsoft provides mitigation for “YellowKey” BitLocker bypass flaw (CVE-2026-45585)",
+      "url": "https://www.helpnetsecurity.com/2026/05/20/yellowkey-bitlocker-mitigation-cve-2026-45585/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-05-20T08:33:52+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-45585"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-45585",
+          "cvss_score": 6.8,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-77 (Command Injection)",
+          "description": "Microsoft is aware of a security feature bypass vulnerability in Windows publicly referred to as &quot;YellowKey&quot;. The proof of concept for this vulnerability has been made public violating coordinated vulnerability best practices.\nWe are issuing this CVE to provide mitigation guidance that can be implemented to protect against this vulnerability until the security update is made available.",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-20T18:01:00.313328+09:00",
+      "type": "single",
+      "title": "NPM’s reaction to massive supply chain attacks: platform-wide token reset",
+      "url": "https://cybernews.com/security/shai-hulud-force-npm-to-invalidate-tokens/",
+      "source": "CyberNews [RSS]",
+      "published": "2026-05-20T08:14:59+00:00",
+      "keywords": [
+        "Malware"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
