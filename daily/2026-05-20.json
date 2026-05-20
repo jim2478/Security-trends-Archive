@@ -2,12 +2,12 @@
   "date": "2026-05-20",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 7,
+    "scan_runs": 8,
     "total_articles_max": 1822,
     "matched_articles_max": 153,
-    "new_alerts": 20,
+    "new_alerts": 21,
     "cve_count": 12,
-    "ioc_count": 0,
+    "ioc_count": 83,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2021-22204",
@@ -24,7 +24,7 @@
       "CVE-2026-8605"
     ],
     "keywords_hit": {
-      "Malware": 10,
+      "Malware": 11,
       "CVE": 9,
       "DDoS": 1
     }
@@ -443,6 +443,20 @@
         "Malware"
       ],
       "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-20T20:01:28.153193+09:00",
+      "type": "single",
+      "title": "Tracking TamperedChef Clusters via Certificate and Code Reuse",
+      "url": "https://unit42.paloaltonetworks.com/tracking-tampered-chef-clusters/",
+      "source": "Palo Alto Unit42 (위협리서치) [RSS]",
+      "published": "2026-05-20T10:00:46+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "Table 1 lists the signers’ organization noted in code-signing certificates used in the TamperedChef-Style malware samples we found in our research.\nSigner | Related Cluster\nCANDY TECH LTD | CL-UNK-1090\nG.R.CIGAR. LTD | CL-UNK-1090\nTAU CENTAURI LTD | CL-UNK-1090\nAMARYLLIS SIGNAL LTD | CL-UNK-1090\nMETROPOLITAN DESIGN LLC | CL-UNK-1090\nBLACK INDIGO LTD | CL-UNK-1090\nRed Root LTD | CL-UNK-1090\nA1A Marketing Ltd. | CL-UNK-1090\nGOLD HARMONY LTD | CL-UNK-1090\nBEGONIA LIFE LTD | CL-UNK-1090\nSAMBUSAK LLC | CL-UNK-1090\nACTIVE INTELLECT AI LLC | CL-UNK-1090\nVAST LAKE LTD | CL-UNK-1090\nLONG SOUND LTD | CL-UNK-1090\nB.L.A ASPIRE LTD | CL-UNK-1090\nVANILLA FORCE LTD | CL-UNK-1090\nSELA LINES LTD | CL-UNK-1090\nWIND TRUST LTD | CL-UNK-1090\nBLUE TAKIN LTD | CL-UNK-1090\nORCHID MARS LTD | CL-UNK-1090\nENIGMATIC SAOLA LTD | CL-UNK-1090\nTROPICAL RIFF LTD | CL-UNK-1090\nBITTERN SKY LTD | CL-UNK-1090\nastro bright ltd | CL-UNK-1090\nmy tech media ltd | CL-UNK-1090\nLIGHTNER TOK LTD | CL-UNK-1090\nTOGO NETWORKS LTD | CL-UNK-1090\nCHRONO ORION LTD | CL-UNK-1090\nLOGOS AQUA LTD | CL-UNK-1090\nImpresan Solutions OÜ | CL-UNK-1090\nShopcut LLC | CL-UNK-1090\nJudy Wanjiru | CL-UNK-1090\nKeen Internet Technologies Ltd | CL-UNK-1090\nROYAL STEP LTD | CL-UNK-1090\nSmart Contract LLC | CL-UNK-1090\nDORNOVI LTD | CL-UNK-1090\nGreen Topaz Ltd | CL-UNK-1090\nLOGOS AQUA LTD | CL-UNK-1090\nSPARROW TIDE LTD | CL-UNK-1090\nmania tech ltd | CL-UNK-1090\nPASTEL CONCEPTION LTD | CL-UNK-1090\nMainstay Crypto LLC | OneBrowser Signers\nCrowd Sync LLC | OneBrowser Signers\nWORK PRODUCT, INC. | OneBrowser Signers\nChickadee Digital | OneBrowser Signers\nRiya Software | OneBrowser Signers\nEman Group, LLC | OneBrowser Signers\nMATCH-TWO-USERS LLC | CL-CRI-1089\nTWEAKSCODE LLC | CL-CRI-1089\nAFFILIDADOS | CL-CRI-1089\nMARKET FUSION INNOVATIONS LLC | CL-CRI-1089\nBUZZ BOOST ADVERTISERS LLC | CL-CRI-1089\nADSMARKETO LLC | CL-CRI-1089\nCROWN SKY LLC | CL-CRI-1089\nSummit Nexus Holdings LLC | CL-CRI-1089\nEuropae-Solutio Ltd | CL-CRI-1089\nSP Development and Solution Limited | CL-CRI-1089\nEcho Infini SDN BHD | CL-CRI-1089\nCOMMERCE GROUP TECHNOLOGY LTD | CL-CRI-1089\nALGORYTHM TECH LTD | CL-CRI-1089\nByte Media Sdn Bhd | CL-CRI-1089\nGLINT SOFTWARE SDN. BHD | CL-CRI-1089\nGlobal Tech Allies ltd | CL-CRI-1089\nSOFT SOLUTIONS HUB | CL-CRI-1089\nMonetize forward LLC | CL-CRI-1089\nADVANTAGE WEB MARKETING LLC | CL-CRI-1089\nIncredimarket | CL-CRI-1089\nILLUSION MEDIA SOLUTIONS | CL-CRI-1089\nVirtual Media App Ltd | CL-CRI-1089\nDEV SPOTS LLC | CL-CRI-1089\nDigit Consult | CL-CRI-1089\nOutsource Genius LLC | CL-CRI-1089\nOneStart Technologies LLC | CL-CRI-1089\nApollo Technologies Inc | CL-CRI-1089\nCaerus Media LLC | CL-CRI-1089\nDigital Promotions Sdn. Bhd. | CL-CRI-1089\nEclipse Media Inc. | CL-CRI-1089\nAstral Media Inc | CL-CRI-1089\nIncredible Media Inc | CL-CRI-1089\nSTYLE SOLUTION LIMITED | CL-CRI-1089\nTable 1. Signers of code-signing certificates from the TamperedChef-style malware samples.",
       "cve_ids": [],
       "cve_details": []
     }
