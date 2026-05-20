@@ -2,10 +2,10 @@
   "date": "2026-05-21",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
+    "scan_runs": 3,
     "total_articles_max": 1822,
     "matched_articles_max": 145,
-    "new_alerts": 2,
+    "new_alerts": 3,
     "cve_count": 2,
     "ioc_count": 0,
     "merged_count": 0,
@@ -14,7 +14,8 @@
       "CVE-2026-46333"
     ],
     "keywords_hit": {
-      "CVE": 2
+      "CVE": 2,
+      "Malware": 1
     }
   },
   "alerts": [
@@ -69,6 +70,20 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-05-21T04:00:58.929955+09:00",
+      "type": "single",
+      "title": "Mini Shai Hulud: Compromised @antv npm packages enable CI/CD credential theft",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/05/20/mini-shai-hulud-compromised-antv-npm-packages-enable-ci-cd-credential-theft/",
+      "source": "Microsoft Security Blog (보안업데이트) [RSS]",
+      "published": "2026-05-20T17:48:44+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
