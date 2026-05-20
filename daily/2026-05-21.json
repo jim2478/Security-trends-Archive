@@ -2,19 +2,21 @@
   "date": "2026-05-21",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 4,
+    "scan_runs": 5,
     "total_articles_max": 1822,
-    "matched_articles_max": 145,
-    "new_alerts": 4,
-    "cve_count": 2,
+    "matched_articles_max": 147,
+    "new_alerts": 6,
+    "cve_count": 4,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2026-42945",
-      "CVE-2026-46333"
+      "CVE-2026-45585",
+      "CVE-2026-46333",
+      "CVE-2026-8153"
     ],
     "keywords_hit": {
-      "CVE": 2,
+      "CVE": 4,
       "Malware": 2
     }
   },
@@ -98,6 +100,58 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-21T08:00:58.673809+09:00",
+      "type": "single",
+      "title": "로봇 제어권 노린 치명적 취약점…유니버설 로봇 “즉시 패치” 권고",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=206850",
+      "source": "데일리시큐 (IT&생활) [RSS]",
+      "published": "2026-05-20T22:45:40+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-8153"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-8153",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-78 (OS Command Injection)",
+          "description": "OS command injection in Dashboard Server interface in Universal Robots PolyScope versions prior to 5.25.1 allows unauthenticated attacker to craft commands that will execute code on the robot's OS.",
+          "epss_score": 0.01532,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-21T08:00:58.673809+09:00",
+      "type": "single",
+      "title": "USB 하나로 비트로커 우회…마이크로소프트, ‘옐로키’ 긴급 완화책 공개",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=206849",
+      "source": "데일리시큐 (IT&생활) [RSS]",
+      "published": "2026-05-20T22:31:03+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-45585"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-45585",
+          "cvss_score": 6.8,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-77 (Command Injection)",
+          "description": "Microsoft is aware of a security feature bypass vulnerability in Windows publicly referred to as &quot;YellowKey&quot;. The proof of concept for this vulnerability has been made public violating coordinated vulnerability best practices.\nWe are issuing this CVE to provide mitigation guidance that can be implemented to protect against this vulnerability until the security update is made available.",
+          "epss_score": 0.00083,
+          "kev": false
+        }
+      ]
     }
   ]
 }
