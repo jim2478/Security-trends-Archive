@@ -2,10 +2,10 @@
   "date": "2026-05-20",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 4,
+    "scan_runs": 5,
     "total_articles_max": 1822,
     "matched_articles_max": 153,
-    "new_alerts": 12,
+    "new_alerts": 15,
     "cve_count": 9,
     "ioc_count": 0,
     "merged_count": 0,
@@ -21,8 +21,9 @@
       "CVE-2026-8605"
     ],
     "keywords_hit": {
-      "CVE": 6,
-      "Malware": 6
+      "CVE": 7,
+      "Malware": 7,
+      "DDoS": 1
     }
   },
   "alerts": [
@@ -291,6 +292,48 @@
       "published": "2026-05-19T21:47:31+00:00",
       "keywords": [
         "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-20T16:01:17.328422+09:00",
+      "type": "single",
+      "title": "CVE Lite CLI: Open-source dependency vulnerability scanner",
+      "url": "https://www.helpnetsecurity.com/2026/05/20/cve-lite-cli-open-source-dependency-vulnerability-scanner/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-05-20T06:00:59+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-20T16:01:17.328422+09:00",
+      "type": "single",
+      "title": "Ransomware criminals paying $9k to make malware harder to detect on…",
+      "url": "https://www.cybersecurity-insiders.com/ransomware-criminals-paying-9k-to-make-malware-harder-to-detect-on-windows/",
+      "source": "Cybersecurity Insiders (보안인사이트)",
+      "published": "2026-05-20T05:43:01+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-20T16:01:17.328422+09:00",
+      "type": "single",
+      "title": "‘스벅 탱크데이’ 비판 5·18재단 홈피에 디도스 의심 공격",
+      "url": "https://www.donga.com/news/Society/article/all/20260520/133959966/1",
+      "source": "동아일보 (사회) [RSS]",
+      "published": "2026-05-20T06:38:00+00:00",
+      "keywords": [
+        "DDoS"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
