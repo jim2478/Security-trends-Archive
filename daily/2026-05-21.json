@@ -2,18 +2,19 @@
   "date": "2026-05-21",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 1,
+    "scan_runs": 2,
     "total_articles_max": 1822,
-    "matched_articles_max": 144,
-    "new_alerts": 1,
-    "cve_count": 1,
+    "matched_articles_max": 145,
+    "new_alerts": 2,
+    "cve_count": 2,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
-      "CVE-2026-42945"
+      "CVE-2026-42945",
+      "CVE-2026-46333"
     ],
     "keywords_hit": {
-      "CVE": 1
+      "CVE": 2
     }
   },
   "alerts": [
@@ -39,6 +40,32 @@
           "cwe": "CWE-122 (CWE-122)",
           "description": "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_rewrite_module module. This vulnerability exists when the rewrite directive is followed by a rewrite, if, or set directive and an unnamed Perl-Compatible Regular Expression (PCRE) capture (for example, $1, $2) with a replacement string that includes a question mark (?). An unauthenticated attacker along with conditions beyond its control can exploit this vulnerability by sending crafted HTTP requests. This may cause a heap buf",
           "epss_score": 0.00201,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-21T01:01:05.388849+09:00",
+      "type": "single",
+      "title": "CVE-2026-46333: Local Root Privilege Escalation and Credential Disclosure in the Linux Kernel ptrace Path",
+      "url": "https://blog.qualys.com/category/vulnerabilities-threat-research",
+      "source": "Qualys Blog (취약점관리) [RSS]",
+      "published": "2026-05-20T15:40:19+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-46333"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-46333",
+          "cvss_score": 5.5,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-269 (Improper Privilege Management)",
+          "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nptrace: slightly saner 'get_dumpable()' logic\n\nThe 'dumpability' of a task is fundamentally about the memory image of\nthe task - the concept comes from whether it can core dump or not - and\nmakes no sense when you don't have an associated mm.\n\nAnd almost all users do in fact use it only for the case where the task\nhas a mm pointer.\n\nBut we have one odd special case: ptrace_may_access() uses 'dumpable' to\ncheck various other thi",
+          "epss_score": 7e-05,
           "kev": false
         }
       ]
