@@ -2,10 +2,10 @@
   "date": "2026-05-22",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
+    "scan_runs": 4,
     "total_articles_max": 1802,
     "matched_articles_max": 155,
-    "new_alerts": 7,
+    "new_alerts": 8,
     "cve_count": 34,
     "ioc_count": 0,
     "merged_count": 0,
@@ -47,7 +47,9 @@
     ],
     "keywords_hit": {
       "CVE": 6,
-      "Malware": 1
+      "Malware": 1,
+      "DDoS": 1,
+      "Botnet": 1
     }
   },
   "alerts": [
@@ -327,6 +329,21 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-05-22T07:00:55.618765+09:00",
+      "type": "single",
+      "title": "Alleged Kimwolf Botmaster ‘Dort’ Arrested, Charged in U.S. and Canada",
+      "url": "https://krebsonsecurity.com/2026/05/alleged-kimwolf-botmaster-dort-arrested-charged-in-u-s-and-canada/",
+      "source": "Krebs on Security (사이버범죄/보안심층분석) [RSS]",
+      "published": "2026-05-21T21:50:25+00:00",
+      "keywords": [
+        "DDoS",
+        "Botnet"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
