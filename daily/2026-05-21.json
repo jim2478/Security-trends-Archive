@@ -2,10 +2,10 @@
   "date": "2026-05-21",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 10,
+    "scan_runs": 11,
     "total_articles_max": 1822,
     "matched_articles_max": 153,
-    "new_alerts": 14,
+    "new_alerts": 15,
     "cve_count": 13,
     "ioc_count": 0,
     "merged_count": 0,
@@ -23,7 +23,7 @@
     ],
     "keywords_hit": {
       "CVE": 9,
-      "Malware": 6
+      "Malware": 7
     }
   },
   "alerts": [
@@ -365,6 +365,20 @@
       "url": "https://hackread.com/android-malware-subscribe-services-without-consent/",
       "source": "HackRead (해킹/데이터유출) [RSS]",
       "published": "2026-05-21T11:41:11+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-21T23:01:09.440356+09:00",
+      "type": "single",
+      "title": "Chinese hackers target telcos with new Linux, Windows malware",
+      "url": "https://www.bleepingcomputer.com/news/security/chinese-hackers-target-telcos-with-new-linux-windows-malware/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-05-21T14:00:00+00:00",
       "keywords": [
         "Malware"
       ],
