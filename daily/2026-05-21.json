@@ -2,11 +2,11 @@
   "date": "2026-05-21",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 7,
+    "scan_runs": 8,
     "total_articles_max": 1822,
-    "matched_articles_max": 147,
-    "new_alerts": 8,
-    "cve_count": 6,
+    "matched_articles_max": 148,
+    "new_alerts": 10,
+    "cve_count": 7,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -18,8 +18,8 @@
       "CVE-2026-9082"
     ],
     "keywords_hit": {
-      "CVE": 6,
-      "Malware": 2
+      "CVE": 7,
+      "Malware": 3
     }
   },
   "alerts": [
@@ -206,6 +206,46 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-05-21T18:01:03.722396+09:00",
+      "type": "single",
+      "title": "9-Year-Old Linux Kernel Flaw Enables Root Command Execution on Major Distros",
+      "url": "https://thehackernews.com/2026/05/9-year-old-linux-kernel-flaw-enables.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-05-21T07:35:53+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-46333"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-46333",
+          "cvss_score": 7.1,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-269 (Improper Privilege Management)",
+          "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nptrace: slightly saner 'get_dumpable()' logic\n\nThe 'dumpability' of a task is fundamentally about the memory image of\nthe task - the concept comes from whether it can core dump or not - and\nmakes no sense when you don't have an associated mm.\n\nAnd almost all users do in fact use it only for the case where the task\nhas a mm pointer.\n\nBut we have one odd special case: ptrace_may_access() uses 'dumpable' to\ncheck various other thi",
+          "epss_score": 7e-05,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-21T18:01:03.722396+09:00",
+      "type": "single",
+      "title": "Ukrainian police name 18-year-old infostealer operator who targeted California shoppers",
+      "url": "https://cybernews.com/security/ukraine-cyber-police-infostealer-young-hacker/",
+      "source": "CyberNews [RSS]",
+      "published": "2026-05-21T08:02:30+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
