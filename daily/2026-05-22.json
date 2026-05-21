@@ -2,16 +2,17 @@
   "date": "2026-05-22",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 1,
+    "scan_runs": 2,
     "total_articles_max": 1792,
-    "matched_articles_max": 152,
-    "new_alerts": 1,
+    "matched_articles_max": 154,
+    "new_alerts": 2,
     "cve_count": 0,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [],
     "keywords_hit": {
-      "Malware": 1
+      "Malware": 1,
+      "CVE": 1
     }
   },
   "alerts": [
@@ -24,6 +25,20 @@
       "published": "2026-05-21T14:17:09+00:00",
       "keywords": [
         "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-22T01:01:01.880239+09:00",
+      "type": "single",
+      "title": "마이크로소프트 디펜더 취약점 2건 실제 공격 확인...SYSTEM 권한 탈취 우려",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=206876",
+      "source": "데일리시큐 (IT&생활) [RSS]",
+      "published": "2026-05-21T15:22:45+00:00",
+      "keywords": [
+        "CVE"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
