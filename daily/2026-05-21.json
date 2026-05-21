@@ -2,24 +2,28 @@
   "date": "2026-05-21",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 8,
+    "scan_runs": 9,
     "total_articles_max": 1822,
-    "matched_articles_max": 148,
-    "new_alerts": 10,
-    "cve_count": 7,
+    "matched_articles_max": 152,
+    "new_alerts": 12,
+    "cve_count": 12,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2024-12802",
+      "CVE-2026-33825",
+      "CVE-2026-41091",
       "CVE-2026-42945",
+      "CVE-2026-45498",
+      "CVE-2026-45584",
       "CVE-2026-45585",
       "CVE-2026-46333",
       "CVE-2026-8153",
       "CVE-2026-9082"
     ],
     "keywords_hit": {
-      "CVE": 7,
-      "Malware": 3
+      "CVE": 8,
+      "Malware": 5
     }
   },
   "alerts": [
@@ -240,6 +244,87 @@
       "url": "https://cybernews.com/security/ukraine-cyber-police-infostealer-young-hacker/",
       "source": "CyberNews [RSS]",
       "published": "2026-05-21T08:02:30+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-21T20:01:11.445453+09:00",
+      "type": "single",
+      "title": "Microsoft Defender vulnerabilities exploited in the wild (CVE-2026-41091, CVE-2026-45498)",
+      "url": "https://www.helpnetsecurity.com/2026/05/21/microsoft-defender-vulnerabilities-cve-2026-41091-cve-2026-45498/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-05-21T10:57:13+00:00",
+      "keywords": [
+        "CVE",
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-33825",
+        "CVE-2026-41091",
+        "CVE-2026-45498",
+        "CVE-2026-45584",
+        "CVE-2026-45585"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-33825",
+          "cvss_score": 7.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-1220 (CWE-1220)",
+          "description": "Insufficient granularity of access control in Microsoft Defender allows an authorized attacker to elevate privileges locally.",
+          "epss_score": 0.06378,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-41091",
+          "cvss_score": 7.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-59 (CWE-59)",
+          "description": "Improper link resolution before file access ('link following') in Microsoft Defender allows an authorized attacker to elevate privileges locally.",
+          "epss_score": null,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-45498",
+          "cvss_score": 4.0,
+          "cvss_severity": "MEDIUM",
+          "cwe": "NVD-CWE-noinfo (Insufficient Information)",
+          "description": "Microsoft Defender Denial of Service Vulnerability",
+          "epss_score": null,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-45584",
+          "cvss_score": 8.1,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-122 (CWE-122)",
+          "description": "Heap-based buffer overflow in Microsoft Defender allows an unauthorized attacker to execute code over a network.",
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-45585",
+          "cvss_score": 6.8,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-77 (Command Injection)",
+          "description": "Microsoft is aware of a security feature bypass vulnerability in Windows publicly referred to as &quot;YellowKey&quot;. The proof of concept for this vulnerability has been made public violating coordinated vulnerability best practices.\nWe are issuing this CVE to provide mitigation guidance that can be implemented to protect against this vulnerability until the security update is made available.",
+          "epss_score": 0.00083,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-21T20:01:11.445453+09:00",
+      "type": "single",
+      "title": "Microsoft’s Retired IE Tool MSHTA Now Being Used in Fileless Malware Attacks",
+      "url": "https://hackread.com/microsoft-retired-ie-tool-mshta-fileless-malware-attack/",
+      "source": "HackRead (해킹/데이터유출) [RSS]",
+      "published": "2026-05-21T10:18:11+00:00",
       "keywords": [
         "Malware"
       ],
