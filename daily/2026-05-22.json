@@ -2,17 +2,52 @@
   "date": "2026-05-22",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
-    "total_articles_max": 1792,
-    "matched_articles_max": 154,
-    "new_alerts": 2,
-    "cve_count": 0,
+    "scan_runs": 3,
+    "total_articles_max": 1802,
+    "matched_articles_max": 155,
+    "new_alerts": 7,
+    "cve_count": 34,
     "ioc_count": 0,
     "merged_count": 0,
-    "unique_cves": [],
+    "unique_cves": [
+      "CVE-2015-3416",
+      "CVE-2015-3717",
+      "CVE-2015-5895",
+      "CVE-2015-6607",
+      "CVE-2016-6153",
+      "CVE-2017-10989",
+      "CVE-2018-20346",
+      "CVE-2018-20505",
+      "CVE-2018-20506",
+      "CVE-2018-8740",
+      "CVE-2019-19645",
+      "CVE-2019-19646",
+      "CVE-2019-8457",
+      "CVE-2020-11655",
+      "CVE-2020-11656",
+      "CVE-2020-13434",
+      "CVE-2020-13435",
+      "CVE-2020-13630",
+      "CVE-2020-13631",
+      "CVE-2020-13632",
+      "CVE-2022-4304",
+      "CVE-2023-45229",
+      "CVE-2023-45230",
+      "CVE-2023-45231",
+      "CVE-2023-45232",
+      "CVE-2023-45233",
+      "CVE-2023-45234",
+      "CVE-2023-45235",
+      "CVE-2023-45236",
+      "CVE-2023-45237",
+      "CVE-2025-10504",
+      "CVE-2025-12142",
+      "CVE-2025-12143",
+      "CVE-2025-66479"
+    ],
     "keywords_hit": {
-      "Malware": 1,
-      "CVE": 1
+      "CVE": 6,
+      "Malware": 1
     }
   },
   "alerts": [
@@ -43,6 +78,255 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-22T02:01:40.312929+09:00",
+      "type": "single",
+      "title": "Anthropic fixes another Claude Code security bypass without telling users",
+      "url": "https://cybernews.com/ai-news/anthropic-secretly-fixes-another-claude-code-security-flaw/",
+      "source": "CyberNews [RSS]",
+      "published": "2026-05-21T16:24:19+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2025-66479"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2025-66479",
+          "cvss_score": 1.8,
+          "cvss_severity": "LOW",
+          "cwe": "CWE-693 (CWE-693)",
+          "description": "Anthropic Sandbox Runtime is a lightweight sandboxing tool for enforcing filesystem and network restrictions on arbitrary processes at the OS level, without requiring a container. Prior to 0.0.16, due to a bug in sandboxing logic, sandbox-runtime did not properly enforce a network sandbox if the sandbox policy did not configure any allowed domains. This could allow sandboxed code to make network requests outside of the sandbox. A patch for this was released in v0.0.16.",
+          "epss_score": 0.00043,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-22T02:01:40.312929+09:00",
+      "type": "single",
+      "title": "ABB Terra AC Wallbox",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-141-05",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-05-21T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2025-10504",
+        "CVE-2025-12142",
+        "CVE-2025-12143"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2025-10504",
+          "cvss_score": 6.9,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-122 (CWE-122)",
+          "description": "Heap-based Buffer Overflow vulnerability in ABB Terra AC wallbox.This issue affects Terra AC wallbox: through 1.8.33.",
+          "epss_score": 0.00022,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2025-12142",
+          "cvss_score": 6.9,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-120 (CWE-120)",
+          "description": "Buffer Copy without Checking Size of Input ('Classic Buffer Overflow') vulnerability in ABB Terra AC wallbox.This issue affects Terra AC wallbox: through 1.8.33.",
+          "epss_score": 0.00022,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2025-12143",
+          "cvss_score": 6.9,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-121 (CWE-121)",
+          "description": "Stack-based Buffer Overflow vulnerability in ABB Terra AC wallbox.This issue affects Terra AC wallbox: through 1.8.33.",
+          "epss_score": 0.00022,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-22T02:01:40.312929+09:00",
+      "type": "single",
+      "title": "Hitachi Energy GMS600",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-141-01",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-05-21T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2022-4304"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2022-4304",
+          "cvss_score": 5.9,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-203 (CWE-203)",
+          "description": "A timing based side channel exists in the OpenSSL RSA Decryption implementation\nwhich could be sufficient to recover a plaintext across a network in a\nBleichenbacher style attack. To achieve a successful decryption an attacker\nwould have to be able to send a very large number of trial messages for\ndecryption. The vulnerability affects all RSA padding modes: PKCS#1 v1.5,\nRSA-OEAP and RSASVE.\n\nFor example, in a TLS connection, RSA is commonly used by a client to send an\nencrypted pre-master secret",
+          "epss_score": 0.00218,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-22T02:01:40.312929+09:00",
+      "type": "single",
+      "title": "ABB B&R Automation Studio",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-141-03",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-05-21T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2015-3416",
+        "CVE-2015-3717",
+        "CVE-2015-5895",
+        "CVE-2015-6607",
+        "CVE-2016-6153",
+        "CVE-2017-10989",
+        "CVE-2018-20346",
+        "CVE-2018-20505",
+        "CVE-2018-20506",
+        "CVE-2018-8740",
+        "CVE-2019-19645",
+        "CVE-2019-19646",
+        "CVE-2019-8457",
+        "CVE-2020-11655",
+        "CVE-2020-11656",
+        "CVE-2020-13434",
+        "CVE-2020-13435",
+        "CVE-2020-13630",
+        "CVE-2020-13631",
+        "CVE-2020-13632"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2015-3416",
+          "cvss_score": 7.5,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-190 (CWE-190)",
+          "description": "The sqlite3VXPrintf function in printf.c in SQLite before 3.8.9 does not properly handle precision and width values during floating-point conversions, which allows context-dependent attackers to cause a denial of service (integer overflow and stack-based buffer overflow) or possibly have unspecified other impact via large integers in a crafted printf function call in a SELECT statement.",
+          "epss_score": 0.07527,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2015-3717",
+          "cvss_score": 7.5,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-120 (CWE-120)",
+          "description": "Multiple buffer overflows in the printf functionality in SQLite, as used in Apple iOS before 8.4 and OS X before 10.10.4, allow remote attackers to execute arbitrary code or cause a denial of service (application crash) via unspecified vectors.",
+          "epss_score": 0.01855,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2015-5895",
+          "cvss_score": 10.0,
+          "cvss_severity": "HIGH",
+          "cwe": "NVD-CWE-noinfo (Insufficient Information)",
+          "description": "Multiple unspecified vulnerabilities in SQLite before 3.8.10.2, as used in Apple iOS before 9, have unknown impact and attack vectors.",
+          "epss_score": 0.19371,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2015-6607",
+          "cvss_score": 6.8,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-264 (CWE-264)",
+          "description": "SQLite before 3.8.9, as used in Android before 5.1.1 LMY48T, allows attackers to gain privileges via a crafted application, aka internal bug 20099586.",
+          "epss_score": 0.00396,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2016-6153",
+          "cvss_score": 5.9,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-20 (Improper Input Validation)",
+          "description": "os_unix.c in SQLite before 3.13.0 improperly implements the temporary directory search algorithm, which might allow local users to obtain sensitive information, cause a denial of service (application crash), or have unspecified other impact by leveraging use of the current working directory for temporary files.",
+          "epss_score": 0.00032,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-22T02:01:40.312929+09:00",
+      "type": "single",
+      "title": "ABB B&R PCs",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-141-02",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-05-21T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2023-45229",
+        "CVE-2023-45230",
+        "CVE-2023-45231",
+        "CVE-2023-45232",
+        "CVE-2023-45233",
+        "CVE-2023-45234",
+        "CVE-2023-45235",
+        "CVE-2023-45236",
+        "CVE-2023-45237"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2023-45229",
+          "cvss_score": 6.5,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-125 (Out-of-bounds Read)",
+          "description": "EDK2's Network Package is susceptible to an out-of-bounds read\n vulnerability when processing the IA_NA or IA_TA option in a DHCPv6 Advertise message. This\n vulnerability can be exploited by an attacker to gain unauthorized \naccess and potentially lead to a loss of Confidentiality.",
+          "epss_score": 0.00134,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2023-45230",
+          "cvss_score": 8.3,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-119 (Buffer Overflow)",
+          "description": "EDK2's Network Package is susceptible to a buffer overflow vulnerability via a long server ID option in DHCPv6 client. This\n vulnerability can be exploited by an attacker to gain unauthorized \naccess and potentially lead to a loss of Confidentiality, Integrity and/or Availability.",
+          "epss_score": 0.00307,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2023-45231",
+          "cvss_score": 6.5,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-125 (Out-of-bounds Read)",
+          "description": "EDK2's Network Package is susceptible to an out-of-bounds read\n vulnerability when processing  Neighbor Discovery Redirect message. This\n vulnerability can be exploited by an attacker to gain unauthorized \naccess and potentially lead to a loss of Confidentiality.",
+          "epss_score": 0.00134,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2023-45232",
+          "cvss_score": 7.5,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-835 (CWE-835)",
+          "description": "EDK2's Network Package is susceptible to an infinite loop vulnerability when parsing unknown options in the Destination Options header of IPv6. This\n vulnerability can be exploited by an attacker to gain unauthorized \naccess and potentially lead to a loss of Availability.",
+          "epss_score": 0.00483,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2023-45233",
+          "cvss_score": 7.5,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-835 (CWE-835)",
+          "description": "EDK2's Network Package is susceptible to an infinite lop vulnerability when parsing a PadN option in the Destination Options header of IPv6. This\n vulnerability can be exploited by an attacker to gain unauthorized \naccess and potentially lead to a loss of Availability.",
+          "epss_score": 0.00483,
+          "kev": false
+        }
+      ]
     }
   ]
 }
