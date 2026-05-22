@@ -2,11 +2,11 @@
   "date": "2026-05-22",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 4,
-    "total_articles_max": 1802,
+    "scan_runs": 5,
+    "total_articles_max": 1812,
     "matched_articles_max": 155,
-    "new_alerts": 8,
-    "cve_count": 34,
+    "new_alerts": 9,
+    "cve_count": 35,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -43,10 +43,11 @@
       "CVE-2025-10504",
       "CVE-2025-12142",
       "CVE-2025-12143",
-      "CVE-2025-66479"
+      "CVE-2025-66479",
+      "CVE-2026-20223"
     ],
     "keywords_hit": {
-      "CVE": 6,
+      "CVE": 7,
       "Malware": 1,
       "DDoS": 1,
       "Botnet": 1
@@ -344,6 +345,32 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-22T15:01:27.493781+09:00",
+      "type": "single",
+      "title": "Cisco Patches CVSS 10.0 Secure Workload REST API Flaw Enabling Data Access",
+      "url": "https://thehackernews.com/2026/05/cisco-patches-cvss-100-secure-workload.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-05-22T05:36:18+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-20223"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-20223",
+          "cvss_score": 10.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-306 (Missing Authentication)",
+          "description": "A vulnerability in the&nbsp;access validation of internal REST APIs of Cisco Secure Workload could allow an unauthenticated, remote attacker to access site resources with the privileges of the&nbsp;Site Admin role.\r\n\r\nThis vulnerability is due to insufficient validation and authentication when accessing REST API endpoints. An attacker could exploit this vulnerability if they are able to send a crafted API request to an affected endpoint. A successful exploit could allow the attacker to read sens",
+          "epss_score": 0.00046,
+          "kev": false
+        }
+      ]
     }
   ]
 }
