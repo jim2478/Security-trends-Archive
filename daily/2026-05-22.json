@@ -2,10 +2,10 @@
   "date": "2026-05-22",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 8,
+    "scan_runs": 9,
     "total_articles_max": 1822,
     "matched_articles_max": 163,
-    "new_alerts": 14,
+    "new_alerts": 15,
     "cve_count": 37,
     "ioc_count": 0,
     "merged_count": 0,
@@ -49,8 +49,8 @@
     ],
     "keywords_hit": {
       "CVE": 9,
+      "Botnet": 4,
       "DDoS": 3,
-      "Botnet": 3,
       "Malware": 2
     }
   },
@@ -463,6 +463,20 @@
       "published": "2026-05-22T08:50:18+00:00",
       "keywords": [
         "DDoS",
+        "Botnet"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-22T22:02:17.187165+09:00",
+      "type": "single",
+      "title": "Canadian Man Arrested for Operating Kimwolf Botnet",
+      "url": "https://www.securityweek.com/canadian-man-arrested-for-operating-kimwolf-botnet/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-05-22T12:11:03+00:00",
+      "keywords": [
         "Botnet"
       ],
       "ioc_raw_text": "",
