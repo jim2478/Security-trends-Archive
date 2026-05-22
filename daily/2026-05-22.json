@@ -2,10 +2,10 @@
   "date": "2026-05-22",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 7,
+    "scan_runs": 8,
     "total_articles_max": 1822,
-    "matched_articles_max": 161,
-    "new_alerts": 12,
+    "matched_articles_max": 163,
+    "new_alerts": 14,
     "cve_count": 37,
     "ioc_count": 0,
     "merged_count": 0,
@@ -49,9 +49,9 @@
     ],
     "keywords_hit": {
       "CVE": 9,
-      "Malware": 2,
-      "DDoS": 1,
-      "Botnet": 1
+      "DDoS": 3,
+      "Botnet": 3,
+      "Malware": 2
     }
   },
   "alerts": [
@@ -438,6 +438,36 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-05-22T19:00:55.436660+09:00",
+      "type": "single",
+      "title": "US and Canada arrest and charge suspected Kimwolf botnet admin",
+      "url": "https://www.bleepingcomputer.com/news/security/us-and-canada-arrest-and-charge-suspected-kimwolf-botnet-admin/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-05-22T09:01:20+00:00",
+      "keywords": [
+        "DDoS",
+        "Botnet"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-22T19:00:55.436660+09:00",
+      "type": "single",
+      "title": "Kimwolf DDoS Botnet Operator Arrested in Canada Over DDoS-for-Hire Attacks",
+      "url": "https://thehackernews.com/2026/05/kimwolf-ddos-botnet-operator-arrested.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-05-22T08:50:18+00:00",
+      "keywords": [
+        "DDoS",
+        "Botnet"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
