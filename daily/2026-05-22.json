@@ -2,11 +2,11 @@
   "date": "2026-05-22",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 5,
-    "total_articles_max": 1812,
-    "matched_articles_max": 155,
-    "new_alerts": 9,
-    "cve_count": 35,
+    "scan_runs": 6,
+    "total_articles_max": 1822,
+    "matched_articles_max": 158,
+    "new_alerts": 11,
+    "cve_count": 36,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -43,12 +43,13 @@
       "CVE-2025-10504",
       "CVE-2025-12142",
       "CVE-2025-12143",
+      "CVE-2025-34291",
       "CVE-2025-66479",
       "CVE-2026-20223"
     ],
     "keywords_hit": {
-      "CVE": 7,
-      "Malware": 1,
+      "CVE": 8,
+      "Malware": 2,
       "DDoS": 1,
       "Botnet": 1
     }
@@ -371,6 +372,46 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-05-22T16:01:15.627360+09:00",
+      "type": "single",
+      "title": "CISA Adds Exploited Langflow and Trend Micro Apex One Vulnerabilities to KEV",
+      "url": "https://thehackernews.com/2026/05/cisa-adds-exploited-langflow-and-trend.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-05-22T05:47:33+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2025-34291"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2025-34291",
+          "cvss_score": 9.4,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-346 (CWE-346)",
+          "description": "Langflow versions up to and including 1.6.9 contain a chained vulnerability that enables account takeover and remote code execution. An overly permissive CORS configuration (allow_origins='*' with allow_credentials=True) combined with a refresh token cookie configured as SameSite=None allows a malicious webpage to perform cross-origin requests that include credentials and successfully call the refresh endpoint. An attacker-controlled origin can therefore obtain fresh access_token / refresh_token",
+          "epss_score": 0.09488,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-22T16:01:15.627360+09:00",
+      "type": "single",
+      "title": "New ‘Showboat’ malware tied to China-linked telecom espionage",
+      "url": "https://cybernews.com/security/china-linked-showboat-malware-telecom-firms/",
+      "source": "CyberNews [RSS]",
+      "published": "2026-05-22T05:50:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
