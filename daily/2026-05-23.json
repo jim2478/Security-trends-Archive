@@ -2,10 +2,10 @@
   "date": "2026-05-23",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 4,
+    "scan_runs": 5,
     "total_articles_max": 1822,
     "matched_articles_max": 168,
-    "new_alerts": 7,
+    "new_alerts": 8,
     "cve_count": 4,
     "ioc_count": 0,
     "merged_count": 0,
@@ -18,7 +18,8 @@
       "CVE": 4,
       "Malware": 2,
       "DDoS": 1,
-      "봇넷": 1
+      "봇넷": 1,
+      "Botnet": 1
     }
   },
   "alerts": [
@@ -168,6 +169,20 @@
           "kev": true
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-05-23T21:00:50.254734+09:00",
+      "type": "single",
+      "title": "RondoDox Botnet Exploits Critical 2018 Vulnerability to Hijack ASUS Routers",
+      "url": "https://hackread.com/rondodox-botnet-2018-vulnerability-hijack-asus-routers/",
+      "source": "HackRead (해킹/데이터유출) [RSS]",
+      "published": "2026-05-23T11:16:40+00:00",
+      "keywords": [
+        "Botnet"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
