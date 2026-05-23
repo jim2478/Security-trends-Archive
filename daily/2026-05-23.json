@@ -2,10 +2,10 @@
   "date": "2026-05-23",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
-    "total_articles_max": 1802,
+    "scan_runs": 3,
+    "total_articles_max": 1822,
     "matched_articles_max": 166,
-    "new_alerts": 4,
+    "new_alerts": 5,
     "cve_count": 2,
     "ioc_count": 0,
     "merged_count": 0,
@@ -15,7 +15,7 @@
     ],
     "keywords_hit": {
       "CVE": 2,
-      "Malware": 1,
+      "Malware": 2,
       "DDoS": 1,
       "봇넷": 1
     }
@@ -97,6 +97,20 @@
       "keywords": [
         "DDoS",
         "봇넷"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-23T15:00:59.932962+09:00",
+      "type": "single",
+      "title": "An Example of Stack String in High Level Language, (Sat, May 23rd)",
+      "url": "https://isc.sans.edu/diary/rss/33008",
+      "source": "SANS ISC (인터넷폭풍센터) [RSS]",
+      "published": "2026-05-23T05:49:17+00:00",
+      "keywords": [
+        "Malware"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
