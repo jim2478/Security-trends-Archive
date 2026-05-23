@@ -2,19 +2,20 @@
   "date": "2026-05-23",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
+    "scan_runs": 4,
     "total_articles_max": 1822,
-    "matched_articles_max": 166,
-    "new_alerts": 5,
-    "cve_count": 2,
+    "matched_articles_max": 168,
+    "new_alerts": 7,
+    "cve_count": 4,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2026-34926",
+      "CVE-2026-48172",
       "CVE-2026-9082"
     ],
     "keywords_hit": {
-      "CVE": 2,
+      "CVE": 4,
       "Malware": 2,
       "DDoS": 1,
       "봇넷": 1
@@ -115,6 +116,58 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-23T18:01:00.362087+09:00",
+      "type": "single",
+      "title": "LiteSpeed cPanel Plugin CVE-2026-48172 Exploited to Run Scripts as Root",
+      "url": "https://thehackernews.com/2026/05/litespeed-cpanel-plugin-cve-2026-48172.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-05-23T07:35:13+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-48172"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-48172",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-23T18:01:00.362087+09:00",
+      "type": "single",
+      "title": "Drupal Core SQL Injection Bug Actively Exploited, Added to CISA KEV",
+      "url": "https://thehackernews.com/2026/05/drupal-core-sql-injection-bug-actively.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-05-23T07:23:48+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-9082"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-9082",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": true
+        }
+      ]
     }
   ]
 }
