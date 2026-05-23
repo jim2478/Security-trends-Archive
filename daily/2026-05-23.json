@@ -2,19 +2,22 @@
   "date": "2026-05-23",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 1,
+    "scan_runs": 2,
     "total_articles_max": 1802,
     "matched_articles_max": 166,
-    "new_alerts": 2,
-    "cve_count": 1,
+    "new_alerts": 4,
+    "cve_count": 2,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
+      "CVE-2026-34926",
       "CVE-2026-9082"
     ],
     "keywords_hit": {
-      "CVE": 1,
-      "Malware": 1
+      "CVE": 2,
+      "Malware": 1,
+      "DDoS": 1,
+      "봇넷": 1
     }
   },
   "alerts": [
@@ -53,6 +56,47 @@
       "published": "2026-05-22T16:20:32+00:00",
       "keywords": [
         "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-23T09:01:11.606179+09:00",
+      "type": "single",
+      "title": "트렌드마이크로 ‘에이펙스 원’ 제로데이 실제 악용…온프레미스 서버 긴급 패치 필요",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=206893",
+      "source": "데일리시큐 (이슈) [RSS]",
+      "published": "2026-05-23T08:39:11+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-34926"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-34926",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-23T09:01:11.606179+09:00",
+      "type": "single",
+      "title": "200만 기기 감염 ‘킴울프’ 봇넷 운영 혐의자 체포",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=206894",
+      "source": "데일리시큐 (IT&생활) [RSS]",
+      "published": "2026-05-22T23:53:00+00:00",
+      "keywords": [
+        "DDoS",
+        "봇넷"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
