@@ -2,10 +2,10 @@
   "date": "2026-05-25",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
+    "scan_runs": 4,
     "total_articles_max": 1822,
-    "matched_articles_max": 171,
-    "new_alerts": 4,
+    "matched_articles_max": 173,
+    "new_alerts": 6,
     "cve_count": 1,
     "ioc_count": 0,
     "merged_count": 0,
@@ -13,8 +13,8 @@
       "CVE-2026-26980"
     ],
     "keywords_hit": {
-      "CVE": 2,
-      "Malware": 2
+      "Malware": 4,
+      "CVE": 2
     }
   },
   "alerts": [
@@ -79,6 +79,34 @@
       "url": "https://www.cybersecurity-insiders.com/fbi-kash-patel-website-caught-distributing-malware/",
       "source": "Cybersecurity Insiders (보안인사이트)",
       "published": "2026-05-25T05:56:38+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-25T20:00:57.981752+09:00",
+      "type": "single",
+      "title": "Lazarus Deploys RemotePE Memory-Only RAT Against Financial and Crypto Firms",
+      "url": "https://thehackernews.com/2026/05/lazarus-deploys-remotepe-memory-only.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-05-25T09:32:54+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-25T20:00:57.981752+09:00",
+      "type": "single",
+      "title": "Laravel-Lang Packages Poisoned for Malware Delivery",
+      "url": "https://www.securityweek.com/laravel-lang-packages-poisoned-for-malware-delivery/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-05-25T10:41:07+00:00",
       "keywords": [
         "Malware"
       ],
