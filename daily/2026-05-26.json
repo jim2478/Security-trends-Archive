@@ -2,10 +2,10 @@
   "date": "2026-05-26",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 4,
+    "scan_runs": 5,
     "total_articles_max": 1822,
-    "matched_articles_max": 167,
-    "new_alerts": 6,
+    "matched_articles_max": 170,
+    "new_alerts": 7,
     "cve_count": 3,
     "ioc_count": 0,
     "merged_count": 0,
@@ -16,7 +16,7 @@
     ],
     "keywords_hit": {
       "CVE": 3,
-      "Malware": 2,
+      "Malware": 3,
       "Botnet": 1
     }
   },
@@ -134,6 +134,20 @@
       "url": "https://www.helpnetsecurity.com/2026/05/26/product-showcase-f-secure-internet-security-android/",
       "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
       "published": "2026-05-26T05:00:28+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-26T16:00:52.057307+09:00",
+      "type": "single",
+      "title": "Google blocks AI Powered Cyber Attack on 2FA and Megalodon Malware...",
+      "url": "https://www.cybersecurity-insiders.com/google-blocks-ai-powered-cyber-attack-on-2fa-and-megalodon-malware-attack-on-github/",
+      "source": "Cybersecurity Insiders (보안인사이트)",
+      "published": "2026-05-26T06:22:09+00:00",
       "keywords": [
         "Malware"
       ],
