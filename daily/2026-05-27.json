@@ -1,0 +1,128 @@
+{
+  "date": "2026-05-27",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 1,
+    "total_articles_max": 1822,
+    "matched_articles_max": 161,
+    "new_alerts": 4,
+    "cve_count": 4,
+    "ioc_count": 0,
+    "merged_count": 0,
+    "unique_cves": [
+      "CVE-2025-3450",
+      "CVE-2025-7745",
+      "CVE-2025-9970",
+      "CVE-2026-7251"
+    ],
+    "keywords_hit": {
+      "CVE": 4
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-05-27T01:02:09.272634+09:00",
+      "type": "single",
+      "title": "ABB LVS MConfig",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-146-06",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-05-26T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2025-9970"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2025-9970",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-27T01:02:09.272634+09:00",
+      "type": "single",
+      "title": "Eppendorf BioFlo 320",
+      "url": "https://www.cisa.gov/news-events/ics-medical-advisories/icsma-26-146-01",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-05-26T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-7251"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-7251",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-27T01:02:09.272634+09:00",
+      "type": "single",
+      "title": "ABB AC500 V2",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-146-02",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-05-26T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2025-7745"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2025-7745",
+          "cvss_score": 6.9,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-126 (CWE-126)",
+          "description": "Buffer Over-read vulnerability in ABB AC500 V2.This issue affects AC500 V2: through 2.5.2.",
+          "epss_score": 0.0026,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-27T01:02:09.272634+09:00",
+      "type": "single",
+      "title": "ABB B&R Automation Runtime DoS Vulnerability in System Diagnostics Manager (SDM)",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-146-04",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-05-26T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2025-3450"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2025-3450",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-413 (CWE-413)",
+          "description": "An Improper Resource Locking vulnerability in the SDM component of B&R Automation Runtime versions before 6.3 and before Q4.93 may allow an unauthenticated network-based attacker to delete data causing denial of service conditions.",
+          "epss_score": 0.00058,
+          "kev": false
+        }
+      ]
+    }
+  ]
+}
