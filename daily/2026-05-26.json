@@ -2,23 +2,25 @@
   "date": "2026-05-26",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 6,
+    "scan_runs": 7,
     "total_articles_max": 1822,
     "matched_articles_max": 170,
-    "new_alerts": 8,
-    "cve_count": 4,
+    "new_alerts": 11,
+    "cve_count": 5,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2021-21735",
       "CVE-2026-26980",
       "CVE-2026-34473",
+      "CVE-2026-45659",
       "CVE-2026-5426"
     ],
     "keywords_hit": {
-      "CVE": 4,
-      "Malware": 3,
-      "Botnet": 1
+      "CVE": 5,
+      "Malware": 4,
+      "Botnet": 1,
+      "DDoS": 1
     }
   },
   "alerts": [
@@ -181,6 +183,60 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-05-26T22:01:18.653568+09:00",
+      "type": "single",
+      "title": "High-severity SharePoint RCE bug patched by Microsoft (CVE-2026-45659)",
+      "url": "https://www.helpnetsecurity.com/2026/05/26/sharepoint-vulnerability-cve-2026-45659/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-05-26T10:44:57+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-45659"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-45659",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-26T22:01:18.653568+09:00",
+      "type": "single",
+      "title": "New AI DDoS Attacks Are Smarter. Learn How to Fight Back in This Webinar",
+      "url": "https://thehackernews.com/2026/05/new-ai-ddos-attacks-are-smarter-learn.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-05-26T11:58:00+00:00",
+      "keywords": [
+        "DDoS"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-26T22:01:18.653568+09:00",
+      "type": "single",
+      "title": "Major Cyber Attacks in May 2026: Fake Invitations, Agent Tesla, BlobPhish, and More",
+      "url": "https://any.run/cybersecurity-blog/major-cyber-attacks-may-2026/",
+      "source": "ANY.RUN (악성코드샌드박스분석) [RSS]",
+      "published": "2026-05-26T11:51:43+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
