@@ -2,15 +2,19 @@
   "date": "2026-05-26",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
+    "scan_runs": 3,
     "total_articles_max": 1822,
     "matched_articles_max": 167,
-    "new_alerts": 2,
-    "cve_count": 0,
+    "new_alerts": 4,
+    "cve_count": 2,
     "ioc_count": 0,
     "merged_count": 0,
-    "unique_cves": [],
+    "unique_cves": [
+      "CVE-2021-21735",
+      "CVE-2026-34473"
+    ],
     "keywords_hit": {
+      "CVE": 2,
       "Botnet": 1,
       "Malware": 1
     }
@@ -43,6 +47,58 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-26T11:01:24.424855+09:00",
+      "type": "single",
+      "title": "[SECURITY ADVISORY] CVE-2021-21735 - ZTE ZXHN H168N V3.5 Unauthenticated Admin Credential Leak",
+      "url": "https://seclists.org/fulldisclosure/2026/May/21",
+      "source": "SecLists Full Disclosure (취약점공개)",
+      "published": "2026-05-26T01:43:43+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2021-21735"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2021-21735",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-26T11:01:24.424855+09:00",
+      "type": "single",
+      "title": "[SECURITY ADVISORY] CVE-2026-34473 - Unauthenticated DoS in 17+ ZTE Router Models (140K+ Devices)",
+      "url": "https://seclists.org/fulldisclosure/2026/May/18",
+      "source": "SecLists Full Disclosure (취약점공개)",
+      "published": "2026-05-26T01:43:36+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-34473"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-34473",
+          "cvss_score": 7.5,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-400 (Resource Exhaustion)",
+          "description": "Unauthenticated DoS in ZTE H8102E, H168N, H167A, H199A, H288A, H198A, H267A, H267N, H268A, H388X, H196A, H369A, H268N, H208N, H367N, H181A, and H196Q. A denial-of-service condition can be triggered against the router's web interface by sending an oversized application/x-www-form-urlencoded POST body. After triggering, the management interface may become unresponsive until the device is rebooted. This may affect any firmware version prior to 2022 (reporter observation). The supplier stated that d",
+          "epss_score": 0.00052,
+          "kev": false
+        }
+      ]
     }
   ]
 }
