@@ -2,20 +2,21 @@
   "date": "2026-05-26",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 5,
+    "scan_runs": 6,
     "total_articles_max": 1822,
     "matched_articles_max": 170,
-    "new_alerts": 7,
-    "cve_count": 3,
+    "new_alerts": 8,
+    "cve_count": 4,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2021-21735",
+      "CVE-2026-26980",
       "CVE-2026-34473",
       "CVE-2026-5426"
     ],
     "keywords_hit": {
-      "CVE": 3,
+      "CVE": 4,
       "Malware": 3,
       "Botnet": 1
     }
@@ -154,6 +155,32 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-26T18:00:59.965310+09:00",
+      "type": "single",
+      "title": "패치 안 한 고스트 CMS, 악성코드 유포지로 악용… 700개 사이트 해킹 통로로 사용됐다",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=206912",
+      "source": "데일리시큐 (IT&생활) [RSS]",
+      "published": "2026-05-26T08:31:29+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-26980"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-26980",
+          "cvss_score": 9.4,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-89 (SQL Injection)",
+          "description": "Ghost is a Node.js content management system. Versions 3.24.0 through 6.19.0 allow unauthenticated attackers to perform arbitrary reads from the database. This issue has been fixed in version 6.19.1.",
+          "epss_score": 0.63493,
+          "kev": false
+        }
+      ]
     }
   ]
 }
