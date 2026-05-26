@@ -2,10 +2,10 @@
   "date": "2026-05-27",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
+    "scan_runs": 3,
     "total_articles_max": 1822,
     "matched_articles_max": 161,
-    "new_alerts": 6,
+    "new_alerts": 7,
     "cve_count": 4,
     "ioc_count": 0,
     "merged_count": 0,
@@ -17,7 +17,7 @@
     ],
     "keywords_hit": {
       "CVE": 4,
-      "Malware": 1,
+      "Malware": 2,
       "Botnet": 1
     }
   },
@@ -149,6 +149,20 @@
       "published": null,
       "keywords": [
         "Botnet"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-27T06:00:58.198226+09:00",
+      "type": "single",
+      "title": "Feeding Frenzy: 'Megalodon' Malware Infects Thousands of GitHub Repos",
+      "url": "https://www.darkreading.com/application-security/megalodon-malware-infects-thousands-github-repos",
+      "source": "Dark Reading (보안뉴스 종합) [RSS]",
+      "published": "2026-05-26T19:47:14+00:00",
+      "keywords": [
+        "Malware"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
