@@ -2,22 +2,23 @@
   "date": "2026-05-26",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 7,
+    "scan_runs": 8,
     "total_articles_max": 1822,
     "matched_articles_max": 170,
-    "new_alerts": 11,
-    "cve_count": 5,
+    "new_alerts": 12,
+    "cve_count": 6,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2021-21735",
       "CVE-2026-26980",
       "CVE-2026-34473",
+      "CVE-2026-34926",
       "CVE-2026-45659",
       "CVE-2026-5426"
     ],
     "keywords_hit": {
-      "CVE": 5,
+      "CVE": 6,
       "Malware": 4,
       "Botnet": 1,
       "DDoS": 1
@@ -237,6 +238,32 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-26T23:01:04.744123+09:00",
+      "type": "single",
+      "title": "Actively exploited Trend Micro Apex One flaw gets CISA warning (CVE-2026-34926)",
+      "url": "https://www.helpnetsecurity.com/2026/05/26/actively-exploited-trend-micro-apex-one-flaw-cve-2026-34926/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-05-26T13:48:13+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-34926"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-34926",
+          "cvss_score": 6.7,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-23 (CWE-23)",
+          "description": "A directory traversal vulnerability in the Apex One (on-premise) server could allow a pre-authenticated local attacker to modify a key table on the server to inject malicious code to deploy to agents on affected installations.\n\n\r\nThis vulnerability is only exploitable on the on-premise version of Apex One and a potential attacker must have access to the Apex One Server and already obtained administrative credentials to the server via some other method to exploit this vulnerability.",
+          "epss_score": 0.00193,
+          "kev": true
+        }
+      ]
     }
   ]
 }
