@@ -2,10 +2,10 @@
   "date": "2026-05-27",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 1,
+    "scan_runs": 2,
     "total_articles_max": 1822,
     "matched_articles_max": 161,
-    "new_alerts": 4,
+    "new_alerts": 6,
     "cve_count": 4,
     "ioc_count": 0,
     "merged_count": 0,
@@ -16,7 +16,9 @@
       "CVE-2026-7251"
     ],
     "keywords_hit": {
-      "CVE": 4
+      "CVE": 4,
+      "Malware": 1,
+      "Botnet": 1
     }
   },
   "alerts": [
@@ -123,6 +125,34 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-05-27T04:01:04.198538+09:00",
+      "type": "single",
+      "title": "Trojanized Gemini and Claude Installers Target Developers Via SEO Poisoning",
+      "url": "https://hackread.com/trojan-gemini-claude-installers-developers-seo-poisoning/",
+      "source": "HackRead (해킹/데이터유출) [RSS]",
+      "published": "2026-05-26T18:46:47+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-27T04:01:04.198538+09:00",
+      "type": "single",
+      "title": "Disrupting Glassworm: Inside CrowdStrike&rsquo;s Takedown of a Developer-Targeting Botnet",
+      "url": "https://www.crowdstrike.com/en-us/blog/inside-crowdstrike-takedown-of-a-developer-targeting-botnet/",
+      "source": "CrowdStrike Blog (APT/위협인텔리전스) [RSS]",
+      "published": null,
+      "keywords": [
+        "Botnet"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
