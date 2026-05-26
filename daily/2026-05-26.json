@@ -2,21 +2,22 @@
   "date": "2026-05-26",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
+    "scan_runs": 4,
     "total_articles_max": 1822,
     "matched_articles_max": 167,
-    "new_alerts": 4,
-    "cve_count": 2,
+    "new_alerts": 6,
+    "cve_count": 3,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2021-21735",
-      "CVE-2026-34473"
+      "CVE-2026-34473",
+      "CVE-2026-5426"
     ],
     "keywords_hit": {
-      "CVE": 2,
-      "Botnet": 1,
-      "Malware": 1
+      "CVE": 3,
+      "Malware": 2,
+      "Botnet": 1
     }
   },
   "alerts": [
@@ -99,6 +100,46 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-05-26T15:01:39.170912+09:00",
+      "type": "single",
+      "title": "KnowledgeDeliver LMS Flaw Exploited to Deploy Godzilla and Cobalt Strike",
+      "url": "https://thehackernews.com/2026/05/knowledgedeliver-lms-flaw-exploited-to.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-05-26T05:19:38+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-5426"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-5426",
+          "cvss_score": 7.5,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-321 (CWE-321)",
+          "description": "Hard-coded ASP.NET/IIS machineKey value in Digital Knowledge KnowledgeDeliver deployments prior to February 24, 2026 allows adversaries to circumvent ViewState validation mechanisms and achieve remote code execution via malicious ViewState deserialization attacks",
+          "epss_score": 0.00085,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-26T15:01:39.170912+09:00",
+      "type": "single",
+      "title": "Product showcase: F-Secure Internet Security blocks phishing sites, fake stores, and SMS scams",
+      "url": "https://www.helpnetsecurity.com/2026/05/26/product-showcase-f-secure-internet-security-android/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-05-26T05:00:28+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
