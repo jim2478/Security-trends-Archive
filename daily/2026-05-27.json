@@ -2,10 +2,10 @@
   "date": "2026-05-27",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 9,
+    "scan_runs": 10,
     "total_articles_max": 1822,
     "matched_articles_max": 161,
-    "new_alerts": 15,
+    "new_alerts": 16,
     "cve_count": 6,
     "ioc_count": 0,
     "merged_count": 0,
@@ -20,7 +20,7 @@
     "keywords_hit": {
       "CVE": 7,
       "Malware": 7,
-      "Botnet": 2
+      "Botnet": 3
     }
   },
   "alerts": [
@@ -302,6 +302,20 @@
       "published": "2026-05-27T11:48:37+00:00",
       "keywords": [
         "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-27T23:01:16.127812+09:00",
+      "type": "single",
+      "title": "Glassworm botnet disrupted after resilient C2 infrastructure takedown",
+      "url": "https://www.bleepingcomputer.com/news/security/glassworm-botnet-disrupted-after-resilient-c2-infrastructure-takedown/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-05-27T13:28:42+00:00",
+      "keywords": [
+        "Botnet"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
