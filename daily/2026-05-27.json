@@ -2,10 +2,10 @@
   "date": "2026-05-27",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 8,
+    "scan_runs": 9,
     "total_articles_max": 1822,
     "matched_articles_max": 161,
-    "new_alerts": 14,
+    "new_alerts": 15,
     "cve_count": 6,
     "ioc_count": 0,
     "merged_count": 0,
@@ -19,7 +19,7 @@
     ],
     "keywords_hit": {
       "CVE": 7,
-      "Malware": 6,
+      "Malware": 7,
       "Botnet": 2
     }
   },
@@ -286,6 +286,20 @@
       "url": "https://any.run/cybersecurity-blog/ceo-interview-anyrun-10-years/",
       "source": "ANY.RUN (악성코드샌드박스분석) [RSS]",
       "published": "2026-05-27T11:25:21+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-27T22:01:20.955657+09:00",
+      "type": "single",
+      "title": "GlassWorm Malware Takedown Disrupts Developer Supply Chain Attack Infrastructure",
+      "url": "https://thehackernews.com/2026/05/glassworm-malware-takedown-disrupts.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-05-27T11:48:37+00:00",
       "keywords": [
         "Malware"
       ],
