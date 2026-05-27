@@ -2,21 +2,22 @@
   "date": "2026-05-27",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
+    "scan_runs": 4,
     "total_articles_max": 1822,
     "matched_articles_max": 161,
-    "new_alerts": 7,
-    "cve_count": 4,
+    "new_alerts": 8,
+    "cve_count": 5,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2025-3450",
       "CVE-2025-7745",
       "CVE-2025-9970",
+      "CVE-2026-20182",
       "CVE-2026-7251"
     ],
     "keywords_hit": {
-      "CVE": 4,
+      "CVE": 5,
       "Malware": 2,
       "Botnet": 1
     }
@@ -167,6 +168,32 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-27T10:00:58.150708+09:00",
+      "type": "single",
+      "title": "[카드뉴스] “아이디·비번도 없이 정문 통과”… CISA 경고한 취약점의 정체",
+      "url": "http://www.boannews.com/media/view.asp?idx=143817&kind=&sub_kind=",
+      "source": "보안뉴스 (전체) [RSS]",
+      "published": "2026-05-27T00:52:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-20182"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-20182",
+          "cvss_score": 10.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-287 (Authentication Bypass)",
+          "description": "May 2026: This security advisory provides the details and fix information for a vulnerability that was discovered and fixed after the  was disclosed in February 2026. This new advisory is for a new vulnerability in the control connection handshaking. The  section of this advisory includes Show Control Connections guidance to help with system checks.&nbsp;\r\n\r\nA vulnerability in the peering authentication in Cisco Catalyst SD-WAN Controller, formerly SD-WAN vSmart, and Cisco Catalyst SD-WAN Manage",
+          "epss_score": 0.77324,
+          "kev": true
+        }
+      ]
     }
   ]
 }
