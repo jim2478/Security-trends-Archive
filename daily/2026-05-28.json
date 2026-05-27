@@ -1,0 +1,33 @@
+{
+  "date": "2026-05-28",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 1,
+    "total_articles_max": 1806,
+    "matched_articles_max": 161,
+    "new_alerts": 1,
+    "cve_count": 0,
+    "ioc_count": 176,
+    "merged_count": 0,
+    "unique_cves": [],
+    "keywords_hit": {
+      "Malware": 1
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-05-28T01:00:59.352051+09:00",
+      "type": "single",
+      "title": "Commit to Compromise: A New Threat Actor Targeting the Cryptocurrency Industry's Software Development Infrastructure",
+      "url": "https://www.wiz.io/blog/threat-actors-target-crypto-orgs",
+      "source": "Wiz Blog (클라우드보안) [RSS]",
+      "published": "2026-05-27T13:52:45+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "Malware\nMalware\nVariant/Theme (Infrastructure)\nHash\nMINIRAT\nARM64\n0a8ab3d16b12d3a453ee5a3208fe04744ad54514ef8ea27bb8fe32679efad270\nMINIRAT\nx86_64\n0b028b781950641818800fee2b4bf68e4ef2bcee53fe71a21755275ba108783d\nMINIRAT\nARM64\na35d2b67fa478a7174e308b43ce30bf69b3bc6f44fa76197fdf95fc2fbc1cf5b\nAUDIOFIX\nHTTPS/ARM64\n65cba741fe30fa4799fb9002ea8de6d96042a59159dd7c3419c766af24c835e6\nAUDIOFIX\nHTTPS/x86_64\n0b1a36a31b952341a534fe24890f1ed2921ee259773cff46e4f6273b8c4d5d21\nAUDIOFIX\nDropbox/ARM64\ne8ee6f5145c9d503c5130bfc6585567f6e19d409158c3c0ca0b259f1875b15f4\nAUDIOFIX\nDropbox/x86_64\n3e3901519c2305fbe9d5483b7234c25c6d2b562512916481d96f26b849c39fdb\nDropper\nFake audio fix (apple.driver-store.com)\n9c2ce925133a3bf5a924063bbef8df49918d5b7258695c1894cd18c75970157a\nDropper\nFake audio fix (apple.driver-update.io)\n402625ec79e3573a80b6de9b33fc1e503e3c7803603cd958ddd515fb0549007c\nDropper\nFake audio fix (driver-updater.net)\nb6cab0b3aa8e56e2427f486c74588d598ae58bb0cbc0eda6939fe171cb0aed17\nDropper\nFake Chrome update (apple.driver-store.com)\nd4e863f9818bfb2f1dd932df6441dff204e6142c3bdb55b298cb08dc7b6a0c62\nDropper\nDelivered via supply chain (89.36.224.5)\nc6ef82d2864dfd26f117a1ef5602679153423f2742970a7949cec72722f0a01e\nDropper\nDelivered via supply chain (89.36.224.5)\n2a10ffe0367bb1b26ba2c3bc600892c21074725c0b8c9dc9161e6ceb33915460\nNetwork-Based Indicators\nMeeting Spoofing Domains\nlive[.]us[.]org,\nteam[.]live[.]us[.]org,\nteams[.]live[.]us[.]org,\nwww[.]live[.]us[.]org\n185[.]100[.]85[.]250\n84[.]32[.]83[.]250\n163[.]172[.]53[.]20\n185[.]100[.]85[.]98\nlive[.]org[.]mx,\nteams[.]live[.]org[.]mx\nteams[.]cam,\nlearn[.]teams[.]cam,\nlive[.]teams[.]cam,\nlogin[.]teams[.]cam,\nwww[.]teams[.]cam\nteamicrosoft[.]com,\nwww[.]teamicrosoft[.]com,\nlogin[.]teamicrosoft[.]com,\nlearn[.]teamicrosoft[.]com,\nresource[.]teamicrosoft[.]com\nbitget-meeting[.]com,\nwww[.]bitget-meeting[.]com,\nlearn[.]bitget-meeting[.]com,\nlogin[.]bitget-meeting[.]com,\nresource[.]bitget-meeting[.]com\nus03-slack[.]online,\napp[.]us03-slack[.]online,\nmy-home-company-group[.]us03-slack[.]online,\nwww[.]us03-slack[.]online\nslktest[.]live,\napp[.]slktest[.]live,\nmy-home-company-group[.]slktest[.]live,\nwww[.]slktest[.]live\nlive[.]ong,\nlearn[.]live[.]ong,\nlogin[.]live[.]ong,\nteams[.]live[.]ong,\nwww[.]live[.]ong\nteams[.]us[.]org,\nlearn[.]teams[.]us[.]org\nRetesta[.]live,\nlearn[.]retesta[.]live,\nlogin[.]retesta[.]live,\nteams[.]retesta[.]live,\nwww[.]retesta[.]live\nPayload delivery domains\ndriver-store[.]com,\napple[.]driver-store[.]com,\nwindows[.]driver-store[.]com,\nwww[.]driver-store[.]com,\nsitemaps[.]driver-store[.]com\n89[.]36[.]224[.]5\n84[.]32[.]83[.]250\ndriver-hub[.]net,\napple[.]driver-hub[.]net,\nwindows[.]driver-hub[.]net,\nwww[.]driver-hub[.]net\n185[.]100[.]85[.]98\n163[.]172[.]53[.]20\ndriver-update[.]io,\napple[.]driver-update[.]io,\nwindows[.]driver-update[.]io,\nwww[.]driver-update[.]io\ndrvstore[.]com,\napple[.]drvstore[.]com,\nwindows[.]drvstore[.]com,\nwww[.]drvstore[.]com\n84[.]32[.]83[.]250\n185[.]100[.]85[.]98\ndriver-updater[.]net,\nwww[.]driver-updater[.]net\nC&C Domains\nDomain\nIP Target\ncloud-sync.online\nN/A\ndatahub.ink\n208.115.220.17 185.175.59.85\nbyte-io.us\nN/A\nHost-Based Indicators\nFile Path\nDescription\n~/Library/LaunchAgents/com.microsoft.teams.coreaudiod.plist\nPersistence of the Python RAT\n~/Library/LaunchAgents/io.aircall.workspace.helper.plist\nPersistence of the Python RAT\n~/Library/LaunchAgents/com.electron.dialpad.helper.plist\nPersistence of the Python RAT\n/audio.lock\nContains process ID of Python RAT\n/helper.log\nMalware activity log\n/clip\nClipboard capture log\n/tokens.txt\nExfiltrated Discord tokens\n~/.zsh_cache\nXOR-encoded (0xAB) stolen macOS password\n~/.log\nTCC clickjack bypass artifact\nCode Indicators\nnord-stream\ndefault parameters\nType\nIndicator\nNote\nBranch name\ndev_remote_ea5Eu/test/v1\nCommitter name\nnord-stream\nCommitter email\nnord-stream@localhost.com\nCommit message\nTest deployment\nCommit message\nRemove test deployment\nUser agent\nMozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36\nWorkflow file name\ninit_ZkITM.yaml\nGitHub only\nPipeline name\nBuild_pipeline_58675\nAzure DevOps only\nRepository name\nTestDev_ea5Eu\nAzure DevOps only\nTask name\nTask fWQf8\nAzure DevOps only",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
