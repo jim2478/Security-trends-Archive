@@ -2,11 +2,11 @@
   "date": "2026-05-27",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 7,
+    "scan_runs": 8,
     "total_articles_max": 1822,
     "matched_articles_max": 161,
-    "new_alerts": 11,
-    "cve_count": 5,
+    "new_alerts": 14,
+    "cve_count": 6,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -14,11 +14,12 @@
       "CVE-2025-7745",
       "CVE-2025-9970",
       "CVE-2026-20182",
+      "CVE-2026-27771",
       "CVE-2026-7251"
     ],
     "keywords_hit": {
-      "CVE": 6,
-      "Malware": 4,
+      "CVE": 7,
+      "Malware": 6,
       "Botnet": 2
     }
   },
@@ -232,6 +233,60 @@
       "published": "2026-05-27T10:10:00+00:00",
       "keywords": [
         "Botnet",
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-27T21:04:33.073733+09:00",
+      "type": "single",
+      "title": "Gitea Vulnerability Exposes Private Container Images without Authentication",
+      "url": "https://thehackernews.com/2026/05/gitea-vulnerability-exposes-private.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-05-27T10:06:32+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-27771"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-27771",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-27T21:04:33.073733+09:00",
+      "type": "single",
+      "title": "Fake ChatGPT and Claude installers on GitHub are dropping Deno RAT malware",
+      "url": "https://www.helpnetsecurity.com/2026/05/27/deno-rat-malware-fake-chatgpt-claude-installers/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-05-27T11:50:48+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-27T21:04:33.073733+09:00",
+      "type": "single",
+      "title": "Inside ANY.RUN’s 10-Year Evolution: An Interview with CEO Aleksey Lapshin",
+      "url": "https://any.run/cybersecurity-blog/ceo-interview-anyrun-10-years/",
+      "source": "ANY.RUN (악성코드샌드박스분석) [RSS]",
+      "published": "2026-05-27T11:25:21+00:00",
+      "keywords": [
         "Malware"
       ],
       "ioc_raw_text": "",
