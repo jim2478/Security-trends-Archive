@@ -2,10 +2,10 @@
   "date": "2026-05-27",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 6,
+    "scan_runs": 7,
     "total_articles_max": 1822,
     "matched_articles_max": 161,
-    "new_alerts": 10,
+    "new_alerts": 11,
     "cve_count": 5,
     "ioc_count": 0,
     "merged_count": 0,
@@ -18,8 +18,8 @@
     ],
     "keywords_hit": {
       "CVE": 6,
-      "Malware": 3,
-      "Botnet": 1
+      "Malware": 4,
+      "Botnet": 2
     }
   },
   "alerts": [
@@ -217,6 +217,21 @@
       "source": "The Hacker News (보안뉴스 종합) [RSS]",
       "published": "2026-05-27T07:45:52+00:00",
       "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-27T20:00:51.732976+09:00",
+      "type": "single",
+      "title": "GlassWorm Botnet Disrupted",
+      "url": "https://www.securityweek.com/glassworm-botnet-disrupted/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-05-27T10:10:00+00:00",
+      "keywords": [
+        "Botnet",
         "Malware"
       ],
       "ioc_raw_text": "",
