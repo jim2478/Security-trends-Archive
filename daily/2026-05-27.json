@@ -2,10 +2,10 @@
   "date": "2026-05-27",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 4,
+    "scan_runs": 5,
     "total_articles_max": 1822,
     "matched_articles_max": 161,
-    "new_alerts": 8,
+    "new_alerts": 9,
     "cve_count": 5,
     "ioc_count": 0,
     "merged_count": 0,
@@ -17,7 +17,7 @@
       "CVE-2026-7251"
     ],
     "keywords_hit": {
-      "CVE": 5,
+      "CVE": 6,
       "Malware": 2,
       "Botnet": 1
     }
@@ -194,6 +194,20 @@
           "kev": true
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-05-27T11:00:57.069746+09:00",
+      "type": "single",
+      "title": "애플 OS 보안 문서 업데이트…취약점 식별 정보 보강",
+      "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=669354",
+      "source": "디지털투데이 (전체기사) [RSS]",
+      "published": "2026-05-27T01:36:18+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
