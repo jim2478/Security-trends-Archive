@@ -2,10 +2,10 @@
   "date": "2026-05-29",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 1,
+    "scan_runs": 2,
     "total_articles_max": 1826,
     "matched_articles_max": 155,
-    "new_alerts": 8,
+    "new_alerts": 9,
     "cve_count": 7,
     "ioc_count": 0,
     "merged_count": 0,
@@ -19,7 +19,7 @@
       "CVE-2026-9037"
     ],
     "keywords_hit": {
-      "CVE": 7,
+      "CVE": 8,
       "Malware": 1
     }
   },
@@ -215,6 +215,20 @@
       "published": "2026-05-28T15:26:04+00:00",
       "keywords": [
         "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-29T03:01:24.301330+09:00",
+      "type": "single",
+      "title": "Critical Gogs RCE Vulnerability Lets Any Authenticated User Execute Arbitrary Code",
+      "url": "https://thehackernews.com/2026/05/critical-gogs-rce-vulnerability-lets.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-05-28T17:24:44+00:00",
+      "keywords": [
+        "CVE"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
