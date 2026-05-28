@@ -2,10 +2,10 @@
   "date": "2026-05-28",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 8,
+    "scan_runs": 9,
     "total_articles_max": 1826,
     "matched_articles_max": 163,
-    "new_alerts": 9,
+    "new_alerts": 10,
     "cve_count": 1,
     "ioc_count": 176,
     "merged_count": 0,
@@ -13,7 +13,7 @@
       "CVE-2026-27771"
     ],
     "keywords_hit": {
-      "Malware": 6,
+      "Malware": 7,
       "CVE": 3,
       "Botnet": 1
     }
@@ -153,6 +153,20 @@
       "published": "2026-05-28T12:04:52+00:00",
       "keywords": [
         "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-28T23:01:02.387431+09:00",
+      "type": "single",
+      "title": "New BTMOB Android Malware Enables Full Device Takeover",
+      "url": "https://www.securityweek.com/new-btmob-android-malware-enables-full-device-takeover/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-05-28T13:05:04+00:00",
+      "keywords": [
+        "Malware"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
