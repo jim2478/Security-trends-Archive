@@ -2,10 +2,10 @@
   "date": "2026-05-29",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 4,
+    "scan_runs": 5,
     "total_articles_max": 1826,
     "matched_articles_max": 155,
-    "new_alerts": 11,
+    "new_alerts": 12,
     "cve_count": 7,
     "ioc_count": 0,
     "merged_count": 0,
@@ -20,7 +20,7 @@
     ],
     "keywords_hit": {
       "CVE": 9,
-      "Malware": 2
+      "Malware": 3
     }
   },
   "alerts": [
@@ -255,6 +255,20 @@
       "url": "https://www.bleepingcomputer.com/news/security/btmob-android-malware-service-generates-custom-phishing-payloads/",
       "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
       "published": "2026-05-28T21:10:11+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-29T08:00:52.885849+09:00",
+      "type": "single",
+      "title": "GreyVibe hackers use ChatGPT, Gemini to power cyberattacks",
+      "url": "https://www.bleepingcomputer.com/news/security/greyvibe-hackers-use-chatgpt-gemini-to-power-cyberattacks/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-05-28T22:24:49+00:00",
       "keywords": [
         "Malware"
       ],
