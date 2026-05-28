@@ -2,10 +2,10 @@
   "date": "2026-05-28",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 6,
+    "scan_runs": 7,
     "total_articles_max": 1826,
     "matched_articles_max": 163,
-    "new_alerts": 7,
+    "new_alerts": 8,
     "cve_count": 1,
     "ioc_count": 176,
     "merged_count": 0,
@@ -13,8 +13,9 @@
       "CVE-2026-27771"
     ],
     "keywords_hit": {
-      "Malware": 5,
-      "CVE": 2
+      "Malware": 6,
+      "CVE": 2,
+      "Botnet": 1
     }
   },
   "alerts": [
@@ -122,6 +123,21 @@
       "source": "The Hacker News (보안뉴스 종합) [RSS]",
       "published": "2026-05-28T07:54:48+00:00",
       "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-28T20:01:03.588642+09:00",
+      "type": "single",
+      "title": "CrowdStrike, Google smash Glassworm developer botnet",
+      "url": "https://cybernews.com/security/crowdstrike-google-glassworm-botnet-takedown/",
+      "source": "CyberNews [RSS]",
+      "published": "2026-05-28T10:26:00+00:00",
+      "keywords": [
+        "Botnet",
         "Malware"
       ],
       "ioc_raw_text": "",
