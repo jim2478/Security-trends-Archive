@@ -2,10 +2,10 @@
   "date": "2026-05-28",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 5,
+    "scan_runs": 6,
     "total_articles_max": 1826,
     "matched_articles_max": 163,
-    "new_alerts": 6,
+    "new_alerts": 7,
     "cve_count": 1,
     "ioc_count": 176,
     "merged_count": 0,
@@ -13,7 +13,7 @@
       "CVE-2026-27771"
     ],
     "keywords_hit": {
-      "Malware": 4,
+      "Malware": 5,
       "CVE": 2
     }
   },
@@ -113,6 +113,20 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-05-28T18:00:56.786280+09:00",
+      "type": "single",
+      "title": "JINX-0164 Targets Cryptocurrency Firms with Fake Recruiter Lures and macOS Malware",
+      "url": "https://thehackernews.com/2026/05/jinx-0164-targets-cryptocurrency-firms.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-05-28T07:54:48+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
