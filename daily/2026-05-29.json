@@ -1,0 +1,224 @@
+{
+  "date": "2026-05-29",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 1,
+    "total_articles_max": 1826,
+    "matched_articles_max": 155,
+    "new_alerts": 8,
+    "cve_count": 7,
+    "ioc_count": 0,
+    "merged_count": 0,
+    "unique_cves": [
+      "CVE-2021-22291",
+      "CVE-2025-7705",
+      "CVE-2026-42941",
+      "CVE-2026-5386",
+      "CVE-2026-5768",
+      "CVE-2026-7786",
+      "CVE-2026-9037"
+    ],
+    "keywords_hit": {
+      "CVE": 7,
+      "Malware": 1
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-05-29T02:01:30.354386+09:00",
+      "type": "single",
+      "title": "ABB EIBPORT",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-148-03",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-05-28T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2021-22291"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2021-22291",
+          "cvss_score": 8.5,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-79 (XSS)",
+          "description": "Improper Neutralization of Input During Web Page Generation (XSS or 'Cross-site Scripting') vulnerability in ABB EIBPORT V3 KNX, ABB EIBPORT V3 KNX GSM.This issue affects EIBPORT V3 KNX: before 3.9.2; EIBPORT V3 KNX GSM: before 3.9.2.",
+          "epss_score": 0.00038,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-29T02:01:30.354386+09:00",
+      "type": "single",
+      "title": "Jinan USR IOT Technology Limited (PUSR) USR-W610 RS232/485 to Wi-Fi/Ethernet Converter",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-148-02",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-05-28T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-7786"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-7786",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-29T02:01:30.354386+09:00",
+      "type": "single",
+      "title": "ABB Busch-Welcome 2 Wire Door Opener Actuator",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-148-04",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-05-28T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2025-7705"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2025-7705",
+          "cvss_score": 8.6,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-489 (CWE-489)",
+          "description": ": Active Debug Code vulnerability in ABB Switch Actuator 4 DU-83330, ABB Switch actuator, door/light 4 DU -83330-500.This issue affects Switch Actuator 4 DU-83330: All Versions; Switch actuator, door/light 4 DU -83330-500: All Versions.",
+          "epss_score": 0.00154,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-29T02:01:30.354386+09:00",
+      "type": "single",
+      "title": "Fourth Frontier Frontier X Mobile Application, Frontier X2",
+      "url": "https://www.cisa.gov/news-events/ics-medical-advisories/icsma-26-148-01",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-05-28T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-5768"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-5768",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-29T02:01:30.354386+09:00",
+      "type": "single",
+      "title": "XCharge C6",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-148-08",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-05-28T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-9037"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-9037",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-29T02:01:30.354386+09:00",
+      "type": "single",
+      "title": "KMW CCTV Security Cameras",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-148-06",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-05-28T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-5386"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-5386",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-29T02:01:30.354386+09:00",
+      "type": "single",
+      "title": "MacGregor Voyage Data Recorder (VDR) G4e",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-148-01",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-05-28T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-42941"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-42941",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-29T02:01:30.354386+09:00",
+      "type": "single",
+      "title": "Threat Actors Exploit Critical FortiClient EMS Flaw to Deploy Credential Stealer",
+      "url": "https://thehackernews.com/2026/05/threat-actors-exploit-critical.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-05-28T15:26:04+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
