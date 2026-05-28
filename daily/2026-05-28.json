@@ -2,10 +2,10 @@
   "date": "2026-05-28",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 7,
+    "scan_runs": 8,
     "total_articles_max": 1826,
     "matched_articles_max": 163,
-    "new_alerts": 8,
+    "new_alerts": 9,
     "cve_count": 1,
     "ioc_count": 176,
     "merged_count": 0,
@@ -14,7 +14,7 @@
     ],
     "keywords_hit": {
       "Malware": 6,
-      "CVE": 2,
+      "CVE": 3,
       "Botnet": 1
     }
   },
@@ -139,6 +139,20 @@
       "keywords": [
         "Botnet",
         "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-28T22:00:57.609368+09:00",
+      "type": "single",
+      "title": "Qevlar’s new AI agents correlate CVEs, incident data, and active exploitation signals",
+      "url": "https://www.helpnetsecurity.com/2026/05/28/qevlar-ai-agents/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-05-28T12:04:52+00:00",
+      "keywords": [
+        "CVE"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
