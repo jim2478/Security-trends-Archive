@@ -2,16 +2,17 @@
   "date": "2026-05-29",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 10,
+    "scan_runs": 11,
     "total_articles_max": 1826,
     "matched_articles_max": 156,
-    "new_alerts": 17,
-    "cve_count": 9,
+    "new_alerts": 18,
+    "cve_count": 10,
     "ioc_count": 5,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2021-22291",
       "CVE-2025-7705",
+      "CVE-2026-35616",
       "CVE-2026-42941",
       "CVE-2026-48778",
       "CVE-2026-48800",
@@ -21,7 +22,7 @@
       "CVE-2026-9037"
     ],
     "keywords_hit": {
-      "CVE": 10,
+      "CVE": 11,
       "Malware": 7
     }
   },
@@ -369,6 +370,32 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-29T21:01:03.893497+09:00",
+      "type": "single",
+      "title": "New infostealer reaches enterprise devices through FortiClient EMS vulnerability",
+      "url": "https://www.helpnetsecurity.com/2026/05/29/forticlient-ems-vulnerability-infostealer/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-05-29T11:45:59+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-35616"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-35616",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-284 (Improper Access Control)",
+          "description": "A improper access control vulnerability in Fortinet FortiClientEMS 7.4.5 through 7.4.6 may allow an unauthenticated attacker to execute unauthorized code or commands via crafted requests.",
+          "epss_score": 0.43209,
+          "kev": true
+        }
+      ]
     }
   ]
 }
