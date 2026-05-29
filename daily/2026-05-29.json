@@ -2,10 +2,10 @@
   "date": "2026-05-29",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 6,
+    "scan_runs": 7,
     "total_articles_max": 1826,
     "matched_articles_max": 156,
-    "new_alerts": 13,
+    "new_alerts": 14,
     "cve_count": 7,
     "ioc_count": 5,
     "merged_count": 0,
@@ -19,7 +19,7 @@
       "CVE-2026-9037"
     ],
     "keywords_hit": {
-      "CVE": 9,
+      "CVE": 10,
       "Malware": 4
     }
   },
@@ -287,6 +287,20 @@
         "Malware"
       ],
       "ioc_raw_text": "Share\nPost\nShare\nShare\nShare",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-29T14:00:51.071476+09:00",
+      "type": "single",
+      "title": "Building a risk-based vulnerability management program that scales",
+      "url": "https://www.helpnetsecurity.com/2026/05/29/risk-based-vulnerability-management-video/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-05-29T04:30:37+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
     }
