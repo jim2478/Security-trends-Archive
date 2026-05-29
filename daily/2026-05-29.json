@@ -2,17 +2,19 @@
   "date": "2026-05-29",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 8,
+    "scan_runs": 9,
     "total_articles_max": 1826,
     "matched_articles_max": 156,
-    "new_alerts": 15,
-    "cve_count": 7,
+    "new_alerts": 16,
+    "cve_count": 9,
     "ioc_count": 5,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2021-22291",
       "CVE-2025-7705",
       "CVE-2026-42941",
+      "CVE-2026-48778",
+      "CVE-2026-48800",
       "CVE-2026-5386",
       "CVE-2026-5768",
       "CVE-2026-7786",
@@ -20,7 +22,7 @@
     ],
     "keywords_hit": {
       "CVE": 10,
-      "Malware": 5
+      "Malware": 6
     }
   },
   "alerts": [
@@ -317,6 +319,42 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-29T18:03:06.014651+09:00",
+      "type": "single",
+      "title": "Notepad++ patches critical bugs: “shortest path” to malware execution",
+      "url": "https://cybernews.com/security/notepad-plus-plus-fixes-arbitrary-code-execution-vulnerabilities/",
+      "source": "CyberNews [RSS]",
+      "published": "2026-05-29T08:43:34+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-48778",
+        "CVE-2026-48800"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-48778",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-48800",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
     }
   ]
 }
