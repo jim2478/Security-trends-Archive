@@ -2,10 +2,10 @@
   "date": "2026-05-30",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
+    "scan_runs": 3,
     "total_articles_max": 1802,
     "matched_articles_max": 156,
-    "new_alerts": 4,
+    "new_alerts": 5,
     "cve_count": 2,
     "ioc_count": 17,
     "merged_count": 0,
@@ -16,8 +16,8 @@
     "keywords_hit": {
       "Botnet": 2,
       "CVE": 2,
-      "DDoS": 1,
-      "Malware": 1
+      "Malware": 2,
+      "DDoS": 1
     }
   },
   "alerts": [
@@ -102,6 +102,20 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-05-30T04:00:58.214839+09:00",
+      "type": "single",
+      "title": "ChatGPT share links abused to host fake outage pages to deliver malware",
+      "url": "https://www.bleepingcomputer.com/news/security/chatgpt-share-links-abused-to-host-fake-outage-pages-to-deliver-malware/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-05-29T18:21:36+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
