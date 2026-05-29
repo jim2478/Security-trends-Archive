@@ -2,12 +2,12 @@
   "date": "2026-05-29",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 5,
+    "scan_runs": 6,
     "total_articles_max": 1826,
-    "matched_articles_max": 155,
-    "new_alerts": 12,
+    "matched_articles_max": 156,
+    "new_alerts": 13,
     "cve_count": 7,
-    "ioc_count": 0,
+    "ioc_count": 5,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2021-22291",
@@ -20,7 +20,7 @@
     ],
     "keywords_hit": {
       "CVE": 9,
-      "Malware": 3
+      "Malware": 4
     }
   },
   "alerts": [
@@ -273,6 +273,20 @@
         "Malware"
       ],
       "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-29T11:00:58.209932+09:00",
+      "type": "single",
+      "title": "Hackers caught hiding OpenAI token-stealing malware in Codex npm package",
+      "url": "https://cybernews.com/security/openai-codex-tool-malware-token-theft/",
+      "source": "CyberNews [RSS]",
+      "published": "2026-05-29T00:53:06+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "Share\nPost\nShare\nShare\nShare",
       "cve_ids": [],
       "cve_details": []
     }
