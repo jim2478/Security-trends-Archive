@@ -2,16 +2,20 @@
   "date": "2026-05-30",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 1,
+    "scan_runs": 2,
     "total_articles_max": 1802,
-    "matched_articles_max": 155,
-    "new_alerts": 2,
-    "cve_count": 0,
-    "ioc_count": 0,
+    "matched_articles_max": 156,
+    "new_alerts": 4,
+    "cve_count": 2,
+    "ioc_count": 17,
     "merged_count": 0,
-    "unique_cves": [],
+    "unique_cves": [
+      "CVE-2026-0257",
+      "CVE-2026-39987"
+    ],
     "keywords_hit": {
       "Botnet": 2,
+      "CVE": 2,
       "DDoS": 1,
       "Malware": 1
     }
@@ -46,6 +50,58 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-05-30T02:01:04.251038+09:00",
+      "type": "single",
+      "title": "Attackers Use LLM Agent for Post-Exploitation After Marimo CVE-2026-39987 Exploit",
+      "url": "https://thehackernews.com/2026/05/attackers-use-llm-agent-for-post.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-05-29T14:39:56+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-39987"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-39987",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-306 (Missing Authentication)",
+          "description": "marimo is a reactive Python notebook. Prior to 0.23.0, Marimo has a Pre-Auth RCE vulnerability. The terminal WebSocket endpoint /terminal/ws lacks authentication validation, allowing an unauthenticated attacker to obtain a full PTY shell and execute arbitrary system commands. Unlike other WebSocket endpoints (e.g., /ws) that correctly call validate_auth() for authentication, the /terminal/ws endpoint only checks the running mode and platform support before accepting connections, completely skipp",
+          "epss_score": 0.82174,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-05-30T02:01:04.251038+09:00",
+      "type": "single",
+      "title": "Rapid7 Observed Exploitation of PAN-OS GlobalProtect Authentication Bypass Vulnerability (CVE-2026-0257)",
+      "url": "https://www.rapid7.com/blog/post/etr-rapid7-observed-exploitation-of-pan-os-globalprotect-authentication-bypass-vulnerability-cve-2026-0257/",
+      "source": "Rapid7 Blog (취약점/모의침투)",
+      "published": "2026-05-29T16:40:19.536Z",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "Low-cost hosting providers; frequent origin of sustained threat campaigns.\nItem\nDescription\n104.207.144.154\nThreat actor source IP\n146.19.216.119\nThreat actor source IP\n146.19.216.120\nThreat actor source IP\n146.19.216.125\nThreat actor source IP\nDESKTOP-GP01\nMachinename observed in the GlobalProtect logs alongside Windows authentications first observed on May 21, 2026\nGP-CLIENT\nMachinename observed in the GlobalProtect logs alongside Linux authentications first observed on May 17, 2026\naa:bb:cc:dd:ee:ff\nSpoofed MAC address observed in both waves of successful exploitation",
+      "cve_ids": [
+        "CVE-2026-0257"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-0257",
+          "cvss_score": 4.7,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-565 (CWE-565)",
+          "description": "Authentication bypass vulnerabilities in the GlobalProtect portal and gateway of Palo Alto Networks PAN-OS® software allows the attacker to bypass security restrictions and establish an unauthorized VPN connection.\n\nPanorama and Cloud NGFW are not impacted by these issues.",
+          "epss_score": 0.00065,
+          "kev": false
+        }
+      ]
     }
   ]
 }
