@@ -2,10 +2,10 @@
   "date": "2026-05-29",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 9,
+    "scan_runs": 10,
     "total_articles_max": 1826,
     "matched_articles_max": 156,
-    "new_alerts": 16,
+    "new_alerts": 17,
     "cve_count": 9,
     "ioc_count": 5,
     "merged_count": 0,
@@ -22,7 +22,7 @@
     ],
     "keywords_hit": {
       "CVE": 10,
-      "Malware": 6
+      "Malware": 7
     }
   },
   "alerts": [
@@ -355,6 +355,20 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-05-29T20:00:58.879798+09:00",
+      "type": "single",
+      "title": "LinkedIn-themed phishing abuses Adobe’s A/B testing platform",
+      "url": "https://www.helpnetsecurity.com/2026/05/29/linkedin-themed-phishing-adobe-a-b-testing-platform/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-05-29T10:04:50+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
