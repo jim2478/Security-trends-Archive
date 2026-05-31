@@ -1,0 +1,33 @@
+{
+  "date": "2026-06-01",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 1,
+    "total_articles_max": 1802,
+    "matched_articles_max": 153,
+    "new_alerts": 1,
+    "cve_count": 0,
+    "ioc_count": 0,
+    "merged_count": 0,
+    "unique_cves": [],
+    "keywords_hit": {
+      "봇넷": 1
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-06-01T01:00:50.721904+09:00",
+      "type": "single",
+      "title": "네덜란드, 스마트폰·공유기 1,700만 대 감염 봇넷 차단",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=206975",
+      "source": "데일리시큐 (IT&생활) [RSS]",
+      "published": "2026-05-31T15:00:30+00:00",
+      "keywords": [
+        "봇넷"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
