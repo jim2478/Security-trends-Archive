@@ -2,20 +2,21 @@
   "date": "2026-06-01",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 4,
+    "scan_runs": 5,
     "total_articles_max": 1822,
     "matched_articles_max": 156,
-    "new_alerts": 7,
-    "cve_count": 5,
+    "new_alerts": 8,
+    "cve_count": 6,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2026-0257",
+      "CVE-2026-8732",
       "CVE-2026-8979",
       "CVE-2026-8980"
     ],
     "keywords_hit": {
-      "CVE": 5,
+      "CVE": 6,
       "봇넷": 1,
       "Malware": 1
     }
@@ -176,6 +177,32 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-01T21:00:59.983761+09:00",
+      "type": "single",
+      "title": "워드프레스 지도 플러그인 보안 비상…국내 사이트도 관리자 권한 탈취 위험",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=207003",
+      "source": "데일리시큐 (이슈) [RSS]",
+      "published": "2026-06-01T20:03:20+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-8732"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-8732",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-306 (Missing Authentication)",
+          "description": "The WP Maps Pro plugin for WordPress is vulnerable to Privilege Escalation via Administrator Account Creation in all versions up to, and including, 6.1.0. This is due to the wpgmp_temp_access_ajax AJAX action being registered with wp_ajax_nopriv_ and protected only by a nonce check using the fc-call-nonce nonce, which is publicly embedded into every frontend page via wp_localize_script as the nonce field of the wpgmp_local JavaScript object, rendering the check ineffective as an access control m",
+          "epss_score": 0.00074,
+          "kev": false
+        }
+      ]
     }
   ]
 }
