@@ -2,18 +2,18 @@
   "date": "2026-06-02",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 1,
+    "scan_runs": 2,
     "total_articles_max": 1806,
-    "matched_articles_max": 153,
-    "new_alerts": 1,
-    "cve_count": 1,
+    "matched_articles_max": 155,
+    "new_alerts": 2,
+    "cve_count": 2,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2026-41089"
     ],
     "keywords_hit": {
-      "CVE": 1
+      "CVE": 2
     }
   },
   "alerts": [
@@ -24,6 +24,32 @@
       "url": "https://www.helpnetsecurity.com/2026/06/01/windows-netlogon-rce-exploited-cve-2026-41089/",
       "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
       "published": "2026-06-01T14:17:39+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-41089"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-41089",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-121 (CWE-121)",
+          "description": "Stack-based buffer overflow in Windows Netlogon allows an unauthorized attacker to execute code over a network.",
+          "epss_score": 0.00095,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-06-02T01:01:10.042831+09:00",
+      "type": "single",
+      "title": "Critical Windows Netlogon Vulnerability in Attackers’ Crosshairs",
+      "url": "https://www.securityweek.com/critical-windows-netlogon-vulnerability-in-attackers-crosshairs/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-06-01T15:02:17+00:00",
       "keywords": [
         "CVE"
       ],
