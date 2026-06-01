@@ -2,18 +2,19 @@
   "date": "2026-06-02",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
+    "scan_runs": 4,
     "total_articles_max": 1826,
     "matched_articles_max": 158,
-    "new_alerts": 4,
-    "cve_count": 2,
+    "new_alerts": 5,
+    "cve_count": 3,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
-      "CVE-2026-41089"
+      "CVE-2026-41089",
+      "CVE-2026-8732"
     ],
     "keywords_hit": {
-      "CVE": 2,
+      "CVE": 3,
       "Malware": 1,
       "Botnet": 1
     }
@@ -98,6 +99,32 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-02T04:00:54.763098+09:00",
+      "type": "single",
+      "title": "WP Maps Pro Vulnerability Exploited to Take Over WordPress Sites",
+      "url": "https://www.securityweek.com/wp-maps-pro-vulnerability-exploited-to-take-over-wordpress-sites/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-06-01T18:19:23+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-8732"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-8732",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-306 (Missing Authentication)",
+          "description": "The WP Maps Pro plugin for WordPress is vulnerable to Privilege Escalation via Administrator Account Creation in all versions up to, and including, 6.1.0. This is due to the wpgmp_temp_access_ajax AJAX action being registered with wp_ajax_nopriv_ and protected only by a nonce check using the fc-call-nonce nonce, which is publicly embedded into every frontend page via wp_localize_script as the nonce field of the wpgmp_local JavaScript object, rendering the check ineffective as an access control m",
+          "epss_score": 0.00074,
+          "kev": false
+        }
+      ]
     }
   ]
 }
