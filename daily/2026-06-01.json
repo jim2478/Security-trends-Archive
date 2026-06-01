@@ -2,23 +2,25 @@
   "date": "2026-06-01",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 5,
-    "total_articles_max": 1822,
+    "scan_runs": 6,
+    "total_articles_max": 1826,
     "matched_articles_max": 156,
-    "new_alerts": 8,
-    "cve_count": 6,
+    "new_alerts": 10,
+    "cve_count": 9,
     "ioc_count": 0,
-    "merged_count": 0,
+    "merged_count": 1,
     "unique_cves": [
       "CVE-2026-0257",
+      "CVE-2026-0826",
+      "CVE-2026-20182",
       "CVE-2026-8732",
       "CVE-2026-8979",
       "CVE-2026-8980"
     ],
     "keywords_hit": {
-      "CVE": 6,
-      "봇넷": 1,
-      "Malware": 1
+      "CVE": 7,
+      "Malware": 2,
+      "봇넷": 1
     }
   },
   "alerts": [
@@ -203,6 +205,64 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-06-01T22:01:13.482606+09:00",
+      "type": "merged",
+      "cve_ids": [
+        "CVE-2026-0826",
+        "CVE-2026-20182"
+      ],
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "sources": [
+        {
+          "title": "CVE-2026-0826: How an Old Bug Can Feed AI-Powered Impersonation",
+          "url": "https://www.rapid7.com/blog/post/ve-cve-2026-0826-how-an-old-bug-can-feed-ai-powered-impersonation/",
+          "source": "Rapid7 Blog (취약점/모의침투)"
+        },
+        {
+          "title": "CVE-2026-0826: Critical unauthenticated stack buffer overflow in HP Poly VVX and Trio VoIP Phones (FIXED)",
+          "url": "https://www.rapid7.com/blog/post/ve-cve-2026-0826-critical-unauthenticated-stack-buffer-overflow-hp-poly-vvx-trio-voip-phones-fixed/",
+          "source": "Rapid7 Blog (취약점/모의침투)"
+        }
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-0826",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-20182",
+          "cvss_score": 10.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-287 (Authentication Bypass)",
+          "description": "May 2026: This security advisory provides the details and fix information for a vulnerability that was discovered and fixed after the  was disclosed in February 2026. This new advisory is for a new vulnerability in the control connection handshaking. The  section of this advisory includes Show Control Connections guidance to help with system checks.&nbsp;\r\n\r\nA vulnerability in the peering authentication in Cisco Catalyst SD-WAN Controller, formerly SD-WAN vSmart, and Cisco Catalyst SD-WAN Manage",
+          "epss_score": 0.77324,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-06-01T22:01:13.482606+09:00",
+      "type": "single",
+      "title": "Miasma: Supply Chain Attack Targeting RedHat npm Packages",
+      "url": "https://www.wiz.io/blog/miasma-supply-chain-attack-targeting-redhat-npm-packages",
+      "source": "Wiz Blog (클라우드보안) [RSS]",
+      "published": "2026-06-01T12:45:51+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
