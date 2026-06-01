@@ -2,10 +2,10 @@
   "date": "2026-06-02",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
-    "total_articles_max": 1806,
-    "matched_articles_max": 155,
-    "new_alerts": 2,
+    "scan_runs": 3,
+    "total_articles_max": 1826,
+    "matched_articles_max": 158,
+    "new_alerts": 4,
     "cve_count": 2,
     "ioc_count": 0,
     "merged_count": 0,
@@ -13,7 +13,9 @@
       "CVE-2026-41089"
     ],
     "keywords_hit": {
-      "CVE": 2
+      "CVE": 2,
+      "Malware": 1,
+      "Botnet": 1
     }
   },
   "alerts": [
@@ -68,6 +70,34 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-06-02T03:01:13.858711+09:00",
+      "type": "single",
+      "title": "WordPress malware campaign hides payloads in Steam profiles",
+      "url": "https://www.bleepingcomputer.com/news/security/wordpress-malware-campaign-hides-payloads-in-steam-profiles/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-06-01T17:04:16+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-02T03:01:13.858711+09:00",
+      "type": "single",
+      "title": "Dutch Police Dismantle Massive 17-Million-Device Botnet",
+      "url": "https://www.securityweek.com/dutch-police-dismantle-massive-17-million-device-botnet/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-06-01T17:55:26+00:00",
+      "keywords": [
+        "Botnet"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
