@@ -2,15 +2,20 @@
   "date": "2026-06-01",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 1,
+    "scan_runs": 2,
     "total_articles_max": 1802,
-    "matched_articles_max": 153,
-    "new_alerts": 1,
-    "cve_count": 0,
+    "matched_articles_max": 156,
+    "new_alerts": 4,
+    "cve_count": 3,
     "ioc_count": 0,
     "merged_count": 0,
-    "unique_cves": [],
+    "unique_cves": [
+      "CVE-2026-0257",
+      "CVE-2026-8979",
+      "CVE-2026-8980"
+    ],
     "keywords_hit": {
+      "CVE": 3,
       "봇넷": 1
     }
   },
@@ -24,6 +29,82 @@
       "published": "2026-05-31T15:00:30+00:00",
       "keywords": [
         "봇넷"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-01T16:01:11.671597+09:00",
+      "type": "single",
+      "title": "CyberDanube Security Research 20260528-0 | Multiple Vulnerabilities in Multiple Vulnerabilities in Mennekes Amtron Series",
+      "url": "https://seclists.org/fulldisclosure/2026/May/25",
+      "source": "SecLists Full Disclosure (취약점공개)",
+      "published": "2026-06-01T06:24:59+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-8979",
+        "CVE-2026-8980"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-8979",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-287 (Authentication Bypass)",
+          "description": "The Mennekes Amtron series (firmware versions ≤ 5.22.3) is vulnerable to an authentication bypass. An unauthenticated remote attacker can change the password of the user account via a crafted POST request to the /operator/operator endpoint.",
+          "epss_score": 0.00099,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-8980",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-269 (Improper Privilege Management)",
+          "description": "The Mennekes Amtron series (firmware versions ≤ 5.22.3) is vulnerable to privilege escalation. An authenticated low-privileged user can change the passwords of the admin (operator) and manufacturer accounts via crafted POST requests.",
+          "epss_score": 0.00041,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-06-01T16:01:11.671597+09:00",
+      "type": "single",
+      "title": "팔로알토네트웍스 ‘PAN-OS’ 치명적 결함 노출... 글로벌 VPN 뒤흔들어",
+      "url": "http://www.boannews.com/media/view.asp?idx=143887&kind=&sub_kind=",
+      "source": "보안뉴스 (전체) [RSS]",
+      "published": "2026-06-01T06:46:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-0257"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-0257",
+          "cvss_score": 7.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-565 (CWE-565)",
+          "description": "Authentication bypass vulnerabilities in the GlobalProtect portal and gateway of Palo Alto Networks PAN-OS® software allows the attacker to bypass security restrictions and establish an unauthorized VPN connection.\n\nPanorama and Cloud NGFW are not impacted by these issues.",
+          "epss_score": 0.41505,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-06-01T16:01:11.671597+09:00",
+      "type": "single",
+      "title": "bmcweb (OpenBMC web server): four vulnerabilities — two unfixed, GHSA without a CVE",
+      "url": "https://seclists.org/fulldisclosure/2026/May/24",
+      "source": "SecLists Full Disclosure (취약점공개)",
+      "published": "2026-06-01T06:23:52+00:00",
+      "keywords": [
+        "CVE"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
