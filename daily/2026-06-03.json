@@ -2,11 +2,11 @@
   "date": "2026-06-03",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 8,
+    "scan_runs": 9,
     "total_articles_max": 1826,
-    "matched_articles_max": 160,
-    "new_alerts": 10,
-    "cve_count": 6,
+    "matched_articles_max": 161,
+    "new_alerts": 11,
+    "cve_count": 7,
     "ioc_count": 93,
     "merged_count": 0,
     "unique_cves": [
@@ -14,11 +14,12 @@
       "CVE-2025-48595",
       "CVE-2025-8088",
       "CVE-2026-0059",
-      "CVE-2026-33829"
+      "CVE-2026-33829",
+      "CVE-2026-8206"
     ],
     "keywords_hit": {
       "Malware": 6,
-      "CVE": 5
+      "CVE": 6
     }
   },
   "alerts": [
@@ -232,6 +233,32 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-03T08:00:57.371626+09:00",
+      "type": "single",
+      "title": "Critical Kirki flaw exploited to hijack WordPress admin accounts",
+      "url": "https://www.bleepingcomputer.com/news/security/critical-kirki-flaw-exploited-to-hijack-wordpress-admin-accounts/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-06-02T22:12:57+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-8206"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-8206",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-269 (Improper Privilege Management)",
+          "description": "The Kirki – Freeform Page Builder, Website Builder & Customizer plugin for WordPress is vulnerable to privilege escalation via account takeover in all versions 6.0.0 to 6.0.6. This is due to the plugin accepting an arbitrary email address when a username is used in the password reset request. This makes it possible for unauthenticated attackers to send a password reset link for any user registered on the site to their own email address.",
+          "epss_score": 0.00119,
+          "kev": false
+        }
+      ]
     }
   ]
 }
