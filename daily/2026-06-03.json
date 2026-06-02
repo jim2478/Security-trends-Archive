@@ -2,10 +2,10 @@
   "date": "2026-06-03",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 1,
-    "total_articles_max": 1782,
-    "matched_articles_max": 158,
-    "new_alerts": 1,
+    "scan_runs": 2,
+    "total_articles_max": 1806,
+    "matched_articles_max": 159,
+    "new_alerts": 2,
     "cve_count": 2,
     "ioc_count": 0,
     "merged_count": 0,
@@ -14,7 +14,8 @@
       "CVE-2026-0059"
     ],
     "keywords_hit": {
-      "CVE": 1
+      "CVE": 1,
+      "Malware": 1
     }
   },
   "alerts": [
@@ -53,6 +54,20 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-06-03T01:01:02.577930+09:00",
+      "type": "single",
+      "title": "The HazyBeacon Protocol – How Malware Weaponizes Amazon Web Services (AWS) Lambda Function URLs",
+      "url": "https://blog.qualys.com/category/qualys-insights",
+      "source": "Qualys Blog (취약점관리) [RSS]",
+      "published": "2026-06-02T16:00:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
