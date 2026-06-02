@@ -2,11 +2,11 @@
   "date": "2026-06-02",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 7,
+    "scan_runs": 8,
     "total_articles_max": 1826,
     "matched_articles_max": 160,
-    "new_alerts": 8,
-    "cve_count": 5,
+    "new_alerts": 9,
+    "cve_count": 6,
     "ioc_count": 20,
     "merged_count": 0,
     "unique_cves": [
@@ -16,7 +16,7 @@
       "CVE-2026-8732"
     ],
     "keywords_hit": {
-      "CVE": 3,
+      "CVE": 4,
       "Botnet": 3,
       "Malware": 2
     }
@@ -191,6 +191,32 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-02T19:01:13.620478+09:00",
+      "type": "single",
+      "title": "윈도우 넷로그온 치명적 보안취약점…긴급 패치 필요",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=207019",
+      "source": "데일리시큐 (IT&생활) [RSS]",
+      "published": "2026-06-02T09:33:11+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-41089"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-41089",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-121 (CWE-121)",
+          "description": "Stack-based buffer overflow in Windows Netlogon allows an unauthorized attacker to execute code over a network.",
+          "epss_score": 0.00095,
+          "kev": false
+        }
+      ]
     }
   ]
 }
