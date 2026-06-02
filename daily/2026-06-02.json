@@ -2,21 +2,22 @@
   "date": "2026-06-02",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 9,
+    "scan_runs": 10,
     "total_articles_max": 1826,
     "matched_articles_max": 160,
-    "new_alerts": 11,
-    "cve_count": 6,
+    "new_alerts": 12,
+    "cve_count": 7,
     "ioc_count": 63,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2017-17215",
+      "CVE-2024-21182",
       "CVE-2024-3721",
       "CVE-2026-41089",
       "CVE-2026-8732"
     ],
     "keywords_hit": {
-      "CVE": 4,
+      "CVE": 5,
       "Malware": 4,
       "Botnet": 3
     }
@@ -245,6 +246,32 @@
       "ioc_raw_text": "Network Artifacts:\nhxxp[://]158[.]94[.]211[.]76:34567/ceoznp\n158[.]94[.]211[.]76\n91[.]92[.]243[.]79\nscan[.]aryamint[.]com\naryamint[.]com\nHTTP / C2 protocol Artifacts:\nHTTP Header: ‘X-A:’\nHTTP Header: ‘X-S:’\nPOST body pattern: ‘a=iz&b=<data>’\nQuery parameter: ‘ia=<session_id>’\nQuery parameter: ‘ex=<token>’\nQuery parameter: ‘sb=<token>’\nQuery parameter: ‘vc=<token>’\nQuery parameter: ‘df=0’ or ‘df=<token>’\nQuery parameter: ‘kp=<token>’\nQuery parameter: ‘tw=<token>’\nQuery parameter: ‘fp=1’\nHost-based Artifacts\nFile path: %USERPROFILE%\\<random letters>\\<random letters>.js\nRegistry key: HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\\<random letters>\nCrypto IV:\nStatic string: ‘sixteenbyteslong’\nEncoded IV: ‘76E6F6C63756479726E6565647879637’ (reversed hex)\nDetection patterns:\nProcess tree: ‘wscript.exe -> powershell.exe -nop –enc …’\nRegistry key record: ‘HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\\*’, value contains: ‘wscript.exe | .js’\nHTTP POST body: ‘a=iz&b=…’\nHTTP response headers: ‘X-S:’ + ‘X-A:’\nHTTP query parameters:\n‘?ia=<session_id>&ex=’\n‘?ia=<session_id>&sb=’\n‘?ia=<session_id>&vc=’\n‘?ia=<session_id>&df=’\nJavaScript strings:\nMSXML2.XMLHTTP\nScripting.FileSystemObject\nWscript.Shell\nwinmgmts:{impersonationLevel=impersonate}!\\\\.\\root\\cimv2\npowershell\n-nop\n-enc\n76E6F6C63756479726E6565647879637",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-02T21:01:24.026182+09:00",
+      "type": "single",
+      "title": "Oracle WebLogic Vulnerability Exploited in the Wild",
+      "url": "https://www.securityweek.com/oracle-weblogic-vulnerability-exploited-in-the-wild/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-06-02T11:39:04+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2024-21182"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2024-21182",
+          "cvss_score": 7.5,
+          "cvss_severity": "HIGH",
+          "cwe": "NVD-CWE-noinfo (Insufficient Information)",
+          "description": "Vulnerability in the Oracle WebLogic Server product of Oracle Fusion Middleware (component: Core).  Supported versions that are affected are 12.2.1.4.0 and  14.1.1.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via T3, IIOP to compromise Oracle WebLogic Server.  Successful attacks of this vulnerability can result in  unauthorized access to critical data or complete access to all Oracle WebLogic Server accessible data. CVSS 3.1 Base Score 7.5 (Confidenti",
+          "epss_score": 0.87667,
+          "kev": true
+        }
+      ]
     }
   ]
 }
