@@ -2,10 +2,10 @@
   "date": "2026-06-03",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 7,
+    "scan_runs": 8,
     "total_articles_max": 1826,
     "matched_articles_max": 160,
-    "new_alerts": 9,
+    "new_alerts": 10,
     "cve_count": 6,
     "ioc_count": 93,
     "merged_count": 0,
@@ -17,8 +17,8 @@
       "CVE-2026-33829"
     ],
     "keywords_hit": {
-      "CVE": 5,
-      "Malware": 5
+      "Malware": 6,
+      "CVE": 5
     }
   },
   "alerts": [
@@ -212,6 +212,20 @@
       "url": "https://www.darkreading.com/threat-intelligence/china-uses-dual-method-attack-czech-taiwan-orgs",
       "source": "Dark Reading (보안뉴스 종합) [RSS]",
       "published": "2026-06-02T19:50:53+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-03T07:00:52.517291+09:00",
+      "type": "single",
+      "title": "Over 116,000 Mincraft systems infected in WeedHack malware campaign",
+      "url": "https://www.bleepingcomputer.com/news/security/over-116-000-mincraft-systems-infected-in-weedhack-malware-campaign/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-06-02T21:54:49+00:00",
       "keywords": [
         "Malware"
       ],
