@@ -2,10 +2,10 @@
   "date": "2026-06-02",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 6,
+    "scan_runs": 7,
     "total_articles_max": 1826,
     "matched_articles_max": 160,
-    "new_alerts": 7,
+    "new_alerts": 8,
     "cve_count": 5,
     "ioc_count": 20,
     "merged_count": 0,
@@ -17,7 +17,7 @@
     ],
     "keywords_hit": {
       "CVE": 3,
-      "Botnet": 2,
+      "Botnet": 3,
       "Malware": 2
     }
   },
@@ -173,6 +173,20 @@
       "published": "2026-06-01T22:14:19+00:00",
       "keywords": [
         "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-02T15:00:53.979124+09:00",
+      "type": "single",
+      "title": "Zero trust physical security needs trust decisions at the edge",
+      "url": "https://www.helpnetsecurity.com/2026/06/02/chuck-davis-hikvision-zero-trust-physical-security/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-06-02T05:30:53+00:00",
+      "keywords": [
+        "Botnet"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
