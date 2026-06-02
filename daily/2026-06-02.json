@@ -2,23 +2,25 @@
   "date": "2026-06-02",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 10,
+    "scan_runs": 11,
     "total_articles_max": 1826,
-    "matched_articles_max": 160,
-    "new_alerts": 12,
-    "cve_count": 7,
+    "matched_articles_max": 163,
+    "new_alerts": 16,
+    "cve_count": 9,
     "ioc_count": 63,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2017-17215",
       "CVE-2024-21182",
       "CVE-2024-3721",
+      "CVE-2025-48595",
+      "CVE-2026-0826",
       "CVE-2026-41089",
       "CVE-2026-8732"
     ],
     "keywords_hit": {
-      "CVE": 5,
-      "Malware": 4,
+      "CVE": 7,
+      "Malware": 6,
       "Botnet": 3
     }
   },
@@ -272,6 +274,86 @@
           "kev": true
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-06-02T22:01:26.224676+09:00",
+      "type": "single",
+      "title": "Google fixes actively exploited Android vulnerability (CVE-2025-48595)",
+      "url": "https://www.helpnetsecurity.com/2026/06/02/android-vulnerability-exploited-cve-2025-48595/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-06-02T12:17:26+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2025-48595"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2025-48595",
+          "cvss_score": 8.4,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-190 (CWE-190)",
+          "description": "In multiple locations, there is a possible way to achieve code execution due to an integer overflow. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-06-02T22:01:26.224676+09:00",
+      "type": "single",
+      "title": "회의실 전화기가 침투 거점으로…HP 폴리 VoIP 전화기 취약점 패치 권고",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=207022",
+      "source": "데일리시큐 (이슈) [RSS]",
+      "published": "2026-06-02T21:58:07+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-0826"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-0826",
+          "cvss_score": 9.2,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-121 (CWE-121)",
+          "description": "In certain scenarios when the admin has enabled Interactive Connectivity Establishment (ICE), a buffer overflow could enable\n               remote code execution on Poly Voice products on the Linux platform.",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-06-02T22:01:26.224676+09:00",
+      "type": "single",
+      "title": "The Zero-Knowledge Threat Actor and the End of Responsible Disclosure",
+      "url": "https://www.securityweek.com/the-zero-knowledge-threat-actor-and-the-end-of-responsible-disclosure/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-06-02T12:30:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-02T22:01:26.224676+09:00",
+      "type": "single",
+      "title": "New WordPress Malware Uses Steam Profile Comments to Hide C2 Instructions",
+      "url": "https://hackread.com/wordpress-malware-steam-profile-comments-instructions/",
+      "source": "HackRead (해킹/데이터유출) [RSS]",
+      "published": "2026-06-02T12:29:22+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
