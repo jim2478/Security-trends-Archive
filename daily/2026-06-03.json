@@ -2,19 +2,20 @@
   "date": "2026-06-03",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
+    "scan_runs": 3,
     "total_articles_max": 1806,
-    "matched_articles_max": 159,
-    "new_alerts": 2,
-    "cve_count": 2,
+    "matched_articles_max": 160,
+    "new_alerts": 3,
+    "cve_count": 3,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2025-48595",
-      "CVE-2026-0059"
+      "CVE-2026-0059",
+      "CVE-2026-33829"
     ],
     "keywords_hit": {
-      "CVE": 1,
+      "CVE": 2,
       "Malware": 1
     }
   },
@@ -68,6 +69,32 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-03T02:01:13.335087+09:00",
+      "type": "single",
+      "title": "Unpatched NTLM Coercion in Windows search: URI Handler, Same Bug, No CVE, No Fix",
+      "url": "https://www.huntress.com/blog/unpatched-ntlm-coercion-windows-search-uri-handler",
+      "source": "Huntress (매니지드탐지/SMB보안) [RSS]",
+      "published": "2026-06-02T14:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-33829"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-33829",
+          "cvss_score": 4.3,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-200 (Information Exposure)",
+          "description": "Exposure of sensitive information to an unauthorized actor in Windows Snipping Tool allows an unauthorized attacker to perform spoofing over a network.",
+          "epss_score": 0.0026,
+          "kev": false
+        }
+      ]
     }
   ]
 }
