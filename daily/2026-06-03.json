@@ -2,10 +2,10 @@
   "date": "2026-06-03",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 6,
+    "scan_runs": 7,
     "total_articles_max": 1826,
     "matched_articles_max": 160,
-    "new_alerts": 8,
+    "new_alerts": 9,
     "cve_count": 6,
     "ioc_count": 93,
     "merged_count": 0,
@@ -18,7 +18,7 @@
     ],
     "keywords_hit": {
       "CVE": 5,
-      "Malware": 4
+      "Malware": 5
     }
   },
   "alerts": [
@@ -204,6 +204,20 @@
           "kev": true
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-06-03T06:00:53.094959+09:00",
+      "type": "single",
+      "title": "China Uses Dual-Method Cyberattack on Czech Orgs",
+      "url": "https://www.darkreading.com/threat-intelligence/china-uses-dual-method-attack-czech-taiwan-orgs",
+      "source": "Dark Reading (보안뉴스 종합) [RSS]",
+      "published": "2026-06-02T19:50:53+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
