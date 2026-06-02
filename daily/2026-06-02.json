@@ -2,12 +2,12 @@
   "date": "2026-06-02",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 8,
+    "scan_runs": 9,
     "total_articles_max": 1826,
     "matched_articles_max": 160,
-    "new_alerts": 9,
+    "new_alerts": 11,
     "cve_count": 6,
-    "ioc_count": 20,
+    "ioc_count": 63,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2017-17215",
@@ -17,8 +17,8 @@
     ],
     "keywords_hit": {
       "CVE": 4,
-      "Botnet": 3,
-      "Malware": 2
+      "Malware": 4,
+      "Botnet": 3
     }
   },
   "alerts": [
@@ -217,6 +217,34 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-06-02T20:01:09.631846+09:00",
+      "type": "single",
+      "title": "Sophos uncovers AI-powered malware lab built for EDR evasion",
+      "url": "https://www.helpnetsecurity.com/2026/06/02/ai-agents-edr-evasion-techniques/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-06-02T10:13:37+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-02T20:01:09.631846+09:00",
+      "type": "single",
+      "title": "From Fake Purchase Orders to Remote Access: Analyzing the JS.MonoGlyphRAT Threat to US Enterprises",
+      "url": "https://any.run/cybersecurity-blog/monoglyphrat-attacks-us-enterprise/",
+      "source": "ANY.RUN (악성코드샌드박스분석) [RSS]",
+      "published": "2026-06-02T10:34:41+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "Network Artifacts:\nhxxp[://]158[.]94[.]211[.]76:34567/ceoznp\n158[.]94[.]211[.]76\n91[.]92[.]243[.]79\nscan[.]aryamint[.]com\naryamint[.]com\nHTTP / C2 protocol Artifacts:\nHTTP Header: ‘X-A:’\nHTTP Header: ‘X-S:’\nPOST body pattern: ‘a=iz&b=<data>’\nQuery parameter: ‘ia=<session_id>’\nQuery parameter: ‘ex=<token>’\nQuery parameter: ‘sb=<token>’\nQuery parameter: ‘vc=<token>’\nQuery parameter: ‘df=0’ or ‘df=<token>’\nQuery parameter: ‘kp=<token>’\nQuery parameter: ‘tw=<token>’\nQuery parameter: ‘fp=1’\nHost-based Artifacts\nFile path: %USERPROFILE%\\<random letters>\\<random letters>.js\nRegistry key: HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\\<random letters>\nCrypto IV:\nStatic string: ‘sixteenbyteslong’\nEncoded IV: ‘76E6F6C63756479726E6565647879637’ (reversed hex)\nDetection patterns:\nProcess tree: ‘wscript.exe -> powershell.exe -nop –enc …’\nRegistry key record: ‘HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\\*’, value contains: ‘wscript.exe | .js’\nHTTP POST body: ‘a=iz&b=…’\nHTTP response headers: ‘X-S:’ + ‘X-A:’\nHTTP query parameters:\n‘?ia=<session_id>&ex=’\n‘?ia=<session_id>&sb=’\n‘?ia=<session_id>&vc=’\n‘?ia=<session_id>&df=’\nJavaScript strings:\nMSXML2.XMLHTTP\nScripting.FileSystemObject\nWscript.Shell\nwinmgmts:{impersonationLevel=impersonate}!\\\\.\\root\\cimv2\npowershell\n-nop\n-enc\n76E6F6C63756479726E6565647879637",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
