@@ -1,0 +1,58 @@
+{
+  "date": "2026-06-03",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 1,
+    "total_articles_max": 1782,
+    "matched_articles_max": 158,
+    "new_alerts": 1,
+    "cve_count": 2,
+    "ioc_count": 0,
+    "merged_count": 0,
+    "unique_cves": [
+      "CVE-2025-48595",
+      "CVE-2026-0059"
+    ],
+    "keywords_hit": {
+      "CVE": 1
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-06-03T00:03:18.730687+09:00",
+      "type": "single",
+      "title": "Android Update Patches Exploited Zero-Day, 123 Other Vulnerabilities",
+      "url": "https://www.securityweek.com/android-update-patches-exploited-zero-day-123-other-vulnerabilities/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-06-02T14:36:33+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2025-48595",
+        "CVE-2026-0059"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2025-48595",
+          "cvss_score": 8.4,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-190 (CWE-190)",
+          "description": "In multiple locations, there is a possible way to achieve code execution due to an integer overflow. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
+          "epss_score": 6e-05,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-0059",
+          "cvss_score": 8.0,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-122 (CWE-122)",
+          "description": "In multiple functions of sdp_discovery.cc, there is a possible way to achieve code execution due to a heap buffer overflow. This could lead to remote (proximal/adjacent) code execution with no additional execution privileges needed. User interaction is not needed for exploitation.",
+          "epss_score": 9e-05,
+          "kev": false
+        }
+      ]
+    }
+  ]
+}
