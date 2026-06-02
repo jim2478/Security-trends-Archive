@@ -2,11 +2,11 @@
   "date": "2026-06-03",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 5,
-    "total_articles_max": 1807,
+    "scan_runs": 6,
+    "total_articles_max": 1826,
     "matched_articles_max": 160,
-    "new_alerts": 7,
-    "cve_count": 5,
+    "new_alerts": 8,
+    "cve_count": 6,
     "ioc_count": 93,
     "merged_count": 0,
     "unique_cves": [
@@ -17,7 +17,7 @@
       "CVE-2026-33829"
     ],
     "keywords_hit": {
-      "CVE": 4,
+      "CVE": 5,
       "Malware": 4
     }
   },
@@ -178,6 +178,32 @@
       "ioc_raw_text": "Indicators From April 29, 2026 Activity\nAffected Packages\n@cap-js/sqlite@2.2.2\n@cap-js/postgres@2.2.2\n@cap-js/db-service@2.10.1 mbt@1.2.48\nSHA256 Hashes\nsetup.mjs: 4066781fa830224c8bbcc3aa005a396657f9c8f9016f9a64ad44a9d7f5f45e34\nexecution.js: 6f933d00b7d05678eb43c90963a80b8947c4ae6830182f89df31da9f568fea95\nURLs\nhxxps[:]//github[.]com/oven-sh/bun/releases/download/bun-v1.3.13/ (Bun download)\nhxxps[:]//api.github[.]com/search/commits?q=OhNoWhatsGoingOnWithGitHub (dead drop)\nIndicators From April 22, 2026 Activity\nNetwork Indicators\nTable 3 lists the network indicators from this activity.\nIndicator | Type\naudit.checkmarx[.]cx | C2 domain\n94.154.172[.]43 | C2 IP address\ncheckmarx[.]cx | Attacker-controlled domain\n91.195.240[.]123 | Attacker IP address\nTable 3. Network indicators.\nGitHub Indicators\nTable 4 lists the GitHub indicators from this activity.\nIndicator | Type\nhelloworm00/hello-world | Dead drop repository\nbc544f455d7c06c8a1f3446160a6d9a4a8236b11 | Dead drop commit SHA1 hash\nhelloworm00@proton[.]me | Attacker email address\nCommit messages matchingLongLiveTheResistanceAgainstMachines:* | Exfiltration staging\nPublic repositories named<dune-word>-<dune-word>-<3digits> with description \"Checkmarx Configuration Storage\" | Exfiltration repositories\nTable 4. GitHub indicators.\nFiles and Process Indicators\nTable 5 lists the file and process indicators from this activity.\nIndicator | Type | SHA256 hash\nbw_setup.js | Bootstrap script | f35475829991b303c5efc2ee0f343dd38f8614e8b5e69db683923135f85cf60d\nbw1.js | Obfuscated payload | 18f784b3bc9a0bcdcb1a8d7f51bc5f54323fc40cbd874119354ab609bef6e4cb\npackage.json | Malicious manifest | 167ce57ef59a32a6a0ef4137785828077879092d7f83ddbc1755d6e69116e0ad\nsetup.mjsin infected packages | Worm payload\nUnexpectedbunprocess execution | Runtime indicator\n.github/workflows/format-check.ymlon transient branches | Workflow injection\nformat-resultsworkflow artifact | Secret exfiltration\nTable 5. File and process indicators.\nnpm Indicators\nTable 6 lists the npm indicators from this activity.\nIndicator | Type\n@bitwarden/cli@2026.4.0 | Malicious package\nNewpreinstall: \"node setup.mjs\" in package.json | Injected hook\nTable 6. npm indicators.\nIndicators From June 1, 2026 Activity\nAffected Package | Versions\n@redhat-cloud-services/chrome | 2.3.1, 2.3.2\n@redhat-cloud-services/compliance-client | 4.0.3, 4.0.4, 4.0.6\n@redhat-cloud-services/config-manager-client | 5.0.4, 5.0.5, 5.0.7\n@redhat-cloud-services/entitlements-client | 4.0.11, 4.0.12, 4.0.14\n@redhat-cloud-services/eslint-config-redhat-cloud-services | 3.2.1, 3.2.2, 3.2.4\n@redhat-cloud-services/frontend-components | 7.7.2, 7.7.3, 7.7.5\n@redhat-cloud-services/frontend-components-advisor-components | 3.8.2, 3.8.4, 3.8.6\n@redhat-cloud-services/frontend-components-config | 6.11.3, 6.11.4, 6.11.6\n@redhat-cloud-services/frontend-components-config-utilities | 4.11.2, 4.11.3, 4.11.5\n@redhat-cloud-services/frontend-components-notifications | 6.9.2, 6.9.3\n@redhat-cloud-services/frontend-components-remediations | 4.9.2, 4.9.3, 4.9.5\n@redhat-cloud-services/frontend-components-testing | 1.2.1, 1.2.2, 1.2.4\n@redhat-cloud-services/frontend-components-translations | 4.4.1, 4.4.2\n@redhat-cloud-services/frontend-components-utilities | 7.4.1, 7.4.2, 7.4.4\n@redhat-cloud-services/hcc-feo-mcp | 0.3.1, 0.3.2, 0.3.4\n@redhat-cloud-services/hcc-kessel-mcp | 0.3.1, 0.3.2, 0.3.4\n@redhat-cloud-services/hcc-pf-mcp | 0.6.1, 0.6.2, 0.6.4\n@redhat-cloud-services/host-inventory-client | 5.0.3, 5.0.4, 5.0.6\n@redhat-cloud-services/insights-client | 4.0.4, 4.0.5, 4.0.7\n@redhat-cloud-services/integrations-client | 6.0.4, 6.0.5, 6.0.7\n@redhat-cloud-services/javascript-clients-shared | 2.0.8, 2.0.9, 2.0.11\n@redhat-cloud-services/notifications-client | 6.1.4, 6.1.5, 6.1.7\n@redhat-cloud-services/patch-client | 4.0.4, 4.0.5, 4.0.7\n@redhat-cloud-services/quickstarts-client | 4.0.11, 4.0.12, 4.0.14\n@redhat-cloud-services/rbac-client | 9.0.3, 9.0.4, 9.0.6\n@redhat-cloud-services/remediations-client | 4.0.4, 4.0.5, 4.0.7\n@redhat-cloud-services/rule-components | 4.7.2, 4.7.3\n@redhat-cloud-services/sources-client | 3.0.10, 3.0.11, 3.0.13\n@redhat-cloud-services/topological-inventory-client | 3.0.10, 3.0.11, 3.0.13\n@redhat-cloud-services/tsc-transform-imports | 1.2.2, 1.2.4, 1.2.6\n@redhat-cloud-services/types | 3.6.1, 3.6.2, 3.6.4\n@redhat-cloud-services/vulnerabilities-client | 2.1.8, 2.1.9, 2.1.11\nRepository/GitHub\nAttacker-created repository description: \"Miasma: The Spreading Blight\"\nNetwork\nBun runtime download: github.com/oven-sh/bun/releases/download/bun-v1.3.13/\nsetup.mjs: 4066781fa830224c8bbcc3aa005a396657f9c8f9016f9a64ad44a9d7f5f45e34\nexecution.js: 6f933d00b7d05678eb43c90963a80b8947c4ae6830182f89df31da9f568fea95\nTable 3 lists the network indicators from this activity.\nIndicator | Type\naudit.checkmarx[.]cx | C2 domain\n94.154.172[.]43 | C2 IP address\ncheckmarx[.]cx | Attacker-controlled domain\n91.195.240[.]123 | Attacker IP address\nTable 3. Network indicators.",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-03T05:01:07.298249+09:00",
+      "type": "single",
+      "title": "Google June 2026 Android Update Patches 124 Flaws, One Actively Exploited",
+      "url": "https://thehackernews.com/2026/06/google-june-2026-android-update-patches.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-06-02T18:46:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2025-48595"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2025-48595",
+          "cvss_score": 8.4,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-190 (CWE-190)",
+          "description": "In multiple locations, there is a possible way to achieve code execution due to an integer overflow. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
+          "epss_score": 6e-05,
+          "kev": true
+        }
+      ]
     }
   ]
 }
