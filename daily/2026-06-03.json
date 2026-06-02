@@ -2,10 +2,10 @@
   "date": "2026-06-03",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
+    "scan_runs": 4,
     "total_articles_max": 1806,
     "matched_articles_max": 160,
-    "new_alerts": 3,
+    "new_alerts": 4,
     "cve_count": 3,
     "ioc_count": 0,
     "merged_count": 0,
@@ -16,7 +16,7 @@
     ],
     "keywords_hit": {
       "CVE": 2,
-      "Malware": 1
+      "Malware": 2
     }
   },
   "alerts": [
@@ -95,6 +95,20 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-06-03T03:01:05.591533+09:00",
+      "type": "single",
+      "title": "Fake ChatGPT Desktop App Ads Used to Push Password-Stealing Malware",
+      "url": "https://hackread.com/fake-chatgpt-desktop-app-ads-password-stealer-malware/",
+      "source": "HackRead (해킹/데이터유출) [RSS]",
+      "published": "2026-06-02T17:36:48+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
