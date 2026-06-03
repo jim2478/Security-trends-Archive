@@ -2,10 +2,10 @@
   "date": "2026-06-03",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 9,
+    "scan_runs": 10,
     "total_articles_max": 1826,
     "matched_articles_max": 161,
-    "new_alerts": 11,
+    "new_alerts": 12,
     "cve_count": 7,
     "ioc_count": 93,
     "merged_count": 0,
@@ -18,8 +18,8 @@
       "CVE-2026-8206"
     ],
     "keywords_hit": {
-      "Malware": 6,
-      "CVE": 6
+      "CVE": 7,
+      "Malware": 6
     }
   },
   "alerts": [
@@ -259,6 +259,20 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-06-03T15:00:54.531966+09:00",
+      "type": "single",
+      "title": "Agent Threat Rules: Open detection rule format for AI agent security threats",
+      "url": "https://www.helpnetsecurity.com/2026/06/03/agent-threat-rules-ai-detection/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-06-03T05:00:06+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
