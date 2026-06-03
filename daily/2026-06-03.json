@@ -2,10 +2,10 @@
   "date": "2026-06-03",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 12,
+    "scan_runs": 13,
     "total_articles_max": 1826,
-    "matched_articles_max": 161,
-    "new_alerts": 15,
+    "matched_articles_max": 162,
+    "new_alerts": 16,
     "cve_count": 7,
     "ioc_count": 93,
     "merged_count": 0,
@@ -19,7 +19,7 @@
     ],
     "keywords_hit": {
       "Malware": 8,
-      "CVE": 7,
+      "CVE": 8,
       "DDoS": 1
     }
   },
@@ -312,6 +312,20 @@
       "published": "2026-06-03T05:58:39+00:00",
       "keywords": [
         "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-03T18:00:54.297942+09:00",
+      "type": "single",
+      "title": "안드로이드 124개 취약점 패치, 권한상승 취약점 실제 공격에 악용 확인",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=207028",
+      "source": "데일리시큐 (IT&생활) [RSS]",
+      "published": "2026-06-03T08:05:16+00:00",
+      "keywords": [
+        "CVE"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
