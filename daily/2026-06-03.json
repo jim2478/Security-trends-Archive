@@ -2,11 +2,11 @@
   "date": "2026-06-03",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 14,
+    "scan_runs": 15,
     "total_articles_max": 1826,
-    "matched_articles_max": 164,
-    "new_alerts": 17,
-    "cve_count": 7,
+    "matched_articles_max": 165,
+    "new_alerts": 18,
+    "cve_count": 8,
     "ioc_count": 119,
     "merged_count": 0,
     "unique_cves": [
@@ -19,7 +19,7 @@
     ],
     "keywords_hit": {
       "Malware": 9,
-      "CVE": 8,
+      "CVE": 9,
       "DDoS": 1
     }
   },
@@ -344,6 +344,32 @@
       "ioc_raw_text": "[IP] 186[.]158[.]223[.]35\n[Domain] asper1[.]freeddns[.]org\n[Domain] winst0[.]kozow[.]com\n[Domain] country1[.]ignorelist[.]com\n[URL] hxxps://github[.]com/gmz159/u\n[URL] hxxps://github[.]com/DnyP/files\n[URL] hxxps://github[.]com/mgzv/p\n[SHA1] 02819d200d1424882af81cb504b3e8614b32397a\n[SHA1] 1405a3c5e0aeb08012484134e16cdec4ab29b4a4\n[SHA1] 17f8f8f34dfa737f36182fed7ff9e9814a114058\n[SHA1] 2423a5bf0fa7cb9ec09211630a5488629499691b\n[SHA1] 29f1d346a6e71774c7dad25b90f446b2974393df\n[SHA1] 535f4337f261b6da20a3c614eb13270bed2d533a\n[SHA1] 5f1f3689bcf23de1b280b5f35712946da0f7978f\n[SHA1] 69331cfdac792dc79240e6a6bb6e803eabd70beb\n[SHA1] 76253fb55aed707440e808ea78e7101318436b1c\n[SHA1] 901cfa97b1baaf908fd4a02bb52d970f576c4193\n[SHA1] 954722b0c9c678b1313d1f8b204e102842dc5889\n[SHA1] 9803604ec45f31f9ef75bcca1e1310d8ac1fc3a6\n[SHA1] ae4601a19d28332a3ec6ac31b385cdf53be53450\n[SHA1] c2d9d48b3b10bd58cdf5df9463e3ffcd60533ff3\n[SHA1] d2cb0d7a9ad2b5d4ea7c2da8aec62beb37cf36d6\n[SHA1] dad26f61da7b8bccc78364411812be74c025b475\n[SHA1] e05f1767c2a337910ed75e90288838d6d0541164\n[SHA1] e815a9b418d09c2d4bcd074c2c0bc21406eeb22f\n[SHA1] edce72f59e4c1d136cd1946af70d334c19df858d",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-03T20:00:54.079765+09:00",
+      "type": "single",
+      "title": "Unpatched Windows Search URI Vulnerability Lets Attackers Steal NTLMv2 Hashes",
+      "url": "https://thehackernews.com/2026/06/unpatched-windows-search-uri.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-06-03T10:18:52+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-33829"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-33829",
+          "cvss_score": 4.3,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-200 (Information Exposure)",
+          "description": "Exposure of sensitive information to an unauthorized actor in Windows Snipping Tool allows an unauthorized attacker to perform spoofing over a network.",
+          "epss_score": 0.0026,
+          "kev": false
+        }
+      ]
     }
   ]
 }
