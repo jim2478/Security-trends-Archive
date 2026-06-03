@@ -2,10 +2,10 @@
   "date": "2026-06-03",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 11,
+    "scan_runs": 12,
     "total_articles_max": 1826,
     "matched_articles_max": 161,
-    "new_alerts": 13,
+    "new_alerts": 15,
     "cve_count": 7,
     "ioc_count": 93,
     "merged_count": 0,
@@ -18,8 +18,9 @@
       "CVE-2026-8206"
     ],
     "keywords_hit": {
+      "Malware": 8,
       "CVE": 7,
-      "Malware": 7
+      "DDoS": 1
     }
   },
   "alerts": [
@@ -281,6 +282,34 @@
       "url": "https://thehackernews.com/2026/06/weedhack-attacks-minecraft-users.html",
       "source": "The Hacker News (보안뉴스 종합) [RSS]",
       "published": "2026-06-03T06:16:54+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-03T17:00:55.561097+09:00",
+      "type": "single",
+      "title": "MazeBolt brings AI-generated attack simulation to DDoS security testing",
+      "url": "https://www.helpnetsecurity.com/2026/06/03/mazebolt-radar-vectorai/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-06-03T07:03:23+00:00",
+      "keywords": [
+        "DDoS"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-03T17:00:55.561097+09:00",
+      "type": "single",
+      "title": "How Server Farms can shield customers from Malware Attacks",
+      "url": "https://www.cybersecurity-insiders.com/how-server-farms-can-shield-customers-from-malware-attacks/",
+      "source": "Cybersecurity Insiders (보안인사이트)",
+      "published": "2026-06-03T05:58:39+00:00",
       "keywords": [
         "Malware"
       ],
