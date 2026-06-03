@@ -2,10 +2,10 @@
   "date": "2026-06-03",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 10,
+    "scan_runs": 11,
     "total_articles_max": 1826,
     "matched_articles_max": 161,
-    "new_alerts": 12,
+    "new_alerts": 13,
     "cve_count": 7,
     "ioc_count": 93,
     "merged_count": 0,
@@ -19,7 +19,7 @@
     ],
     "keywords_hit": {
       "CVE": 7,
-      "Malware": 6
+      "Malware": 7
     }
   },
   "alerts": [
@@ -269,6 +269,20 @@
       "published": "2026-06-03T05:00:06+00:00",
       "keywords": [
         "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-03T16:00:52.343656+09:00",
+      "type": "single",
+      "title": "Weedhack Attacks Minecraft Users, CountLoader Hits 86K, Miners Spread via Pirated Content",
+      "url": "https://thehackernews.com/2026/06/weedhack-attacks-minecraft-users.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-06-03T06:16:54+00:00",
+      "keywords": [
+        "Malware"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
