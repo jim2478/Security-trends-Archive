@@ -2,10 +2,10 @@
   "date": "2026-06-03",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 15,
+    "scan_runs": 16,
     "total_articles_max": 1826,
     "matched_articles_max": 165,
-    "new_alerts": 18,
+    "new_alerts": 21,
     "cve_count": 8,
     "ioc_count": 119,
     "merged_count": 0,
@@ -18,7 +18,7 @@
       "CVE-2026-8206"
     ],
     "keywords_hit": {
-      "Malware": 9,
+      "Malware": 12,
       "CVE": 9,
       "DDoS": 1
     }
@@ -370,6 +370,48 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-06-03T23:01:17.703096+09:00",
+      "type": "single",
+      "title": "Malware campaign targeting Minecraft users infects over 116,000 systems",
+      "url": "https://www.helpnetsecurity.com/2026/06/03/weedhack-minecraft-malware-campaign/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-06-03T12:29:28+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-03T23:01:17.703096+09:00",
+      "type": "single",
+      "title": "China-Linked TA4922 Hackers Target UK, Europe With New SilentRunLoader Malware",
+      "url": "https://hackread.com/china-ta4922-hackers-uk-europe-silentrunloader-malware/",
+      "source": "HackRead (해킹/데이터유출) [RSS]",
+      "published": "2026-06-03T13:30:03+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-03T23:01:17.703096+09:00",
+      "type": "single",
+      "title": "Impersonation, Click Hijacking, and TDS: Inside a Malware Distribution Ecosystem",
+      "url": "https://research.checkpoint.com/2026/impersonation-click-hijacking-and-tds-inside-a-malware-distribution-ecosystem/",
+      "source": "Check Point Research (취약점/위협연구)",
+      "published": "2026-06-03T13:21:44+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
