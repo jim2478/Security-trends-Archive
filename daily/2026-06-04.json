@@ -2,16 +2,21 @@
   "date": "2026-06-04",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 1,
-    "total_articles_max": 1767,
-    "matched_articles_max": 148,
-    "new_alerts": 2,
-    "cve_count": 0,
+    "scan_runs": 2,
+    "total_articles_max": 1772,
+    "matched_articles_max": 149,
+    "new_alerts": 4,
+    "cve_count": 2,
     "ioc_count": 0,
     "merged_count": 0,
-    "unique_cves": [],
+    "unique_cves": [
+      "CVE-2022-0492",
+      "CVE-2025-48595"
+    ],
     "keywords_hit": {
-      "Malware": 2
+      "Malware": 2,
+      "CVE": 1,
+      "DDoS": 1
     }
   },
   "alerts": [
@@ -38,6 +43,56 @@
       "published": "2026-06-03T21:34:07+00:00",
       "keywords": [
         "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-04T16:01:08.302904+09:00",
+      "type": "single",
+      "title": "안드로이드·리눅스 커널 취약점 긴급 경고…이미 공격에 악용 확인",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=207047",
+      "source": "데일리시큐 (이슈) [RSS]",
+      "published": "2026-06-04T15:33:34+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2022-0492",
+        "CVE-2025-48595"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2022-0492",
+          "cvss_score": 7.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-287 (Authentication Bypass)",
+          "description": "A vulnerability was found in the Linux kernel’s cgroup_release_agent_write in the kernel/cgroup/cgroup-v1.c function. This flaw, under certain circumstances, allows the use of the cgroups v1 release_agent feature to escalate privileges and bypass the namespace isolation unexpectedly.",
+          "epss_score": 0.26341,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2025-48595",
+          "cvss_score": 8.4,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-190 (CWE-190)",
+          "description": "In multiple locations, there is a possible way to achieve code execution due to an integer overflow. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
+          "epss_score": 0.00401,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-06-04T16:01:08.302904+09:00",
+      "type": "single",
+      "title": "KT, 금융 산업 AX 인프라 전략 제시",
+      "url": "http://news.bizwatch.co.kr/article/mobile/2026/06/04/0020/",
+      "source": "비즈워치 (IT바이오) [RSS]",
+      "published": "2026-06-04T06:34:02+00:00",
+      "keywords": [
+        "DDoS"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
