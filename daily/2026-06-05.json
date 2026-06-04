@@ -1,0 +1,89 @@
+{
+  "date": "2026-06-05",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 1,
+    "total_articles_max": 1777,
+    "matched_articles_max": 150,
+    "new_alerts": 3,
+    "cve_count": 2,
+    "ioc_count": 0,
+    "merged_count": 0,
+    "unique_cves": [
+      "CVE-2025-11482",
+      "CVE-2026-21404"
+    ],
+    "keywords_hit": {
+      "CVE": 2,
+      "Malware": 1
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-06-05T01:01:23.099061+09:00",
+      "type": "single",
+      "title": "NAVTOR NavBox",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-155-01",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-06-04T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-21404"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-21404",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-06-05T01:01:23.099061+09:00",
+      "type": "single",
+      "title": "B&R PPT30 Operating System",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-155-03",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-06-04T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2025-11482"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2025-11482",
+          "cvss_score": 8.7,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-770 (CWE-770)",
+          "description": "An Allocation of Resources Without Limits or Throttling vulnerability in the OPC-UA Server used in PPT30 \nOperating System versions before 1.8.0 may be used by an unauthenticated network-based attacker to \npermanently prevent legitimate users from interacting with the service.",
+          "epss_score": 0.00088,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-06-05T01:01:23.099061+09:00",
+      "type": "single",
+      "title": "New IronWorm malware hits 36 packages in npm supply-chain attack",
+      "url": "https://www.bleepingcomputer.com/news/security/new-ironworm-malware-hits-36-packages-in-npm-supply-chain-attack/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-06-04T15:25:37+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
