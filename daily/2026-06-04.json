@@ -2,20 +2,21 @@
   "date": "2026-06-04",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
-    "total_articles_max": 1772,
-    "matched_articles_max": 149,
-    "new_alerts": 4,
-    "cve_count": 2,
+    "scan_runs": 3,
+    "total_articles_max": 1832,
+    "matched_articles_max": 156,
+    "new_alerts": 5,
+    "cve_count": 3,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2022-0492",
-      "CVE-2025-48595"
+      "CVE-2025-48595",
+      "CVE-2026-45247"
     ],
     "keywords_hit": {
       "Malware": 2,
-      "CVE": 1,
+      "CVE": 2,
       "DDoS": 1
     }
   },
@@ -97,6 +98,32 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-04T18:01:04.578090+09:00",
+      "type": "single",
+      "title": "CISA Adds Exploited Magento RCE Flaw CVE-2026-45247 to KEV Catalog",
+      "url": "https://thehackernews.com/2026/06/cisa-adds-exploited-magento-rce-flaw.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-06-04T07:19:33+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-45247"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-45247",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-502 (Deserialization)",
+          "description": "Mirasvit Full Page Cache Warmer for Magento 2 before version 1.11.12 contains a PHP object injection vulnerability that allows unauthenticated attackers to achieve remote code execution by supplying a crafted serialized PHP object in the CacheWarmer cookie. Attackers can exploit the unrestricted call to PHP's native unserialize() function combined with gadget chains available in Magento and its dependencies to execute arbitrary code on the server.",
+          "epss_score": 0.00137,
+          "kev": true
+        }
+      ]
     }
   ]
 }
