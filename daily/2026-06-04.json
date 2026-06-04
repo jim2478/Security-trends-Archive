@@ -2,10 +2,10 @@
   "date": "2026-06-04",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 4,
+    "scan_runs": 5,
     "total_articles_max": 1832,
     "matched_articles_max": 156,
-    "new_alerts": 6,
+    "new_alerts": 8,
     "cve_count": 3,
     "ioc_count": 0,
     "merged_count": 0,
@@ -15,7 +15,7 @@
       "CVE-2026-45247"
     ],
     "keywords_hit": {
-      "Malware": 3,
+      "Malware": 5,
       "CVE": 2,
       "DDoS": 1
     }
@@ -132,6 +132,34 @@
       "url": "https://thehackernews.com/2026/06/fake-sites-mimicking-open-source-tools.html",
       "source": "The Hacker News (보안뉴스 종합) [RSS]",
       "published": "2026-06-04T09:51:28+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-04T21:01:04.446223+09:00",
+      "type": "single",
+      "title": "Chinese Cybercrime Group in Spotlight for Record Campaign Pace",
+      "url": "https://www.securityweek.com/chinese-cybercrime-group-ta4922-in-spotlight-for-record-campaign-pace/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-06-04T11:29:28+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-04T21:01:04.446223+09:00",
+      "type": "single",
+      "title": "Q1 2026 Cyber Risk Report: Insights from 2.1 Million Malware and Phishing Investigations",
+      "url": "https://any.run/cybersecurity-blog/cyber-risk-report-q1-2026/",
+      "source": "ANY.RUN (악성코드샌드박스분석) [RSS]",
+      "published": "2026-06-04T11:18:51+00:00",
       "keywords": [
         "Malware"
       ],
