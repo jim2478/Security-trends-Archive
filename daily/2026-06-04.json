@@ -2,10 +2,10 @@
   "date": "2026-06-04",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
+    "scan_runs": 4,
     "total_articles_max": 1832,
     "matched_articles_max": 156,
-    "new_alerts": 5,
+    "new_alerts": 6,
     "cve_count": 3,
     "ioc_count": 0,
     "merged_count": 0,
@@ -15,7 +15,7 @@
       "CVE-2026-45247"
     ],
     "keywords_hit": {
-      "Malware": 2,
+      "Malware": 3,
       "CVE": 2,
       "DDoS": 1
     }
@@ -124,6 +124,20 @@
           "kev": true
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-06-04T19:01:03.322027+09:00",
+      "type": "single",
+      "title": "Fake Sites Mimicking Open-Source Tools Rank High on Google to Deliver Malware via TDS",
+      "url": "https://thehackernews.com/2026/06/fake-sites-mimicking-open-source-tools.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-06-04T09:51:28+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
