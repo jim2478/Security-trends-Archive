@@ -2,10 +2,10 @@
   "date": "2026-06-05",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 4,
+    "scan_runs": 5,
     "total_articles_max": 1832,
     "matched_articles_max": 161,
-    "new_alerts": 8,
+    "new_alerts": 9,
     "cve_count": 8,
     "ioc_count": 0,
     "merged_count": 0,
@@ -20,7 +20,7 @@
     ],
     "keywords_hit": {
       "CVE": 6,
-      "Malware": 2
+      "Malware": 3
     }
   },
   "alerts": [
@@ -227,6 +227,20 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-06-05T20:01:48.585350+09:00",
+      "type": "single",
+      "title": "Leader in Malware Analysis: ANY.RUN Named Top Vendor in G2 Summer 2026 Awards",
+      "url": "https://any.run/cybersecurity-blog/g2-summer-awards-2026/",
+      "source": "ANY.RUN (악성코드샌드박스분석) [RSS]",
+      "published": "2026-06-05T10:43:14+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
