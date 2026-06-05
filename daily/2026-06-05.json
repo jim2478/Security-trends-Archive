@@ -2,21 +2,24 @@
   "date": "2026-06-05",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
+    "scan_runs": 4,
     "total_articles_max": 1832,
-    "matched_articles_max": 160,
-    "new_alerts": 6,
-    "cve_count": 4,
+    "matched_articles_max": 161,
+    "new_alerts": 8,
+    "cve_count": 8,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2025-11482",
+      "CVE-2026-20127",
+      "CVE-2026-20182",
       "CVE-2026-20230",
       "CVE-2026-20245",
-      "CVE-2026-21404"
+      "CVE-2026-21404",
+      "CVE-2026-3300"
     ],
     "keywords_hit": {
-      "CVE": 4,
+      "CVE": 6,
       "Malware": 2
     }
   },
@@ -152,6 +155,78 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-05T18:03:13.380167+09:00",
+      "type": "single",
+      "title": "Cisco SD-WAN 0-day exploited, no patch available (CVE-2026-20245)",
+      "url": "https://www.helpnetsecurity.com/2026/06/05/cisco-sd-wan-cve-2026-20245-0-day-exploited/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-06-05T08:44:37+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-20127",
+        "CVE-2026-20182",
+        "CVE-2026-20245"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-20127",
+          "cvss_score": 10.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-287 (Authentication Bypass)",
+          "description": "A vulnerability in the peering authentication in Cisco Catalyst SD-WAN Controller, formerly SD-WAN vSmart, and Cisco Catalyst SD-WAN Manager, formerly SD-WAN vManage, could allow an unauthenticated, remote attacker to bypass authentication and obtain administrative privileges on an affected system.\r\n\r\nThis vulnerability exists because the peering authentication mechanism in an affected system is not working properly. An attacker could exploit this vulnerability by sending crafted requests to an ",
+          "epss_score": 0.54797,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-20182",
+          "cvss_score": 10.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-287 (Authentication Bypass)",
+          "description": "May 2026: This security advisory provides the details and fix information for a vulnerability that was discovered and fixed after the  was disclosed in February 2026. This new advisory is for a new vulnerability in the control connection handshaking. The  section of this advisory includes Show Control Connections guidance to help with system checks.&nbsp;\r\n\r\nA vulnerability in the peering authentication in Cisco Catalyst SD-WAN Controller, formerly SD-WAN vSmart, and Cisco Catalyst SD-WAN Manage",
+          "epss_score": 0.83125,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-20245",
+          "cvss_score": 7.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-116 (CWE-116)",
+          "description": "A vulnerability in the CLI of Cisco Catalyst SD-WAN Manager, formerly SD-WAN vManage, could allow an authenticated, local attacker to execute arbitrary commands as root by supplying a crafted file to the affected system.\r\n\r\nThis vulnerability is due to insufficient validation of user-supplied input. An attacker could exploit this vulnerability by uploading a crafted file to the affected system. A successful exploit could allow the attacker to perform command injection attacks on an affected syst",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-06-05T18:03:13.380167+09:00",
+      "type": "single",
+      "title": "Hackers Exploit Critical Everest Forms Pro WordPress Plugin Flaw to Take Over Sites",
+      "url": "https://thehackernews.com/2026/06/hackers-exploit-critical-everest-forms.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-06-05T08:38:59+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-3300"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-3300",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-94 (Code Injection)",
+          "description": "The Everest Forms Pro plugin for WordPress is vulnerable to Remote Code Execution via PHP Code Injection in all versions up to, and including, 1.9.12. This is due to the Calculation Addon's process_filter() function concatenating user-submitted form field values into a PHP code string without proper escaping before passing it to eval(). The sanitize_text_field() function applied to input does not escape single quotes or other PHP code context characters. This makes it possible for unauthenticate",
+          "epss_score": 0.00313,
+          "kev": false
+        }
+      ]
     }
   ]
 }
