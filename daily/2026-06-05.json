@@ -2,21 +2,22 @@
   "date": "2026-06-05",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
-    "total_articles_max": 1802,
-    "matched_articles_max": 156,
-    "new_alerts": 4,
-    "cve_count": 3,
+    "scan_runs": 3,
+    "total_articles_max": 1832,
+    "matched_articles_max": 160,
+    "new_alerts": 6,
+    "cve_count": 4,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2025-11482",
       "CVE-2026-20230",
+      "CVE-2026-20245",
       "CVE-2026-21404"
     ],
     "keywords_hit": {
-      "CVE": 3,
-      "Malware": 1
+      "CVE": 4,
+      "Malware": 2
     }
   },
   "alerts": [
@@ -111,6 +112,46 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-06-05T17:01:08.556900+09:00",
+      "type": "single",
+      "title": "[긴급] 시스코 SD-WAN 매니저 제로데이 악용 주의…루트 권한 상승 위험",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=207060",
+      "source": "데일리시큐 (IT&생활) [RSS]",
+      "published": "2026-06-05T07:52:10+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-20245"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-20245",
+          "cvss_score": 7.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-116 (CWE-116)",
+          "description": "A vulnerability in the CLI of Cisco Catalyst SD-WAN Manager, formerly SD-WAN vManage, could allow an authenticated, local attacker to execute arbitrary commands as root by supplying a crafted file to the affected system.\r\n\r\nThis vulnerability is due to insufficient validation of user-supplied input. An attacker could exploit this vulnerability by uploading a crafted file to the affected system. A successful exploit could allow the attacker to perform command injection attacks on an affected syst",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-06-05T17:01:08.556900+09:00",
+      "type": "single",
+      "title": "FIFA World Cup 2026 Scams Are Already Live: Fake Sites, Banking Malware, and Stolen Logins",
+      "url": "https://thehackernews.com/2026/06/fifa-world-cup-2026-scams-are-already.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-06-05T07:01:41+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
