@@ -2,16 +2,16 @@
   "date": "2026-06-06",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
+    "scan_runs": 4,
     "total_articles_max": 1816,
     "matched_articles_max": 163,
-    "new_alerts": 5,
+    "new_alerts": 6,
     "cve_count": 0,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [],
     "keywords_hit": {
-      "Malware": 4,
+      "Malware": 5,
       "CVE": 1
     }
   },
@@ -79,6 +79,20 @@
       "url": "https://hackread.com/miasma-malware-red-hat-packages-github-account/",
       "source": "HackRead (해킹/데이터유출) [RSS]",
       "published": "2026-06-05T19:14:40+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-06T17:00:56.094343+09:00",
+      "type": "single",
+      "title": "Miasma Worm Hits 73 Microsoft GitHub Repositories in Major Supply Chain Attack",
+      "url": "https://thehackernews.com/2026/06/miasma-worm-hits-73-microsoft-github.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-06-06T06:58:04+00:00",
       "keywords": [
         "Malware"
       ],
