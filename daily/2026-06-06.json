@@ -2,17 +2,20 @@
   "date": "2026-06-06",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 4,
-    "total_articles_max": 1816,
+    "scan_runs": 5,
+    "total_articles_max": 1832,
     "matched_articles_max": 163,
-    "new_alerts": 6,
-    "cve_count": 0,
+    "new_alerts": 8,
+    "cve_count": 2,
     "ioc_count": 0,
     "merged_count": 0,
-    "unique_cves": [],
+    "unique_cves": [
+      "CVE-2026-28318",
+      "CVE-2026-41089"
+    ],
     "keywords_hit": {
       "Malware": 5,
-      "CVE": 1
+      "CVE": 3
     }
   },
   "alerts": [
@@ -99,6 +102,58 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-06T18:01:13.749436+09:00",
+      "type": "single",
+      "title": "CISA Adds Actively Exploited SolarWinds Serv-U DoS Flaw to KEV Catalog",
+      "url": "https://thehackernews.com/2026/06/cisa-adds-actively-exploited-solarwinds.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-06-06T08:14:31+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-28318"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-28318",
+          "cvss_score": 7.5,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-400 (Resource Exhaustion)",
+          "description": "SolarWinds Serv-U is susceptible to specially crafted POST requests that crash the Serv-U service without authentication using Content-Encoding: deflate. Mitigation steps are provided to secure customer environments in the SolarWinds Trust Center if you are unable to deploy the update",
+          "epss_score": 0.00062,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-06-06T18:01:13.749436+09:00",
+      "type": "single",
+      "title": "전 세계 윈도우 서버가 표적... ‘Netlogon’ 제로클릭 취약점",
+      "url": "http://www.boannews.com/media/view.asp?idx=143912&kind=&sub_kind=",
+      "source": "보안뉴스 (전체) [RSS]",
+      "published": "2026-06-06T08:12:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-41089"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-41089",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
     }
   ]
 }
