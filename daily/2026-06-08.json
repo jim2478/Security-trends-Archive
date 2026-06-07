@@ -1,0 +1,49 @@
+{
+  "date": "2026-06-08",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 1,
+    "total_articles_max": 1806,
+    "matched_articles_max": 162,
+    "new_alerts": 1,
+    "cve_count": 1,
+    "ioc_count": 0,
+    "merged_count": 0,
+    "unique_cves": [
+      "CVE-2021-27137"
+    ],
+    "keywords_hit": {
+      "Botnet": 1,
+      "Malware": 1
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-06-08T00:02:56.620094+09:00",
+      "type": "single",
+      "title": "C0XMO botnet spreads via DD-WRT router flaw, kills rival malware",
+      "url": "https://www.bleepingcomputer.com/news/security/c0xmo-botnet-spreads-via-dd-wrt-router-flaw-kills-rival-malware/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-06-07T14:17:46+00:00",
+      "keywords": [
+        "Botnet",
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2021-27137"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2021-27137",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    }
+  ]
+}
