@@ -2,19 +2,21 @@
   "date": "2026-06-08",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 1,
+    "scan_runs": 2,
     "total_articles_max": 1806,
     "matched_articles_max": 162,
-    "new_alerts": 1,
-    "cve_count": 1,
+    "new_alerts": 2,
+    "cve_count": 2,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
-      "CVE-2021-27137"
+      "CVE-2021-27137",
+      "CVE-2026-28318"
     ],
     "keywords_hit": {
       "Botnet": 1,
-      "Malware": 1
+      "Malware": 1,
+      "CVE": 1
     }
   },
   "alerts": [
@@ -42,6 +44,32 @@
           "description": null,
           "epss_score": null,
           "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-06-08T01:00:55.926985+09:00",
+      "type": "single",
+      "title": "파일전송 서버 노린 서비스 중단 공격 확산…솔라윈즈 서브유 긴급 패치",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=207072",
+      "source": "데일리시큐 (이슈) [RSS]",
+      "published": "2026-06-08T00:08:50+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-28318"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-28318",
+          "cvss_score": 7.5,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-400 (Resource Exhaustion)",
+          "description": "SolarWinds Serv-U is susceptible to specially crafted POST requests that crash the Serv-U service without authentication using Content-Encoding: deflate. Mitigation steps are provided to secure customer environments in the SolarWinds Trust Center if you are unable to deploy the update",
+          "epss_score": 0.06678,
+          "kev": true
         }
       ]
     }
