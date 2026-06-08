@@ -2,16 +2,19 @@
   "date": "2026-06-09",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 1,
-    "total_articles_max": 1812,
+    "scan_runs": 2,
+    "total_articles_max": 1816,
     "matched_articles_max": 160,
-    "new_alerts": 1,
-    "cve_count": 0,
+    "new_alerts": 2,
+    "cve_count": 1,
     "ioc_count": 0,
     "merged_count": 0,
-    "unique_cves": [],
+    "unique_cves": [
+      "CVE-2026-50751"
+    ],
     "keywords_hit": {
-      "Malware": 1
+      "Malware": 1,
+      "CVE": 1
     }
   },
   "alerts": [
@@ -28,6 +31,32 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-09T01:01:00.548230+09:00",
+      "type": "single",
+      "title": "Critical Check Point VPN Flaw Exploited to Bypass Passwords in IKEv1 Setups",
+      "url": "https://thehackernews.com/2026/06/critical-check-point-vpn-flaw-exploited.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-06-08T14:17:39+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-50751"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-50751",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": "CWE-287 (Authentication Bypass)",
+          "description": "A logic flow weakness in Remote Access and Mobile Access certificate validation in deprecated IKEv1 key exchange allows an unauthenticated remote attacker to bypass user authentication and establish a remote access VPN connection without a valid user password.",
+          "epss_score": 0.0001,
+          "kev": false
+        }
+      ]
     }
   ]
 }
