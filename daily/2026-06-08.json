@@ -2,10 +2,10 @@
   "date": "2026-06-08",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 4,
+    "scan_runs": 5,
     "total_articles_max": 1832,
     "matched_articles_max": 162,
-    "new_alerts": 4,
+    "new_alerts": 6,
     "cve_count": 3,
     "ioc_count": 0,
     "merged_count": 0,
@@ -15,9 +15,9 @@
       "CVE-2026-50751"
     ],
     "keywords_hit": {
-      "Malware": 2,
+      "Malware": 3,
       "CVE": 2,
-      "Botnet": 1
+      "Botnet": 2
     }
   },
   "alerts": [
@@ -113,6 +113,34 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-06-08T23:03:15.306750+09:00",
+      "type": "single",
+      "title": "Silent Ransom Group Uses Fast Flux Botnet to Hide Law Firm Leak Sites",
+      "url": "https://hackread.com/silent-ransom-group-fast-flux-botnet-leak-sites/",
+      "source": "HackRead (해킹/데이터유출) [RSS]",
+      "published": "2026-06-08T13:40:06+00:00",
+      "keywords": [
+        "Botnet"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-08T23:03:15.306750+09:00",
+      "type": "single",
+      "title": "AI Phishing Is Crushing SOCs with Alert Volume: How to Reduce Tier 1 Overload",
+      "url": "https://thehackernews.com/2026/06/ai-phishing-is-crushing-socs-with-alert.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-06-08T13:00:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
