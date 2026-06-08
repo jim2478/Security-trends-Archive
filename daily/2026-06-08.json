@@ -2,21 +2,22 @@
   "date": "2026-06-08",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
-    "total_articles_max": 1806,
+    "scan_runs": 4,
+    "total_articles_max": 1832,
     "matched_articles_max": 162,
-    "new_alerts": 3,
-    "cve_count": 2,
+    "new_alerts": 4,
+    "cve_count": 3,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2021-27137",
-      "CVE-2026-28318"
+      "CVE-2026-28318",
+      "CVE-2026-50751"
     ],
     "keywords_hit": {
       "Malware": 2,
-      "Botnet": 1,
-      "CVE": 1
+      "CVE": 2,
+      "Botnet": 1
     }
   },
   "alerts": [
@@ -86,6 +87,32 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-08T22:01:04.149154+09:00",
+      "type": "single",
+      "title": "Qilin ransomware affiliate exploited Check Point VPN zero-day (CVE-2026-50751)",
+      "url": "https://www.helpnetsecurity.com/2026/06/08/check-point-cve-2026-50751-qilin-ransomware/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-06-08T12:23:16+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-50751"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-50751",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": "CWE-287 (Authentication Bypass)",
+          "description": "A logic flow weakness in Remote Access and Mobile Access certificate validation in deprecated IKEv1 key exchange allows an unauthenticated remote attacker to bypass user authentication and establish a remote access VPN connection without a valid user password.",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
     }
   ]
 }
