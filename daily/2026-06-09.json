@@ -2,10 +2,10 @@
   "date": "2026-06-09",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
-    "total_articles_max": 1816,
+    "scan_runs": 3,
+    "total_articles_max": 1836,
     "matched_articles_max": 160,
-    "new_alerts": 2,
+    "new_alerts": 3,
     "cve_count": 1,
     "ioc_count": 0,
     "merged_count": 0,
@@ -13,7 +13,7 @@
       "CVE-2026-50751"
     ],
     "keywords_hit": {
-      "Malware": 1,
+      "Malware": 2,
       "CVE": 1
     }
   },
@@ -57,6 +57,20 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-06-09T02:00:59.281921+09:00",
+      "type": "single",
+      "title": "Hackers Clone Ghidra, dnSpy and Other Tool Sites to Spread Malware",
+      "url": "https://hackread.com/hackers-clone-ghidra-dnspy-tool-sites-spread-malware/",
+      "source": "HackRead (해킹/데이터유출) [RSS]",
+      "published": "2026-06-08T16:56:23+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
