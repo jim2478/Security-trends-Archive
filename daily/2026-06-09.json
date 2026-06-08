@@ -2,10 +2,10 @@
   "date": "2026-06-09",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 4,
+    "scan_runs": 5,
     "total_articles_max": 1836,
     "matched_articles_max": 160,
-    "new_alerts": 5,
+    "new_alerts": 6,
     "cve_count": 2,
     "ioc_count": 0,
     "merged_count": 0,
@@ -14,7 +14,7 @@
       "CVE-2026-50751"
     ],
     "keywords_hit": {
-      "Malware": 3,
+      "Malware": 4,
       "CVE": 2
     }
   },
@@ -106,6 +106,20 @@
       "url": "https://www.bleepingcomputer.com/news/security/new-shai-hulud-attack-trojanizes-19-science-focused-pypi-packages/",
       "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
       "published": "2026-06-08T20:41:35+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-09T08:00:55.651297+09:00",
+      "type": "single",
+      "title": "NFCShare Android malware spreads via fake banking app updates on GitHub",
+      "url": "https://www.bleepingcomputer.com/news/security/nfcshare-android-malware-spreads-via-fake-banking-app-updates-on-github/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-06-08T22:11:58+00:00",
       "keywords": [
         "Malware"
       ],
