@@ -2,20 +2,21 @@
   "date": "2026-06-09",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 5,
+    "scan_runs": 6,
     "total_articles_max": 1836,
     "matched_articles_max": 160,
-    "new_alerts": 6,
-    "cve_count": 2,
+    "new_alerts": 8,
+    "cve_count": 3,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2026-23111",
+      "CVE-2026-25112",
       "CVE-2026-50751"
     ],
     "keywords_hit": {
-      "Malware": 4,
-      "CVE": 2
+      "Malware": 5,
+      "CVE": 3
     }
   },
   "alerts": [
@@ -120,6 +121,46 @@
       "url": "https://www.bleepingcomputer.com/news/security/nfcshare-android-malware-spreads-via-fake-banking-app-updates-on-github/",
       "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
       "published": "2026-06-08T22:11:58+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-09T15:00:58.403727+09:00",
+      "type": "single",
+      "title": "SEC Consult SA-20260608-0 :: Privilege Escalation via Binary Planting in Genetec-provided RabbitMQ in multiple Genetec products",
+      "url": "https://seclists.org/fulldisclosure/2026/Jun/2",
+      "source": "SecLists Full Disclosure (취약점공개)",
+      "published": "2026-06-09T05:32:32+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-25112"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-25112",
+          "cvss_score": 7.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-732 (CWE-732)",
+          "description": "A high-severity vulnerability in the deployment of Genetec RabbitMQ that allows a privilege escalation attack.",
+          "epss_score": 0.00013,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-06-09T15:00:58.403727+09:00",
+      "type": "single",
+      "title": "Malware ships with bugs that defenders could use against it",
+      "url": "https://www.helpnetsecurity.com/2026/06/09/malware-source-code-bugs-research/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-06-09T05:00:48+00:00",
       "keywords": [
         "Malware"
       ],
