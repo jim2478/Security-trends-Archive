@@ -2,14 +2,15 @@
   "date": "2026-06-09",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 9,
+    "scan_runs": 10,
     "total_articles_max": 1836,
     "matched_articles_max": 160,
-    "new_alerts": 12,
-    "cve_count": 12,
+    "new_alerts": 13,
+    "cve_count": 13,
     "ioc_count": 1,
     "merged_count": 0,
     "unique_cves": [
+      "CVE-2025-8088",
       "CVE-2026-11645",
       "CVE-2026-23111",
       "CVE-2026-2441",
@@ -23,7 +24,7 @@
       "CVE-2026-5281"
     ],
     "keywords_hit": {
-      "CVE": 7,
+      "CVE": 8,
       "Malware": 5
     }
   },
@@ -326,6 +327,32 @@
           "cwe": "CWE-416 (Use After Free)",
           "description": "Use after free in Dawn in Google Chrome prior to 146.0.7680.178 allowed a remote attacker who had compromised the renderer process to execute arbitrary code via a crafted HTML page. (Chromium security severity: High)",
           "epss_score": 0.00915,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-06-09T22:01:15.432297+09:00",
+      "type": "single",
+      "title": "WinRAR Flaw Exploited by Russia-Aligned Groups to Deploy Stealers in Ukraine",
+      "url": "https://thehackernews.com/2026/06/winrar-flaw-exploited-by-russia-aligned.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-06-09T12:26:10+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2025-8088"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2025-8088",
+          "cvss_score": 8.4,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-35 (CWE-35)",
+          "description": "A path traversal vulnerability affecting the Windows version of WinRAR allows the attackers to execute arbitrary code by crafting malicious archive files. This vulnerability was exploited in the wild and was discovered by Anton Cherepanov, Peter Košinár, and Peter Strýček\n     from ESET.",
+          "epss_score": 0.10201,
           "kev": true
         }
       ]
