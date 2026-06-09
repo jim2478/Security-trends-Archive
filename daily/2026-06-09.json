@@ -2,23 +2,29 @@
   "date": "2026-06-09",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 8,
+    "scan_runs": 9,
     "total_articles_max": 1836,
     "matched_articles_max": 160,
-    "new_alerts": 10,
-    "cve_count": 5,
+    "new_alerts": 12,
+    "cve_count": 12,
     "ioc_count": 1,
     "merged_count": 0,
     "unique_cves": [
+      "CVE-2026-11645",
       "CVE-2026-23111",
+      "CVE-2026-2441",
       "CVE-2026-25112",
+      "CVE-2026-3909",
+      "CVE-2026-3910",
       "CVE-2026-42271",
+      "CVE-2026-48710",
       "CVE-2026-50751",
-      "CVE-2026-52806"
+      "CVE-2026-52806",
+      "CVE-2026-5281"
     ],
     "keywords_hit": {
-      "Malware": 5,
-      "CVE": 5
+      "CVE": 7,
+      "Malware": 5
     }
   },
   "alerts": [
@@ -219,6 +225,108 @@
           "description": null,
           "epss_score": null,
           "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-06-09T21:02:45.768719+09:00",
+      "type": "single",
+      "title": "LiteLLM vulnerability under active attack, CISA warns (CVE-2026-42271)",
+      "url": "https://www.helpnetsecurity.com/2026/06/09/litellm-vulnerability-under-active-attack-cisa-warns-cve-2026-42271/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-06-09T11:37:31+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-42271",
+        "CVE-2026-48710"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-42271",
+          "cvss_score": 8.7,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-77 (Command Injection)",
+          "description": "LiteLLM is a proxy server (AI Gateway) to call LLM APIs in OpenAI (or native) format. From version 1.74.2 to before version 1.83.7, two endpoints used to preview an MCP server before saving it — POST /mcp-rest/test/connection and POST /mcp-rest/test/tools/list — accepted a full server configuration in the request body, including the command, args, and env fields used by the stdio transport. When called with a stdio configuration, the endpoints attempted to connect, which spawned the supplied com",
+          "epss_score": 0.04116,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-48710",
+          "cvss_score": 6.5,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-444 (CWE-444)",
+          "description": "Starlette is a lightweight ASGI framework/toolkit. Prior to version 1.0.1, the HTTP `Host` request header was not validated before being used to reconstruct `request.url`. Because the routing algorithm relies on the raw HTTP path while `request.url` is rebuilt from the `Host` header, a malformed header could make `request.url.path` differ from the path that was actually requested. Middleware and endpoints that apply security restrictions based on `request.url` (rather than the raw `scope` path) ",
+          "epss_score": 0.00353,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-06-09T21:02:45.768719+09:00",
+      "type": "single",
+      "title": "Google patches Chrome zero-day exploited in the wild (CVE-2026-11645)",
+      "url": "https://www.helpnetsecurity.com/2026/06/09/google-chrome-zero-day-cve-2026-11645/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-06-09T11:24:41+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-11645",
+        "CVE-2026-2441",
+        "CVE-2026-3909",
+        "CVE-2026-3910",
+        "CVE-2026-5281"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-11645",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-125 (Out-of-bounds Read)",
+          "description": "Out of bounds read and write in V8 in Google Chrome prior to 149.0.7827.103 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-2441",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-416 (Use After Free)",
+          "description": "Use after free in CSS in Google Chrome prior to 145.0.7632.75 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
+          "epss_score": 0.23127,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-3909",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-787 (Out-of-bounds Write)",
+          "description": "Out of bounds write in Skia in Google Chrome prior to 146.0.7680.75 allowed a remote attacker to perform out of bounds memory access via a crafted HTML page. (Chromium security severity: High)",
+          "epss_score": 0.00454,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-3910",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-94 (Code Injection)",
+          "description": "Inappropriate implementation in V8 in Google Chrome prior to 146.0.7680.75 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
+          "epss_score": 0.03241,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-5281",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-416 (Use After Free)",
+          "description": "Use after free in Dawn in Google Chrome prior to 146.0.7680.178 allowed a remote attacker who had compromised the renderer process to execute arbitrary code via a crafted HTML page. (Chromium security severity: High)",
+          "epss_score": 0.00915,
+          "kev": true
         }
       ]
     }
