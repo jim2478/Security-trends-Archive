@@ -2,22 +2,23 @@
   "date": "2026-06-09",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 7,
+    "scan_runs": 8,
     "total_articles_max": 1836,
     "matched_articles_max": 160,
-    "new_alerts": 9,
-    "cve_count": 4,
-    "ioc_count": 0,
+    "new_alerts": 10,
+    "cve_count": 5,
+    "ioc_count": 1,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2026-23111",
       "CVE-2026-25112",
       "CVE-2026-42271",
-      "CVE-2026-50751"
+      "CVE-2026-50751",
+      "CVE-2026-52806"
     ],
     "keywords_hit": {
       "Malware": 5,
-      "CVE": 4
+      "CVE": 5
     }
   },
   "alerts": [
@@ -192,6 +193,32 @@
           "description": "LiteLLM is a proxy server (AI Gateway) to call LLM APIs in OpenAI (or native) format. From version 1.74.2 to before version 1.83.7, two endpoints used to preview an MCP server before saving it — POST /mcp-rest/test/connection and POST /mcp-rest/test/tools/list — accepted a full server configuration in the request body, including the command, args, and env fields used by the stdio transport. When called with a stdio configuration, the endpoints attempted to connect, which spawned the supplied com",
           "epss_score": 0.04116,
           "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-06-09T18:01:48.127877+09:00",
+      "type": "single",
+      "title": "CVE-2026-52806: Authenticated RCE via Argument Injection in Gogs (FIXED as of June 7, 2026)",
+      "url": "https://www.rapid7.com/blog/post/ve-authenticated-rce-via-argument-injection-gogs-unfixed/",
+      "source": "Rapid7 Blog (취약점/모의침투)",
+      "published": "2026-05-28T12:00:00.000Z",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "[Domain] c[.]error",
+      "cve_ids": [
+        "CVE-2026-52806"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-52806",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
         }
       ]
     }
