@@ -2,21 +2,22 @@
   "date": "2026-06-09",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 6,
+    "scan_runs": 7,
     "total_articles_max": 1836,
     "matched_articles_max": 160,
-    "new_alerts": 8,
-    "cve_count": 3,
+    "new_alerts": 9,
+    "cve_count": 4,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2026-23111",
       "CVE-2026-25112",
+      "CVE-2026-42271",
       "CVE-2026-50751"
     ],
     "keywords_hit": {
       "Malware": 5,
-      "CVE": 3
+      "CVE": 4
     }
   },
   "alerts": [
@@ -167,6 +168,32 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-09T16:00:59.296882+09:00",
+      "type": "single",
+      "title": "LiteLLM Flaw CVE-2026-42271 Exploited in the Wild, Chains to Unauthenticated RCE",
+      "url": "https://thehackernews.com/2026/06/litellm-flaw-cve-2026-42271-exploited.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-06-09T06:26:14+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-42271"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-42271",
+          "cvss_score": 8.7,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-77 (Command Injection)",
+          "description": "LiteLLM is a proxy server (AI Gateway) to call LLM APIs in OpenAI (or native) format. From version 1.74.2 to before version 1.83.7, two endpoints used to preview an MCP server before saving it — POST /mcp-rest/test/connection and POST /mcp-rest/test/tools/list — accepted a full server configuration in the request body, including the command, args, and env fields used by the stdio transport. When called with a stdio configuration, the endpoints attempted to connect, which spawned the supplied com",
+          "epss_score": 0.04116,
+          "kev": true
+        }
+      ]
     }
   ]
 }
