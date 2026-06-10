@@ -2,10 +2,10 @@
   "date": "2026-06-11",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
+    "scan_runs": 3,
     "total_articles_max": 1822,
     "matched_articles_max": 144,
-    "new_alerts": 4,
+    "new_alerts": 5,
     "cve_count": 3,
     "ioc_count": 0,
     "merged_count": 0,
@@ -17,7 +17,7 @@
     "keywords_hit": {
       "CVE": 2,
       "Botnet": 2,
-      "Malware": 1
+      "Malware": 2
     }
   },
   "alerts": [
@@ -109,6 +109,20 @@
       "published": "2026-06-10T16:08:42+00:00",
       "keywords": [
         "Botnet"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-11T03:01:12.504067+09:00",
+      "type": "single",
+      "title": "Scammers Use TikTok and Instagram Reels to Spread Vidar Infostealer",
+      "url": "https://hackread.com/scammers-tiktok-instagram-reels-vidar-infostealer/",
+      "source": "HackRead (해킹/데이터유출) [RSS]",
+      "published": "2026-06-10T17:24:16+00:00",
+      "keywords": [
+        "Malware"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
