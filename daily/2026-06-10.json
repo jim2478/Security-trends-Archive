@@ -2,22 +2,25 @@
   "date": "2026-06-10",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 4,
+    "scan_runs": 5,
     "total_articles_max": 1852,
     "matched_articles_max": 159,
-    "new_alerts": 7,
-    "cve_count": 5,
+    "new_alerts": 9,
+    "cve_count": 8,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
+      "CVE-2023-38035",
       "CVE-2023-38831",
       "CVE-2025-8088",
+      "CVE-2026-10520",
+      "CVE-2026-10523",
       "CVE-2026-11645",
       "CVE-2026-34621",
       "CVE-2026-44963"
     ],
     "keywords_hit": {
-      "CVE": 5,
+      "CVE": 7,
       "Malware": 2
     }
   },
@@ -173,6 +176,66 @@
       "published": "2026-06-10T08:27:24+00:00",
       "keywords": [
         "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-10T23:01:15.921730+09:00",
+      "type": "single",
+      "title": "Critical Ivanti Sentry flaw allows root-level remote code execution (CVE-2026-10520)",
+      "url": "https://www.helpnetsecurity.com/2026/06/10/ivanti-sentry-cve-2026-10520-cve-2026-10523/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-06-10T13:02:54+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2023-38035",
+        "CVE-2026-10520",
+        "CVE-2026-10523"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2023-38035",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-863 (CWE-863)",
+          "description": "A security vulnerability in MICS Admin Portal in Ivanti MobileIron Sentry versions 9.18.0 and below, which may allow an attacker to bypass authentication controls on the administrative interface due to an insufficiently restrictive Apache HTTPD configuration.",
+          "epss_score": 0.94419,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-10520",
+          "cvss_score": 10.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-78 (OS Command Injection)",
+          "description": "An OS Command Injection vulnerability in Ivanti Sentry before the R10.5.2, R10.6.2 and R10.7.1 versions allows a remote unauthenticated user to achieve root-level remote code execution",
+          "epss_score": 0.00217,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-10523",
+          "cvss_score": 9.9,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-288 (CWE-288)",
+          "description": "An Authentication Bypass vulnerability (CWE-288) in Ivanti Sentry before the R10.5.2, R10.6.2 and R10.7.1 versions allows a remote unauthenticated attacker to create arbitrary administrative accounts and obtain full administrative access",
+          "epss_score": 0.00308,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-06-10T23:01:15.921730+09:00",
+      "type": "single",
+      "title": "AISLE Snapshot keeps source code under enterprise control during vulnerability scanning",
+      "url": "https://www.helpnetsecurity.com/2026/06/10/aisle-snapshot-keeps-source-code-under-enterprise-control-during-vulnerability-scanning/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-06-10T13:41:59+00:00",
+      "keywords": [
+        "CVE"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
