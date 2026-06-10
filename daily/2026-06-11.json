@@ -2,10 +2,10 @@
   "date": "2026-06-11",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 1,
+    "scan_runs": 2,
     "total_articles_max": 1822,
     "matched_articles_max": 144,
-    "new_alerts": 3,
+    "new_alerts": 4,
     "cve_count": 3,
     "ioc_count": 0,
     "merged_count": 0,
@@ -16,7 +16,7 @@
     ],
     "keywords_hit": {
       "CVE": 2,
-      "Botnet": 1,
+      "Botnet": 2,
       "Malware": 1
     }
   },
@@ -99,6 +99,20 @@
           "kev": true
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-06-11T02:02:04.601755+09:00",
+      "type": "single",
+      "title": "China-Linked JDY Botnet Expands to 1,500+ Devices for Cyber Reconnaissance",
+      "url": "https://thehackernews.com/2026/06/china-linked-jdy-botnet-expands-to-1500.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-06-10T16:08:42+00:00",
+      "keywords": [
+        "Botnet"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
