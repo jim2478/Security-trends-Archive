@@ -2,20 +2,25 @@
   "date": "2026-06-11",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
+    "scan_runs": 4,
     "total_articles_max": 1822,
     "matched_articles_max": 144,
-    "new_alerts": 5,
-    "cve_count": 3,
+    "new_alerts": 6,
+    "cve_count": 8,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
+      "CVE-2025-3248",
+      "CVE-2026-0770",
       "CVE-2026-20245",
+      "CVE-2026-21445",
       "CVE-2026-25089",
-      "CVE-2026-35616"
+      "CVE-2026-33017",
+      "CVE-2026-35616",
+      "CVE-2026-5027"
     ],
     "keywords_hit": {
-      "CVE": 2,
+      "CVE": 3,
       "Botnet": 2,
       "Malware": 2
     }
@@ -127,6 +132,72 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-11T07:01:16.071535+09:00",
+      "type": "single",
+      "title": "Path traversal flaw in AI dev platform Langflow exploited in attacks",
+      "url": "https://www.bleepingcomputer.com/news/security/path-traversal-flaw-in-ai-dev-platform-langflow-exploited-in-attacks/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-06-10T21:23:44+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2025-3248",
+        "CVE-2026-0770",
+        "CVE-2026-21445",
+        "CVE-2026-33017",
+        "CVE-2026-5027"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2025-3248",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-306 (Missing Authentication)",
+          "description": "Langflow versions prior to 1.3.0 are susceptible to code injection in \nthe /api/v1/validate/code endpoint. A remote and unauthenticated attacker can send crafted HTTP requests to execute arbitrary\ncode.",
+          "epss_score": 0.92853,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-0770",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-829 (CWE-829)",
+          "description": "Langflow exec_globals Inclusion of Functionality from Untrusted Control Sphere Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Langflow. Authentication is not required to exploit this vulnerability.\n\nThe specific flaw exists within the handling of the exec_globals parameter provided to the validate endpoint. The issue results from the inclusion of a resource from an untrusted control sphere. An attacker can le",
+          "epss_score": 0.1201,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-21445",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-306 (Missing Authentication)",
+          "description": "Langflow is a tool for building and deploying AI-powered agents and workflows. Prior to version 1.7.0.dev45, multiple critical API endpoints in Langflow are missing authentication controls. The issue allows any unauthenticated user to access sensitive user conversation data, transaction histories, and perform destructive operations including message deletion. This affects endpoints handling personal data and system operations that should require proper authorization. Version 1.7.0.dev45 contains",
+          "epss_score": 0.09015,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-33017",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-94 (Code Injection)",
+          "description": "Langflow is a tool for building and deploying AI-powered agents and workflows. In versions prior to 1.9.0, the POST /api/v1/build_public_tmp/{flow_id}/flow endpoint allows building public flows without requiring authentication. When the optional data parameter is supplied, the endpoint uses attacker-controlled flow data (containing arbitrary Python code in node definitions) instead of the stored flow data from the database. This code is passed to exec() with zero sandboxing, resulting in unauthe",
+          "epss_score": 0.24652,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-5027",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-22 (Path Traversal)",
+          "description": "The 'POST /api/v2/files' endpoint does not sanitize the 'filename' parameter from the multipart form data, allowing an attacker to write files to arbitrary locations on the filesystem using path traversal sequences ('../').",
+          "epss_score": 0.00035,
+          "kev": false
+        }
+      ]
     }
   ]
 }
