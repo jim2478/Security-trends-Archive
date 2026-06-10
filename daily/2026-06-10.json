@@ -2,21 +2,22 @@
   "date": "2026-06-10",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
+    "scan_runs": 3,
     "total_articles_max": 1832,
     "matched_articles_max": 159,
-    "new_alerts": 5,
-    "cve_count": 4,
+    "new_alerts": 6,
+    "cve_count": 5,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2023-38831",
       "CVE-2025-8088",
       "CVE-2026-11645",
+      "CVE-2026-34621",
       "CVE-2026-44963"
     ],
     "keywords_hit": {
-      "CVE": 4,
+      "CVE": 5,
       "Malware": 1
     }
   },
@@ -134,6 +135,32 @@
           "description": null,
           "epss_score": null,
           "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-06-10T12:03:01.242433+09:00",
+      "type": "single",
+      "title": "Adobe Acrobat 취약점 분석: CVE-2026-34621",
+      "url": "https://s2w.inc/ko/resource/detail/1074",
+      "source": "S2W Resources (위협인텔리전스) [RSS]",
+      "published": "2026-06-10T00:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-34621"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-34621",
+          "cvss_score": 8.6,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-1321 (CWE-1321)",
+          "description": "Acrobat Reader versions 24.001.30356, 26.001.21367 and earlier are affected by an Improperly Controlled Modification of Object Prototype Attributes ('Prototype Pollution') vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
+          "epss_score": 0.11034,
+          "kev": true
         }
       ]
     }
