@@ -2,11 +2,11 @@
   "date": "2026-06-11",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 9,
+    "scan_runs": 10,
     "total_articles_max": 1852,
-    "matched_articles_max": 148,
-    "new_alerts": 12,
-    "cve_count": 10,
+    "matched_articles_max": 149,
+    "new_alerts": 16,
+    "cve_count": 11,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -21,8 +21,8 @@
       "CVE-2026-5027"
     ],
     "keywords_hit": {
-      "Malware": 6,
-      "CVE": 4,
+      "Malware": 9,
+      "CVE": 5,
       "Botnet": 3
     }
   },
@@ -301,6 +301,74 @@
       "url": "https://www.securityweek.com/onyxc2-stealer-offers-cybercriminals-enterprise-grade-theft-for-250-a-month/",
       "source": "SecurityWeek (보안뉴스 종합) [RSS]",
       "published": "2026-06-11T13:00:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-11T23:01:14.798658+09:00",
+      "type": "single",
+      "title": "Oracle Addresses PeopleSoft Vulnerability Amid Reports of Zero-Day Attacks",
+      "url": "https://www.securityweek.com/oracle-addresses-peoplesoft-vulnerability-amid-reports-of-zero-day-attacks/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-06-11T13:57:54+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-35273"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-35273",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-306 (Missing Authentication)",
+          "description": "Vulnerability in the PeopleSoft Enterprise PeopleTools product of Oracle PeopleSoft (component: Updates Environment Management). Supported versions that are affected are 8.61 and 8.62. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise PeopleSoft Enterprise PeopleTools. Successful attacks of this vulnerability can result in takeover of PeopleSoft Enterprise PeopleTools. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability i",
+          "epss_score": 0.00025,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-06-11T23:01:14.798658+09:00",
+      "type": "single",
+      "title": "ThreatsDay Bulletin: Worm Code Leaked, AI Agent Phished, Claude Action Patch + 28 New Stories",
+      "url": "https://thehackernews.com/2026/06/threatsday-bulletin-worm-code-leaked-ai.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-06-11T13:20:41+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-11T23:01:14.798658+09:00",
+      "type": "single",
+      "title": "Fake Spotify Premium tutorials on TikTok and Instagram Reels spread malware",
+      "url": "https://www.helpnetsecurity.com/2026/06/11/vidar-infostealer-tiktok-instagram-reels-malware-campaigns/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-06-11T13:51:25+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-11T23:01:14.798658+09:00",
+      "type": "single",
+      "title": "Hackers Use Fake Claude Code Guide and AI PDFs to Spread AsyncRAT Malware",
+      "url": "https://hackread.com/hackers-fake-claude-code-guide-ai-pdfs-asyncrat/",
+      "source": "HackRead (해킹/데이터유출) [RSS]",
+      "published": "2026-06-11T13:20:34+00:00",
       "keywords": [
         "Malware"
       ],
