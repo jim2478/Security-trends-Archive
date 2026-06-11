@@ -2,20 +2,21 @@
   "date": "2026-06-12",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 1,
+    "scan_runs": 2,
     "total_articles_max": 1832,
     "matched_articles_max": 151,
-    "new_alerts": 3,
-    "cve_count": 3,
+    "new_alerts": 4,
+    "cve_count": 4,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2026-10557",
+      "CVE-2026-35273",
       "CVE-2026-42947",
       "CVE-2026-50245"
     ],
     "keywords_hit": {
-      "CVE": 3
+      "CVE": 4
     }
   },
   "alerts": [
@@ -93,6 +94,32 @@
           "cwe": null,
           "description": null,
           "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-06-12T06:03:18.225711+09:00",
+      "type": "single",
+      "title": "ShinyHunters Exploits Oracle PeopleSoft Zero-Day (CVE-2026-35273) to Breach Universities",
+      "url": "https://thehackernews.com/2026/06/shinyhunters-exploits-oracle-peoplesoft.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-06-11T20:29:23+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-35273"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-35273",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-306 (Missing Authentication)",
+          "description": "Vulnerability in the PeopleSoft Enterprise PeopleTools product of Oracle PeopleSoft (component: Updates Environment Management). Supported versions that are affected are 8.61 and 8.62. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise PeopleSoft Enterprise PeopleTools. Successful attacks of this vulnerability can result in takeover of PeopleSoft Enterprise PeopleTools. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability i",
+          "epss_score": 0.00025,
           "kev": false
         }
       ]
