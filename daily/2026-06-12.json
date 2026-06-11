@@ -1,0 +1,101 @@
+{
+  "date": "2026-06-12",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 1,
+    "total_articles_max": 1832,
+    "matched_articles_max": 151,
+    "new_alerts": 3,
+    "cve_count": 3,
+    "ioc_count": 0,
+    "merged_count": 0,
+    "unique_cves": [
+      "CVE-2026-10557",
+      "CVE-2026-42947",
+      "CVE-2026-50245"
+    ],
+    "keywords_hit": {
+      "CVE": 3
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-06-12T01:01:21.126925+09:00",
+      "type": "single",
+      "title": "Yarbo Android/iOS Mobile Application and Cloud Infrastructure",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-162-01",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-06-11T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-10557"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-10557",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-06-12T01:01:21.126925+09:00",
+      "type": "single",
+      "title": "Naxclow IoT Platform",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-162-02",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-06-11T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-42947"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-42947",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-06-12T01:01:21.126925+09:00",
+      "type": "single",
+      "title": "Brickcom Cameras",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-162-03",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-06-11T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-50245"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-50245",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    }
+  ]
+}
