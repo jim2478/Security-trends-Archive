@@ -2,11 +2,11 @@
   "date": "2026-06-11",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 8,
+    "scan_runs": 9,
     "total_articles_max": 1852,
-    "matched_articles_max": 145,
-    "new_alerts": 10,
-    "cve_count": 9,
+    "matched_articles_max": 148,
+    "new_alerts": 12,
+    "cve_count": 10,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -16,12 +16,13 @@
       "CVE-2026-21445",
       "CVE-2026-25089",
       "CVE-2026-33017",
+      "CVE-2026-35273",
       "CVE-2026-35616",
       "CVE-2026-5027"
     ],
     "keywords_hit": {
-      "Malware": 5,
-      "CVE": 3,
+      "Malware": 6,
+      "CVE": 4,
       "Botnet": 3
     }
   },
@@ -260,6 +261,46 @@
       "url": "https://www.securityweek.com/siemens-says-desigo-cc-files-flagged-as-malware-by-security-engines/",
       "source": "SecurityWeek (보안뉴스 종합) [RSS]",
       "published": "2026-06-11T11:40:27+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-11T22:01:07.516720+09:00",
+      "type": "single",
+      "title": "Oracle PeopleSoft servers under attack, Oracle pushes out-of-band security alert",
+      "url": "https://www.helpnetsecurity.com/2026/06/11/oracle-peoplesoft-under-attack-cve-2026-35273/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-06-11T12:41:37+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-35273"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-35273",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": null,
+          "description": "Vulnerability in the PeopleSoft Enterprise PeopleTools product of Oracle PeopleSoft (component: Updates Environment Management). Supported versions that are affected are 8.61 and 8.62. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise PeopleSoft Enterprise PeopleTools. Successful attacks of this vulnerability can result in takeover of PeopleSoft Enterprise PeopleTools. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability i",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-06-11T22:01:07.516720+09:00",
+      "type": "single",
+      "title": "OnyxC2 Stealer Offers Cybercriminals Enterprise-Grade Theft for $250 a Month",
+      "url": "https://www.securityweek.com/onyxc2-stealer-offers-cybercriminals-enterprise-grade-theft-for-250-a-month/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-06-11T13:00:00+00:00",
       "keywords": [
         "Malware"
       ],
