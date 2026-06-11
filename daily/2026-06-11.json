@@ -2,10 +2,10 @@
   "date": "2026-06-11",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 4,
-    "total_articles_max": 1822,
+    "scan_runs": 5,
+    "total_articles_max": 1842,
     "matched_articles_max": 144,
-    "new_alerts": 6,
+    "new_alerts": 7,
     "cve_count": 8,
     "ioc_count": 0,
     "merged_count": 0,
@@ -21,8 +21,8 @@
     ],
     "keywords_hit": {
       "CVE": 3,
-      "Botnet": 2,
-      "Malware": 2
+      "Malware": 3,
+      "Botnet": 2
     }
   },
   "alerts": [
@@ -198,6 +198,20 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-06-11T12:00:58.917062+09:00",
+      "type": "single",
+      "title": "TikTok videos promote “free Spotify Premium”",
+      "url": "https://cybernews.com/security/fake-free-spotify-premium-tiktok-videos-steal-passwords/",
+      "source": "CyberNews [RSS]",
+      "published": "2026-06-11T02:02:26+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
