@@ -2,11 +2,11 @@
   "date": "2026-06-11",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 5,
+    "scan_runs": 6,
     "total_articles_max": 1842,
     "matched_articles_max": 144,
-    "new_alerts": 7,
-    "cve_count": 8,
+    "new_alerts": 8,
+    "cve_count": 9,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -22,7 +22,7 @@
     "keywords_hit": {
       "CVE": 3,
       "Malware": 3,
-      "Botnet": 2
+      "Botnet": 3
     }
   },
   "alerts": [
@@ -212,6 +212,32 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-11T16:00:58.750701+09:00",
+      "type": "single",
+      "title": "China-linked JDY botnet targets routers, fueling new Volt Typhoon concerns",
+      "url": "https://cybernews.com/security/china-linked-jdy-botnet-routers-volt-typhoon/",
+      "source": "CyberNews [RSS]",
+      "published": "2026-06-11T05:45:01+00:00",
+      "keywords": [
+        "Botnet"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-35616"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-35616",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-284 (Improper Access Control)",
+          "description": "A improper access control vulnerability in Fortinet FortiClientEMS 7.4.5 through 7.4.6 may allow an unauthenticated attacker to execute unauthorized code or commands via crafted requests.",
+          "epss_score": 0.34753,
+          "kev": true
+        }
+      ]
     }
   ]
 }
