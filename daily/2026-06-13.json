@@ -2,16 +2,16 @@
   "date": "2026-06-13",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
+    "scan_runs": 3,
     "total_articles_max": 1852,
     "matched_articles_max": 143,
-    "new_alerts": 2,
+    "new_alerts": 3,
     "cve_count": 0,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [],
     "keywords_hit": {
-      "Malware": 2
+      "Malware": 3
     }
   },
   "alerts": [
@@ -36,6 +36,20 @@
       "url": "https://hackread.com/atomic-arch-hijacks-linux-aur-packages-malware/",
       "source": "HackRead (해킹/데이터유출) [RSS]",
       "published": "2026-06-12T18:17:16+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-13T05:01:07.914840+09:00",
+      "type": "single",
+      "title": "400+ Arch Linux AUR Packages Hijacked to Install Rust Credential Stealer",
+      "url": "https://thehackernews.com/2026/06/400-arch-linux-aur-packages-hijacked-to.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-06-12T19:24:50+00:00",
       "keywords": [
         "Malware"
       ],
