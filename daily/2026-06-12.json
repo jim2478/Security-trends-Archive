@@ -2,11 +2,11 @@
   "date": "2026-06-12",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
+    "scan_runs": 4,
     "total_articles_max": 1852,
     "matched_articles_max": 151,
-    "new_alerts": 5,
-    "cve_count": 5,
+    "new_alerts": 6,
+    "cve_count": 6,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -16,7 +16,7 @@
       "CVE-2026-50245"
     ],
     "keywords_hit": {
-      "CVE": 5
+      "CVE": 6
     }
   },
   "alerts": [
@@ -131,6 +131,32 @@
       "url": "https://www.dailysecu.com/news/articleView.html?idxno=207137",
       "source": "데일리시큐 (이슈) [RSS]",
       "published": "2026-06-12T10:01:45+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-35273"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-35273",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-306 (Missing Authentication)",
+          "description": "Vulnerability in the PeopleSoft Enterprise PeopleTools product of Oracle PeopleSoft (component: Updates Environment Management). Supported versions that are affected are 8.61 and 8.62. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise PeopleSoft Enterprise PeopleTools. Successful attacks of this vulnerability can result in takeover of PeopleSoft Enterprise PeopleTools. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability i",
+          "epss_score": 0.00025,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-06-12T16:00:59.400564+09:00",
+      "type": "single",
+      "title": "Google Confirms Exploitation of Oracle PeopleSoft Zero-Day by ShinyHunters",
+      "url": "https://www.securityweek.com/google-confirms-exploitation-of-oracle-peoplesoft-zero-day-by-shinyhunters/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-06-12T06:44:36+00:00",
       "keywords": [
         "CVE"
       ],
