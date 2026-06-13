@@ -2,16 +2,16 @@
   "date": "2026-06-13",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
+    "scan_runs": 4,
     "total_articles_max": 1852,
     "matched_articles_max": 143,
-    "new_alerts": 3,
+    "new_alerts": 4,
     "cve_count": 0,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [],
     "keywords_hit": {
-      "Malware": 3
+      "Malware": 4
     }
   },
   "alerts": [
@@ -50,6 +50,20 @@
       "url": "https://thehackernews.com/2026/06/400-arch-linux-aur-packages-hijacked-to.html",
       "source": "The Hacker News (보안뉴스 종합) [RSS]",
       "published": "2026-06-12T19:24:50+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-13T12:01:04.156951+09:00",
+      "type": "single",
+      "title": "400+ AUR Packages Hijacked: What the “Atomic Arch” Campaign Means for Supply-Chain Security",
+      "url": "https://www.stepsecurity.io/blog/400-aur-packages-hijacked-atomic-arch-campaign",
+      "source": "StepSecurity (CI/CD 보안) [RSS]",
+      "published": "2026-06-13T02:47:33+00:00",
       "keywords": [
         "Malware"
       ],
