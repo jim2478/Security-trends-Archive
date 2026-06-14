@@ -1,0 +1,47 @@
+{
+  "date": "2026-06-14",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 1,
+    "total_articles_max": 1832,
+    "matched_articles_max": 142,
+    "new_alerts": 1,
+    "cve_count": 1,
+    "ioc_count": 0,
+    "merged_count": 0,
+    "unique_cves": [
+      "CVE-2026-20253"
+    ],
+    "keywords_hit": {
+      "CVE": 1
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-06-14T16:00:57.603316+09:00",
+      "type": "single",
+      "title": "스플렁크 서버 노린 CVSS 9.8 치명적 취약점…관리자는 즉시 패치해야",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=207152",
+      "source": "데일리시큐 (IT&생활) [RSS]",
+      "published": "2026-06-14T06:42:17+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-20253"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-20253",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-306 (Missing Authentication)",
+          "description": "In Splunk Enterprise versions below 10.2.4 and 10.0.7, and Splunk Cloud Platform versions below 10.4.2604.3 and 10.2.2510.14, an unauthenticated user could create or truncate arbitrary files through a PostgreSQL sidecar service endpoint.<br><br>The vulnerability exists because the PostgreSQL sidecar service endpoint lacks authentication controls, allowing any network-reachable user to invoke file operations without credentials.",
+          "epss_score": 0.00067,
+          "kev": false
+        }
+      ]
+    }
+  ]
+}
