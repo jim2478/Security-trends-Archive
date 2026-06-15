@@ -2,17 +2,24 @@
   "date": "2026-06-16",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
+    "scan_runs": 3,
     "total_articles_max": 1852,
     "matched_articles_max": 139,
-    "new_alerts": 2,
-    "cve_count": 0,
+    "new_alerts": 3,
+    "cve_count": 6,
     "ioc_count": 0,
     "merged_count": 0,
-    "unique_cves": [],
+    "unique_cves": [
+      "CVE-2026-20122",
+      "CVE-2026-20128",
+      "CVE-2026-20133",
+      "CVE-2026-20182",
+      "CVE-2026-20245",
+      "CVE-2026-20262"
+    ],
     "keywords_hit": {
-      "Malware": 1,
-      "CVE": 1
+      "CVE": 2,
+      "Malware": 1
     }
   },
   "alerts": [
@@ -43,6 +50,73 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-16T03:01:29.095236+09:00",
+      "type": "single",
+      "title": "Cisco fixes SD-WAN vManage flaw exploited in zero-day attacks",
+      "url": "https://www.bleepingcomputer.com/news/security/cisco-fixes-sd-wan-vmanage-flaw-exploited-in-zero-day-attacks/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-06-15T17:12:42+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-20122",
+        "CVE-2026-20128",
+        "CVE-2026-20133",
+        "CVE-2026-20182",
+        "CVE-2026-20245",
+        "CVE-2026-20262"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-20122",
+          "cvss_score": 5.4,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-648 (CWE-648)",
+          "description": "A vulnerability in the API of Cisco Catalyst SD-WAN Manager could allow an authenticated, remote attacker to overwrite arbitrary files on the local file system. To exploit this vulnerability, the attacker must have valid read-only credentials with API access on the affected system.\r\n\r\nThis vulnerability is due to improper file handling on the API interface of an affected system. An attacker could exploit this vulnerability by uploading a malicious file on the local file system. A successful expl",
+          "epss_score": 0.0613,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-20128",
+          "cvss_score": 7.5,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-257 (CWE-257)",
+          "description": "A vulnerability in the Data Collection Agent (DCA) feature of Cisco Catalyst SD-WAN Manager could allow an unauthenticated, remote attacker to gain DCA user privileges on an affected system.\r\n\r\nThis vulnerability is due to the presence of a credential file for the DCA user on an affected system. An attacker could exploit this vulnerability by sending a crafted HTTP request and reading the file that contains the DCA password from that affected system. A successful exploit could allow the attacker",
+          "epss_score": 0.046,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-20133",
+          "cvss_score": 6.5,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-200 (Information Exposure)",
+          "description": "A vulnerability in Cisco Catalyst SD-WAN Software could allow an unauthenticated, remote attacker to view sensitive information on an affected system.\r\n\r This vulnerability is due to insufficient file system restrictions. An authenticated attacker with netadmin privileges could exploit this vulnerability by accessing the vshell of an affected system. A successful exploit could allow the attacker to read sensitive information on the underlying operating system.",
+          "epss_score": 0.08965,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-20182",
+          "cvss_score": 10.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-287 (Authentication Bypass)",
+          "description": "May 2026: This security advisory provides the details and fix information for a vulnerability that was discovered and fixed after the  was disclosed in February 2026. This new advisory is for a new vulnerability in the control connection handshaking. The  section of this advisory includes Show Control Connections guidance to help with system checks.&nbsp;\r\n\r\nA vulnerability in the peering authentication in Cisco Catalyst SD-WAN Controller, formerly SD-WAN vSmart, and Cisco Catalyst SD-WAN Manage",
+          "epss_score": 0.77902,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-20245",
+          "cvss_score": 7.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-116 (CWE-116)",
+          "description": "A vulnerability in the CLI of Cisco Catalyst SD-WAN Controller, formerly SD-WAN vSmart, Cisco Catalyst SD-WAN Manager, formerly SD-WAN vManage, and Cisco Catalyst SD-WAN Validator, formerly SD-WAN vBond, could allow an authenticated, local attacker to execute arbitrary commands as root by supplying a crafted file to the affected system.\r\n\r\nThis vulnerability is due to insufficient validation of user-supplied input. An attacker could exploit this vulnerability by uploading a crafted file to the a",
+          "epss_score": 0.00952,
+          "kev": true
+        }
+      ]
     }
   ]
 }
