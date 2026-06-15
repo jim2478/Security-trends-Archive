@@ -2,10 +2,10 @@
   "date": "2026-06-15",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
-    "total_articles_max": 1832,
+    "scan_runs": 4,
+    "total_articles_max": 1852,
     "matched_articles_max": 143,
-    "new_alerts": 3,
+    "new_alerts": 4,
     "cve_count": 2,
     "ioc_count": 0,
     "merged_count": 0,
@@ -13,7 +13,7 @@
       "CVE-2026-0257"
     ],
     "keywords_hit": {
-      "CVE": 2,
+      "CVE": 3,
       "Malware": 1
     }
   },
@@ -83,6 +83,20 @@
           "kev": true
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-06-15T22:01:08.495455+09:00",
+      "type": "single",
+      "title": "AI vulnerability discovery is pushing 2026 CVEs toward 66,000",
+      "url": "https://www.helpnetsecurity.com/2026/06/15/first-2026-cve-forecast/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-06-15T12:00:28+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
