@@ -2,19 +2,19 @@
   "date": "2026-06-15",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
+    "scan_runs": 3,
     "total_articles_max": 1832,
     "matched_articles_max": 143,
-    "new_alerts": 2,
-    "cve_count": 1,
+    "new_alerts": 3,
+    "cve_count": 2,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2026-0257"
     ],
     "keywords_hit": {
-      "Malware": 1,
-      "CVE": 1
+      "CVE": 2,
+      "Malware": 1
     }
   },
   "alerts": [
@@ -39,6 +39,32 @@
       "url": "https://thehackernews.com/2026/06/palo-alto-warns-of-active-exploitation.html",
       "source": "The Hacker News (보안뉴스 종합) [RSS]",
       "published": "2026-06-15T06:17:32+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-0257"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-0257",
+          "cvss_score": 7.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-565 (CWE-565)",
+          "description": "Authentication bypass vulnerabilities in the GlobalProtect portal and gateway of Palo Alto Networks PAN-OS® software allows the attacker to bypass security restrictions and establish an unauthorized VPN connection.\n\nPanorama and Cloud NGFW are not impacted by these issues.",
+          "epss_score": 0.60447,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-06-15T19:01:05.355647+09:00",
+      "type": "single",
+      "title": "팔로알토 VPN 취약점 실제 악용 확인…해커들 인증 없이 접속 시도",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=207172",
+      "source": "데일리시큐 (이슈) [RSS]",
+      "published": "2026-06-15T18:15:47+00:00",
       "keywords": [
         "CVE"
       ],
