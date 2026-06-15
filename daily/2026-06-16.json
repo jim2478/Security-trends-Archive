@@ -2,10 +2,10 @@
   "date": "2026-06-16",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
+    "scan_runs": 4,
     "total_articles_max": 1852,
-    "matched_articles_max": 139,
-    "new_alerts": 3,
+    "matched_articles_max": 140,
+    "new_alerts": 4,
     "cve_count": 6,
     "ioc_count": 0,
     "merged_count": 0,
@@ -19,7 +19,7 @@
     ],
     "keywords_hit": {
       "CVE": 2,
-      "Malware": 1
+      "Malware": 2
     }
   },
   "alerts": [
@@ -117,6 +117,20 @@
           "kev": true
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-06-16T04:01:04.624238+09:00",
+      "type": "single",
+      "title": "Chinese hackers breached North American research institutions via REDCap servers",
+      "url": "https://www.helpnetsecurity.com/2026/06/15/chinese-hackers-redcap-medical-research-institutions-breach/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-06-15T18:41:53+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
