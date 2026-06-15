@@ -2,10 +2,10 @@
   "date": "2026-06-16",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 4,
+    "scan_runs": 5,
     "total_articles_max": 1852,
-    "matched_articles_max": 140,
-    "new_alerts": 4,
+    "matched_articles_max": 141,
+    "new_alerts": 5,
     "cve_count": 6,
     "ioc_count": 0,
     "merged_count": 0,
@@ -18,8 +18,8 @@
       "CVE-2026-20262"
     ],
     "keywords_hit": {
-      "CVE": 2,
-      "Malware": 2
+      "Malware": 3,
+      "CVE": 2
     }
   },
   "alerts": [
@@ -125,6 +125,20 @@
       "url": "https://www.helpnetsecurity.com/2026/06/15/chinese-hackers-redcap-medical-research-institutions-breach/",
       "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
       "published": "2026-06-15T18:41:53+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-16T05:01:15.190174+09:00",
+      "type": "single",
+      "title": "North Korean Hackers Are Turning Developer Tools Into Malware Delivery Channels",
+      "url": "https://thehackernews.com/2026/06/north-korean-hackers-are-turning.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-06-15T19:32:52+00:00",
       "keywords": [
         "Malware"
       ],
