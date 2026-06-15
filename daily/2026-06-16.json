@@ -2,16 +2,17 @@
   "date": "2026-06-16",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 1,
-    "total_articles_max": 1842,
-    "matched_articles_max": 138,
-    "new_alerts": 1,
+    "scan_runs": 2,
+    "total_articles_max": 1852,
+    "matched_articles_max": 139,
+    "new_alerts": 2,
     "cve_count": 0,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [],
     "keywords_hit": {
-      "Malware": 1
+      "Malware": 1,
+      "CVE": 1
     }
   },
   "alerts": [
@@ -24,6 +25,20 @@
       "published": "2026-06-15T14:00:00+00:00",
       "keywords": [
         "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-16T01:01:11.887650+09:00",
+      "type": "single",
+      "title": "What Changed in OWASP Top 10 2025 and Recommendations for Each Category",
+      "url": "https://blog.qualys.com/category/qualys-insights",
+      "source": "Qualys Blog (취약점관리) [RSS]",
+      "published": "2026-06-15T16:00:00+00:00",
+      "keywords": [
+        "CVE"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
