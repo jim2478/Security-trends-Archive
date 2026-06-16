@@ -2,10 +2,10 @@
   "date": "2026-06-17",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
+    "scan_runs": 4,
     "total_articles_max": 1817,
-    "matched_articles_max": 147,
-    "new_alerts": 10,
+    "matched_articles_max": 150,
+    "new_alerts": 11,
     "cve_count": 10,
     "ioc_count": 0,
     "merged_count": 0,
@@ -22,7 +22,7 @@
       "CVE-2026-39813"
     ],
     "keywords_hit": {
-      "Malware": 6,
+      "Malware": 7,
       "CVE": 4
     }
   },
@@ -270,6 +270,20 @@
       "url": "https://www.darkreading.com/endpoint-security/rokarolla-android-trojan",
       "source": "Dark Reading (보안뉴스 종합) [RSS]",
       "published": "2026-06-16T17:32:32+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-17T07:03:12.463475+09:00",
+      "type": "single",
+      "title": "Fileless Phantom Stealer Targets Browser Credentials",
+      "url": "https://www.darkreading.com/cyberattacks-data-breaches/fileless-phantom-stealer-targets-browser-credentials",
+      "source": "Dark Reading (보안뉴스 종합) [RSS]",
+      "published": "2026-06-16T22:26:34+00:00",
       "keywords": [
         "Malware"
       ],
