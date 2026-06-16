@@ -2,24 +2,28 @@
   "date": "2026-06-17",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 1,
+    "scan_runs": 2,
     "total_articles_max": 1812,
-    "matched_articles_max": 143,
-    "new_alerts": 3,
-    "cve_count": 6,
+    "matched_articles_max": 146,
+    "new_alerts": 7,
+    "cve_count": 10,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
+      "CVE-2020-13573",
       "CVE-2023-52271",
       "CVE-2025-1055",
       "CVE-2025-61155",
+      "CVE-2026-0646",
+      "CVE-2026-0647",
+      "CVE-2026-11317",
       "CVE-2026-25089",
       "CVE-2026-39808",
       "CVE-2026-39813"
     ],
     "keywords_hit": {
-      "Malware": 2,
-      "CVE": 1
+      "CVE": 4,
+      "Malware": 3
     }
   },
   "alerts": [
@@ -122,6 +126,108 @@
       "url": "https://www.bleepingcomputer.com/news/security/ghosttree-attack-abused-recursive-windows-junctions-to-hide-malware/",
       "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
       "published": "2026-06-16T14:17:27+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-17T01:03:42.390479+09:00",
+      "type": "single",
+      "title": "Rockwell Automation Logix 5370 & 5570 Controllers Vulnerable To Denial of Service Via CIP",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-167-03",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-06-16T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-11317"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-11317",
+          "cvss_score": 8.7,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-404 (CWE-404)",
+          "description": "A denial of service security issue exists in the\naffected product. The security issue stems from a fault occurring when a\ncrafted CIP message is sent. Devices with less memory are more likely to be\naffected. This can result in a major nonrecoverable fault (MNRF). A program\ndownload is required to recover.",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-06-17T01:03:42.390479+09:00",
+      "type": "single",
+      "title": "Rockwell Automation RSLinx",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-167-02",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-06-16T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2020-13573"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2020-13573",
+          "cvss_score": 7.5,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-823 (CWE-823)",
+          "description": "A denial-of-service vulnerability exists in the Ethernet/IP server functionality of Rockwell Automation RSLinx Classic 2.57.00.14 CPR 9 SR 3. A specially crafted network request can lead to a denial of service. An attacker can send a sequence of malicious packets to trigger this vulnerability.",
+          "epss_score": 0.03454,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-06-17T01:03:42.390479+09:00",
+      "type": "single",
+      "title": "Rockwell Automation FLEX I/O EtherNet/IP Adapters",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-167-05",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-06-16T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-0646",
+        "CVE-2026-0647"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-0646",
+          "cvss_score": 8.7,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-401 (CWE-401)",
+          "description": "A denial-of-service security issue exists within the 1794-AENTR adapter due to improper memory handling of CIP protocol requests. This vulnerability can result in the adapter faulting and losing connection to its associated I/O modules, requiring a manual reset to recover.",
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-0647",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-306 (Missing Authentication)",
+          "description": "An improper authentication security issue exists within the 1794-AENTR adapter's embedded web server. The vulnerability allows an unauthenticated attacker to change the device's web interface password by sending a crafted HTTP GET request to a specific endpoint, without any prior authentication being required. If exploited, this could lead to unauthorized access, account takeover, and loss of the device’s embedded web server’s availability.",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-06-17T01:03:42.390479+09:00",
+      "type": "single",
+      "title": "'Lorem Ipsum' Malware Pivots to ClickFix Delivery",
+      "url": "https://www.darkreading.com/cyberattacks-data-breaches/lorem-ipsum-malware-clickfix-delivery",
+      "source": "Dark Reading (보안뉴스 종합) [RSS]",
+      "published": "2026-06-16T15:10:48+00:00",
       "keywords": [
         "Malware"
       ],
