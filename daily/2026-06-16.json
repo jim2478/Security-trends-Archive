@@ -2,11 +2,11 @@
   "date": "2026-06-16",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 10,
+    "scan_runs": 11,
     "total_articles_max": 1852,
     "matched_articles_max": 143,
-    "new_alerts": 16,
-    "cve_count": 34,
+    "new_alerts": 18,
+    "cve_count": 35,
     "ioc_count": 37,
     "merged_count": 0,
     "unique_cves": [
@@ -35,11 +35,12 @@
       "CVE-2026-39808",
       "CVE-2026-39813",
       "CVE-2026-48172",
+      "CVE-2026-48558",
       "CVE-2026-54420"
     ],
     "keywords_hit": {
-      "CVE": 9,
-      "Malware": 7
+      "CVE": 10,
+      "Malware": 8
     }
   },
   "alerts": [
@@ -572,6 +573,46 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-06-16T23:01:14.713419+09:00",
+      "type": "single",
+      "title": "SimpleHelp RMM flaw could give attackers full access to managed endpoints (CVE-2026-48558)",
+      "url": "https://www.helpnetsecurity.com/2026/06/16/simplehelp-rmm-cve-2026-48558/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-06-16T13:33:52+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-48558"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-48558",
+          "cvss_score": 9.5,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-347 (CWE-347)",
+          "description": "SimpleHelp versions 5.5.15 and prior and 6.0 pre-release versions contain an authentication bypass vulnerability in the OIDC authentication flow. When OIDC authentication is configured, identity tokens submitted during login are accepted without verifying their cryptographic signature. In a vulnerable configuration, a remote, unauthenticated attacker can submit a forged token containing arbitrary identity claims to obtain a fully authenticated technician session. In some configurations, this may",
+          "epss_score": 0.00628,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-06-16T23:01:14.713419+09:00",
+      "type": "single",
+      "title": "New Rokarolla Android Malware Steals PINs, SMS Codes, and Crypto Wallet Funds",
+      "url": "https://thehackernews.com/2026/06/new-rokarolla-android-malware-steals.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-06-16T13:10:17+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
