@@ -2,14 +2,15 @@
   "date": "2026-06-16",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 8,
+    "scan_runs": 9,
     "total_articles_max": 1852,
     "matched_articles_max": 141,
-    "new_alerts": 11,
-    "cve_count": 18,
+    "new_alerts": 12,
+    "cve_count": 19,
     "ioc_count": 36,
     "merged_count": 0,
     "unique_cves": [
+      "CVE-2023-24932",
       "CVE-2026-20122",
       "CVE-2026-20128",
       "CVE-2026-20133",
@@ -30,7 +31,7 @@
     ],
     "keywords_hit": {
       "CVE": 6,
-      "Malware": 5
+      "Malware": 6
     }
   },
   "alerts": [
@@ -341,6 +342,32 @@
       "ioc_raw_text": "[URL] hxxp://202[.]144[.]192[.]29\n[URL] hxxp://202[.]144[.]192[.]29/audit.php\n[URL] hxxp://202[.]144[.]192[.]29/download2/Themes2.zip\n[URL] hxxp://120[.]48[.]156[.]17\n[URL] hxxp://120[.]48[.]156[.]17/ey.php?ka=user1&id\n[URL] hxxp://brightly[.]to\n[URL] hxxp://brightly[.]to/download2/Themes2.zip\n[URL] hxxps://www[.]dropbox[.]com/s/zhp1b06imehwylq/Synaptics.rar?dl=1\n[URL] hxxps://docs[.]google[.]com/uc?id=0BxsMXGfPIZfSVzUyaHFYVkQxeFk&export=download\n[URL] hxxps://steamcommunity[.]com/sharedfiles/filedetails/?id=3603213159\n[URL] hxxps://steamcommunity[.]com/sharedfiles/filedetails/?id=3591930233\n[URL] hxxps://steamcommunity[.]com/sharedfiles/filedetails/?id=3584318845\n[URL] hxxps://steamcommunity[.]com/sharedfiles/filedetails/?id=3436875036\n[URL] hxxps://steamcommunity[.]com/sharedfiles/filedetails/?id=3633494498\n[URL] hxxps://steamcommunity[.]com/sharedfiles/filedetails/?id=3556591375\n[URL] hxxps://steamcommunity[.]com/sharedfiles/filedetails/?id=3635875825\n[URL] hxxps://steamcommunity[.]com/sharedfiles/filedetails/?id=3601924072\n[URL] hxxps://steamcommunity[.]com/sharedfiles/filedetails/?id=3605588743\n[URL] hxxps://steamcommunity[.]com/sharedfiles/filedetails/?id=3553253793\n[URL] hxxps://steamcommunity[.]com/sharedfiles/filedetails/?id=3462675635\n[URL] hxxps://steamcommunity[.]com/sharedfiles/filedetails/?id=3605621824\n[URL] hxxps://steamcommunity[.]com/sharedfiles/filedetails/?id=3610240788\n[URL] hxxps://steamcommunity[.]com/sharedfiles/filedetails/?id=3610366547\n[MD5] 0f4f01c6d495abb37403072dd017ce8d\n[MD5] 18dedc0009f0927cba6425c84cce9883\n[MD5] 20965254e29104986e11939decd39549\n[MD5] 5620f01284329f561b1839a36be55355\n[MD5] 74414ed4b63aadec039b603c32762b80\n[MD5] 8c2cc585ad8a13a72a704c0fda0c9854\n[MD5] 95856f2ce428c728d9781d3296558068\n[MD5] af080780cca2acd1d082ce01e7cc346a\n[MD5] b9fa763a53da3eea742d0f3c845a8c09\n[MD5] c133c3dd9f7d6934598025047df41abf\n[MD5] d1693bbff456ae8fa3360446706df6da\n[MD5] ded08ae5df7f1b12e5fdb767dbbed0b1\n[MD5] fe1f6485013cd5e6d5cf718049b0b8d6",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-16T19:01:03.828265+09:00",
+      "type": "single",
+      "title": "Windows version of SprySOCKS Linux malware used to attack govt orgs",
+      "url": "https://www.bleepingcomputer.com/news/security/windows-version-of-sprysocks-linux-malware-used-to-attack-govt-orgs/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-06-16T09:00:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2023-24932"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2023-24932",
+          "cvss_score": 6.7,
+          "cvss_severity": "MEDIUM",
+          "cwe": "NVD-CWE-noinfo (Insufficient Information)",
+          "description": "Secure Boot Security Feature Bypass Vulnerability",
+          "epss_score": 0.10561,
+          "kev": false
+        }
+      ]
     }
   ]
 }
