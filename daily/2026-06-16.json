@@ -2,11 +2,11 @@
   "date": "2026-06-16",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 6,
+    "scan_runs": 7,
     "total_articles_max": 1852,
     "matched_articles_max": 141,
-    "new_alerts": 8,
-    "cve_count": 10,
+    "new_alerts": 9,
+    "cve_count": 18,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -18,10 +18,18 @@
       "CVE-2026-20262",
       "CVE-2026-24066",
       "CVE-2026-24067",
+      "CVE-2026-34023",
+      "CVE-2026-34024",
+      "CVE-2026-34025",
+      "CVE-2026-34026",
+      "CVE-2026-34027",
+      "CVE-2026-34028",
+      "CVE-2026-34029",
+      "CVE-2026-34030",
       "CVE-2026-54420"
     ],
     "keywords_hit": {
-      "CVE": 5,
+      "CVE": 6,
       "Malware": 3
     }
   },
@@ -233,6 +241,75 @@
           "cwe": "CWE-367 (CWE-367)",
           "description": "Slate Digital Connect 1.37.0 for macOS installs a privileged helper tool, com.slatedigital.connect.privileged.helper.tool, which exposes the XPC service com.slatedigital.connect.privileged.helper.tool2. The helper validates connecting XPC clients by obtaining the client's process identifier and using it to retrieve code-signing information for the process. This PID-based client validation is subject to a time-of-check time-of-use race condition because process identifiers can be reused. A local ",
           "epss_score": 0.00093,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-06-16T17:03:18.178748+09:00",
+      "type": "single",
+      "title": "SEC Consult SA-20260615-0 :: Multiple Critical Vulnerabilities in Wertheim SafeController Software for VAULT ROOMS (Safe Deposit Locker System)",
+      "url": "https://seclists.org/fulldisclosure/2026/Jun/8",
+      "source": "SecLists Full Disclosure (취약점공개)",
+      "published": "2026-06-16T06:56:34+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-34023",
+        "CVE-2026-34024",
+        "CVE-2026-34025",
+        "CVE-2026-34026",
+        "CVE-2026-34027",
+        "CVE-2026-34028",
+        "CVE-2026-34029",
+        "CVE-2026-34030"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-34023",
+          "cvss_score": 7.1,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-863 (CWE-863)",
+          "description": "The Wertheim SafeController Software, AssemblyVersion 6.15.8328.28014, contains an incorrect authorization vulnerability in the WebSocket communication used by the SafeController WebMessageBroker. An authenticated attacker with valid low-privileged branch user credentials can manipulate WebSocket messages by specifying controller identifiers belonging to other branches. This allows the attacker to access restricted functions and resources in other branches, including activating boxes outside of ",
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-34024",
+          "cvss_score": 8.6,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-862 (Missing Authorization)",
+          "description": "The Wertheim SafeController Software, AssemblyVersion 6.15.8328.28014, contains missing authorization checks on multiple web application endpoints. An authenticated attacker with minimal privileges can access endpoints that are not visible in the frontend but remain directly reachable. This allows the attacker to perform restricted actions such as switching the user's branch, uploading arbitrary files, downloading arbitrary files, and viewing details of arbitrary branches.",
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-34025",
+          "cvss_score": 5.3,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-290 (CWE-290)",
+          "description": "The Wertheim SafeController Software, AssemblyVersion 6.15.8328.28014, contains an IP restriction bypass vulnerability in the login process. The application restricts user logins based on the IP address associated with a branch location, but the client IP address is derived from the HTTP X-Forwarded-For header when that header is present. An attacker with valid branch user credentials can manipulate the X-Forwarded-For header during login to spoof the expected branch IP address and obtain a vali",
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-34026",
+          "cvss_score": 7.1,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-23 (CWE-23)",
+          "description": "Wertheim SafeController Software, AssemblyVersion 6.15.8328.28014, contains a path traversal vulnerability in the documentName parameter of the /safe/selfservice/openselfservicedocument endpoint. The application constructs a file path using attacker-controlled input without sufficient validation, allowing an authenticated attacker with any role or permission level to traverse out of the intended document directory and download arbitrary files accessible to the application. This includes, but is ",
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-34027",
+          "cvss_score": 5.3,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-434 (Unrestricted File Upload)",
+          "description": "The Wertheim SafeController Software, AssemblyVersion 6.15.8328.28014, contains insufficient server-side file type validation in the /safe/contract/uploadcustomdocuments endpoint. The application validates uploaded files based on the user-controlled HTTP Content-Type value and accepts the upload if this value contains an allowed string such as pdf, jpeg, tiff, or png. An authenticated attacker with any role or permission level can spoof the Content-Type value and upload arbitrary file content.",
+          "epss_score": null,
           "kev": false
         }
       ]
