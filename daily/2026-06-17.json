@@ -2,10 +2,10 @@
   "date": "2026-06-17",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
-    "total_articles_max": 1812,
-    "matched_articles_max": 146,
-    "new_alerts": 7,
+    "scan_runs": 3,
+    "total_articles_max": 1817,
+    "matched_articles_max": 147,
+    "new_alerts": 10,
     "cve_count": 10,
     "ioc_count": 0,
     "merged_count": 0,
@@ -22,8 +22,8 @@
       "CVE-2026-39813"
     ],
     "keywords_hit": {
-      "CVE": 4,
-      "Malware": 3
+      "Malware": 6,
+      "CVE": 4
     }
   },
   "alerts": [
@@ -228,6 +228,48 @@
       "url": "https://www.darkreading.com/cyberattacks-data-breaches/lorem-ipsum-malware-clickfix-delivery",
       "source": "Dark Reading (보안뉴스 종합) [RSS]",
       "published": "2026-06-16T15:10:48+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-17T04:01:16.816647+09:00",
+      "type": "single",
+      "title": "Steam Workshop abused to spread malware via Wallpaper Engine app",
+      "url": "https://www.bleepingcomputer.com/news/security/steam-workshop-abused-to-spread-malware-via-wallpaper-engine-app/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-06-16T18:27:55+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-17T04:01:16.816647+09:00",
+      "type": "single",
+      "title": "ClickFix Campaigns Expand Malware Delivery With New Loaders and Fake Update Lures",
+      "url": "https://thehackernews.com/2026/06/clickfix-campaigns-expand-malware.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-06-16T17:41:28+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-17T04:01:16.816647+09:00",
+      "type": "single",
+      "title": "Rokarolla Android Trojan Levels Up to Full Device Control, Persistence",
+      "url": "https://www.darkreading.com/endpoint-security/rokarolla-android-trojan",
+      "source": "Dark Reading (보안뉴스 종합) [RSS]",
+      "published": "2026-06-16T17:32:32+00:00",
       "keywords": [
         "Malware"
       ],
