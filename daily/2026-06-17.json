@@ -1,0 +1,133 @@
+{
+  "date": "2026-06-17",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 1,
+    "total_articles_max": 1812,
+    "matched_articles_max": 143,
+    "new_alerts": 3,
+    "cve_count": 6,
+    "ioc_count": 0,
+    "merged_count": 0,
+    "unique_cves": [
+      "CVE-2023-52271",
+      "CVE-2025-1055",
+      "CVE-2025-61155",
+      "CVE-2026-25089",
+      "CVE-2026-39808",
+      "CVE-2026-39813"
+    ],
+    "keywords_hit": {
+      "Malware": 2,
+      "CVE": 1
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-06-17T00:01:37.356419+09:00",
+      "type": "single",
+      "title": "Cybercriminals mask malicious communications through Microsoft Teams relays",
+      "url": "https://www.helpnetsecurity.com/2026/06/16/dragonforce-microsoft-teams-malware-backdoor-turn/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-06-16T14:22:30+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2023-52271",
+        "CVE-2025-1055",
+        "CVE-2025-61155"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2023-52271",
+          "cvss_score": 6.5,
+          "cvss_severity": "MEDIUM",
+          "cwe": "NVD-CWE-noinfo (Insufficient Information)",
+          "description": "The wsftprm.sys kernel driver 2.0.0.0 in Topaz Antifraud allows low-privileged attackers to kill any (Protected Process Light) process via an IOCTL (which will be named at a later time).",
+          "epss_score": 0.00268,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2025-1055",
+          "cvss_score": 5.6,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-862 (Missing Authorization)",
+          "description": "A vulnerability in the K7RKScan.sys driver, part of the K7 Security Anti-Malware suite, allows a local low-privilege user to send crafted IOCTL requests to terminate a wide range of processes running with administrative or system-level privileges, with the exception of those inherently protected by the operating system. This flaw stems from missing access control in the driver's IOCTL handler, enabling unprivileged users to perform privileged actions in kernel space. Successful exploitation can ",
+          "epss_score": 0.00143,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2025-61155",
+          "cvss_score": 5.5,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-400 (Resource Exhaustion)",
+          "description": "The GameDriverX64.sys kernel-mode anti-cheat driver (v7.23.4.7 and earlier) contains an access control vulnerability in one of its IOCTL handlers. A user-mode process can open a handle to the driver device and send specially crafted IOCTL requests. These requests are executed in kernel-mode context without proper authentication or access validation, allowing the attacker to terminate arbitrary processes, including critical system and security services, without requiring administrative privileges",
+          "epss_score": 0.00221,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-06-17T00:01:37.356419+09:00",
+      "type": "single",
+      "title": "포티넷 포티샌드박스 치명적 취약점 3건…긴급 패치 필요",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=207188",
+      "source": "데일리시큐 (이슈) [RSS]",
+      "published": "2026-06-16T23:42:28+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-25089",
+        "CVE-2026-39808",
+        "CVE-2026-39813"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-25089",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-78 (OS Command Injection)",
+          "description": "A improper neutralization of special elements used in an os command ('os command injection') vulnerability in Fortinet FortiSandbox 5.0.0 through 5.0.5, FortiSandbox 4.4.0 through 4.4.8, FortiSandbox 4.2 all versions, FortiSandbox Cloud 5.0.4 through 5.0.5, FortiSandbox PaaS 5.0.4 through 5.0.5 may allow an unauthenticated attacker to execute unauthorized commands via specifically crafted HTTP requests",
+          "epss_score": 0.0266,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-39808",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-78 (OS Command Injection)",
+          "description": "A improper neutralization of special elements used in an os command ('os command injection') vulnerability in Fortinet FortiSandbox 4.4.0 through 4.4.8 may allow attacker to execute unauthorized code or commands via <insert attack vector here>",
+          "epss_score": 0.66168,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-39813",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-24 (CWE-24)",
+          "description": "A path traversal: '../filedir' vulnerability in Fortinet FortiSandbox 5.0.0 through 5.0.5, FortiSandbox 4.4.0 through 4.4.8 may allow attacker to escalation of privilege via <insert attack vector here>",
+          "epss_score": 0.23643,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-06-17T00:01:37.356419+09:00",
+      "type": "single",
+      "title": "GhostTree Attack Abused Recursive Windows Junctions to Hide Malware",
+      "url": "https://www.bleepingcomputer.com/news/security/ghosttree-attack-abused-recursive-windows-junctions-to-hide-malware/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-06-16T14:17:27+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
