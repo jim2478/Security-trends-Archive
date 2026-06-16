@@ -2,16 +2,20 @@
   "date": "2026-06-16",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 9,
+    "scan_runs": 10,
     "total_articles_max": 1852,
-    "matched_articles_max": 141,
-    "new_alerts": 12,
-    "cve_count": 19,
-    "ioc_count": 36,
+    "matched_articles_max": 143,
+    "new_alerts": 16,
+    "cve_count": 34,
+    "ioc_count": 37,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2023-24932",
+      "CVE-2023-52271",
+      "CVE-2025-1055",
+      "CVE-2025-61155",
       "CVE-2026-20122",
+      "CVE-2026-20127",
       "CVE-2026-20128",
       "CVE-2026-20133",
       "CVE-2026-20182",
@@ -19,6 +23,7 @@
       "CVE-2026-20262",
       "CVE-2026-24066",
       "CVE-2026-24067",
+      "CVE-2026-25089",
       "CVE-2026-34023",
       "CVE-2026-34024",
       "CVE-2026-34025",
@@ -27,11 +32,14 @@
       "CVE-2026-34028",
       "CVE-2026-34029",
       "CVE-2026-34030",
+      "CVE-2026-39808",
+      "CVE-2026-39813",
+      "CVE-2026-48172",
       "CVE-2026-54420"
     ],
     "keywords_hit": {
-      "CVE": 6,
-      "Malware": 6
+      "CVE": 9,
+      "Malware": 7
     }
   },
   "alerts": [
@@ -365,6 +373,202 @@
           "cwe": "NVD-CWE-noinfo (Insufficient Information)",
           "description": "Secure Boot Security Feature Bypass Vulnerability",
           "epss_score": 0.10561,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-06-16T20:01:42.408584+09:00",
+      "type": "single",
+      "title": "CISA warns of another cPanel plugin flaw exploited in attacks",
+      "url": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-another-actively-exploited-cpanel-plugin-flaw/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-06-16T10:47:59+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-48172",
+        "CVE-2026-54420"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-48172",
+          "cvss_score": 10.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-266 (CWE-266)",
+          "description": "LiteSpeed User-End cPanel Plugin before 2.4.5 allows privilege escalation (possibly to root), as exploited in the wild in May 2026. Detection is best done via a command line of grep -rE \"cpanel_jsonapi_func=redisAble\" /var/cpanel/logs /usr/local/cpanel/logs/ 2>/dev/null in Bash. If you get no output, you have not been hit with exploitation of the vulnerability. If there is output, we recommend you examine the IP addresses in the list, determine if they are valid IP addresses, and if not, block t",
+          "epss_score": 0.01233,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-54420",
+          "cvss_score": 8.5,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-61 (CWE-61)",
+          "description": "LiteSpeed cPanel plugin before 2.4.8 (as distributed in LiteSpeed WHM PlugIn before 5.3.2.0) mishandles symlinks provided by a user with FTP or web shell access on a shared hosting server running CloudLinux/CageFS, as exploited in the wild in May 2026.",
+          "epss_score": 0.00348,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-06-16T20:01:42.408584+09:00",
+      "type": "single",
+      "title": "Ransomware gang abuses Microsoft Teams relays to hide malicious traffic",
+      "url": "https://www.bleepingcomputer.com/news/security/ransomware-gang-abuses-microsoft-teams-relays-to-hide-malicious-traffic/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-06-16T10:18:48+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2023-52271",
+        "CVE-2025-1055",
+        "CVE-2025-61155"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2023-52271",
+          "cvss_score": 6.5,
+          "cvss_severity": "MEDIUM",
+          "cwe": "NVD-CWE-noinfo (Insufficient Information)",
+          "description": "The wsftprm.sys kernel driver 2.0.0.0 in Topaz Antifraud allows low-privileged attackers to kill any (Protected Process Light) process via an IOCTL (which will be named at a later time).",
+          "epss_score": 0.00268,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2025-1055",
+          "cvss_score": 5.6,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-862 (Missing Authorization)",
+          "description": "A vulnerability in the K7RKScan.sys driver, part of the K7 Security Anti-Malware suite, allows a local low-privilege user to send crafted IOCTL requests to terminate a wide range of processes running with administrative or system-level privileges, with the exception of those inherently protected by the operating system. This flaw stems from missing access control in the driver's IOCTL handler, enabling unprivileged users to perform privileged actions in kernel space. Successful exploitation can ",
+          "epss_score": 0.00143,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2025-61155",
+          "cvss_score": 5.5,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-400 (Resource Exhaustion)",
+          "description": "The GameDriverX64.sys kernel-mode anti-cheat driver (v7.23.4.7 and earlier) contains an access control vulnerability in one of its IOCTL handlers. A user-mode process can open a handle to the driver device and send specially crafted IOCTL requests. These requests are executed in kernel-mode context without proper authentication or access validation, allowing the attacker to terminate arbitrary processes, including critical system and security services, without requiring administrative privileges",
+          "epss_score": 0.00221,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-06-16T20:01:42.408584+09:00",
+      "type": "single",
+      "title": "Cisco discloses second exploited SD-WAN vulnerability in two weeks (CVE-2026-20262)",
+      "url": "https://www.helpnetsecurity.com/2026/06/16/cisco-sd-wan-cve-2026-20262-exploited/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-06-16T10:20:16+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "[CVE] CVE-2026-20262",
+      "cve_ids": [
+        "CVE-2026-20122",
+        "CVE-2026-20127",
+        "CVE-2026-20128",
+        "CVE-2026-20133",
+        "CVE-2026-20182",
+        "CVE-2026-20245",
+        "CVE-2026-20262"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-20122",
+          "cvss_score": 5.4,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-648 (CWE-648)",
+          "description": "A vulnerability in the API of Cisco Catalyst SD-WAN Manager could allow an authenticated, remote attacker to overwrite arbitrary files on the local file system. To exploit this vulnerability, the attacker must have valid read-only credentials with API access on the affected system.\r\n\r\nThis vulnerability is due to improper file handling on the API interface of an affected system. An attacker could exploit this vulnerability by uploading a malicious file on the local file system. A successful expl",
+          "epss_score": 0.0613,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-20127",
+          "cvss_score": 10.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-287 (Authentication Bypass)",
+          "description": "A vulnerability in the peering authentication in Cisco Catalyst SD-WAN Controller, formerly SD-WAN vSmart, and Cisco Catalyst SD-WAN Manager, formerly SD-WAN vManage, could allow an unauthenticated, remote attacker to bypass authentication and obtain administrative privileges on an affected system.\r\n\r\nThis vulnerability exists because the peering authentication mechanism in an affected system is not working properly. An attacker could exploit this vulnerability by sending crafted requests to an ",
+          "epss_score": 0.48158,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-20128",
+          "cvss_score": 7.5,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-257 (CWE-257)",
+          "description": "A vulnerability in the Data Collection Agent (DCA) feature of Cisco Catalyst SD-WAN Manager could allow an unauthenticated, remote attacker to gain DCA user privileges on an affected system.\r\n\r\nThis vulnerability is due to the presence of a credential file for the DCA user on an affected system. An attacker could exploit this vulnerability by sending a crafted HTTP request and reading the file that contains the DCA password from that affected system. A successful exploit could allow the attacker",
+          "epss_score": 0.046,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-20133",
+          "cvss_score": 6.5,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-200 (Information Exposure)",
+          "description": "A vulnerability in Cisco Catalyst SD-WAN Software could allow an unauthenticated, remote attacker to view sensitive information on an affected system.\r\n\r This vulnerability is due to insufficient file system restrictions. An authenticated attacker with netadmin privileges could exploit this vulnerability by accessing the vshell of an affected system. A successful exploit could allow the attacker to read sensitive information on the underlying operating system.",
+          "epss_score": 0.08965,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-20182",
+          "cvss_score": 10.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-287 (Authentication Bypass)",
+          "description": "May 2026: This security advisory provides the details and fix information for a vulnerability that was discovered and fixed after the  was disclosed in February 2026. This new advisory is for a new vulnerability in the control connection handshaking. The  section of this advisory includes Show Control Connections guidance to help with system checks.&nbsp;\r\n\r\nA vulnerability in the peering authentication in Cisco Catalyst SD-WAN Controller, formerly SD-WAN vSmart, and Cisco Catalyst SD-WAN Manage",
+          "epss_score": 0.77902,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-06-16T20:01:42.408584+09:00",
+      "type": "single",
+      "title": "Attackers Exploit Three Fortinet FortiSandbox Flaws, One Patched Last Week",
+      "url": "https://thehackernews.com/2026/06/attackers-exploit-three-fortinet.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-06-16T10:30:41+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-25089",
+        "CVE-2026-39808",
+        "CVE-2026-39813"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-25089",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-78 (OS Command Injection)",
+          "description": "A improper neutralization of special elements used in an os command ('os command injection') vulnerability in Fortinet FortiSandbox 5.0.0 through 5.0.5, FortiSandbox 4.4.0 through 4.4.8, FortiSandbox 4.2 all versions, FortiSandbox Cloud 5.0.4 through 5.0.5, FortiSandbox PaaS 5.0.4 through 5.0.5 may allow an unauthenticated attacker to execute unauthorized commands via specifically crafted HTTP requests",
+          "epss_score": 0.0266,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-39808",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-78 (OS Command Injection)",
+          "description": "A improper neutralization of special elements used in an os command ('os command injection') vulnerability in Fortinet FortiSandbox 4.4.0 through 4.4.8 may allow attacker to execute unauthorized code or commands via <insert attack vector here>",
+          "epss_score": 0.66168,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-39813",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-24 (CWE-24)",
+          "description": "A path traversal: '../filedir' vulnerability in Fortinet FortiSandbox 5.0.0 through 5.0.5, FortiSandbox 4.4.0 through 4.4.8 may allow attacker to escalation of privilege via <insert attack vector here>",
+          "epss_score": 0.23643,
           "kev": false
         }
       ]
