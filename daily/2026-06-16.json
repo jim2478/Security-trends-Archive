@@ -2,11 +2,11 @@
   "date": "2026-06-16",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 5,
+    "scan_runs": 6,
     "total_articles_max": 1852,
     "matched_articles_max": 141,
-    "new_alerts": 5,
-    "cve_count": 6,
+    "new_alerts": 8,
+    "cve_count": 10,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -15,11 +15,14 @@
       "CVE-2026-20133",
       "CVE-2026-20182",
       "CVE-2026-20245",
-      "CVE-2026-20262"
+      "CVE-2026-20262",
+      "CVE-2026-24066",
+      "CVE-2026-24067",
+      "CVE-2026-54420"
     ],
     "keywords_hit": {
-      "Malware": 3,
-      "CVE": 2
+      "CVE": 5,
+      "Malware": 3
     }
   },
   "alerts": [
@@ -145,6 +148,94 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-16T16:01:23.916185+09:00",
+      "type": "single",
+      "title": "Cisco Releases Security Updates for Actively Exploited SD-WAN Manager Flaw",
+      "url": "https://thehackernews.com/2026/06/cisco-releases-security-updates-for.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-06-16T06:05:58+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-20262"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-20262",
+          "cvss_score": 6.5,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-22 (Path Traversal)",
+          "description": "A vulnerability in the web UI of Cisco Catalyst SD-WAN Manager, formerly SD-WAN vManage, could allow an authenticated, remote attacker to create a file or overwrite any file on the filesystem of an affected system.\r\n\r\nThis vulnerability exists because the affected software does not properly validate user-supplied input during a file upload process. An attacker could exploit this vulnerability by sending a crafted HTTP request to an affected API endpoint of the affected system. A successful explo",
+          "epss_score": null,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-06-16T16:01:23.916185+09:00",
+      "type": "single",
+      "title": "CISA Flags LiteSpeed cPanel Plugin Flaw Exploited for Root Privilege Escalation",
+      "url": "https://thehackernews.com/2026/06/cisa-flags-litespeed-cpanel-plugin-flaw.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-06-16T05:41:52+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-54420"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-54420",
+          "cvss_score": 8.5,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-61 (CWE-61)",
+          "description": "LiteSpeed cPanel plugin before 2.4.8 (as distributed in LiteSpeed WHM PlugIn before 5.3.2.0) mishandles symlinks provided by a user with FTP or web shell access on a shared hosting server running CloudLinux/CageFS, as exploited in the wild in May 2026.",
+          "epss_score": 0.00348,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-06-16T16:01:23.916185+09:00",
+      "type": "single",
+      "title": "SEC Consult SA-20260610-0 :: Local Privilege Escalation in Slate Digital Connect (macOS)",
+      "url": "https://seclists.org/fulldisclosure/2026/Jun/7",
+      "source": "SecLists Full Disclosure (취약점공개)",
+      "published": "2026-06-16T06:56:32+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-24066",
+        "CVE-2026-24067"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-24066",
+          "cvss_score": 8.4,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-296 (CWE-296)",
+          "description": "Slate Digital Connect 1.37.0 for macOS installs a privileged helper tool, com.slatedigital.connect.privileged.helper.tool, which exposes the XPC service com.slatedigital.connect.privileged.helper.tool2. The helper validates connecting XPC clients by checking only the subject.OU value of the client's signing certificate and does not verify that the certificate chains to a trusted code-signing authority. A local attacker can sign a malicious client with a self-signed certificate containing the exp",
+          "epss_score": 0.00086,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-24067",
+          "cvss_score": 8.4,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-367 (CWE-367)",
+          "description": "Slate Digital Connect 1.37.0 for macOS installs a privileged helper tool, com.slatedigital.connect.privileged.helper.tool, which exposes the XPC service com.slatedigital.connect.privileged.helper.tool2. The helper validates connecting XPC clients by obtaining the client's process identifier and using it to retrieve code-signing information for the process. This PID-based client validation is subject to a time-of-check time-of-use race condition because process identifiers can be reused. A local ",
+          "epss_score": 0.00093,
+          "kev": false
+        }
+      ]
     }
   ]
 }
