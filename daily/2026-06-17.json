@@ -2,11 +2,11 @@
   "date": "2026-06-17",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 8,
+    "scan_runs": 9,
     "total_articles_max": 1852,
     "matched_articles_max": 150,
-    "new_alerts": 15,
-    "cve_count": 12,
+    "new_alerts": 16,
+    "cve_count": 13,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -21,11 +21,12 @@
       "CVE-2026-39808",
       "CVE-2026-39813",
       "CVE-2026-48907",
-      "CVE-2026-49975"
+      "CVE-2026-49975",
+      "CVE-2026-50656"
     ],
     "keywords_hit": {
       "Malware": 9,
-      "CVE": 6
+      "CVE": 7
     }
   },
   "alerts": [
@@ -372,6 +373,32 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-17T21:01:10.804405+09:00",
+      "type": "single",
+      "title": "Microsoft working on patch for RoguePlanet Defender zero-day (CVE-2026-50656)",
+      "url": "https://www.helpnetsecurity.com/2026/06/17/rogueplanet-zero-day-cve-2026-50656/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-06-17T11:26:50+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-50656"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-50656",
+          "cvss_score": 7.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-59 (CWE-59)",
+          "description": "Microsoft is aware of an elevation of privilege in the Microsoft Malware Protection Engine in Microsoft Defender publicly referred to as &quot;RoguePlanet &quot;. We are working to provide a high quality security update that addresses this vulnerability. We will provide information in this CVE when the update is available.",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
     }
   ]
 }
