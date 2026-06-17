@@ -2,11 +2,11 @@
   "date": "2026-06-17",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 4,
-    "total_articles_max": 1817,
+    "scan_runs": 5,
+    "total_articles_max": 1842,
     "matched_articles_max": 150,
-    "new_alerts": 11,
-    "cve_count": 10,
+    "new_alerts": 12,
+    "cve_count": 11,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -19,11 +19,12 @@
       "CVE-2026-11317",
       "CVE-2026-25089",
       "CVE-2026-39808",
-      "CVE-2026-39813"
+      "CVE-2026-39813",
+      "CVE-2026-49975"
     ],
     "keywords_hit": {
       "Malware": 7,
-      "CVE": 4
+      "CVE": 5
     }
   },
   "alerts": [
@@ -290,6 +291,32 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-17T13:00:57.372128+09:00",
+      "type": "single",
+      "title": "AI가 찾아낸 ‘HTTP/2 폭탄’…88만 개 웹사이트 흔든 인터넷 핵심 취약점",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=207201",
+      "source": "데일리시큐 (이슈) [RSS]",
+      "published": "2026-06-17T12:02:29+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-49975"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-49975",
+          "cvss_score": 7.5,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-789 (CWE-789)",
+          "description": "Memory Allocation with Excessive Size Value vulnerability in Apache HTTP Server's mod_http leads to denial of service via malicious HTTP requests.\n\nThis issue affects Apache HTTP Server: from 2.4.17 through 2.4.67.",
+          "epss_score": 0.01313,
+          "kev": false
+        }
+      ]
     }
   ]
 }
