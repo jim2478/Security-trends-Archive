@@ -2,10 +2,10 @@
   "date": "2026-06-17",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 9,
+    "scan_runs": 10,
     "total_articles_max": 1852,
     "matched_articles_max": 150,
-    "new_alerts": 16,
+    "new_alerts": 17,
     "cve_count": 13,
     "ioc_count": 0,
     "merged_count": 0,
@@ -25,7 +25,7 @@
       "CVE-2026-50656"
     ],
     "keywords_hit": {
-      "Malware": 9,
+      "Malware": 10,
       "CVE": 7
     }
   },
@@ -399,6 +399,20 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-06-17T23:01:11.695212+09:00",
+      "type": "single",
+      "title": "Rokarolla Android trojan targets banking and crypto users, enables device takeover",
+      "url": "https://www.helpnetsecurity.com/2026/06/17/rokarolla-android-banking-trojan-device-takeover/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-06-17T13:23:46+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
