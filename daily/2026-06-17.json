@@ -2,10 +2,10 @@
   "date": "2026-06-17",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 6,
-    "total_articles_max": 1842,
+    "scan_runs": 7,
+    "total_articles_max": 1852,
     "matched_articles_max": 150,
-    "new_alerts": 13,
+    "new_alerts": 14,
     "cve_count": 12,
     "ioc_count": 0,
     "merged_count": 0,
@@ -24,7 +24,7 @@
       "CVE-2026-49975"
     ],
     "keywords_hit": {
-      "Malware": 7,
+      "Malware": 8,
       "CVE": 6
     }
   },
@@ -344,6 +344,20 @@
           "kev": true
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-06-17T18:01:04.886166+09:00",
+      "type": "single",
+      "title": "24 billion records, including usernames and passwords, exposed in colossal data leak",
+      "url": "https://cybernews.com/security/24-billion-credentials-data-leak/",
+      "source": "CyberNews [RSS]",
+      "published": "2026-06-17T08:00:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
