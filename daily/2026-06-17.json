@@ -2,10 +2,10 @@
   "date": "2026-06-17",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 7,
+    "scan_runs": 8,
     "total_articles_max": 1852,
     "matched_articles_max": 150,
-    "new_alerts": 14,
+    "new_alerts": 15,
     "cve_count": 12,
     "ioc_count": 0,
     "merged_count": 0,
@@ -24,7 +24,7 @@
       "CVE-2026-49975"
     ],
     "keywords_hit": {
-      "Malware": 8,
+      "Malware": 9,
       "CVE": 6
     }
   },
@@ -352,6 +352,20 @@
       "url": "https://cybernews.com/security/24-billion-credentials-data-leak/",
       "source": "CyberNews [RSS]",
       "published": "2026-06-17T08:00:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-17T19:01:05.743373+09:00",
+      "type": "single",
+      "title": "Malicious JetBrains Plugins Steal AI API Keys as Chrome Extensions Capture Chatbot Chats",
+      "url": "https://thehackernews.com/2026/06/malicious-jetbrains-plugins-steal-ai.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-06-17T09:38:46+00:00",
       "keywords": [
         "Malware"
       ],
