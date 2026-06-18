@@ -2,11 +2,11 @@
   "date": "2026-06-19",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
+    "scan_runs": 4,
     "total_articles_max": 1852,
-    "matched_articles_max": 147,
-    "new_alerts": 12,
-    "cve_count": 9,
+    "matched_articles_max": 149,
+    "new_alerts": 14,
+    "cve_count": 10,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -15,14 +15,15 @@
       "CVE-2025-44019",
       "CVE-2026-12390",
       "CVE-2026-40624",
+      "CVE-2026-42530",
       "CVE-2026-50034",
       "CVE-2026-52866",
       "CVE-2026-6865",
       "CVE-2026-8805"
     ],
     "keywords_hit": {
-      "CVE": 6,
-      "Malware": 5,
+      "CVE": 7,
+      "Malware": 6,
       "Botnet": 1
     }
   },
@@ -290,6 +291,46 @@
       "url": "https://www.elastic.co/security-labs/oxloader-malware-loader-infostealer",
       "source": "Elastic Security Labs (탐지엔지니어링) [RSS]",
       "published": "2026-06-19T00:00:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-19T04:01:08.383091+09:00",
+      "type": "single",
+      "title": "F5 Patches Two Critical NGINX Open Source Flaws Enabling Remote Code Execution",
+      "url": "https://thehackernews.com/2026/06/f5-patches-two-critical-nginx-open.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-06-18T17:32:14+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-42530"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-42530",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-06-19T04:01:08.383091+09:00",
+      "type": "single",
+      "title": "Operation Endgame Disrupts SocGholish Malware Infrastructure",
+      "url": "https://hackread.com/operation-endgame-disrupts-socgholish-malware/",
+      "source": "HackRead (해킹/데이터유출) [RSS]",
+      "published": "2026-06-18T18:59:16+00:00",
       "keywords": [
         "Malware"
       ],
