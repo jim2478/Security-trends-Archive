@@ -2,16 +2,27 @@
   "date": "2026-06-19",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 1,
+    "scan_runs": 2,
     "total_articles_max": 1832,
-    "matched_articles_max": 143,
-    "new_alerts": 2,
-    "cve_count": 0,
+    "matched_articles_max": 147,
+    "new_alerts": 10,
+    "cve_count": 9,
     "ioc_count": 0,
     "merged_count": 0,
-    "unique_cves": [],
+    "unique_cves": [
+      "CVE-2025-13036",
+      "CVE-2025-36539",
+      "CVE-2025-44019",
+      "CVE-2026-12390",
+      "CVE-2026-40624",
+      "CVE-2026-50034",
+      "CVE-2026-52866",
+      "CVE-2026-6865",
+      "CVE-2026-8805"
+    ],
     "keywords_hit": {
-      "Malware": 2
+      "CVE": 6,
+      "Malware": 4
     }
   },
   "alerts": [
@@ -36,6 +47,220 @@
       "url": "https://thehackernews.com/2026/06/microsoft-details-windows-clipper.html",
       "source": "The Hacker News (보안뉴스 종합) [RSS]",
       "published": "2026-06-18T14:30:42+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-19T02:01:43.193026+09:00",
+      "type": "single",
+      "title": "Apollo Pharmacy Blood Glucose Monitoring System APG-01 BT",
+      "url": "https://www.cisa.gov/news-events/ics-medical-advisories/icsma-26-169-01",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-06-18T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-50034",
+        "CVE-2026-52866"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-50034",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-52866",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-06-19T02:01:43.193026+09:00",
+      "type": "single",
+      "title": "Schneider Electric EasyLogic T150 and Saitel DP",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-169-04",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-06-18T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-6865"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-6865",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-06-19T02:01:43.193026+09:00",
+      "type": "single",
+      "title": "AVer PTC cameras",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-169-01",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-06-18T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-40624"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-40624",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-06-19T02:01:43.193026+09:00",
+      "type": "single",
+      "title": "Rockwell Automation FactoryTalk Historian Site Edition",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-169-03",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-06-18T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2025-13036",
+        "CVE-2025-36539",
+        "CVE-2025-44019"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2025-13036",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2025-36539",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2025-44019",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-06-19T02:01:43.193026+09:00",
+      "type": "single",
+      "title": "AzeoTech DAQFactory",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-169-02",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-06-18T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-12390"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-12390",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-06-19T02:01:43.193026+09:00",
+      "type": "single",
+      "title": "Mitsubishi Electric MELSEC iQ-F Series",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-169-05",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-06-18T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-8805"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-8805",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-06-19T02:01:43.193026+09:00",
+      "type": "single",
+      "title": "USB worm spreads crypto-stealing malware via Windows shortcut files",
+      "url": "https://www.bleepingcomputer.com/news/security/usb-worm-spreads-crypto-stealing-malware-via-windows-shortcut-files/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-06-18T16:20:06+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-19T02:01:43.193026+09:00",
+      "type": "single",
+      "title": "ThreatsDay Bulletin: Claude Chat Abuse, NastyC2 npm Packages, Device-Code Phishing + 25 More Stories",
+      "url": "https://thehackernews.com/2026/06/threatsday-bulletin-claude-chat-abuse.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-06-18T15:27:54+00:00",
       "keywords": [
         "Malware"
       ],
