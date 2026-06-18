@@ -2,10 +2,10 @@
   "date": "2026-06-18",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 7,
+    "scan_runs": 8,
     "total_articles_max": 1852,
     "matched_articles_max": 144,
-    "new_alerts": 7,
+    "new_alerts": 8,
     "cve_count": 1,
     "ioc_count": 0,
     "merged_count": 0,
@@ -13,9 +13,10 @@
       "CVE-2026-50656"
     ],
     "keywords_hit": {
-      "Malware": 6,
+      "Malware": 7,
       "CVE": 1,
-      "DDoS": 1
+      "DDoS": 1,
+      "Botnet": 1
     }
   },
   "alerts": [
@@ -124,6 +125,21 @@
       "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
       "published": "2026-06-18T12:41:03+00:00",
       "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-18T23:01:09.028135+09:00",
+      "type": "single",
+      "title": "Police cleans nearly 15,000 SocGholish-infected sites tied to Evil Corp",
+      "url": "https://www.bleepingcomputer.com/news/security/law-enforcement-nukes-socgholish-malware-from-nearly-15-000-sites/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-06-18T13:25:47+00:00",
+      "keywords": [
+        "Botnet",
         "Malware"
       ],
       "ioc_raw_text": "",
