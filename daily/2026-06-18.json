@@ -2,10 +2,10 @@
   "date": "2026-06-18",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
+    "scan_runs": 4,
     "total_articles_max": 1852,
     "matched_articles_max": 144,
-    "new_alerts": 3,
+    "new_alerts": 4,
     "cve_count": 1,
     "ioc_count": 0,
     "merged_count": 0,
@@ -13,7 +13,7 @@
       "CVE-2026-50656"
     ],
     "keywords_hit": {
-      "Malware": 2,
+      "Malware": 3,
       "CVE": 1,
       "DDoS": 1
     }
@@ -67,6 +67,20 @@
       "url": "https://grahamcluley.com/smashing-security-podcast-472/",
       "source": "Graham Cluley (보안칼럼) [RSS]",
       "published": "2026-06-17T23:10:17+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-18T10:00:56.737746+09:00",
+      "type": "single",
+      "title": "Crypto Clipper uses Tor and worm-like propagation for persistence and control",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/06/17/crypto-clipper-uses-tor-worm-like-propagation-for-persistence-control/",
+      "source": "Microsoft Security Blog (보안업데이트) [RSS]",
+      "published": "2026-06-17T23:11:43+00:00",
       "keywords": [
         "Malware"
       ],
