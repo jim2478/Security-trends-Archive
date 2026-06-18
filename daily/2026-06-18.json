@@ -2,10 +2,10 @@
   "date": "2026-06-18",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 6,
+    "scan_runs": 7,
     "total_articles_max": 1852,
     "matched_articles_max": 144,
-    "new_alerts": 6,
+    "new_alerts": 7,
     "cve_count": 1,
     "ioc_count": 0,
     "merged_count": 0,
@@ -13,7 +13,7 @@
       "CVE-2026-50656"
     ],
     "keywords_hit": {
-      "Malware": 5,
+      "Malware": 6,
       "CVE": 1,
       "DDoS": 1
     }
@@ -109,6 +109,20 @@
       "url": "https://www.schneier.com/blog/archives/2026/06/embedding-forbidden-text-in-spyware-to-discourage-ai-analysis.html",
       "source": "Bruce Schneier (암호학/보안정책) [RSS]",
       "published": "2026-06-18T11:04:01+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-18T22:01:27.686668+09:00",
+      "type": "single",
+      "title": "Malware attacks strip Roblox developers of entire games",
+      "url": "https://www.helpnetsecurity.com/2026/06/18/roblox-game-takeover-malware-attacks/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-06-18T12:41:03+00:00",
       "keywords": [
         "Malware"
       ],
