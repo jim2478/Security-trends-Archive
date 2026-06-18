@@ -2,10 +2,10 @@
   "date": "2026-06-18",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
+    "scan_runs": 3,
     "total_articles_max": 1852,
     "matched_articles_max": 144,
-    "new_alerts": 2,
+    "new_alerts": 3,
     "cve_count": 1,
     "ioc_count": 0,
     "merged_count": 0,
@@ -13,8 +13,8 @@
       "CVE-2026-50656"
     ],
     "keywords_hit": {
+      "Malware": 2,
       "CVE": 1,
-      "Malware": 1,
       "DDoS": 1
     }
   },
@@ -55,6 +55,20 @@
       "published": "2026-06-17T19:00:00+00:00",
       "keywords": [
         "DDoS"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-18T09:00:53.277721+09:00",
+      "type": "single",
+      "title": "Smashing Security podcast #472: AI gets hacked, and BitLocker gets bypassed",
+      "url": "https://grahamcluley.com/smashing-security-podcast-472/",
+      "source": "Graham Cluley (보안칼럼) [RSS]",
+      "published": "2026-06-17T23:10:17+00:00",
+      "keywords": [
+        "Malware"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
