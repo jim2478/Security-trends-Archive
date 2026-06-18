@@ -1,0 +1,47 @@
+{
+  "date": "2026-06-19",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 1,
+    "total_articles_max": 1832,
+    "matched_articles_max": 143,
+    "new_alerts": 2,
+    "cve_count": 0,
+    "ioc_count": 0,
+    "merged_count": 0,
+    "unique_cves": [],
+    "keywords_hit": {
+      "Malware": 2
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-06-19T00:03:12.815363+09:00",
+      "type": "single",
+      "title": "Law enforcement hits SocGholish: 106 servers down, 15,000 sites cleaned",
+      "url": "https://www.helpnetsecurity.com/2026/06/18/law-enforcement-socgholish-operation-endgame/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-06-18T14:21:23+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-19T00:03:12.815363+09:00",
+      "type": "single",
+      "title": "Microsoft Details Windows Clipper Malware Campaign Using USB LNK Worm and Tor-Based C2",
+      "url": "https://thehackernews.com/2026/06/microsoft-details-windows-clipper.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-06-18T14:30:42+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
