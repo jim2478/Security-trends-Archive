@@ -2,10 +2,10 @@
   "date": "2026-06-19",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
-    "total_articles_max": 1832,
+    "scan_runs": 3,
+    "total_articles_max": 1852,
     "matched_articles_max": 147,
-    "new_alerts": 10,
+    "new_alerts": 12,
     "cve_count": 9,
     "ioc_count": 0,
     "merged_count": 0,
@@ -22,7 +22,8 @@
     ],
     "keywords_hit": {
       "CVE": 6,
-      "Malware": 4
+      "Malware": 5,
+      "Botnet": 1
     }
   },
   "alerts": [
@@ -261,6 +262,34 @@
       "url": "https://thehackernews.com/2026/06/threatsday-bulletin-claude-chat-abuse.html",
       "source": "The Hacker News (보안뉴스 종합) [RSS]",
       "published": "2026-06-18T15:27:54+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-19T03:01:04.466908+09:00",
+      "type": "single",
+      "title": "‘Popa’ Botnet Linked to Publicly-Traded Israeli Firm",
+      "url": "https://krebsonsecurity.com/2026/06/popa-botnet-linked-to-publicly-traded-israeli-firm/",
+      "source": "Krebs on Security (사이버범죄/보안심층분석) [RSS]",
+      "published": "2026-06-18T17:37:58+00:00",
+      "keywords": [
+        "Botnet"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-19T03:01:04.466908+09:00",
+      "type": "single",
+      "title": "Lost in relocation: analysis of a new loader distributing CASTLESTEALER",
+      "url": "https://www.elastic.co/security-labs/oxloader-malware-loader-infostealer",
+      "source": "Elastic Security Labs (탐지엔지니어링) [RSS]",
+      "published": "2026-06-19T00:00:00+00:00",
       "keywords": [
         "Malware"
       ],
