@@ -2,11 +2,11 @@
   "date": "2026-06-19",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 4,
+    "scan_runs": 5,
     "total_articles_max": 1852,
     "matched_articles_max": 149,
-    "new_alerts": 14,
-    "cve_count": 10,
+    "new_alerts": 16,
+    "cve_count": 11,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -14,6 +14,7 @@
       "CVE-2025-36539",
       "CVE-2025-44019",
       "CVE-2026-12390",
+      "CVE-2026-20253",
       "CVE-2026-40624",
       "CVE-2026-42530",
       "CVE-2026-50034",
@@ -22,8 +23,8 @@
       "CVE-2026-8805"
     ],
     "keywords_hit": {
-      "CVE": 7,
-      "Malware": 6,
+      "CVE": 8,
+      "Malware": 7,
       "Botnet": 1
     }
   },
@@ -331,6 +332,46 @@
       "url": "https://hackread.com/operation-endgame-disrupts-socgholish-malware/",
       "source": "HackRead (해킹/데이터유출) [RSS]",
       "published": "2026-06-18T18:59:16+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-19T14:01:13.041423+09:00",
+      "type": "single",
+      "title": "Splunk Enterprise Vulnerability Exploited in Attacks Days After Disclosure",
+      "url": "https://www.securityweek.com/splunk-enterprise-vulnerability-exploited-in-attacks-days-after-disclosure/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-06-19T04:10:34+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-20253"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-20253",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-06-19T14:01:13.041423+09:00",
+      "type": "single",
+      "title": "Asia-Pacific scam networks generate nearly $40 billion a year",
+      "url": "https://www.helpnetsecurity.com/2026/06/19/interpol-asia-cybercrime-trends-report/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-06-19T04:30:49+00:00",
       "keywords": [
         "Malware"
       ],
