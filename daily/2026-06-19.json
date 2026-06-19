@@ -2,10 +2,10 @@
   "date": "2026-06-19",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 6,
+    "scan_runs": 7,
     "total_articles_max": 1852,
     "matched_articles_max": 149,
-    "new_alerts": 18,
+    "new_alerts": 19,
     "cve_count": 12,
     "ioc_count": 0,
     "merged_count": 0,
@@ -25,7 +25,7 @@
     ],
     "keywords_hit": {
       "CVE": 9,
-      "Malware": 7,
+      "Malware": 8,
       "Botnet": 2
     }
   },
@@ -415,6 +415,20 @@
       "published": "2026-06-19T06:46:44+00:00",
       "keywords": [
         "Botnet"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-19T19:00:57.983523+09:00",
+      "type": "single",
+      "title": "The Hacker News Recognizes ANY.RUN as the Best Security Investigation Platform 2026",
+      "url": "https://any.run/cybersecurity-blog/best-security-platform/",
+      "source": "ANY.RUN (악성코드샌드박스분석) [RSS]",
+      "published": "2026-06-19T09:28:53+00:00",
+      "keywords": [
+        "Malware"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
