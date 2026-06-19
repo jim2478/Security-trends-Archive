@@ -2,10 +2,10 @@
   "date": "2026-06-19",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 8,
+    "scan_runs": 9,
     "total_articles_max": 1852,
     "matched_articles_max": 149,
-    "new_alerts": 20,
+    "new_alerts": 21,
     "cve_count": 13,
     "ioc_count": 0,
     "merged_count": 0,
@@ -25,7 +25,7 @@
     ],
     "keywords_hit": {
       "CVE": 10,
-      "Malware": 8,
+      "Malware": 9,
       "Botnet": 2
     }
   },
@@ -459,6 +459,20 @@
           "kev": true
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-06-19T21:01:04.558638+09:00",
+      "type": "single",
+      "title": "CryptoBandits Malware Doubles as a Backdoor, Abuses Tor",
+      "url": "https://www.securityweek.com/cryptobandits-malware-doubles-as-a-backdoor-abuses-tor/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-06-19T11:19:41+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
