@@ -2,10 +2,10 @@
   "date": "2026-06-19",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 10,
+    "scan_runs": 11,
     "total_articles_max": 1852,
     "matched_articles_max": 149,
-    "new_alerts": 22,
+    "new_alerts": 23,
     "cve_count": 13,
     "ioc_count": 0,
     "merged_count": 0,
@@ -24,9 +24,9 @@
       "CVE-2026-8805"
     ],
     "keywords_hit": {
+      "Malware": 11,
       "CVE": 10,
-      "Malware": 10,
-      "Botnet": 2
+      "Botnet": 3
     }
   },
   "alerts": [
@@ -482,6 +482,21 @@
       "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
       "published": "2026-06-19T12:11:44+00:00",
       "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-19T23:01:01.692089+09:00",
+      "type": "single",
+      "title": "Police raid malware network tied to Russia's Evil Corp hacker group",
+      "url": "https://therecord.media/socgholish-botnet-disrupted",
+      "source": "The Record by Recorded Future (위협뉴스) [RSS]",
+      "published": "2026-06-19T12:57:00+00:00",
+      "keywords": [
+        "Botnet",
         "Malware"
       ],
       "ioc_raw_text": "",
