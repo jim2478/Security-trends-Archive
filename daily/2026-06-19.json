@@ -2,11 +2,11 @@
   "date": "2026-06-19",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 7,
+    "scan_runs": 8,
     "total_articles_max": 1852,
     "matched_articles_max": 149,
-    "new_alerts": 19,
-    "cve_count": 12,
+    "new_alerts": 20,
+    "cve_count": 13,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -24,7 +24,7 @@
       "CVE-2026-8805"
     ],
     "keywords_hit": {
-      "CVE": 9,
+      "CVE": 10,
       "Malware": 8,
       "Botnet": 2
     }
@@ -433,6 +433,32 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-19T20:03:16.313116+09:00",
+      "type": "single",
+      "title": "Unauthenticated RCE in Splunk Enterprise under active attack (CVE-2026-20253)",
+      "url": "https://www.helpnetsecurity.com/2026/06/19/splunk-vulnerability-cve-2026-20253-exploited/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-06-19T10:50:33+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-20253"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-20253",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": true
+        }
+      ]
     }
   ]
 }
