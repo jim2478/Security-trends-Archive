@@ -2,10 +2,10 @@
   "date": "2026-06-20",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 1,
-    "total_articles_max": 1812,
-    "matched_articles_max": 132,
-    "new_alerts": 1,
+    "scan_runs": 2,
+    "total_articles_max": 1832,
+    "matched_articles_max": 133,
+    "new_alerts": 2,
     "cve_count": 1,
     "ioc_count": 0,
     "merged_count": 0,
@@ -13,7 +13,8 @@
       "CVE-2025-20701"
     ],
     "keywords_hit": {
-      "Botnet": 1
+      "Botnet": 1,
+      "Malware": 1
     }
   },
   "alerts": [
@@ -42,6 +43,20 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-06-20T02:01:00.608070+09:00",
+      "type": "single",
+      "title": "FBI alerts about Malware infected Traffic Distribution Systems TDS",
+      "url": "https://www.cybersecurity-insiders.com/fbi-alerts-about-malware-infected-traffic-distribution-systems-tds/",
+      "source": "Cybersecurity Insiders (보안인사이트)",
+      "published": "2026-06-19T15:25:25+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
