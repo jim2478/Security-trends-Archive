@@ -2,10 +2,10 @@
   "date": "2026-06-19",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 9,
+    "scan_runs": 10,
     "total_articles_max": 1852,
     "matched_articles_max": 149,
-    "new_alerts": 21,
+    "new_alerts": 22,
     "cve_count": 13,
     "ioc_count": 0,
     "merged_count": 0,
@@ -25,7 +25,7 @@
     ],
     "keywords_hit": {
       "CVE": 10,
-      "Malware": 9,
+      "Malware": 10,
       "Botnet": 2
     }
   },
@@ -467,6 +467,20 @@
       "url": "https://www.securityweek.com/cryptobandits-malware-doubles-as-a-backdoor-abuses-tor/",
       "source": "SecurityWeek (보안뉴스 종합) [RSS]",
       "published": "2026-06-19T11:19:41+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-19T22:01:29.960383+09:00",
+      "type": "single",
+      "title": "Cybercriminals abused GitHub, YouTube and VirusTotal to push crypto-stealing malware",
+      "url": "https://www.helpnetsecurity.com/2026/06/19/fake-github-stars-crypto-stealing-malware/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-06-19T12:11:44+00:00",
       "keywords": [
         "Malware"
       ],
