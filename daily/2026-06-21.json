@@ -1,0 +1,101 @@
+{
+  "date": "2026-06-21",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 1,
+    "total_articles_max": 1802,
+    "matched_articles_max": 131,
+    "new_alerts": 3,
+    "cve_count": 3,
+    "ioc_count": 0,
+    "merged_count": 0,
+    "unique_cves": [
+      "CVE-2025-68624",
+      "CVE-2026-12225",
+      "CVE-2026-56099"
+    ],
+    "keywords_hit": {
+      "CVE": 3
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-06-21T13:01:51.987062+09:00",
+      "type": "single",
+      "title": "OpenBSD mpls_do_error: Remote Kernel Stack Disclosure via MPLS Label Stack Over-read",
+      "url": "https://seclists.org/fulldisclosure/2026/Jun/17",
+      "source": "SecLists Full Disclosure (취약점공개)",
+      "published": "2026-06-21T03:54:03+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-56099"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-56099",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-06-21T13:01:51.987062+09:00",
+      "type": "single",
+      "title": "SEC Consult SA-20260616-0 :: Broken Access Control in syracom AG Secure Login (2FA) for Atlassian Jira / Confluence / Bitbucket #CVE-2026-12225",
+      "url": "https://seclists.org/fulldisclosure/2026/Jun/16",
+      "source": "SecLists Full Disclosure (취약점공개)",
+      "published": "2026-06-21T03:51:25+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-12225"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-12225",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-06-21T13:01:51.987062+09:00",
+      "type": "single",
+      "title": "CVE-2025-68624: Cross-Tenant Authentication Bypass by Spoofing in N-able Mail Assure",
+      "url": "https://seclists.org/fulldisclosure/2026/Jun/10",
+      "source": "SecLists Full Disclosure (취약점공개)",
+      "published": "2026-06-21T03:49:42+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2025-68624"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2025-68624",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    }
+  ]
+}
