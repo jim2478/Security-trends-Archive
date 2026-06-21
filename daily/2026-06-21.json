@@ -2,11 +2,11 @@
   "date": "2026-06-21",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
-    "total_articles_max": 1802,
-    "matched_articles_max": 131,
-    "new_alerts": 5,
-    "cve_count": 6,
+    "scan_runs": 3,
+    "total_articles_max": 1812,
+    "matched_articles_max": 133,
+    "new_alerts": 6,
+    "cve_count": 7,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -15,10 +15,11 @@
       "CVE-2026-11857",
       "CVE-2026-11858",
       "CVE-2026-12225",
+      "CVE-2026-4020",
       "CVE-2026-56099"
     ],
     "keywords_hit": {
-      "CVE": 5
+      "CVE": 6
     }
   },
   "alerts": [
@@ -158,6 +159,32 @@
           "cwe": "CWE-862 (Missing Authorization)",
           "description": "Quanos SCHEMA ST4 on-premises contains a local privilege escalation vulnerability in the Client Update Service. The update service runs as NT AUTHORITY\\SYSTEM and exposes a .NET Remoting interface over a named pipe without sufficient access controls or authorization. A local authenticated low-privileged user can connect to the interface and invoke privileged update methods such as Update(). This allows arbitrary file write and delete operations with SYSTEM privileges and can be used to achieve l",
           "epss_score": 0.00125,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-06-21T17:01:10.008217+09:00",
+      "type": "single",
+      "title": "이메일 계정 탈취부터 서버 장악까지…워드프레스 취약점 비상",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=207246",
+      "source": "데일리시큐 (이슈) [RSS]",
+      "published": "2026-06-21T16:41:31+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-4020"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-4020",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
           "kev": false
         }
       ]
