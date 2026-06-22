@@ -2,11 +2,11 @@
   "date": "2026-06-22",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 1,
-    "total_articles_max": 1792,
+    "scan_runs": 2,
+    "total_articles_max": 1812,
     "matched_articles_max": 134,
-    "new_alerts": 1,
-    "cve_count": 3,
+    "new_alerts": 2,
+    "cve_count": 6,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -16,7 +16,8 @@
     ],
     "keywords_hit": {
       "Botnet": 1,
-      "Malware": 1
+      "Malware": 1,
+      "봇넷": 1
     }
   },
   "alerts": [
@@ -54,6 +55,52 @@
           "cwe": "CWE-119 (Buffer Overflow)",
           "description": "Stack-based buffer overflow in dws/api/Login on D-Link DIR-850L B1 2.07 before 2.07WWB05, DIR-817 Ax, DIR-818LW Bx before 2.05b03beta03, DIR-822 C1 3.01 before 3.01WWb02, DIR-823 A1 1.00 before 1.00WWb05, DIR-895L A1 1.11 before 1.11WWb04, DIR-890L A1 1.09 before 1.09b14, DIR-885L A1 1.11 before 1.11WWb07, DIR-880L A1 1.07 before 1.07WWb08, DIR-868L B1 2.03 before 2.03WWb01, and DIR-868L C1 3.00 before 3.00WWb01 devices allows remote attackers to execute arbitrary code via a long session cookie.",
           "epss_score": 0.11927,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2025-11837",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-06-22T11:01:23.383166+09:00",
+      "type": "single",
+      "title": "신종 아리스팅어 봇넷, 세계 구형 라우터 4000대 이상 감염... 전체 피해 절반은 한국",
+      "url": "http://www.boannews.com/media/view.asp?idx=144260&kind=&sub_kind=",
+      "source": "보안뉴스 (사건사고) [RSS]",
+      "published": "2026-06-22T01:49:00+00:00",
+      "keywords": [
+        "봇넷"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2013-3307",
+        "CVE-2016-5681",
+        "CVE-2025-11837"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2013-3307",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2016-5681",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
           "kev": false
         },
         {
