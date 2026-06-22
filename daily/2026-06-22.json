@@ -2,10 +2,10 @@
   "date": "2026-06-22",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
+    "scan_runs": 4,
     "total_articles_max": 1832,
     "matched_articles_max": 134,
-    "new_alerts": 3,
+    "new_alerts": 4,
     "cve_count": 9,
     "ioc_count": 0,
     "merged_count": 0,
@@ -18,10 +18,11 @@
       "CVE-2025-20702"
     ],
     "keywords_hit": {
-      "Botnet": 1,
-      "Malware": 1,
+      "Botnet": 2,
+      "Malware": 2,
       "봇넷": 1,
-      "CVE": 1
+      "CVE": 1,
+      "DDoS": 1
     }
   },
   "alerts": [
@@ -163,6 +164,22 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-06-22T17:01:26.662947+09:00",
+      "type": "single",
+      "title": "AryStinger Malware Infects 4,300 Legacy Routers to Build Reconnaissance Proxy Network",
+      "url": "https://thehackernews.com/2026/06/arystinger-malware-infects-4300-legacy.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-06-22T06:57:44+00:00",
+      "keywords": [
+        "DDoS",
+        "Botnet",
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
