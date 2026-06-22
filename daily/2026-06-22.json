@@ -2,22 +2,26 @@
   "date": "2026-06-22",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
-    "total_articles_max": 1812,
+    "scan_runs": 3,
+    "total_articles_max": 1832,
     "matched_articles_max": 134,
-    "new_alerts": 2,
-    "cve_count": 6,
+    "new_alerts": 3,
+    "cve_count": 9,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2013-3307",
       "CVE-2016-5681",
-      "CVE-2025-11837"
+      "CVE-2025-11837",
+      "CVE-2025-20700",
+      "CVE-2025-20701",
+      "CVE-2025-20702"
     ],
     "keywords_hit": {
       "Botnet": 1,
       "Malware": 1,
-      "봇넷": 1
+      "봇넷": 1,
+      "CVE": 1
     }
   },
   "alerts": [
@@ -105,6 +109,52 @@
         },
         {
           "cve_id": "CVE-2025-11837",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-06-22T15:01:07.625837+09:00",
+      "type": "single",
+      "title": "애플 비츠 이어폰 '도청' 가능 취약점 발견…긴급 패치 배포",
+      "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=677106",
+      "source": "디지털투데이 (전체기사) [RSS]",
+      "published": "2026-06-22T04:51:29+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2025-20700",
+        "CVE-2025-20701",
+        "CVE-2025-20702"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2025-20700",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2025-20701",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2025-20702",
           "cvss_score": null,
           "cvss_severity": null,
           "cwe": null,
