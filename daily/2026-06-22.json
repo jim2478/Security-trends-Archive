@@ -2,10 +2,10 @@
   "date": "2026-06-22",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 4,
+    "scan_runs": 5,
     "total_articles_max": 1832,
     "matched_articles_max": 134,
-    "new_alerts": 4,
+    "new_alerts": 5,
     "cve_count": 9,
     "ioc_count": 0,
     "merged_count": 0,
@@ -18,7 +18,7 @@
       "CVE-2025-20702"
     ],
     "keywords_hit": {
-      "Botnet": 2,
+      "Botnet": 3,
       "Malware": 2,
       "봇넷": 1,
       "CVE": 1,
@@ -176,6 +176,20 @@
         "DDoS",
         "Botnet",
         "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-22T19:03:05.824096+09:00",
+      "type": "single",
+      "title": "Canada’s Spy Agency Used First-of-Its-Kind Warrant to Clean Botnet-Infected Devices",
+      "url": "https://thehackernews.com/2026/06/canadas-spy-agency-used-first-of-its.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-06-22T09:11:37+00:00",
+      "keywords": [
+        "Botnet"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
