@@ -2,10 +2,10 @@
   "date": "2026-06-22",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 7,
+    "scan_runs": 8,
     "total_articles_max": 1832,
     "matched_articles_max": 134,
-    "new_alerts": 8,
+    "new_alerts": 10,
     "cve_count": 9,
     "ioc_count": 0,
     "merged_count": 0,
@@ -18,9 +18,9 @@
       "CVE-2025-20702"
     ],
     "keywords_hit": {
-      "Malware": 5,
+      "Malware": 6,
       "Botnet": 4,
-      "봇넷": 1,
+      "봇넷": 2,
       "CVE": 1,
       "DDoS": 1
     }
@@ -233,6 +233,34 @@
       "published": "2026-06-22T12:47:25+00:00",
       "keywords": [
         "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-22T23:03:13.558407+09:00",
+      "type": "single",
+      "title": "New OXLOADER Loader Uses Malicious Google Ads to Deliver CastleStealer",
+      "url": "https://thehackernews.com/2026/06/new-oxloader-loader-uses-malicious.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-06-22T13:20:12+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-22T23:03:13.558407+09:00",
+      "type": "single",
+      "title": "한국 노린 공유기 봇넷 ‘아리스팅어’ 확산…해킹 공격 중계지로 악용",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=207266",
+      "source": "데일리시큐 (이슈) [RSS]",
+      "published": "2026-06-22T22:46:05+00:00",
+      "keywords": [
+        "봇넷"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
