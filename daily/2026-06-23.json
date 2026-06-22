@@ -1,0 +1,33 @@
+{
+  "date": "2026-06-23",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 1,
+    "total_articles_max": 1802,
+    "matched_articles_max": 127,
+    "new_alerts": 1,
+    "cve_count": 0,
+    "ioc_count": 0,
+    "merged_count": 0,
+    "unique_cves": [],
+    "keywords_hit": {
+      "Malware": 1
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-06-23T07:01:01.353282+09:00",
+      "type": "single",
+      "title": "Rootkit Removal: A Step-by-Step Guide",
+      "url": "https://www.pandasecurity.com/en/mediacenter/rootkit-removal/",
+      "source": "Panda Security (엔드포인트보안) [RSS]",
+      "published": "2026-06-22T20:42:17+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
