@@ -2,10 +2,10 @@
   "date": "2026-06-23",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
-    "total_articles_max": 1812,
+    "scan_runs": 4,
+    "total_articles_max": 1822,
     "matched_articles_max": 131,
-    "new_alerts": 3,
+    "new_alerts": 4,
     "cve_count": 1,
     "ioc_count": 0,
     "merged_count": 0,
@@ -13,7 +13,7 @@
       "CVE-2024-40766"
     ],
     "keywords_hit": {
-      "Malware": 2,
+      "Malware": 3,
       "CVE": 1
     }
   },
@@ -71,6 +71,20 @@
           "kev": true
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-06-23T14:01:00.942645+09:00",
+      "type": "single",
+      "title": "Free, no-signup World Cup streams serve scams instead of football",
+      "url": "https://www.helpnetsecurity.com/2026/06/23/fake-world-cup-streaming-sites-scams/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-06-23T04:30:42+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
