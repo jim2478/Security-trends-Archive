@@ -2,10 +2,10 @@
   "date": "2026-06-23",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 4,
+    "scan_runs": 5,
     "total_articles_max": 1822,
     "matched_articles_max": 131,
-    "new_alerts": 4,
+    "new_alerts": 5,
     "cve_count": 1,
     "ioc_count": 0,
     "merged_count": 0,
@@ -13,7 +13,7 @@
       "CVE-2024-40766"
     ],
     "keywords_hit": {
-      "Malware": 3,
+      "Malware": 4,
       "CVE": 1
     }
   },
@@ -79,6 +79,20 @@
       "url": "https://www.helpnetsecurity.com/2026/06/23/fake-world-cup-streaming-sites-scams/",
       "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
       "published": "2026-06-23T04:30:42+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-23T22:03:11.177892+09:00",
+      "type": "single",
+      "title": "New CryptoBandits Malware Uses USB Drives and Tor to Steal Crypto",
+      "url": "https://hackread.com/cryptobandits-malware-usb-drives-tor-steal-crypto/",
+      "source": "HackRead (해킹/데이터유출) [RSS]",
+      "published": "2026-06-23T12:02:35+00:00",
       "keywords": [
         "Malware"
       ],
