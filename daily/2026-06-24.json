@@ -2,20 +2,33 @@
   "date": "2026-06-24",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 5,
+    "scan_runs": 6,
     "total_articles_max": 1832,
     "matched_articles_max": 124,
-    "new_alerts": 5,
-    "cve_count": 3,
-    "ioc_count": 0,
+    "new_alerts": 6,
+    "cve_count": 16,
+    "ioc_count": 12,
     "merged_count": 0,
     "unique_cves": [
+      "CVE-2016-4437",
+      "CVE-2021-26855",
+      "CVE-2021-27076",
+      "CVE-2021-36260",
+      "CVE-2022-27925",
+      "CVE-2022-40684",
+      "CVE-2022-41082",
+      "CVE-2023-20198",
+      "CVE-2023-32315",
+      "CVE-2023-46747",
+      "CVE-2024-21762",
+      "CVE-2024-36401",
+      "CVE-2025-55182",
       "CVE-2026-20045",
       "CVE-2026-20230"
     ],
     "keywords_hit": {
       "CVE": 3,
-      "Malware": 2
+      "Malware": 3
     }
   },
   "alerts": [
@@ -122,6 +135,80 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-24T20:01:12.794779+09:00",
+      "type": "single",
+      "title": "StrikeShark: investigating a new campaign delivering Cobalt Strike through SharkLoader",
+      "url": "https://securelist.com/strikeshark-campaign/120326/",
+      "source": "Kaspersky Securelist (위협분석) [RSS]",
+      "published": "2026-06-24T10:00:03+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "[Domain] connect-microsoft[.]com\n[Domain] ms-record[.]com\n[Domain] ms-record[.]top\n[Domain] ms-tray[.]top\n[MD5] 24FCEBDEECBA65004FDB0923763D74FD\n[MD5] 9C872A0D5D5A38950E8B9AC9B488BE3F\n[MD5] 9CBD560F820C95D7C38342CD558CB5C6\n[MD5] A514D1BB62D7916475946FE7C07AC0AA\n[MD5] AA3086BE652C8B20B0B29B2730D57119\n[MD5] B3352B42432DEDC4A519F011DC8B5D5A\n[MD5] C559CC68986933200FD5D9E4388E2F58\n[Email] intelreports[@]kaspersky[.]com",
+      "cve_ids": [
+        "CVE-2016-4437",
+        "CVE-2021-26855",
+        "CVE-2021-27076",
+        "CVE-2021-36260",
+        "CVE-2022-27925",
+        "CVE-2022-40684",
+        "CVE-2022-41082",
+        "CVE-2023-20198",
+        "CVE-2023-32315",
+        "CVE-2023-46747",
+        "CVE-2024-21762",
+        "CVE-2024-36401",
+        "CVE-2025-55182"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2016-4437",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "NVD-CWE-noinfo (Insufficient Information)",
+          "description": "Apache Shiro before 1.2.5, when a cipher key has not been configured for the \"remember me\" feature, allows remote attackers to execute arbitrary code or bypass intended access restrictions via an unspecified request parameter.",
+          "epss_score": 0.93143,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2021-26855",
+          "cvss_score": 9.1,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-918 (SSRF)",
+          "description": "Microsoft Exchange Server Remote Code Execution Vulnerability",
+          "epss_score": 0.99999,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2021-27076",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": "NVD-CWE-noinfo (Insufficient Information)",
+          "description": "Microsoft SharePoint Server Remote Code Execution Vulnerability",
+          "epss_score": 0.09219,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2021-36260",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-78 (OS Command Injection)",
+          "description": "A command injection vulnerability in the web server of some Hikvision product. Due to the insufficient input validation, attacker can exploit the vulnerability to launch a command injection attack by sending some messages with malicious commands.",
+          "epss_score": 0.99869,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2022-27925",
+          "cvss_score": 7.2,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-22 (Path Traversal)",
+          "description": "Zimbra Collaboration (aka ZCS) 8.8.15 and 9.0 has mboximport functionality that receives a ZIP archive and extracts files from it. An authenticated user with administrator rights has the ability to upload arbitrary files to the system, leading to directory traversal.",
+          "epss_score": 0.98163,
+          "kev": true
+        }
+      ]
     }
   ]
 }
