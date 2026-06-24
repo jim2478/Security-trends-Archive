@@ -2,10 +2,10 @@
   "date": "2026-06-24",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 4,
+    "scan_runs": 5,
     "total_articles_max": 1832,
     "matched_articles_max": 124,
-    "new_alerts": 4,
+    "new_alerts": 5,
     "cve_count": 3,
     "ioc_count": 0,
     "merged_count": 0,
@@ -14,8 +14,8 @@
       "CVE-2026-20230"
     ],
     "keywords_hit": {
-      "Malware": 2,
-      "CVE": 2
+      "CVE": 3,
+      "Malware": 2
     }
   },
   "alerts": [
@@ -108,6 +108,20 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-06-24T18:01:00.666867+09:00",
+      "type": "single",
+      "title": "CERT-In’s AI Vulnerability Blueprint: Why Indian CISOs Need Machine-Speed Risk Operations in the Post-Mythos Era",
+      "url": "https://blog.qualys.com/category/product-tech",
+      "source": "Qualys Blog (취약점관리) [RSS]",
+      "published": "2026-06-24T08:42:34+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
