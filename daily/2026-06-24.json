@@ -2,11 +2,11 @@
   "date": "2026-06-24",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 6,
+    "scan_runs": 7,
     "total_articles_max": 1832,
-    "matched_articles_max": 124,
-    "new_alerts": 6,
-    "cve_count": 16,
+    "matched_articles_max": 125,
+    "new_alerts": 7,
+    "cve_count": 18,
     "ioc_count": 12,
     "merged_count": 0,
     "unique_cves": [
@@ -27,7 +27,7 @@
       "CVE-2026-20230"
     ],
     "keywords_hit": {
-      "CVE": 3,
+      "CVE": 4,
       "Malware": 3
     }
   },
@@ -207,6 +207,42 @@
           "description": "Zimbra Collaboration (aka ZCS) 8.8.15 and 9.0 has mboximport functionality that receives a ZIP archive and extracts files from it. An authenticated user with administrator rights has the ability to upload arbitrary files to the system, leading to directory traversal.",
           "epss_score": 0.98163,
           "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-06-24T21:03:25.052239+09:00",
+      "type": "single",
+      "title": "Cisco Unified CM flaw actively exploited to drop webshells (CVE-2026-20230)",
+      "url": "https://www.helpnetsecurity.com/2026/06/24/cisco-unified-cm-flaw-exploited-to-drop-webshells-cve-2026-20230/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-06-24T11:36:30+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-20045",
+        "CVE-2026-20230"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-20045",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-20230",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
         }
       ]
     }
