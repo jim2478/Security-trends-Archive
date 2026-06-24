@@ -2,16 +2,19 @@
   "date": "2026-06-25",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
+    "scan_runs": 4,
     "total_articles_max": 1832,
     "matched_articles_max": 128,
-    "new_alerts": 4,
-    "cve_count": 0,
+    "new_alerts": 5,
+    "cve_count": 1,
     "ioc_count": 0,
     "merged_count": 0,
-    "unique_cves": [],
+    "unique_cves": [
+      "CVE-2025-67038"
+    ],
     "keywords_hit": {
-      "Malware": 4
+      "Malware": 4,
+      "CVE": 1
     }
   },
   "alerts": [
@@ -70,6 +73,32 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-25T04:01:07.171430+09:00",
+      "type": "single",
+      "title": "CISA Warns Critical Lantronix EDS5000 Flaw Is Being Actively Exploited",
+      "url": "https://thehackernews.com/2026/06/cisa-warns-critical-lantronix-eds5000.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-06-24T17:19:18+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2025-67038"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2025-67038",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-94 (Code Injection)",
+          "description": "An issue was discovered in Lantronix EDS5000 2.1.0.0R3. The HTTP RPC module executes a shell command to write logs when user's authantication fails. The username is directly concatenated with the command without any sanitization. This allow attackers to inject arbitrary OS commands into the username parameter. Injected commands are executed with root privileges.",
+          "epss_score": 0.01131,
+          "kev": true
+        }
+      ]
     }
   ]
 }
