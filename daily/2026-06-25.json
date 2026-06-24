@@ -2,19 +2,22 @@
   "date": "2026-06-25",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 5,
+    "scan_runs": 6,
     "total_articles_max": 1832,
     "matched_articles_max": 130,
-    "new_alerts": 7,
-    "cve_count": 1,
+    "new_alerts": 8,
+    "cve_count": 4,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
-      "CVE-2025-67038"
+      "CVE-2025-67038",
+      "CVE-2026-20127",
+      "CVE-2026-20182",
+      "CVE-2026-20245"
     ],
     "keywords_hit": {
       "Malware": 6,
-      "CVE": 1
+      "CVE": 2
     }
   },
   "alerts": [
@@ -127,6 +130,52 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-25T07:01:16.305228+09:00",
+      "type": "single",
+      "title": "Mandiant reveals how Cisco SD-WAN zero-day attacks gained root access",
+      "url": "https://www.bleepingcomputer.com/news/security/mandiant-reveals-how-cisco-sd-wan-zero-day-attacks-gained-root-access/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-06-24T21:29:10+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-20127",
+        "CVE-2026-20182",
+        "CVE-2026-20245"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-20127",
+          "cvss_score": 10.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-287 (Authentication Bypass)",
+          "description": "A vulnerability in the peering authentication in Cisco Catalyst SD-WAN Controller, formerly SD-WAN vSmart, Cisco Catalyst SD-WAN Manager, formerly SD-WAN vManage, and Cisco Catalyst SD-WAN Validator, formerly SD-WAN vBond, could allow an unauthenticated, remote attacker to bypass authentication and obtain administrative privileges on an affected system.\r\n\r\nThis vulnerability exists because the peering authentication mechanism in an affected system is not working properly. An attacker could explo",
+          "epss_score": 0.57793,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-20182",
+          "cvss_score": 10.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-287 (Authentication Bypass)",
+          "description": "May 2026: This security advisory provides the details and fix information for a vulnerability that was discovered and fixed after the  was disclosed in February 2026. This new advisory is for a new vulnerability in the control connection handshaking. The  section of this advisory includes Show Control Connections guidance to help with system checks.&nbsp;\r\n\r\nA vulnerability in the peering authentication in Cisco Catalyst SD-WAN Controller, formerly SD-WAN vSmart, Cisco Catalyst SD-WAN Manager, f",
+          "epss_score": 0.87693,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-20245",
+          "cvss_score": 7.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-116 (CWE-116)",
+          "description": "A vulnerability in the CLI of Cisco Catalyst SD-WAN Controller, formerly SD-WAN vSmart, Cisco Catalyst SD-WAN Manager, formerly SD-WAN vManage, and Cisco Catalyst SD-WAN Validator, formerly SD-WAN vBond, could allow an authenticated, local attacker to execute arbitrary commands as root by supplying a crafted file to the affected system.\r\n\r\nThis vulnerability is due to insufficient validation of user-supplied input. An attacker could exploit this vulnerability by uploading a crafted file to the a",
+          "epss_score": 0.09922,
+          "kev": true
+        }
+      ]
     }
   ]
 }
