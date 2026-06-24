@@ -2,16 +2,16 @@
   "date": "2026-06-25",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 1,
+    "scan_runs": 2,
     "total_articles_max": 1802,
     "matched_articles_max": 125,
-    "new_alerts": 1,
+    "new_alerts": 3,
     "cve_count": 0,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [],
     "keywords_hit": {
-      "Malware": 1
+      "Malware": 3
     }
   },
   "alerts": [
@@ -22,6 +22,34 @@
       "url": "https://www.bleepingcomputer.com/news/security/amadey-stealc-malware-operations-disrupted-in-operation-endgame-action/",
       "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
       "published": "2026-06-24T14:35:11+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-25T01:03:01.613258+09:00",
+      "type": "single",
+      "title": "Law enforcement hits StealC and Amadey malware networks",
+      "url": "https://www.helpnetsecurity.com/2026/06/24/operation-endgame-stealc-amadey-malware-disrupted/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-06-24T15:05:36+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-25T01:03:01.613258+09:00",
+      "type": "single",
+      "title": "Microsoft and Allies Smash Shared Infrastructure of Amadey and StealC Malware",
+      "url": "https://www.securityweek.com/microsoft-and-allies-smash-shared-infrastructure-of-amadey-and-stealc-malware/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-06-24T15:02:07+00:00",
       "keywords": [
         "Malware"
       ],
