@@ -2,16 +2,16 @@
   "date": "2026-06-25",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
-    "total_articles_max": 1802,
-    "matched_articles_max": 125,
-    "new_alerts": 3,
+    "scan_runs": 3,
+    "total_articles_max": 1832,
+    "matched_articles_max": 128,
+    "new_alerts": 4,
     "cve_count": 0,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [],
     "keywords_hit": {
-      "Malware": 3
+      "Malware": 4
     }
   },
   "alerts": [
@@ -50,6 +50,20 @@
       "url": "https://www.securityweek.com/microsoft-and-allies-smash-shared-infrastructure-of-amadey-and-stealc-malware/",
       "source": "SecurityWeek (보안뉴스 종합) [RSS]",
       "published": "2026-06-24T15:02:07+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-25T03:00:56.890847+09:00",
+      "type": "single",
+      "title": "Amadey and StealC Malware Network Disrupted, 27M Stolen Credentials Recovered",
+      "url": "https://thehackernews.com/2026/06/amadey-and-stealc-malware-network.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-06-24T15:59:50+00:00",
       "keywords": [
         "Malware"
       ],
