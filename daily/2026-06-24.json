@@ -2,16 +2,20 @@
   "date": "2026-06-24",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 1,
+    "scan_runs": 2,
     "total_articles_max": 1832,
     "matched_articles_max": 124,
-    "new_alerts": 1,
-    "cve_count": 0,
+    "new_alerts": 2,
+    "cve_count": 2,
     "ioc_count": 0,
     "merged_count": 0,
-    "unique_cves": [],
+    "unique_cves": [
+      "CVE-2026-20045",
+      "CVE-2026-20230"
+    ],
     "keywords_hit": {
-      "Malware": 1
+      "Malware": 1,
+      "CVE": 1
     }
   },
   "alerts": [
@@ -28,6 +32,42 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-24T15:03:22.800863+09:00",
+      "type": "single",
+      "title": "Hackers Exploiting Cisco Unified CM Vulnerability",
+      "url": "https://www.securityweek.com/hackers-exploiting-cisco-unified-cm-vulnerability/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-06-24T05:44:15+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-20045",
+        "CVE-2026-20230"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-20045",
+          "cvss_score": 8.2,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-94 (Code Injection)",
+          "description": "A vulnerability in Cisco Unified Communications Manager (Unified CM), Cisco Unified Communications Manager Session Management Edition (Unified CM SME), Cisco Unified Communications Manager IM &amp; Presence Service (Unified CM IM&amp;P), Cisco Unity Connection, and Cisco Webex Calling Dedicated Instance could allow an unauthenticated, remote attacker to execute arbitrary commands on the underlying operating system of an affected device.&nbsp;\r\n\r\nThis vulnerability is due to improper validation o",
+          "epss_score": 0.04307,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-20230",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
     }
   ]
 }
