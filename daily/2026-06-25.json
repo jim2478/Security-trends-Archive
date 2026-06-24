@@ -2,10 +2,10 @@
   "date": "2026-06-25",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 4,
+    "scan_runs": 5,
     "total_articles_max": 1832,
-    "matched_articles_max": 128,
-    "new_alerts": 5,
+    "matched_articles_max": 130,
+    "new_alerts": 7,
     "cve_count": 1,
     "ioc_count": 0,
     "merged_count": 0,
@@ -13,7 +13,7 @@
       "CVE-2025-67038"
     ],
     "keywords_hit": {
-      "Malware": 4,
+      "Malware": 6,
       "CVE": 1
     }
   },
@@ -99,6 +99,34 @@
           "kev": true
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-06-25T06:01:05.179111+09:00",
+      "type": "single",
+      "title": "Malicious Edge extension abuses Native Messaging as bridge to malware",
+      "url": "https://www.bleepingcomputer.com/news/security/malicious-edge-extension-abuses-native-messaging-as-bridge-to-malware/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-06-24T20:58:22+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-25T06:01:05.179111+09:00",
+      "type": "single",
+      "title": "Three ‘cybercrime as a service’ operations undercut by Microsoft, law enforcement",
+      "url": "https://therecord.media/stealc-amadey-socgholish-malware-takedown-europol-microsoft",
+      "source": "The Record by Recorded Future (위협뉴스) [RSS]",
+      "published": "2026-06-24T20:00:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
