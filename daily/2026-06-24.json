@@ -2,10 +2,10 @@
   "date": "2026-06-24",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
+    "scan_runs": 3,
     "total_articles_max": 1832,
     "matched_articles_max": 124,
-    "new_alerts": 2,
+    "new_alerts": 3,
     "cve_count": 2,
     "ioc_count": 0,
     "merged_count": 0,
@@ -14,7 +14,7 @@
       "CVE-2026-20230"
     ],
     "keywords_hit": {
-      "Malware": 1,
+      "Malware": 2,
       "CVE": 1
     }
   },
@@ -68,6 +68,20 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-06-24T16:00:58.638674+09:00",
+      "type": "single",
+      "title": "Linux Process Name Masquerading, (Wed, Jun 24th)",
+      "url": "https://isc.sans.edu/diary/rss/33102",
+      "source": "SANS ISC (인터넷폭풍센터) [RSS]",
+      "published": "2026-06-24T06:29:03+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
