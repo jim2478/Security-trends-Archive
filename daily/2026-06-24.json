@@ -2,10 +2,10 @@
   "date": "2026-06-24",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 7,
+    "scan_runs": 8,
     "total_articles_max": 1832,
-    "matched_articles_max": 125,
-    "new_alerts": 7,
+    "matched_articles_max": 127,
+    "new_alerts": 8,
     "cve_count": 18,
     "ioc_count": 12,
     "merged_count": 0,
@@ -27,7 +27,7 @@
       "CVE-2026-20230"
     ],
     "keywords_hit": {
-      "CVE": 4,
+      "CVE": 5,
       "Malware": 3
     }
   },
@@ -245,6 +245,20 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-06-24T22:01:11.811249+09:00",
+      "type": "single",
+      "title": "Dawn of the Apex Agentic Adversary",
+      "url": "https://thehackernews.com/2026/06/dawn-of-apex-agentic-adversary.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-06-24T11:30:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
