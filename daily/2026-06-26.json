@@ -2,16 +2,16 @@
   "date": "2026-06-26",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
+    "scan_runs": 3,
     "total_articles_max": 1832,
     "matched_articles_max": 138,
-    "new_alerts": 2,
+    "new_alerts": 3,
     "cve_count": 0,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [],
     "keywords_hit": {
-      "Malware": 2
+      "Malware": 3
     }
   },
   "alerts": [
@@ -36,6 +36,20 @@
       "url": "https://www.bleepingcomputer.com/news/security/new-macos-malware-embeds-fake-errors-to-confuse-ai-analysis-tools/",
       "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
       "published": "2026-06-25T16:23:19+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-26T03:01:36.599337+09:00",
+      "type": "single",
+      "title": "Fake GTA 6 Early Access Websites Target Gamers with Malware and Crypto Scams",
+      "url": "https://hackread.com/gta-6-early-access-websites-gamers-malware-crypto-scam/",
+      "source": "HackRead (해킹/데이터유출) [RSS]",
+      "published": "2026-06-25T17:11:58+00:00",
       "keywords": [
         "Malware"
       ],
