@@ -2,16 +2,16 @@
   "date": "2026-06-26",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
+    "scan_runs": 4,
     "total_articles_max": 1832,
     "matched_articles_max": 138,
-    "new_alerts": 3,
+    "new_alerts": 4,
     "cve_count": 0,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [],
     "keywords_hit": {
-      "Malware": 3
+      "Malware": 4
     }
   },
   "alerts": [
@@ -50,6 +50,20 @@
       "url": "https://hackread.com/gta-6-early-access-websites-gamers-malware-crypto-scam/",
       "source": "HackRead (해킹/데이터유출) [RSS]",
       "published": "2026-06-25T17:11:58+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-26T07:03:03.322610+09:00",
+      "type": "single",
+      "title": "Russian APT 'Gamaredon' Upgrades Its Arsenal, Requiring New Defenses",
+      "url": "https://www.darkreading.com/threat-intelligence/russia-apt-gamaredon-arsenal-defense",
+      "source": "Dark Reading (보안뉴스 종합) [RSS]",
+      "published": "2026-06-25T21:12:01+00:00",
       "keywords": [
         "Malware"
       ],
