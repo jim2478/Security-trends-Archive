@@ -2,11 +2,11 @@
   "date": "2026-06-25",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 13,
+    "scan_runs": 14,
     "total_articles_max": 1832,
-    "matched_articles_max": 137,
-    "new_alerts": 17,
-    "cve_count": 15,
+    "matched_articles_max": 138,
+    "new_alerts": 18,
+    "cve_count": 18,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -23,7 +23,7 @@
     "keywords_hit": {
       "Malware": 9,
       "CVE": 7,
-      "Botnet": 1
+      "Botnet": 2
     }
   },
   "alerts": [
@@ -428,6 +428,52 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-25T23:01:33.860702+09:00",
+      "type": "single",
+      "title": "Ubiquiti UniFi OS under siege: CISA orders patches, new critical bugs emerge",
+      "url": "https://cybernews.com/security/critical-ubiquiti-unifios-bugs-exploited-by-hackers/",
+      "source": "CyberNews [RSS]",
+      "published": "2026-06-25T13:35:00+00:00",
+      "keywords": [
+        "Botnet"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-34908",
+        "CVE-2026-34909",
+        "CVE-2026-34910"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-34908",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-34909",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-34910",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": true
+        }
+      ]
     }
   ]
 }
