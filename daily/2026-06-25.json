@@ -2,10 +2,10 @@
   "date": "2026-06-25",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 11,
+    "scan_runs": 12,
     "total_articles_max": 1832,
     "matched_articles_max": 136,
-    "new_alerts": 14,
+    "new_alerts": 15,
     "cve_count": 14,
     "ioc_count": 0,
     "merged_count": 0,
@@ -21,7 +21,7 @@
       "CVE-2026-34910"
     ],
     "keywords_hit": {
-      "Malware": 7,
+      "Malware": 8,
       "CVE": 6,
       "Botnet": 1
     }
@@ -370,6 +370,20 @@
       "published": "2026-06-25T09:14:00+00:00",
       "keywords": [
         "Botnet"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-25T20:03:03.230159+09:00",
+      "type": "single",
+      "title": "New Gaslight macOS Malware Uses Prompt Injection to Disrupt AI-Assisted Analysis",
+      "url": "https://thehackernews.com/2026/06/new-gaslight-macos-malware-uses-prompt.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-06-25T09:23:03+00:00",
+      "keywords": [
+        "Malware"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
