@@ -2,16 +2,16 @@
   "date": "2026-06-26",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 1,
-    "total_articles_max": 1822,
+    "scan_runs": 2,
+    "total_articles_max": 1832,
     "matched_articles_max": 138,
-    "new_alerts": 1,
+    "new_alerts": 2,
     "cve_count": 0,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [],
     "keywords_hit": {
-      "Malware": 1
+      "Malware": 2
     }
   },
   "alerts": [
@@ -22,6 +22,20 @@
       "url": "https://www.helpnetsecurity.com/2026/06/25/mistic-backdoor-woodgnat-attacks/",
       "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
       "published": "2026-06-25T14:07:46+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-26T02:01:04.038455+09:00",
+      "type": "single",
+      "title": "New macOS malware embeds fake errors to confuse AI analysis tools",
+      "url": "https://www.bleepingcomputer.com/news/security/new-macos-malware-embeds-fake-errors-to-confuse-ai-analysis-tools/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-06-25T16:23:19+00:00",
       "keywords": [
         "Malware"
       ],
