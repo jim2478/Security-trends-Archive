@@ -2,11 +2,11 @@
   "date": "2026-06-25",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 12,
+    "scan_runs": 13,
     "total_articles_max": 1832,
-    "matched_articles_max": 136,
-    "new_alerts": 15,
-    "cve_count": 14,
+    "matched_articles_max": 137,
+    "new_alerts": 17,
+    "cve_count": 15,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -21,8 +21,8 @@
       "CVE-2026-34910"
     ],
     "keywords_hit": {
-      "Malware": 8,
-      "CVE": 6,
+      "Malware": 9,
+      "CVE": 7,
       "Botnet": 1
     }
   },
@@ -382,6 +382,46 @@
       "url": "https://thehackernews.com/2026/06/new-gaslight-macos-malware-uses-prompt.html",
       "source": "The Hacker News (보안뉴스 종합) [RSS]",
       "published": "2026-06-25T09:23:03+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-25T21:01:18.872904+09:00",
+      "type": "single",
+      "title": "Lantronix Serial-to-IP Converter Flaw Exploited in Attacks After OT Threat Warning",
+      "url": "https://www.securityweek.com/lantronix-serial-to-ip-converter-flaw-exploited-in-attacks-after-ot-threat-warning/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-06-25T11:23:40+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2025-67038"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2025-67038",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-94 (Code Injection)",
+          "description": "An issue was discovered in Lantronix EDS5000 2.1.0.0R3. The HTTP RPC module executes a shell command to write logs when user's authantication fails. The username is directly concatenated with the command without any sanitization. This allow attackers to inject arbitrary OS commands into the username parameter. Injected commands are executed with root privileges.",
+          "epss_score": 0.01131,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-06-25T21:01:18.872904+09:00",
+      "type": "single",
+      "title": "ANY.RUN & Torq Integration: Scale Triage & Respond with Confidence",
+      "url": "https://any.run/cybersecurity-blog/torq-integration/",
+      "source": "ANY.RUN (악성코드샌드박스분석) [RSS]",
+      "published": "2026-06-25T11:56:11+00:00",
       "keywords": [
         "Malware"
       ],
