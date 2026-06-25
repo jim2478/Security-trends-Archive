@@ -2,10 +2,10 @@
   "date": "2026-06-25",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 10,
+    "scan_runs": 11,
     "total_articles_max": 1832,
-    "matched_articles_max": 135,
-    "new_alerts": 12,
+    "matched_articles_max": 136,
+    "new_alerts": 14,
     "cve_count": 14,
     "ioc_count": 0,
     "merged_count": 0,
@@ -21,8 +21,9 @@
       "CVE-2026-34910"
     ],
     "keywords_hit": {
-      "Malware": 6,
-      "CVE": 6
+      "Malware": 7,
+      "CVE": 6,
+      "Botnet": 1
     }
   },
   "alerts": [
@@ -345,6 +346,34 @@
           "kev": true
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-06-25T19:01:00.038519+09:00",
+      "type": "single",
+      "title": "Microsoft and European authorities dismantle hackers' favorite malware network",
+      "url": "https://cybernews.com/security/microsoft-europol-operation-endgame-malware-dismantle/",
+      "source": "CyberNews [RSS]",
+      "published": "2026-06-25T09:20:15+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-25T19:01:00.038519+09:00",
+      "type": "single",
+      "title": "Internet traffic of millions of Europeans flows through Chinese routers",
+      "url": "https://cybernews.com/tech/europe-chinese-routers/",
+      "source": "CyberNews [RSS]",
+      "published": "2026-06-25T09:14:00+00:00",
+      "keywords": [
+        "Botnet"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
