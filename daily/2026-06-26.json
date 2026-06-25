@@ -1,0 +1,33 @@
+{
+  "date": "2026-06-26",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 1,
+    "total_articles_max": 1822,
+    "matched_articles_max": 138,
+    "new_alerts": 1,
+    "cve_count": 0,
+    "ioc_count": 0,
+    "merged_count": 0,
+    "unique_cves": [],
+    "keywords_hit": {
+      "Malware": 1
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-06-26T00:03:07.335094+09:00",
+      "type": "single",
+      "title": "Stealthy new backdoor surfaces in attacks on multiple sectors",
+      "url": "https://www.helpnetsecurity.com/2026/06/25/mistic-backdoor-woodgnat-attacks/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-06-25T14:07:46+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
