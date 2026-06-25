@@ -2,22 +2,23 @@
   "date": "2026-06-25",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 7,
+    "scan_runs": 8,
     "total_articles_max": 1832,
     "matched_articles_max": 131,
-    "new_alerts": 9,
-    "cve_count": 5,
+    "new_alerts": 10,
+    "cve_count": 6,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2025-67038",
       "CVE-2026-20127",
       "CVE-2026-20182",
-      "CVE-2026-20245"
+      "CVE-2026-20245",
+      "CVE-2026-20971"
     ],
     "keywords_hit": {
       "Malware": 6,
-      "CVE": 3
+      "CVE": 4
     }
   },
   "alerts": [
@@ -200,6 +201,32 @@
           "description": "A vulnerability in the CLI of Cisco Catalyst SD-WAN Controller, formerly SD-WAN vSmart, Cisco Catalyst SD-WAN Manager, formerly SD-WAN vManage, and Cisco Catalyst SD-WAN Validator, formerly SD-WAN vBond, could allow an authenticated, local attacker to execute arbitrary commands as root by supplying a crafted file to the affected system.\r\n\r\nThis vulnerability is due to insufficient validation of user-supplied input. An attacker could exploit this vulnerability by uploading a crafted file to the a",
           "epss_score": 0.09922,
           "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-06-25T10:03:04.820127+09:00",
+      "type": "single",
+      "title": "삼성 녹스 커널 취약점 발견…갤럭시 S9부터 S25까지 영향",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=207313",
+      "source": "데일리시큐 (이슈) [RSS]",
+      "published": "2026-06-25T09:24:44+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-20971"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-20971",
+          "cvss_score": 7.3,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-416 (Use After Free)",
+          "description": "Use After Free in PROCA driver prior to SMR Jan-2026 Release 1 allows local attackers to potentially execute arbitrary code.",
+          "epss_score": 0.00127,
+          "kev": false
         }
       ]
     }
