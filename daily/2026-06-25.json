@@ -2,11 +2,11 @@
   "date": "2026-06-25",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 8,
+    "scan_runs": 9,
     "total_articles_max": 1832,
-    "matched_articles_max": 131,
-    "new_alerts": 10,
-    "cve_count": 6,
+    "matched_articles_max": 134,
+    "new_alerts": 11,
+    "cve_count": 10,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -14,11 +14,14 @@
       "CVE-2026-20127",
       "CVE-2026-20182",
       "CVE-2026-20245",
-      "CVE-2026-20971"
+      "CVE-2026-20971",
+      "CVE-2026-34908",
+      "CVE-2026-34909",
+      "CVE-2026-34910"
     ],
     "keywords_hit": {
       "Malware": 6,
-      "CVE": 4
+      "CVE": 5
     }
   },
   "alerts": [
@@ -227,6 +230,62 @@
           "description": "Use After Free in PROCA driver prior to SMR Jan-2026 Release 1 allows local attackers to potentially execute arbitrary code.",
           "epss_score": 0.00127,
           "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-06-25T12:02:01.441813+09:00",
+      "type": "single",
+      "title": "CISA “란트로닉스 EDS5000, 9.8점 취약점 실제 악용 중”",
+      "url": "http://www.boannews.com/media/view.asp?idx=144319&kind=&sub_kind=",
+      "source": "보안뉴스 (사건사고) [RSS]",
+      "published": "2026-06-25T02:11:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2025-67038",
+        "CVE-2026-34908",
+        "CVE-2026-34909",
+        "CVE-2026-34910"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2025-67038",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-34908",
+          "cvss_score": 10.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-284 (Improper Access Control)",
+          "description": "A malicious actor with access to the network could exploit an Improper Access Control vulnerability found in UniFi OS devices to make unauthorized changes to the system.",
+          "epss_score": 0.02105,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-34909",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-34910",
+          "cvss_score": 10.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-20 (Improper Input Validation)",
+          "description": "A malicious actor with access to the network could exploit an Improper Input Validation vulnerability found in UniFi OS devices to execute a Command Injection.",
+          "epss_score": 0.81836,
+          "kev": true
         }
       ]
     }
