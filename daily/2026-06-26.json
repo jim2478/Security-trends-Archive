@@ -2,11 +2,11 @@
   "date": "2026-06-26",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 7,
+    "scan_runs": 8,
     "total_articles_max": 1832,
     "matched_articles_max": 138,
-    "new_alerts": 9,
-    "cve_count": 5,
+    "new_alerts": 10,
+    "cve_count": 6,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -14,11 +14,12 @@
       "CVE-2026-12569",
       "CVE-2026-13135",
       "CVE-2026-13136",
+      "CVE-2026-43503",
       "CVE-2026-4681"
     ],
     "keywords_hit": {
       "Malware": 7,
-      "CVE": 2
+      "CVE": 3
     }
   },
   "alerts": [
@@ -201,6 +202,32 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-26T22:01:07.919974+09:00",
+      "type": "single",
+      "title": "New DirtyClone Linux Kernel Flaw Lets Local Users Gain Root via Cloned Packets",
+      "url": "https://thehackernews.com/2026/06/new-dirtyclone-linux-kernel-flaw-lets.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-06-26T11:51:35+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-43503"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-43503",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": null,
+          "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nnet: skbuff: propagate shared-frag marker through frag-transfer helpers\n\nTwo frag-transfer helpers (__pskb_copy_fclone() and skb_shift()) fail\nto propagate the SKBFL_SHARED_FRAG bit in skb_shinfo()->flags when\nmoving frags from source to destination.  __pskb_copy_fclone() defers\nthe rest of the shinfo metadata to skb_copy_header() after copying\nfrag descriptors, but that helper only carries over gso_{size,segs,\ntype} and never ",
+          "epss_score": 0.0013,
+          "kev": false
+        }
+      ]
     }
   ]
 }
