@@ -2,11 +2,11 @@
   "date": "2026-06-26",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 8,
+    "scan_runs": 9,
     "total_articles_max": 1832,
     "matched_articles_max": 138,
-    "new_alerts": 10,
-    "cve_count": 6,
+    "new_alerts": 13,
+    "cve_count": 8,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -15,11 +15,12 @@
       "CVE-2026-13135",
       "CVE-2026-13136",
       "CVE-2026-43503",
+      "CVE-2026-46331",
       "CVE-2026-4681"
     ],
     "keywords_hit": {
-      "Malware": 7,
-      "CVE": 3
+      "Malware": 8,
+      "CVE": 5
     }
   },
   "alerts": [
@@ -228,6 +229,72 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-06-26T23:01:24.518444+09:00",
+      "type": "single",
+      "title": "New Linux pedit COW Exploit Enables Root Access by Poisoning Cached Binaries",
+      "url": "https://thehackernews.com/2026/06/new-linux-pedit-cow-exploit-enables.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-06-26T13:00:41+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-46331"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-46331",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nnet/sched: fix pedit partial COW leading to page cache corruption\n\ntcf_pedit_act() computes the COW range for skb_ensure_writable()\nonce before the key loop using tcfp_off_max_hint, but the hint does\nnot account for the runtime header offset added by typed keys. This\ncan leave part of the write region un-COW'd.\n\nFix by moving skb_ensure_writable() inside the per-key loop where\nthe actual write offset is known, and add overflow ",
+          "epss_score": 0.00291,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-06-26T23:01:24.518444+09:00",
+      "type": "single",
+      "title": "리눅스 커널 또 뚫렸다…‘DirtyClone’ 권한 상승 취약점 공개, 루트 권한 탈취 가능",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=207338",
+      "source": "데일리시큐 (이슈) [RSS]",
+      "published": "2026-06-26T22:34:30+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-43503"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-43503",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": null,
+          "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nnet: skbuff: propagate shared-frag marker through frag-transfer helpers\n\nTwo frag-transfer helpers (__pskb_copy_fclone() and skb_shift()) fail\nto propagate the SKBFL_SHARED_FRAG bit in skb_shinfo()->flags when\nmoving frags from source to destination.  __pskb_copy_fclone() defers\nthe rest of the shinfo metadata to skb_copy_header() after copying\nfrag descriptors, but that helper only carries over gso_{size,segs,\ntype} and never ",
+          "epss_score": 0.0013,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-06-26T23:01:24.518444+09:00",
+      "type": "single",
+      "title": "Turla group adds more malware to Russia’s espionage efforts against Ukraine",
+      "url": "https://therecord.media/russia-turla-espionage-ukraine-stockstay-malware",
+      "source": "The Record by Recorded Future (위협뉴스) [RSS]",
+      "published": "2026-06-26T13:30:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
