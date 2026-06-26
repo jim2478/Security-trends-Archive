@@ -2,16 +2,16 @@
   "date": "2026-06-26",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 4,
+    "scan_runs": 5,
     "total_articles_max": 1832,
     "matched_articles_max": 138,
-    "new_alerts": 4,
+    "new_alerts": 5,
     "cve_count": 0,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [],
     "keywords_hit": {
-      "Malware": 4
+      "Malware": 5
     }
   },
   "alerts": [
@@ -64,6 +64,20 @@
       "url": "https://www.darkreading.com/threat-intelligence/russia-apt-gamaredon-arsenal-defense",
       "source": "Dark Reading (보안뉴스 종합) [RSS]",
       "published": "2026-06-25T21:12:01+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-26T16:03:06.247099+09:00",
+      "type": "single",
+      "title": "A privacy-first take on local malware analysis",
+      "url": "https://www.helpnetsecurity.com/2026/06/26/burnyard-local-malware-analysis/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-06-26T06:00:14+00:00",
       "keywords": [
         "Malware"
       ],
