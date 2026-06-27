@@ -1,0 +1,33 @@
+{
+  "date": "2026-06-28",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 1,
+    "total_articles_max": 1757,
+    "matched_articles_max": 116,
+    "new_alerts": 1,
+    "cve_count": 0,
+    "ioc_count": 0,
+    "merged_count": 0,
+    "unique_cves": [],
+    "keywords_hit": {
+      "Malware": 1
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-06-28T00:01:15.432572+09:00",
+      "type": "single",
+      "title": "Clean GitHub repo tricks AI coding agents into running malware",
+      "url": "https://www.bleepingcomputer.com/news/security/clean-github-repo-tricks-ai-coding-agents-into-running-malware/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-06-27T14:22:36+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
