@@ -2,19 +2,24 @@
   "date": "2026-06-29",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 5,
+    "scan_runs": 6,
     "total_articles_max": 1797,
     "matched_articles_max": 116,
-    "new_alerts": 6,
-    "cve_count": 1,
+    "new_alerts": 7,
+    "cve_count": 6,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
+      "CVE-2024-21182",
+      "CVE-2025-61882",
+      "CVE-2026-20230",
+      "CVE-2026-35273",
+      "CVE-2026-46817",
       "CVE-2026-55200"
     ],
     "keywords_hit": {
       "Malware": 4,
-      "CVE": 2
+      "CVE": 3
     }
   },
   "alerts": [
@@ -113,6 +118,72 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-29T23:01:13.057352+09:00",
+      "type": "single",
+      "title": "Hackers now exploit critical Oracle E-Business flaw in attacks",
+      "url": "https://www.bleepingcomputer.com/news/security/new-oracle-e-business-suite-flaw-now-exploited-in-attacks/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-06-29T13:46:17+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2024-21182",
+        "CVE-2025-61882",
+        "CVE-2026-20230",
+        "CVE-2026-35273",
+        "CVE-2026-46817"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2024-21182",
+          "cvss_score": 7.5,
+          "cvss_severity": "HIGH",
+          "cwe": "NVD-CWE-noinfo (Insufficient Information)",
+          "description": "Vulnerability in the Oracle WebLogic Server product of Oracle Fusion Middleware (component: Core).  Supported versions that are affected are 12.2.1.4.0 and  14.1.1.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via T3, IIOP to compromise Oracle WebLogic Server.  Successful attacks of this vulnerability can result in  unauthorized access to critical data or complete access to all Oracle WebLogic Server accessible data. CVSS 3.1 Base Score 7.5 (Confidenti",
+          "epss_score": 0.49689,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2025-61882",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-287 (Authentication Bypass)",
+          "description": "Vulnerability in the Oracle Concurrent Processing product of Oracle E-Business Suite (component: BI Publisher Integration).  Supported versions that are affected are 12.2.3-12.2.14. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Concurrent Processing.  Successful attacks of this vulnerability can result in takeover of Oracle Concurrent Processing. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability impacts).  CV",
+          "epss_score": 0.99722,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-20230",
+          "cvss_score": 8.6,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-918 (SSRF)",
+          "description": "A vulnerability in Cisco Unified Communications Manager (Unified CM) and Cisco Unified Communications Manager Session Management Edition (Unified CM SME) could allow an unauthenticated, remote attacker to conduct server-side request forgery (SSRF) attacks through an affected device.\r\n\r This vulnerability is due to improper input validation for specific HTTP requests. An attacker could exploit this vulnerability by sending a crafted HTTP request to an affected device. A successful exploit could a",
+          "epss_score": 0.41694,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-35273",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-306 (Missing Authentication)",
+          "description": "Vulnerability in the PeopleSoft Enterprise PeopleTools product of Oracle PeopleSoft (component: Updates Environment Management). Supported versions that are affected are 8.61 and 8.62. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise PeopleSoft Enterprise PeopleTools. Successful attacks of this vulnerability can result in takeover of PeopleSoft Enterprise PeopleTools. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability i",
+          "epss_score": 0.9233,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-46817",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-269 (Improper Privilege Management)",
+          "description": "Vulnerability in the Oracle Payments product of Oracle E-Business Suite (component: File Transmission).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Payments.  Successful attacks of this vulnerability can result in takeover of Oracle Payments. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C",
+          "epss_score": 0.00418,
+          "kev": false
+        }
+      ]
     }
   ]
 }
