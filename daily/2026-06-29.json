@@ -2,10 +2,10 @@
   "date": "2026-06-29",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
+    "scan_runs": 4,
     "total_articles_max": 1797,
     "matched_articles_max": 116,
-    "new_alerts": 3,
+    "new_alerts": 5,
     "cve_count": 1,
     "ioc_count": 0,
     "merged_count": 0,
@@ -13,8 +13,8 @@
       "CVE-2026-55200"
     ],
     "keywords_hit": {
-      "CVE": 2,
-      "Malware": 1
+      "Malware": 3,
+      "CVE": 2
     }
   },
   "alerts": [
@@ -65,6 +65,34 @@
       "url": "https://thehackernews.com/2026/06/microsoft-removes-119-edge-extensions.html",
       "source": "The Hacker News (보안뉴스 종합) [RSS]",
       "published": "2026-06-29T08:32:31+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-29T21:01:03.628998+09:00",
+      "type": "single",
+      "title": "Gamaredon Expands Ukraine Attacks with New Malware and Cloud Service Abuse",
+      "url": "https://thehackernews.com/2026/06/gamaredon-expands-ukraine-attacks-with.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-06-29T11:40:24+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-29T21:01:03.628998+09:00",
+      "type": "single",
+      "title": "Fake photo attachments are hacking hotels, Microsoft says",
+      "url": "https://cybernews.com/security/microsoft-phishing-hotels-in-europe-asia/",
+      "source": "CyberNews [RSS]",
+      "published": "2026-06-29T06:59:47+00:00",
       "keywords": [
         "Malware"
       ],
