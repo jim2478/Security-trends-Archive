@@ -2,10 +2,10 @@
   "date": "2026-06-30",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
-    "total_articles_max": 1767,
+    "scan_runs": 3,
+    "total_articles_max": 1777,
     "matched_articles_max": 115,
-    "new_alerts": 4,
+    "new_alerts": 5,
     "cve_count": 3,
     "ioc_count": 0,
     "merged_count": 0,
@@ -15,7 +15,7 @@
       "CVE-2026-48558"
     ],
     "keywords_hit": {
-      "Malware": 3,
+      "Malware": 4,
       "CVE": 2
     }
   },
@@ -104,6 +104,20 @@
       "url": "https://thehackernews.com/2026/06/mustang-panda-uses-zoho-workdrive-as.html",
       "source": "The Hacker News (보안뉴스 종합) [RSS]",
       "published": "2026-06-29T15:03:40+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-30T05:00:55.757867+09:00",
+      "type": "single",
+      "title": "Iran, Russia, China Target Water Systems for Sabotage",
+      "url": "https://www.darkreading.com/ics-ot-security/iran-russia-china-target-water-systems-sabotage",
+      "source": "Dark Reading (보안뉴스 종합) [RSS]",
+      "published": "2026-06-29T19:12:08+00:00",
       "keywords": [
         "Malware"
       ],
