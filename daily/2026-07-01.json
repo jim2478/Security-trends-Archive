@@ -1,0 +1,33 @@
+{
+  "date": "2026-07-01",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 1,
+    "total_articles_max": 1797,
+    "matched_articles_max": 117,
+    "new_alerts": 1,
+    "cve_count": 0,
+    "ioc_count": 0,
+    "merged_count": 0,
+    "unique_cves": [],
+    "keywords_hit": {
+      "Malware": 1
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-07-01T00:01:04.916792+09:00",
+      "type": "single",
+      "title": "Aikido Security acquires Root to expand backported fixes for open source vulnerabilities",
+      "url": "https://www.helpnetsecurity.com/2026/06/30/aikido-security-root-acquisition/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-06-30T14:00:13+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
