@@ -2,11 +2,11 @@
   "date": "2026-06-30",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 6,
+    "scan_runs": 7,
     "total_articles_max": 1777,
     "matched_articles_max": 115,
-    "new_alerts": 8,
-    "cve_count": 6,
+    "new_alerts": 10,
+    "cve_count": 7,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -18,8 +18,8 @@
       "CVE-2026-8037"
     ],
     "keywords_hit": {
-      "CVE": 5,
-      "Malware": 4
+      "CVE": 6,
+      "Malware": 6
     }
   },
   "alerts": [
@@ -205,6 +205,47 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-06-30T21:01:08.748120+09:00",
+      "type": "single",
+      "title": "Attackers Exploit SimpleHelp CVE-2026-48558 to Deploy TaskWeaver and Djinn Stealer",
+      "url": "https://thehackernews.com/2026/06/attackers-exploit-simplehelp-cve-2026.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-06-30T11:18:47+00:00",
+      "keywords": [
+        "CVE",
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-48558"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-48558",
+          "cvss_score": 9.5,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-347 (CWE-347)",
+          "description": "SimpleHelp versions 5.5.15 and prior and 6.0 pre-release versions contain an authentication bypass vulnerability in the OIDC authentication flow. When OIDC authentication is configured, identity tokens submitted during login are accepted without verifying their cryptographic signature. In a vulnerable configuration, a remote, unauthenticated attacker can submit a forged token containing arbitrary identity claims to obtain a fully authenticated technician session. In some configurations, this may",
+          "epss_score": 0.00721,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-06-30T21:01:08.748120+09:00",
+      "type": "single",
+      "title": "USB drives carrying China-linked malware infected Japanese military networks for nearly a year",
+      "url": "https://www.bitdefender.com/en-us/blog/hotforsecurity/usb-drives-carrying-china-linked-malware-infected-japanese-military-networks-for-nearly-a-year",
+      "source": "Graham Cluley (보안칼럼) [RSS]",
+      "published": "2026-06-30T10:25:50+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
