@@ -2,15 +2,16 @@
   "date": "2026-06-30",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 7,
-    "total_articles_max": 1777,
+    "scan_runs": 8,
+    "total_articles_max": 1797,
     "matched_articles_max": 115,
-    "new_alerts": 10,
-    "cve_count": 7,
+    "new_alerts": 11,
+    "cve_count": 8,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2026-12569",
+      "CVE-2026-33825",
       "CVE-2026-43707",
       "CVE-2026-4681",
       "CVE-2026-46817",
@@ -18,7 +19,7 @@
       "CVE-2026-8037"
     ],
     "keywords_hit": {
-      "CVE": 6,
+      "CVE": 7,
       "Malware": 6
     }
   },
@@ -246,6 +247,32 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-30T23:01:08.847464+09:00",
+      "type": "single",
+      "title": "BlueHammer Vulnerability Exploited in Ransomware Attacks",
+      "url": "https://www.securityweek.com/bluehammer-vulnerability-exploited-in-ransomware-attacks/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-06-30T13:56:07+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-33825"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-33825",
+          "cvss_score": 7.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-1220 (CWE-1220)",
+          "description": "Insufficient granularity of access control in Microsoft Defender allows an authorized attacker to elevate privileges locally.",
+          "epss_score": 0.06749,
+          "kev": true
+        }
+      ]
     }
   ]
 }
