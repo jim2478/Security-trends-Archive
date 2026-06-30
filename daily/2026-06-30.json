@@ -2,21 +2,22 @@
   "date": "2026-06-30",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
+    "scan_runs": 4,
     "total_articles_max": 1777,
     "matched_articles_max": 115,
-    "new_alerts": 5,
-    "cve_count": 3,
+    "new_alerts": 6,
+    "cve_count": 4,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2026-12569",
       "CVE-2026-4681",
+      "CVE-2026-46817",
       "CVE-2026-48558"
     ],
     "keywords_hit": {
       "Malware": 4,
-      "CVE": 2
+      "CVE": 3
     }
   },
   "alerts": [
@@ -124,6 +125,32 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-06-30T15:00:55.946472+09:00",
+      "type": "single",
+      "title": "Oracle E-Business Suite Flaw CVE-2026-46817 Actively Exploited in the Wild",
+      "url": "https://thehackernews.com/2026/06/oracle-e-business-suite-flaw-cve-2026.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-06-30T05:04:06+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-46817"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-46817",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-269 (Improper Privilege Management)",
+          "description": "Vulnerability in the Oracle Payments product of Oracle E-Business Suite (component: File Transmission).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Payments.  Successful attacks of this vulnerability can result in takeover of Oracle Payments. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C",
+          "epss_score": 0.00418,
+          "kev": false
+        }
+      ]
     }
   ]
 }
