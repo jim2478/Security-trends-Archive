@@ -2,10 +2,10 @@
   "date": "2026-07-01",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
+    "scan_runs": 4,
     "total_articles_max": 1797,
-    "matched_articles_max": 117,
-    "new_alerts": 3,
+    "matched_articles_max": 118,
+    "new_alerts": 5,
     "cve_count": 1,
     "ioc_count": 0,
     "merged_count": 0,
@@ -13,8 +13,10 @@
       "CVE-2026-33017"
     ],
     "keywords_hit": {
-      "Malware": 2,
-      "CVE": 1
+      "Malware": 4,
+      "CVE": 1,
+      "DDoS": 1,
+      "Botnet": 1
     }
   },
   "alerts": [
@@ -71,6 +73,36 @@
           "kev": true
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-07-01T04:01:04.284775+09:00",
+      "type": "single",
+      "title": "RustDuck Botnet Rebuilds in Rust to Hijack Routers and Servers for DDoS",
+      "url": "https://thehackernews.com/2026/06/rustduck-botnet-rebuilds-in-rust-to.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-06-30T17:45:25+00:00",
+      "keywords": [
+        "DDoS",
+        "Botnet",
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-01T04:01:04.284775+09:00",
+      "type": "single",
+      "title": "Phishers Gain Persistence at EU, Asia Hospitality Orgs",
+      "url": "https://www.darkreading.com/cyberattacks-data-breaches/phishers-persistence-eu-asia-hospitality-orgs",
+      "source": "Dark Reading (보안뉴스 종합) [RSS]",
+      "published": "2026-06-30T18:59:46+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
