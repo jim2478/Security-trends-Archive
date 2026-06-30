@@ -2,11 +2,11 @@
   "date": "2026-06-30",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 5,
+    "scan_runs": 6,
     "total_articles_max": 1777,
     "matched_articles_max": 115,
-    "new_alerts": 7,
-    "cve_count": 5,
+    "new_alerts": 8,
+    "cve_count": 6,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -14,11 +14,12 @@
       "CVE-2026-43707",
       "CVE-2026-4681",
       "CVE-2026-46817",
-      "CVE-2026-48558"
+      "CVE-2026-48558",
+      "CVE-2026-8037"
     ],
     "keywords_hit": {
-      "Malware": 4,
-      "CVE": 4
+      "CVE": 5,
+      "Malware": 4
     }
   },
   "alerts": [
@@ -175,6 +176,32 @@
           "cwe": null,
           "description": "A memory corruption issue was addressed with improved memory handling. This issue is fixed in Safari 26.5.2, iOS 26.5.2 and iPadOS 26.5.2, macOS Tahoe 26.5.2. Processing maliciously crafted web content may lead to an unexpected process crash.",
           "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-06-30T19:01:06.483994+09:00",
+      "type": "single",
+      "title": "Progress Kemp LoadMaster Flaw Could Let Attackers Run Root Commands Pre-Auth",
+      "url": "https://thehackernews.com/2026/06/progress-kemp-loadmaster-flaw-could-let.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-06-30T07:38:07+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-8037"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-8037",
+          "cvss_score": 9.6,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-77 (Command Injection)",
+          "description": "OS Command Injection Remote Code Execution Vulnerability in API in Progress ADC Products allows an un-authenticated attacker to execute arbitrary commands on the LoadMaster appliance by exploiting unsanitized input in multiple command endpoints",
+          "epss_score": 0.01869,
           "kev": false
         }
       ]
