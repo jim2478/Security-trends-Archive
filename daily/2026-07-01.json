@@ -2,16 +2,16 @@
   "date": "2026-07-01",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 1,
+    "scan_runs": 2,
     "total_articles_max": 1797,
     "matched_articles_max": 117,
-    "new_alerts": 1,
+    "new_alerts": 2,
     "cve_count": 0,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [],
     "keywords_hit": {
-      "Malware": 1
+      "Malware": 2
     }
   },
   "alerts": [
@@ -22,6 +22,20 @@
       "url": "https://www.helpnetsecurity.com/2026/06/30/aikido-security-root-acquisition/",
       "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
       "published": "2026-06-30T14:00:13+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-01T01:01:03.908542+09:00",
+      "type": "single",
+      "title": "Hackers Use Fake FIFA World Cup 2026 T-Shirt Offers to Spread Voidrift Malware",
+      "url": "https://hackread.com/hackers-fake-fifa-world-cup-2026-t-shirt-voidrift-malware/",
+      "source": "HackRead (해킹/데이터유출) [RSS]",
+      "published": "2026-06-30T15:03:57+00:00",
       "keywords": [
         "Malware"
       ],
