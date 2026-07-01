@@ -2,10 +2,10 @@
   "date": "2026-07-01",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 7,
+    "scan_runs": 8,
     "total_articles_max": 1797,
     "matched_articles_max": 118,
-    "new_alerts": 9,
+    "new_alerts": 11,
     "cve_count": 3,
     "ioc_count": 0,
     "merged_count": 0,
@@ -15,8 +15,8 @@
       "CVE-2026-8451"
     ],
     "keywords_hit": {
-      "Malware": 5,
-      "CVE": 3,
+      "Malware": 6,
+      "CVE": 4,
       "DDoS": 2,
       "Botnet": 1
     }
@@ -181,6 +181,34 @@
       "published": "2026-07-01T05:32:12+00:00",
       "keywords": [
         "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-01T18:01:00.533434+09:00",
+      "type": "single",
+      "title": "Phantom Squatting Uses AI-Hallucinated Domains for Phishing and Malware",
+      "url": "https://thehackernews.com/2026/07/phantom-squatting-uses-ai-hallucinated.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-07-01T07:20:51+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-01T18:01:00.533434+09:00",
+      "type": "single",
+      "title": "Four Rules for Surviving 2026’s 66,000 CVE Surge",
+      "url": "https://www.cybersecurity-insiders.com/four-rules-for-surviving-2026s-66000-cve-surge/",
+      "source": "Cybersecurity Insiders (보안인사이트)",
+      "published": "2026-07-01T07:07:36+00:00",
+      "keywords": [
+        "CVE"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
