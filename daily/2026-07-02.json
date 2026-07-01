@@ -1,0 +1,62 @@
+{
+  "date": "2026-07-02",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 1,
+    "total_articles_max": 1777,
+    "matched_articles_max": 110,
+    "new_alerts": 2,
+    "cve_count": 1,
+    "ioc_count": 0,
+    "merged_count": 0,
+    "unique_cves": [
+      "CVE-2026-8037"
+    ],
+    "keywords_hit": {
+      "CVE": 1,
+      "Malware": 1
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-07-02T00:01:06.168768+09:00",
+      "type": "single",
+      "title": "Progress Kemp LoadMaster Pre-Auth RCE Flaw Faces Active Exploitation Attempts",
+      "url": "https://thehackernews.com/2026/07/latest-progress-kemp-loadmaster-pre.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-07-01T13:56:18+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-8037"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-8037",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-07-02T00:01:06.168768+09:00",
+      "type": "single",
+      "title": "AI-Generated Browser Ransomware Abuses Chromium API on Windows and Android",
+      "url": "https://thehackernews.com/2026/07/ai-generated-browser-ransomware-abuses.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-07-01T12:59:19+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
