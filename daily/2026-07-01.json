@@ -2,10 +2,10 @@
   "date": "2026-07-01",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 9,
+    "scan_runs": 10,
     "total_articles_max": 1797,
     "matched_articles_max": 118,
-    "new_alerts": 12,
+    "new_alerts": 13,
     "cve_count": 3,
     "ioc_count": 0,
     "merged_count": 0,
@@ -15,7 +15,7 @@
       "CVE-2026-8451"
     ],
     "keywords_hit": {
-      "Malware": 6,
+      "Malware": 7,
       "CVE": 4,
       "DDoS": 3,
       "Botnet": 1
@@ -223,6 +223,20 @@
       "published": "2026-07-01T12:00:07+00:00",
       "keywords": [
         "DDoS"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-01T23:01:01.434662+09:00",
+      "type": "single",
+      "title": "Researchers warn “phantom squatting” lets hackers use AI-generated fake domains to trick users and steal data",
+      "url": "https://cybernews.com/security/phantom-squatting-hallucinated-domains-cyber-attacks/",
+      "source": "CyberNews [RSS]",
+      "published": "2026-07-01T12:36:12+00:00",
+      "keywords": [
+        "Malware"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
