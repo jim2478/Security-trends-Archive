@@ -2,19 +2,20 @@
   "date": "2026-07-01",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 4,
+    "scan_runs": 5,
     "total_articles_max": 1797,
     "matched_articles_max": 118,
-    "new_alerts": 5,
-    "cve_count": 1,
+    "new_alerts": 6,
+    "cve_count": 2,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
-      "CVE-2026-33017"
+      "CVE-2026-33017",
+      "CVE-2026-33825"
     ],
     "keywords_hit": {
       "Malware": 4,
-      "CVE": 1,
+      "CVE": 2,
       "DDoS": 1,
       "Botnet": 1
     }
@@ -103,6 +104,32 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-01T11:00:57.770644+09:00",
+      "type": "single",
+      "title": "MS 디펜더 ‘BlueHammer’ 취약점, 랜섬웨어 공격에 악용됐다",
+      "url": "http://www.boannews.com/media/view.asp?idx=144425&kind=&sub_kind=",
+      "source": "보안뉴스 (전체) [RSS]",
+      "published": "2026-07-01T01:30:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-33825"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-33825",
+          "cvss_score": 7.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-1220 (CWE-1220)",
+          "description": "Insufficient granularity of access control in Microsoft Defender allows an authorized attacker to elevate privileges locally.",
+          "epss_score": 0.06749,
+          "kev": true
+        }
+      ]
     }
   ]
 }
