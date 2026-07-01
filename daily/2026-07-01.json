@@ -2,10 +2,10 @@
   "date": "2026-07-01",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 8,
+    "scan_runs": 9,
     "total_articles_max": 1797,
     "matched_articles_max": 118,
-    "new_alerts": 11,
+    "new_alerts": 12,
     "cve_count": 3,
     "ioc_count": 0,
     "merged_count": 0,
@@ -17,7 +17,7 @@
     "keywords_hit": {
       "Malware": 6,
       "CVE": 4,
-      "DDoS": 2,
+      "DDoS": 3,
       "Botnet": 1
     }
   },
@@ -209,6 +209,20 @@
       "published": "2026-07-01T07:07:36+00:00",
       "keywords": [
         "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-01T21:01:02.309025+09:00",
+      "type": "single",
+      "title": "Mitigating Attacks Before They Impact Infrastructure: Link11 provides next generation network DDoS protection",
+      "url": "https://hackread.com/mitigating-attacks-before-they-impact-infrastructure-link11-provides-next-generation-network-ddos-protection/",
+      "source": "HackRead (해킹/데이터유출) [RSS]",
+      "published": "2026-07-01T12:00:07+00:00",
+      "keywords": [
+        "DDoS"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
