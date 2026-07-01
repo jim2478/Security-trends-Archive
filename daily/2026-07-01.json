@@ -2,10 +2,10 @@
   "date": "2026-07-01",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 6,
+    "scan_runs": 7,
     "total_articles_max": 1797,
     "matched_articles_max": 118,
-    "new_alerts": 8,
+    "new_alerts": 9,
     "cve_count": 3,
     "ioc_count": 0,
     "merged_count": 0,
@@ -15,7 +15,7 @@
       "CVE-2026-8451"
     ],
     "keywords_hit": {
-      "Malware": 4,
+      "Malware": 5,
       "CVE": 3,
       "DDoS": 2,
       "Botnet": 1
@@ -167,6 +167,20 @@
       "published": "2026-07-01T04:32:33+00:00",
       "keywords": [
         "DDoS"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-01T15:01:01.432067+09:00",
+      "type": "single",
+      "title": "Researcher Analyzes 3,000 Live ClickFix Payloads, Exposing API-Driven Malware Delivery",
+      "url": "https://thehackernews.com/2026/07/researcher-analyzes-3000-live-clickfix.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-07-01T05:32:12+00:00",
+      "keywords": [
+        "Malware"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
