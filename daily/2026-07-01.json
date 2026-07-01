@@ -2,21 +2,22 @@
   "date": "2026-07-01",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 5,
+    "scan_runs": 6,
     "total_articles_max": 1797,
     "matched_articles_max": 118,
-    "new_alerts": 6,
-    "cve_count": 2,
+    "new_alerts": 8,
+    "cve_count": 3,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2026-33017",
-      "CVE-2026-33825"
+      "CVE-2026-33825",
+      "CVE-2026-8451"
     ],
     "keywords_hit": {
       "Malware": 4,
-      "CVE": 2,
-      "DDoS": 1,
+      "CVE": 3,
+      "DDoS": 2,
       "Botnet": 1
     }
   },
@@ -130,6 +131,46 @@
           "kev": true
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-07-01T14:03:04.291020+09:00",
+      "type": "single",
+      "title": "Citrix Patches Six NetScaler Flaws Allowing File Read and Denial-of-Service",
+      "url": "https://thehackernews.com/2026/07/citrix-patches-six-netscaler-flaws.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-07-01T03:54:22+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-8451"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-8451",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-125 (Out-of-bounds Read)",
+          "description": "Insufficient input validation in NetScaler ADC and NetScaler Gateway leading to memory overread if NetScaler ADC or NetScaler Gateway is configured as a SAML IDP",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-07-01T14:03:04.291020+09:00",
+      "type": "single",
+      "title": "넷스카우트, AI·5G·DDoS 방어 핵심 기술 특허 750건 확보",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=207398",
+      "source": "데일리시큐 (IT&생활) [RSS]",
+      "published": "2026-07-01T04:32:33+00:00",
+      "keywords": [
+        "DDoS"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
