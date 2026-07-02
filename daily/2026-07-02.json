@@ -2,10 +2,10 @@
   "date": "2026-07-02",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 5,
+    "scan_runs": 6,
     "total_articles_max": 1777,
     "matched_articles_max": 113,
-    "new_alerts": 7,
+    "new_alerts": 9,
     "cve_count": 10,
     "ioc_count": 0,
     "merged_count": 0,
@@ -22,8 +22,8 @@
       "CVE-2026-8037"
     ],
     "keywords_hit": {
-      "Malware": 4,
-      "CVE": 3
+      "Malware": 6,
+      "CVE": 4
     }
   },
   "alerts": [
@@ -207,6 +207,35 @@
       "source": "Dark Reading (보안뉴스 종합) [RSS]",
       "published": "2026-07-01T19:46:34+00:00",
       "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-02T17:03:16.267823+09:00",
+      "type": "single",
+      "title": "Opera blocks ClickFix attacks with new clipboard protection feature",
+      "url": "https://www.helpnetsecurity.com/2026/07/02/opera-blocks-clickfix-attacks-with-new-clipboard-protection-feature/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-07-02T08:00:01+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-02T17:03:16.267823+09:00",
+      "type": "single",
+      "title": "New ChocoPoC RAT Targets Vulnerability Researchers via Fake PoC Exploit Repos",
+      "url": "https://thehackernews.com/2026/07/new-chocopoc-rat-targets-vulnerability.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-07-02T07:24:23+00:00",
+      "keywords": [
+        "CVE",
         "Malware"
       ],
       "ioc_raw_text": "",
