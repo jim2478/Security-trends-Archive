@@ -2,10 +2,10 @@
   "date": "2026-07-03",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
+    "scan_runs": 3,
     "total_articles_max": 1777,
     "matched_articles_max": 106,
-    "new_alerts": 4,
+    "new_alerts": 5,
     "cve_count": 3,
     "ioc_count": 0,
     "merged_count": 0,
@@ -16,7 +16,8 @@
     ],
     "keywords_hit": {
       "CVE": 3,
-      "Botnet": 1
+      "Botnet": 2,
+      "Malware": 1
     }
   },
   "alerts": [
@@ -107,6 +108,21 @@
       "published": "2026-07-02T19:27:33+00:00",
       "keywords": [
         "Botnet"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-03T08:01:05.829021+09:00",
+      "type": "single",
+      "title": "Google cripples NetNut, the 2 million-device botnet powering hackers and spies",
+      "url": "https://cybernews.com/news/google-fbi-disrupt-netnut-botnet-2-million-devices/",
+      "source": "CyberNews [RSS]",
+      "published": "2026-07-02T21:42:24+00:00",
+      "keywords": [
+        "Botnet",
+        "Malware"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
