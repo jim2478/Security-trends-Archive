@@ -2,19 +2,21 @@
   "date": "2026-07-03",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 1,
-    "total_articles_max": 1757,
-    "matched_articles_max": 103,
-    "new_alerts": 2,
-    "cve_count": 2,
+    "scan_runs": 2,
+    "total_articles_max": 1777,
+    "matched_articles_max": 106,
+    "new_alerts": 4,
+    "cve_count": 3,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
+      "CVE-2025-5777",
       "CVE-2026-56815",
       "CVE-2026-58451"
     ],
     "keywords_hit": {
-      "CVE": 2
+      "CVE": 3,
+      "Botnet": 1
     }
   },
   "alerts": [
@@ -69,6 +71,46 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-07-03T05:01:10.984016+09:00",
+      "type": "single",
+      "title": "Ransomware Groups Turn to Citrix Bleed 2, BYOVD, and Supply Chain Credentials",
+      "url": "https://thehackernews.com/2026/07/ransomware-groups-turn-to-citrix-bleed.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-07-02T18:30:33+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2025-5777"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2025-5777",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-125 (Out-of-bounds Read)",
+          "description": "Insufficient input validation leading to memory overread when the NetScaler is configured as a Gateway (VPN virtual server, ICA Proxy, CVPN, RDP Proxy) OR AAA virtual server",
+          "epss_score": 0.99897,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-07-03T05:01:10.984016+09:00",
+      "type": "single",
+      "title": "FBI Seizes NetNut Proxy Platform, Popa Botnet",
+      "url": "https://krebsonsecurity.com/2026/07/fbi-seizes-netnut-proxy-platform-popa-botnet/",
+      "source": "Krebs on Security (사이버범죄/보안심층분석) [RSS]",
+      "published": "2026-07-02T19:27:33+00:00",
+      "keywords": [
+        "Botnet"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
