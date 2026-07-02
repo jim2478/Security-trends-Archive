@@ -1,0 +1,74 @@
+{
+  "date": "2026-07-03",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 1,
+    "total_articles_max": 1757,
+    "matched_articles_max": 103,
+    "new_alerts": 2,
+    "cve_count": 2,
+    "ioc_count": 0,
+    "merged_count": 0,
+    "unique_cves": [
+      "CVE-2026-56815",
+      "CVE-2026-58451"
+    ],
+    "keywords_hit": {
+      "CVE": 2
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-07-03T04:01:12.922684+09:00",
+      "type": "single",
+      "title": "pwnlift: symlink following and TOCTOU in privileged upload\thandler allow arbitrary file write as root",
+      "url": "https://seclists.org/fulldisclosure/2026/Jul/10",
+      "source": "SecLists Full Disclosure (취약점공개)",
+      "published": "2026-07-02T18:25:12+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-56815"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-56815",
+          "cvss_score": 7.4,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-61 (CWE-61)",
+          "description": "pwnlift before d7a9544, in a privileged deployment, contains a symlink following vulnerability in the upload handler in Components/Pages/Home.razor.",
+          "epss_score": 0.00131,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-07-03T04:01:12.922684+09:00",
+      "type": "single",
+      "title": "[fulldis] CVE-2026-58451 - Horde Groupware IMP path traversal\tvuln",
+      "url": "https://seclists.org/fulldisclosure/2026/Jul/8",
+      "source": "SecLists Full Disclosure (취약점공개)",
+      "published": "2026-07-02T18:22:33+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-58451"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-58451",
+          "cvss_score": 7.1,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-22 (Path Traversal)",
+          "description": "Horde IMP before 7.0.1 contains a path traversal vulnerability in lib/Compose.php that allows authenticated attackers to read arbitrary files from the server filesystem by embedding traversal sequences after a CKEditor path prefix in img src URLs. Attackers can bypass the stripos() prefix validation by appending sequences such as traversal segments after the matching prefix, causing file_get_contents() to read sensitive files whose contents are then exfiltrated as MIME parts in outgoing email; u",
+          "epss_score": 0.00343,
+          "kev": false
+        }
+      ]
+    }
+  ]
+}
