@@ -2,10 +2,10 @@
   "date": "2026-07-02",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 6,
+    "scan_runs": 7,
     "total_articles_max": 1777,
     "matched_articles_max": 113,
-    "new_alerts": 9,
+    "new_alerts": 10,
     "cve_count": 10,
     "ioc_count": 0,
     "merged_count": 0,
@@ -22,7 +22,7 @@
       "CVE-2026-8037"
     ],
     "keywords_hit": {
-      "Malware": 6,
+      "Malware": 7,
       "CVE": 4
     }
   },
@@ -236,6 +236,20 @@
       "published": "2026-07-02T07:24:23+00:00",
       "keywords": [
         "CVE",
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-02T19:01:07.228846+09:00",
+      "type": "single",
+      "title": "Personalized FIFA World Cup scam bypasses major email security systems",
+      "url": "https://cybernews.com/security/hackers-fifa-world-cup-2026-football-voidrift-malware/",
+      "source": "CyberNews [RSS]",
+      "published": "2026-07-02T06:57:29+00:00",
+      "keywords": [
         "Malware"
       ],
       "ioc_raw_text": "",
