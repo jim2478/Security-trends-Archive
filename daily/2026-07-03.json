@@ -2,10 +2,10 @@
   "date": "2026-07-03",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 4,
+    "scan_runs": 5,
     "total_articles_max": 1777,
     "matched_articles_max": 106,
-    "new_alerts": 6,
+    "new_alerts": 7,
     "cve_count": 4,
     "ioc_count": 0,
     "merged_count": 0,
@@ -17,7 +17,7 @@
     "keywords_hit": {
       "CVE": 4,
       "Botnet": 2,
-      "Malware": 1
+      "Malware": 2
     }
   },
   "alerts": [
@@ -153,6 +153,20 @@
           "kev": true
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-07-03T23:01:05.093535+09:00",
+      "type": "single",
+      "title": "New PamStealer Malware Targets macOS Users via Fake Maccy Clipboard App",
+      "url": "https://hackread.com/pamstealer-malware-macos-fake-maccy-clipboard-app/",
+      "source": "HackRead (해킹/데이터유출) [RSS]",
+      "published": "2026-07-03T13:35:08+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
