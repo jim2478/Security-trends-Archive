@@ -2,11 +2,11 @@
   "date": "2026-07-03",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
+    "scan_runs": 4,
     "total_articles_max": 1777,
     "matched_articles_max": 106,
-    "new_alerts": 5,
-    "cve_count": 3,
+    "new_alerts": 6,
+    "cve_count": 4,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -15,7 +15,7 @@
       "CVE-2026-58451"
     ],
     "keywords_hit": {
-      "CVE": 3,
+      "CVE": 4,
       "Botnet": 2,
       "Malware": 1
     }
@@ -127,6 +127,32 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-03T09:01:09.777943+09:00",
+      "type": "single",
+      "title": "VPN부터 원격관리도구까지 악용…아누비스 랜섬웨어 공격 방식 진화",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=207441",
+      "source": "데일리시큐 (IT&생활) [RSS]",
+      "published": "2026-07-02T23:24:44+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2025-5777"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2025-5777",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-125 (Out-of-bounds Read)",
+          "description": "Insufficient input validation leading to memory overread when the NetScaler is configured as a Gateway (VPN virtual server, ICA Proxy, CVPN, RDP Proxy) OR AAA virtual server",
+          "epss_score": 0.99897,
+          "kev": true
+        }
+      ]
     }
   ]
 }
