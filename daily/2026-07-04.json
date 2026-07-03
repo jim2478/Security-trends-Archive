@@ -1,0 +1,33 @@
+{
+  "date": "2026-07-04",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 1,
+    "total_articles_max": 1777,
+    "matched_articles_max": 101,
+    "new_alerts": 1,
+    "cve_count": 0,
+    "ioc_count": 0,
+    "merged_count": 0,
+    "unique_cves": [],
+    "keywords_hit": {
+      "Malware": 1
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-07-04T05:01:06.086467+09:00",
+      "type": "single",
+      "title": "New Avalon Malware Framework Packs CrownX Ransomware Capabilities",
+      "url": "https://thehackernews.com/2026/07/new-avalon-malware-framework-packs.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-07-03T18:55:24+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
