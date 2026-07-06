@@ -2,16 +2,16 @@
   "date": "2026-07-06",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
+    "scan_runs": 3,
     "total_articles_max": 1767,
     "matched_articles_max": 99,
-    "new_alerts": 2,
+    "new_alerts": 4,
     "cve_count": 0,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [],
     "keywords_hit": {
-      "Malware": 2
+      "Malware": 4
     }
   },
   "alerts": [
@@ -36,6 +36,34 @@
       "url": "https://thehackernews.com/2026/07/new-skillcloak-technique-lets-malicious.html",
       "source": "The Hacker News (보안뉴스 종합) [RSS]",
       "published": "2026-07-06T06:33:56+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-06T18:01:19.959940+09:00",
+      "type": "single",
+      "title": "New TrojPix Attack Leaks Data From Air-Gapped Systems via Video Cable Emissions",
+      "url": "https://thehackernews.com/2026/07/new-trojpix-attack-leaks-data-from-air.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-07-06T08:50:54+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-06T18:01:19.959940+09:00",
+      "type": "single",
+      "title": "New Java-Based QuimaRAT MaaS Built to Run on Windows, Linux, and macOS",
+      "url": "https://thehackernews.com/2026/07/new-java-based-quimarat-maas-built-to.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-07-06T08:13:33+00:00",
       "keywords": [
         "Malware"
       ],
