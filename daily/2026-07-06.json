@@ -2,16 +2,16 @@
   "date": "2026-07-06",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 1,
-    "total_articles_max": 1747,
-    "matched_articles_max": 95,
-    "new_alerts": 1,
+    "scan_runs": 2,
+    "total_articles_max": 1767,
+    "matched_articles_max": 99,
+    "new_alerts": 2,
     "cve_count": 0,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [],
     "keywords_hit": {
-      "Malware": 1
+      "Malware": 2
     }
   },
   "alerts": [
@@ -22,6 +22,20 @@
       "url": "https://www.helpnetsecurity.com/2026/07/06/product-showcase-malwarebytes-mobile-security-ios/",
       "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
       "published": "2026-07-06T05:00:44+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-06T16:01:18.551600+09:00",
+      "type": "single",
+      "title": "SkillCloak Lets Malicious AI Agent Skills Evade Static Scanners with Self-Extracting Packing",
+      "url": "https://thehackernews.com/2026/07/new-skillcloak-technique-lets-malicious.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-07-06T06:33:56+00:00",
       "keywords": [
         "Malware"
       ],
