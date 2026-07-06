@@ -2,10 +2,10 @@
   "date": "2026-07-07",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
+    "scan_runs": 3,
     "total_articles_max": 1767,
     "matched_articles_max": 99,
-    "new_alerts": 2,
+    "new_alerts": 3,
     "cve_count": 2,
     "ioc_count": 0,
     "merged_count": 0,
@@ -14,7 +14,8 @@
       "CVE-2026-53359"
     ],
     "keywords_hit": {
-      "CVE": 2
+      "CVE": 2,
+      "Malware": 1
     }
   },
   "alerts": [
@@ -69,6 +70,20 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-07-07T06:03:27.702608+09:00",
+      "type": "single",
+      "title": "Fake IT support calls on Microsoft Teams push EtherRAT malware",
+      "url": "https://www.bleepingcomputer.com/news/security/fake-it-support-calls-on-microsoft-teams-push-etherrat-malware/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-07-06T20:23:45+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
