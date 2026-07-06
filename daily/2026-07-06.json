@@ -2,16 +2,16 @@
   "date": "2026-07-06",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
+    "scan_runs": 4,
     "total_articles_max": 1767,
     "matched_articles_max": 99,
-    "new_alerts": 4,
+    "new_alerts": 5,
     "cve_count": 0,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [],
     "keywords_hit": {
-      "Malware": 4
+      "Malware": 5
     }
   },
   "alerts": [
@@ -64,6 +64,20 @@
       "url": "https://thehackernews.com/2026/07/new-java-based-quimarat-maas-built-to.html",
       "source": "The Hacker News (보안뉴스 종합) [RSS]",
       "published": "2026-07-06T08:13:33+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-06T22:01:13.444756+09:00",
+      "type": "single",
+      "title": "ClickFix Scams Abuse Google, Cloudflare Checks to Deliver 7 Malware Families",
+      "url": "https://hackread.com/clickfix-scam-google-cloudflare-7-malware-families/",
+      "source": "HackRead (해킹/데이터유출) [RSS]",
+      "published": "2026-07-06T12:39:37+00:00",
       "keywords": [
         "Malware"
       ],
