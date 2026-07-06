@@ -2,16 +2,21 @@
   "date": "2026-07-06",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 4,
+    "scan_runs": 5,
     "total_articles_max": 1767,
     "matched_articles_max": 99,
-    "new_alerts": 5,
-    "cve_count": 0,
+    "new_alerts": 7,
+    "cve_count": 2,
     "ioc_count": 0,
     "merged_count": 0,
-    "unique_cves": [],
+    "unique_cves": [
+      "CVE-2026-34621",
+      "CVE-2026-48282"
+    ],
     "keywords_hit": {
-      "Malware": 5
+      "Malware": 6,
+      "CVE": 1,
+      "Botnet": 1
     }
   },
   "alerts": [
@@ -79,6 +84,57 @@
       "source": "HackRead (해킹/데이터유출) [RSS]",
       "published": "2026-07-06T12:39:37+00:00",
       "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-06T23:01:16.482614+09:00",
+      "type": "single",
+      "title": "Max severity Adobe ColdFusion flaw now exploited in attacks",
+      "url": "https://www.bleepingcomputer.com/news/security/max-severity-adobe-coldfusion-flaw-now-exploited-in-attacks/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-07-06T13:18:37+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-34621",
+        "CVE-2026-48282"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-34621",
+          "cvss_score": 8.6,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-1321 (CWE-1321)",
+          "description": "Acrobat Reader versions 24.001.30356, 26.001.21367 and earlier are affected by an Improperly Controlled Modification of Object Prototype Attributes ('Prototype Pollution') vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
+          "epss_score": 0.07086,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-48282",
+          "cvss_score": 10.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-22 (Path Traversal)",
+          "description": "ColdFusion versions 2025.9, 2023.20 and earlier are affected by an Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability that could lead to arbitrary code execution in the context of the current user. Exploitation of this issue does not require user interaction. Scope is changed.",
+          "epss_score": 0.01021,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-07-06T23:01:16.482614+09:00",
+      "type": "single",
+      "title": "⚡ Weekly Recap: Proxy Botnets, Browser Ransomware, AI Agent Tricks, Fake PoC Malware and More",
+      "url": "https://thehackernews.com/2026/07/monday-recap-proxy-botnets-browser.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-07-06T13:01:14+00:00",
+      "keywords": [
+        "Botnet",
         "Malware"
       ],
       "ioc_raw_text": "",
