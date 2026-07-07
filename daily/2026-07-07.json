@@ -2,21 +2,23 @@
   "date": "2026-07-07",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 5,
+    "scan_runs": 6,
     "total_articles_max": 1767,
-    "matched_articles_max": 99,
-    "new_alerts": 5,
-    "cve_count": 4,
+    "matched_articles_max": 103,
+    "new_alerts": 8,
+    "cve_count": 6,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2026-20896",
+      "CVE-2026-40138",
       "CVE-2026-48282",
-      "CVE-2026-53359"
+      "CVE-2026-53359",
+      "CVE-2026-53582"
     ],
     "keywords_hit": {
-      "CVE": 4,
-      "Malware": 1
+      "CVE": 6,
+      "Malware": 2
     }
   },
   "alerts": [
@@ -137,6 +139,72 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-07-07T16:01:20.802336+09:00",
+      "type": "single",
+      "title": "BeyondTrust Patches Critical Auth Bypass Flaws in Remote Support and PRA",
+      "url": "https://thehackernews.com/2026/07/beyondtrust-patches-critical-auth.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-07-07T05:16:51+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-40138"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-40138",
+          "cvss_score": 9.2,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-287 (Authentication Bypass)",
+          "description": "A critical pre-authentication vulnerability exists in the authentication subsystem of BeyondTrust Remote Support and Privileged Remote Access. Improper validation of authentication data may allow a network-positioned attacker to bypass access controls and gain unauthorized access to the appliance, including accounts with elevated privileges. Exploitation requires a specific authentication configuration to be enabled",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-07-07T16:01:20.802336+09:00",
+      "type": "single",
+      "title": "OPNsense XPATH Injection (CVE-2026-53582)",
+      "url": "https://seclists.org/fulldisclosure/2026/Jul/18",
+      "source": "SecLists Full Disclosure (취약점공개)",
+      "published": "2026-07-07T06:39:34+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-53582"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-53582",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-07-07T16:01:20.802336+09:00",
+      "type": "single",
+      "title": "피싱 메일을 통해 유포 중인 Vidar 인포스틸러",
+      "url": "https://asec.ahnlab.com/ko/94362/",
+      "source": "AhnLab ASEC (악성코드분석) [RSS]",
+      "published": "2026-07-07T06:35:01+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
