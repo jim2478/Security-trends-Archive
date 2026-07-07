@@ -2,19 +2,20 @@
   "date": "2026-07-07",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 4,
+    "scan_runs": 5,
     "total_articles_max": 1767,
     "matched_articles_max": 99,
-    "new_alerts": 4,
-    "cve_count": 3,
+    "new_alerts": 5,
+    "cve_count": 4,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2026-20896",
+      "CVE-2026-48282",
       "CVE-2026-53359"
     ],
     "keywords_hit": {
-      "CVE": 3,
+      "CVE": 4,
       "Malware": 1
     }
   },
@@ -107,6 +108,32 @@
           "cwe": null,
           "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nKVM: x86: Fix shadow paging use-after-free due to unexpected role\n\nCommit 0cb2af2ea66ad (\"KVM: x86: Fix shadow paging use-after-free due\nto unexpected GFN\") fixed a shadow paging mismatch between stored and\ncomputed GFNs; the bug could be triggered by changing a PDE mapping from\noutside the guest, and then deleting a memslot.  The rmap_remove()\ncall would miss entries created after the PDE change because the GFN\nof the leaf SPT",
           "epss_score": 0.00176,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-07-07T13:01:21.478622+09:00",
+      "type": "single",
+      "title": "어도비 콜드퓨전 치명적 취약점 공개 직후 공격…CVE-2026-48282 긴급 패치 필요",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=207479",
+      "source": "데일리시큐 (IT&생활) [RSS]",
+      "published": "2026-07-07T03:46:36+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-48282"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-48282",
+          "cvss_score": 10.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-22 (Path Traversal)",
+          "description": "ColdFusion versions 2025.9, 2023.20 and earlier are affected by an Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability that could lead to arbitrary code execution in the context of the current user. Exploitation of this issue does not require user interaction. Scope is changed.",
+          "epss_score": 0.01021,
           "kev": false
         }
       ]
