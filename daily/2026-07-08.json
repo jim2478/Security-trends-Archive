@@ -2,18 +2,22 @@
   "date": "2026-07-08",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
-    "total_articles_max": 1772,
-    "matched_articles_max": 125,
-    "new_alerts": 3,
-    "cve_count": 1,
+    "scan_runs": 3,
+    "total_articles_max": 1782,
+    "matched_articles_max": 126,
+    "new_alerts": 4,
+    "cve_count": 5,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
+      "CVE-2020-22653",
+      "CVE-2020-22658",
+      "CVE-2023-25717",
+      "CVE-2025-2492",
       "CVE-2026-20896"
     ],
     "keywords_hit": {
-      "Malware": 2,
+      "Malware": 3,
       "CVE": 1
     }
   },
@@ -71,6 +75,62 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-08T04:01:27.139858+09:00",
+      "type": "single",
+      "title": "Chinese hackers develop LONGLEASH malware to expand ORB network",
+      "url": "https://www.bleepingcomputer.com/news/security/chinese-hackers-develop-longleash-malware-to-expand-orb-network/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-07-07T18:52:19+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2020-22653",
+        "CVE-2020-22658",
+        "CVE-2023-25717",
+        "CVE-2025-2492"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2020-22653",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "NVD-CWE-noinfo (Insufficient Information)",
+          "description": "In Ruckus R310 10.5.1.0.199, Ruckus R500 10.5.1.0.199, Ruckus R600 10.5.1.0.199, Ruckus T300 10.5.1.0.199, Ruckus T301n 10.5.1.0.199, Ruckus T301s 10.5.1.0.199, SmartCell Gateway 200 (SCG200) before 3.6.2.0.795, SmartZone 100 (SZ-100) before 3.6.2.0.795, SmartZone 300 (SZ300) before 3.6.2.0.795, Virtual SmartZone (vSZ) before 3.6.2.0.795, ZoneDirector 1100 9.10.2.0.130, ZoneDirector 1200 10.2.1.0.218, ZoneDirector 3000 10.2.1.0.218, ZoneDirector 5000 10.0.1.0.151, a vulnerability allows attacker",
+          "epss_score": 0.00436,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2020-22658",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "NVD-CWE-noinfo (Insufficient Information)",
+          "description": "In Ruckus R310 10.5.1.0.199, Ruckus R500 10.5.1.0.199, Ruckus R600 10.5.1.0.199, Ruckus T300 10.5.1.0.199, Ruckus T301n 10.5.1.0.199, Ruckus T301s 10.5.1.0.199, SmartCell Gateway 200 (SCG200) before 3.6.2.0.795, SmartZone 100 (SZ-100) before 3.6.2.0.795, SmartZone 300 (SZ300) before 3.6.2.0.795, Virtual SmartZone (vSZ) before 3.6.2.0.795, ZoneDirector 1100 9.10.2.0.130, ZoneDirector 1200 10.2.1.0.218, ZoneDirector 3000 10.2.1.0.218, ZoneDirector 5000 10.0.1.0.151, a vulnerability allows attacker",
+          "epss_score": 0.00341,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2023-25717",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-94 (Code Injection)",
+          "description": "Ruckus Wireless Admin through 10.4 allows Remote Code Execution via an unauthenticated HTTP GET Request, as demonstrated by a /forms/doLogin?login_username=admin&password=password$(curl substring.",
+          "epss_score": 0.95107,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2025-2492",
+          "cvss_score": 9.2,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-288 (CWE-288)",
+          "description": "An improper authentication control vulnerability exists in AiCloud. This vulnerability can be triggered by a crafted request, potentially leading to unauthorized execution of functions.\n\n\nRefer to the 'ASUS Router AiCloud vulnerability' section on the ASUS Security Advisory for more information.",
+          "epss_score": 0.00968,
+          "kev": false
+        }
+      ]
     }
   ]
 }
