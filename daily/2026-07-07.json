@@ -2,11 +2,11 @@
   "date": "2026-07-07",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 8,
+    "scan_runs": 9,
     "total_articles_max": 1767,
-    "matched_articles_max": 107,
-    "new_alerts": 12,
-    "cve_count": 12,
+    "matched_articles_max": 108,
+    "new_alerts": 14,
+    "cve_count": 13,
     "ioc_count": 40,
     "merged_count": 0,
     "unique_cves": [
@@ -23,8 +23,8 @@
       "CVE-2026-53582"
     ],
     "keywords_hit": {
-      "CVE": 9,
-      "Malware": 3
+      "CVE": 10,
+      "Malware": 4
     }
   },
   "alerts": [
@@ -329,6 +329,46 @@
       "published": "2026-07-07T09:30:53+00:00",
       "keywords": [
         "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-07T20:01:25.281262+09:00",
+      "type": "single",
+      "title": "덴다 공유기 펌웨어서 ‘숨은 관리자 비밀번호’ 발견…패치도 없다",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=207490",
+      "source": "데일리시큐 (이슈) [RSS]",
+      "published": "2026-07-07T19:50:46+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-11405"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-11405",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": "The web server binary /bin/httpd contains a hidden backdoor authentication mechanism in the login() function at 004c88b8.\r\n\r\n- The function contains a normal authentication path using MD5/hash-based password verification (prod_encode64/PasswordToMd5/check_rand_key).\r\n- After normal authentication fails, it calls GetValue(\"sys.rzadmin.password\") to read a backdoor password from the device configuration.\r\n- It performs a direct strcmp() comparison (plaintext, not hashed) between the config value a",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-07-07T20:01:25.281262+09:00",
+      "type": "single",
+      "title": "4 Best Email Security Solutions to Keep Employee Inboxes Safe",
+      "url": "https://hackread.com/best-email-security-solutions-employee-inboxes-safe/",
+      "source": "HackRead (해킹/데이터유출) [RSS]",
+      "published": "2026-07-07T10:39:25+00:00",
+      "keywords": [
+        "Malware"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
