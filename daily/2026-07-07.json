@@ -2,11 +2,11 @@
   "date": "2026-07-07",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
+    "scan_runs": 4,
     "total_articles_max": 1767,
     "matched_articles_max": 99,
-    "new_alerts": 3,
-    "cve_count": 2,
+    "new_alerts": 4,
+    "cve_count": 3,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -14,7 +14,7 @@
       "CVE-2026-53359"
     ],
     "keywords_hit": {
-      "CVE": 2,
+      "CVE": 3,
       "Malware": 1
     }
   },
@@ -84,6 +84,32 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-07T10:01:18.644116+09:00",
+      "type": "single",
+      "title": "리눅스 KVM 16년 된 취약점 공개…가상머신 하나로 서버 전체 멈출 수 있다",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=207475",
+      "source": "데일리시큐 (이슈) [RSS]",
+      "published": "2026-07-07T09:47:49+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-53359"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-53359",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nKVM: x86: Fix shadow paging use-after-free due to unexpected role\n\nCommit 0cb2af2ea66ad (\"KVM: x86: Fix shadow paging use-after-free due\nto unexpected GFN\") fixed a shadow paging mismatch between stored and\ncomputed GFNs; the bug could be triggered by changing a PDE mapping from\noutside the guest, and then deleting a memslot.  The rmap_remove()\ncall would miss entries created after the PDE change because the GFN\nof the leaf SPT",
+          "epss_score": 0.00176,
+          "kev": false
+        }
+      ]
     }
   ]
 }
