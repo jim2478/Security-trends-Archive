@@ -2,10 +2,10 @@
   "date": "2026-07-07",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 10,
+    "scan_runs": 11,
     "total_articles_max": 1767,
-    "matched_articles_max": 108,
-    "new_alerts": 15,
+    "matched_articles_max": 123,
+    "new_alerts": 16,
     "cve_count": 14,
     "ioc_count": 40,
     "merged_count": 0,
@@ -25,7 +25,7 @@
     ],
     "keywords_hit": {
       "CVE": 11,
-      "Malware": 4
+      "Malware": 5
     }
   },
   "alerts": [
@@ -400,6 +400,20 @@
           "kev": true
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-07-07T22:01:19.993293+09:00",
+      "type": "single",
+      "title": "Iran-Linked Hackers Using Modular C&C Framework in Cyberattacks",
+      "url": "https://www.securityweek.com/iran-linked-hackers-using-modular-cc-framework-in-cyberattacks/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-07-07T12:21:56+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
