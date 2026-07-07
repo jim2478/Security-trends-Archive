@@ -2,14 +2,19 @@
   "date": "2026-07-07",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 7,
+    "scan_runs": 8,
     "total_articles_max": 1767,
-    "matched_articles_max": 104,
-    "new_alerts": 9,
-    "cve_count": 7,
-    "ioc_count": 0,
+    "matched_articles_max": 107,
+    "new_alerts": 12,
+    "cve_count": 12,
+    "ioc_count": 40,
     "merged_count": 0,
     "unique_cves": [
+      "CVE-2020-22653",
+      "CVE-2020-22658",
+      "CVE-2023-25717",
+      "CVE-2024-42009",
+      "CVE-2025-2492",
       "CVE-2026-11405",
       "CVE-2026-20896",
       "CVE-2026-40138",
@@ -18,8 +23,8 @@
       "CVE-2026-53582"
     ],
     "keywords_hit": {
-      "CVE": 7,
-      "Malware": 2
+      "CVE": 9,
+      "Malware": 3
     }
   },
   "alerts": [
@@ -232,6 +237,102 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-07-07T19:01:27.500944+09:00",
+      "type": "single",
+      "title": "Suspected China-Aligned Hackers Exploit Roundcube Flaws Against Universities",
+      "url": "https://thehackernews.com/2026/07/suspected-china-aligned-hackers-exploit.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-07-07T09:10:51+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2024-42009"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2024-42009",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-79 (XSS)",
+          "description": "A Cross-Site Scripting vulnerability in Roundcube through 1.5.7 and 1.6.x through 1.6.7 allows a remote attacker to steal and send emails of a victim via a crafted e-mail message that abuses a Desanitization issue in message_body() in program/actions/mail/show.php.",
+          "epss_score": 0.82853,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-07-07T19:01:27.500944+09:00",
+      "type": "single",
+      "title": "UAT-7810 continues building ORB networks using new malware",
+      "url": "https://blog.talosintelligence.com/uat-7810/",
+      "source": "Cisco Talos Intelligence (위협분석) [RSS]",
+      "published": "2026-07-07T10:00:05+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "[Domain] cisco[.]com\n[URL] hxxp://217[.]15[.]160[.]247:8088/\n[URL] hxxp://217[.]15[.]160[.]247:2222/\n[URL] hxxp://217[.]15[.]160[.]247:99/\n[URL] hxxp://194[.]233[.]92[.]26:8088/\n[URL] hxxp://194[.]233[.]92[.]26:2222/\n[URL] hxxp://217[.]15[.]164[.]147:99/\n[URL] hxxp://217[.]15[.]164[.]147:8088/\n[URL] hxxp://217[.]15[.]164[.]147:2222/\n[URL] hxxp://95[.]182[.]100[.]231:2222/\n[SHA256] 0352f3e338261d98895df4c7b7a76b296485b2290c72bce56603351d167d0601\n[SHA256] 03926e3da998f32ad898b640bd15cf145768f9e849e6f18d81350234254c424e\n[SHA256] 08701ed7975bf4f5688c2724d27ab497764200ad6f4dc53d3cc03b170378ced0\n[SHA256] 0a8555a71868749be8c905ed53296ce335af50a9262772b5e154ad3f9c35c2e4\n[SHA256] 0a8cae96e25e85c612b0736fe886f9b124ad70ec425bc2ec1a8a4135b25436ba\n[SHA256] 0af4c52a1d13e4132a1843ce7727abcf0ddd4d1ca6a4b17cdf599ec3f355c241\n[SHA256] 13acadb3541e75af50e02d5be56c2238b93d8f154ce5514be1558e6ee59a1432\n[SHA256] 1660536f448b8b9f086ce9ea3ce4e9deefc59a76711ea53ee6d8f08fc8c1bb99\n[SHA256] 16971f9706d70ac4925651c7c8719b9d77aff63e4c0a618129efc32c2c46b989\n[SHA256] 1b5649b479fd625de5c8120873644b5eb669cc89cd504582c18e0ae350fd8823\n[SHA256] 20fcba222f74dd68aaeb1f0ad30cdf702a828ee164a182b30d05d600c35b72d9\n[SHA256] 29686c933cec1e274467e2dae264625ae6f754824bb7f550bc9c3131f625562c\n[SHA256] 29c7fccc6ef8cbfe4da9a169c7c74bacaea1fb515a1fddef91ab1b1522f76e4c\n[SHA256] 2e0e43776e2e1a37d882a1b2ebb7d337ee88950177e43831dae645a367824feb\n[SHA256] 2ebc1b6cf543e2cb3f22d9a5b54b6676bb71dde98df7532f8791297734e44fdd\n[SHA256] 3169a6dbcce684e2c5a2f166996b58ffa673df6e58b8edf2bdf3e66271c8c69e\n[SHA256] 323c3a91be60ebc3e06e942bad04899a15911cea23269e43d07829164b2ce5d4\n[SHA256] 324d95024fc8da5c92b5a1f4825aed5a2a91c9ca8fb6aa52abb332a4c9cf4257\n[SHA256] 33c10b77e1da9f0679023d55fb3057879d15609db9c1d46ee5c3ff1240a3d052\n[SHA256] 3878dd5c8eba1e5b53ab2e07e7b5482e95a3fd3e98268bcd7861318bc9902376\n[SHA256] 3b89d183eb014e29d9d0d4e45fc2b784a7fcfcf31dd48fd3bde30f8d956383d1\n[SHA256] 3d296af7f29c0425655bd1cc0be48fe4aba52ee6760a89e805ca2589f4ef4d77\n[SHA256] 3fcaa3038e365b6ab0b121e2cd319c56b74e37381943a0da0e8dce407087cdb8\n[SHA256] 4130f49fa81a699a667cafdbd6d1f6e781edd686c947eb8ae27134f6dc2c43d7\n[SHA256] 425bf771c8c9f740b1ae9803dcb4fd45af4d6a6f171fcc72fc7d511095ca82ce\n[SHA256] 52b871429833e1dee348263844efb531f6a3fcd321f88dc8a876caaee912cedd\n[SHA256] 534a4a5bff2609a2d6e088cb87465c08c2d69c6aaa7d2ffcbcd491274b8505f1\n[SHA256] 53ac2b231c23d41234e55b1f7ed89f86234f785adbbe820959655d7b019d7df9\n[SHA256] 57bdab2ba4b05ec0338c06632599393d5b14227f31a43fe950ea8fdd47428715\n[SHA256] 5c3f190571645c4641dcff2c07a4c3ab9acad06aa9607350a385729d8d6139f1",
+      "cve_ids": [
+        "CVE-2020-22653",
+        "CVE-2020-22658",
+        "CVE-2023-25717",
+        "CVE-2025-2492"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2020-22653",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "NVD-CWE-noinfo (Insufficient Information)",
+          "description": "In Ruckus R310 10.5.1.0.199, Ruckus R500 10.5.1.0.199, Ruckus R600 10.5.1.0.199, Ruckus T300 10.5.1.0.199, Ruckus T301n 10.5.1.0.199, Ruckus T301s 10.5.1.0.199, SmartCell Gateway 200 (SCG200) before 3.6.2.0.795, SmartZone 100 (SZ-100) before 3.6.2.0.795, SmartZone 300 (SZ300) before 3.6.2.0.795, Virtual SmartZone (vSZ) before 3.6.2.0.795, ZoneDirector 1100 9.10.2.0.130, ZoneDirector 1200 10.2.1.0.218, ZoneDirector 3000 10.2.1.0.218, ZoneDirector 5000 10.0.1.0.151, a vulnerability allows attacker",
+          "epss_score": 0.00436,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2020-22658",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "NVD-CWE-noinfo (Insufficient Information)",
+          "description": "In Ruckus R310 10.5.1.0.199, Ruckus R500 10.5.1.0.199, Ruckus R600 10.5.1.0.199, Ruckus T300 10.5.1.0.199, Ruckus T301n 10.5.1.0.199, Ruckus T301s 10.5.1.0.199, SmartCell Gateway 200 (SCG200) before 3.6.2.0.795, SmartZone 100 (SZ-100) before 3.6.2.0.795, SmartZone 300 (SZ300) before 3.6.2.0.795, Virtual SmartZone (vSZ) before 3.6.2.0.795, ZoneDirector 1100 9.10.2.0.130, ZoneDirector 1200 10.2.1.0.218, ZoneDirector 3000 10.2.1.0.218, ZoneDirector 5000 10.0.1.0.151, a vulnerability allows attacker",
+          "epss_score": 0.00341,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2023-25717",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-94 (Code Injection)",
+          "description": "Ruckus Wireless Admin through 10.4 allows Remote Code Execution via an unauthenticated HTTP GET Request, as demonstrated by a /forms/doLogin?login_username=admin&password=password$(curl substring.",
+          "epss_score": 0.95107,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2025-2492",
+          "cvss_score": 9.2,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-288 (CWE-288)",
+          "description": "An improper authentication control vulnerability exists in AiCloud. This vulnerability can be triggered by a crafted request, potentially leading to unauthorized execution of functions.\n\n\nRefer to the 'ASUS Router AiCloud vulnerability' section on the ASUS Security Advisory for more information.",
+          "epss_score": 0.00968,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-07-07T19:01:27.500944+09:00",
+      "type": "single",
+      "title": "“CVE 의존도 낮춘다”…전 세계서 대안 모색 움직임",
+      "url": "http://www.itdaily.kr/news/articleView.html?idxno=240271",
+      "source": "아이티데일리 [RSS]",
+      "published": "2026-07-07T09:30:53+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
