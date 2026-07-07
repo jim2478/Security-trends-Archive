@@ -1,0 +1,33 @@
+{
+  "date": "2026-07-08",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 1,
+    "total_articles_max": 1762,
+    "matched_articles_max": 124,
+    "new_alerts": 1,
+    "cve_count": 0,
+    "ioc_count": 0,
+    "merged_count": 0,
+    "unique_cves": [],
+    "keywords_hit": {
+      "Malware": 1
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-07-08T00:01:20.811971+09:00",
+      "type": "single",
+      "title": "Banana RAT Evolves: Comparing Two Recent Branches Through ANY.RUN",
+      "url": "https://any.run/cybersecurity-blog/banana-rat-evolution-analysis/",
+      "source": "ANY.RUN (악성코드샌드박스분석) [RSS]",
+      "published": "2026-07-07T14:02:31+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
