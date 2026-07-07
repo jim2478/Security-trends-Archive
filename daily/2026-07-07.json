@@ -2,10 +2,10 @@
   "date": "2026-07-07",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 11,
+    "scan_runs": 12,
     "total_articles_max": 1767,
     "matched_articles_max": 123,
-    "new_alerts": 16,
+    "new_alerts": 17,
     "cve_count": 14,
     "ioc_count": 40,
     "merged_count": 0,
@@ -24,7 +24,7 @@
       "CVE-2026-53582"
     ],
     "keywords_hit": {
-      "CVE": 11,
+      "CVE": 12,
       "Malware": 5
     }
   },
@@ -410,6 +410,20 @@
       "published": "2026-07-07T12:21:56+00:00",
       "keywords": [
         "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-07T23:01:20.575601+09:00",
+      "type": "single",
+      "title": "Picus Autonomous Exposure Validation Platform validates real-world CVE exploitability",
+      "url": "https://www.helpnetsecurity.com/2026/07/07/picus-autonomous-exposure-validation-platform-validates-real-world-cve-exploitability/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-07-07T13:31:50+00:00",
+      "keywords": [
+        "CVE"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
