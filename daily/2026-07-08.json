@@ -2,16 +2,19 @@
   "date": "2026-07-08",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 1,
-    "total_articles_max": 1762,
-    "matched_articles_max": 124,
-    "new_alerts": 1,
-    "cve_count": 0,
+    "scan_runs": 2,
+    "total_articles_max": 1772,
+    "matched_articles_max": 125,
+    "new_alerts": 3,
+    "cve_count": 1,
     "ioc_count": 0,
     "merged_count": 0,
-    "unique_cves": [],
+    "unique_cves": [
+      "CVE-2026-20896"
+    ],
     "keywords_hit": {
-      "Malware": 1
+      "Malware": 2,
+      "CVE": 1
     }
   },
   "alerts": [
@@ -22,6 +25,46 @@
       "url": "https://any.run/cybersecurity-blog/banana-rat-evolution-analysis/",
       "source": "ANY.RUN (악성코드샌드박스분석) [RSS]",
       "published": "2026-07-07T14:02:31+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-08T03:01:25.061893+09:00",
+      "type": "single",
+      "title": "Critical Gitea Flaw Under Active Exploitation, Researchers Warn",
+      "url": "https://www.securityweek.com/critical-gitea-flaw-under-active-exploitation-researchers-warn/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-07-07T17:17:19+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-20896"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-20896",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-284 (Improper Access Control)",
+          "description": "Gitea Docker image versions up to and including 1.26.2 use REVERSE_PROXY_TRUSTED_PROXIES=* by default, allowing any source IP to impersonate a user when reverse-proxy authentication headers such as X-WEBAUTH-USER are enabled.",
+          "epss_score": 0.00783,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-07-08T03:01:25.061893+09:00",
+      "type": "single",
+      "title": "RedWing MaaS Packages Android Bank Fraud as a Telegram Rental Service",
+      "url": "https://thehackernews.com/2026/07/redwing-maas-packages-android-bank.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-07-07T17:10:15+00:00",
       "keywords": [
         "Malware"
       ],
