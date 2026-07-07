@@ -2,14 +2,15 @@
   "date": "2026-07-07",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 6,
+    "scan_runs": 7,
     "total_articles_max": 1767,
-    "matched_articles_max": 103,
-    "new_alerts": 8,
-    "cve_count": 6,
+    "matched_articles_max": 104,
+    "new_alerts": 9,
+    "cve_count": 7,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
+      "CVE-2026-11405",
       "CVE-2026-20896",
       "CVE-2026-40138",
       "CVE-2026-48282",
@@ -17,7 +18,7 @@
       "CVE-2026-53582"
     ],
     "keywords_hit": {
-      "CVE": 6,
+      "CVE": 7,
       "Malware": 2
     }
   },
@@ -205,6 +206,32 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-07T17:01:21.791375+09:00",
+      "type": "single",
+      "title": "CERT/CC Warns of Hidden Admin Backdoor in Tenda Router Firmware",
+      "url": "https://thehackernews.com/2026/07/certcc-warns-of-hidden-admin-backdoor.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-07-07T06:40:47+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-11405"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-11405",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": "The web server binary /bin/httpd contains a hidden backdoor authentication mechanism in the login() function at 004c88b8.\r\n\r\n- The function contains a normal authentication path using MD5/hash-based password verification (prod_encode64/PasswordToMd5/check_rand_key).\r\n- After normal authentication fails, it calls GetValue(\"sys.rzadmin.password\") to read a backdoor password from the device configuration.\r\n- It performs a direct strcmp() comparison (plaintext, not hashed) between the config value a",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
     }
   ]
 }
