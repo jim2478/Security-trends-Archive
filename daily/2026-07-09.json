@@ -2,10 +2,10 @@
   "date": "2026-07-09",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 4,
+    "scan_runs": 5,
     "total_articles_max": 1782,
     "matched_articles_max": 120,
-    "new_alerts": 7,
+    "new_alerts": 8,
     "cve_count": 5,
     "ioc_count": 0,
     "merged_count": 0,
@@ -17,7 +17,7 @@
       "CVE-2026-55255"
     ],
     "keywords_hit": {
-      "Malware": 4,
+      "Malware": 5,
       "CVE": 3,
       "Botnet": 1
     }
@@ -177,6 +177,20 @@
           "kev": true
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-07-09T05:03:31.296042+09:00",
+      "type": "single",
+      "title": "Fake Paysafe, Skrill SDKs on NPM and PyPi steal credentials",
+      "url": "https://www.bleepingcomputer.com/news/security/fake-paysafe-skrill-sdks-on-npm-and-pypi-steal-credentials/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-07-08T19:54:59+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
