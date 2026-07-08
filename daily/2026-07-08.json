@@ -2,11 +2,11 @@
   "date": "2026-07-08",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
+    "scan_runs": 4,
     "total_articles_max": 1782,
     "matched_articles_max": 126,
-    "new_alerts": 4,
-    "cve_count": 5,
+    "new_alerts": 5,
+    "cve_count": 6,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -14,11 +14,12 @@
       "CVE-2020-22658",
       "CVE-2023-25717",
       "CVE-2025-2492",
-      "CVE-2026-20896"
+      "CVE-2026-20896",
+      "CVE-2026-48282"
     ],
     "keywords_hit": {
       "Malware": 3,
-      "CVE": 1
+      "CVE": 2
     }
   },
   "alerts": [
@@ -129,6 +130,32 @@
           "description": "An improper authentication control vulnerability exists in AiCloud. This vulnerability can be triggered by a crafted request, potentially leading to unauthorized execution of functions.\n\n\nRefer to the 'ASUS Router AiCloud vulnerability' section on the ASUS Security Advisory for more information.",
           "epss_score": 0.00968,
           "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-07-08T16:01:16.473463+09:00",
+      "type": "single",
+      "title": "CISA Adds 4 Actively Exploited Adobe, Joomla, and Langflow Flaws to KEV",
+      "url": "https://thehackernews.com/2026/07/cisa-adds-4-actively-exploited-adobe.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-07-08T05:33:12+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-48282"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-48282",
+          "cvss_score": 10.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-22 (Path Traversal)",
+          "description": "ColdFusion versions 2025.9, 2023.20 and earlier are affected by an Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability that could lead to arbitrary code execution in the context of the current user. Exploitation of this issue does not require user interaction. Scope is changed.",
+          "epss_score": 0.01021,
+          "kev": true
         }
       ]
     }
