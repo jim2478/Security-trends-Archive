@@ -2,10 +2,10 @@
   "date": "2026-07-09",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
+    "scan_runs": 3,
     "total_articles_max": 1782,
     "matched_articles_max": 119,
-    "new_alerts": 4,
+    "new_alerts": 6,
     "cve_count": 3,
     "ioc_count": 0,
     "merged_count": 0,
@@ -15,8 +15,8 @@
       "CVE-2026-55255"
     ],
     "keywords_hit": {
-      "CVE": 2,
-      "Malware": 2,
+      "CVE": 3,
+      "Malware": 3,
       "Botnet": 1
     }
   },
@@ -107,6 +107,34 @@
       "keywords": [
         "Botnet",
         "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-09T03:03:26.354893+09:00",
+      "type": "single",
+      "title": "Vidar Infostealer Hammers SMBs via Malvertising Campaign",
+      "url": "https://www.darkreading.com/cyberattacks-data-breaches/vidar-infostealer-smb-malvertising-campaign",
+      "source": "Dark Reading (보안뉴스 종합) [RSS]",
+      "published": "2026-07-08T16:45:54+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-09T03:03:26.354893+09:00",
+      "type": "single",
+      "title": "FortiBleed: Credential Reuse, Legacy Hashes, and the Risk of Internet-Exposed FortiGate Devices",
+      "url": "https://blog.qualys.com/category/vulnerabilities-threat-research",
+      "source": "Qualys Blog (취약점관리) [RSS]",
+      "published": "2026-07-08T17:38:12+00:00",
+      "keywords": [
+        "CVE"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
