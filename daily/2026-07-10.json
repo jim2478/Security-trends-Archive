@@ -2,16 +2,16 @@
   "date": "2026-07-10",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 1,
+    "scan_runs": 2,
     "total_articles_max": 1782,
     "matched_articles_max": 116,
-    "new_alerts": 1,
+    "new_alerts": 2,
     "cve_count": 0,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [],
     "keywords_hit": {
-      "Malware": 1
+      "Malware": 2
     }
   },
   "alerts": [
@@ -22,6 +22,20 @@
       "url": "https://cybernews.com/security/hackers-lure-vpn-users-with-fake-installers/",
       "source": "CyberNews [RSS]",
       "published": "2026-07-09T14:24:45+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-10T01:01:06.774883+09:00",
+      "type": "single",
+      "title": "GigaWiper: Anatomy of a destructive backdoor assembled from multiple malware",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/07/09/gigawiper-anatomy-of-a-destructive-backdoor-assembled-from-multiple-malware/",
+      "source": "Microsoft Security Blog (보안업데이트) [RSS]",
+      "published": "2026-07-09T15:00:00+00:00",
       "keywords": [
         "Malware"
       ],
