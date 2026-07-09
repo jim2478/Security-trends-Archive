@@ -1,0 +1,33 @@
+{
+  "date": "2026-07-10",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 1,
+    "total_articles_max": 1782,
+    "matched_articles_max": 116,
+    "new_alerts": 1,
+    "cve_count": 0,
+    "ioc_count": 0,
+    "merged_count": 0,
+    "unique_cves": [],
+    "keywords_hit": {
+      "Malware": 1
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-07-10T00:01:17.380567+09:00",
+      "type": "single",
+      "title": "Hackers package VPN installers with GoodPersonRAT: wrong click leads to complete compromise",
+      "url": "https://cybernews.com/security/hackers-lure-vpn-users-with-fake-installers/",
+      "source": "CyberNews [RSS]",
+      "published": "2026-07-09T14:24:45+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
