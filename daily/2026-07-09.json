@@ -2,23 +2,24 @@
   "date": "2026-07-09",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 5,
+    "scan_runs": 6,
     "total_articles_max": 1782,
-    "matched_articles_max": 120,
-    "new_alerts": 8,
-    "cve_count": 5,
+    "matched_articles_max": 121,
+    "new_alerts": 9,
+    "cve_count": 6,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2024-42009",
       "CVE-2025-49113",
       "CVE-2026-33017",
+      "CVE-2026-40362",
       "CVE-2026-50746",
       "CVE-2026-55255"
     ],
     "keywords_hit": {
       "Malware": 5,
-      "CVE": 3,
+      "CVE": 4,
       "Botnet": 1
     }
   },
@@ -191,6 +192,32 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-09T12:01:21.561768+09:00",
+      "type": "single",
+      "title": "Microsoft Office Excel 취약점 분석: CVE-2026-40362",
+      "url": "https://s2w.inc/ko/resource/detail/1095",
+      "source": "S2W Resources (위협인텔리전스) [RSS]",
+      "published": "2026-07-09T00:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-40362"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-40362",
+          "cvss_score": 7.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-122 (CWE-122)",
+          "description": "Use after free in Microsoft Office Excel allows an unauthorized attacker to execute code locally.",
+          "epss_score": 0.00321,
+          "kev": false
+        }
+      ]
     }
   ]
 }
