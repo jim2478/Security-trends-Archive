@@ -2,10 +2,10 @@
   "date": "2026-07-09",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 9,
+    "scan_runs": 10,
     "total_articles_max": 1782,
     "matched_articles_max": 121,
-    "new_alerts": 13,
+    "new_alerts": 14,
     "cve_count": 13,
     "ioc_count": 0,
     "merged_count": 1,
@@ -24,7 +24,7 @@
       "CVE-2026-55255"
     ],
     "keywords_hit": {
-      "Malware": 8,
+      "Malware": 9,
       "CVE": 6,
       "Botnet": 1
     }
@@ -353,6 +353,20 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-07-09T21:06:11.647956+09:00",
+      "type": "single",
+      "title": "US Threat Landscape Alert: 30 Active Malware Families Ranked by Real Sandbox Data",
+      "url": "https://any.run/cybersecurity-blog/usa-top-30-threats-2026/",
+      "source": "ANY.RUN (악성코드샌드박스분석) [RSS]",
+      "published": "2026-07-09T11:19:16+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
