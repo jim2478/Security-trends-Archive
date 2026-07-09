@@ -2,26 +2,30 @@
   "date": "2026-07-09",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 8,
+    "scan_runs": 9,
     "total_articles_max": 1782,
     "matched_articles_max": 121,
-    "new_alerts": 12,
-    "cve_count": 8,
+    "new_alerts": 13,
+    "cve_count": 13,
     "ioc_count": 0,
-    "merged_count": 0,
+    "merged_count": 1,
     "unique_cves": [
       "CVE-2024-42009",
       "CVE-2025-49113",
       "CVE-2026-11405",
       "CVE-2026-13753",
       "CVE-2026-33017",
+      "CVE-2026-33825",
       "CVE-2026-40362",
+      "CVE-2026-41091",
+      "CVE-2026-45498",
+      "CVE-2026-50656",
       "CVE-2026-50746",
       "CVE-2026-55255"
     ],
     "keywords_hit": {
-      "Malware": 7,
-      "CVE": 5,
+      "Malware": 8,
+      "CVE": 6,
       "Botnet": 1
     }
   },
@@ -284,6 +288,71 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-09T20:01:25.677830+09:00",
+      "type": "merged",
+      "cve_ids": [
+        "CVE-2026-33825",
+        "CVE-2026-41091",
+        "CVE-2026-45498",
+        "CVE-2026-50656"
+      ],
+      "keywords": [
+        "CVE",
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "sources": [
+        {
+          "title": "Microsoft Patches Defender ‘RoguePlanet’ Vulnerability",
+          "url": "https://www.securityweek.com/microsoft-patches-defender-rogueplanet-vulnerability/",
+          "source": "SecurityWeek (보안뉴스 종합) [RSS]"
+        },
+        {
+          "title": "Microsoft Patches RoguePlanet Defender Flaw That Can Grant SYSTEM Privileges",
+          "url": "https://thehackernews.com/2026/07/microsoft-patches-rogueplanet-defender.html",
+          "source": "The Hacker News (보안뉴스 종합) [RSS]"
+        }
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-33825",
+          "cvss_score": 7.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-1220 (CWE-1220)",
+          "description": "Insufficient granularity of access control in Microsoft Defender allows an authorized attacker to elevate privileges locally.",
+          "epss_score": 0.06749,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-41091",
+          "cvss_score": 7.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-59 (CWE-59)",
+          "description": "Improper link resolution before file access ('link following') in Microsoft Defender allows an authorized attacker to elevate privileges locally.",
+          "epss_score": 0.08371,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-45498",
+          "cvss_score": 4.0,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-400 (Resource Exhaustion)",
+          "description": "Microsoft Defender Denial of Service Vulnerability",
+          "epss_score": 0.63076,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-50656",
+          "cvss_score": 7.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-59 (CWE-59)",
+          "description": "Microsoft is aware of an elevation of privilege in the Microsoft Malware Protection Engine in Microsoft Defender publicly referred to as &quot;RoguePlanet &quot;.",
+          "epss_score": 0.03391,
+          "kev": false
+        }
+      ]
     }
   ]
 }
