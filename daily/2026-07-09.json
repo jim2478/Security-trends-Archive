@@ -2,24 +2,26 @@
   "date": "2026-07-09",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 6,
+    "scan_runs": 7,
     "total_articles_max": 1782,
     "matched_articles_max": 121,
-    "new_alerts": 9,
-    "cve_count": 6,
+    "new_alerts": 11,
+    "cve_count": 8,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2024-42009",
       "CVE-2025-49113",
+      "CVE-2026-11405",
+      "CVE-2026-13753",
       "CVE-2026-33017",
       "CVE-2026-40362",
       "CVE-2026-50746",
       "CVE-2026-55255"
     ],
     "keywords_hit": {
-      "Malware": 5,
-      "CVE": 4,
+      "Malware": 6,
+      "CVE": 5,
       "Botnet": 1
     }
   },
@@ -218,6 +220,56 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-07-09T14:01:33.926405+09:00",
+      "type": "single",
+      "title": "Unpatched Backdoor in Tenda Firmware Grants Admin Access to Devices",
+      "url": "https://www.securityweek.com/unpatched-backdoor-in-tenda-firmware-grants-admin-access-to-devices/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-07-09T05:00:41+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-11405",
+        "CVE-2026-13753"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-11405",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": null,
+          "description": "The web server binary /bin/httpd contains a hidden backdoor authentication mechanism in the login() function at 004c88b8.\r\n\r\n- The function contains a normal authentication path using MD5/hash-based password verification (prod_encode64/PasswordToMd5/check_rand_key).\r\n- After normal authentication fails, it calls GetValue(\"sys.rzadmin.password\") to read a backdoor password from the device configuration.\r\n- It performs a direct strcmp() comparison (plaintext, not hashed) between the config value a",
+          "epss_score": 0.00243,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-13753",
+          "cvss_score": 7.5,
+          "cvss_severity": "HIGH",
+          "cwe": null,
+          "description": "A missing authorization vulnerability exists in the embedded webserver of HP Deskjet 2800 Series Printers running firmware version <=TBP1CN2612AR. An unauthenticated attacker with network access can send GET requests to multiple exposed administrative API endpoints and retrieve sensitive configuration data such as plaintext Wi‑Fi Direct credentials, unique device identity information, and other administrative security state details. When accessed through the web interface, these setting pages ex",
+          "epss_score": 0.00271,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-07-09T14:01:33.926405+09:00",
+      "type": "single",
+      "title": "A single malware file can outweigh an entire AI dataset",
+      "url": "https://www.helpnetsecurity.com/2026/07/09/research-ai-in-cybersecurity/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-07-09T04:00:18+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
