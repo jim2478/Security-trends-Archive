@@ -2,10 +2,10 @@
   "date": "2026-07-09",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 7,
+    "scan_runs": 8,
     "total_articles_max": 1782,
     "matched_articles_max": 121,
-    "new_alerts": 11,
+    "new_alerts": 12,
     "cve_count": 8,
     "ioc_count": 0,
     "merged_count": 0,
@@ -20,7 +20,7 @@
       "CVE-2026-55255"
     ],
     "keywords_hit": {
-      "Malware": 6,
+      "Malware": 7,
       "CVE": 5,
       "Botnet": 1
     }
@@ -264,6 +264,20 @@
       "url": "https://www.helpnetsecurity.com/2026/07/09/research-ai-in-cybersecurity/",
       "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
       "published": "2026-07-09T04:00:18+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-09T15:01:27.927676+09:00",
+      "type": "single",
+      "title": "The fake report message that ends with a stolen Reddit account",
+      "url": "https://www.helpnetsecurity.com/2026/07/09/reddit-false-report-scam-direct-message/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-07-09T05:30:10+00:00",
       "keywords": [
         "Malware"
       ],
