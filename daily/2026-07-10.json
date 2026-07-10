@@ -2,16 +2,16 @@
   "date": "2026-07-10",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
+    "scan_runs": 4,
     "total_articles_max": 1782,
     "matched_articles_max": 116,
-    "new_alerts": 4,
+    "new_alerts": 5,
     "cve_count": 0,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [],
     "keywords_hit": {
-      "Malware": 2,
+      "Malware": 3,
       "봇넷": 2,
       "Botnet": 1
     }
@@ -69,6 +69,20 @@
       "published": "2026-07-10T01:40:00+00:00",
       "keywords": [
         "봇넷"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-10T17:01:07.243365+09:00",
+      "type": "single",
+      "title": "Network of 200 GitHub Repositories Used for Malware Infection",
+      "url": "https://www.securityweek.com/network-of-200-github-repositories-used-for-malware-infection/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-07-10T08:00:14+00:00",
+      "keywords": [
+        "Malware"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
