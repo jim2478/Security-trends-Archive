@@ -2,16 +2,18 @@
   "date": "2026-07-10",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
+    "scan_runs": 3,
     "total_articles_max": 1782,
     "matched_articles_max": 116,
-    "new_alerts": 2,
+    "new_alerts": 4,
     "cve_count": 0,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [],
     "keywords_hit": {
-      "Malware": 2
+      "Malware": 2,
+      "봇넷": 2,
+      "Botnet": 1
     }
   },
   "alerts": [
@@ -38,6 +40,35 @@
       "published": "2026-07-09T15:00:00+00:00",
       "keywords": [
         "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-10T11:01:04.095059+09:00",
+      "type": "single",
+      "title": "AI 코딩 어시스턴트 `환각` 노린 신종 ‘할루스쿼팅’(`HalluSquatting) 공격 경고",
+      "url": "http://www.boannews.com/media/view.asp?idx=144617&kind=&sub_kind=",
+      "source": "보안뉴스 (전체) [RSS]",
+      "published": "2026-07-10T01:43:00+00:00",
+      "keywords": [
+        "Botnet",
+        "봇넷"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-10T11:01:04.095059+09:00",
+      "type": "single",
+      "title": "[카드뉴스] “유출 자격증명 2,700만건 차단” 유로폴·MS 합작 ‘오퍼레이션 엔드게임’ 악성코드 공장 소탕 전말",
+      "url": "http://www.boannews.com/media/view.asp?idx=144616&kind=&sub_kind=",
+      "source": "보안뉴스 (전체) [RSS]",
+      "published": "2026-07-10T01:40:00+00:00",
+      "keywords": [
+        "봇넷"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
