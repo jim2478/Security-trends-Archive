@@ -2,16 +2,16 @@
   "date": "2026-07-11",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 1,
-    "total_articles_max": 1747,
+    "scan_runs": 2,
+    "total_articles_max": 1782,
     "matched_articles_max": 109,
-    "new_alerts": 1,
+    "new_alerts": 2,
     "cve_count": 0,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [],
     "keywords_hit": {
-      "Malware": 1
+      "Malware": 2
     }
   },
   "alerts": [
@@ -22,6 +22,20 @@
       "url": "https://www.bleepingcomputer.com/news/security/new-u-boot-flaws-could-enable-stealthy-firmware-attacks/",
       "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
       "published": "2026-07-10T21:59:02+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-11T10:01:09.803808+09:00",
+      "type": "single",
+      "title": "ClickFix and removable media lead malware delivery methods",
+      "url": "https://www.techtarget.com/searchsecurity/news/366645832/ClickFix-and-removable-media-lead-malware-delivery-methods",
+      "source": "TechTarget SearchSecurity (보안기술)",
+      "published": "2026-07-10T17:55Z",
       "keywords": [
         "Malware"
       ],
