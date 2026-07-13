@@ -2,16 +2,16 @@
   "date": "2026-07-14",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
+    "scan_runs": 3,
     "total_articles_max": 1782,
-    "matched_articles_max": 104,
-    "new_alerts": 3,
+    "matched_articles_max": 105,
+    "new_alerts": 5,
     "cve_count": 0,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [],
     "keywords_hit": {
-      "Malware": 3
+      "Malware": 5
     }
   },
   "alerts": [
@@ -50,6 +50,34 @@
       "url": "https://therecord.media/first-vpn-administrator-us-sanctions-ransomware-groups",
       "source": "The Record by Recorded Future (위협뉴스) [RSS]",
       "published": "2026-07-13T18:50:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-14T05:01:20.686260+09:00",
+      "type": "single",
+      "title": "Hackers backdoor Jscrambler npm package with infostealer malware",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-backdoor-jscrambler-npm-package-with-infostealer-malware/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-07-13T19:44:19+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-14T05:01:20.686260+09:00",
+      "type": "single",
+      "title": "New CrashStealer malware poses as Apple crash reporting tool",
+      "url": "https://www.bleepingcomputer.com/news/security/new-crashstealer-malware-poses-as-apple-crash-reporting-tool/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-07-13T19:04:02+00:00",
       "keywords": [
         "Malware"
       ],
