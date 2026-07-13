@@ -1,0 +1,47 @@
+{
+  "date": "2026-07-14",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 1,
+    "total_articles_max": 1732,
+    "matched_articles_max": 103,
+    "new_alerts": 2,
+    "cve_count": 0,
+    "ioc_count": 0,
+    "merged_count": 0,
+    "unique_cves": [],
+    "keywords_hit": {
+      "Malware": 2
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-07-14T03:03:25.357286+09:00",
+      "type": "single",
+      "title": "CrashStealer macOS Malware Uses Notarized Dropper to Pass Gatekeeper Checks",
+      "url": "https://thehackernews.com/2026/07/crashstealer-macos-malware-uses.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-07-13T17:36:12+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-14T03:03:25.357286+09:00",
+      "type": "single",
+      "title": "GigaWiper Lets Threat Actors Choose Their Own Destructive Attack",
+      "url": "https://www.darkreading.com/cyberattacks-data-breaches/gigawiper-threat-actors-choose-their-own-destructive-attack",
+      "source": "Dark Reading (보안뉴스 종합) [RSS]",
+      "published": "2026-07-13T16:50:54+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
