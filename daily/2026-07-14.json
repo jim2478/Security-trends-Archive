@@ -2,16 +2,16 @@
   "date": "2026-07-14",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 1,
-    "total_articles_max": 1732,
-    "matched_articles_max": 103,
-    "new_alerts": 2,
+    "scan_runs": 2,
+    "total_articles_max": 1782,
+    "matched_articles_max": 104,
+    "new_alerts": 3,
     "cve_count": 0,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [],
     "keywords_hit": {
-      "Malware": 2
+      "Malware": 3
     }
   },
   "alerts": [
@@ -36,6 +36,20 @@
       "url": "https://www.darkreading.com/cyberattacks-data-breaches/gigawiper-threat-actors-choose-their-own-destructive-attack",
       "source": "Dark Reading (보안뉴스 종합) [RSS]",
       "published": "2026-07-13T16:50:54+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-14T04:01:12.583760+09:00",
+      "type": "single",
+      "title": "VPN service favored by ransomware groups is sanctioned by US",
+      "url": "https://therecord.media/first-vpn-administrator-us-sanctions-ransomware-groups",
+      "source": "The Record by Recorded Future (위협뉴스) [RSS]",
+      "published": "2026-07-13T18:50:00+00:00",
       "keywords": [
         "Malware"
       ],
