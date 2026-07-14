@@ -2,19 +2,23 @@
   "date": "2026-07-15",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 1,
+    "scan_runs": 2,
     "total_articles_max": 1762,
-    "matched_articles_max": 107,
-    "new_alerts": 1,
-    "cve_count": 2,
+    "matched_articles_max": 108,
+    "new_alerts": 4,
+    "cve_count": 3,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2026-15409",
-      "CVE-2026-15410"
+      "CVE-2026-15410",
+      "CVE-2026-44747"
     ],
     "keywords_hit": {
-      "CVE": 1
+      "CVE": 2,
+      "Malware": 1,
+      "DDoS": 1,
+      "Botnet": 1
     }
   },
   "alerts": [
@@ -53,6 +57,61 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-07-15T05:01:20.322784+09:00",
+      "type": "single",
+      "title": "SAP Patches CVSS 9.9 NetWeaver ABAP Flaw That Could Expose or Modify Data",
+      "url": "https://thehackernews.com/2026/07/sap-patches-cvss-99-netweaver-abap-flaw.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-07-14T18:17:57+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-44747"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-44747",
+          "cvss_score": 9.9,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-787 (Out-of-bounds Write)",
+          "description": "SAP NetWeaver Application Server ABAP allows an authenticated attacker to leverage logical errors in memory management to cause a memory corruption that could lead to unauthorized data access, modification, or system unavailability. This has high impact on confidentiality, integrity, and availability of the application.",
+          "epss_score": 0.00439,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-07-15T05:01:20.322784+09:00",
+      "type": "single",
+      "title": "Nearly 300 GitHub repos pose as legit software to push malware",
+      "url": "https://www.bleepingcomputer.com/news/security/nearly-300-github-repos-pose-as-legit-software-to-push-malware/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-07-14T19:15:17+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-15T05:01:20.322784+09:00",
+      "type": "single",
+      "title": "Langflow Exploited to Build Custom DDoS Gafgyt Botnets",
+      "url": "https://www.akamai.com/blog/security-research/2026/jul/langflow-exploited-build-custom-ddos-gafgyt-botnets",
+      "source": "Akamai Blog (보안리서치/위협분석) [RSS]",
+      "published": "2026-07-14T16:00:00+00:00",
+      "keywords": [
+        "DDoS",
+        "Botnet"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
