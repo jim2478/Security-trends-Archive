@@ -2,16 +2,16 @@
   "date": "2026-07-14",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 4,
+    "scan_runs": 5,
     "total_articles_max": 1782,
     "matched_articles_max": 108,
-    "new_alerts": 7,
+    "new_alerts": 8,
     "cve_count": 0,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [],
     "keywords_hit": {
-      "Malware": 6,
+      "Malware": 7,
       "DDoS": 1,
       "Botnet": 1
     }
@@ -111,6 +111,20 @@
       "keywords": [
         "DDoS",
         "Botnet"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-14T19:01:31.256800+09:00",
+      "type": "single",
+      "title": "US sanctions VPN, malware providers for enabling ransomware attacks",
+      "url": "https://www.bleepingcomputer.com/news/security/us-sanctions-vpn-malware-providers-linked-to-ransomware-gangs/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-07-14T09:40:13+00:00",
+      "keywords": [
+        "Malware"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
