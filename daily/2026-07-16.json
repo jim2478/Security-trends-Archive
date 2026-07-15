@@ -1,0 +1,33 @@
+{
+  "date": "2026-07-16",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 1,
+    "total_articles_max": 1762,
+    "matched_articles_max": 113,
+    "new_alerts": 1,
+    "cve_count": 0,
+    "ioc_count": 0,
+    "merged_count": 0,
+    "unique_cves": [],
+    "keywords_hit": {
+      "Malware": 1
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-07-16T00:01:17.948843+09:00",
+      "type": "single",
+      "title": "LabubaRAT malware infiltrates Windows systems while posing as NVIDIA software",
+      "url": "https://www.helpnetsecurity.com/2026/07/15/labubarat-rust-malware-nvidia-disguise/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-07-15T14:43:44+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
