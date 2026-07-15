@@ -2,16 +2,17 @@
   "date": "2026-07-16",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
+    "scan_runs": 4,
     "total_articles_max": 1762,
-    "matched_articles_max": 115,
-    "new_alerts": 3,
+    "matched_articles_max": 117,
+    "new_alerts": 6,
     "cve_count": 0,
-    "ioc_count": 0,
+    "ioc_count": 31,
     "merged_count": 0,
     "unique_cves": [],
     "keywords_hit": {
-      "Malware": 3
+      "Malware": 5,
+      "Botnet": 2
     }
   },
   "alerts": [
@@ -54,6 +55,49 @@
         "Malware"
       ],
       "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-16T04:01:24.374816+09:00",
+      "type": "single",
+      "title": "Google Gemini CLI abused as a hacking agent, malware botnet operator",
+      "url": "https://www.bleepingcomputer.com/news/security/google-gemini-cli-abused-as-a-hacking-agent-malware-botnet-operator/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-07-15T18:33:48+00:00",
+      "keywords": [
+        "Botnet",
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-16T04:01:24.374816+09:00",
+      "type": "single",
+      "title": "TuxBot v3 Evolution Shows Signs of LLM-Assisted IoT Botnet Development",
+      "url": "https://thehackernews.com/2026/07/tuxbot-v3-evolution-shows-signs-of-llm.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-07-15T18:43:08+00:00",
+      "keywords": [
+        "Botnet"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-16T04:01:24.374816+09:00",
+      "type": "single",
+      "title": "TELEPUZ: a modular MaaS malware spreading via CLICKFIX-VIDAR chains",
+      "url": "https://www.elastic.co/security-labs/telepuz-maas-malware-clickfix",
+      "source": "Elastic Security Labs (탐지엔지니어링) [RSS]",
+      "published": "2026-07-16T00:00:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "[Domain] cal[.]joycedoula[.]com[.]br\n[Domain] cal[.]snehamumbai[.]org\n[URL] hxxps://chubrik\\[[.]\\]sbs/files/xK7mR9pL2nQw5tY8/ygvfuyze.dll\n[URL] hxxps://betalegenda\\[[.]\\]cfd/files/xK7mR9pL2nQw5tY8/kmwvogwx.dll\n[URL] hxxps://mavpaprokla\\[[.]\\]lat/files/telemetriawork/telepuz.dll\n[URL] hxxps://comicstar\\[[.]\\]lat/files/telemetriawork/telepuz.dll\n[URL] hxxps://bigblower\\[[.]\\]click/files/telemetriawork/telepuz.dll\n[URL] hxxps://momasites\\[[.]\\]lol/files/telemetriawork/telepuz.dll\n[URL] hxxps://momasites\\[[.]\\]com/files/telemetrywork/telepuz\n[URL] hxxps://mamsites\\[[.]\\]lol/files/telemetrywork/telepuz.dll\n[URL] hxxps://hardenedom\\[[.]\\]shop/files/telemetriawork/telepuz.dll\n[URL] hxxps://hardendedom\\[[.]\\]shop/files/lemetriawork/epuz.dll\n[URL] hxxps://hardendom\\[[.]\\]shop/files/telemetry/telepuz.dll\n[URL] hxxps://hardeneddom\\[[.]\\]shop/files/telemetrywork/telepuz\n[URL] hxxps://netblokirovka\\[[.]\\]asia/files/telemetriawork/telepuz.dll\n[URL] hxxps://netblokir\\[[.]\\]asia/files/telemetriawork/telepuz.dll\n[URL] hxxps://netlobikrovka\\[[.]\\]asia/files/telemetriawork/telepuz.dll\n[URL] hxxps://neblokirovka\\[[.]\\]as/telemetry/network/telepuz.dll\n[URL] hxxps://kidsko\\[[.]\\]shop/files/telemetriawork/telepuz.dll\n[URL] hxxps://mazaporka\\[[.]\\]shop/files/telemetriawork/telepuz.dll\n[URL] hxxps://172[.]67[.]215[.]214/files/telemetriawork/telepuz.dll\n[URL] hxxps://hurgadatour\\[[.]\\]shop/files/telemetriawork/telepuz.dll\n[URL] hxxp://krabsburger\\[[.]\\]xyz/files/telemetriawork/telepuz.dll\n[URL] hxxps://zewaplus\\[[.]\\]club/files/telemetriawork/telepuz.dll\n[URL] hxxps://172[.]67[.]165[.]144/files/telemetriawork/telepuz.dll\n[SHA256] 444f1c0c82b3f6cc31d685bac68b20edbde5722ce219af9cceab0c2a6537efc1\n[SHA256] 58aec6e3835aaf20f7b4a7e308b36a19e7454673a6f71783871e9bcf6cae8eed\n[SHA256] 9733a3f6409de81271f21993c7f8b9865ac9f5c68c3d4336e91afe6b312477eb\n[SHA256] a955d7e2819d5fa8b5f879cb970e1a1a91327098a7383f2a03a5e1e7e19435e3\n[SHA256] bf3b4e645a3c0c23f87c55971069014f7424ad14497371ee7567eff68ffaf343\n[SHA256] ff791fe1532a2dc3b3c188a71bfd0177f973ef228e4d1dda1db6d3c4b0d62b3e",
       "cve_ids": [],
       "cve_details": []
     }
