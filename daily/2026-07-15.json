@@ -2,21 +2,23 @@
   "date": "2026-07-15",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 9,
+    "scan_runs": 10,
     "total_articles_max": 1762,
     "matched_articles_max": 114,
-    "new_alerts": 13,
-    "cve_count": 8,
+    "new_alerts": 15,
+    "cve_count": 10,
     "ioc_count": 85,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2026-15409",
       "CVE-2026-15410",
+      "CVE-2026-15718",
+      "CVE-2026-15719",
       "CVE-2026-44747"
     ],
     "keywords_hit": {
-      "CVE": 6,
-      "Malware": 4,
+      "CVE": 7,
+      "Malware": 5,
       "Botnet": 3,
       "DDoS": 2
     }
@@ -289,6 +291,56 @@
       "url": "https://www.securityweek.com/windows-bind-link-attacks-can-hide-malware-from-edr-tools/",
       "source": "SecurityWeek (보안뉴스 종합) [RSS]",
       "published": "2026-07-15T13:00:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-15T23:01:30.483092+09:00",
+      "type": "single",
+      "title": "Firefox, Chrome, Adobe, and VMware Updates Fix Multiple Critical Security Flaws",
+      "url": "https://thehackernews.com/2026/07/firefox-chrome-adobe-and-vmware-updates.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-07-15T13:18:53+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-15718",
+        "CVE-2026-15719"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-15718",
+          "cvss_score": 4.3,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-763 (CWE-763)",
+          "description": "We are aware that exploit code for this is public however we are not aware of any attacks in the wild abusing this flaw. This vulnerability was fixed in Firefox 152.0.6.",
+          "epss_score": 0.00156,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-15719",
+          "cvss_score": 5.4,
+          "cvss_severity": "MEDIUM",
+          "cwe": "NVD-CWE-noinfo (Insufficient Information)",
+          "description": "We are aware that exploit code for this is public however we are not aware of any attacks in the wild abusing this flaw. This vulnerability was fixed in Firefox 152.0.6.",
+          "epss_score": 0.00133,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-07-15T23:01:30.483092+09:00",
+      "type": "single",
+      "title": "Threat actor impersonated hundreds of brands on GitHub to push infostealer malware",
+      "url": "https://www.helpnetsecurity.com/2026/07/15/impersonated-brands-github-infostealer-download/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-07-15T13:52:39+00:00",
       "keywords": [
         "Malware"
       ],
