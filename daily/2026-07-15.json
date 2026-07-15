@@ -2,12 +2,12 @@
   "date": "2026-07-15",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 7,
+    "scan_runs": 8,
     "total_articles_max": 1762,
     "matched_articles_max": 110,
-    "new_alerts": 9,
+    "new_alerts": 11,
     "cve_count": 8,
-    "ioc_count": 0,
+    "ioc_count": 85,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2026-15409",
@@ -16,8 +16,8 @@
     ],
     "keywords_hit": {
       "CVE": 6,
-      "Malware": 2,
-      "Botnet": 2,
+      "Malware": 3,
+      "Botnet": 3,
       "DDoS": 1
     }
   },
@@ -237,6 +237,34 @@
         "Malware"
       ],
       "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-15T20:01:20.426349+09:00",
+      "type": "single",
+      "title": "TuxBot v3: Inside an IoT Botnet Framework With LLM-Assisted Development",
+      "url": "https://unit42.paloaltonetworks.com/tuxbot-v3-evolution-iot-botnet/",
+      "source": "Palo Alto Unit42 (위협리서치) [RSS]",
+      "published": "2026-07-15T10:00:54+00:00",
+      "keywords": [
+        "Botnet"
+      ],
+      "ioc_raw_text": "[IP] 185[.]10[.]68[.]127\n[IP] 209[.]182[.]237[.]133\n[IP] 45[.]145[.]185[.]229\n[IP] 107[.]174[.]133[.]119\n[IP] 194[.]46[.]59[.]169\n[IP] 188[.]166[.]2[.]226\n[IP] 154[.]6[.]197[.]43\n[Domain] tuxbot[.]alpha\n[Domain] tuxbot[.]arm\n[Domain] tuxbot[.]hppa\n[Domain] tuxbot[.]mips\n[Domain] tuxbot[.]mipsel\n[Domain] tuxbot[.]ppc\n[Domain] keksec[.]mips\n[Domain] c2[.]tuxbot[.]local\n[Domain] cfcybernews[.]eu\n[Domain] captcha[.]kanfetka[.]sit\n[Domain] digikalas[.]online\n[Domain] jetross[.]com\n[Domain] sd-pam[.]service\n[Domain] 08x[.]lock\n[SHA256] 0f8bcca3ed65e980da2a1f90a767b7d543be32eeea3e9338d09d4d635a497988\n[SHA256] 146f6010f6ee082aab13e0148d39baefa77eaba4ff65817b511b08c2092bdfd2\n[SHA256] 15c17dce89deccd5172285b2650de957918aa1157cde8e4633ae15dfe31f2711\n[SHA256] 246c97957651de568e61eba1abe572f0b0f960456209995d43d53a0d7cc494a1\n[SHA256] 2f2c3551762c03da126e45dca6fc2f997c63f0f1bfc21fd0ceed680ac6f083ce\n[SHA256] 3ec016d637e4c9cd331edd2580a229621ad638e924a4aa29ac0342e9144ace19\n[SHA256] 511d3ffb4091cbcc94571d9fb3102e8cb424c6e187d01d53ff12078d54929bda\n[SHA256] 6aa4034dc7a2858094ff4dc59af07d6fe31119591e41599bcc0f3d0b516ee734\n[SHA256] 6b7a8e0c96c2318e747f074f9a99d26738700769ac01bba692d19fc884847737\n[SHA256] 71dfbb171eca4ef9d02ff630b56e5283bbef7b375d4dbe9e8c9531bef312fa8d\n[SHA256] 96b1f96efca3b9df2dea85678d60da27e3265b4a00e39e20e64b27bb985e1561\n[SHA256] 9cd5e7e3c8bad321ef6c3d47fe25b3b56e9487f703a7eeee52db4067e6bafe61\n[SHA256] a03b0d41f5ef03328150331ffa0ed970998883f7e0343d79b2d3b95330d8e7c1\n[SHA256] a8d70d16509e227d8306be361bc37a3dc9fe34bf476f51e361e55e6d293c2b3f\n[SHA256] bd6431fb06e4689142ef597cf00382e38ae20a5393a4d9277e45a3f5b3cbcff9\n[SHA256] c7a36d6b8128c41f93a32413675401a10a2b5769b221bbaa8c5c309585b73ceb\n[SHA256] e3a5296e762e9ee16010399666441d663beeea956382e97cca032a6a5ad06811\n[SHA256] eb2fa179fde2f097c18d5d700ad87d660fc238ee14cbe5477032e60856859621\n[SHA256] f1efb78887bb8783d7781c07cd13b53c9c79ebe5baa81f335838d0a6e73dec7e\n[SHA256] f324a45fcd2a9db4e542c09486c21b08bc42d6bf76fbd5f17871090361b10815\n[SHA1] 2774a5f5991657eb9b0062cd3da0391c9bad2643\n[SHA1] 304e14a138b92135aad27bb37f4e9db440401ec2\n[SHA1] 4cba585d9f208bd712b28f867f908e503ccc9cfe\n[SHA1] 4e1483737f769e1cee80fa4d7a056a5d8e3b537e\n[SHA1] 64af594c7f91793813e3d769e63816b143102396\n[SHA1] 69dc276dde8efcb409411508da55d4cbe28d5600\n[SHA1] 74fba0bad93bbb0e1eedb196b6efe6af1c0bf23d\n[SHA1] 7ad840b1945cc346012987727ebcc062431965a4\n[SHA1] 81670f250f4b3492fd3e00920f9fe7395ecbf85c\n[SHA1] 877b804892ab218a53420b6dfbd0a2837368d0b5\n[SHA1] a70cea846442c18ad265f311b5ced29a4071771d\n[SHA1] a8fd13f6b1bdfa87c0f466df69b7e81325b5dd15\n[SHA1] adf267caab78a74c4b4dfabe7b578b0a4d639782\n[SHA1] b1cc41e2b9ddb11d0c9d03d319531fea9459cdae\n[SHA1] b21cdc5e1b96c640a1d553ed518c49729e367823\n[SHA1] befb0e4d1cd7d2b4139b55f811993af2c8839e75\n[SHA1] cd540bb31909440fd2bf773e6f1480f5b6f12400\n[SHA1] e0f8dd23e4fb0086feb42ea0a5dcef70d7b4d17c",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-15T20:01:20.426349+09:00",
+      "type": "single",
+      "title": "OkoBot: new sophisticated malware framework targets cryptocurrency users",
+      "url": "https://securelist.com/okobot-framework-targets-cryptocurrency-wallets/120660/",
+      "source": "Kaspersky Securelist (위협분석) [RSS]",
+      "published": "2026-07-15T10:00:26+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "[IP] 104[.]243[.]43[.]16\n[IP] 104[.]243[.]32[.]213\n[IP] 62[.]210[.]188[.]209\n[Domain] 2baserec2[.]guru\n[Domain] recavb22[.]online\n[Domain] kbeautyreviews[.]com\n[Domain] coffeesaloon[.]online\n[Domain] livewallpapers[.]online\n[Domain] thatwascringe[.]com\n[Domain] moonsand[.]store\n[MD5] 11DBC8A2BEA04B15F8F68F3F01E8FAF9\n[MD5] 187A1F68AE786E53D3831166DC84E6D2\n[MD5] 2157D2429124AD28DB7A26F2477CB985\n[MD5] 3D2B43F91F65BFBF36A9C71B6B418876\n[MD5] 70FEF9FD6E351F4D53CFEEE8DCDFCD99\n[MD5] 7306885BB4C98F2A9F056104CF092BC9\n[MD5] 77CECF5E2A622AE07D8AE9913457AB57\n[MD5] 83E6B8FCB92A0B13E109301F8FF649CF\n[MD5] AC93A821617AEA1F56D4BC0BEF4AF327\n[MD5] ACD31C9941B6C1CABD4E45E6877B9038\n[MD5] B07D451EE65A1580F20A784C8F0E7A46\n[MD5] B4C2E16CDB513BE4DC798F88E2527334\n[MD5] D84E8DC509308523E0209D3CD3544619\n[MD5] DD52F5108A176C62AD807C327734AD12\n[MD5] E0C3BC27A65750E740C4F1719E531C7D\n[Email] intelreports[@]kaspersky[.]com",
       "cve_ids": [],
       "cve_details": []
     }
