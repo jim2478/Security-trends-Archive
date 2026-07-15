@@ -2,10 +2,10 @@
   "date": "2026-07-15",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 8,
+    "scan_runs": 9,
     "total_articles_max": 1762,
-    "matched_articles_max": 110,
-    "new_alerts": 11,
+    "matched_articles_max": 114,
+    "new_alerts": 13,
     "cve_count": 8,
     "ioc_count": 85,
     "merged_count": 0,
@@ -16,9 +16,9 @@
     ],
     "keywords_hit": {
       "CVE": 6,
-      "Malware": 3,
+      "Malware": 4,
       "Botnet": 3,
-      "DDoS": 1
+      "DDoS": 2
     }
   },
   "alerts": [
@@ -265,6 +265,34 @@
         "Malware"
       ],
       "ioc_raw_text": "[IP] 104[.]243[.]43[.]16\n[IP] 104[.]243[.]32[.]213\n[IP] 62[.]210[.]188[.]209\n[Domain] 2baserec2[.]guru\n[Domain] recavb22[.]online\n[Domain] kbeautyreviews[.]com\n[Domain] coffeesaloon[.]online\n[Domain] livewallpapers[.]online\n[Domain] thatwascringe[.]com\n[Domain] moonsand[.]store\n[MD5] 11DBC8A2BEA04B15F8F68F3F01E8FAF9\n[MD5] 187A1F68AE786E53D3831166DC84E6D2\n[MD5] 2157D2429124AD28DB7A26F2477CB985\n[MD5] 3D2B43F91F65BFBF36A9C71B6B418876\n[MD5] 70FEF9FD6E351F4D53CFEEE8DCDFCD99\n[MD5] 7306885BB4C98F2A9F056104CF092BC9\n[MD5] 77CECF5E2A622AE07D8AE9913457AB57\n[MD5] 83E6B8FCB92A0B13E109301F8FF649CF\n[MD5] AC93A821617AEA1F56D4BC0BEF4AF327\n[MD5] ACD31C9941B6C1CABD4E45E6877B9038\n[MD5] B07D451EE65A1580F20A784C8F0E7A46\n[MD5] B4C2E16CDB513BE4DC798F88E2527334\n[MD5] D84E8DC509308523E0209D3CD3544619\n[MD5] DD52F5108A176C62AD807C327734AD12\n[MD5] E0C3BC27A65750E740C4F1719E531C7D\n[Email] intelreports[@]kaspersky[.]com",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-15T22:01:23.438531+09:00",
+      "type": "single",
+      "title": "Radware adds cloud intelligence to DefensePro X for web DDoS defense",
+      "url": "https://www.helpnetsecurity.com/2026/07/15/radware-defensepro-x-cloud-augmented-protection/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-07-15T12:16:27+00:00",
+      "keywords": [
+        "DDoS"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-15T22:01:23.438531+09:00",
+      "type": "single",
+      "title": "Windows Bind Link Attacks Can Hide Malware From EDR Tools",
+      "url": "https://www.securityweek.com/windows-bind-link-attacks-can-hide-malware-from-edr-tools/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-07-15T13:00:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
     }
