@@ -2,16 +2,21 @@
   "date": "2026-07-16",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 5,
+    "scan_runs": 6,
     "total_articles_max": 1762,
-    "matched_articles_max": 117,
-    "new_alerts": 7,
-    "cve_count": 0,
+    "matched_articles_max": 120,
+    "new_alerts": 10,
+    "cve_count": 3,
     "ioc_count": 31,
     "merged_count": 0,
-    "unique_cves": [],
+    "unique_cves": [
+      "CVE-2026-0001",
+      "CVE-2026-14440",
+      "CVE-2026-56877"
+    ],
     "keywords_hit": {
       "Malware": 6,
+      "CVE": 3,
       "Botnet": 2
     }
   },
@@ -110,6 +115,82 @@
       "published": "2026-07-16T01:36:21+00:00",
       "keywords": [
         "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-16T14:01:15.165509+09:00",
+      "type": "single",
+      "title": "[NotCVE-2026-0001] Cloudflare Universal SSL CAA augmentation weakens RFC 8657 account binding — CVE-2026-14440 assigned 163 days after public no-CVE disclosure",
+      "url": "https://seclists.org/fulldisclosure/2026/Jul/22",
+      "source": "SecLists Full Disclosure (취약점공개)",
+      "published": "2026-07-16T04:43:01+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-0001",
+        "CVE-2026-14440"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-0001",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-14440",
+          "cvss_score": 7.6,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-693 (CWE-693)",
+          "description": "Description:\n\n\n\n\nTo issue and renew TLS certificates on behalf of customers, Cloudflare's Universal SSL feature automatically manages the CAA RRset for the customer's zone. This auto-managed RRset is permissive by design (e.g. 'issue \"letsencrypt.org\"' without parameters). On Universal SSL zones, Cloudflare's authoritative DNS serves this auto-managed RRset at query time, superseding any customer-configured CAA records on the zone. When a customer publishes a stricter CAA record using the RFC 86",
+          "epss_score": 0.00135,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-07-16T14:01:15.165509+09:00",
+      "type": "single",
+      "title": "CVE-2026-56877 - Skillable SCORM userId authorisation bypass",
+      "url": "https://seclists.org/fulldisclosure/2026/Jul/20",
+      "source": "SecLists Full Disclosure (취약점공개)",
+      "published": "2026-07-16T04:41:06+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-56877"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-56877",
+          "cvss_score": 6.3,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-472 (CWE-472)",
+          "description": "The SCORM lab launch endpoint in Skillable (scorm.skillable.com) through 2026-07-13 does not validate the client-supplied userId parameter against the authenticated SCORM session token. An authenticated user can substitute arbitrary userId values to bypass per-user lab launch rate limits and consume other users' lab allocations, resulting in denial of service against targeted users' lab and exam access. Skillable was formerly named Learn on Demand Systems.",
+          "epss_score": 0.0041,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-07-16T14:01:15.165509+09:00",
+      "type": "single",
+      "title": "Subject: Advisory Submission: EZ Game Booster - Cleartext Storage of Sensitive Credentials (CWE-312)",
+      "url": "https://seclists.org/fulldisclosure/2026/Jul/21",
+      "source": "SecLists Full Disclosure (취약점공개)",
+      "published": "2026-07-16T04:42:12+00:00",
+      "keywords": [
+        "CVE"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
