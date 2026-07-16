@@ -2,10 +2,10 @@
   "date": "2026-07-16",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 11,
+    "scan_runs": 12,
     "total_articles_max": 1782,
     "matched_articles_max": 120,
-    "new_alerts": 19,
+    "new_alerts": 20,
     "cve_count": 4,
     "ioc_count": 98,
     "merged_count": 0,
@@ -16,7 +16,7 @@
       "CVE-2026-56877"
     ],
     "keywords_hit": {
-      "Malware": 13,
+      "Malware": 14,
       "CVE": 4,
       "Botnet": 3
     }
@@ -328,6 +328,20 @@
       "url": "https://www.securityweek.com/clicklock-stealer-bypasses-macos-security-with-social-engineering-process-killing/",
       "source": "SecurityWeek (보안뉴스 종합) [RSS]",
       "published": "2026-07-16T12:43:59+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-16T23:01:14.158249+09:00",
+      "type": "single",
+      "title": "New TELEPUZ Malware Spreads via ClickFix to Steal Data and Run Commands",
+      "url": "https://thehackernews.com/2026/07/new-telepuz-malware-spreads-via.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-07-16T12:50:13+00:00",
       "keywords": [
         "Malware"
       ],
