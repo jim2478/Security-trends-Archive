@@ -2,10 +2,10 @@
   "date": "2026-07-16",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 8,
+    "scan_runs": 9,
     "total_articles_max": 1762,
     "matched_articles_max": 120,
-    "new_alerts": 13,
+    "new_alerts": 14,
     "cve_count": 4,
     "ioc_count": 98,
     "merged_count": 0,
@@ -16,7 +16,7 @@
       "CVE-2026-56877"
     ],
     "keywords_hit": {
-      "Malware": 8,
+      "Malware": 9,
       "CVE": 4,
       "Botnet": 2
     }
@@ -244,6 +244,20 @@
       "url": "https://cybernews.com/security/github-malware-distibution/",
       "source": "CyberNews [RSS]",
       "published": "2026-07-16T09:24:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-16T20:01:11.511146+09:00",
+      "type": "single",
+      "title": "Russian hackers trojanize WebEx, Zoom apps to push Starland malware",
+      "url": "https://www.bleepingcomputer.com/news/security/russian-hackers-trojanize-webex-zoom-apps-to-push-starland-malware/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-07-16T10:19:34+00:00",
       "keywords": [
         "Malware"
       ],
