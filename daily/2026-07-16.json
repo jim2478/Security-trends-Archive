@@ -2,10 +2,10 @@
   "date": "2026-07-16",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 10,
-    "total_articles_max": 1762,
+    "scan_runs": 11,
+    "total_articles_max": 1782,
     "matched_articles_max": 120,
-    "new_alerts": 15,
+    "new_alerts": 19,
     "cve_count": 4,
     "ioc_count": 98,
     "merged_count": 0,
@@ -16,9 +16,9 @@
       "CVE-2026-56877"
     ],
     "keywords_hit": {
-      "Malware": 10,
+      "Malware": 13,
       "CVE": 4,
-      "Botnet": 2
+      "Botnet": 3
     }
   },
   "alerts": [
@@ -272,6 +272,62 @@
       "url": "https://hackread.com/okobot-malware-clickfix-browser-extensions-crypto-data/",
       "source": "HackRead (해킹/데이터유출) [RSS]",
       "published": "2026-07-16T11:33:07+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-16T22:01:30.381219+09:00",
+      "type": "single",
+      "title": "Russian cybercriminal used jailbroken Gemini CLI to rebuild botnet infrastructure in six minutes",
+      "url": "https://www.helpnetsecurity.com/2026/07/16/jailbroken-google-gemini-cli-botnet/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-07-16T12:08:46+00:00",
+      "keywords": [
+        "Botnet"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-16T22:01:30.381219+09:00",
+      "type": "single",
+      "title": "20+ Hijacked Government Websites Became an Attack Channel",
+      "url": "https://thehackernews.com/2026/07/20-hijacked-government-websites.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-07-16T11:58:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-16T22:01:30.381219+09:00",
+      "type": "single",
+      "title": "Daxin Resurfaces in Taiwan Alongside Stupig Pre-Login SYSTEM Backdoor",
+      "url": "https://thehackernews.com/2026/07/daxin-resurfaces-in-taiwan-alongside.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-07-16T11:17:23+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-16T22:01:30.381219+09:00",
+      "type": "single",
+      "title": "‘ClickLock Stealer’ Bypasses macOS Security With Social Engineering, Process Killing",
+      "url": "https://www.securityweek.com/clicklock-stealer-bypasses-macos-security-with-social-engineering-process-killing/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-07-16T12:43:59+00:00",
       "keywords": [
         "Malware"
       ],
