@@ -2,10 +2,10 @@
   "date": "2026-07-16",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 7,
+    "scan_runs": 8,
     "total_articles_max": 1762,
     "matched_articles_max": 120,
-    "new_alerts": 12,
+    "new_alerts": 13,
     "cve_count": 4,
     "ioc_count": 98,
     "merged_count": 0,
@@ -16,7 +16,7 @@
       "CVE-2026-56877"
     ],
     "keywords_hit": {
-      "Malware": 7,
+      "Malware": 8,
       "CVE": 4,
       "Botnet": 2
     }
@@ -234,6 +234,20 @@
         "Malware"
       ],
       "ioc_raw_text": "[IP] 188[.]137[.]246[.]189\n[IP] 91[.]92[.]241[.]181\n[IP] 185[.]219[.]83[.]191\n[IP] 158[.]94[.]208[.]120\n[IP] 195[.]177[.]94[.]103\n[IP] 79[.]110[.]49[.]32\n[IP] 45[.]141[.]119[.]188\n[Domain] areal[.]rj[.]gov[.]br\n[Domain] funrespol[.]pc[.]ro[.]gov[.]br\n[Domain] pinhalgrande[.]rs[.]gov[.]br\n[Domain] seplag[.]mt[.]gov[.]br\n[Domain] policiacivil[.]pe[.]gov[.]br\n[Domain] 2fcamaraparaguacu[.]sp[.]gov[.]br\n[Domain] 2fpoa[.]sp[.]gov[.]br\n[Domain] dahieenloo[.]com\n[Domain] eeresofeuae[.]com\n[Domain] ogs[.]zabbxsoftware[.]com\n[Domain] oauth[.]openvpnet[.]com\n[Domain] oficiospolicia[.]com\n[Domain] pccvill[.]com\n[Domain] pccvioo[.]com\n[Domain] psznaoehteeh[.]com\n[Domain] zsxocjarsate[.]com\n[Domain] policiacivilmg[.]com\n[Domain] taaeiuep[.]com\n[Domain] novoservidor2026[.]com\n[Domain] zabbxsoftware[.]com\n[Domain] timon[.]ma[.]gov[.]br\n[Domain] prodoc[.]ap[.]gov[.]br\n[Domain] portaldrh[.]tjba[.]jus[.]br\n[Domain] loginam[.]sesp[.]es[.]gov[.]br\n[Domain] aplicacao[.]cbm[.]mt[.]gov[.]br\n[Domain] gov[.]br\n[Domain] win[.]stealc\n[URL] hxxps://arcese[.]urlsand[.]com/?u=https%3A%2F%2Fcamaraparaguacu.sp.gov.br%2Foficio%2Fx2eDBGceCF&e=dd4b7717&h=be3cf1fa&f=y&p=y&m=4gql0c4CXBz334D\n[URL] hxxps://camaradelassance[.]mg[.]gov[.]br\n[URL] hxxps://camaraparaguacu[.]sp[.]gov[.]br/doc\n[URL] hxxps://camaraparaguacu[.]sp[.]gov[.]br/doc/DcUXKm/S7q88t\n[URL] hxxps://camaraparaguacu[.]sp[.]gov[.]br/doc/DzAe8Sxvca\n[URL] hxxps://camaraparaguacu[.]sp[.]gov[.]br/doc/i00hqHrGFr\n[URL] hxxps://camaraparaguacu[.]sp[.]gov[.]br/doc/js.brnUl8Z\n[URL] hxxps://camaraparaguacu[.]sp[.]gov[.]br/doc/naNXNW0tQ7\n[URL] hxxps://camaraparaguacu[.]sp[.]gov[.]br/doc/R0RU5TEpc2\n[URL] hxxps://camaraparaguacu[.]sp[.]gov[.]br/doc/wsVPWyP0iL\n[URL] hxxps://camaraparaguacu[.]sp[.]gov[.]br/oficio/mGeI1KrXIT\n[URL] hxxps://cas5-0-urlprotect[.]trendmicro[.]com/wis/clicktime/v1/query?url=https%3a%2f%2fpoa.sp.gov.br%2fdown.php&umid=a1a41f4a-228b-4622-9a1f-5fd4cbc68d26&rct=1779114363&auth=18576cf8abd7812271cef15c8c401c7207caa231-a9e499076e60cd525b23d7c667f1929bc0a9b294\n[URL] hxxps://circ[.]rs[.]gov[.]br/OficioDigital.exe\n[URL] hxxps://condemat[.]sp[.]gov[.]br/certificate/APL3SJ9e/723406349/\n[URL] hxxps://ferrazdevasconcelos[.]sp[.]gov[.]br/down.php\n[URL] hxxps://floresdegoias[.]go[.]gov[.]br/levantamento/v6aq7x/prm9yG\n[URL] hxxps://lontra[.]mg[.]gov[.]br/arquivo.php\n[URL] hxxps://marapoama[.]sp[.]gov[.]br/doc/4h7Bae/Mn9K3N\n[URL] hxxps://marapoama[.]sp[.]gov[.]br/documento/L5fHnY/d13mLf\n[URL] hxxps://marapoama[.]sp[.]gov[.]br/levantamento/M5nkwP/dM0CgC\n[URL] hxxps://marapoama[.]sp[.]gov[.]br/oficio/LA9ks3d/ldo9JodAS/vYnerL/fkeA5r\n[URL] hxxps://poa[.]sp[.]gov[.]br/doc/k9l00oFolA/4mZKTCE4ex\n[URL] hxxps://poa[.]sp[.]gov[.]br/doc/KhDvexT9QX/t4iVaErskj\n[URL] hxxps://poa[.]sp[.]gov[.]br/doc/wBvCEwP3tO/oSKmMKG1sw\n[URL] hxxps://poa[.]sp[.]gov[.]br/documento/3QFKMM71/527058494/\n[URL] hxxps://poa[.]sp[.]gov[.]br/download/7552PRc3/544840142/\n[URL] hxxps://poa[.]sp[.]gov[.]br/oficio/anexo/VQC7WEcf\n[URL] hxxps://protocolo[.]sorocaba[.]sp[.]gov[.]br/protocolo/kitsigns.jsp?yd=DtmcOmPD4GdPF9H06LU6tVN8lm2467QxWGDEOmFL0qWjScIylunV8re%2B0cZMiJ6O\n[URL] hxxps://protocolo[.]sorocaba[.]sp[.]gov[.]br/protocolo/signkit.jsp?yd=5F8bz2Lapfi%2Bf41ZRmsNAtfvOls6zkkpOSPYO4UqALf0x8Hv%2BZcPRgcBznBl0tH\n[URL] hxxps://url[.]de[.]m[.]mimecastprotect[.]com/s/cFJoCr2PqncDzNRl7U7fmf4fQ3q?domain=camaraparaguacu.sp.gov.br\n[SHA256] e0dae1a04b7a3b2ae07377b0fd00681e9633532788870b3709a9e149f3ccf0e0\n[SHA1] 18576cf8abd7812271cef15c8c401c7207caa231\n[SHA1] a9e499076e60cd525b23d7c667f1929bc0a9b294",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-16T19:01:06.221620+09:00",
+      "type": "single",
+      "title": "Attackers keep using GitHub to distribute malware",
+      "url": "https://cybernews.com/security/github-malware-distibution/",
+      "source": "CyberNews [RSS]",
+      "published": "2026-07-16T09:24:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
     }
