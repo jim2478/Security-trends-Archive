@@ -2,10 +2,10 @@
   "date": "2026-07-18",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
+    "scan_runs": 3,
     "total_articles_max": 1762,
     "matched_articles_max": 114,
-    "new_alerts": 4,
+    "new_alerts": 5,
     "cve_count": 0,
     "ioc_count": 0,
     "merged_count": 0,
@@ -13,7 +13,8 @@
     "keywords_hit": {
       "Malware": 2,
       "DDoS": 1,
-      "Botnet": 1
+      "Botnet": 1,
+      "CVE": 1
     }
   },
   "alerts": [
@@ -68,6 +69,20 @@
       "published": "2026-07-17T17:12:23+00:00",
       "keywords": [
         "Botnet"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-18T06:03:04.351548+09:00",
+      "type": "single",
+      "title": "OpenSSL HollowByte Flaw Could Freeze Server Memory with 11-Byte TLS Requests",
+      "url": "https://thehackernews.com/2026/07/openssl-hollowbyte-flaw-could-freeze.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-07-17T20:20:53+00:00",
+      "keywords": [
+        "CVE"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
