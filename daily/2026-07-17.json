@@ -2,10 +2,10 @@
   "date": "2026-07-17",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
+    "scan_runs": 4,
     "total_articles_max": 1782,
     "matched_articles_max": 116,
-    "new_alerts": 3,
+    "new_alerts": 4,
     "cve_count": 1,
     "ioc_count": 0,
     "merged_count": 0,
@@ -13,7 +13,7 @@
       "CVE-2026-42533"
     ],
     "keywords_hit": {
-      "Malware": 1,
+      "Malware": 2,
       "Botnet": 1,
       "봇넷": 1,
       "CVE": 1
@@ -74,6 +74,20 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-07-17T20:01:05.372181+09:00",
+      "type": "single",
+      "title": "New GoSerpent Malware Targets Southeast Asian Governments and Diplomats for Espionage",
+      "url": "https://thehackernews.com/2026/07/new-goserpent-malware-targets-southeast.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-07-17T08:46:45+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
