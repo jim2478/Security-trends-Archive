@@ -2,16 +2,18 @@
   "date": "2026-07-17",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 1,
-    "total_articles_max": 1762,
-    "matched_articles_max": 112,
-    "new_alerts": 1,
+    "scan_runs": 2,
+    "total_articles_max": 1782,
+    "matched_articles_max": 116,
+    "new_alerts": 2,
     "cve_count": 0,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [],
     "keywords_hit": {
-      "Malware": 1
+      "Malware": 1,
+      "Botnet": 1,
+      "봇넷": 1
     }
   },
   "alerts": [
@@ -24,6 +26,21 @@
       "published": "2026-07-16T21:52:54+00:00",
       "keywords": [
         "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-17T09:01:00.937013+09:00",
+      "type": "single",
+      "title": "[카드뉴스] “로봇청소기가 해커의 무기로?”… 패치 없는 저가형 IoT 기기가 부른 ‘봇넷’의 경고",
+      "url": "http://www.boannews.com/media/view.asp?idx=144723&kind=&sub_kind=",
+      "source": "보안뉴스 (전체) [RSS]",
+      "published": "2026-07-16T23:26:00+00:00",
+      "keywords": [
+        "Botnet",
+        "봇넷"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
