@@ -2,18 +2,21 @@
   "date": "2026-07-17",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
+    "scan_runs": 3,
     "total_articles_max": 1782,
     "matched_articles_max": 116,
-    "new_alerts": 2,
-    "cve_count": 0,
+    "new_alerts": 3,
+    "cve_count": 1,
     "ioc_count": 0,
     "merged_count": 0,
-    "unique_cves": [],
+    "unique_cves": [
+      "CVE-2026-42533"
+    ],
     "keywords_hit": {
       "Malware": 1,
       "Botnet": 1,
-      "봇넷": 1
+      "봇넷": 1,
+      "CVE": 1
     }
   },
   "alerts": [
@@ -45,6 +48,32 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-17T18:01:12.110878+09:00",
+      "type": "single",
+      "title": "F5, NGINX 치명적 취약점 긴급 패치…원격 코드 실행 가능",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=207657",
+      "source": "데일리시큐 (이슈) [RSS]",
+      "published": "2026-07-17T17:15:10+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-42533"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-42533",
+          "cvss_score": 9.2,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-122 (CWE-122)",
+          "description": "A vulnerability exists in NGINX Plus and NGINX Open Source when a map directive uses regex matching and a string expression references the map's regex capture variables before referencing the map output variable. Alternatively, the same result could be achieved by using a non-cacheable variable in a string expression under certain conditions. An unauthenticated attacker along with conditions beyond their control can exploit this vulnerability by sending crafted HTTP requests. This may cause a he",
+          "epss_score": 0.0083,
+          "kev": false
+        }
+      ]
     }
   ]
 }
