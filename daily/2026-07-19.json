@@ -2,16 +2,19 @@
   "date": "2026-07-19",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 1,
+    "scan_runs": 2,
     "total_articles_max": 1762,
-    "matched_articles_max": 120,
-    "new_alerts": 1,
-    "cve_count": 0,
+    "matched_articles_max": 121,
+    "new_alerts": 2,
+    "cve_count": 1,
     "ioc_count": 0,
     "merged_count": 0,
-    "unique_cves": [],
+    "unique_cves": [
+      "CVE-2026-60137"
+    ],
     "keywords_hit": {
-      "Malware": 1
+      "Malware": 1,
+      "CVE": 1
     }
   },
   "alerts": [
@@ -28,6 +31,32 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-19T01:03:02.858018+09:00",
+      "type": "single",
+      "title": "Two new high severity WordPress vulnerabilities, patch immediately!",
+      "url": "https://www.helpnetsecurity.com/2026/07/18/wordpress-vulnerabilities-wp2shell-cve-2026-60137-cve-2026-60137/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-07-18T14:57:20+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-60137"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-60137",
+          "cvss_score": 5.9,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-89 (SQL Injection)",
+          "description": "WordPress 6.8.x before 6.8.6, 6.9.x before 6.9.5, and 7.0.x before 7.0.2 does not properly sanitise the author__not_in parameter of WP_Query, which could allow SQL Injection when a plugin or theme passes untrusted input to the parameter.",
+          "epss_score": 0.04026,
+          "kev": false
+        }
+      ]
     }
   ]
 }
