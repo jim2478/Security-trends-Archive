@@ -2,19 +2,21 @@
   "date": "2026-07-18",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
+    "scan_runs": 4,
     "total_articles_max": 1762,
-    "matched_articles_max": 114,
-    "new_alerts": 5,
-    "cve_count": 0,
+    "matched_articles_max": 115,
+    "new_alerts": 6,
+    "cve_count": 1,
     "ioc_count": 0,
     "merged_count": 0,
-    "unique_cves": [],
+    "unique_cves": [
+      "CVE-2026-63030"
+    ],
     "keywords_hit": {
       "Malware": 2,
+      "CVE": 2,
       "DDoS": 1,
-      "Botnet": 1,
-      "CVE": 1
+      "Botnet": 1
     }
   },
   "alerts": [
@@ -87,6 +89,32 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-18T13:03:03.659929+09:00",
+      "type": "single",
+      "title": "워드프레스 핵심 취약점 ‘wp2shell’ 긴급 패치…로그인 없이 서버 코드 실행",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=207658",
+      "source": "데일리시큐 (이슈) [RSS]",
+      "published": "2026-07-18T12:19:53+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-63030"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-63030",
+          "cvss_score": 7.5,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-436 (CWE-436)",
+          "description": "WordPress 6.9.x before 6.9.5 and 7.0.x before 7.0.2 is affected by a REST API batch endpoint route confusion issue which, combined with the author__not_in WP_Query SQL Injection (CVE-2026-60137), could allow an attacker to perform SQL Injection and achieve Remote Code Execution.",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
     }
   ]
 }
