@@ -2,19 +2,22 @@
   "date": "2026-07-19",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
+    "scan_runs": 3,
     "total_articles_max": 1762,
-    "matched_articles_max": 121,
-    "new_alerts": 2,
-    "cve_count": 1,
+    "matched_articles_max": 122,
+    "new_alerts": 3,
+    "cve_count": 4,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
+      "CVE-2026-25089",
+      "CVE-2026-39808",
+      "CVE-2026-58644",
       "CVE-2026-60137"
     ],
     "keywords_hit": {
-      "Malware": 1,
-      "CVE": 1
+      "CVE": 2,
+      "Malware": 1
     }
   },
   "alerts": [
@@ -55,6 +58,52 @@
           "description": "WordPress 6.8.x before 6.8.6, 6.9.x before 6.9.5, and 7.0.x before 7.0.2 does not properly sanitise the author__not_in parameter of WP_Query, which could allow SQL Injection when a plugin or theme passes untrusted input to the parameter.",
           "epss_score": 0.04026,
           "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-07-19T03:03:11.578271+09:00",
+      "type": "single",
+      "title": "CISA, 실제 공격 악용된 포티샌드박스·셰어포인트 취약점 3건 긴급 경고",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=207666",
+      "source": "데일리시큐 (이슈) [RSS]",
+      "published": "2026-07-19T02:06:08+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-25089",
+        "CVE-2026-39808",
+        "CVE-2026-58644"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-25089",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-78 (OS Command Injection)",
+          "description": "A improper neutralization of special elements used in an os command ('os command injection') vulnerability in Fortinet FortiSandbox 5.0.0 through 5.0.5, FortiSandbox 4.4.0 through 4.4.8, FortiSandbox 4.2 all versions, FortiSandbox Cloud 5.0.4 through 5.0.5, FortiSandbox PaaS 5.0.4 through 5.0.5 may allow an unauthenticated attacker to execute unauthorized commands via specifically crafted HTTP requests",
+          "epss_score": 0.36135,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-39808",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-78 (OS Command Injection)",
+          "description": "A improper neutralization of special elements used in an os command ('os command injection') vulnerability in Fortinet FortiSandbox 4.4.0 through 4.4.8 may allow attacker to execute unauthorized code or commands via <insert attack vector here>",
+          "epss_score": 0.84158,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-58644",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-502 (Deserialization)",
+          "description": "Deserialization of untrusted data in Microsoft Office SharePoint allows an unauthorized attacker to execute code over a network.",
+          "epss_score": 0.01465,
+          "kev": true
         }
       ]
     }
