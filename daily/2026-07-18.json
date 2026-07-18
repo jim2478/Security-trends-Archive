@@ -2,10 +2,10 @@
   "date": "2026-07-18",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 5,
+    "scan_runs": 6,
     "total_articles_max": 1762,
-    "matched_articles_max": 117,
-    "new_alerts": 7,
+    "matched_articles_max": 118,
+    "new_alerts": 8,
     "cve_count": 3,
     "ioc_count": 0,
     "merged_count": 0,
@@ -15,7 +15,7 @@
       "CVE-2026-63030"
     ],
     "keywords_hit": {
-      "CVE": 3,
+      "CVE": 4,
       "Malware": 2,
       "DDoS": 1,
       "Botnet": 1
@@ -153,6 +153,20 @@
           "kev": true
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-07-18T23:02:59.677078+09:00",
+      "type": "single",
+      "title": "npm Supply Chain Security: Attackers Now Target Trust Paths, Not CVEs",
+      "url": "https://www.cybersecurity-insiders.com/npm-supply-chain-security-trust-paths/",
+      "source": "Cybersecurity Insiders (보안인사이트)",
+      "published": "2026-07-18T12:55:48+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
