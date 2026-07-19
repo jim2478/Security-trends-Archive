@@ -2,21 +2,22 @@
   "date": "2026-07-19",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
+    "scan_runs": 4,
     "total_articles_max": 1762,
     "matched_articles_max": 122,
-    "new_alerts": 3,
-    "cve_count": 4,
+    "new_alerts": 4,
+    "cve_count": 5,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2026-25089",
       "CVE-2026-39808",
+      "CVE-2026-53412",
       "CVE-2026-58644",
       "CVE-2026-60137"
     ],
     "keywords_hit": {
-      "CVE": 2,
+      "CVE": 3,
       "Malware": 1
     }
   },
@@ -104,6 +105,32 @@
           "description": "Deserialization of untrusted data in Microsoft Office SharePoint allows an unauthorized attacker to execute code over a network.",
           "epss_score": 0.01465,
           "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-07-19T15:00:56.431727+09:00",
+      "type": "single",
+      "title": "줌 윈도 클라이언트서 계정 탈취 취약점…로그인 없이 원격 공격 가능",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=207670",
+      "source": "데일리시큐 (이슈) [RSS]",
+      "published": "2026-07-19T14:04:19+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-53412"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-53412",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-20 (Improper Input Validation)",
+          "description": "Improper Input Validation in Zoom Desktop Client for Windows, Zoom VDI Client for Windows, and Zoom Meeting SDK for Windows may allow an unauthenticated user to conduct an account takeover via network access.",
+          "epss_score": 0.00508,
+          "kev": false
         }
       ]
     }
