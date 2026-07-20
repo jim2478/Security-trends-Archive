@@ -2,10 +2,10 @@
   "date": "2026-07-20",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 6,
-    "total_articles_max": 1782,
-    "matched_articles_max": 129,
-    "new_alerts": 8,
+    "scan_runs": 7,
+    "total_articles_max": 1792,
+    "matched_articles_max": 131,
+    "new_alerts": 10,
     "cve_count": 2,
     "ioc_count": 0,
     "merged_count": 0,
@@ -14,7 +14,7 @@
       "CVE-2026-42533"
     ],
     "keywords_hit": {
-      "Malware": 4,
+      "Malware": 6,
       "CVE": 2,
       "봇넷": 1,
       "Botnet": 1
@@ -150,6 +150,34 @@
       "url": "https://www.itsecurityguru.org/2026/07/20/researchers-uncover-hollowgraph-malware-that-hides-inside-microsoft-365-calendar-invites/?utm_source=rss&utm_medium=rss&utm_campaign=researchers-uncover-hollowgraph-malware-that-hides-inside-microsoft-365-calendar-invites",
       "source": "IT Security Guru (보안뉴스) [RSS]",
       "published": "2026-07-20T10:32:41+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-20T21:01:07.193595+09:00",
+      "type": "single",
+      "title": "FBI Arrests Florida Man in $220,000 Steam Crypto Theft Case",
+      "url": "https://hackread.com/fbi-arrests-florida-man-steam-crypto-theft-case/",
+      "source": "HackRead (해킹/데이터유출) [RSS]",
+      "published": "2026-07-20T11:24:55+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-20T21:01:07.193595+09:00",
+      "type": "single",
+      "title": "Scams Now Drive Almost Half of All Malware Detections as Attackers Weaponise Everyday Trust",
+      "url": "https://www.itsecurityguru.org/2026/07/20/scams-now-drive-almost-half-of-all-malware-detections-as-attackers-weaponise-everyday-trust/?utm_source=rss&utm_medium=rss&utm_campaign=scams-now-drive-almost-half-of-all-malware-detections-as-attackers-weaponise-everyday-trust",
+      "source": "IT Security Guru (보안뉴스) [RSS]",
+      "published": "2026-07-20T11:27:37+00:00",
       "keywords": [
         "Malware"
       ],
