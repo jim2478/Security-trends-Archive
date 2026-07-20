@@ -2,10 +2,10 @@
   "date": "2026-07-20",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
+    "scan_runs": 4,
     "total_articles_max": 1782,
-    "matched_articles_max": 123,
-    "new_alerts": 3,
+    "matched_articles_max": 125,
+    "new_alerts": 4,
     "cve_count": 1,
     "ioc_count": 0,
     "merged_count": 0,
@@ -13,7 +13,7 @@
       "CVE-2026-42533"
     ],
     "keywords_hit": {
-      "Malware": 1,
+      "Malware": 2,
       "CVE": 1,
       "봇넷": 1
     }
@@ -68,6 +68,20 @@
       "published": "2026-07-20T01:37:00+00:00",
       "keywords": [
         "봇넷"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-20T15:00:58.563052+09:00",
+      "type": "single",
+      "title": "More alerts are making your team slower, and an outcome-based SOC fixes that",
+      "url": "https://www.helpnetsecurity.com/2026/07/20/outcome-based-soc-video/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-07-20T05:30:26+00:00",
+      "keywords": [
+        "Malware"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
