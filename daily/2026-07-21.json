@@ -2,10 +2,10 @@
   "date": "2026-07-21",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 1,
+    "scan_runs": 2,
     "total_articles_max": 1792,
-    "matched_articles_max": 131,
-    "new_alerts": 2,
+    "matched_articles_max": 133,
+    "new_alerts": 3,
     "cve_count": 3,
     "ioc_count": 0,
     "merged_count": 0,
@@ -16,7 +16,7 @@
     ],
     "keywords_hit": {
       "CVE": 2,
-      "Malware": 1
+      "Malware": 2
     }
   },
   "alerts": [
@@ -82,6 +82,20 @@
           "kev": true
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-07-21T01:00:59.161111+09:00",
+      "type": "single",
+      "title": "HollowGraph Malware Hides C2 and Stolen Files in Microsoft 365 Events Dated 2050",
+      "url": "https://thehackernews.com/2026/07/hollowgraph-malware-hides-c2-and-stolen.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-07-20T14:33:43+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
