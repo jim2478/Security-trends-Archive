@@ -2,23 +2,25 @@
   "date": "2026-07-21",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 6,
+    "scan_runs": 7,
     "total_articles_max": 1792,
-    "matched_articles_max": 140,
-    "new_alerts": 10,
-    "cve_count": 8,
+    "matched_articles_max": 141,
+    "new_alerts": 13,
+    "cve_count": 12,
     "ioc_count": 11,
     "merged_count": 1,
     "unique_cves": [
+      "CVE-2025-3248",
       "CVE-2026-15409",
       "CVE-2026-15410",
+      "CVE-2026-48124",
       "CVE-2026-60137",
       "CVE-2026-63030",
       "CVE-2026-6875"
     ],
     "keywords_hit": {
-      "Malware": 7,
-      "CVE": 4
+      "Malware": 8,
+      "CVE": 6
     }
   },
   "alerts": [
@@ -220,6 +222,94 @@
       "url": "https://www.akamai.com/blog/security-research/2026/jul/wordpress-unauthenticated-rce-cve-2026-63030-cve-2026-60137",
       "source": "Akamai Blog (보안리서치/위협분석) [RSS]",
       "published": "2026-07-20T16:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-60137",
+        "CVE-2026-63030"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-60137",
+          "cvss_score": 5.9,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-89 (SQL Injection)",
+          "description": "WordPress 6.8.x before 6.8.6, 6.9.x before 6.9.5, and 7.0.x before 7.0.2 does not properly sanitise the author__not_in parameter of WP_Query, which could allow SQL Injection when a plugin or theme passes untrusted input to the parameter.",
+          "epss_score": 0.04026,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-63030",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-436 (CWE-436)",
+          "description": "WordPress 6.9.x before 6.9.5 and 7.0.x before 7.0.2 is affected by a REST API batch endpoint route confusion issue which, combined with the author__not_in WP_Query SQL Injection (CVE-2026-60137), could allow an attacker to perform SQL Injection and achieve Remote Code Execution.",
+          "epss_score": 0.08946,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-07-21T07:01:07.677213+09:00",
+      "type": "single",
+      "title": "Cursor, Codex, Gemini CLI, Antigravity hit by sandbox escapes",
+      "url": "https://www.bleepingcomputer.com/news/security/cursor-codex-gemini-cli-antigravity-hit-by-sandbox-escapes/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-07-20T21:14:42+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-48124"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-48124",
+          "cvss_score": 8.5,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-94 (Code Injection)",
+          "description": "Cursor is a code editor built for programming with AI. In versions prior to 3.0.0, the Cursor Desktop could execute workspace-defined Claude hook commands from .claude/settings.local.json without dedicated user approval. A malicious workspace or agent-created file could configure hooks that run local commands in the user's context when an agent turn ends. This could allow sandbox escape, persistence across turns, local data access, or follow-on compromise. This issue has been fixed in version 3.",
+          "epss_score": 0.00144,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-07-21T07:01:07.677213+09:00",
+      "type": "single",
+      "title": "JadePuffer agentic attacks now target AI model data with ransomware",
+      "url": "https://www.bleepingcomputer.com/news/security/jadepuffer-agentic-attacks-now-target-ai-model-data-with-ransomware/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-07-20T21:08:02+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2025-3248"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2025-3248",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-306 (Missing Authentication)",
+          "description": "Langflow versions prior to 1.3.0 are susceptible to code injection in \nthe /api/v1/validate/code endpoint. A remote and unauthenticated attacker can send crafted HTTP requests to execute arbitrary\ncode.",
+          "epss_score": 0.9999,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-07-21T07:01:07.677213+09:00",
+      "type": "single",
+      "title": "'WP2Shell' Opens Millions of WordPress Sites to Remote Takeover",
+      "url": "https://www.darkreading.com/cyberattacks-data-breaches/wp2shell-millions-wordpress-sites-remote-takeover",
+      "source": "Dark Reading (보안뉴스 종합) [RSS]",
+      "published": "2026-07-20T21:38:18+00:00",
       "keywords": [
         "CVE"
       ],
