@@ -2,10 +2,10 @@
   "date": "2026-07-21",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 4,
+    "scan_runs": 5,
     "total_articles_max": 1792,
-    "matched_articles_max": 137,
-    "new_alerts": 7,
+    "matched_articles_max": 138,
+    "new_alerts": 9,
     "cve_count": 6,
     "ioc_count": 11,
     "merged_count": 1,
@@ -17,7 +17,7 @@
       "CVE-2026-6875"
     ],
     "keywords_hit": {
-      "Malware": 5,
+      "Malware": 7,
       "CVE": 3
     }
   },
@@ -178,6 +178,34 @@
       "url": "https://thehackernews.com/2026/07/exposed-server-reveals-ai-assisted.html",
       "source": "The Hacker News (보안뉴스 종합) [RSS]",
       "published": "2026-07-20T17:29:50+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-21T05:01:06.323863+09:00",
+      "type": "single",
+      "title": "The Odyssey piracy scams surface hours after its theatrical debut",
+      "url": "https://www.helpnetsecurity.com/2026/07/20/odyssey-movie-piracy-scams-malware/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-07-20T18:59:24+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-21T05:01:06.323863+09:00",
+      "type": "single",
+      "title": "FakeGit Campaign Uses 7,600 GitHub Repositories to Spread SmartLoader Malware",
+      "url": "https://thehackernews.com/2026/07/fakegit-campaign-uses-7600-github.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-07-20T18:23:03+00:00",
       "keywords": [
         "Malware"
       ],
