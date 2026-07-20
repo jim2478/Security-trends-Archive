@@ -2,21 +2,23 @@
   "date": "2026-07-21",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
+    "scan_runs": 4,
     "total_articles_max": 1792,
-    "matched_articles_max": 134,
-    "new_alerts": 5,
-    "cve_count": 3,
-    "ioc_count": 0,
-    "merged_count": 0,
+    "matched_articles_max": 137,
+    "new_alerts": 7,
+    "cve_count": 6,
+    "ioc_count": 11,
+    "merged_count": 1,
     "unique_cves": [
       "CVE-2026-15409",
       "CVE-2026-15410",
+      "CVE-2026-60137",
+      "CVE-2026-63030",
       "CVE-2026-6875"
     ],
     "keywords_hit": {
-      "Malware": 4,
-      "CVE": 2
+      "Malware": 5,
+      "CVE": 3
     }
   },
   "alerts": [
@@ -118,6 +120,64 @@
       "url": "https://www.helpnetsecurity.com/2026/07/20/hollowgraph-malware-microsoft-365-calendar/",
       "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
       "published": "2026-07-20T17:20:15+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-21T04:01:03.125107+09:00",
+      "type": "merged",
+      "cve_ids": [
+        "CVE-2026-60137",
+        "CVE-2026-63030"
+      ],
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "[IP] 45[.]79[.]167[.]238\n[IP] 34[.]81[.]132[.]62\n[IP] 79[.]177[.]131[.]206\n[IP] 15[.]157[.]135[.]170\n[IP] 94[.]100[.]52[.]128\n[IP] 172[.]235[.]128[.]52\n[SHA1] 2a1410d8e2a8337ac2171cedea8c0fdc47c647a0\n[SHA1] 58eca847e9eae9e6b08cc211f1559817b71bc4cc\n[SHA1] d9a220c8039f1c4d72cae7ccb8b3a33dec8815be\n[SHA1] e9756e2338f84746007235e4cab7a70d5b3ca47f\n[SHA1] ebea44890f434d5d67ede22009a3f4bb5cac33f8",
+      "sources": [
+        {
+          "title": "WordPress Exploitation Underway (CVE-2026-63030), (Mon, Jul 20th)",
+          "url": "https://isc.sans.edu/diary/rss/33168",
+          "source": "SANS ISC (인터넷폭풍센터) [RSS]"
+        },
+        {
+          "title": "Exploitation in the Wild of wp2shell",
+          "url": "https://www.wiz.io/blog/wp2shell-cve-2026-63030-cve-2026-60137",
+          "source": "Wiz Blog (클라우드보안) [RSS]"
+        }
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-63030",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-436 (CWE-436)",
+          "description": "WordPress 6.9.x before 6.9.5 and 7.0.x before 7.0.2 is affected by a REST API batch endpoint route confusion issue which, combined with the author__not_in WP_Query SQL Injection (CVE-2026-60137), could allow an attacker to perform SQL Injection and achieve Remote Code Execution.",
+          "epss_score": 0.08946,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-60137",
+          "cvss_score": 5.9,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-89 (SQL Injection)",
+          "description": "WordPress 6.8.x before 6.8.6, 6.9.x before 6.9.5, and 7.0.x before 7.0.2 does not properly sanitise the author__not_in parameter of WP_Query, which could allow SQL Injection when a plugin or theme passes untrusted input to the parameter.",
+          "epss_score": 0.04026,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-07-21T04:01:03.125107+09:00",
+      "type": "single",
+      "title": "Exposed Server Reveals AI-Assisted Phishing Toolkit Behind WebDAV Malware Campaign",
+      "url": "https://thehackernews.com/2026/07/exposed-server-reveals-ai-assisted.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-07-20T17:29:50+00:00",
       "keywords": [
         "Malware"
       ],
