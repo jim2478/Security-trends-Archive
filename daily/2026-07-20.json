@@ -2,20 +2,22 @@
   "date": "2026-07-20",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 4,
+    "scan_runs": 5,
     "total_articles_max": 1782,
-    "matched_articles_max": 125,
-    "new_alerts": 4,
-    "cve_count": 1,
+    "matched_articles_max": 129,
+    "new_alerts": 7,
+    "cve_count": 2,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
+      "CVE-2026-14266",
       "CVE-2026-42533"
     ],
     "keywords_hit": {
-      "Malware": 2,
-      "CVE": 1,
-      "봇넷": 1
+      "Malware": 3,
+      "CVE": 2,
+      "봇넷": 1,
+      "Botnet": 1
     }
   },
   "alerts": [
@@ -80,6 +82,60 @@
       "url": "https://www.helpnetsecurity.com/2026/07/20/outcome-based-soc-video/",
       "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
       "published": "2026-07-20T05:30:26+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-20T19:01:05.543318+09:00",
+      "type": "single",
+      "title": "New 7-Zip Vulnerability Could Let Crafted XZ Archives Run Code During Extraction",
+      "url": "https://thehackernews.com/2026/07/new-7-zip-vulnerability-could-let.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-07-20T09:10:56+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-14266"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-14266",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-07-20T19:01:05.543318+09:00",
+      "type": "single",
+      "title": "Russian-Speaking Hacker Uses Google Gemini CLI to Control Botnet of Eight Dental Clinic PCs",
+      "url": "https://thehackernews.com/2026/07/russian-speaking-hacker-uses-google.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-07-20T09:07:11+00:00",
+      "keywords": [
+        "Botnet"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-20T19:01:05.543318+09:00",
+      "type": "single",
+      "title": "Law Firms face growing Cyber Threat from Ransomware Backdoors and Malware…",
+      "url": "https://www.cybersecurity-insiders.com/law-firms-face-growing-cyber-threat-from-ransomware-backdoors-and-malware-reload-attacks/",
+      "source": "Cybersecurity Insiders (보안인사이트)",
+      "published": null,
       "keywords": [
         "Malware"
       ],
