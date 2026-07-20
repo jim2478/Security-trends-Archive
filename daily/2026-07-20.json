@@ -2,10 +2,10 @@
   "date": "2026-07-20",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 5,
+    "scan_runs": 6,
     "total_articles_max": 1782,
     "matched_articles_max": 129,
-    "new_alerts": 7,
+    "new_alerts": 8,
     "cve_count": 2,
     "ioc_count": 0,
     "merged_count": 0,
@@ -14,7 +14,7 @@
       "CVE-2026-42533"
     ],
     "keywords_hit": {
-      "Malware": 3,
+      "Malware": 4,
       "CVE": 2,
       "봇넷": 1,
       "Botnet": 1
@@ -136,6 +136,20 @@
       "url": "https://www.cybersecurity-insiders.com/law-firms-face-growing-cyber-threat-from-ransomware-backdoors-and-malware-reload-attacks/",
       "source": "Cybersecurity Insiders (보안인사이트)",
       "published": null,
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-20T20:03:07.453827+09:00",
+      "type": "single",
+      "title": "Researchers Uncover HOLLOWGRAPH: Malware That Hides Inside Microsoft 365 Calendar Invites",
+      "url": "https://www.itsecurityguru.org/2026/07/20/researchers-uncover-hollowgraph-malware-that-hides-inside-microsoft-365-calendar-invites/?utm_source=rss&utm_medium=rss&utm_campaign=researchers-uncover-hollowgraph-malware-that-hides-inside-microsoft-365-calendar-invites",
+      "source": "IT Security Guru (보안뉴스) [RSS]",
+      "published": "2026-07-20T10:32:41+00:00",
       "keywords": [
         "Malware"
       ],
