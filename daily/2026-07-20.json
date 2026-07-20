@@ -2,10 +2,10 @@
   "date": "2026-07-20",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
-    "total_articles_max": 1762,
-    "matched_articles_max": 122,
-    "new_alerts": 2,
+    "scan_runs": 3,
+    "total_articles_max": 1782,
+    "matched_articles_max": 123,
+    "new_alerts": 3,
     "cve_count": 1,
     "ioc_count": 0,
     "merged_count": 0,
@@ -14,7 +14,8 @@
     ],
     "keywords_hit": {
       "Malware": 1,
-      "CVE": 1
+      "CVE": 1,
+      "봇넷": 1
     }
   },
   "alerts": [
@@ -57,6 +58,20 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-07-20T12:01:03.798563+09:00",
+      "type": "single",
+      "title": "AI가 코딩한 봇넷의 공습... IoT 노리는 ‘턱스봇(Tuxbot) V3’ 출현",
+      "url": "http://www.boannews.com/media/view.asp?idx=144747&kind=&sub_kind=",
+      "source": "보안뉴스 (사건사고) [RSS]",
+      "published": "2026-07-20T01:37:00+00:00",
+      "keywords": [
+        "봇넷"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
