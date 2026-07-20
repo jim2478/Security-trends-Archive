@@ -2,10 +2,10 @@
   "date": "2026-07-21",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
+    "scan_runs": 3,
     "total_articles_max": 1792,
-    "matched_articles_max": 133,
-    "new_alerts": 3,
+    "matched_articles_max": 134,
+    "new_alerts": 5,
     "cve_count": 3,
     "ioc_count": 0,
     "merged_count": 0,
@@ -15,8 +15,8 @@
       "CVE-2026-6875"
     ],
     "keywords_hit": {
-      "CVE": 2,
-      "Malware": 2
+      "Malware": 4,
+      "CVE": 2
     }
   },
   "alerts": [
@@ -90,6 +90,34 @@
       "url": "https://thehackernews.com/2026/07/hollowgraph-malware-hides-c2-and-stolen.html",
       "source": "The Hacker News (보안뉴스 종합) [RSS]",
       "published": "2026-07-20T14:33:43+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-21T03:01:06.259548+09:00",
+      "type": "single",
+      "title": "New HollowGraph malware uses Microsoft Graph for stealthy C2 comms",
+      "url": "https://www.bleepingcomputer.com/news/security/new-hollowgraph-malware-uses-microsoft-graph-for-stealthy-c2-comms/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-07-20T17:43:01+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-21T03:01:06.259548+09:00",
+      "type": "single",
+      "title": "HOLLOWGRAPH malware turns Microsoft 365 calendars into an espionage channel",
+      "url": "https://www.helpnetsecurity.com/2026/07/20/hollowgraph-malware-microsoft-365-calendar/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-07-20T17:20:15+00:00",
       "keywords": [
         "Malware"
       ],
