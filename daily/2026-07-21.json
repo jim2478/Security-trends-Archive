@@ -2,10 +2,10 @@
   "date": "2026-07-21",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 7,
+    "scan_runs": 8,
     "total_articles_max": 1792,
-    "matched_articles_max": 141,
-    "new_alerts": 13,
+    "matched_articles_max": 145,
+    "new_alerts": 14,
     "cve_count": 12,
     "ioc_count": 11,
     "merged_count": 1,
@@ -20,7 +20,7 @@
     ],
     "keywords_hit": {
       "Malware": 8,
-      "CVE": 6
+      "CVE": 7
     }
   },
   "alerts": [
@@ -338,6 +338,20 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-07-21T10:00:58.337907+09:00",
+      "type": "single",
+      "title": "엔진엑스 치명적 취약점 공개…인증 없이 서버 원격 장악 가능",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=207700",
+      "source": "데일리시큐 (IT&생활) [RSS]",
+      "published": "2026-07-20T23:56:58+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
