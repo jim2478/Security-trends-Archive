@@ -2,10 +2,10 @@
   "date": "2026-07-21",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 8,
+    "scan_runs": 9,
     "total_articles_max": 1792,
-    "matched_articles_max": 145,
-    "new_alerts": 14,
+    "matched_articles_max": 146,
+    "new_alerts": 15,
     "cve_count": 12,
     "ioc_count": 11,
     "merged_count": 1,
@@ -20,7 +20,8 @@
     ],
     "keywords_hit": {
       "Malware": 8,
-      "CVE": 7
+      "CVE": 7,
+      "봇넷": 1
     }
   },
   "alerts": [
@@ -348,6 +349,20 @@
       "published": "2026-07-20T23:56:58+00:00",
       "keywords": [
         "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-21T12:01:00.352624+09:00",
+      "type": "single",
+      "title": "AI 생태계 노린 신종 봇넷 ‘내드매시’(NadMesh) 멜웨어 주의",
+      "url": "http://www.boannews.com/media/view.asp?idx=144769&kind=&sub_kind=",
+      "source": "보안뉴스 (사건사고) [RSS]",
+      "published": "2026-07-21T02:36:00+00:00",
+      "keywords": [
+        "봇넷"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
