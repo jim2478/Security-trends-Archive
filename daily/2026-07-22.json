@@ -2,18 +2,20 @@
   "date": "2026-07-22",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 1,
+    "scan_runs": 2,
     "total_articles_max": 1792,
     "matched_articles_max": 137,
-    "new_alerts": 1,
-    "cve_count": 1,
+    "new_alerts": 3,
+    "cve_count": 3,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
-      "CVE-2026-0257"
+      "CVE-2026-0257",
+      "CVE-2026-50522",
+      "CVE-2026-8933"
     ],
     "keywords_hit": {
-      "CVE": 1
+      "CVE": 3
     }
   },
   "alerts": [
@@ -40,6 +42,58 @@
           "description": "Authentication bypass vulnerabilities in the GlobalProtect portal and gateway of Palo Alto Networks PAN-OS® software allows the attacker to bypass security restrictions and establish an unauthorized VPN connection.\n\nPanorama and Cloud NGFW are not impacted by these issues.",
           "epss_score": 0.86678,
           "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-07-22T01:01:10.318965+09:00",
+      "type": "single",
+      "title": "Critical SharePoint RCE CVE-2026-50522 Under Active Exploitation After Public PoC",
+      "url": "https://thehackernews.com/2026/07/critical-sharepoint-rce-cve-2026-50522.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-07-21T14:57:51+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-50522"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-50522",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-502 (Deserialization)",
+          "description": "Deserialization of untrusted data in Microsoft Office SharePoint allows an unauthorized attacker to execute code over a network.",
+          "epss_score": 0.20346,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-07-22T01:01:10.318965+09:00",
+      "type": "single",
+      "title": "CVE-2026-8933: Local Privilege Escalation in Set-Capabilities snap-confine",
+      "url": "https://blog.qualys.com/category/vulnerabilities-threat-research",
+      "source": "Qualys Blog (취약점관리) [RSS]",
+      "published": "2026-07-21T15:02:12+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-8933"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-8933",
+          "cvss_score": 7.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-250 (CWE-250)",
+          "description": "A local privilege escalation vulnerability exists in snap-confine, a set-capabilities core component used internally by Canonical snapd to construct the secure execution environment for snap applications. This vulnerability uniquely affects versions of snap-confine configured with set-capabilities (rather than standard set-uid-root installations).\nDue to a flaw in how privilege boundaries or security sandboxes are initialized when the binary runs under limited ambient capabilities, a local, unpr",
+          "epss_score": null,
+          "kev": false
         }
       ]
     }
