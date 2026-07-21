@@ -2,11 +2,11 @@
   "date": "2026-07-21",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 10,
+    "scan_runs": 11,
     "total_articles_max": 1792,
     "matched_articles_max": 146,
-    "new_alerts": 18,
-    "cve_count": 31,
+    "new_alerts": 20,
+    "cve_count": 32,
     "ioc_count": 11,
     "merged_count": 1,
     "unique_cves": [
@@ -38,7 +38,7 @@
       "CVE-2026-6875"
     ],
     "keywords_hit": {
-      "CVE": 9,
+      "CVE": 11,
       "Malware": 8,
       "봇넷": 1,
       "DDoS": 1,
@@ -504,6 +504,46 @@
       "keywords": [
         "DDoS",
         "Botnet"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-21T17:01:00.379531+09:00",
+      "type": "single",
+      "title": "Critical ServiceNow AI Platform Flaw Exploited for Unauthenticated Code Execution",
+      "url": "https://thehackernews.com/2026/07/critical-servicenow-ai-platform-flaw.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-07-21T06:29:26+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-6875"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-6875",
+          "cvss_score": 9.5,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-94 (Code Injection)",
+          "description": "ServiceNow has addressed a remote code execution vulnerability that was identified in the ServiceNow AI platform. This vulnerability could enable an unauthenticated user, in certain circumstances, to execute code within the ServiceNow platform.\n\n\nServiceNow addressed this vulnerability by deploying a security update to hosted instances. Relevant security updates have also been provided to ServiceNow self-hosted customers and partners.\n\n\n\n\nFurther, the vulnerability is addressed in the listed pat",
+          "epss_score": 0.00509,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-07-21T17:01:00.379531+09:00",
+      "type": "single",
+      "title": "엠피리컬 시큐리티, 2500만달러 투자 유치...악용된 취약점 기반 기업 맞춤 위협 예측 엔진 개발",
+      "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=685693",
+      "source": "디지털투데이 (전체기사) [RSS]",
+      "published": "2026-07-21T06:54:28+00:00",
+      "keywords": [
+        "CVE"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
