@@ -2,15 +2,34 @@
   "date": "2026-07-21",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 9,
+    "scan_runs": 10,
     "total_articles_max": 1792,
     "matched_articles_max": 146,
-    "new_alerts": 15,
-    "cve_count": 12,
+    "new_alerts": 18,
+    "cve_count": 31,
     "ioc_count": 11,
     "merged_count": 1,
     "unique_cves": [
+      "CVE-2023-0001",
+      "CVE-2023-0002",
+      "CVE-2023-0003",
+      "CVE-2024-0001",
+      "CVE-2024-0002",
+      "CVE-2025-0001",
+      "CVE-2025-0002",
+      "CVE-2025-0003",
+      "CVE-2025-0004",
       "CVE-2025-3248",
+      "CVE-2026-0001",
+      "CVE-2026-0002",
+      "CVE-2026-0003",
+      "CVE-2026-0004",
+      "CVE-2026-0005",
+      "CVE-2026-0006",
+      "CVE-2026-0007",
+      "CVE-2026-0008",
+      "CVE-2026-13585",
+      "CVE-2026-14440",
       "CVE-2026-15409",
       "CVE-2026-15410",
       "CVE-2026-48124",
@@ -19,9 +38,11 @@
       "CVE-2026-6875"
     ],
     "keywords_hit": {
+      "CVE": 9,
       "Malware": 8,
-      "CVE": 7,
-      "봇넷": 1
+      "봇넷": 1,
+      "DDoS": 1,
+      "Botnet": 1
     }
   },
   "alerts": [
@@ -363,6 +384,126 @@
       "published": "2026-07-21T02:36:00+00:00",
       "keywords": [
         "봇넷"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-21T15:01:10.908978+09:00",
+      "type": "single",
+      "title": "ASUS bsitf.sys (CVE-2026-13585): Arbitrary Physical Memory Mapping in ASUS Business/Software Manager kernel driver",
+      "url": "https://seclists.org/fulldisclosure/2026/Jul/26",
+      "source": "SecLists Full Disclosure (취약점공개)",
+      "published": "2026-07-21T05:41:30+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-13585"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-13585",
+          "cvss_score": 8.2,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-226 (CWE-226)",
+          "description": "Allocation of Resources Without Limits and Throttling and Sensitive Information in Resource Not Removed Before Reuse in the ASUS System Control Interface driver and ASUS Business Manager allow a local administrator to disclose sensitive information via crafted IOCTL requests, which, in severe cases, may lead to a Denial of Service (DoS) on the system.\nRefer to the ' \nSecurity Update for ASUS System Control Interface  ' section on the ASUS Security Advisory for more information.",
+          "epss_score": 0.00112,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-07-21T15:01:10.908978+09:00",
+      "type": "single",
+      "title": "NotCVE registry index — public records of vulnerabilities that shipped without a CVE",
+      "url": "https://seclists.org/fulldisclosure/2026/Jul/23",
+      "source": "SecLists Full Disclosure (취약점공개)",
+      "published": "2026-07-21T05:35:32+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2023-0001",
+        "CVE-2023-0002",
+        "CVE-2023-0003",
+        "CVE-2024-0001",
+        "CVE-2024-0002",
+        "CVE-2025-0001",
+        "CVE-2025-0002",
+        "CVE-2025-0003",
+        "CVE-2025-0004",
+        "CVE-2026-0001",
+        "CVE-2026-0002",
+        "CVE-2026-0003",
+        "CVE-2026-0004",
+        "CVE-2026-0005",
+        "CVE-2026-0006",
+        "CVE-2026-0007",
+        "CVE-2026-0008",
+        "CVE-2026-14440"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2023-0001",
+          "cvss_score": 6.0,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-319 (CWE-319)",
+          "description": "An information exposure vulnerability in the Palo Alto Networks Cortex XDR agent on Windows devices allows a local system administrator to disclose the admin password for the agent in cleartext, which bad actors can then use to execute privileged cytool commands that disable or uninstall the agent.",
+          "epss_score": 0.00206,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2023-0002",
+          "cvss_score": 5.5,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-693 (CWE-693)",
+          "description": "A problem with a protection mechanism in the Palo Alto Networks Cortex XDR agent on Windows devices allows a local user to execute privileged cytool commands that disable or uninstall the agent.\n",
+          "epss_score": 0.00255,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2023-0003",
+          "cvss_score": 6.5,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-73 (CWE-73)",
+          "description": "A file disclosure vulnerability in the Palo Alto Networks Cortex XSOAR server software enables an authenticated user with access to the web interface to read local files from the server.",
+          "epss_score": 0.0116,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2024-0001",
+          "cvss_score": 10.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-1188 (CWE-1188)",
+          "description": "A condition exists in FlashArray Purity whereby a local account intended for initial array configuration remains active potentially allowing a malicious actor to gain elevated privileges.",
+          "epss_score": 0.00857,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2024-0002",
+          "cvss_score": 10.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-287 (Authentication Bypass)",
+          "description": "A condition exists in FlashArray Purity whereby an attacker can employ a privileged account allowing remote access to the array.",
+          "epss_score": 0.00497,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-07-21T15:01:10.908978+09:00",
+      "type": "single",
+      "title": "New Release: UFONet v2.0 - \"R3DST4R!\"...",
+      "url": "https://seclists.org/fulldisclosure/2026/Jul/25",
+      "source": "SecLists Full Disclosure (취약점공개)",
+      "published": "2026-07-21T05:40:59+00:00",
+      "keywords": [
+        "DDoS",
+        "Botnet"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
