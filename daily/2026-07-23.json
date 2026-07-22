@@ -2,18 +2,20 @@
   "date": "2026-07-23",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 1,
-    "total_articles_max": 1772,
+    "scan_runs": 2,
+    "total_articles_max": 1792,
     "matched_articles_max": 133,
-    "new_alerts": 2,
-    "cve_count": 1,
+    "new_alerts": 4,
+    "cve_count": 3,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
-      "CVE-2026-64600"
+      "CVE-2026-48294",
+      "CVE-2026-64600",
+      "CVE-2026-8933"
     ],
     "keywords_hit": {
-      "CVE": 1,
+      "CVE": 3,
       "Malware": 1
     }
   },
@@ -57,6 +59,58 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-23T04:01:08.006458+09:00",
+      "type": "single",
+      "title": "Ubuntu snap-confine Flaw Could Give Local Users Root on Default Desktop Installs",
+      "url": "https://thehackernews.com/2026/07/ubuntu-snap-confine-flaw-could-give.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-07-22T18:07:16+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-8933"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-8933",
+          "cvss_score": 7.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-250 (CWE-250)",
+          "description": "A local privilege escalation vulnerability exists in snap-confine, a set-capabilities core component used internally by Canonical snapd to construct the secure execution environment for snap applications. This vulnerability uniquely affects versions of snap-confine configured with set-capabilities (rather than standard set-uid-root installations).\nDue to a flaw in how privilege boundaries or security sandboxes are initialized when the binary runs under limited ambient capabilities, a local, unpr",
+          "epss_score": 0.00145,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-07-23T04:01:08.006458+09:00",
+      "type": "single",
+      "title": "Adobe Acrobat Extension Flaw Let Malicious Sites Read WhatsApp Web Data",
+      "url": "https://thehackernews.com/2026/07/adobe-acrobat-extension-flaw-let.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-07-22T15:01:21+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-48294"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-48294",
+          "cvss_score": 7.4,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-79 (XSS)",
+          "description": "Adobe Acrobat PDF Extension (Chrome) versions 26.5.2.2 and earlier are affected by a UXSS-class cross-origin data disclosure vulnerability. An attacker could exploit this vulnerability to gain access to data regarding the victim's session. Exploitation of this issue requires user interaction in that a victim must visit a maliciously crafted URL or interact with a compromised web page. Scope is changed.",
+          "epss_score": 0.00719,
+          "kev": false
+        }
+      ]
     }
   ]
 }
