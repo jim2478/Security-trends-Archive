@@ -2,11 +2,11 @@
   "date": "2026-07-22",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
+    "scan_runs": 4,
     "total_articles_max": 1792,
-    "matched_articles_max": 138,
-    "new_alerts": 5,
-    "cve_count": 5,
+    "matched_articles_max": 140,
+    "new_alerts": 6,
+    "cve_count": 6,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -17,7 +17,7 @@
       "CVE-2026-8933"
     ],
     "keywords_hit": {
-      "CVE": 5
+      "CVE": 6
     }
   },
   "alerts": [
@@ -148,6 +148,32 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-22T11:01:05.211768+09:00",
+      "type": "single",
+      "title": "“정찰부터 암호화까지 초고속”... CVE-2026-0257 킬린 랜섬웨어 주의보",
+      "url": "http://www.boannews.com/media/view.asp?idx=144784&kind=&sub_kind=",
+      "source": "보안뉴스 (전체) [RSS]",
+      "published": "2026-07-22T01:33:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-0257"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-0257",
+          "cvss_score": 7.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-565 (CWE-565)",
+          "description": "Authentication bypass vulnerabilities in the GlobalProtect portal and gateway of Palo Alto Networks PAN-OS® software allows the attacker to bypass security restrictions and establish an unauthorized VPN connection.\n\nPanorama and Cloud NGFW are not impacted by these issues.",
+          "epss_score": 0.86678,
+          "kev": true
+        }
+      ]
     }
   ]
 }
