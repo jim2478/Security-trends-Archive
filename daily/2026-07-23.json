@@ -1,0 +1,62 @@
+{
+  "date": "2026-07-23",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 1,
+    "total_articles_max": 1772,
+    "matched_articles_max": 133,
+    "new_alerts": 2,
+    "cve_count": 1,
+    "ioc_count": 0,
+    "merged_count": 0,
+    "unique_cves": [
+      "CVE-2026-64600"
+    ],
+    "keywords_hit": {
+      "CVE": 1,
+      "Malware": 1
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-07-23T02:01:05.694870+09:00",
+      "type": "single",
+      "title": "RefluXFS: A Linux Kernel Local Privilege Escalation to Root in XFS (CVE-2026-64600)",
+      "url": "https://blog.qualys.com/category/vulnerabilities-threat-research",
+      "source": "Qualys Blog (취약점관리) [RSS]",
+      "published": "2026-07-22T16:23:46+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-64600"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-64600",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-07-23T02:01:05.694870+09:00",
+      "type": "single",
+      "title": "Sol Searching | Can Frontier Models Tackle Autonomous Long-Horizon Malware Analysis?",
+      "url": "https://www.sentinelone.com/labs/frontier-models-tackle-autonomous-long-horizon-malware-analysis/",
+      "source": "SentinelLabs (APT/악성코드분석) [RSS]",
+      "published": "2026-07-22T16:55:29+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
