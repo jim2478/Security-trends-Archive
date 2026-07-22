@@ -2,11 +2,11 @@
   "date": "2026-07-22",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 4,
+    "scan_runs": 5,
     "total_articles_max": 1792,
     "matched_articles_max": 140,
-    "new_alerts": 6,
-    "cve_count": 6,
+    "new_alerts": 9,
+    "cve_count": 7,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -17,7 +17,8 @@
       "CVE-2026-8933"
     ],
     "keywords_hit": {
-      "CVE": 6
+      "CVE": 7,
+      "Malware": 2
     }
   },
   "alerts": [
@@ -174,6 +175,60 @@
           "kev": true
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-07-22T16:01:06.660816+09:00",
+      "type": "single",
+      "title": "마이크로소프트 셰어포인트 치명적 RCE 취약점 악용 시작…PoC 공개 수시간 만에 공격 포착",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=207738",
+      "source": "데일리시큐 (이슈) [RSS]",
+      "published": "2026-07-22T15:30:15+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-50522"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-50522",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-502 (Deserialization)",
+          "description": "Deserialization of untrusted data in Microsoft Office SharePoint allows an unauthorized attacker to execute code over a network.",
+          "epss_score": 0.20346,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-07-22T16:01:06.660816+09:00",
+      "type": "single",
+      "title": "Trojanized Newtonsoft.Json Fork Hides Game-Rigging Code in a Working Library",
+      "url": "https://thehackernews.com/2026/07/trojanized-newtonsoftjson-fork-hides.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-07-22T06:00:06+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-22T16:01:06.660816+09:00",
+      "type": "single",
+      "title": "How hackers used Steam Workshop to spread malware",
+      "url": "https://www.pandasecurity.com/en/mediacenter/how-hackers-used-steam-workshop-spread-malware/",
+      "source": "Panda Security (엔드포인트보안) [RSS]",
+      "published": "2026-07-22T07:00:40+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
