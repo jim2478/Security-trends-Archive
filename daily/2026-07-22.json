@@ -2,15 +2,16 @@
   "date": "2026-07-22",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 7,
+    "scan_runs": 8,
     "total_articles_max": 1792,
     "matched_articles_max": 140,
-    "new_alerts": 13,
-    "cve_count": 11,
+    "new_alerts": 14,
+    "cve_count": 12,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2026-0257",
+      "CVE-2026-29059",
       "CVE-2026-50522",
       "CVE-2026-56164",
       "CVE-2026-58644",
@@ -19,7 +20,7 @@
       "CVE-2026-8933"
     ],
     "keywords_hit": {
-      "CVE": 10,
+      "CVE": 11,
       "Malware": 3
     }
   },
@@ -331,6 +332,32 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-22T23:00:58.542730+09:00",
+      "type": "single",
+      "title": "Hackers Exploit Windmill Flaw to Read Arbitrary Server Files Without Authentication",
+      "url": "https://thehackernews.com/2026/07/hackers-exploit-windmill-flaw-to-read.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-07-22T12:36:36+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-29059"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-29059",
+          "cvss_score": 6.9,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-22 (Path Traversal)",
+          "description": "Windmill is an open-source developer platform for internal code: APIs, background jobs, workflows and UIs. Prior to version 1.603.3, an unauthenticated path traversal vulnerability exists in Windmill's get_log_file endpoint \"(/api/w/{workspace}/jobs_u/get_log_file/{filename})\". The filename parameter is concatenated into a file path without sanitization, allowing an attacker to read arbitrary files on the server using ../ sequences. This issue has been patched in version 1.603.3.",
+          "epss_score": 0.02584,
+          "kev": false
+        }
+      ]
     }
   ]
 }
