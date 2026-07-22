@@ -2,10 +2,10 @@
   "date": "2026-07-22",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 6,
+    "scan_runs": 7,
     "total_articles_max": 1792,
     "matched_articles_max": 140,
-    "new_alerts": 12,
+    "new_alerts": 13,
     "cve_count": 11,
     "ioc_count": 0,
     "merged_count": 0,
@@ -19,7 +19,7 @@
       "CVE-2026-8933"
     ],
     "keywords_hit": {
-      "CVE": 9,
+      "CVE": 10,
       "Malware": 3
     }
   },
@@ -313,6 +313,20 @@
       "published": "2026-07-22T11:25:35+00:00",
       "keywords": [
         "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-22T22:01:14.761423+09:00",
+      "type": "single",
+      "title": "오라클, 미토스 등 AI 활용해 역대 최대 보안 업데이트…334개 제품서 1,449건 패치",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=207743",
+      "source": "데일리시큐 (이슈) [RSS]",
+      "published": "2026-07-22T21:16:42+00:00",
+      "keywords": [
+        "CVE"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
