@@ -2,10 +2,10 @@
   "date": "2026-07-23",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
+    "scan_runs": 3,
     "total_articles_max": 1792,
-    "matched_articles_max": 133,
-    "new_alerts": 4,
+    "matched_articles_max": 134,
+    "new_alerts": 5,
     "cve_count": 3,
     "ioc_count": 0,
     "merged_count": 0,
@@ -16,7 +16,7 @@
     ],
     "keywords_hit": {
       "CVE": 3,
-      "Malware": 1
+      "Malware": 2
     }
   },
   "alerts": [
@@ -111,6 +111,20 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-07-23T06:00:56.684348+09:00",
+      "type": "single",
+      "title": "Fake Bahrain Alert App Deploys Android Surveillance Malware",
+      "url": "https://www.darkreading.com/mobile-security/fake-bahrain-alert-apps-android-surveillance-malware",
+      "source": "Dark Reading (보안뉴스 종합) [RSS]",
+      "published": "2026-07-22T19:42:42+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
