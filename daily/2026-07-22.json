@@ -2,23 +2,25 @@
   "date": "2026-07-22",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 5,
+    "scan_runs": 6,
     "total_articles_max": 1792,
     "matched_articles_max": 140,
-    "new_alerts": 9,
-    "cve_count": 7,
+    "new_alerts": 12,
+    "cve_count": 11,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2026-0257",
       "CVE-2026-50522",
+      "CVE-2026-56164",
+      "CVE-2026-58644",
       "CVE-2026-60137",
       "CVE-2026-63030",
       "CVE-2026-8933"
     ],
     "keywords_hit": {
-      "CVE": 7,
-      "Malware": 2
+      "CVE": 9,
+      "Malware": 3
     }
   },
   "alerts": [
@@ -223,6 +225,92 @@
       "url": "https://www.pandasecurity.com/en/mediacenter/how-hackers-used-steam-workshop-spread-malware/",
       "source": "Panda Security (엔드포인트보안) [RSS]",
       "published": "2026-07-22T07:00:40+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-22T21:01:10.502523+09:00",
+      "type": "single",
+      "title": "Another SharePoint RCE exploited: Patch, then rotate your machine keys (CVE-2026-50522)",
+      "url": "https://www.helpnetsecurity.com/2026/07/22/sharepoint-cve-2026-50522-exploited/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-07-22T11:47:08+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-50522",
+        "CVE-2026-56164",
+        "CVE-2026-58644"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-50522",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-502 (Deserialization)",
+          "description": "Deserialization of untrusted data in Microsoft Office SharePoint allows an unauthorized attacker to execute code over a network.",
+          "epss_score": 0.20346,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-56164",
+          "cvss_score": 5.3,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-306 (Missing Authentication)",
+          "description": "Missing authentication for critical function in Microsoft Office SharePoint allows an unauthorized attacker to elevate privileges over a network.",
+          "epss_score": 0.05601,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-58644",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-502 (Deserialization)",
+          "description": "Deserialization of untrusted data in Microsoft Office SharePoint allows an unauthorized attacker to execute code over a network.",
+          "epss_score": 0.01465,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-07-22T21:01:10.502523+09:00",
+      "type": "single",
+      "title": "킬린 랜섬웨어, 팔로알토 VPN 인증 우회 취약점 악용해 기업망 침투",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=207742",
+      "source": "데일리시큐 (이슈) [RSS]",
+      "published": "2026-07-22T20:51:07+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-0257"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-0257",
+          "cvss_score": 7.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-565 (CWE-565)",
+          "description": "Authentication bypass vulnerabilities in the GlobalProtect portal and gateway of Palo Alto Networks PAN-OS® software allows the attacker to bypass security restrictions and establish an unauthorized VPN connection.\n\nPanorama and Cloud NGFW are not impacted by these issues.",
+          "epss_score": 0.86678,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-07-22T21:01:10.502523+09:00",
+      "type": "single",
+      "title": "Why Modern SOCs Need Multi-Layered Detections",
+      "url": "https://thehackernews.com/2026/07/why-modern-socs-need-multi-layered.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-07-22T11:25:35+00:00",
       "keywords": [
         "Malware"
       ],
