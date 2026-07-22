@@ -2,10 +2,10 @@
   "date": "2026-07-23",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
+    "scan_runs": 4,
     "total_articles_max": 1792,
     "matched_articles_max": 134,
-    "new_alerts": 5,
+    "new_alerts": 6,
     "cve_count": 3,
     "ioc_count": 0,
     "merged_count": 0,
@@ -16,7 +16,7 @@
     ],
     "keywords_hit": {
       "CVE": 3,
-      "Malware": 2
+      "Malware": 3
     }
   },
   "alerts": [
@@ -119,6 +119,20 @@
       "url": "https://www.darkreading.com/mobile-security/fake-bahrain-alert-apps-android-surveillance-malware",
       "source": "Dark Reading (보안뉴스 종합) [RSS]",
       "published": "2026-07-22T19:42:42+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-23T07:01:01.731000+09:00",
+      "type": "single",
+      "title": "Attackers Are Learning to Live Off the AI Toolchain",
+      "url": "https://www.darkreading.com/cyber-risk/attackers-live-off-ai-toolchain",
+      "source": "Dark Reading (보안뉴스 종합) [RSS]",
+      "published": "2026-07-22T21:29:01+00:00",
       "keywords": [
         "Malware"
       ],
