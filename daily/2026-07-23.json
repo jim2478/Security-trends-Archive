@@ -2,10 +2,10 @@
   "date": "2026-07-23",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 6,
+    "scan_runs": 7,
     "total_articles_max": 1792,
-    "matched_articles_max": 135,
-    "new_alerts": 8,
+    "matched_articles_max": 136,
+    "new_alerts": 10,
     "cve_count": 7,
     "ioc_count": 0,
     "merged_count": 0,
@@ -20,7 +20,7 @@
     ],
     "keywords_hit": {
       "CVE": 5,
-      "Malware": 3
+      "Malware": 5
     }
   },
   "alerts": [
@@ -215,6 +215,34 @@
           "kev": true
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-07-23T19:03:12.605510+09:00",
+      "type": "single",
+      "title": "New msaRAT malware uses Chrome, Edge browsers to route C2 traffic",
+      "url": "https://www.bleepingcomputer.com/news/security/new-msarat-malware-uses-chrome-edge-browsers-to-route-c2-traffic/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-07-23T10:00:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-23T19:03:12.605510+09:00",
+      "type": "single",
+      "title": "Chaos ransomware's msaRAT: Living off the browser to build a covert C2 channel",
+      "url": "https://blog.talosintelligence.com/chaos-msarat-living-off-the-browser-to-build-covert-c2-channel/",
+      "source": "Cisco Talos Intelligence (위협분석) [RSS]",
+      "published": "2026-07-23T10:00:38+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
