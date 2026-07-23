@@ -2,10 +2,10 @@
   "date": "2026-07-23",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 9,
+    "scan_runs": 10,
     "total_articles_max": 1792,
-    "matched_articles_max": 138,
-    "new_alerts": 13,
+    "matched_articles_max": 140,
+    "new_alerts": 14,
     "cve_count": 11,
     "ioc_count": 0,
     "merged_count": 0,
@@ -22,7 +22,7 @@
     ],
     "keywords_hit": {
       "CVE": 7,
-      "Malware": 6
+      "Malware": 7
     }
   },
   "alerts": [
@@ -331,6 +331,20 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-07-23T22:01:12.139576+09:00",
+      "type": "single",
+      "title": "Nuclear-Sabotage Malware Benchmark Trips Up Most Frontier AI Models",
+      "url": "https://www.securityweek.com/nuclear-sabotage-malware-benchmark-trips-up-most-frontier-ai-models/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-07-23T12:42:12+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
