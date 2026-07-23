@@ -2,10 +2,10 @@
   "date": "2026-07-24",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 1,
-    "total_articles_max": 1772,
-    "matched_articles_max": 134,
-    "new_alerts": 1,
+    "scan_runs": 2,
+    "total_articles_max": 1792,
+    "matched_articles_max": 140,
+    "new_alerts": 2,
     "cve_count": 1,
     "ioc_count": 0,
     "merged_count": 0,
@@ -13,7 +13,7 @@
       "CVE-2025-56383"
     ],
     "keywords_hit": {
-      "Malware": 1
+      "Malware": 2
     }
   },
   "alerts": [
@@ -42,6 +42,20 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-07-24T05:00:54.768848+09:00",
+      "type": "single",
+      "title": "Fake Claude app promoted by Bing ads pushes SectopRAT malware",
+      "url": "https://www.bleepingcomputer.com/news/security/fake-claude-app-promoted-by-bing-ads-pushes-sectoprat-malware/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-07-23T19:48:30+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
