@@ -2,11 +2,11 @@
   "date": "2026-07-23",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 8,
+    "scan_runs": 9,
     "total_articles_max": 1792,
     "matched_articles_max": 138,
-    "new_alerts": 12,
-    "cve_count": 10,
+    "new_alerts": 13,
+    "cve_count": 11,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -21,7 +21,7 @@
       "CVE-2026-8933"
     ],
     "keywords_hit": {
-      "CVE": 6,
+      "CVE": 7,
       "Malware": 6
     }
   },
@@ -305,6 +305,32 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-23T21:01:05.185058+09:00",
+      "type": "single",
+      "title": "New RefluXFS Linux flaw lets attackers gain root privileges",
+      "url": "https://www.bleepingcomputer.com/news/linux/new-refluxfs-linux-flaw-lets-attackers-gain-root-privileges/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-07-23T11:40:16+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-64600"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-64600",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nxfs: resample the data fork mapping after cycling ILOCK\n\nxfs_reflink_fill_{cow_hole,delalloc} are both presented with an inode,\na data fork mapping, and a cow fork mapping.  Unfortunately, these two\nhelpers cycle the ILOCK to grab a transaction, which means that the\nmappings are stale as soon as we reacquire the ILOCK.  Currently we\nrefresh the cow fork mapping by re-calling xfs_find_trim_cow_extent, but\nwe don't refresh the da",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
     }
   ]
 }
