@@ -2,23 +2,24 @@
   "date": "2026-07-23",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 5,
+    "scan_runs": 6,
     "total_articles_max": 1792,
     "matched_articles_max": 135,
-    "new_alerts": 7,
-    "cve_count": 6,
+    "new_alerts": 8,
+    "cve_count": 7,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2012-0038",
       "CVE-2022-2522",
       "CVE-2023-4226",
+      "CVE-2026-16232",
       "CVE-2026-48294",
       "CVE-2026-64600",
       "CVE-2026-8933"
     ],
     "keywords_hit": {
-      "CVE": 4,
+      "CVE": 5,
       "Malware": 3
     }
   },
@@ -186,6 +187,32 @@
           "description": "Unrestricted file upload in `/main/inc/ajax/work.ajax.php` in Chamilo LMS <= v1.11.24 allows authenticated attackers with learner role to obtain remote code execution via uploading of PHP files.",
           "epss_score": 0.02433,
           "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-07-23T18:01:08.863609+09:00",
+      "type": "single",
+      "title": "Check Point Patches Exploited SmartConsole Flaw Allowing Full Admin Access",
+      "url": "https://thehackernews.com/2026/07/check-point-patches-exploited.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-07-23T06:34:36+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-16232"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-16232",
+          "cvss_score": 9.1,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-287 (Authentication Bypass)",
+          "description": "An authentication bypass vulnerability in the Check Point SmartConsole login process allows an unauthenticated remote attacker to obtain an application login token and use it to authenticate with full administrative privileges. Successful exploitation allows the attacker to modify security policies and security configurations. Remote exploitation requires internet access to the Management Server IP address and a configuration that does not restrict Trusted Clients. Check Point is aware that this",
+          "epss_score": null,
+          "kev": true
         }
       ]
     }
