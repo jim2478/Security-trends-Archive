@@ -2,10 +2,10 @@
   "date": "2026-07-25",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 1,
+    "scan_runs": 2,
     "total_articles_max": 1792,
     "matched_articles_max": 132,
-    "new_alerts": 1,
+    "new_alerts": 2,
     "cve_count": 4,
     "ioc_count": 0,
     "merged_count": 0,
@@ -16,7 +16,7 @@
       "CVE-2025-66376"
     ],
     "keywords_hit": {
-      "Malware": 1
+      "Malware": 2
     }
   },
   "alerts": [
@@ -75,6 +75,20 @@
           "kev": true
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-07-25T02:01:01.382190+09:00",
+      "type": "single",
+      "title": "BlueNoroff Zoom Phishing Kit Profiles Crypto Wallets Before Malware Delivery",
+      "url": "https://thehackernews.com/2026/07/bluenoroff-zoom-phishing-kit-profiles.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-07-24T15:12:35+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
