@@ -1,0 +1,80 @@
+{
+  "date": "2026-07-25",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 1,
+    "total_articles_max": 1792,
+    "matched_articles_max": 132,
+    "new_alerts": 1,
+    "cve_count": 4,
+    "ioc_count": 0,
+    "merged_count": 0,
+    "unique_cves": [
+      "CVE-2025-40947",
+      "CVE-2025-40948",
+      "CVE-2025-40949",
+      "CVE-2025-66376"
+    ],
+    "keywords_hit": {
+      "Malware": 1
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-07-25T00:01:17.491079+09:00",
+      "type": "single",
+      "title": "In Other News: Dolphin X AI-Powered Malware, Car Anti-Theft Device Hack, 400 Linux Kernel Flaws",
+      "url": "https://www.securityweek.com/in-other-news-dolphin-x-ai-powered-malware-car-anti-theft-device-hack-400-linux-kernel-flaws/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-07-24T14:20:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2025-40947",
+        "CVE-2025-40948",
+        "CVE-2025-40949",
+        "CVE-2025-66376"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2025-40947",
+          "cvss_score": 7.7,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-78 (OS Command Injection)",
+          "description": "A vulnerability has been identified in RUGGEDCOM ROX MX5000 (All versions < V2.17.1), RUGGEDCOM ROX MX5000RE (All versions < V2.17.1), RUGGEDCOM ROX RX1400 (All versions < V2.17.1), RUGGEDCOM ROX RX1500 (All versions < V2.17.1), RUGGEDCOM ROX RX1501 (All versions < V2.17.1), RUGGEDCOM ROX RX1510 (All versions < V2.17.1), RUGGEDCOM ROX RX1511 (All versions < V2.17.1), RUGGEDCOM ROX RX1512 (All versions < V2.17.1), RUGGEDCOM ROX RX1524 (All versions < V2.17.1), RUGGEDCOM ROX RX1536 (All versions <",
+          "epss_score": 0.0054,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2025-40948",
+          "cvss_score": 6.1,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-88 (CWE-88)",
+          "description": "A vulnerability has been identified in RUGGEDCOM ROX MX5000 (All versions < V2.17.1), RUGGEDCOM ROX MX5000RE (All versions < V2.17.1), RUGGEDCOM ROX RX1400 (All versions < V2.17.1), RUGGEDCOM ROX RX1500 (All versions < V2.17.1), RUGGEDCOM ROX RX1501 (All versions < V2.17.1), RUGGEDCOM ROX RX1510 (All versions < V2.17.1), RUGGEDCOM ROX RX1511 (All versions < V2.17.1), RUGGEDCOM ROX RX1512 (All versions < V2.17.1), RUGGEDCOM ROX RX1524 (All versions < V2.17.1), RUGGEDCOM ROX RX1536 (All versions <",
+          "epss_score": 0.00397,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2025-40949",
+          "cvss_score": 8.9,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-78 (OS Command Injection)",
+          "description": "A vulnerability has been identified in RUGGEDCOM ROX MX5000 (All versions < V2.17.1), RUGGEDCOM ROX MX5000RE (All versions < V2.17.1), RUGGEDCOM ROX RX1400 (All versions < V2.17.1), RUGGEDCOM ROX RX1500 (All versions < V2.17.1), RUGGEDCOM ROX RX1501 (All versions < V2.17.1), RUGGEDCOM ROX RX1510 (All versions < V2.17.1), RUGGEDCOM ROX RX1511 (All versions < V2.17.1), RUGGEDCOM ROX RX1512 (All versions < V2.17.1), RUGGEDCOM ROX RX1524 (All versions < V2.17.1), RUGGEDCOM ROX RX1536 (All versions <",
+          "epss_score": 0.00674,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2025-66376",
+          "cvss_score": 7.2,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-79 (XSS)",
+          "description": "Zimbra Collaboration (ZCS) 10 before 10.0.18 and 10.1 before 10.1.13 allows Classic UI stored XSS via Cascading Style Sheets (CSS) @import directives in an HTML e-mail message.",
+          "epss_score": 0.21621,
+          "kev": true
+        }
+      ]
+    }
+  ]
+}
