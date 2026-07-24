@@ -2,10 +2,10 @@
   "date": "2026-07-24",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
+    "scan_runs": 4,
     "total_articles_max": 1792,
     "matched_articles_max": 140,
-    "new_alerts": 3,
+    "new_alerts": 4,
     "cve_count": 1,
     "ioc_count": 0,
     "merged_count": 0,
@@ -13,7 +13,7 @@
       "CVE-2025-56383"
     ],
     "keywords_hit": {
-      "Malware": 3
+      "Malware": 4
     }
   },
   "alerts": [
@@ -64,6 +64,20 @@
       "url": "https://www.bleepingcomputer.com/news/security/new-dolphin-x-malware-uses-ai-to-rank-high-value-targets/",
       "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
       "published": "2026-07-23T21:20:34+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-24T20:01:54.282123+09:00",
+      "type": "single",
+      "title": "Golden Chickens Resurfaces With Four New Malware Families and Modular Implants",
+      "url": "https://thehackernews.com/2026/07/golden-chickens-resurfaces-with-four.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-07-24T10:09:24+00:00",
       "keywords": [
         "Malware"
       ],
