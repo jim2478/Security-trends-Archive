@@ -2,18 +2,20 @@
   "date": "2026-07-24",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 4,
+    "scan_runs": 5,
     "total_articles_max": 1792,
     "matched_articles_max": 140,
-    "new_alerts": 4,
-    "cve_count": 1,
+    "new_alerts": 5,
+    "cve_count": 2,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
-      "CVE-2025-56383"
+      "CVE-2025-56383",
+      "CVE-2026-32194"
     ],
     "keywords_hit": {
-      "Malware": 4
+      "Malware": 4,
+      "CVE": 1
     }
   },
   "alerts": [
@@ -84,6 +86,32 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-24T22:01:21.955966+09:00",
+      "type": "single",
+      "title": "Bing Images Flaws Let Crafted SVGs Run Commands as SYSTEM on Microsoft's Servers",
+      "url": "https://thehackernews.com/2026/07/bing-images-flaws-let-crafted-svgs-run.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-07-24T11:45:17+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-32194"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-32194",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-77 (Command Injection)",
+          "description": "Improper neutralization of special elements used in a command ('command injection') in Microsoft Bing Images allows an unauthorized attacker to execute code over a network.",
+          "epss_score": 0.00703,
+          "kev": false
+        }
+      ]
     }
   ]
 }
