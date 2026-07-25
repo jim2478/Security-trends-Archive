@@ -2,21 +2,26 @@
   "date": "2026-07-25",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
+    "scan_runs": 4,
     "total_articles_max": 1792,
     "matched_articles_max": 132,
-    "new_alerts": 3,
-    "cve_count": 4,
+    "new_alerts": 4,
+    "cve_count": 8,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
+      "CVE-2021-44731",
+      "CVE-2022-3328",
       "CVE-2025-40947",
       "CVE-2025-40948",
       "CVE-2025-40949",
-      "CVE-2025-66376"
+      "CVE-2025-66376",
+      "CVE-2026-3888",
+      "CVE-2026-8933"
     ],
     "keywords_hit": {
-      "Malware": 3
+      "Malware": 3,
+      "CVE": 1
     }
   },
   "alerts": [
@@ -103,6 +108,62 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-25T13:00:56.675834+09:00",
+      "type": "single",
+      "title": "우분투 스냅-컨파인 취약점 발견... 일반 사용자도 루트 권한 획득 위험",
+      "url": "http://www.boannews.com/media/view.asp?idx=144838&kind=&sub_kind=",
+      "source": "보안뉴스 (전체) [RSS]",
+      "published": "2026-07-25T03:58:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2021-44731",
+        "CVE-2022-3328",
+        "CVE-2026-3888",
+        "CVE-2026-8933"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2021-44731",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2022-3328",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-3888",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-8933",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
     }
   ]
 }
