@@ -2,16 +2,16 @@
   "date": "2026-07-26",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 1,
+    "scan_runs": 2,
     "total_articles_max": 1772,
-    "matched_articles_max": 128,
-    "new_alerts": 1,
+    "matched_articles_max": 131,
+    "new_alerts": 2,
     "cve_count": 0,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [],
     "keywords_hit": {
-      "Malware": 1
+      "Malware": 2
     }
   },
   "alerts": [
@@ -22,6 +22,20 @@
       "url": "https://www.bleepingcomputer.com/news/security/malicious-sites-use-javascript-to-build-malware-in-browser-memory/",
       "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
       "published": "2026-07-25T15:21:09+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-26T05:00:59.896172+09:00",
+      "type": "single",
+      "title": "Malvertising Sends Malware in Pieces, Then Makes the Browser Build the Executable",
+      "url": "https://thehackernews.com/2026/07/malvertising-sends-malware-in-pieces.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-07-25T18:48:44+00:00",
       "keywords": [
         "Malware"
       ],
