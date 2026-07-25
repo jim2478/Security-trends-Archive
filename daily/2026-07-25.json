@@ -2,11 +2,11 @@
   "date": "2026-07-25",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 4,
+    "scan_runs": 5,
     "total_articles_max": 1792,
     "matched_articles_max": 132,
-    "new_alerts": 4,
-    "cve_count": 8,
+    "new_alerts": 5,
+    "cve_count": 9,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -16,12 +16,13 @@
       "CVE-2025-40948",
       "CVE-2025-40949",
       "CVE-2025-66376",
+      "CVE-2026-16723",
       "CVE-2026-3888",
       "CVE-2026-8933"
     ],
     "keywords_hit": {
       "Malware": 3,
-      "CVE": 1
+      "CVE": 2
     }
   },
   "alerts": [
@@ -161,6 +162,32 @@
           "cwe": null,
           "description": null,
           "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-07-25T23:03:09.949633+09:00",
+      "type": "single",
+      "title": "Fastjson 1.x RCE Vulnerability Targeted in Attacks With No Patched Available",
+      "url": "https://thehackernews.com/2026/07/fastjson-1x-rce-vulnerability-targeted.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-07-25T12:52:43+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-16723"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-16723",
+          "cvss_score": 9.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-20 (Improper Input Validation)",
+          "description": "A remote code execution (RCE) vulnerability exists in fastjson 1.2.68 through 1.2.83. This vulnerability is exploitable under fastjson's stock default configuration — no AutoType enablement required, no classpath gadget required.",
+          "epss_score": 0.00413,
           "kev": false
         }
       ]
