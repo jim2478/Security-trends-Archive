@@ -2,17 +2,17 @@
   "date": "2026-07-28",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 1,
+    "scan_runs": 2,
     "total_articles_max": 1792,
-    "matched_articles_max": 129,
-    "new_alerts": 2,
+    "matched_articles_max": 130,
+    "new_alerts": 3,
     "cve_count": 0,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [],
     "keywords_hit": {
-      "Botnet": 1,
-      "Malware": 1
+      "Malware": 2,
+      "Botnet": 1
     }
   },
   "alerts": [
@@ -37,6 +37,20 @@
       "url": "https://therecord.media/health-system-south-carolina-georgia-disruptions-malware",
       "source": "The Record by Recorded Future (위협뉴스) [RSS]",
       "published": "2026-07-27T17:38:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-28T05:01:07.380487+09:00",
+      "type": "single",
+      "title": "ClickFix on macOS: how the Terminal-based attack works, and how to protect yourself | Kaspersky official blog",
+      "url": "https://www.kaspersky.co.uk/blog/macos-clickfix-attack/30765/",
+      "source": "Kaspersky Blog UK (보안뉴스) [RSS]",
+      "published": "2026-07-27T19:08:58+00:00",
       "keywords": [
         "Malware"
       ],
