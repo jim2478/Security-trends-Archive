@@ -1,0 +1,48 @@
+{
+  "date": "2026-07-28",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 1,
+    "total_articles_max": 1792,
+    "matched_articles_max": 129,
+    "new_alerts": 2,
+    "cve_count": 0,
+    "ioc_count": 0,
+    "merged_count": 0,
+    "unique_cves": [],
+    "keywords_hit": {
+      "Botnet": 1,
+      "Malware": 1
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-07-28T03:01:02.792386+09:00",
+      "type": "single",
+      "title": "Dysphoria IoT Botnet Adds Blockchain C2 and Victim Relays After JackSkid Disruption",
+      "url": "https://thehackernews.com/2026/07/dysphoria-iot-botnet-adds-blockchain-c2.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-07-27T17:16:28+00:00",
+      "keywords": [
+        "Botnet"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-28T03:01:02.792386+09:00",
+      "type": "single",
+      "title": "Health system in South Carolina, Georgia closes offices after malware affects networks",
+      "url": "https://therecord.media/health-system-south-carolina-georgia-disruptions-malware",
+      "source": "The Record by Recorded Future (위협뉴스) [RSS]",
+      "published": "2026-07-27T17:38:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
