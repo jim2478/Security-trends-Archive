@@ -2,16 +2,19 @@
   "date": "2026-07-27",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
+    "scan_runs": 4,
     "total_articles_max": 1792,
-    "matched_articles_max": 129,
-    "new_alerts": 3,
-    "cve_count": 0,
+    "matched_articles_max": 130,
+    "new_alerts": 5,
+    "cve_count": 1,
     "ioc_count": 0,
     "merged_count": 0,
-    "unique_cves": [],
+    "unique_cves": [
+      "CVE-2026-54121"
+    ],
     "keywords_hit": {
-      "Malware": 3
+      "Malware": 4,
+      "CVE": 1
     }
   },
   "alerts": [
@@ -50,6 +53,46 @@
       "url": "https://thehackernews.com/2026/07/cruciferra-crypter-uses-byovd-and.html",
       "source": "The Hacker News (보안뉴스 종합) [RSS]",
       "published": "2026-07-27T10:51:45+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-27T22:01:15.620831+09:00",
+      "type": "single",
+      "title": "PoC exploit released for critical AD CS domain-takeover flaw (CVE-2026-54121)",
+      "url": "https://www.helpnetsecurity.com/2026/07/27/certighost-cve-2026-54121-poc-exploit-released/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-07-27T12:04:09+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-54121"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-54121",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-285 (CWE-285)",
+          "description": "Improper authorization in Active Directory Certificate Services (AD CS) allows an authorized attacker to elevate privileges over a network.",
+          "epss_score": 0.01052,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-07-27T22:01:15.620831+09:00",
+      "type": "single",
+      "title": "MedusaHVNC Malware Uses Hidden Windows Desktops to Evade Detection",
+      "url": "https://www.securityweek.com/medusahvnc-malware-uses-hidden-windows-desktops-to-evade-detection/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-07-27T13:00:00+00:00",
       "keywords": [
         "Malware"
       ],
