@@ -2,19 +2,20 @@
   "date": "2026-07-27",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 4,
+    "scan_runs": 5,
     "total_articles_max": 1792,
     "matched_articles_max": 130,
-    "new_alerts": 5,
-    "cve_count": 1,
+    "new_alerts": 6,
+    "cve_count": 2,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
+      "CVE-2026-27577",
       "CVE-2026-54121"
     ],
     "keywords_hit": {
       "Malware": 4,
-      "CVE": 1
+      "CVE": 2
     }
   },
   "alerts": [
@@ -99,6 +100,32 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-27T23:01:06.915025+09:00",
+      "type": "single",
+      "title": "n8n Sandbox Escape Lets Workflow Editors Run OS Commands as the n8n Process",
+      "url": "https://thehackernews.com/2026/07/n8n-sandbox-escape-lets-workflow.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-07-27T13:05:15+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-27577"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-27577",
+          "cvss_score": 9.4,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-94 (Code Injection)",
+          "description": "n8n is an open source workflow automation platform. Prior to versions 2.10.1, 2.9.3, and 1.123.22, additional exploits in the expression evaluation of n8n have been identified and patched following CVE-2025-68613. An authenticated user with permission to create or modify workflows could abuse crafted expressions in workflow parameters to trigger unintended system command execution on the host running n8n. The issues have been fixed in n8n versions 2.10.1, 2.9.3, and 1.123.22. Users should upgrad",
+          "epss_score": 0.08586,
+          "kev": false
+        }
+      ]
     }
   ]
 }
