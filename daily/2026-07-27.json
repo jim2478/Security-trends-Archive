@@ -1,0 +1,33 @@
+{
+  "date": "2026-07-27",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 1,
+    "total_articles_max": 1792,
+    "matched_articles_max": 128,
+    "new_alerts": 1,
+    "cve_count": 0,
+    "ioc_count": 0,
+    "merged_count": 0,
+    "unique_cves": [],
+    "keywords_hit": {
+      "Malware": 1
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-07-27T14:00:55.788454+09:00",
+      "type": "single",
+      "title": "GitHub delays version updates so malware gets caught first",
+      "url": "https://www.helpnetsecurity.com/2026/07/27/github-dependabot-cooldown/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-07-27T04:00:20+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
