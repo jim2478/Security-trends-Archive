@@ -2,11 +2,11 @@
   "date": "2026-07-28",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 8,
+    "scan_runs": 9,
     "total_articles_max": 1792,
     "matched_articles_max": 133,
-    "new_alerts": 15,
-    "cve_count": 12,
+    "new_alerts": 17,
+    "cve_count": 13,
     "ioc_count": 32,
     "merged_count": 0,
     "unique_cves": [
@@ -24,7 +24,7 @@
       "CVE-2026-63077"
     ],
     "keywords_hit": {
-      "CVE": 6,
+      "CVE": 8,
       "Malware": 5,
       "Botnet": 2,
       "DDoS": 2,
@@ -363,6 +363,46 @@
       "published": "2026-07-28T09:23:50+00:00",
       "keywords": [
         "DDoS"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-28T21:03:10.266956+09:00",
+      "type": "single",
+      "title": "JetBrains fixes critical unauthenticated RCE in TeamCity On-Premises (CVE-2026-63077)",
+      "url": "https://www.helpnetsecurity.com/2026/07/28/teamcity-rce-cve-2026-63077-fixed/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-07-28T11:04:12+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-63077"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-63077",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-502 (Deserialization)",
+          "description": "In JetBrains TeamCity before 2026.1.3, 2025.11.7 unauthenticated remote code execution was possible via the agent polling protocol",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-07-28T21:03:10.266956+09:00",
+      "type": "single",
+      "title": "How we use /goal to find bugs in Patch the Planet",
+      "url": "https://blog.trailofbits.com/2026/07/28/how-we-use-goal-to-find-bugs-in-patch-the-planet/",
+      "source": "Trail of Bits (보안연구/감사) [RSS]",
+      "published": "2026-07-28T11:00:00+00:00",
+      "keywords": [
+        "CVE"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
