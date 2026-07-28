@@ -2,11 +2,11 @@
   "date": "2026-07-28",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 4,
+    "scan_runs": 5,
     "total_articles_max": 1792,
-    "matched_articles_max": 130,
-    "new_alerts": 6,
-    "cve_count": 7,
+    "matched_articles_max": 132,
+    "new_alerts": 8,
+    "cve_count": 8,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -16,13 +16,15 @@
       "CVE-2025-34152",
       "CVE-2025-55182",
       "CVE-2025-9528",
-      "CVE-2026-16723"
+      "CVE-2026-16723",
+      "CVE-2026-16812"
     ],
     "keywords_hit": {
       "Malware": 3,
       "Botnet": 2,
+      "CVE": 2,
       "DDoS": 1,
-      "CVE": 1
+      "봇넷": 1
     }
   },
   "alerts": [
@@ -171,6 +173,46 @@
       "published": "2026-07-28T04:30:39+00:00",
       "keywords": [
         "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-28T15:01:15.795425+09:00",
+      "type": "single",
+      "title": "Attackers Exploit Arista VeloCloud Orchestrator Command Injection Flaw",
+      "url": "https://thehackernews.com/2026/07/attackers-exploit-arista-velocloud.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-07-28T04:43:53+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-16812"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-16812",
+          "cvss_score": 10.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-78 (OS Command Injection)",
+          "description": "VeloCloud Orchestrator (VCO) on-prem has a security issue where this issue may allow a remote attacker to access privileged internal functionality and impact the VCO host. Successful exploitation may compromise the confidentiality, integrity, and availability of the orchestrator and data managed by the orchestrator.\n\n\n\n\nThis functionality was intended to be for internal use only and is not intended to be remotely accessible.\n\n\n\n\nHosted and Dedicated versions of VCO have already been patched in a",
+          "epss_score": null,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-07-28T15:01:15.795425+09:00",
+      "type": "single",
+      "title": "디스포리아 봇넷 확산…20만대 IoT 기기감염·최대 4테라 디도스 공격",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=207819",
+      "source": "데일리시큐 (IT&생활) [RSS]",
+      "published": "2026-07-28T04:59:19+00:00",
+      "keywords": [
+        "봇넷"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
