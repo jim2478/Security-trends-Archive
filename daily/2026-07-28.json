@@ -2,12 +2,12 @@
   "date": "2026-07-28",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 6,
+    "scan_runs": 7,
     "total_articles_max": 1792,
     "matched_articles_max": 133,
-    "new_alerts": 11,
+    "new_alerts": 12,
     "cve_count": 10,
-    "ioc_count": 0,
+    "ioc_count": 32,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2017-17215",
@@ -22,7 +22,7 @@
       "CVE-2026-16812"
     ],
     "keywords_hit": {
-      "Malware": 4,
+      "Malware": 5,
       "CVE": 4,
       "Botnet": 2,
       "DDoS": 1,
@@ -283,6 +283,20 @@
         "Malware"
       ],
       "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-28T18:01:12.912470+09:00",
+      "type": "single",
+      "title": "Mirage Kitten targets Middle East and Africa region with new malware",
+      "url": "https://securelist.com/mirage-kitten-new-tools/120811/",
+      "source": "Kaspersky Securelist (위협분석) [RSS]",
+      "published": "2026-07-28T08:00:20+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "[IP] 172[.]86[.]98[.]113\n[Domain] smartconnect[.]azurewebsites[.]net\n[Domain] businessmixture[.]com\n[Domain] global-reds[.]com\n[Domain] maadinglobal[.]com\n[Domain] business-deegital[.]com\n[Domain] business-deegital[.]azurewebsites[.]net\n[Domain] businessdeegital[.]azurewebsites[.]net\n[Domain] neexportfolio[.]azurewebsites[.]net\n[Domain] neexportfolio[.]com\n[Domain] neexportfolio[.]eastus[.]cloudapp[.]azure[.]com\n[Domain] aecert[.]org\n[Domain] realhealthshop[.]com\n[Domain] tjconsultingservices[.]com\n[Domain] thehealth-life[.]com\n[Domain] buisness-centeral-transportation[.]com\n[Domain] healthcarezoom-centeral[.]azurewebsites[.]net\n[Domain] healthcarezoomcenteral[.]azurewebsites[.]net\n[Domain] healthcarezoomcenteral[.]org\n[Domain] toadreport[.]azurewebsites[.]net\n[Domain] business-startup[.]azurewebsites[.]net\n[Domain] businessstartup[.]azurewebsites[.]net\n[MD5] 42F847597109DA2A220391BB09D00676\n[MD5] 5FA15EF96808EA82F0A6176F0BB4B386\n[MD5] 6038D42AF0AFFD1FB263F470C0956F6B\n[MD5] A239E655709A2518DD0B7BDBED163679\n[MD5] AE628EFA305387B633DCE82F9364875B\n[MD5] AFB1C1583606599C7272CFB33CC6F498\n[MD5] C90F0EFADBF322E5EB1C4103A38C30E6\n[MD5] D09B14A2FE01C7363ECC56F5D046162C\n[MD5] F7D36CC5904A53252D2BB3D21615134F\n[Email] intelreports[@]kaspersky[.]com",
       "cve_ids": [],
       "cve_details": []
     }
