@@ -2,16 +2,17 @@
   "date": "2026-07-29",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 1,
-    "total_articles_max": 1782,
-    "matched_articles_max": 130,
-    "new_alerts": 1,
+    "scan_runs": 2,
+    "total_articles_max": 1792,
+    "matched_articles_max": 132,
+    "new_alerts": 2,
     "cve_count": 0,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [],
     "keywords_hit": {
-      "Botnet": 1
+      "Botnet": 1,
+      "Malware": 1
     }
   },
   "alerts": [
@@ -24,6 +25,20 @@
       "published": "2026-07-28T15:01:33+00:00",
       "keywords": [
         "Botnet"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-29T03:01:05.989025+09:00",
+      "type": "single",
+      "title": "PhantomEnigma Infects Organizations with Malware via Hijacked Government Websites",
+      "url": "https://hackread.com/phantomenigma-infects-malware-hijack-gov-sites/",
+      "source": "HackRead (해킹/데이터유출) [RSS]",
+      "published": "2026-07-28T17:34:10+00:00",
+      "keywords": [
+        "Malware"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
