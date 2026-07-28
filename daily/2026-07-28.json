@@ -2,11 +2,11 @@
   "date": "2026-07-28",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
+    "scan_runs": 4,
     "total_articles_max": 1792,
     "matched_articles_max": 130,
-    "new_alerts": 4,
-    "cve_count": 6,
+    "new_alerts": 6,
+    "cve_count": 7,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -15,12 +15,14 @@
       "CVE-2025-28137",
       "CVE-2025-34152",
       "CVE-2025-55182",
-      "CVE-2025-9528"
+      "CVE-2025-9528",
+      "CVE-2026-16723"
     ],
     "keywords_hit": {
-      "Malware": 2,
+      "Malware": 3,
       "Botnet": 2,
-      "DDoS": 1
+      "DDoS": 1,
+      "CVE": 1
     }
   },
   "alerts": [
@@ -133,6 +135,46 @@
           "kev": true
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-07-28T14:01:17.974037+09:00",
+      "type": "single",
+      "title": "기업 노린 패스트제이슨 제로데이 공격 확산…금융·의료 집중 타격",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=207818",
+      "source": "데일리시큐 (이슈) [RSS]",
+      "published": "2026-07-28T13:39:02+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-16723"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-16723",
+          "cvss_score": 9.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-20 (Improper Input Validation)",
+          "description": "A remote code execution (RCE) vulnerability exists in fastjson 1.2.68 through 1.2.83. This vulnerability is exploitable under fastjson's stock default configuration — no AutoType enablement required, no classpath gadget required.",
+          "epss_score": 0.00413,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-07-28T14:01:17.974037+09:00",
+      "type": "single",
+      "title": "Call of Duty Mobile scam uses fake free points giveaway to hijack players’ accounts",
+      "url": "https://www.helpnetsecurity.com/2026/07/28/call-of-duty-mobile-players-scam/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-07-28T04:30:39+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
