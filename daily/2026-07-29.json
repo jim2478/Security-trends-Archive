@@ -1,0 +1,33 @@
+{
+  "date": "2026-07-29",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 1,
+    "total_articles_max": 1782,
+    "matched_articles_max": 130,
+    "new_alerts": 1,
+    "cve_count": 0,
+    "ioc_count": 0,
+    "merged_count": 0,
+    "unique_cves": [],
+    "keywords_hit": {
+      "Botnet": 1
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-07-29T01:00:58.122203+09:00",
+      "type": "single",
+      "title": "Tengu Botnet Reboots Compromised Linux Devices When Defenders Kill Its Process",
+      "url": "https://thehackernews.com/2026/07/tengu-botnet-reboots-compromised-linux.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-07-28T15:01:33+00:00",
+      "keywords": [
+        "Botnet"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
