@@ -2,11 +2,11 @@
   "date": "2026-07-28",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 9,
+    "scan_runs": 10,
     "total_articles_max": 1792,
     "matched_articles_max": 133,
-    "new_alerts": 17,
-    "cve_count": 13,
+    "new_alerts": 18,
+    "cve_count": 14,
     "ioc_count": 32,
     "merged_count": 0,
     "unique_cves": [
@@ -21,10 +21,11 @@
       "CVE-2026-16723",
       "CVE-2026-16812",
       "CVE-2026-53264",
+      "CVE-2026-53921",
       "CVE-2026-63077"
     ],
     "keywords_hit": {
-      "CVE": 8,
+      "CVE": 9,
       "Malware": 5,
       "Botnet": 2,
       "DDoS": 2,
@@ -407,6 +408,32 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-28T23:01:01.364542+09:00",
+      "type": "single",
+      "title": "Critical OpenWrt DHCPv6 Flaw Could Let Unauthenticated Attackers Run Code as Root",
+      "url": "https://thehackernews.com/2026/07/critical-openwrt-dhcpv6-flaw-could-let.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-07-28T12:56:14+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-53921"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-53921",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
     }
   ]
 }
