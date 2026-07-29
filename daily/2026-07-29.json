@@ -2,22 +2,24 @@
   "date": "2026-07-29",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 5,
+    "scan_runs": 6,
     "total_articles_max": 1792,
     "matched_articles_max": 132,
-    "new_alerts": 6,
-    "cve_count": 2,
+    "new_alerts": 8,
+    "cve_count": 4,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2025-68686",
-      "CVE-2025-9528"
+      "CVE-2025-9528",
+      "CVE-2026-16232",
+      "CVE-2026-60004"
     ],
     "keywords_hit": {
       "Malware": 3,
+      "CVE": 3,
       "Botnet": 2,
-      "봇넷": 1,
-      "CVE": 1
+      "봇넷": 1
     }
   },
   "alerts": [
@@ -129,6 +131,58 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-29T19:01:14.203993+09:00",
+      "type": "single",
+      "title": "Public PoC Released for Exploited Check Point SmartConsole Authentication Bypass",
+      "url": "https://thehackernews.com/2026/07/rapid7-releases-poc-for-exploited-check.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-07-29T08:58:27+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-16232"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-16232",
+          "cvss_score": 9.1,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-287 (Authentication Bypass)",
+          "description": "An authentication bypass vulnerability in the Check Point SmartConsole login process allows an unauthenticated remote attacker to obtain an application login token and use it to authenticate with full administrative privileges. Successful exploitation allows the attacker to modify security policies and security configurations. Remote exploitation requires internet access to the Management Server IP address and a configuration that does not restrict Trusted Clients. Check Point is aware that this",
+          "epss_score": 0.12685,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-07-29T19:01:14.203993+09:00",
+      "type": "single",
+      "title": "New Gitea RCE Lets Repository Writers Plant a Git Hook to Run Shell Commands",
+      "url": "https://thehackernews.com/2026/07/new-gitea-rce-lets-repository-writers.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-07-29T07:47:19+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-60004"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-60004",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
     }
   ]
 }
