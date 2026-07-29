@@ -2,17 +2,20 @@
   "date": "2026-07-29",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
+    "scan_runs": 3,
     "total_articles_max": 1792,
     "matched_articles_max": 132,
-    "new_alerts": 2,
-    "cve_count": 0,
+    "new_alerts": 3,
+    "cve_count": 1,
     "ioc_count": 0,
     "merged_count": 0,
-    "unique_cves": [],
+    "unique_cves": [
+      "CVE-2025-9528"
+    ],
     "keywords_hit": {
-      "Botnet": 1,
-      "Malware": 1
+      "Botnet": 2,
+      "Malware": 1,
+      "봇넷": 1
     }
   },
   "alerts": [
@@ -43,6 +46,33 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-29T10:01:05.695700+09:00",
+      "type": "single",
+      "title": "20만대 규모 디스포리아 봇넷 확산... 취약한 계정 설정·IoT 장비 패치 시급",
+      "url": "http://www.boannews.com/media/view.asp?idx=144913&kind=&sub_kind=",
+      "source": "보안뉴스 (전체) [RSS]",
+      "published": "2026-07-29T00:59:00+00:00",
+      "keywords": [
+        "Botnet",
+        "봇넷"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2025-9528"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2025-9528",
+          "cvss_score": 2.0,
+          "cvss_severity": "LOW",
+          "cwe": "CWE-77 (Command Injection)",
+          "description": "A vulnerability was determined in Linksys E1700 1.0.0.4.003. This vulnerability affects the function systemCommand of the file /goform/systemCommand. Executing manipulation of the argument command can lead to os command injection. The attack may be launched remotely. The exploit has been publicly disclosed and may be utilized. The vendor was contacted early about this disclosure but did not respond in any way.",
+          "epss_score": 0.47934,
+          "kev": false
+        }
+      ]
     }
   ]
 }
