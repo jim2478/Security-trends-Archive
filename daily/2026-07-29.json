@@ -2,10 +2,10 @@
   "date": "2026-07-29",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 4,
+    "scan_runs": 5,
     "total_articles_max": 1792,
     "matched_articles_max": 132,
-    "new_alerts": 4,
+    "new_alerts": 6,
     "cve_count": 2,
     "ioc_count": 0,
     "merged_count": 0,
@@ -14,8 +14,8 @@
       "CVE-2025-9528"
     ],
     "keywords_hit": {
+      "Malware": 3,
       "Botnet": 2,
-      "Malware": 1,
       "봇넷": 1,
       "CVE": 1
     }
@@ -101,6 +101,34 @@
           "kev": true
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-07-29T14:01:02.635698+09:00",
+      "type": "single",
+      "title": "Two Compromised joyfill npm Packages Run RAT When Imported Into Node.js",
+      "url": "https://thehackernews.com/2026/07/two-compromised-joyfill-npm-packages.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-07-29T04:20:57+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-29T14:01:02.635698+09:00",
+      "type": "single",
+      "title": "Android malware detection collapses when the context stage comes out",
+      "url": "https://www.helpnetsecurity.com/2026/07/29/android-malware-detection-research/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-07-29T04:00:58+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
