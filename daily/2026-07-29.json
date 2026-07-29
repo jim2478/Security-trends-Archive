@@ -2,20 +2,22 @@
   "date": "2026-07-29",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
+    "scan_runs": 4,
     "total_articles_max": 1792,
     "matched_articles_max": 132,
-    "new_alerts": 3,
-    "cve_count": 1,
+    "new_alerts": 4,
+    "cve_count": 2,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
+      "CVE-2025-68686",
       "CVE-2025-9528"
     ],
     "keywords_hit": {
       "Botnet": 2,
       "Malware": 1,
-      "봇넷": 1
+      "봇넷": 1,
+      "CVE": 1
     }
   },
   "alerts": [
@@ -71,6 +73,32 @@
           "description": "A vulnerability was determined in Linksys E1700 1.0.0.4.003. This vulnerability affects the function systemCommand of the file /goform/systemCommand. Executing manipulation of the argument command can lead to os command injection. The attack may be launched remotely. The exploit has been publicly disclosed and may be utilized. The vendor was contacted early about this disclosure but did not respond in any way.",
           "epss_score": 0.47934,
           "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-07-29T11:01:01.535286+09:00",
+      "type": "single",
+      "title": "CISA, ‘포티OS’ 취약점 경고... “패치 우회해 시스템 장악”",
+      "url": "http://www.boannews.com/media/view.asp?idx=144911&kind=&sub_kind=",
+      "source": "보안뉴스 (전체) [RSS]",
+      "published": "2026-07-29T01:52:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2025-68686"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2025-68686",
+          "cvss_score": 5.9,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-200 (Information Exposure)",
+          "description": "An Exposure of Sensitive Information to an Unauthorized Actor vulnerability [CWE-200] vulnerability in Fortinet FortiOS 7.6.0 through 7.6.1, FortiOS 7.4.0 through 7.4.6, FortiOS 7.2 all versions, FortiOS 7.0 all versions, FortiOS 6.4 all versions may allow a remote unauthenticated attacker to bypass the patch developed for the symbolic link persistency mechanism observed in some post-exploit cases, via crafted HTTP requests. An attacker would need first to have compromised the product via anothe",
+          "epss_score": 0.01264,
+          "kev": true
         }
       ]
     }
