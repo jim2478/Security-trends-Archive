@@ -2,22 +2,23 @@
   "date": "2026-07-29",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 6,
+    "scan_runs": 7,
     "total_articles_max": 1792,
     "matched_articles_max": 132,
-    "new_alerts": 8,
-    "cve_count": 4,
+    "new_alerts": 9,
+    "cve_count": 5,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
+      "CVE-2021-44228",
       "CVE-2025-68686",
       "CVE-2025-9528",
       "CVE-2026-16232",
       "CVE-2026-60004"
     ],
     "keywords_hit": {
+      "CVE": 4,
       "Malware": 3,
-      "CVE": 3,
       "Botnet": 2,
       "봇넷": 1
     }
@@ -181,6 +182,32 @@
           "description": null,
           "epss_score": null,
           "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-07-29T21:01:12.408988+09:00",
+      "type": "single",
+      "title": "Contrast CVE Shield aims to protect applications while security teams deploy patches",
+      "url": "https://www.helpnetsecurity.com/2026/07/29/contrast-security-cve-shield/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-07-29T11:06:05+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2021-44228"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2021-44228",
+          "cvss_score": 10.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-20 (Improper Input Validation)",
+          "description": "Apache Log4j2 2.0-beta9 through 2.15.0 (excluding security releases 2.12.2, 2.12.3, and 2.3.1) JNDI features used in configuration, log messages, and parameters do not protect against attacker controlled LDAP and other JNDI related endpoints. An attacker who can control log messages or log message parameters can execute arbitrary code loaded from LDAP servers when message lookup substitution is enabled. From log4j 2.15.0, this behavior has been disabled by default. From version 2.16.0 (along wit",
+          "epss_score": 0.99999,
+          "kev": true
         }
       ]
     }
