@@ -2,10 +2,10 @@
   "date": "2026-07-29",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 8,
+    "scan_runs": 9,
     "total_articles_max": 1792,
     "matched_articles_max": 132,
-    "new_alerts": 10,
+    "new_alerts": 12,
     "cve_count": 6,
     "ioc_count": 0,
     "merged_count": 0,
@@ -19,8 +19,8 @@
     ],
     "keywords_hit": {
       "CVE": 5,
-      "Malware": 3,
-      "Botnet": 2,
+      "Malware": 5,
+      "Botnet": 3,
       "봇넷": 1
     }
   },
@@ -237,6 +237,35 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-07-29T23:01:44.144233+09:00",
+      "type": "single",
+      "title": "Tengu botnet reboots Linux devices to survive removal",
+      "url": "https://www.helpnetsecurity.com/2026/07/29/tengu-mirai-iot-botnet-linux/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-07-29T13:52:33+00:00",
+      "keywords": [
+        "Botnet",
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-29T23:01:44.144233+09:00",
+      "type": "single",
+      "title": "Stairwell launches Backstory, pioneering agentic investigation for malware blast radius",
+      "url": "https://www.helpnetsecurity.com/2026/07/29/stairwell-backstory-agentic-investigation/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-07-29T13:01:52+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
