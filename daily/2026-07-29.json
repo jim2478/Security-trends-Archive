@@ -2,22 +2,23 @@
   "date": "2026-07-29",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 7,
+    "scan_runs": 8,
     "total_articles_max": 1792,
     "matched_articles_max": 132,
-    "new_alerts": 9,
-    "cve_count": 5,
+    "new_alerts": 10,
+    "cve_count": 6,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2021-44228",
       "CVE-2025-68686",
       "CVE-2025-9528",
+      "CVE-2026-10702",
       "CVE-2026-16232",
       "CVE-2026-60004"
     ],
     "keywords_hit": {
-      "CVE": 4,
+      "CVE": 5,
       "Malware": 3,
       "Botnet": 2,
       "봇넷": 1
@@ -208,6 +209,32 @@
           "description": "Apache Log4j2 2.0-beta9 through 2.15.0 (excluding security releases 2.12.2, 2.12.3, and 2.3.1) JNDI features used in configuration, log messages, and parameters do not protect against attacker controlled LDAP and other JNDI related endpoints. An attacker who can control log messages or log message parameters can execute arbitrary code loaded from LDAP servers when message lookup substitution is enabled. From log4j 2.15.0, this behavior has been disabled by default. From version 2.16.0 (along wit",
           "epss_score": 0.99999,
           "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-07-29T22:01:15.935344+09:00",
+      "type": "single",
+      "title": "Researchers Show a Single Malicious Webpage Visit Can Compromise Tor Browser",
+      "url": "https://thehackernews.com/2026/07/researchers-show-single-malicious.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-07-29T11:57:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-10702"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-10702",
+          "cvss_score": 4.3,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-843 (CWE-843)",
+          "description": "JIT miscompilation in the JavaScript Engine: JIT component. This vulnerability was fixed in Firefox 151.0.3.",
+          "epss_score": 0.00553,
+          "kev": false
         }
       ]
     }
