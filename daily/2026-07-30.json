@@ -2,10 +2,10 @@
   "date": "2026-07-30",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
+    "scan_runs": 3,
     "total_articles_max": 1792,
-    "matched_articles_max": 128,
-    "new_alerts": 2,
+    "matched_articles_max": 129,
+    "new_alerts": 3,
     "cve_count": 1,
     "ioc_count": 0,
     "merged_count": 0,
@@ -14,7 +14,8 @@
     ],
     "keywords_hit": {
       "CVE": 1,
-      "Malware": 1
+      "Malware": 1,
+      "DDoS": 1
     }
   },
   "alerts": [
@@ -53,6 +54,20 @@
       "published": "2026-07-30T00:30:00+00:00",
       "keywords": [
         "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-30T13:00:57.533366+09:00",
+      "type": "single",
+      "title": "상반기 사이버 침해신고 20% 증가...디도스·랜섬웨어 기승",
+      "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=688198",
+      "source": "디지털투데이 (전체기사) [RSS]",
+      "published": "2026-07-30T03:00:00+00:00",
+      "keywords": [
+        "DDoS"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
