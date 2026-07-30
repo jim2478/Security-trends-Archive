@@ -2,23 +2,24 @@
   "date": "2026-07-30",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 5,
+    "scan_runs": 6,
     "total_articles_max": 1792,
     "matched_articles_max": 134,
-    "new_alerts": 9,
-    "cve_count": 5,
-    "ioc_count": 0,
+    "new_alerts": 11,
+    "cve_count": 8,
+    "ioc_count": 3,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2026-20079",
+      "CVE-2026-20131",
       "CVE-2026-20316",
       "CVE-2026-25089",
       "CVE-2026-59309"
     ],
     "keywords_hit": {
-      "CVE": 4,
+      "CVE": 5,
       "DDoS": 3,
-      "Malware": 2
+      "Malware": 3
     }
   },
   "alerts": [
@@ -199,6 +200,66 @@
       "url": "https://any.run/cybersecurity-blog/july-threat-coverage-2026/",
       "source": "ANY.RUN (악성코드샌드박스분석) [RSS]",
       "published": "2026-07-30T06:13:53+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-30T20:01:12.125935+09:00",
+      "type": "single",
+      "title": "Cisco FMC static credentials exploited by attackers (CVE-2026-20316)",
+      "url": "https://www.helpnetsecurity.com/2026/07/30/cisco-fmc-cve-2026-20316-exploited/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-07-30T10:44:09+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "[Domain] horizon3[.]ai\n[CVE] CVE-2026-20079\n[CVE] CVE-2026-20316",
+      "cve_ids": [
+        "CVE-2026-20079",
+        "CVE-2026-20131",
+        "CVE-2026-20316"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-20079",
+          "cvss_score": 10.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-288 (CWE-288)",
+          "description": "A vulnerability in the web interface of Cisco Secure Firewall Management Center (FMC) Software could allow an unauthenticated, remote attacker to bypass authentication and execute script files on an affected device to obtain root access to the underlying operating system.&nbsp;\r\n\r\nThis vulnerability is due to an improper system process that is created at boot time. An attacker could exploit this vulnerability by sending crafted HTTP requests to an affected device. A successful exploit could allo",
+          "epss_score": 0.387,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-20131",
+          "cvss_score": 10.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-502 (Deserialization)",
+          "description": "A vulnerability in the web-based management interface of Cisco Secure Firewall Management Center (FMC) Software could allow an unauthenticated, remote attacker to execute arbitrary Java code as root&nbsp;on an affected device.\r\n\r\nThis vulnerability is due to insecure deserialization of a user-supplied Java byte stream. An attacker could exploit this vulnerability by sending a crafted serialized Java object to the web-based management interface of an affected device. A successful exploit could al",
+          "epss_score": 0.27551,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-20316",
+          "cvss_score": 5.3,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-259 (CWE-259)",
+          "description": "A vulnerability in the web interface of Cisco Secure Firewall Management Center (FMC) Software could allow an unauthenticated, remote attacker to log in to an affected device using a low-privileged account to access sensitive data within the impacted systems.\r\n\r\nThis vulnerability is due to the presence of static user credentials for a low-privileged&nbsp;account. An attacker could exploit this vulnerability by using the account to log in to an affected system. A successful exploit could allow t",
+          "epss_score": null,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-07-30T20:01:12.125935+09:00",
+      "type": "single",
+      "title": "Fake Claude Install Guide Delivers Six-Stage macOS Stealer and RAT, Huntress Finds",
+      "url": "https://www.itsecurityguru.org/2026/07/30/fake-claude-install-guide-delivers-six-stage-macos-stealer-and-rat-huntress-finds/?utm_source=rss&utm_medium=rss&utm_campaign=fake-claude-install-guide-delivers-six-stage-macos-stealer-and-rat-huntress-finds",
+      "source": "IT Security Guru (보안뉴스) [RSS]",
+      "published": "2026-07-30T10:47:15+00:00",
       "keywords": [
         "Malware"
       ],
