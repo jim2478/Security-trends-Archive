@@ -2,21 +2,23 @@
   "date": "2026-07-30",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 4,
+    "scan_runs": 5,
     "total_articles_max": 1792,
-    "matched_articles_max": 129,
-    "new_alerts": 4,
-    "cve_count": 2,
+    "matched_articles_max": 134,
+    "new_alerts": 9,
+    "cve_count": 5,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
+      "CVE-2026-20079",
       "CVE-2026-20316",
+      "CVE-2026-25089",
       "CVE-2026-59309"
     ],
     "keywords_hit": {
-      "CVE": 2,
-      "Malware": 1,
-      "DDoS": 1
+      "CVE": 4,
+      "DDoS": 3,
+      "Malware": 2
     }
   },
   "alerts": [
@@ -99,6 +101,110 @@
           "kev": true
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-07-30T16:01:19.266211+09:00",
+      "type": "single",
+      "title": "200 new CVEs a day and no realistic way to patch them all",
+      "url": "https://www.helpnetsecurity.com/2026/07/30/ryan-dewhurst-kevintel-known-exploited-vulnerabilities/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-07-30T06:00:09+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-25089"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-25089",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-78 (OS Command Injection)",
+          "description": "A improper neutralization of special elements used in an os command ('os command injection') vulnerability in Fortinet FortiSandbox 5.0.0 through 5.0.5, FortiSandbox 4.4.0 through 4.4.8, FortiSandbox 4.2 all versions, FortiSandbox Cloud 5.0.4 through 5.0.5, FortiSandbox PaaS 5.0.4 through 5.0.5 may allow an unauthenticated attacker to execute unauthorized commands via specifically crafted HTTP requests",
+          "epss_score": 0.69827,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-07-30T16:01:19.266211+09:00",
+      "type": "single",
+      "title": "Cisco Secure FMC Zero-Day Exploited in the Wild",
+      "url": "https://www.securityweek.com/cisco-secure-fmc-zero-day-exploited-in-the-wild/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-07-30T06:31:31+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-20079",
+        "CVE-2026-20316"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-20079",
+          "cvss_score": 10.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-288 (CWE-288)",
+          "description": "A vulnerability in the web interface of Cisco Secure Firewall Management Center (FMC) Software could allow an unauthenticated, remote attacker to bypass authentication and execute script files on an affected device to obtain root access to the underlying operating system.&nbsp;\r\n\r\nThis vulnerability is due to an improper system process that is created at boot time. An attacker could exploit this vulnerability by sending crafted HTTP requests to an affected device. A successful exploit could allo",
+          "epss_score": 0.387,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-20316",
+          "cvss_score": 5.3,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-259 (CWE-259)",
+          "description": "A vulnerability in the web interface of Cisco Secure Firewall Management Center (FMC) Software could allow an unauthenticated, remote attacker to log in to an affected device using a low-privileged account to access sensitive data within the impacted systems.\r\n\r\nThis vulnerability is due to the presence of static user credentials for a low-privileged&nbsp;account. An attacker could exploit this vulnerability by using the account to log in to an affected system. A successful exploit could allow t",
+          "epss_score": null,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-07-30T16:01:19.266211+09:00",
+      "type": "single",
+      "title": "상반기, ‘핵티비스트 디도스’ 기승부리고 ‘생성형 AI 위협’ 고조",
+      "url": "http://www.boannews.com/media/view.asp?idx=144957&kind=&sub_kind=",
+      "source": "보안뉴스 (전체) [RSS]",
+      "published": "2026-07-30T06:52:00+00:00",
+      "keywords": [
+        "DDoS"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-30T16:01:19.266211+09:00",
+      "type": "single",
+      "title": "올 상반기 국내 사이버 침해사고 신고, 지난해보다 20% 더 늘었다",
+      "url": "https://www.donga.com/news/Economy/article/all/20260730/134394790/1",
+      "source": "동아일보 (경제) [RSS]",
+      "published": "2026-07-30T06:54:00+00:00",
+      "keywords": [
+        "DDoS"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-30T16:01:19.266211+09:00",
+      "type": "single",
+      "title": "Threat Coverage Digest: New TI Report, Threat Research and 750+ Detection Rules",
+      "url": "https://any.run/cybersecurity-blog/july-threat-coverage-2026/",
+      "source": "ANY.RUN (악성코드샌드박스분석) [RSS]",
+      "published": "2026-07-30T06:13:53+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
