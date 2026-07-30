@@ -2,10 +2,10 @@
   "date": "2026-07-30",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 1,
+    "scan_runs": 2,
     "total_articles_max": 1792,
-    "matched_articles_max": 125,
-    "new_alerts": 1,
+    "matched_articles_max": 128,
+    "new_alerts": 2,
     "cve_count": 1,
     "ioc_count": 0,
     "merged_count": 0,
@@ -13,7 +13,8 @@
       "CVE-2026-59309"
     ],
     "keywords_hit": {
-      "CVE": 1
+      "CVE": 1,
+      "Malware": 1
     }
   },
   "alerts": [
@@ -42,6 +43,20 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-07-30T10:01:02.974876+09:00",
+      "type": "single",
+      "title": "'Flying Eagle' Full-Service Mobile RAT Builder Wings Across China",
+      "url": "https://www.darkreading.com/endpoint-security/flying-eagle-mobile-rat-builder-china",
+      "source": "Dark Reading (보안뉴스 종합) [RSS]",
+      "published": "2026-07-30T00:30:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
