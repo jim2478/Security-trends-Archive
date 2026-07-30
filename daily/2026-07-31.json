@@ -1,0 +1,62 @@
+{
+  "date": "2026-07-31",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 1,
+    "total_articles_max": 1792,
+    "matched_articles_max": 128,
+    "new_alerts": 2,
+    "cve_count": 1,
+    "ioc_count": 0,
+    "merged_count": 0,
+    "unique_cves": [
+      "CVE-2026-42897"
+    ],
+    "keywords_hit": {
+      "CVE": 1,
+      "Malware": 1
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-07-31T00:01:13.650999+09:00",
+      "type": "single",
+      "title": "Laundry Bear’s new Microsoft Exchange attack triggers on email open (CVE-2026-42897)",
+      "url": "https://www.helpnetsecurity.com/2026/07/30/cve-2026-42897-microsoft-exchange-email-attack/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-07-30T14:23:34+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-42897"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-42897",
+          "cvss_score": 8.1,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-79 (XSS)",
+          "description": "Improper neutralization of input during web page generation ('cross-site scripting') in Microsoft Exchange Server allows an unauthorized attacker to perform spoofing over a network.",
+          "epss_score": 0.0564,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-07-31T00:01:13.650999+09:00",
+      "type": "single",
+      "title": "After the Break-In: What Attackers Do Once They're Already Inside",
+      "url": "https://www.bleepingcomputer.com/news/security/after-the-break-in-what-attackers-do-once-theyre-already-inside/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-07-30T14:01:11+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
