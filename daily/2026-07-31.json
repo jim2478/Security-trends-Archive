@@ -2,10 +2,10 @@
   "date": "2026-07-31",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 4,
+    "scan_runs": 5,
     "total_articles_max": 1792,
     "matched_articles_max": 128,
-    "new_alerts": 5,
+    "new_alerts": 6,
     "cve_count": 1,
     "ioc_count": 0,
     "merged_count": 0,
@@ -13,7 +13,7 @@
       "CVE-2026-42897"
     ],
     "keywords_hit": {
-      "Malware": 3,
+      "Malware": 4,
       "CVE": 1,
       "DDoS": 1
     }
@@ -92,6 +92,20 @@
       "type": "single",
       "title": "Claude uploaded malware to PyPI in Anthropic's botched test",
       "url": "https://www.bleepingcomputer.com/news/security/claude-uploaded-malware-to-pypi-in-anthropics-botched-test/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-07-31T00:57:25+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-31T11:00:52.165728+09:00",
+      "type": "single",
+      "title": "Anthropic's Claude breached 3 orgs, uploaded PyPI malware during tests",
+      "url": "https://www.bleepingcomputer.com/news/security/anthropics-claude-breached-3-orgs-uploaded-pypi-malware-during-tests/",
       "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
       "published": "2026-07-31T00:57:25+00:00",
       "keywords": [
