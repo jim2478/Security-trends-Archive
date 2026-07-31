@@ -2,16 +2,16 @@
   "date": "2026-08-01",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 4,
-    "total_articles_max": 1772,
+    "scan_runs": 5,
+    "total_articles_max": 1782,
     "matched_articles_max": 127,
-    "new_alerts": 4,
+    "new_alerts": 5,
     "cve_count": 0,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [],
     "keywords_hit": {
-      "Malware": 4
+      "Malware": 5
     }
   },
   "alerts": [
@@ -64,6 +64,20 @@
       "url": "https://www.bleepingcomputer.com/news/security/arch-linux-disables-aur-package-adoption-to-stop-malware-flood/",
       "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
       "published": "2026-07-31T21:38:08+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-08-01T08:01:08.845777+09:00",
+      "type": "single",
+      "title": "CaptiveCrunch: Midnight Blizzard targets travelers worldwide for malware delivery and credential theft",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/07/31/captivecrunch-midnight-blizzard-targets-travelers-worldwide-for-malware-delivery-and-credential-theft/",
+      "source": "Microsoft Security Blog (보안업데이트) [RSS]",
+      "published": "2026-07-31T21:01:37+00:00",
       "keywords": [
         "Malware"
       ],
