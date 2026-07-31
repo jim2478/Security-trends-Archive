@@ -2,16 +2,16 @@
   "date": "2026-08-01",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
+    "scan_runs": 3,
     "total_articles_max": 1772,
     "matched_articles_max": 127,
-    "new_alerts": 2,
+    "new_alerts": 3,
     "cve_count": 0,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [],
     "keywords_hit": {
-      "Malware": 2
+      "Malware": 3
     }
   },
   "alerts": [
@@ -36,6 +36,20 @@
       "url": "https://www.cybersecurity-insiders.com/does-malware-has-an-expiry-date/",
       "source": "Cybersecurity Insiders (보안인사이트)",
       "published": "2026-07-31T15:24:37+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-08-01T03:01:00.231867+09:00",
+      "type": "single",
+      "title": "HollowFrame Loader Deploys Matryoshka Backdoor in Spear-Phishing Attack on Law Firm",
+      "url": "https://thehackernews.com/2026/07/hollowframe-loader-deploys-matryoshka.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-07-31T16:39:31+00:00",
       "keywords": [
         "Malware"
       ],
