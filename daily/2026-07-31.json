@@ -2,10 +2,10 @@
   "date": "2026-07-31",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
+    "scan_runs": 4,
     "total_articles_max": 1792,
     "matched_articles_max": 128,
-    "new_alerts": 4,
+    "new_alerts": 5,
     "cve_count": 1,
     "ioc_count": 0,
     "merged_count": 0,
@@ -13,7 +13,7 @@
       "CVE-2026-42897"
     ],
     "keywords_hit": {
-      "Malware": 2,
+      "Malware": 3,
       "CVE": 1,
       "DDoS": 1
     }
@@ -80,6 +80,20 @@
       "url": "https://thehackernews.com/2026/07/dprk-linked-macos-malvertising-uses.html",
       "source": "The Hacker News (보안뉴스 종합) [RSS]",
       "published": "2026-07-30T18:18:24+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-31T10:00:55.388521+09:00",
+      "type": "single",
+      "title": "Claude uploaded malware to PyPI in Anthropic's botched test",
+      "url": "https://www.bleepingcomputer.com/news/security/claude-uploaded-malware-to-pypi-in-anthropics-botched-test/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-07-31T00:57:25+00:00",
       "keywords": [
         "Malware"
       ],
