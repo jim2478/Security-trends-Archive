@@ -2,10 +2,10 @@
   "date": "2026-07-31",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 7,
+    "scan_runs": 8,
     "total_articles_max": 1792,
     "matched_articles_max": 128,
-    "new_alerts": 8,
+    "new_alerts": 9,
     "cve_count": 2,
     "ioc_count": 44,
     "merged_count": 0,
@@ -14,7 +14,7 @@
       "CVE-2026-63077"
     ],
     "keywords_hit": {
-      "Malware": 5,
+      "Malware": 6,
       "CVE": 2,
       "DDoS": 1
     }
@@ -153,6 +153,20 @@
         "Malware"
       ],
       "ioc_raw_text": "[IP] 91[.]108[.]106[.]229\n[IP] 95[.]142[.]35[.]34\n[IP] 95[.]142[.]35[.]206\n[IP] 95[.]142[.]37[.]159\n[IP] 151[.]243[.]109[.]188\n[IP] 178[.]208[.]92[.]129\n[IP] 178[.]208[.]92[.]168\n[Domain] accapple[.]ru\n[Domain] adschecks[.]ru\n[Domain] adsmobi[.]ru\n[Domain] adsmorein[.]in\n[Domain] adsmoreme[.]in\n[Domain] amdcdn[.]ru\n[Domain] amznprod[.]in\n[Domain] applecdn[.]ru\n[Domain] appledisk[.]ru\n[Domain] appledns[.]ru\n[Domain] applehosts[.]ru\n[Domain] appletime[.]in\n[Domain] bulksec[.]ru\n[Domain] cdnamz[.]in\n[Domain] cdnamz[.]ru\n[Domain] cdnapple[.]in\n[Domain] cdnatapple[.]ru\n[Domain] cdnroute[.]ru\n[Domain] checkcdn[.]ru\n[Domain] chromeads[.]ru\n[Domain] cnmag[.]ru\n[Domain] devnetaps[.]ru\n[Domain] dnsapple[.]ru\n[Domain] dnsrelays[.]ru\n[Domain] explorecdn[.]ru\n[Domain] fiddlejoy[.]ru\n[Domain] figmacat[.]ru\n[Domain] figmanets[.]in\n[Domain] funchats[.]ru\n[Domain] gironetcdn[.]ru\n[URL] hxxps://amzndev[.]in/d/zw_sfp64\n[URL] hxxps://amzndev[.]ru/d/zw_sfp64\n[URL] hxxps://googlenets[.]ru/d/zw_sfp64\n[URL] hxxps://netcdndev[.]in/d/zw_sfp64\n[URL] hxxps://whitead[.]in/d/zw_sfp64\n[URL] hxxps://whiteads[.]ru/d/zw_sfp64\n[SHA1] 6e480d648fa1b70612f5d198a66875e28847547d",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-07-31T23:01:02.347675+09:00",
+      "type": "single",
+      "title": "Cybercrime goes subscription: AI, malware and infrastructure on demand",
+      "url": "https://www.helpnetsecurity.com/2026/07/31/infoblox-domain-abuse-campaigns-report/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-07-31T13:00:02+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
     }
