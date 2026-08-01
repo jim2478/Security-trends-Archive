@@ -2,16 +2,19 @@
   "date": "2026-08-01",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 5,
+    "scan_runs": 6,
     "total_articles_max": 1782,
     "matched_articles_max": 127,
-    "new_alerts": 5,
-    "cve_count": 0,
+    "new_alerts": 7,
+    "cve_count": 1,
     "ioc_count": 0,
     "merged_count": 0,
-    "unique_cves": [],
+    "unique_cves": [
+      "CVE-2026-48449"
+    ],
     "keywords_hit": {
-      "Malware": 5
+      "Malware": 6,
+      "CVE": 1
     }
   },
   "alerts": [
@@ -78,6 +81,46 @@
       "url": "https://www.microsoft.com/en-us/security/blog/2026/07/31/captivecrunch-midnight-blizzard-targets-travelers-worldwide-for-malware-delivery-and-credential-theft/",
       "source": "Microsoft Security Blog (보안업데이트) [RSS]",
       "published": "2026-07-31T21:01:37+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-08-01T17:01:02.823911+09:00",
+      "type": "single",
+      "title": "Adobe Campaign Classic CVSS 10.0 Flaw Could Run Code Without User Interaction",
+      "url": "https://thehackernews.com/2026/08/adobe-campaign-classic-cvss-100-flaw.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-08-01T07:12:42+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-48449"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-48449",
+          "cvss_score": 10.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-863 (CWE-863)",
+          "description": "Adobe Campaign Classic (ACC) is affected by an Incorrect Authorization vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue does not require user interaction. Scope is changed.",
+          "epss_score": 0.00542,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-08-01T17:01:02.823911+09:00",
+      "type": "single",
+      "title": "Hijacked Hotel Wi-Fi Pushes Fake Updates to Deliver Surveillance Malware",
+      "url": "https://thehackernews.com/2026/08/hijacked-hotel-wi-fi-pushes-fake.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-08-01T06:29:05+00:00",
       "keywords": [
         "Malware"
       ],
