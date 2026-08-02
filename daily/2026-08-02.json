@@ -2,18 +2,18 @@
   "date": "2026-08-02",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 1,
+    "scan_runs": 2,
     "total_articles_max": 1752,
-    "matched_articles_max": 124,
-    "new_alerts": 1,
-    "cve_count": 1,
+    "matched_articles_max": 125,
+    "new_alerts": 2,
+    "cve_count": 2,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2026-66066"
     ],
     "keywords_hit": {
-      "CVE": 1
+      "CVE": 2
     }
   },
   "alerts": [
@@ -24,6 +24,32 @@
       "url": "https://www.dailysecu.com/news/articleView.html?idxno=207874",
       "source": "데일리시큐 (이슈) [RSS]",
       "published": "2026-08-02T04:45:16+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-66066"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-66066",
+          "cvss_score": 9.5,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-1188 (CWE-1188)",
+          "description": "Action Pack is a framework for handling and responding to web requests. In versions prior to 7.2.3.2, 8.0.5.1 and 8.1.3.1, Active Storage does not disable libvips operations marked unsafe for untrusted content, allowing a crafted upload to invoke such an operation. Consuming applications are affected when configured to use libvips and accept image uploads from untrusted users. An unauthenticated attacker may exploit this behavior to read arbitrary files accessible to the Rails process, including",
+          "epss_score": 0.01701,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-08-02T09:01:08.872981+09:00",
+      "type": "single",
+      "title": "루비온레일즈, CVSS 9.5 심각 취약점 패치...업데이트 권고",
+      "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=689076",
+      "source": "디지털투데이 (전체기사) [RSS]",
+      "published": "2026-08-01T22:45:14+00:00",
       "keywords": [
         "CVE"
       ],
