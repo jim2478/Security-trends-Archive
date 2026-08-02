@@ -1,0 +1,33 @@
+{
+  "date": "2026-08-03",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 1,
+    "total_articles_max": 1782,
+    "matched_articles_max": 129,
+    "new_alerts": 1,
+    "cve_count": 0,
+    "ioc_count": 0,
+    "merged_count": 0,
+    "unique_cves": [],
+    "keywords_hit": {
+      "DDoS": 1
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-08-03T06:01:02.166666+09:00",
+      "type": "single",
+      "title": "상반기 사이버 침해사고 1,236건…DDoS 56.7%·랜섬웨어 76.8% 급증",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=207881",
+      "source": "데일리시큐 (이슈) [RSS]",
+      "published": "2026-08-03T05:43:34+00:00",
+      "keywords": [
+        "DDoS"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
