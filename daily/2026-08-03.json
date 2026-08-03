@@ -2,16 +2,17 @@
   "date": "2026-08-03",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 1,
+    "scan_runs": 2,
     "total_articles_max": 1782,
     "matched_articles_max": 129,
-    "new_alerts": 1,
+    "new_alerts": 2,
     "cve_count": 0,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [],
     "keywords_hit": {
-      "DDoS": 1
+      "DDoS": 1,
+      "Malware": 1
     }
   },
   "alerts": [
@@ -24,6 +25,20 @@
       "published": "2026-08-03T05:43:34+00:00",
       "keywords": [
         "DDoS"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-08-03T13:00:57.506742+09:00",
+      "type": "single",
+      "title": "Buying TikTok followers can expose users to scams and account theft",
+      "url": "https://www.helpnetsecurity.com/2026/08/03/malwarebytes-tiktok-followers-scam-risks-report/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-08-03T04:00:04+00:00",
+      "keywords": [
+        "Malware"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
