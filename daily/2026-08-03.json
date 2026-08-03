@@ -2,20 +2,23 @@
   "date": "2026-08-03",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 4,
+    "scan_runs": 5,
     "total_articles_max": 1782,
     "matched_articles_max": 129,
-    "new_alerts": 4,
-    "cve_count": 1,
+    "new_alerts": 6,
+    "cve_count": 2,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
+      "CVE-2026-17583",
       "CVE-2026-18577"
     ],
     "keywords_hit": {
       "Malware": 2,
-      "DDoS": 1,
-      "CVE": 1
+      "DDoS": 2,
+      "CVE": 2,
+      "Botnet": 1,
+      "봇넷": 1
     }
   },
   "alerts": [
@@ -86,6 +89,48 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-08-03T18:03:00.812399+09:00",
+      "type": "single",
+      "title": "Thermo Fisher Patches Flaw That Could Make DNA File Tampering Nearly Undetectable",
+      "url": "https://thehackernews.com/2026/08/thermo-fisher-patches-flaw-that-could.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-08-03T08:05:30+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-17583"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-17583",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-08-03T18:03:00.812399+09:00",
+      "type": "single",
+      "title": "유럽 진출 위해 꼭 알아야 할 사이버 보안법 ‘EU CRA’ 톺아보기",
+      "url": "http://www.boannews.com/media/view.asp?idx=144902&kind=&sub_kind=",
+      "source": "보안뉴스 (전체) [RSS]",
+      "published": "2026-08-03T08:00:00+00:00",
+      "keywords": [
+        "DDoS",
+        "Botnet",
+        "봇넷"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
