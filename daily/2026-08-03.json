@@ -2,21 +2,22 @@
   "date": "2026-08-03",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 5,
+    "scan_runs": 6,
     "total_articles_max": 1782,
     "matched_articles_max": 129,
-    "new_alerts": 6,
-    "cve_count": 2,
+    "new_alerts": 7,
+    "cve_count": 3,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2026-17583",
-      "CVE-2026-18577"
+      "CVE-2026-18577",
+      "CVE-2026-66066"
     ],
     "keywords_hit": {
+      "CVE": 3,
       "Malware": 2,
       "DDoS": 2,
-      "CVE": 2,
       "Botnet": 1,
       "봇넷": 1
     }
@@ -131,6 +132,32 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-08-03T21:03:08.986180+09:00",
+      "type": "single",
+      "title": "KindaRails2Shell threatens Ruby on Rails apps (CVE-2026-66066)",
+      "url": "https://www.helpnetsecurity.com/2026/08/03/kindarails2shell-cve-2026-66066-vulnerability/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-08-03T11:42:08+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-66066"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-66066",
+          "cvss_score": 9.5,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-1188 (CWE-1188)",
+          "description": "Action Pack is a framework for handling and responding to web requests. In versions prior to 7.2.3.2, 8.0.5.1 and 8.1.3.1, Active Storage does not disable libvips operations marked unsafe for untrusted content, allowing a crafted upload to invoke such an operation. Consuming applications are affected when configured to use libvips and accept image uploads from untrusted users. An unauthenticated attacker may exploit this behavior to read arbitrary files accessible to the Rails process, including",
+          "epss_score": 0.01701,
+          "kev": false
+        }
+      ]
     }
   ]
 }
