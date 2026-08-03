@@ -2,17 +2,17 @@
   "date": "2026-08-03",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
+    "scan_runs": 3,
     "total_articles_max": 1782,
     "matched_articles_max": 129,
-    "new_alerts": 2,
+    "new_alerts": 3,
     "cve_count": 0,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [],
     "keywords_hit": {
-      "DDoS": 1,
-      "Malware": 1
+      "Malware": 2,
+      "DDoS": 1
     }
   },
   "alerts": [
@@ -37,6 +37,20 @@
       "url": "https://www.helpnetsecurity.com/2026/08/03/malwarebytes-tiktok-followers-scam-risks-report/",
       "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
       "published": "2026-08-03T04:00:04+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-08-03T16:01:11.950156+09:00",
+      "type": "single",
+      "title": "Mapping the malware blast radius a single alert won’t show you",
+      "url": "https://www.helpnetsecurity.com/2026/08/03/mike-wiacek-stairwell-backstory-malware-blast-radius/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-08-03T06:00:24+00:00",
       "keywords": [
         "Malware"
       ],
