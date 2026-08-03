@@ -2,16 +2,16 @@
   "date": "2026-08-04",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
+    "scan_runs": 3,
     "total_articles_max": 1762,
     "matched_articles_max": 133,
-    "new_alerts": 2,
+    "new_alerts": 3,
     "cve_count": 0,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [],
     "keywords_hit": {
-      "Malware": 1,
+      "Malware": 2,
       "CVE": 1
     }
   },
@@ -39,6 +39,20 @@
       "published": "2026-08-03T15:45:19+00:00",
       "keywords": [
         "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-08-04T02:01:10.888926+09:00",
+      "type": "single",
+      "title": "Google Password Manager Attacks Could Let Malware Hijack Passkey-Protected Accounts",
+      "url": "https://thehackernews.com/2026/08/google-password-manager-attacks-could.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-08-03T16:24:47+00:00",
+      "keywords": [
+        "Malware"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
