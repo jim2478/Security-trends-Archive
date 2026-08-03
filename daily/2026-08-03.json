@@ -2,21 +2,24 @@
   "date": "2026-08-03",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 6,
+    "scan_runs": 7,
     "total_articles_max": 1782,
-    "matched_articles_max": 129,
-    "new_alerts": 7,
-    "cve_count": 3,
+    "matched_articles_max": 132,
+    "new_alerts": 10,
+    "cve_count": 7,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
+      "CVE-2025-8875",
+      "CVE-2025-8876",
       "CVE-2026-17583",
+      "CVE-2026-18556",
       "CVE-2026-18577",
       "CVE-2026-66066"
     ],
     "keywords_hit": {
-      "CVE": 3,
-      "Malware": 2,
+      "CVE": 5,
+      "Malware": 3,
       "DDoS": 2,
       "Botnet": 1,
       "봇넷": 1
@@ -158,6 +161,90 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-08-03T22:01:29.806972+09:00",
+      "type": "single",
+      "title": "N‑able Patches Vulnerability Exploited to Hack N-central Servers",
+      "url": "https://www.securityweek.com/n-able-patches-vulnerability-exploited-to-hack-n-central-servers/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-08-03T12:34:06+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2025-8875",
+        "CVE-2025-8876",
+        "CVE-2026-18556",
+        "CVE-2026-18577"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2025-8875",
+          "cvss_score": 9.4,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-502 (Deserialization)",
+          "description": "Deserialization of Untrusted Data vulnerability in N-able N-central allows Local Execution of Code.This issue affects N-central: before 2025.3.1.",
+          "epss_score": 0.01588,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2025-8876",
+          "cvss_score": 9.4,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-20 (Improper Input Validation)",
+          "description": "Improper Input Validation vulnerability in N-able N-central allows OS Command Injection.This issue affects N-central: before 2025.3.1.",
+          "epss_score": 0.03092,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-18556",
+          "cvss_score": 8.2,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-288 (CWE-288)",
+          "description": "Authentication bypass using an alternate path or channel vulnerability in N-able N-central allows Authentication Bypass.\n\nThis issue affects N-central: through 2026.1.",
+          "epss_score": 0.0027,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-18577",
+          "cvss_score": 8.2,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-288 (CWE-288)",
+          "description": "An incomplete patch for CVE-2026-18556 allows for authentication bypass and account takeover in N-central Versions through 2026.3.1",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-08-03T22:01:29.806972+09:00",
+      "type": "single",
+      "title": "Russian hackers hijack hotel Wi-Fi networks to spy on travelers, Microsoft says",
+      "url": "https://therecord.media/russian-wifi-hackers-hotels",
+      "source": "The Record by Recorded Future (위협뉴스) [RSS]",
+      "published": "2026-08-03T12:00:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-08-03T22:01:29.806972+09:00",
+      "type": "single",
+      "title": "Say Hello to Agent Insta: Closing the Detection Gap in Exposure Management at Machine Speed",
+      "url": "https://blog.qualys.com/category/product-tech",
+      "source": "Qualys Blog (취약점관리) [RSS]",
+      "published": "2026-08-03T12:45:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
