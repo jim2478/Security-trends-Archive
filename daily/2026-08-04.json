@@ -2,16 +2,16 @@
   "date": "2026-08-04",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
+    "scan_runs": 4,
     "total_articles_max": 1762,
     "matched_articles_max": 133,
-    "new_alerts": 3,
+    "new_alerts": 4,
     "cve_count": 0,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [],
     "keywords_hit": {
-      "Malware": 2,
+      "Malware": 3,
       "CVE": 1
     }
   },
@@ -51,6 +51,20 @@
       "url": "https://thehackernews.com/2026/08/google-password-manager-attacks-could.html",
       "source": "The Hacker News (보안뉴스 종합) [RSS]",
       "published": "2026-08-03T16:24:47+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-08-04T05:03:17.163189+09:00",
+      "type": "single",
+      "title": "Fake Roblox Xeno script launcher pushes infostealer, RAT malware",
+      "url": "https://www.bleepingcomputer.com/news/security/fake-roblox-xeno-script-launcher-pushes-infostealer-rat-malware/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-08-03T19:25:10+00:00",
       "keywords": [
         "Malware"
       ],
