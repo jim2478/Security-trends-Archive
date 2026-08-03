@@ -2,17 +2,20 @@
   "date": "2026-08-04",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 5,
+    "scan_runs": 6,
     "total_articles_max": 1762,
     "matched_articles_max": 133,
-    "new_alerts": 5,
-    "cve_count": 0,
+    "new_alerts": 6,
+    "cve_count": 2,
     "ioc_count": 0,
     "merged_count": 0,
-    "unique_cves": [],
+    "unique_cves": [
+      "CVE-2026-18556",
+      "CVE-2026-18577"
+    ],
     "keywords_hit": {
       "Malware": 4,
-      "CVE": 1
+      "CVE": 2
     }
   },
   "alerts": [
@@ -85,6 +88,42 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-08-04T07:01:01.123644+09:00",
+      "type": "single",
+      "title": "Attackers Exploit N-able Patch Bypass Flaw on RMM Servers",
+      "url": "https://www.darkreading.com/vulnerabilities-threats/attackers-exploit-n-able-patch-bypass-flaw",
+      "source": "Dark Reading (보안뉴스 종합) [RSS]",
+      "published": "2026-08-03T21:21:11+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-18556",
+        "CVE-2026-18577"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-18556",
+          "cvss_score": 8.2,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-288 (CWE-288)",
+          "description": "Authentication bypass using an alternate path or channel vulnerability in N-able N-central allows Authentication Bypass.\n\nThis issue affects N-central: through 2026.1.",
+          "epss_score": 0.0027,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-18577",
+          "cvss_score": 8.2,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-288 (CWE-288)",
+          "description": "An incomplete patch for CVE-2026-18556 allows for authentication bypass and account takeover in N-central Versions through 2026.3.1",
+          "epss_score": 0.01477,
+          "kev": true
+        }
+      ]
     }
   ]
 }
