@@ -2,16 +2,16 @@
   "date": "2026-08-04",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 4,
+    "scan_runs": 5,
     "total_articles_max": 1762,
     "matched_articles_max": 133,
-    "new_alerts": 4,
+    "new_alerts": 5,
     "cve_count": 0,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [],
     "keywords_hit": {
-      "Malware": 3,
+      "Malware": 4,
       "CVE": 1
     }
   },
@@ -65,6 +65,20 @@
       "url": "https://www.bleepingcomputer.com/news/security/fake-roblox-xeno-script-launcher-pushes-infostealer-rat-malware/",
       "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
       "published": "2026-08-03T19:25:10+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-08-04T06:01:11.201841+09:00",
+      "type": "single",
+      "title": "New DOUBLECUP ClickFix service hides malware in browser cache images",
+      "url": "https://www.bleepingcomputer.com/news/security/new-doublecup-clickfix-service-hides-malware-in-browser-cache-images/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-08-03T20:01:22+00:00",
       "keywords": [
         "Malware"
       ],
