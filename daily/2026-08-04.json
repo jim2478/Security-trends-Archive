@@ -2,20 +2,22 @@
   "date": "2026-08-04",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 11,
+    "scan_runs": 12,
     "total_articles_max": 1762,
     "matched_articles_max": 134,
-    "new_alerts": 11,
-    "cve_count": 4,
+    "new_alerts": 13,
+    "cve_count": 6,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
+      "CVE-2026-17583",
       "CVE-2026-18556",
-      "CVE-2026-18577"
+      "CVE-2026-18577",
+      "CVE-2026-58048"
     ],
     "keywords_hit": {
       "Malware": 8,
-      "CVE": 3
+      "CVE": 5
     }
   },
   "alerts": [
@@ -216,6 +218,58 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-08-04T21:01:22.085366+09:00",
+      "type": "single",
+      "title": "New cPanel Critical Flaw Could Let Hosting Customers Run SQL as Database Root",
+      "url": "https://thehackernews.com/2026/08/new-cpanel-critical-flaw-could-let.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-08-04T10:36:27+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-58048"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-58048",
+          "cvss_score": 9.4,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-89 (SQL Injection)",
+          "description": "Improper preservation of SQL mode when renaming databases in  cPanel allows execution of SQL in root context.",
+          "epss_score": 0.00503,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-08-04T21:01:22.085366+09:00",
+      "type": "single",
+      "title": "Thermo Fisher Patches Forensic DNA File Tampering Flaw in Its Software",
+      "url": "https://hackread.com/thermo-fisher-forensic-dna-file-tampering-flaw/",
+      "source": "HackRead (해킹/데이터유출) [RSS]",
+      "published": "2026-08-04T11:34:47+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-17583"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-17583",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
     }
   ]
 }
