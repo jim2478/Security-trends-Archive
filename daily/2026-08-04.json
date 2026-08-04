@@ -2,10 +2,10 @@
   "date": "2026-08-04",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 6,
+    "scan_runs": 7,
     "total_articles_max": 1762,
-    "matched_articles_max": 133,
-    "new_alerts": 6,
+    "matched_articles_max": 134,
+    "new_alerts": 7,
     "cve_count": 2,
     "ioc_count": 0,
     "merged_count": 0,
@@ -14,7 +14,7 @@
       "CVE-2026-18577"
     ],
     "keywords_hit": {
-      "Malware": 4,
+      "Malware": 5,
       "CVE": 2
     }
   },
@@ -124,6 +124,20 @@
           "kev": true
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-08-04T09:01:01.697008+09:00",
+      "type": "single",
+      "title": "New Pass-ta-key attacks let malware hijack Google-synced passkeys",
+      "url": "https://www.bleepingcomputer.com/news/security/new-pass-ta-key-attacks-let-malware-hijack-google-synced-passkeys/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-08-03T23:58:01+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
