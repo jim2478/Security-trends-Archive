@@ -2,11 +2,11 @@
   "date": "2026-08-04",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 9,
+    "scan_runs": 10,
     "total_articles_max": 1762,
     "matched_articles_max": 134,
-    "new_alerts": 9,
-    "cve_count": 2,
+    "new_alerts": 10,
+    "cve_count": 4,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -15,7 +15,7 @@
     ],
     "keywords_hit": {
       "Malware": 7,
-      "CVE": 2
+      "CVE": 3
     }
   },
   "alerts": [
@@ -166,6 +166,42 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-08-04T17:01:03.377259+09:00",
+      "type": "single",
+      "title": "CISA Adds Exploited N-able N-central Flaw to KEV After Customer Compromises",
+      "url": "https://thehackernews.com/2026/08/cisa-adds-exploited-n-able-n-central.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-08-04T07:00:13+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-18556",
+        "CVE-2026-18577"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-18556",
+          "cvss_score": 8.2,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-288 (CWE-288)",
+          "description": "Authentication bypass using an alternate path or channel vulnerability in N-able N-central allows Authentication Bypass.\n\nThis issue affects N-central: through 2026.1.",
+          "epss_score": 0.0027,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-18577",
+          "cvss_score": 8.2,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-288 (CWE-288)",
+          "description": "An incomplete patch for CVE-2026-18556 allows for authentication bypass and account takeover in N-central Versions through 2026.3.1",
+          "epss_score": 0.01477,
+          "kev": true
+        }
+      ]
     }
   ]
 }
