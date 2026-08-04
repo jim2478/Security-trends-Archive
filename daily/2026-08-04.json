@@ -2,10 +2,10 @@
   "date": "2026-08-04",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 13,
+    "scan_runs": 14,
     "total_articles_max": 1762,
     "matched_articles_max": 134,
-    "new_alerts": 16,
+    "new_alerts": 17,
     "cve_count": 6,
     "ioc_count": 15,
     "merged_count": 0,
@@ -17,7 +17,8 @@
     ],
     "keywords_hit": {
       "Malware": 10,
-      "CVE": 7
+      "CVE": 7,
+      "Botnet": 1
     }
   },
   "alerts": [
@@ -309,6 +310,20 @@
       "published": "2026-08-04T08:09:35+00:00",
       "keywords": [
         "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-08-04T23:01:13.666263+09:00",
+      "type": "single",
+      "title": "Botnet Hunting for Vulnerabilities in Diagnostic Tools, (Tue, Aug 4th)",
+      "url": "https://isc.sans.edu/diary/rss/33214",
+      "source": "SANS ISC (인터넷폭풍센터) [RSS]",
+      "published": "2026-08-04T12:46:19+00:00",
+      "keywords": [
+        "Botnet"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
