@@ -2,10 +2,10 @@
   "date": "2026-08-04",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 10,
+    "scan_runs": 11,
     "total_articles_max": 1762,
     "matched_articles_max": 134,
-    "new_alerts": 10,
+    "new_alerts": 11,
     "cve_count": 4,
     "ioc_count": 0,
     "merged_count": 0,
@@ -14,7 +14,7 @@
       "CVE-2026-18577"
     ],
     "keywords_hit": {
-      "Malware": 7,
+      "Malware": 8,
       "CVE": 3
     }
   },
@@ -202,6 +202,20 @@
           "kev": true
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-08-04T20:03:07.360819+09:00",
+      "type": "single",
+      "title": "DOUBLECUP Uses ClickFix and Cached PNGs to Deliver CountLoader and DeviceManager RAT",
+      "url": "https://thehackernews.com/2026/08/doublecup-uses-clickfix-and-cached-pngs.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-08-04T09:03:23+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
