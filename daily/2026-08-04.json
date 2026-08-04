@@ -2,10 +2,10 @@
   "date": "2026-08-04",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 8,
+    "scan_runs": 9,
     "total_articles_max": 1762,
     "matched_articles_max": 134,
-    "new_alerts": 8,
+    "new_alerts": 9,
     "cve_count": 2,
     "ioc_count": 0,
     "merged_count": 0,
@@ -14,7 +14,7 @@
       "CVE-2026-18577"
     ],
     "keywords_hit": {
-      "Malware": 6,
+      "Malware": 7,
       "CVE": 2
     }
   },
@@ -146,6 +146,20 @@
       "url": "https://www.bleepingcomputer.com/news/security/hotel-wi-fi-attacks-use-custom-malware-to-breach-microsoft-365-accounts/",
       "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
       "published": "2026-08-04T00:17:15+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-08-04T16:01:09.386436+09:00",
+      "type": "single",
+      "title": "Digital executive protection is a strategic imperative for CEOs",
+      "url": "https://www.helpnetsecurity.com/2026/08/04/brian-hill-blackcloak-digital-executive-protection/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-08-04T06:00:50+00:00",
       "keywords": [
         "Malware"
       ],
