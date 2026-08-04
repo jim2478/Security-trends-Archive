@@ -2,12 +2,12 @@
   "date": "2026-08-04",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 12,
+    "scan_runs": 13,
     "total_articles_max": 1762,
     "matched_articles_max": 134,
-    "new_alerts": 13,
+    "new_alerts": 16,
     "cve_count": 6,
-    "ioc_count": 0,
+    "ioc_count": 15,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2026-17583",
@@ -16,8 +16,8 @@
       "CVE-2026-58048"
     ],
     "keywords_hit": {
-      "Malware": 8,
-      "CVE": 5
+      "Malware": 10,
+      "CVE": 7
     }
   },
   "alerts": [
@@ -270,6 +270,49 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-08-04T22:01:17.497700+09:00",
+      "type": "single",
+      "title": "RapidFort Runtime brings continuous CVE monitoring and tamper detection",
+      "url": "https://www.helpnetsecurity.com/2026/08/04/rapidfort-runtime/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-08-04T12:55:56+00:00",
+      "keywords": [
+        "CVE",
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-08-04T22:01:17.497700+09:00",
+      "type": "single",
+      "title": "Almost Half of Malware Samples Communicate Direct to IP",
+      "url": "https://unit42.paloaltonetworks.com/malware-bypass-dns-direct-to-ip/",
+      "source": "Palo Alto Unit42 (위협리서치) [RSS]",
+      "published": "2026-08-04T12:50:53+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "[IP] 2[.]26[.]98[.]67\n[IP] 62[.]60[.]179[.]230\n[IP] 87[.]120[.]107[.]33\n[IP] 91[.]92[.]243[.]29\n[IP] 103[.]245[.]236[.]146\n[IP] 178[.]16[.]54[.]31\n[IP] 178[.]16[.]54[.]109\n[IP] 194[.]76[.]227[.]94\n[IP] 206[.]189[.]229[.]43\n[SHA256] 01a96eeafb72042b3f69afd21b4c9155dbfe7f97ab3dca392972ad531a075ac2\n[SHA256] 9639f7ebc6a6d69d7bf5b8bc869e7783a1406088f192868624ad8919e9bfd1d4\n[SHA256] bf24277400cc453d530e4277d3bd24e96c5e409adef6970518bdc59205aa0241\n[SHA256] e310476c41ae4f6e3c4ed9bb88303ee6e5e1455bd7afe51cf48965ea7599e6e5\n[SHA256] e3513922666c202c1ae5c06eea277ba10477868d6d89ce2819f4f8ff9070bc85\n[SHA256] e5715e6611ef6bcb233f5d2098510dab3db408abbb728b00e1821bb255829373",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-08-04T22:01:17.497700+09:00",
+      "type": "single",
+      "title": "AI slop infiltrates the CVE system",
+      "url": "https://cybernews.com/ai-news/ai-slop-infiltrates-the-cve-system/",
+      "source": "CyberNews [RSS]",
+      "published": "2026-08-04T08:09:35+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
