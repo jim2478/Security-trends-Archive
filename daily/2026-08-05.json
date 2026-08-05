@@ -2,16 +2,17 @@
   "date": "2026-08-05",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
+    "scan_runs": 3,
     "total_articles_max": 1762,
     "matched_articles_max": 133,
-    "new_alerts": 2,
+    "new_alerts": 3,
     "cve_count": 0,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [],
     "keywords_hit": {
-      "Malware": 2
+      "Malware": 2,
+      "봇넷": 1
     }
   },
   "alerts": [
@@ -38,6 +39,20 @@
       "published": "2026-08-04T19:03:09+00:00",
       "keywords": [
         "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-08-05T10:01:00.623383+09:00",
+      "type": "single",
+      "title": "[카드뉴스] “충전기 꽂자 도시 전체 정전?”… 전기차 충전망(OCPP) 뚫려 전력망 마비되는 실체",
+      "url": "http://www.boannews.com/media/view.asp?idx=145023&kind=&sub_kind=",
+      "source": "보안뉴스 (전체) [RSS]",
+      "published": "2026-08-05T00:45:00+00:00",
+      "keywords": [
+        "봇넷"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
