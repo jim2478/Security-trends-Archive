@@ -1,0 +1,48 @@
+{
+  "date": "2026-08-06",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 1,
+    "total_articles_max": 1762,
+    "matched_articles_max": 135,
+    "new_alerts": 2,
+    "cve_count": 0,
+    "ioc_count": 0,
+    "merged_count": 0,
+    "unique_cves": [],
+    "keywords_hit": {
+      "DDoS": 1,
+      "Malware": 1
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-08-06T00:01:09.222334+09:00",
+      "type": "single",
+      "title": "“I’m Allowed”: Hackers Use Simple Claims to Bypass AI Guardrails",
+      "url": "https://hackread.com/im-allowed-hackers-use-claims-bypass-ai-guardrails/",
+      "source": "HackRead (해킹/데이터유출) [RSS]",
+      "published": "2026-08-05T14:35:37+00:00",
+      "keywords": [
+        "DDoS"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-08-06T00:01:09.222334+09:00",
+      "type": "single",
+      "title": "Google Blogger locks hundreds of blogs in malware false positive",
+      "url": "https://www.bleepingcomputer.com/news/google/google-blogger-locks-hundreds-of-blogs-in-malware-false-positive/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-08-05T14:59:29+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
