@@ -2,17 +2,20 @@
   "date": "2026-08-05",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
+    "scan_runs": 4,
     "total_articles_max": 1762,
     "matched_articles_max": 133,
-    "new_alerts": 3,
-    "cve_count": 0,
+    "new_alerts": 6,
+    "cve_count": 1,
     "ioc_count": 0,
     "merged_count": 0,
-    "unique_cves": [],
+    "unique_cves": [
+      "CVE-2026-9198"
+    ],
     "keywords_hit": {
-      "Malware": 2,
-      "봇넷": 1
+      "Malware": 4,
+      "봇넷": 1,
+      "CVE": 1
     }
   },
   "alerts": [
@@ -53,6 +56,60 @@
       "published": "2026-08-05T00:45:00+00:00",
       "keywords": [
         "봇넷"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-08-05T18:01:17.599302+09:00",
+      "type": "single",
+      "title": "CISA Flags Langflow RCE, Tomcat, and N-central Flaws as Actively Exploited",
+      "url": "https://thehackernews.com/2026/08/cisa-flags-langflow-rce-tomcat-and-n.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-08-05T07:40:39+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-9198"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-9198",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-94 (Code Injection)",
+          "description": "IBM Langflow OSS 1.0.0 through 1.10.0 allows unauthenticated attackers to chain /api/v1/auto_login (mints SUPERUSER tokens to any network caller) with /api/v1/validate/code (executes user code via exec()) to achieve full RCE on default Langflow deployments",
+          "epss_score": 0.01886,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-08-05T18:01:17.599302+09:00",
+      "type": "single",
+      "title": "Over 400 NPM Packages Infected in ChainDrop Supply Chain Attack",
+      "url": "https://www.securityweek.com/over-400-npm-packages-infected-in-chaindrop-supply-chain-attack/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-08-05T08:56:58+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-08-05T18:01:17.599302+09:00",
+      "type": "single",
+      "title": "Claude Mythos 5 Tried to Backdoor a Real Open-Source Project in Testing, Then Vouched for Itself",
+      "url": "https://thehackernews.com/2026/08/claude-mythos-5-tried-to-backdoor-real.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-08-05T07:53:50+00:00",
+      "keywords": [
+        "Malware"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
