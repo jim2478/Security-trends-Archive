@@ -2,20 +2,21 @@
   "date": "2026-08-05",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 4,
+    "scan_runs": 5,
     "total_articles_max": 1762,
     "matched_articles_max": 133,
-    "new_alerts": 6,
-    "cve_count": 1,
+    "new_alerts": 7,
+    "cve_count": 2,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
+      "CVE-2026-59774",
       "CVE-2026-9198"
     ],
     "keywords_hit": {
       "Malware": 4,
-      "봇넷": 1,
-      "CVE": 1
+      "CVE": 2,
+      "봇넷": 1
     }
   },
   "alerts": [
@@ -114,6 +115,32 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-08-05T21:01:13.973371+09:00",
+      "type": "single",
+      "title": "Critical Gitea Flaw Let Unauthenticated Attackers Read Server Files via Org-Mode Markup",
+      "url": "https://thehackernews.com/2026/08/critical-gitea-flaw-let-unauthenticated.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-08-05T11:04:23+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-59774"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-59774",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
     }
   ]
 }
