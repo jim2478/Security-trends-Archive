@@ -2,21 +2,22 @@
   "date": "2026-08-06",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
+    "scan_runs": 4,
     "total_articles_max": 1762,
     "matched_articles_max": 135,
-    "new_alerts": 4,
-    "cve_count": 2,
+    "new_alerts": 6,
+    "cve_count": 5,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2026-29146",
-      "CVE-2026-34486"
+      "CVE-2026-34486",
+      "CVE-2026-63077"
     ],
     "keywords_hit": {
+      "CVE": 3,
       "Malware": 2,
-      "DDoS": 1,
-      "CVE": 1
+      "DDoS": 1
     }
   },
   "alerts": [
@@ -66,6 +67,68 @@
       "scan_time_kst": "2026-08-06T12:01:03.502155+09:00",
       "type": "single",
       "title": "아파치 톰캣 암호화 우회 취약점 비상... CISA, KEV 긴급 등재",
+      "url": "http://www.boannews.com/media/view.asp?idx=145039&kind=&sub_kind=",
+      "source": "보안뉴스 (전체) [RSS]",
+      "published": "2026-08-06T02:16:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-29146",
+        "CVE-2026-34486"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-29146",
+          "cvss_score": 7.5,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-209 (CWE-209)",
+          "description": "Padding Oracle vulnerability in Apache Tomcat's EncryptInterceptor with default configuration.\n\nThis issue affects Apache Tomcat: from 11.0.0-M1 through 11.0.18, from 10.0.0-M1 through 10.1.52, from 9.0.13 through 9..115, from 8.5.38 through 8.5.100, from 7.0.100 through 7.0.109.\n\nUsers are recommended to upgrade to version 11.0.19, 10.1.53 and 9.0.116, which fixes the issue.",
+          "epss_score": 0.06258,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-34486",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-311 (CWE-311)",
+          "description": "Missing Encryption of Sensitive Data vulnerability in Apache Tomcat due to the fix for CVE-2026-29146 allowing the bypass of the EncryptInterceptor.\n\nThis issue affects Apache Tomcat: 11.0.20, 10.1.53, 9.0.116.\n\nUsers are recommended to upgrade to version 11.0.21, 10.1.54 or 9.0.117, which fix the issue.",
+          "epss_score": 0.8116,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-08-06T16:03:26.757763+09:00",
+      "type": "single",
+      "title": "Hackers Start Exploiting Recent JetBrains TeamCity Vulnerability",
+      "url": "https://www.securityweek.com/hackers-start-exploiting-recent-jetbrains-teamcity-vulnerability/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-08-06T06:37:44+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-63077"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-63077",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-502 (Deserialization)",
+          "description": "In JetBrains TeamCity before 2026.1.3, 2025.11.7 unauthenticated remote code execution was possible via the agent polling protocol",
+          "epss_score": 0.00649,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-08-06T16:03:26.757763+09:00",
+      "type": "single",
+      "title": "žĆĆÄÄĄ ĹčÄš žĎČŁČ­ żěČ¸ ĂëžŕÁĄ şńťó... CISA, KEV ąäąŢ ľîŔç",
       "url": "http://www.boannews.com/media/view.asp?idx=145039&kind=&sub_kind=",
       "source": "보안뉴스 (전체) [RSS]",
       "published": "2026-08-06T02:16:00+00:00",
