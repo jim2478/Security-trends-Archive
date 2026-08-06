@@ -2,20 +2,22 @@
   "date": "2026-08-06",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 5,
+    "scan_runs": 6,
     "total_articles_max": 1762,
     "matched_articles_max": 135,
-    "new_alerts": 7,
-    "cve_count": 6,
+    "new_alerts": 8,
+    "cve_count": 8,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
+      "CVE-2026-20200",
+      "CVE-2026-20272",
       "CVE-2026-29146",
       "CVE-2026-34486",
       "CVE-2026-63077"
     ],
     "keywords_hit": {
-      "CVE": 4,
+      "CVE": 5,
       "Malware": 2,
       "DDoS": 1
     }
@@ -184,6 +186,42 @@
           "description": "In JetBrains TeamCity before 2026.1.3, 2025.11.7 unauthenticated remote code execution was possible via the agent polling protocol",
           "epss_score": 0.00649,
           "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-08-06T20:01:07.369156+09:00",
+      "type": "single",
+      "title": "Critical Cisco IMC bug gives attackers root, PoC is out (CVE-2026-20200)",
+      "url": "https://www.helpnetsecurity.com/2026/08/06/cisco-imc-cve-2026-20200-public-poc-exploit/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-08-06T10:38:43+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-20200",
+        "CVE-2026-20272"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-20200",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-141 (CWE-141)",
+          "description": "A vulnerability in the web-based management interface of Cisco IMC could allow an authenticated, remote attacker with low privileges to execute arbitrary commands on the underlying operating system of an affected system and elevate privileges to root.&nbsp;\r\n\r\nThis vulnerability is due to improper validation of user-supplied input. An attacker could exploit this vulnerability by entering crafted inputs to the web-based management interface of the affected software. A successful exploit could all",
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-20272",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-74 (CWE-74)",
+          "description": "As part of Cisco's ongoing commitment to proactive security and product quality, the Cisco IOS XE Software engineering team has conducted a comprehensive internal security review. This review resulted in software hardening releases that address multiple internally discovered vulnerabilities.\r\n\r\nThe vulnerabilities tracked by CVE-2026-20272 are related to issues with improper neutralization of special elements that are grouped under the Common Weakness Enumeration (CWE) Pillar CWE-74.",
+          "epss_score": null,
+          "kev": false
         }
       ]
     }
