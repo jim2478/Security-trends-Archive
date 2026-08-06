@@ -1,0 +1,103 @@
+{
+  "date": "2026-08-07",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 1,
+    "total_articles_max": 1752,
+    "matched_articles_max": 116,
+    "new_alerts": 4,
+    "cve_count": 2,
+    "ioc_count": 0,
+    "merged_count": 0,
+    "unique_cves": [
+      "CVE-2026-15013",
+      "CVE-2026-64561"
+    ],
+    "keywords_hit": {
+      "CVE": 3,
+      "Malware": 1
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-08-07T08:27:06.226988+09:00",
+      "type": "single",
+      "title": "New Zapscape KVM Flaw Could Let Privileged L1 Guest Code Escape to Linux Hosts",
+      "url": "https://thehackernews.com/2026/08/new-zapscape-kvm-flaw-could-let.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-08-06T17:58:30+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-64561"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-64561",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nKVM: x86: Check for invalid/obsolete root *after* making MMU pages available\n\nCheck for a \"stale\" page fault, i.e. for an invalid and/or obsolete root,\nafter making MMU pages available for the shadow MMU.  If reclaiming shadow\npages zaps an in-use root, i.e. marks it invalid, then KVM will attempt to\nmap memory into an invalid root.  On its own, populating an invalid root is\n\"fine\", but because child shadow pages inherit their ",
+          "epss_score": 0.00157,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-08-07T08:27:06.226988+09:00",
+      "type": "single",
+      "title": "CVE-2026-15013 – miniOrange SAML SSO <= 5.4.3 Unauthenticated Authentication Bypass (PoC)",
+      "url": "https://seclists.org/fulldisclosure/2026/Aug/33",
+      "source": "SecLists Full Disclosure (취약점공개)",
+      "published": "2026-08-06T19:36:09+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-15013"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-15013",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-347 (CWE-347)",
+          "description": "The SAML Single Sign On – SSO Login plugin for WordPress is vulnerable to Authentication Bypass via SAML Signature Algorithm Confusion in all versions up to, and including, 5.4.3. The vulnerability exists because `Mo_SAML_Utilities::mo_saml_cast_key()` reads the `SignatureMethod` Algorithm attribute directly from the attacker-controlled `SAMLResponse` parameter rather than enforcing the locally configured algorithm, causing the plugin to recast the IdP's RSA public key as an HMAC-SHA1 shared sec",
+          "epss_score": 0.00438,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-08-07T08:27:06.226988+09:00",
+      "type": "single",
+      "title": "ClickFix attack pushes macOS infostealer for crypto theft attacks",
+      "url": "https://www.bleepingcomputer.com/news/security/clickfix-attack-pushes-macos-infostealer-for-crypto-theft-attacks/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-08-06T22:37:17+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-08-07T08:27:06.226988+09:00",
+      "type": "single",
+      "title": "[SYSS-2026-047]: DICOM Toolkit (DCMTK) - Path traversal\t(CWE-22)",
+      "url": "https://seclists.org/fulldisclosure/2026/Aug/25",
+      "source": "SecLists Full Disclosure (취약점공개)",
+      "published": "2026-08-06T19:31:03+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
