@@ -2,11 +2,11 @@
   "date": "2026-08-06",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 6,
+    "scan_runs": 7,
     "total_articles_max": 1762,
     "matched_articles_max": 135,
-    "new_alerts": 8,
-    "cve_count": 8,
+    "new_alerts": 10,
+    "cve_count": 9,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -14,11 +14,12 @@
       "CVE-2026-20272",
       "CVE-2026-29146",
       "CVE-2026-34486",
-      "CVE-2026-63077"
+      "CVE-2026-63077",
+      "CVE-2026-8512"
     ],
     "keywords_hit": {
-      "CVE": 5,
-      "Malware": 2,
+      "CVE": 6,
+      "Malware": 3,
       "DDoS": 1
     }
   },
@@ -224,6 +225,46 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-08-06T22:01:12.100967+09:00",
+      "type": "single",
+      "title": "Three in four AI-generated vulnerability patches leave something broken",
+      "url": "https://www.helpnetsecurity.com/2026/08/06/1password-ai-generated-vulnerability-patches/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-08-06T12:45:29+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-8512"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-8512",
+          "cvss_score": 8.3,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-416 (Use After Free)",
+          "description": "Use after free in FileSystem in Google Chrome prior to 148.0.7778.168 allowed a remote attacker who convinced a user to engage in specific UI gestures to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: Critical)",
+          "epss_score": 0.00207,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-08-06T22:01:12.100967+09:00",
+      "type": "single",
+      "title": "AI Recommendation Poisoning: How \"Ask AI\" Buttons Silently Alter LLM Memory",
+      "url": "https://thehackernews.com/2026/08/ai-recommendation-poisoning-how-ask-ai.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-08-06T11:30:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
