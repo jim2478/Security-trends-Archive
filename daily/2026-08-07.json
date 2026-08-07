@@ -2,20 +2,21 @@
   "date": "2026-08-07",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 4,
+    "scan_runs": 5,
     "total_articles_max": 1752,
     "matched_articles_max": 117,
-    "new_alerts": 7,
-    "cve_count": 2,
+    "new_alerts": 8,
+    "cve_count": 3,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2026-15013",
-      "CVE-2026-64561"
+      "CVE-2026-64561",
+      "CVE-2026-64638"
     ],
     "keywords_hit": {
       "Malware": 4,
-      "CVE": 3
+      "CVE": 4
     }
   },
   "alerts": [
@@ -140,6 +141,32 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-08-07T23:02:16.470571+09:00",
+      "type": "single",
+      "title": "New WordPress Pre-Auth XSS Could Lead to PHP Code Execution - Patch ASAP",
+      "url": "https://thehackernews.com/2026/08/new-wordpress-pre-auth-xss-could-lead.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-08-07T12:56:23+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-64638"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-64638",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
     }
   ]
 }
