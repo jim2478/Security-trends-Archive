@@ -2,10 +2,10 @@
   "date": "2026-08-07",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
+    "scan_runs": 4,
     "total_articles_max": 1752,
     "matched_articles_max": 117,
-    "new_alerts": 6,
+    "new_alerts": 7,
     "cve_count": 2,
     "ioc_count": 0,
     "merged_count": 0,
@@ -14,8 +14,8 @@
       "CVE-2026-64561"
     ],
     "keywords_hit": {
-      "CVE": 3,
-      "Malware": 3
+      "Malware": 4,
+      "CVE": 3
     }
   },
   "alerts": [
@@ -120,6 +120,20 @@
       "url": "https://thehackernews.com/2026/08/teampcp-linked-to-redis-attacks-dating.html",
       "source": "The Hacker News (보안뉴스 종합) [RSS]",
       "published": "2026-08-07T06:50:05+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-08-07T19:01:21.367620+09:00",
+      "type": "single",
+      "title": "Malware Can Abuse Windows Hello for Business Keys for Persistent Entra ID Access",
+      "url": "https://thehackernews.com/2026/08/malware-can-abuse-windows-hello-for.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-08-07T08:52:11+00:00",
       "keywords": [
         "Malware"
       ],
