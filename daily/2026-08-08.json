@@ -2,16 +2,16 @@
   "date": "2026-08-08",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
+    "scan_runs": 3,
     "total_articles_max": 1752,
-    "matched_articles_max": 113,
-    "new_alerts": 2,
+    "matched_articles_max": 114,
+    "new_alerts": 3,
     "cve_count": 0,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [],
     "keywords_hit": {
-      "Malware": 2
+      "Malware": 3
     }
   },
   "alerts": [
@@ -36,6 +36,20 @@
       "url": "https://www.elastic.co/security-labs/coding-agent-launchagent-tunnel-detection",
       "source": "Elastic Security Labs (탐지엔지니어링) [RSS]",
       "published": "2026-08-07T23:59:59+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-08-08T05:01:13.431971+09:00",
+      "type": "single",
+      "title": "Nearly 800 Malicious npm Packages Deliver Cross-Platform RAT and Infostealer",
+      "url": "https://thehackernews.com/2026/08/nearly-800-malicious-npm-packages.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-08-07T18:48:17+00:00",
       "keywords": [
         "Malware"
       ],
