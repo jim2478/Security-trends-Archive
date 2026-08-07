@@ -2,10 +2,10 @@
   "date": "2026-08-07",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 1,
+    "scan_runs": 2,
     "total_articles_max": 1752,
-    "matched_articles_max": 116,
-    "new_alerts": 4,
+    "matched_articles_max": 117,
+    "new_alerts": 5,
     "cve_count": 2,
     "ioc_count": 0,
     "merged_count": 0,
@@ -15,7 +15,7 @@
     ],
     "keywords_hit": {
       "CVE": 3,
-      "Malware": 1
+      "Malware": 2
     }
   },
   "alerts": [
@@ -94,6 +94,20 @@
       "published": "2026-08-06T19:31:03+00:00",
       "keywords": [
         "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-08-07T12:01:29.236996+09:00",
+      "type": "single",
+      "title": "랜섬웨어 해커와 손잡고 ‘복구비’ 26억 뜯었다…데이터업체 대표 실형",
+      "url": "https://www.donga.com/news/Society/article/all/20260807/134436268/2",
+      "source": "동아일보 (사회) [RSS]",
+      "published": "2026-08-07T02:24:00+00:00",
+      "keywords": [
+        "Malware"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
