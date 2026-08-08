@@ -2,16 +2,17 @@
   "date": "2026-08-08",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
+    "scan_runs": 4,
     "total_articles_max": 1752,
-    "matched_articles_max": 114,
-    "new_alerts": 3,
+    "matched_articles_max": 115,
+    "new_alerts": 4,
     "cve_count": 0,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [],
     "keywords_hit": {
-      "Malware": 3
+      "Malware": 3,
+      "CVE": 1
     }
   },
   "alerts": [
@@ -52,6 +53,20 @@
       "published": "2026-08-07T18:48:17+00:00",
       "keywords": [
         "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-08-08T17:00:58.779857+09:00",
+      "type": "single",
+      "title": "Metabase Zero-Day Exploited in Wild Allows Admin Access Without Authentication",
+      "url": "https://thehackernews.com/2026/08/metabase-zero-day-exploited-in-wild.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-08-08T06:58:31+00:00",
+      "keywords": [
+        "CVE"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
