@@ -2,16 +2,20 @@
   "date": "2026-08-10",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 1,
+    "scan_runs": 2,
     "total_articles_max": 1772,
-    "matched_articles_max": 115,
-    "new_alerts": 1,
-    "cve_count": 0,
+    "matched_articles_max": 116,
+    "new_alerts": 2,
+    "cve_count": 3,
     "ioc_count": 0,
     "merged_count": 0,
-    "unique_cves": [],
+    "unique_cves": [
+      "CVE-2026-33825",
+      "CVE-2026-50751",
+      "CVE-2026-50752"
+    ],
     "keywords_hit": {
-      "Malware": 1
+      "Malware": 2
     }
   },
   "alerts": [
@@ -28,6 +32,52 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-08-10T20:01:27.821141+09:00",
+      "type": "single",
+      "title": "IT threat evolution in Q2 2026. Non-mobile statistics",
+      "url": "https://securelist.com/malware-report-q2-2026-pc-iot-statistics/120960/",
+      "source": "Kaspersky Securelist (위협분석) [RSS]",
+      "published": "2026-08-10T10:00:37+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-33825",
+        "CVE-2026-50751",
+        "CVE-2026-50752"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-33825",
+          "cvss_score": 7.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-1220 (CWE-1220)",
+          "description": "Insufficient granularity of access control in Microsoft Defender allows an authorized attacker to elevate privileges locally.",
+          "epss_score": 0.06749,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-50751",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-287 (Authentication Bypass)",
+          "description": "A logic flow weakness in Remote Access and Mobile Access certificate validation in deprecated IKEv1 key exchange allows an unauthenticated remote attacker to bypass user authentication and establish a remote access VPN connection without a valid user password.",
+          "epss_score": 0.82554,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-50752",
+          "cvss_score": 7.4,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-295 (CWE-295)",
+          "description": "A weakness in the certificate validation logic of the deprecated IKEv1 key exchange may allow an unauthenticated attacker positioned as a man-in-the-middle to bypass certificate validation in VPN site-to-site connections that use certificate-based authentication. Successful exploitation could allow interception or modification of traffic traversing the VPN tunnel.",
+          "epss_score": 0.04547,
+          "kev": false
+        }
+      ]
     }
   ]
 }
