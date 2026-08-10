@@ -2,20 +2,23 @@
   "date": "2026-08-10",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
+    "scan_runs": 3,
     "total_articles_max": 1772,
-    "matched_articles_max": 116,
-    "new_alerts": 2,
-    "cve_count": 3,
+    "matched_articles_max": 117,
+    "new_alerts": 3,
+    "cve_count": 5,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
+      "CVE-2026-18556",
+      "CVE-2026-18577",
       "CVE-2026-33825",
       "CVE-2026-50751",
       "CVE-2026-50752"
     ],
     "keywords_hit": {
-      "Malware": 2
+      "Malware": 2,
+      "CVE": 1
     }
   },
   "alerts": [
@@ -76,6 +79,42 @@
           "description": "A weakness in the certificate validation logic of the deprecated IKEv1 key exchange may allow an unauthenticated attacker positioned as a man-in-the-middle to bypass certificate validation in VPN site-to-site connections that use certificate-based authentication. Successful exploitation could allow interception or modification of traffic traversing the VPN tunnel.",
           "epss_score": 0.04547,
           "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-08-10T21:02:32.315364+09:00",
+      "type": "single",
+      "title": "N-able ships second N-central hotfix as attackers keep exploiting CVE-2026-18577",
+      "url": "https://www.helpnetsecurity.com/2026/08/10/cve-2026-18577-n-central-hotfix-2-msps/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-08-10T11:34:55+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-18556",
+        "CVE-2026-18577"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-18556",
+          "cvss_score": 8.2,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-288 (CWE-288)",
+          "description": "Authentication bypass using an alternate path or channel vulnerability in N-able N-central allows Authentication Bypass.\n\nThis issue affects N-central: through 2026.1.",
+          "epss_score": 0.00492,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-18577",
+          "cvss_score": 8.2,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-288 (CWE-288)",
+          "description": "An incomplete patch for CVE-2026-18556 allows for authentication bypass and account takeover in N-central Versions through 2026.3.1",
+          "epss_score": 0.04103,
+          "kev": true
         }
       ]
     }
