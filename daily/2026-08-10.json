@@ -2,12 +2,12 @@
   "date": "2026-08-10",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
+    "scan_runs": 4,
     "total_articles_max": 1772,
     "matched_articles_max": 117,
-    "new_alerts": 3,
+    "new_alerts": 5,
     "cve_count": 5,
-    "ioc_count": 0,
+    "ioc_count": 9,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2026-18556",
@@ -17,7 +17,7 @@
       "CVE-2026-50752"
     ],
     "keywords_hit": {
-      "Malware": 2,
+      "Malware": 4,
       "CVE": 1
     }
   },
@@ -117,6 +117,34 @@
           "kev": true
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-08-10T22:02:20.706192+09:00",
+      "type": "single",
+      "title": "New Passkey Attacks Can Recover Synced Private Keys or Bypass Phishing-Resistant MFA",
+      "url": "https://thehackernews.com/2026/08/new-passkey-attacks-can-recover-synced.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-08-10T12:25:04+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-08-10T22:02:20.706192+09:00",
+      "type": "single",
+      "title": "Smile, You’re on Camera. Part 2: Hiring Lazarus APT’s IT Workers in a Fake DeFi Startup",
+      "url": "https://any.run/cybersecurity-blog/lazarus-group-it-workers-investigation-part-two/",
+      "source": "ANY.RUN (악성코드샌드박스분석) [RSS]",
+      "published": "2026-08-10T12:41:39+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "[IP] 62[.]33[.]223[.]165\n[IP] 89[.]187[.]185[.]11\n[IP] 45[.]77[.]71[.]42\n[IP] 185[.]152[.]67[.]39\n[IP] 104[.]250[.]148[.]58\n[IP] 192[.]200[.]115[.]226\n[IP] 107[.]150[.]38[.]250\n[IP] 206[.]217[.]134[.]34\n[IP] 199[.]168[.]112[.]175",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
