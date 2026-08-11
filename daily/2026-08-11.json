@@ -2,10 +2,10 @@
   "date": "2026-08-11",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 5,
+    "scan_runs": 6,
     "total_articles_max": 1772,
-    "matched_articles_max": 116,
-    "new_alerts": 5,
+    "matched_articles_max": 117,
+    "new_alerts": 6,
     "cve_count": 2,
     "ioc_count": 39,
     "merged_count": 0,
@@ -15,7 +15,7 @@
     ],
     "keywords_hit": {
       "CVE": 3,
-      "Malware": 1,
+      "Malware": 2,
       "Botnet": 1
     }
   },
@@ -113,6 +113,20 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-08-11T17:01:00.999403+09:00",
+      "type": "single",
+      "title": "Supply Chain Security: How ANY.RUN Helps US and EU Enterprises Prevent Incidents",
+      "url": "https://any.run/cybersecurity-blog/supply-chain-security-for-us-and-eu-companies/",
+      "source": "ANY.RUN (악성코드샌드박스분석) [RSS]",
+      "published": "2026-08-11T07:39:10+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
