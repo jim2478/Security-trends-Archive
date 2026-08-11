@@ -2,12 +2,12 @@
   "date": "2026-08-11",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 6,
+    "scan_runs": 7,
     "total_articles_max": 1772,
     "matched_articles_max": 117,
-    "new_alerts": 6,
+    "new_alerts": 7,
     "cve_count": 2,
-    "ioc_count": 39,
+    "ioc_count": 61,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2026-15903",
@@ -16,7 +16,8 @@
     "keywords_hit": {
       "CVE": 3,
       "Malware": 2,
-      "Botnet": 1
+      "Botnet": 2,
+      "DDoS": 1
     }
   },
   "alerts": [
@@ -125,6 +126,21 @@
         "Malware"
       ],
       "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-08-11T20:01:03.431792+09:00",
+      "type": "single",
+      "title": "Kimwolf v7: An Evolution of the Kimwolf Botnet",
+      "url": "https://unit42.paloaltonetworks.com/kimwolf-v7-botnet-malware/",
+      "source": "Palo Alto Unit42 (위협리서치) [RSS]",
+      "published": "2026-08-11T10:00:16+00:00",
+      "keywords": [
+        "DDoS",
+        "Botnet"
+      ],
+      "ioc_raw_text": "[IP] 23[.]94[.]221[.]104\n[IP] 212[.]193[.]31[.]158\n[IP] 212[.]193[.]31[.]119\n[IP] 212[.]193[.]31[.]122\n[IP] 212[.]193[.]31[.]102\n[IP] 212[.]193[.]31[.]92\n[Domain] eth[.]rpcuniverse[.]com\n[Domain] com[.]android[.]logcatd\n[Domain] rpcuniverse[.]com\n[Domain] avax[.]rpcuniverse[.]com\n[Domain] edctgwib2n5l34t525zkxqzk5bqb6e5il2yiq5r6zu7gtlxa4uosn3qd[.]onion\n[SHA256] 2ec2e85b0358e0c681cb5067489a9086ec97dbbf7e3c952dd9cd496b319d5af5\n[SHA256] 345222bca004595977f971d76900b0c65fd9bf9d91c50cd0c5bf5a93f1ad9e49\n[SHA256] 406647de09a0ffa279756b4ccb344b1b76a333320c5b50fd367901fa006cf0ff\n[SHA256] 951c94809aa6c7ab587125f9d4df30fa6a49ee0cbba76a4b7ceedaaa0e5dcd36\n[SHA256] f07821e313c16cbbd82def45094a22c8d474164051bdbc7648d6869e012014b4\n[SHA256] f3e8a55a2a3ea7c7b6676e90f4f49a2c55b13065b68ee50c51cc35fe2b5c3237\n[SHA1] 2a1d96f1b066877812587ac94f45f82dfff5f5f9\n[MD5] 036bcb62be72c4663b9564955f93b05f\n[MD5] 33faca1e0090f6b12eff703daf4606e4\n[MD5] 76554ad09897ac723a850eaf8c525efa\n[MD5] d759364844d78a728505fb0485c3adbc",
       "cve_ids": [],
       "cve_details": []
     }
