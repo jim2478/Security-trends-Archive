@@ -1,0 +1,47 @@
+{
+  "date": "2026-08-12",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 1,
+    "total_articles_max": 1772,
+    "matched_articles_max": 116,
+    "new_alerts": 1,
+    "cve_count": 1,
+    "ioc_count": 0,
+    "merged_count": 0,
+    "unique_cves": [
+      "CVE-2026-72898"
+    ],
+    "keywords_hit": {
+      "CVE": 1
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-08-12T00:01:06.180667+09:00",
+      "type": "single",
+      "title": "메타베이스 SQL 인젝션 제로데이 실제 공격…기업 고객정보 잇따라 유출",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=208005",
+      "source": "데일리시큐 (이슈) [RSS]",
+      "published": "2026-08-11T23:30:22+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-72898"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-72898",
+          "cvss_score": 10.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-89 (SQL Injection)",
+          "description": "Metabase allows a remote, unauthenticated attacker to inject arbitrary SQL via the '/reset_password' database endpoint and gain administrator access to the connected Metabase instance.",
+          "epss_score": 0.0069,
+          "kev": false
+        }
+      ]
+    }
+  ]
+}
