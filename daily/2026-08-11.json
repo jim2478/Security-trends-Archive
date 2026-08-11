@@ -2,10 +2,10 @@
   "date": "2026-08-11",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 7,
+    "scan_runs": 8,
     "total_articles_max": 1772,
     "matched_articles_max": 117,
-    "new_alerts": 7,
+    "new_alerts": 9,
     "cve_count": 2,
     "ioc_count": 61,
     "merged_count": 0,
@@ -15,9 +15,9 @@
     ],
     "keywords_hit": {
       "CVE": 3,
+      "DDoS": 3,
       "Malware": 2,
-      "Botnet": 2,
-      "DDoS": 1
+      "Botnet": 2
     }
   },
   "alerts": [
@@ -141,6 +141,34 @@
         "Botnet"
       ],
       "ioc_raw_text": "[IP] 23[.]94[.]221[.]104\n[IP] 212[.]193[.]31[.]158\n[IP] 212[.]193[.]31[.]119\n[IP] 212[.]193[.]31[.]122\n[IP] 212[.]193[.]31[.]102\n[IP] 212[.]193[.]31[.]92\n[Domain] eth[.]rpcuniverse[.]com\n[Domain] com[.]android[.]logcatd\n[Domain] rpcuniverse[.]com\n[Domain] avax[.]rpcuniverse[.]com\n[Domain] edctgwib2n5l34t525zkxqzk5bqb6e5il2yiq5r6zu7gtlxa4uosn3qd[.]onion\n[SHA256] 2ec2e85b0358e0c681cb5067489a9086ec97dbbf7e3c952dd9cd496b319d5af5\n[SHA256] 345222bca004595977f971d76900b0c65fd9bf9d91c50cd0c5bf5a93f1ad9e49\n[SHA256] 406647de09a0ffa279756b4ccb344b1b76a333320c5b50fd367901fa006cf0ff\n[SHA256] 951c94809aa6c7ab587125f9d4df30fa6a49ee0cbba76a4b7ceedaaa0e5dcd36\n[SHA256] f07821e313c16cbbd82def45094a22c8d474164051bdbc7648d6869e012014b4\n[SHA256] f3e8a55a2a3ea7c7b6676e90f4f49a2c55b13065b68ee50c51cc35fe2b5c3237\n[SHA1] 2a1d96f1b066877812587ac94f45f82dfff5f5f9\n[MD5] 036bcb62be72c4663b9564955f93b05f\n[MD5] 33faca1e0090f6b12eff703daf4606e4\n[MD5] 76554ad09897ac723a850eaf8c525efa\n[MD5] d759364844d78a728505fb0485c3adbc",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-08-11T23:01:13.379609+09:00",
+      "type": "single",
+      "title": "DDoS attacks over 1 Tbps surged fivefold in the second quarter",
+      "url": "https://www.bleepingcomputer.com/news/security/ddos-attacks-over-1-tbps-surged-fivefold-in-the-second-quarter/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-08-11T13:00:00+00:00",
+      "keywords": [
+        "DDoS"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-08-11T23:01:13.379609+09:00",
+      "type": "single",
+      "title": "Cloudflare DDoS Threat Report H1 2026: 1 Tbps attacks soar as DNS floods and geopolitical tensions drive a new wave",
+      "url": "https://blog.cloudflare.com/ddos-threat-report-2026-h1/",
+      "source": "Cloudflare Blog (DDoS/웹보안) [RSS]",
+      "published": "2026-08-11T13:00:00+00:00",
+      "keywords": [
+        "DDoS"
+      ],
+      "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
     }
