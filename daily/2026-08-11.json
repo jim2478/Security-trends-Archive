@@ -2,18 +2,19 @@
   "date": "2026-08-11",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 4,
+    "scan_runs": 5,
     "total_articles_max": 1772,
     "matched_articles_max": 116,
-    "new_alerts": 4,
-    "cve_count": 1,
+    "new_alerts": 5,
+    "cve_count": 2,
     "ioc_count": 39,
     "merged_count": 0,
     "unique_cves": [
-      "CVE-2026-15903"
+      "CVE-2026-15903",
+      "CVE-2026-8233"
     ],
     "keywords_hit": {
-      "CVE": 2,
+      "CVE": 3,
       "Malware": 1,
       "Botnet": 1
     }
@@ -83,6 +84,32 @@
           "cwe": "CWE-125 (Out-of-bounds Read)",
           "description": "Out of bounds read and write in V8 in Google Chrome prior to 150.0.7871.128 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
           "epss_score": 0.00314,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-08-11T15:01:04.615980+09:00",
+      "type": "single",
+      "title": "An AI tool found 84 flaws in 5G network software and 23 of them still have no fix",
+      "url": "https://www.helpnetsecurity.com/2026/08/11/5g-core-network-vulnerabilities-research/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-08-11T05:30:20+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-8233"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-8233",
+          "cvss_score": 2.1,
+          "cvss_severity": "LOW",
+          "cwe": "CWE-266 (CWE-266)",
+          "description": "A vulnerability was determined in Dotouch XproUPF 2.0.0-release-088aa7c4. Affected is an unknown function of the component UPF. This manipulation causes improper access controls. A high degree of complexity is needed for the attack. The exploitability is told to be difficult. The vendor was contacted early about this disclosure.",
+          "epss_score": 0.00139,
           "kev": false
         }
       ]
