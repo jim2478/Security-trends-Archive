@@ -2,17 +2,19 @@
   "date": "2026-08-11",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
-    "total_articles_max": 1762,
-    "matched_articles_max": 115,
-    "new_alerts": 3,
-    "cve_count": 0,
+    "scan_runs": 4,
+    "total_articles_max": 1772,
+    "matched_articles_max": 116,
+    "new_alerts": 4,
+    "cve_count": 1,
     "ioc_count": 39,
     "merged_count": 0,
-    "unique_cves": [],
+    "unique_cves": [
+      "CVE-2026-15903"
+    ],
     "keywords_hit": {
+      "CVE": 2,
       "Malware": 1,
-      "CVE": 1,
       "Botnet": 1
     }
   },
@@ -58,6 +60,32 @@
       "ioc_raw_text": "[IP] 193[.]221[.]200[.]219\n[Domain] api[.]telegram[.]org\n[Domain] xwormclient[.]exeexecutable\n[Domain] gulf[.]moneroocean[.]stream\n[Domain] download[.]sftp-api-group-wechat[.]com\n[Domain] update[.]constant-path[.]xyz\n[Domain] update-launcher[.]xyz\n[Domain] test-steve[.]cyou\n[URL] hxxps://github[.]com/lencod/\n[URL] hxxps://github[.]com/Mash3Do/\n[URL] hxxps://polygon[.]rpc[.]hypersync[.]xyz/\n[URL] hxxps://polygon-mumbai[.]g[.]alchemy[.]com/v2/demo\n[URL] hxxps://polygon-mumbai-bor-rpc[.]publicnode[.]com\n[URL] hxxps://api[.]noderpc[.]xyz/rpc-polygon-pos/public\n[URL] hxxps://polygon-mumbai[.]gateway[.]tenderly[.]co\n[URL] hxxps://public[.]stackup[.]sh/api/v1/node/polygon-mainnet\n[URL] hxxps://gateway[.]tenderly[.]co/public/polygon\n[URL] hxxps://polygon-amoy[.]gateway[.]tenderly[.]co\n[URL] hxxps://rpc[.]poolz[.]finance/polygon\n[URL] hxxps://gateway[.]tenderly[.]co/public/polygon-mumbai\n[URL] hxxps://api[.]zan[.]top/polygon-amoy\n[URL] hxxps://endpoints[.]omniatech[.]io/v1/polygon-zkevm/testnet/public\n[URL] hxxps://rpc[.]polygon-zkevm[.]gateway[.]fm\n[URL] hxxps://polygon-pokt[.]nodies[.]app/\n[URL] hxxps://polygon-amoy[.]therpc[.]io\n[URL] hxxps://rpc[.]polygonsupernet[.]public[.]arianee[.]net\n[URL] hxxps://public[.]stackup[.]sh/api/v1/node/polygon-mumbai\n[URL] hxxps://polygon-zkevm-mainnet[.]public[.]blastapi[.]io\n[URL] hxxps://polygontestapi[.]terminet[.]io/rpc\n[URL] hxxps://polygon-mainnet[.]g[.]alchemy[.]com/v2/demo\n[URL] hxxps://polygon-zkevm[.]drpc[.]org\n[URL] hxxp://sekirolegion[.]duckdns[.]org/api/endpoint.php\n[URL] hxxps://cdnjsdelivr[.]beer/\n[SHA256] 1505eda3da68e2ff9919b55a31018bd30a991236f041aee835f3bc4e430ce505\n[SHA256] 4e24bbd0fabac6c3efcec943046afbfd332b2c0108a13becfda23a0e26f9ff5f\n[SHA256] 5bfb25b8255b61e5ffdf6804451534bcfa9f1dfd225e6c8cdcefb5f50d846898\n[SHA256] 81bb80d9c5a97dc41b65f6248c131963c91346eb4fb672836b3d53ae67564d9f\n[SHA256] ea1b6ff3a0c1a749b9f09d66789973321d63d8896b48f7345193bdad512950a2\n[SHA256] f2a326cff405299e4ebdfaac955c52fc7e496544eaa0921ecad4816cb3ae3a27",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-08-11T10:01:03.498372+09:00",
+      "type": "single",
+      "title": "오픈AI, ‘GPT-5.6 사이버’ 공개… ‘데이브레이크’도 재편",
+      "url": "https://www.ddaily.co.kr//page/view/2026081109125859715",
+      "source": "디지털데일리 [RSS]",
+      "published": "2026-08-11T00:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-15903"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-15903",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-125 (Out-of-bounds Read)",
+          "description": "Out of bounds read and write in V8 in Google Chrome prior to 150.0.7871.128 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
+          "epss_score": 0.00314,
+          "kev": false
+        }
+      ]
     }
   ]
 }
