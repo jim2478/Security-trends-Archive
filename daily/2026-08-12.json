@@ -2,21 +2,23 @@
   "date": "2026-08-12",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 8,
+    "scan_runs": 9,
     "total_articles_max": 1772,
-    "matched_articles_max": 122,
-    "new_alerts": 8,
-    "cve_count": 4,
+    "matched_articles_max": 124,
+    "new_alerts": 11,
+    "cve_count": 7,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2026-20349",
+      "CVE-2026-50656",
       "CVE-2026-55040",
+      "CVE-2026-58231",
       "CVE-2026-68820",
       "CVE-2026-72898"
     ],
     "keywords_hit": {
-      "CVE": 5,
+      "CVE": 8,
       "Malware": 2,
       "DDoS": 1,
       "Botnet": 1
@@ -179,6 +181,84 @@
           "cvss_severity": "HIGH",
           "cwe": "CWE-416 (Use After Free)",
           "description": "Use after free in Windows Ancillary Function Driver for WinSock allows an authorized attacker to elevate privileges locally.",
+          "epss_score": null,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-08-12T17:01:11.484466+09:00",
+      "type": "single",
+      "title": "SAP Commerce Cloud Flaw Could Let Unauthenticated Attackers Execute Arbitrary Code",
+      "url": "https://thehackernews.com/2026/08/sap-commerce-cloud-flaw-could-let.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-08-12T07:31:40+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-58231"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-58231",
+          "cvss_score": 10.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-94 (Code Injection)",
+          "description": "SAP Commerce Cloud allows an unauthenticated\nattacker to abuse a default authentication client and submit specially crafted\ninput to certain functions lacking sufficient validation. Successful\nexploitation could enable arbitrary code execution and compromise internal\ncomponents, resulting in high impact on confidentiality, integrity, and\navailability of the application.",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-08-12T17:01:11.484466+09:00",
+      "type": "single",
+      "title": "ShieldBreak Zero-Day PoC Claims Microsoft Defender Patch Bypass With SYSTEM Access",
+      "url": "https://thehackernews.com/2026/08/shieldbreak-zero-day-poc-claims.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-08-12T06:41:38+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-50656"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-50656",
+          "cvss_score": 7.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-59 (CWE-59)",
+          "description": "Microsoft is aware of an elevation of privilege in the Microsoft Malware Protection Engine in Microsoft Defender publicly referred to as &quot;RoguePlanet &quot;.",
+          "epss_score": 0.10749,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-08-12T17:01:11.484466+09:00",
+      "type": "single",
+      "title": "Cisco ASA and FTD Flaw Exploited in the Wild Can Trigger Remote DoS",
+      "url": "https://thehackernews.com/2026/08/cisco-asa-and-ftd-flaw-exploited-in.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-08-12T06:15:58+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-20349"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-20349",
+          "cvss_score": 8.6,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-244 (CWE-244)",
+          "description": "A vulnerability in the Remote Access SSL VPN service for Cisco Secure Firewall Adaptive Security Appliance (ASA) Software and Cisco Secure Firewall Threat Defense (FTD) Software could allow an unauthenticated, remote attacker to cause the device to reload unexpectedly, resulting in a denial of service (DoS) condition.&nbsp;\r\n\r\nThis vulnerability is due to insufficient error checking when processing HTTP requests. An attacker could exploit this vulnerability by sending a crafted HTTP request to t",
           "epss_score": null,
           "kev": true
         }
