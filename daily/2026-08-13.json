@@ -2,19 +2,26 @@
   "date": "2026-08-13",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 1,
+    "scan_runs": 2,
     "total_articles_max": 1752,
-    "matched_articles_max": 127,
-    "new_alerts": 1,
-    "cve_count": 2,
+    "matched_articles_max": 128,
+    "new_alerts": 2,
+    "cve_count": 9,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2025-49113",
-      "CVE-2026-68820"
+      "CVE-2026-48411",
+      "CVE-2026-48412",
+      "CVE-2026-48413",
+      "CVE-2026-48414",
+      "CVE-2026-48415",
+      "CVE-2026-48416",
+      "CVE-2026-68820",
+      "CVE-2026-71362"
     ],
     "keywords_hit": {
-      "CVE": 1
+      "CVE": 2
     }
   },
   "alerts": [
@@ -51,6 +58,74 @@
           "description": "Use after free in Windows Ancillary Function Driver for WinSock allows an authorized attacker to elevate privileges locally.",
           "epss_score": 0.00356,
           "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-08-13T06:01:03.028529+09:00",
+      "type": "single",
+      "title": "Hackers exploit critical Adobe Commerce flaw to hijack customer accounts",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-adobe-commerce-flaw-to-hijack-customer-accounts/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-08-12T20:54:59+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-48411",
+        "CVE-2026-48412",
+        "CVE-2026-48413",
+        "CVE-2026-48414",
+        "CVE-2026-48415",
+        "CVE-2026-48416",
+        "CVE-2026-71362"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-48411",
+          "cvss_score": 6.5,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-863 (CWE-863)",
+          "description": "Adobe Commerce is affected by an Incorrect Authorization vulnerability that could result in a Security feature bypass. An attacker with high privileges could leverage this vulnerability to bypass security measures and gain unauthorized write access. Exploitation of this issue does not require user interaction.",
+          "epss_score": 0.00494,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-48412",
+          "cvss_score": 2.7,
+          "cvss_severity": "LOW",
+          "cwe": "CWE-863 (CWE-863)",
+          "description": "Adobe Commerce is affected by an Incorrect Authorization vulnerability that could result in privilege escalation. An attacker with high privileges could exploit this vulnerability to gain elevated access to restricted resources. Exploitation of this issue does not require user interaction.",
+          "epss_score": 0.00315,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-48413",
+          "cvss_score": 8.7,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-79 (XSS)",
+          "description": "Adobe Commerce is affected by a stored Cross-Site Scripting (XSS) vulnerability that could be abused by a low-privileged attacker to inject malicious scripts into vulnerable form fields. Malicious JavaScript may be executed in a victim's browser when they browse to the page containing the vulnerable field, potentially gaining elevated access or control over the victim's account or session. Scope is changed.",
+          "epss_score": 0.00628,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-48414",
+          "cvss_score": 7.7,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-79 (XSS)",
+          "description": "Adobe Commerce is affected by a stored Cross-Site Scripting (XSS) vulnerability that could be abused by a low-privileged attacker to inject malicious scripts into vulnerable form fields. Malicious JavaScript may be executed in a victim's browser when they browse to the page containing the vulnerable field, potentially gaining elevated access or control over the victim's account or session. Exploit depends on conditions beyond the attacker's control. Scope is changed.",
+          "epss_score": 0.00533,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-48415",
+          "cvss_score": 7.6,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-863 (CWE-863)",
+          "description": "Adobe Commerce is affected by an Incorrect Authorization vulnerability that could result in a Security feature bypass. A low-privileged attacker could leverage this vulnerability to bypass security measures and gain unauthorized read and write access, causing a limited disruption to availability. Exploitation of this issue does not require user interaction.",
+          "epss_score": 0.00349,
+          "kev": false
         }
       ]
     }
