@@ -2,15 +2,16 @@
   "date": "2026-08-12",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 10,
+    "scan_runs": 11,
     "total_articles_max": 1772,
     "matched_articles_max": 128,
-    "new_alerts": 14,
-    "cve_count": 17,
+    "new_alerts": 15,
+    "cve_count": 18,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2026-20349",
+      "CVE-2026-48362",
       "CVE-2026-50656",
       "CVE-2026-55040",
       "CVE-2026-58231",
@@ -25,7 +26,7 @@
       "CVE-2026-72971"
     ],
     "keywords_hit": {
-      "CVE": 10,
+      "CVE": 11,
       "Malware": 3,
       "DDoS": 1,
       "Botnet": 1
@@ -380,6 +381,32 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-08-12T21:01:01.366009+09:00",
+      "type": "single",
+      "title": "Adobe Patches Three CVSS 10.0 ColdFusion and Campaign Classic Flaws",
+      "url": "https://thehackernews.com/2026/08/adobe-patches-three-cvss-100-coldfusion.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-08-12T11:13:03+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-48362"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-48362",
+          "cvss_score": 10.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-78 (OS Command Injection)",
+          "description": "ColdFusion is affected by an Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability that could result in arbitrary code execution in the context of the current user. An attacker could exploit this vulnerability to execute arbitrary code. Exploitation of this issue does not require user interaction. Scope is changed.",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
     }
   ]
 }
