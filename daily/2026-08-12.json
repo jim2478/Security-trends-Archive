@@ -2,20 +2,21 @@
   "date": "2026-08-12",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 7,
+    "scan_runs": 8,
     "total_articles_max": 1772,
     "matched_articles_max": 122,
-    "new_alerts": 7,
-    "cve_count": 3,
+    "new_alerts": 8,
+    "cve_count": 4,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2026-20349",
       "CVE-2026-55040",
+      "CVE-2026-68820",
       "CVE-2026-72898"
     ],
     "keywords_hit": {
-      "CVE": 4,
+      "CVE": 5,
       "Malware": 2,
       "DDoS": 1,
       "Botnet": 1
@@ -152,6 +153,32 @@
           "cvss_severity": "HIGH",
           "cwe": "CWE-244 (CWE-244)",
           "description": "A vulnerability in the Remote Access SSL VPN service for Cisco Secure Firewall Adaptive Security Appliance (ASA) Software and Cisco Secure Firewall Threat Defense (FTD) Software could allow an unauthenticated, remote attacker to cause the device to reload unexpectedly, resulting in a denial of service (DoS) condition.&nbsp;\r\n\r\nThis vulnerability is due to insufficient error checking when processing HTTP requests. An attacker could exploit this vulnerability by sending a crafted HTTP request to t",
+          "epss_score": null,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-08-12T16:03:08.284667+09:00",
+      "type": "single",
+      "title": "북한 해킹조직 라자루스, 윈도 제로데이 실제 공격…MS 8월 긴급 패치",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=208024",
+      "source": "데일리시큐 (이슈) [RSS]",
+      "published": "2026-08-12T15:53:07+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-68820"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-68820",
+          "cvss_score": 7.0,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-416 (Use After Free)",
+          "description": "Use after free in Windows Ancillary Function Driver for WinSock allows an authorized attacker to elevate privileges locally.",
           "epss_score": null,
           "kev": true
         }
