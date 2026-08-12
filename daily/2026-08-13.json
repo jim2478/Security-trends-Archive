@@ -1,0 +1,58 @@
+{
+  "date": "2026-08-13",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 1,
+    "total_articles_max": 1752,
+    "matched_articles_max": 127,
+    "new_alerts": 1,
+    "cve_count": 2,
+    "ioc_count": 0,
+    "merged_count": 0,
+    "unique_cves": [
+      "CVE-2025-49113",
+      "CVE-2026-68820"
+    ],
+    "keywords_hit": {
+      "CVE": 1
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-08-13T01:01:08.245832+09:00",
+      "type": "single",
+      "title": "Lazarus hackers exploited Windows zero-day to target defense firms",
+      "url": "https://www.bleepingcomputer.com/news/security/lazarus-hackers-exploited-windows-zero-day-to-target-defense-firms/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-08-12T15:38:08+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2025-49113",
+        "CVE-2026-68820"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2025-49113",
+          "cvss_score": 9.9,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-502 (Deserialization)",
+          "description": "Roundcube Webmail before 1.5.10 and 1.6.x before 1.6.11 allows remote code execution by authenticated users because the _from parameter in a URL is not validated in program/actions/settings/upload.php, leading to PHP Object Deserialization.",
+          "epss_score": 0.97694,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-68820",
+          "cvss_score": 7.0,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-416 (Use After Free)",
+          "description": "Use after free in Windows Ancillary Function Driver for WinSock allows an authorized attacker to elevate privileges locally.",
+          "epss_score": 0.00356,
+          "kev": true
+        }
+      ]
+    }
+  ]
+}
