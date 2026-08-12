@@ -2,11 +2,11 @@
   "date": "2026-08-12",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 9,
+    "scan_runs": 10,
     "total_articles_max": 1772,
-    "matched_articles_max": 124,
-    "new_alerts": 11,
-    "cve_count": 7,
+    "matched_articles_max": 128,
+    "new_alerts": 14,
+    "cve_count": 17,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -14,12 +14,19 @@
       "CVE-2026-50656",
       "CVE-2026-55040",
       "CVE-2026-58231",
+      "CVE-2026-59310",
+      "CVE-2026-62737",
+      "CVE-2026-62815",
+      "CVE-2026-62832",
+      "CVE-2026-62878",
+      "CVE-2026-63520",
       "CVE-2026-68820",
-      "CVE-2026-72898"
+      "CVE-2026-72898",
+      "CVE-2026-72971"
     ],
     "keywords_hit": {
-      "CVE": 8,
-      "Malware": 2,
+      "CVE": 10,
+      "Malware": 3,
       "DDoS": 1,
       "Botnet": 1
     }
@@ -263,6 +270,116 @@
           "kev": true
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-08-12T19:01:12.555706+09:00",
+      "type": "single",
+      "title": "Microsoft patches 400+ vulnerabilities, one zero-day under attack (CVE-2026-68820)",
+      "url": "https://www.helpnetsecurity.com/2026/08/12/august-2026-patch-tuesday-cve-2026-68820/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-08-12T09:34:16+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-50656",
+        "CVE-2026-55040",
+        "CVE-2026-62737",
+        "CVE-2026-62815",
+        "CVE-2026-62832",
+        "CVE-2026-62878",
+        "CVE-2026-63520",
+        "CVE-2026-68820",
+        "CVE-2026-72971"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-50656",
+          "cvss_score": 7.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-59 (CWE-59)",
+          "description": "Microsoft is aware of an elevation of privilege in the Microsoft Malware Protection Engine in Microsoft Defender publicly referred to as &quot;RoguePlanet &quot;.",
+          "epss_score": 0.10749,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-55040",
+          "cvss_score": 9.1,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-1390 (CWE-1390)",
+          "description": "Weak authentication in Microsoft Office SharePoint allows an unauthorized attacker to bypass a security feature over a network.",
+          "epss_score": 0.01626,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-62737",
+          "cvss_score": 7.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-822 (CWE-822)",
+          "description": "Untrusted pointer dereference in Windows Kernel allows an authorized attacker to elevate privileges locally.",
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-62815",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-416 (Use After Free)",
+          "description": "Use after free in Microsoft QUIC allows an unauthorized attacker to execute code over a network.",
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-62832",
+          "cvss_score": 7.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-59 (CWE-59)",
+          "description": "Improper link resolution before file access ('link following') in Windows User Profile Service allows an authorized attacker to elevate privileges locally.",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-08-12T19:01:12.555706+09:00",
+      "type": "single",
+      "title": "Attackers Exploit VMware vCenter Vulnerability to Gain Persistent Remote Access",
+      "url": "https://thehackernews.com/2026/08/attackers-exploit-vmware-vcenter.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-08-12T09:01:54+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-59310"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-59310",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-22 (Path Traversal)",
+          "description": "VMware vCenter contains a directory traversal vulnerability in the Syslog server. A malicious actor with network access to vCenter may exploit this issue to execute arbitrary code.",
+          "epss_score": 0.0114,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-08-12T19:01:12.555706+09:00",
+      "type": "single",
+      "title": "Over 2,500 Organizations Impacted by LiteLLM Supply Chain Attack",
+      "url": "https://www.securityweek.com/over-2500-organizations-impacted-by-litellm-supply-chain-attack/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-08-12T09:55:45+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
