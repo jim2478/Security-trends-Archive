@@ -2,10 +2,10 @@
   "date": "2026-08-12",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 5,
+    "scan_runs": 6,
     "total_articles_max": 1772,
-    "matched_articles_max": 120,
-    "new_alerts": 5,
+    "matched_articles_max": 121,
+    "new_alerts": 6,
     "cve_count": 2,
     "ioc_count": 0,
     "merged_count": 0,
@@ -15,7 +15,7 @@
     ],
     "keywords_hit": {
       "CVE": 3,
-      "Malware": 1,
+      "Malware": 2,
       "DDoS": 1,
       "Botnet": 1
     }
@@ -111,6 +111,20 @@
       "published": "2026-08-11",
       "keywords": [
         "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-08-12T14:01:01.249257+09:00",
+      "type": "single",
+      "title": "Ready-made $500 kit puts a crypto scam within anyone’s reach",
+      "url": "https://www.helpnetsecurity.com/2026/08/12/crypto-scam-kit-cybercrime-forum/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-08-12T04:30:27+00:00",
+      "keywords": [
+        "Malware"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
