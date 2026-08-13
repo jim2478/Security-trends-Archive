@@ -2,10 +2,10 @@
   "date": "2026-08-13",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
+    "scan_runs": 4,
     "total_articles_max": 1772,
     "matched_articles_max": 129,
-    "new_alerts": 3,
+    "new_alerts": 4,
     "cve_count": 9,
     "ioc_count": 0,
     "merged_count": 0,
@@ -22,7 +22,7 @@
     ],
     "keywords_hit": {
       "CVE": 2,
-      "Malware": 1
+      "Malware": 2
     }
   },
   "alerts": [
@@ -137,6 +137,20 @@
       "url": "https://www.bleepingcomputer.com/news/security/android-malware-combo-takes-out-loans-and-relays-victims-credit-cards/",
       "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
       "published": "2026-08-12T22:22:57+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-08-13T11:03:11.698629+09:00",
+      "type": "single",
+      "title": "Using Gemma4 with Ollama - Testing File Hash Analysis and Recommendations with AI, (Wed, Aug 12th)",
+      "url": "https://isc.sans.edu/diary/rss/33242",
+      "source": "SANS ISC (인터넷폭풍센터) [RSS]",
+      "published": "2026-08-13T01:26:53+00:00",
       "keywords": [
         "Malware"
       ],
