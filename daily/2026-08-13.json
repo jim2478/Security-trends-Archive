@@ -2,10 +2,10 @@
   "date": "2026-08-13",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 4,
+    "scan_runs": 5,
     "total_articles_max": 1772,
-    "matched_articles_max": 129,
-    "new_alerts": 4,
+    "matched_articles_max": 131,
+    "new_alerts": 5,
     "cve_count": 9,
     "ioc_count": 0,
     "merged_count": 0,
@@ -22,7 +22,8 @@
     ],
     "keywords_hit": {
       "CVE": 2,
-      "Malware": 2
+      "Malware": 2,
+      "DDoS": 1
     }
   },
   "alerts": [
@@ -153,6 +154,20 @@
       "published": "2026-08-13T01:26:53+00:00",
       "keywords": [
         "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-08-13T14:01:04.966050+09:00",
+      "type": "single",
+      "title": "DDoS attacks hit record scale as 1 Tbps+ campaigns become more common",
+      "url": "https://www.helpnetsecurity.com/2026/08/13/cloudflare-h1-2026-ddos-trends-report/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-08-13T04:30:10+00:00",
+      "keywords": [
+        "DDoS"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
