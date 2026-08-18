@@ -2,11 +2,11 @@
   "date": "2026-08-18",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 1,
+    "scan_runs": 2,
     "total_articles_max": 1772,
     "matched_articles_max": 126,
-    "new_alerts": 1,
-    "cve_count": 10,
+    "new_alerts": 3,
+    "cve_count": 11,
     "ioc_count": 3,
     "merged_count": 0,
     "unique_cves": [
@@ -19,10 +19,13 @@
       "CVE-2022-37055",
       "CVE-2024-29269",
       "CVE-2025-10123",
-      "CVE-2025-55583"
+      "CVE-2025-55583",
+      "CVE-2026-15748"
     ],
     "keywords_hit": {
-      "Botnet": 1
+      "Botnet": 1,
+      "CVE": 1,
+      "Malware": 1
     }
   },
   "alerts": [
@@ -96,6 +99,46 @@
           "kev": true
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-08-18T20:01:12.479062+09:00",
+      "type": "single",
+      "title": "300,000 WordPress Sites Potentially Exposed to Hacking Due to Form Plugin Flaw",
+      "url": "https://www.securityweek.com/300000-wordpress-sites-potentially-exposed-to-hacking-due-to-form-plugin-flaw/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-08-18T10:48:23+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-15748"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-15748",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-434 (Unrestricted File Upload)",
+          "description": "The Forminator Forms plugin for WordPress is vulnerable to Arbitrary File Upload in all versions up to, and including, 1.56.1 via the handle_file_upload function. This is due to insufficient file type validation in handle_file_upload, where the dangerous-extension blocklist performs exact-key matching that is bypassed by pipe-alternative MIME type keys, combined with a public submission handler that trusts attacker-controlled upload field configuration injected via a forged Select field value. T",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-08-18T20:01:12.479062+09:00",
+      "type": "single",
+      "title": "“Paranoid” AI agents deploy killer malware against one another, Anthropic says",
+      "url": "https://cybernews.com/security/anthropic-claude-ai-agents-hostile-takeover/",
+      "source": "CyberNews [RSS]",
+      "published": "2026-08-18T08:59:44+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
