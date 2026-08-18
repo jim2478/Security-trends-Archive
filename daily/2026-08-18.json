@@ -2,10 +2,10 @@
   "date": "2026-08-18",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
+    "scan_runs": 4,
     "total_articles_max": 1772,
     "matched_articles_max": 126,
-    "new_alerts": 5,
+    "new_alerts": 7,
     "cve_count": 13,
     "ioc_count": 3,
     "merged_count": 0,
@@ -25,9 +25,10 @@
       "CVE-2026-19650"
     ],
     "keywords_hit": {
+      "Malware": 3,
       "CVE": 2,
-      "Malware": 2,
-      "Botnet": 1
+      "Botnet": 2,
+      "DDoS": 1
     }
   },
   "alerts": [
@@ -185,6 +186,35 @@
       "url": "https://thehackernews.com/2026/08/16-typosquatted-rubygems-packages-steal.html",
       "source": "The Hacker News (보안뉴스 종합) [RSS]",
       "published": "2026-08-18T11:40:06+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-08-18T23:01:09.330134+09:00",
+      "type": "single",
+      "title": "NETSCOUT expands Adaptive DDoS Protection with outbound attack mitigation",
+      "url": "https://www.helpnetsecurity.com/2026/08/18/netscout-expands-adaptive-ddos-protection-with-outbound-attack-mitigation/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-08-18T13:39:08+00:00",
+      "keywords": [
+        "DDoS",
+        "Botnet"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-08-18T23:01:09.330134+09:00",
+      "type": "single",
+      "title": "Silent 'TwinLoot' Cyber Threat Operates Entirely From Microsoft's Cloud",
+      "url": "https://www.darkreading.com/cloud-security/silent-twinloot-threat-operates-microsoft-cloud",
+      "source": "Dark Reading (보안뉴스 종합) [RSS]",
+      "published": "2026-08-18T13:00:00+00:00",
       "keywords": [
         "Malware"
       ],
