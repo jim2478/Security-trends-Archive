@@ -1,0 +1,101 @@
+{
+  "date": "2026-08-18",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 1,
+    "total_articles_max": 1772,
+    "matched_articles_max": 126,
+    "new_alerts": 1,
+    "cve_count": 10,
+    "ioc_count": 3,
+    "merged_count": 0,
+    "unique_cves": [
+      "CVE-2007-3010",
+      "CVE-2016-6277",
+      "CVE-2018-14558",
+      "CVE-2019-14931",
+      "CVE-2020-10987",
+      "CVE-2021-46422",
+      "CVE-2022-37055",
+      "CVE-2024-29269",
+      "CVE-2025-10123",
+      "CVE-2025-55583"
+    ],
+    "keywords_hit": {
+      "Botnet": 1
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-08-18T16:34:16.985789+09:00",
+      "type": "single",
+      "title": "Multi-Functional Linux Botnet “Evooo1Bot”",
+      "url": "http://www.fortinet.com/blog/threat-research/multi-functional-linux-botnet-evooo1bot",
+      "source": "Fortinet FortiGuard Labs (위협연구)",
+      "published": "2026-08-13T13:00:00.000Z",
+      "keywords": [
+        "Botnet"
+      ],
+      "ioc_raw_text": "[IP] 91[.]92[.]40[.]118\n[SHA256] 4c0886349e9d348569fffe1b7a31e474d514508bf0cd6f1e5dd99c2a73525e4d\n[SHA256] f13cb360768363d3424e2192c7805b8c8015eb8706dbbbcdead6aed8cf390109",
+      "cve_ids": [
+        "CVE-2007-3010",
+        "CVE-2016-6277",
+        "CVE-2018-14558",
+        "CVE-2019-14931",
+        "CVE-2020-10987",
+        "CVE-2021-46422",
+        "CVE-2022-37055",
+        "CVE-2024-29269",
+        "CVE-2025-10123",
+        "CVE-2025-55583"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2007-3010",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "NVD-CWE-noinfo (Insufficient Information)",
+          "description": "masterCGI in the Unified Maintenance Tool in Alcatel OmniPCX Enterprise Communication Server R7.1 and earlier allows remote attackers to execute arbitrary commands via shell metacharacters in the user parameter during a ping action.",
+          "epss_score": 0.97407,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2016-6277",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-352 (CSRF)",
+          "description": "NETGEAR R6250 before 1.0.4.6.Beta, R6400 before 1.0.1.18.Beta, R6700 before 1.0.1.14.Beta, R6900, R7000 before 1.0.7.6.Beta, R7100LG before 1.0.0.28.Beta, R7300DST before 1.0.0.46.Beta, R7900 before 1.0.1.8.Beta, R8000 before 1.0.3.26.Beta, D6220, D6400, D7000, and possibly other routers allow remote attackers to execute arbitrary commands via shell metacharacters in the path info to cgi-bin/.",
+          "epss_score": 0.99781,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2018-14558",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-78 (OS Command Injection)",
+          "description": "An issue was discovered on Tenda AC7 devices with firmware through V15.03.06.44_CN(AC7), AC9 devices with firmware through V15.03.05.19(6318)_CN(AC9), and AC10 devices with firmware through V15.03.06.23_CN(AC10). A command Injection vulnerability allows attackers to execute arbitrary OS commands via a crafted goform/setUsbUnload request. This occurs because the \"formsetUsbUnload\" function executes a dosystemCmd function with untrusted input.",
+          "epss_score": 0.08672,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2019-14931",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-78 (OS Command Injection)",
+          "description": "An issue was discovered on Mitsubishi Electric Europe B.V. ME-RTU devices through 2.02 and INEA ME-RTU devices through 3.0. An unauthenticated remote OS Command Injection vulnerability allows an attacker to execute arbitrary commands on the RTU due to the passing of unsafe user supplied data to the RTU's system shell. Functionality in mobile.php provides users with the ability to ping sites or IP addresses via Mobile Connection Test. When the Mobile Connection Test is submitted, action.php is ca",
+          "epss_score": 0.5809,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2020-10987",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-78 (OS Command Injection)",
+          "description": "The goform/setUsbUnload endpoint of Tenda AC15 AC1900 version 15.03.05.19 allows remote attackers to execute arbitrary system commands via the deviceName POST parameter.",
+          "epss_score": 0.7981,
+          "kev": true
+        }
+      ]
+    }
+  ]
+}
