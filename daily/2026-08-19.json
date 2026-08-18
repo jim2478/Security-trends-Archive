@@ -2,16 +2,19 @@
   "date": "2026-08-19",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 1,
+    "scan_runs": 2,
     "total_articles_max": 1772,
     "matched_articles_max": 120,
-    "new_alerts": 1,
-    "cve_count": 0,
+    "new_alerts": 2,
+    "cve_count": 1,
     "ioc_count": 0,
     "merged_count": 0,
-    "unique_cves": [],
+    "unique_cves": [
+      "CVE-2026-68820"
+    ],
     "keywords_hit": {
-      "Malware": 1
+      "Malware": 1,
+      "CVE": 1
     }
   },
   "alerts": [
@@ -28,6 +31,32 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-08-19T04:02:41.148932+09:00",
+      "type": "single",
+      "title": "CVE-2026-68820 is in KEV. Here Is What CISA BOD 26-04 Actually Requires Now",
+      "url": "https://blog.qualys.com/category/product-tech",
+      "source": "Qualys Blog (취약점관리) [RSS]",
+      "published": "2026-08-18T18:06:38+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-68820"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-68820",
+          "cvss_score": 7.0,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-416 (Use After Free)",
+          "description": "Use after free in Windows Ancillary Function Driver for WinSock allows an authorized attacker to elevate privileges locally.",
+          "epss_score": 0.00332,
+          "kev": true
+        }
+      ]
     }
   ]
 }
