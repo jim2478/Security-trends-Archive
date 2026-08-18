@@ -2,11 +2,11 @@
   "date": "2026-08-18",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
+    "scan_runs": 3,
     "total_articles_max": 1772,
     "matched_articles_max": 126,
-    "new_alerts": 3,
-    "cve_count": 11,
+    "new_alerts": 5,
+    "cve_count": 13,
     "ioc_count": 3,
     "merged_count": 0,
     "unique_cves": [
@@ -20,12 +20,14 @@
       "CVE-2024-29269",
       "CVE-2025-10123",
       "CVE-2025-55583",
-      "CVE-2026-15748"
+      "CVE-2026-15748",
+      "CVE-2026-19478",
+      "CVE-2026-19650"
     ],
     "keywords_hit": {
-      "Botnet": 1,
-      "CVE": 1,
-      "Malware": 1
+      "CVE": 2,
+      "Malware": 2,
+      "Botnet": 1
     }
   },
   "alerts": [
@@ -133,6 +135,56 @@
       "url": "https://cybernews.com/security/anthropic-claude-ai-agents-hostile-takeover/",
       "source": "CyberNews [RSS]",
       "published": "2026-08-18T08:59:44+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-08-18T21:01:21.950214+09:00",
+      "type": "single",
+      "title": "Critical GitLab flaw allows attackers to modify or delete public projects (CVE-2026-19478)",
+      "url": "https://www.helpnetsecurity.com/2026/08/18/gitlab-critical-code-injection-flaw-cve-2026-19478/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-08-18T11:38:24+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-19478",
+        "CVE-2026-19650"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-19478",
+          "cvss_score": 9.4,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-94 (Code Injection)",
+          "description": "GitLab has remediated an issue in GitLab CE/EE affecting all versions from 18.2 before 18.11.11, 19.0 before 19.0.8, 19.1 before 19.1.6, and 19.2 before 19.2.4 that under certain conditions could allow an unauthenticated user to remotely modify or delete public projects and user data via a GraphQL directive.",
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-19650",
+          "cvss_score": 7.1,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-352 (CSRF)",
+          "description": "GitLab has remediated an issue in GitLab CE/EE affecting all versions from 18.2 before 18.11.11, 19.0 before 19.0.8, 19.1 before 19.1.6, and 19.2 before 19.2.4 that under certain conditions could have allowed an unauthenticated user to execute mutations via GET requests due to improper request validation in GraphQL multiplex query handling.",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-08-18T21:01:21.950214+09:00",
+      "type": "single",
+      "title": "16 Typosquatted RubyGems Packages Steal Browser Credentials and Crypto Wallets",
+      "url": "https://thehackernews.com/2026/08/16-typosquatted-rubygems-packages-steal.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-08-18T11:40:06+00:00",
       "keywords": [
         "Malware"
       ],
