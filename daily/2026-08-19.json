@@ -1,0 +1,33 @@
+{
+  "date": "2026-08-19",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 1,
+    "total_articles_max": 1772,
+    "matched_articles_max": 120,
+    "new_alerts": 1,
+    "cve_count": 0,
+    "ioc_count": 0,
+    "merged_count": 0,
+    "unique_cves": [],
+    "keywords_hit": {
+      "Malware": 1
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-08-19T02:01:10.497303+09:00",
+      "type": "single",
+      "title": "Laptop maker admits Malware was distributed through Driver Downloads",
+      "url": "https://www.cybersecurity-insiders.com/laptop-maker-admits-malware-was-distributed-through-driver-downloads/",
+      "source": "Cybersecurity Insiders (보안인사이트)",
+      "published": "2026-08-18T15:15:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
