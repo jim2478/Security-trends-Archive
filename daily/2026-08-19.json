@@ -2,19 +2,21 @@
   "date": "2026-08-19",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
+    "scan_runs": 3,
     "total_articles_max": 1772,
     "matched_articles_max": 120,
-    "new_alerts": 2,
-    "cve_count": 1,
+    "new_alerts": 3,
+    "cve_count": 3,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
+      "CVE-2026-19478",
+      "CVE-2026-19650",
       "CVE-2026-68820"
     ],
     "keywords_hit": {
-      "Malware": 1,
-      "CVE": 1
+      "CVE": 2,
+      "Malware": 1
     }
   },
   "alerts": [
@@ -55,6 +57,42 @@
           "description": "Use after free in Windows Ancillary Function Driver for WinSock allows an authorized attacker to elevate privileges locally.",
           "epss_score": 0.00332,
           "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-08-19T07:06:08.090485+09:00",
+      "type": "single",
+      "title": "Critical GitLab Zero-Click Flaw Poses Mitigation Challenges",
+      "url": "https://www.darkreading.com/application-security/critical-gitlab-zero-click-flaw-mitigation-challenges",
+      "source": "Dark Reading (보안뉴스 종합) [RSS]",
+      "published": "2026-08-18T21:25:58+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-19478",
+        "CVE-2026-19650"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-19478",
+          "cvss_score": 9.4,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-94 (Code Injection)",
+          "description": "GitLab has remediated an issue in GitLab CE/EE affecting all versions from 18.2 before 18.11.11, 19.0 before 19.0.8, 19.1 before 19.1.6, and 19.2 before 19.2.4 that under certain conditions could allow an unauthenticated user to remotely modify or delete public projects and user data via a GraphQL directive.",
+          "epss_score": 0.00719,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-19650",
+          "cvss_score": 7.1,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-352 (CSRF)",
+          "description": "GitLab has remediated an issue in GitLab CE/EE affecting all versions from 18.2 before 18.11.11, 19.0 before 19.0.8, 19.1 before 19.1.6, and 19.2 before 19.2.4 that under certain conditions could have allowed an unauthenticated user to execute mutations via GET requests due to improper request validation in GraphQL multiplex query handling.",
+          "epss_score": 0.0024,
+          "kev": false
         }
       ]
     }
