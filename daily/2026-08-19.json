@@ -2,10 +2,10 @@
   "date": "2026-08-19",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 6,
+    "scan_runs": 7,
     "total_articles_max": 1772,
     "matched_articles_max": 121,
-    "new_alerts": 6,
+    "new_alerts": 7,
     "cve_count": 5,
     "ioc_count": 0,
     "merged_count": 0,
@@ -18,7 +18,7 @@
     ],
     "keywords_hit": {
       "CVE": 4,
-      "Malware": 2
+      "Malware": 3
     }
   },
   "alerts": [
@@ -157,6 +157,20 @@
       "url": "https://thehackernews.com/2026/08/microsoft-links-30-rotating-domains-to.html",
       "source": "The Hacker News (보안뉴스 종합) [RSS]",
       "published": "2026-08-19T06:01:53+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-08-19T20:01:16.688913+09:00",
+      "type": "single",
+      "title": "Hunt Malware & Phishing Threats with ANY.RUN for Proactive Enterprise Security",
+      "url": "https://any.run/cybersecurity-blog/proactive-threat-hunting/",
+      "source": "ANY.RUN (악성코드샌드박스분석) [RSS]",
+      "published": "2026-08-19T10:27:03+00:00",
       "keywords": [
         "Malware"
       ],
