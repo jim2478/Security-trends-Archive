@@ -2,20 +2,21 @@
   "date": "2026-08-19",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
+    "scan_runs": 4,
     "total_articles_max": 1772,
     "matched_articles_max": 120,
-    "new_alerts": 3,
-    "cve_count": 3,
+    "new_alerts": 4,
+    "cve_count": 4,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2026-19478",
       "CVE-2026-19650",
+      "CVE-2026-64849",
       "CVE-2026-68820"
     ],
     "keywords_hit": {
-      "CVE": 2,
+      "CVE": 3,
       "Malware": 1
     }
   },
@@ -92,6 +93,32 @@
           "cwe": "CWE-352 (CSRF)",
           "description": "GitLab has remediated an issue in GitLab CE/EE affecting all versions from 18.2 before 18.11.11, 19.0 before 19.0.8, 19.1 before 19.1.6, and 19.2 before 19.2.4 that under certain conditions could have allowed an unauthenticated user to execute mutations via GET requests due to improper request validation in GraphQL multiplex query handling.",
           "epss_score": 0.0024,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-08-19T09:01:07.395092+09:00",
+      "type": "single",
+      "title": "MLflow 치명적 SSRF 취약점 실제 공격…클라우드 자격증명 탈취 시도 확인",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=208103",
+      "source": "데일리시큐 (이슈) [RSS]",
+      "published": "2026-08-19T08:00:58+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-64849"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-64849",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-918 (SSRF)",
+          "description": "MLflow is an open source AI engineering platform for agents, large language models, and machine learning models. Prior to 3.15.0, the unauthenticated POST /api/2.0/mlflow/webhooks/{id}/test endpoint calls _validate_webhook_url() in mlflow/utils/validation.py only for the original URL while mlflow/webhooks/delivery.py follows redirects and re-resolves the hostname without pinning the validated address, allowing attackers to reach internal or cloud metadata services and receive response_status and",
+          "epss_score": 0.00349,
           "kev": false
         }
       ]
