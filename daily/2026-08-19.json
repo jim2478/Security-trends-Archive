@@ -2,21 +2,22 @@
   "date": "2026-08-19",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 4,
+    "scan_runs": 5,
     "total_articles_max": 1772,
-    "matched_articles_max": 120,
-    "new_alerts": 4,
-    "cve_count": 4,
+    "matched_articles_max": 121,
+    "new_alerts": 5,
+    "cve_count": 5,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2026-19478",
       "CVE-2026-19650",
+      "CVE-2026-24301",
       "CVE-2026-64849",
       "CVE-2026-68820"
     ],
     "keywords_hit": {
-      "CVE": 3,
+      "CVE": 4,
       "Malware": 1
     }
   },
@@ -119,6 +120,32 @@
           "cwe": "CWE-918 (SSRF)",
           "description": "MLflow is an open source AI engineering platform for agents, large language models, and machine learning models. Prior to 3.15.0, the unauthenticated POST /api/2.0/mlflow/webhooks/{id}/test endpoint calls _validate_webhook_url() in mlflow/utils/validation.py only for the original URL while mlflow/webhooks/delivery.py follows redirects and re-resolves the hostname without pinning the validated address, allowing attackers to reach internal or cloud metadata services and receive response_status and",
           "epss_score": 0.00349,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-08-19T15:03:02.740268+09:00",
+      "type": "single",
+      "title": "코파일럿 링크 한 번 클릭했더니 이메일·드라이브 정보 샌다…MS 패치 완료",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=208115",
+      "source": "데일리시큐 (이슈) [RSS]",
+      "published": "2026-08-19T14:37:59+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-24301"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-24301",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-77 (Command Injection)",
+          "description": "Improper neutralization of special elements used in a command ('command injection') in Microsoft Copilot allows an unauthorized attacker to disclose information over a network.",
+          "epss_score": null,
           "kev": false
         }
       ]
