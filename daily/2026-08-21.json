@@ -2,10 +2,10 @@
   "date": "2026-08-21",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 5,
+    "scan_runs": 6,
     "total_articles_max": 1752,
     "matched_articles_max": 118,
-    "new_alerts": 7,
+    "new_alerts": 8,
     "cve_count": 3,
     "ioc_count": 0,
     "merged_count": 1,
@@ -14,8 +14,8 @@
       "CVE-2026-73570"
     ],
     "keywords_hit": {
-      "CVE": 4,
-      "Malware": 4
+      "Malware": 5,
+      "CVE": 4
     }
   },
   "alerts": [
@@ -143,6 +143,20 @@
       "url": "https://therecord.media/china-cyber-espionage-central-asia",
       "source": "The Record by Recorded Future (위협뉴스) [RSS]",
       "published": "2026-08-20T19:30:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-08-21T07:01:00.743306+09:00",
+      "type": "single",
+      "title": "Rust Supply Chain Attack Puts Build-Time Malware in Crates with 245 Million Downloads",
+      "url": "https://thehackernews.com/2026/08/rust-supply-chain-attack-puts-build.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-08-20T20:22:35+00:00",
       "keywords": [
         "Malware"
       ],
