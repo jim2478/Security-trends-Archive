@@ -1,0 +1,98 @@
+{
+  "date": "2026-08-21",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 1,
+    "total_articles_max": 1732,
+    "matched_articles_max": 116,
+    "new_alerts": 3,
+    "cve_count": 3,
+    "ioc_count": 0,
+    "merged_count": 1,
+    "unique_cves": [
+      "CVE-2026-69414",
+      "CVE-2026-73570"
+    ],
+    "keywords_hit": {
+      "CVE": 3,
+      "Malware": 1
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-08-21T00:01:30.251152+09:00",
+      "type": "merged",
+      "cve_ids": [
+        "CVE-2026-73570"
+      ],
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "sources": [
+        {
+          "title": "Attackers Exploit Zimbra SNMP Flaw for Unauthenticated Remote Code Execution",
+          "url": "https://thehackernews.com/2026/08/attackers-exploit-zimbra-snmp-flaw-for.html",
+          "source": "The Hacker News (보안뉴스 종합) [RSS]"
+        },
+        {
+          "title": "Hackers Target Zimbra Servers in Active Exploitation Campaign",
+          "url": "https://www.securityweek.com/hackers-target-zimbra-servers-in-active-exploitation-campaign/",
+          "source": "SecurityWeek (보안뉴스 종합) [RSS]"
+        }
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-73570",
+          "cvss_score": 8.9,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-78 (OS Command Injection)",
+          "description": "A remote code execution vulnerability exists in Zimbra Collaboration (ZCS) before 10.1.20 when the optional zimbra-snmp package is installed and SNMP notifications are enabled. Due to improper sanitization of untrusted input during SNMP notification processing, an unauthenticated attacker can send specially crafted SMTP requests that may result in execution of arbitrary operating system commands as the Zimbra user.",
+          "epss_score": 0.00539,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-08-21T00:01:30.251152+09:00",
+      "type": "single",
+      "title": "CVE-2026-69414 ShieldBreak Zero-Day: No Patch, and CISA BOD 26-04 Gives You 14 Days",
+      "url": "https://blog.qualys.com/category/product-tech/vulnmgmt-detection-response",
+      "source": "Qualys Blog (취약점관리) [RSS]",
+      "published": "2026-08-20T14:02:12+00:00",
+      "keywords": [
+        "CVE",
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-69414"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-69414",
+          "cvss_score": 7.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-284 (Improper Access Control)",
+          "description": "Microsoft is aware of an elevation of privilege in the Microsoft Malware Protection Engine in Microsoft Defender publicly referred to as &quot;ShieldBreak &quot;.\nWe are working to provide a high quality security update that addresses this vulnerability. We will provide information in this CVE when the update is available.",
+          "epss_score": 0.00227,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-08-21T00:01:30.251152+09:00",
+      "type": "single",
+      "title": "Isolated-vm Flaw Lets Sandboxed JavaScript Escape to Host for Potential RCE",
+      "url": "https://thehackernews.com/2026/08/isolated-vm-flaw-lets-sandboxed.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-08-20T13:48:24+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
