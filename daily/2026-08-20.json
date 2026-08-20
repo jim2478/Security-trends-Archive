@@ -1,0 +1,58 @@
+{
+  "date": "2026-08-20",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 1,
+    "total_articles_max": 1752,
+    "matched_articles_max": 109,
+    "new_alerts": 1,
+    "cve_count": 2,
+    "ioc_count": 0,
+    "merged_count": 0,
+    "unique_cves": [
+      "CVE-2026-71960",
+      "CVE-2026-71961"
+    ],
+    "keywords_hit": {
+      "CVE": 1
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-08-20T16:01:03.448901+09:00",
+      "type": "single",
+      "title": "Cudy WR3000: Hard-coded JWT Secret to Root Command Injection",
+      "url": "https://seclists.org/fulldisclosure/2026/Aug/68",
+      "source": "SecLists Full Disclosure (취약점공개)",
+      "published": "2026-08-20T06:24:59+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-71960",
+        "CVE-2026-71961"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-71960",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-798 (Hard-coded Credentials)",
+          "description": "Cudy WR3000 2.0 running firmware before 2.5.24 contains a hard-coded JWT HMAC signing secret vulnerability in the Mosquitto MQTT broker's authentication plugin that allows unauthenticated attackers to forge valid JWT tokens by extracting the secret from the firmware image. Attackers can use the extracted secret to craft arbitrary JWT tokens and authenticate to the MQTT broker without legitimate credentials, gaining unauthorized access to the device's mesh networking interface.",
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-71961",
+          "cvss_score": 8.7,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-78 (OS Command Injection)",
+          "description": "Cudy WR3000 2.0 running firmware before 2.5.24 contains an OS command injection vulnerability that allows authenticated attackers to execute arbitrary OS commands with root privileges by sending unsanitized input through the mesh MQTT command interface. The sync_command binary forwards unsanitized input directly to a shell execution sink in command.lua, enabling attackers with access to the MQTT broker to exploit the default-enabled command execution path to achieve full root-level system compro",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    }
+  ]
+}
