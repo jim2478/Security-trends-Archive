@@ -2,10 +2,10 @@
   "date": "2026-08-21",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
+    "scan_runs": 3,
     "total_articles_max": 1752,
     "matched_articles_max": 117,
-    "new_alerts": 4,
+    "new_alerts": 5,
     "cve_count": 3,
     "ioc_count": 0,
     "merged_count": 1,
@@ -15,7 +15,7 @@
     ],
     "keywords_hit": {
       "CVE": 4,
-      "Malware": 1
+      "Malware": 2
     }
   },
   "alerts": [
@@ -103,6 +103,20 @@
       "published": "2026-08-20T15:09:06+00:00",
       "keywords": [
         "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-08-21T03:01:06.731826+09:00",
+      "type": "single",
+      "title": "Hackers poison arrayref Rust crate to push infostealer malware",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-poison-arrayref-rust-crate-to-push-infostealer-malware/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-08-20T17:53:52+00:00",
+      "keywords": [
+        "Malware"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
