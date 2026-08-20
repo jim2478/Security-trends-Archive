@@ -2,10 +2,10 @@
   "date": "2026-08-21",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
+    "scan_runs": 4,
     "total_articles_max": 1752,
     "matched_articles_max": 117,
-    "new_alerts": 5,
+    "new_alerts": 6,
     "cve_count": 3,
     "ioc_count": 0,
     "merged_count": 1,
@@ -15,7 +15,7 @@
     ],
     "keywords_hit": {
       "CVE": 4,
-      "Malware": 2
+      "Malware": 3
     }
   },
   "alerts": [
@@ -115,6 +115,20 @@
       "url": "https://www.bleepingcomputer.com/news/security/hackers-poison-arrayref-rust-crate-to-push-infostealer-malware/",
       "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
       "published": "2026-08-20T17:53:52+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-08-21T04:01:10.240762+09:00",
+      "type": "single",
+      "title": "ThreatsDay: Gogs 10.0 RCE, n8n Workflow-to-RCE, $10M Reward, GLM-5.3 AI Exploit and More",
+      "url": "https://thehackernews.com/2026/08/threatsday-gogs-100-rce-n8n-workflow-to.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-08-20T17:23:48+00:00",
       "keywords": [
         "Malware"
       ],
