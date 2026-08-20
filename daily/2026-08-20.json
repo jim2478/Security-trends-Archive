@@ -2,10 +2,10 @@
   "date": "2026-08-20",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
+    "scan_runs": 4,
     "total_articles_max": 1752,
     "matched_articles_max": 111,
-    "new_alerts": 3,
+    "new_alerts": 5,
     "cve_count": 3,
     "ioc_count": 0,
     "merged_count": 0,
@@ -16,7 +16,8 @@
     ],
     "keywords_hit": {
       "CVE": 2,
-      "Malware": 1
+      "Malware": 2,
+      "DDoS": 1
     }
   },
   "alerts": [
@@ -89,6 +90,34 @@
       "url": "https://www.bleepingcomputer.com/news/security/new-manic-android-malware-can-exfiltrate-data-through-nearby-devices/",
       "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
       "published": "2026-08-20T10:02:02+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-08-20T21:03:19.333394+09:00",
+      "type": "single",
+      "title": "Corero brings cloud-based AI threat analysis to SmartWall ONE",
+      "url": "https://www.helpnetsecurity.com/2026/08/20/corero-ai-cloud-assist/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-08-20T11:22:26+00:00",
+      "keywords": [
+        "DDoS"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-08-20T21:03:19.333394+09:00",
+      "type": "single",
+      "title": "ToxicPanda 2.0 and GoldDigger Expand Android Banking Attacks with On-Device Fraud",
+      "url": "https://thehackernews.com/2026/08/toxicpanda-20-and-golddigger-expand.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-08-20T10:38:28+00:00",
       "keywords": [
         "Malware"
       ],
