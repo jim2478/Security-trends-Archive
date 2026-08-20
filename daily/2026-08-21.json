@@ -2,10 +2,10 @@
   "date": "2026-08-21",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 1,
-    "total_articles_max": 1732,
-    "matched_articles_max": 116,
-    "new_alerts": 3,
+    "scan_runs": 2,
+    "total_articles_max": 1752,
+    "matched_articles_max": 117,
+    "new_alerts": 4,
     "cve_count": 3,
     "ioc_count": 0,
     "merged_count": 1,
@@ -14,7 +14,7 @@
       "CVE-2026-73570"
     ],
     "keywords_hit": {
-      "CVE": 3,
+      "CVE": 4,
       "Malware": 1
     }
   },
@@ -87,6 +87,20 @@
       "url": "https://thehackernews.com/2026/08/isolated-vm-flaw-lets-sandboxed.html",
       "source": "The Hacker News (보안뉴스 종합) [RSS]",
       "published": "2026-08-20T13:48:24+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-08-21T01:01:05.630436+09:00",
+      "type": "single",
+      "title": "시트릭스 넷스케일러 인증 우회 취약점 공개…“인터넷 노출 장비 신속 패치 필요”",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=208135",
+      "source": "데일리시큐 (IT&생활) [RSS]",
+      "published": "2026-08-20T15:09:06+00:00",
       "keywords": [
         "CVE"
       ],
