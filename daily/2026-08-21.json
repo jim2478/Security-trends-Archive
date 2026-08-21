@@ -2,21 +2,22 @@
   "date": "2026-08-21",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 8,
+    "scan_runs": 9,
     "total_articles_max": 1752,
-    "matched_articles_max": 118,
-    "new_alerts": 10,
-    "cve_count": 4,
+    "matched_articles_max": 119,
+    "new_alerts": 11,
+    "cve_count": 5,
     "ioc_count": 0,
     "merged_count": 1,
     "unique_cves": [
       "CVE-2026-32475",
       "CVE-2026-69414",
+      "CVE-2026-69836",
       "CVE-2026-73570"
     ],
     "keywords_hit": {
+      "CVE": 6,
       "Malware": 5,
-      "CVE": 5,
       "DDoS": 1
     }
   },
@@ -205,6 +206,32 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-08-21T16:01:07.372178+09:00",
+      "type": "single",
+      "title": "Microsoft Entra ID Flaw (CVSS 10.0) Exploited in Wild, Allows Remote Code Execution",
+      "url": "https://thehackernews.com/2026/08/microsoft-entra-id-flaw-cvss-100.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-08-21T06:06:11+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-69836"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-69836",
+          "cvss_score": 10.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-502 (Deserialization)",
+          "description": "Deserialization of untrusted data in Microsoft Entra ID allows an unauthorized attacker to execute code over a network.",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
     }
   ]
 }
