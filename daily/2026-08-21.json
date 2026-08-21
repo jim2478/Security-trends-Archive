@@ -2,10 +2,10 @@
   "date": "2026-08-21",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 7,
+    "scan_runs": 8,
     "total_articles_max": 1752,
     "matched_articles_max": 118,
-    "new_alerts": 9,
+    "new_alerts": 10,
     "cve_count": 4,
     "ioc_count": 0,
     "merged_count": 1,
@@ -16,7 +16,8 @@
     ],
     "keywords_hit": {
       "Malware": 5,
-      "CVE": 5
+      "CVE": 5,
+      "DDoS": 1
     }
   },
   "alerts": [
@@ -190,6 +191,20 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-08-21T14:01:04.920346+09:00",
+      "type": "single",
+      "title": "New infosec products of the week: August 21, 2026",
+      "url": "https://www.helpnetsecurity.com/2026/08/21/new-infosec-products-of-the-week-august-21-2026/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-08-21T04:00:20+00:00",
+      "keywords": [
+        "DDoS"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
