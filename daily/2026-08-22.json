@@ -1,0 +1,35 @@
+{
+  "date": "2026-08-22",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 1,
+    "total_articles_max": 1742,
+    "matched_articles_max": 126,
+    "new_alerts": 1,
+    "cve_count": 0,
+    "ioc_count": 0,
+    "merged_count": 0,
+    "unique_cves": [],
+    "keywords_hit": {
+      "Botnet": 1,
+      "Malware": 1
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-08-22T00:01:13.406654+09:00",
+      "type": "single",
+      "title": "Malware in car infotainment systems: how infection occurs | Kaspersky official blog",
+      "url": "https://www.kaspersky.co.uk/blog/car-botnet-malware-for-head-units-with-android/30828/",
+      "source": "Kaspersky Blog UK (보안뉴스) [RSS]",
+      "published": "2026-08-21T14:29:52+00:00",
+      "keywords": [
+        "Botnet",
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
