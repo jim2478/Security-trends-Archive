@@ -2,10 +2,10 @@
   "date": "2026-08-21",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 12,
+    "scan_runs": 13,
     "total_articles_max": 1752,
     "matched_articles_max": 123,
-    "new_alerts": 16,
+    "new_alerts": 18,
     "cve_count": 10,
     "ioc_count": 43,
     "merged_count": 1,
@@ -21,8 +21,8 @@
       "CVE-2026-73570"
     ],
     "keywords_hit": {
+      "Malware": 10,
       "CVE": 8,
-      "Malware": 8,
       "DDoS": 1,
       "Botnet": 1
     }
@@ -359,6 +359,34 @@
       "url": "https://cybernews.com/news/new-android-malware/",
       "source": "CyberNews [RSS]",
       "published": "2026-08-21T09:32:16+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-08-21T21:01:11.436167+09:00",
+      "type": "single",
+      "title": "Hackers abuse FTP server banners to deliver new Windows malware",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-abuse-ftp-server-banners-to-deliver-new-windows-malware/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-08-21T11:00:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-08-21T21:01:11.436167+09:00",
+      "type": "single",
+      "title": "Attackers impersonate popular AI brands to spread malware",
+      "url": "https://www.helpnetsecurity.com/2026/08/21/ai-brand-impersonation-malware-malware-research/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-08-21T11:47:39+00:00",
       "keywords": [
         "Malware"
       ],
