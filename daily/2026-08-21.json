@@ -2,22 +2,26 @@
   "date": "2026-08-21",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 9,
+    "scan_runs": 10,
     "total_articles_max": 1752,
     "matched_articles_max": 119,
-    "new_alerts": 11,
-    "cve_count": 5,
+    "new_alerts": 13,
+    "cve_count": 9,
     "ioc_count": 0,
     "merged_count": 1,
     "unique_cves": [
+      "CVE-2026-19489",
+      "CVE-2026-19490",
       "CVE-2026-32475",
       "CVE-2026-69414",
       "CVE-2026-69836",
+      "CVE-2026-72529",
+      "CVE-2026-72530",
       "CVE-2026-73570"
     ],
     "keywords_hit": {
-      "CVE": 6,
-      "Malware": 5,
+      "CVE": 7,
+      "Malware": 6,
       "DDoS": 1
     }
   },
@@ -230,6 +234,78 @@
           "description": "Deserialization of untrusted data in Microsoft Entra ID allows an unauthorized attacker to execute code over a network.",
           "epss_score": null,
           "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-08-21T17:01:12.598841+09:00",
+      "type": "single",
+      "title": "Citrix urges customers to fix critical NetScaler authentication bypass (CVE-2026-19490)",
+      "url": "https://www.helpnetsecurity.com/2026/08/21/citrix-netscaler-gateway-cve-2026-19490/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-08-21T07:55:43+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-19489",
+        "CVE-2026-19490"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-19489",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-120 (CWE-120)",
+          "description": "Vulnerability in NetScaler ADC and NetScaler Gateway.\n\nThis issue affects ADC: from 14.1 through 73.32 and from 13.1 through 63.21; Gateway: from 14.1 through 73.32 and from 13.1 through 63.21.",
+          "epss_score": 0.00345,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-19490",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-288 (CWE-288)",
+          "description": "Vulnerability in NetScaler ADC and NetScaler Gateway.\n\nThis issue affects ADC: from 14.1 through 73.32 and from 13.1 through 63.21; Gateway: from 14.1 through 73.32 and from 13.1 through 63.21.",
+          "epss_score": 0.00345,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-08-21T17:01:12.598841+09:00",
+      "type": "single",
+      "title": "CISA Urges Immediate Patching of Exploited TrueConf Vulnerabilities",
+      "url": "https://www.securityweek.com/cisa-urges-immediate-patching-of-exploited-trueconf-vulnerabilities/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-08-21T07:25:50+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-72529",
+        "CVE-2026-72530"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-72529",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-306 (Missing Authentication)",
+          "description": "A remote unauthorized attacker with network access via port 4307/TCP to the TrueConf server versions 5.3.X to 5.3.9, 5.4.X to 5.4.9, 5.5.X to 5.5.5, and earlier could execute an arbitrary script by calling an undocumented function.",
+          "epss_score": 0.00284,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-72530",
+          "cvss_score": 9.5,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-94 (Code Injection)",
+          "description": "A remote unauthorized attacker with network access via port 4307/TCP to the TrueConf server versions 5.3.X to 5.3.9, 5.4.X to 5.4.9, 5.5.X to 5.5.5, and earlier could use a specially crafted script to break out of the isolated environment and execute arbitrary code on the host system.",
+          "epss_score": 0.0034,
+          "kev": true
         }
       ]
     }
