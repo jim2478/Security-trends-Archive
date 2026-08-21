@@ -2,14 +2,15 @@
   "date": "2026-08-21",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 10,
+    "scan_runs": 11,
     "total_articles_max": 1752,
-    "matched_articles_max": 119,
-    "new_alerts": 13,
-    "cve_count": 9,
-    "ioc_count": 0,
+    "matched_articles_max": 122,
+    "new_alerts": 15,
+    "cve_count": 10,
+    "ioc_count": 43,
     "merged_count": 1,
     "unique_cves": [
+      "CVE-2026-19478",
       "CVE-2026-19489",
       "CVE-2026-19490",
       "CVE-2026-32475",
@@ -20,9 +21,10 @@
       "CVE-2026-73570"
     ],
     "keywords_hit": {
-      "CVE": 7,
-      "Malware": 6,
-      "DDoS": 1
+      "CVE": 8,
+      "Malware": 7,
+      "DDoS": 1,
+      "Botnet": 1
     }
   },
   "alerts": [
@@ -308,6 +310,47 @@
           "kev": true
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-08-21T18:01:11.537839+09:00",
+      "type": "single",
+      "title": "GitLab CVE-2026-19478 Comes Under Active Exploitation Within Days of Disclosure",
+      "url": "https://thehackernews.com/2026/08/gitlab-cve-2026-19478-comes-under.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-08-21T07:04:25+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-19478"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-19478",
+          "cvss_score": 9.4,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-94 (Code Injection)",
+          "description": "GitLab has remediated an issue in GitLab CE/EE affecting all versions from 18.2 before 18.11.11, 19.0 before 19.0.8, 19.1 before 19.1.6, and 19.2 before 19.2.4 that under certain conditions could allow an unauthenticated user to remotely modify or delete public projects and user data via a GraphQL directive.",
+          "epss_score": 0.01506,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-08-21T18:01:11.537839+09:00",
+      "type": "single",
+      "title": "The invisible passenger in your car",
+      "url": "https://securelist.com/android-head-unit-malware/121106/",
+      "source": "Kaspersky Securelist (위협분석) [RSS]",
+      "published": "2026-08-21T08:00:29+00:00",
+      "keywords": [
+        "Botnet",
+        "Malware"
+      ],
+      "ioc_raw_text": "[IP] 144[.]217[.]243[.]201\n[IP] 107[.]151[.]248[.]132\n[IP] 128[.]14[.]210[.]58\n[Domain] xmsae[.]sbs\n[Domain] ishano456[.]sbs\n[Domain] xshaon123[.]sbs\n[Domain] kshahnd[.]sbs\n[Domain] mdsjhd[.]sbs\n[Domain] nmnsny[.]sbs\n[Domain] kookjar[.]com\n[Domain] ty54fgd435[.]my\n[Domain] ue886578433[.]online\n[Domain] ty4523[.]space\n[URL] hxxp://ovcloudcontrol[.]cdn[.]cardoor[.]cn/upgrade/2026-06-08/bd80bd3c3d0e4bf6b5b4a825650d01f5.apk\n[URL] hxxp://ovcloudcontrol[.]cdn[.]cardoor[.]cn/upgrade/2025-06-10/fe71af9ecf174de48d2b2ccc2c15fb04.apk\n[URL] hxxp://ovcloudcontrol[.]cdn[.]cardoor[.]cn/upgrade/2024-11-07/fa831c3c23824b99871163387bcda7ad.apk\n[MD5] 0fbaa7092204f4b1494e0b840b014774\n[MD5] 1dcf031c40ce456b6a36a00b0acf3d11\n[MD5] 2a64c3efc11bf224aa54f24e876446c9\n[MD5] 412e9243f2981bbea3894254d105b3b8\n[MD5] 44b6b213a6a3f299eaf88e078de95ecb\n[MD5] 67dc78e544ebce16b85dc7c195dfbc58\n[MD5] 6c2e34b30da42085240ede53ab6107d4\n[MD5] 71ab5517f71866279d0d87d37f2ae320\n[MD5] 7a4d3ba2dacccfdda55859a5dfee2671\n[MD5] 89ef78f716a75964539f2db6520be362\n[MD5] 8b5e513144a6138a966ea59e68bf9da2\n[MD5] 9642ae619b3165d23c6349002d1abe24\n[MD5] a4223ce4288a230d1e6c3ff2c7639045\n[MD5] b067d5b0dbecbd6498bcdfba45dba77e\n[MD5] ba27951b4ee1c341f4415d033369ecd3\n[MD5] bd4d81cd27125ad3d9a114922d468499\n[MD5] bd80bd3c3d0e4bf6b5b4a825650d01f5\n[MD5] c6bfb1643ac7474ed8a7b4f96a187fdb\n[MD5] d63bacd6d6709dd68a10ef9d374c7835\n[MD5] de77c3303e93c9450424759f1741441c\n[MD5] e119845877089d6f4b0a70dc7388f316\n[MD5] e9f3a0dab6949ce2cddab9e0aa80ae1a\n[MD5] ea24487996eb70c1780922fb3063bcc5\n[MD5] f0e3f7eba2cde91e2dedb921bab47422\n[MD5] f8cf8c23ff597700d471fb7767df8bac\n[MD5] fa831c3c23824b99871163387bcda7ad\n[MD5] fe71af9ecf174de48d2b2ccc2c15fb04",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
