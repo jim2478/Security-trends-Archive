@@ -2,17 +2,20 @@
   "date": "2026-08-22",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 1,
+    "scan_runs": 2,
     "total_articles_max": 1742,
-    "matched_articles_max": 126,
-    "new_alerts": 1,
-    "cve_count": 0,
+    "matched_articles_max": 128,
+    "new_alerts": 2,
+    "cve_count": 1,
     "ioc_count": 0,
     "merged_count": 0,
-    "unique_cves": [],
+    "unique_cves": [
+      "CVE-2025-62593"
+    ],
     "keywords_hit": {
-      "Botnet": 1,
-      "Malware": 1
+      "Botnet": 2,
+      "Malware": 1,
+      "DDoS": 1
     }
   },
   "alerts": [
@@ -30,6 +33,33 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-08-22T01:03:17.558147+09:00",
+      "type": "single",
+      "title": "In Other News: Zombie Card Attack, T-Mobile Cut Cable to Stop Hackers, GitHub Denies AI Caused Bug",
+      "url": "https://www.securityweek.com/in-other-news-zombie-card-attack-t-mobile-cut-cable-to-stop-hackers-github-denies-ai-caused-bug/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-08-21T15:11:16+00:00",
+      "keywords": [
+        "DDoS",
+        "Botnet"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2025-62593"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2025-62593",
+          "cvss_score": 9.4,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-94 (Code Injection)",
+          "description": "Ray is an AI compute engine. Prior to version 2.52.0, developers working with Ray as a development tool can be exploited via a critical RCE vulnerability exploitable via Firefox and Safari. This vulnerability is due to an insufficient guard against browser-based attacks, as the current defense uses the User-Agent header starting with the string \"Mozilla\" as a defense mechanism. This defense is insufficient as the fetch specification allows the User-Agent header to be modified. Combined with a DN",
+          "epss_score": 0.01015,
+          "kev": true
+        }
+      ]
     }
   ]
 }
