@@ -2,11 +2,11 @@
   "date": "2026-08-21",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 13,
+    "scan_runs": 14,
     "total_articles_max": 1752,
-    "matched_articles_max": 123,
-    "new_alerts": 18,
-    "cve_count": 10,
+    "matched_articles_max": 125,
+    "new_alerts": 19,
+    "cve_count": 11,
     "ioc_count": 43,
     "merged_count": 1,
     "unique_cves": [
@@ -22,7 +22,7 @@
     ],
     "keywords_hit": {
       "Malware": 10,
-      "CVE": 8,
+      "CVE": 9,
       "DDoS": 1,
       "Botnet": 1
     }
@@ -393,6 +393,32 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-08-21T22:01:14.687966+09:00",
+      "type": "single",
+      "title": "Critical Microsoft Entra ID vulnerability exploited in the wild (CVE-2026-69836)",
+      "url": "https://www.helpnetsecurity.com/2026/08/21/microsoft-entra-id-vulnerability-cve-2026-69836/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-08-21T12:20:33+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-69836"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-69836",
+          "cvss_score": 10.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-502 (Deserialization)",
+          "description": "Deserialization of untrusted data in Microsoft Entra ID allows an unauthorized attacker to execute code over a network.",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
     }
   ]
 }
