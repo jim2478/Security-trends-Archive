@@ -2,10 +2,10 @@
   "date": "2026-08-22",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
+    "scan_runs": 3,
     "total_articles_max": 1742,
     "matched_articles_max": 128,
-    "new_alerts": 2,
+    "new_alerts": 3,
     "cve_count": 1,
     "ioc_count": 0,
     "merged_count": 0,
@@ -13,8 +13,8 @@
       "CVE-2025-62593"
     ],
     "keywords_hit": {
-      "Botnet": 2,
-      "Malware": 1,
+      "Botnet": 3,
+      "Malware": 2,
       "DDoS": 1
     }
   },
@@ -60,6 +60,21 @@
           "kev": true
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-08-22T02:01:08.980826+09:00",
+      "type": "single",
+      "title": "Android Car Malware Spreads Through Built-In Updaters for Ad Fraud, Proxy Botnet",
+      "url": "https://thehackernews.com/2026/08/android-car-malware-spreads-through.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-08-21T15:41:44+00:00",
+      "keywords": [
+        "Botnet",
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
