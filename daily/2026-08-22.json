@@ -2,20 +2,23 @@
   "date": "2026-08-22",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 4,
+    "scan_runs": 5,
     "total_articles_max": 1752,
-    "matched_articles_max": 128,
-    "new_alerts": 4,
-    "cve_count": 1,
+    "matched_articles_max": 129,
+    "new_alerts": 6,
+    "cve_count": 2,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
-      "CVE-2025-62593"
+      "CVE-2025-62593",
+      "CVE-2026-20030"
     ],
     "keywords_hit": {
       "Botnet": 3,
       "Malware": 3,
-      "DDoS": 1
+      "DDoS": 1,
+      "CVE": 1,
+      "봇넷": 1
     }
   },
   "alerts": [
@@ -85,6 +88,46 @@
       "published": "2026-08-21T18:01:30+00:00",
       "keywords": [
         "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-08-22T17:01:07.152490+09:00",
+      "type": "single",
+      "title": "시스코 크로스워크·시큐어 워크로드서 치명적 취약점 9건…즉시 업데이트 권고",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=208149",
+      "source": "데일리시큐 (이슈) [RSS]",
+      "published": "2026-08-22T16:51:37+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-20030"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-20030",
+          "cvss_score": 10.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-89 (SQL Injection)",
+          "description": "As part of Cisco's ongoing commitment to proactive security and product quality, the Cisco Crosswork engineering team has conducted a comprehensive internal security review. This review resulted in a software hardening release that addresses multiple internally discovered vulnerabilities.\r\n\r\nThe vulnerabilities tracked by CVE-2026-20030 are related to improper neutralization of special elements used in a SQL command issues that are grouped under the Common Weakness Enumeration (CWE) CWE-89.",
+          "epss_score": 0.0045,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-08-22T17:01:07.152490+09:00",
+      "type": "single",
+      "title": "자동차 안드로이드 업데이트 악용…광고 사기·프록시 봇넷에 악용",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=208148",
+      "source": "데일리시큐 (IT&생활) [RSS]",
+      "published": "2026-08-22T07:40:39+00:00",
+      "keywords": [
+        "봇넷"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
