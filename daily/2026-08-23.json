@@ -2,17 +2,18 @@
   "date": "2026-08-23",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 1,
+    "scan_runs": 2,
     "total_articles_max": 1752,
     "matched_articles_max": 129,
-    "new_alerts": 1,
+    "new_alerts": 2,
     "cve_count": 0,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [],
     "keywords_hit": {
       "Botnet": 1,
-      "Malware": 1
+      "Malware": 1,
+      "CVE": 1
     }
   },
   "alerts": [
@@ -26,6 +27,20 @@
       "keywords": [
         "Botnet",
         "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-08-23T22:01:08.556710+09:00",
+      "type": "single",
+      "title": "NASA 우주선 오픈소스 소프트웨어에 치명적 취약점…로그인 없이 장비 명령 실행",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=208156",
+      "source": "데일리시큐 (이슈) [RSS]",
+      "published": "2026-08-23T21:24:20+00:00",
+      "keywords": [
+        "CVE"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
