@@ -2,16 +2,21 @@
   "date": "2026-08-25",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
+    "scan_runs": 4,
     "total_articles_max": 1752,
     "matched_articles_max": 120,
-    "new_alerts": 4,
-    "cve_count": 0,
+    "new_alerts": 5,
+    "cve_count": 3,
     "ioc_count": 0,
     "merged_count": 0,
-    "unique_cves": [],
+    "unique_cves": [
+      "CVE-2025-66376",
+      "CVE-2026-73570",
+      "CVE-2026-73750"
+    ],
     "keywords_hit": {
-      "Malware": 4
+      "Malware": 4,
+      "CVE": 1
     }
   },
   "alerts": [
@@ -70,6 +75,52 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-08-25T08:01:06.288101+09:00",
+      "type": "single",
+      "title": "Exploited Zimbra Flaw Highlights Shrinking Window to Patch",
+      "url": "https://www.darkreading.com/vulnerabilities-threats/zimbra-flaw-exploitation-shrinking-window-patch",
+      "source": "Dark Reading (보안뉴스 종합) [RSS]",
+      "published": "2026-08-24T21:46:55+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2025-66376",
+        "CVE-2026-73570",
+        "CVE-2026-73750"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2025-66376",
+          "cvss_score": 7.2,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-79 (XSS)",
+          "description": "Zimbra Collaboration (ZCS) 10 before 10.0.18 and 10.1 before 10.1.13 allows Classic UI stored XSS via Cascading Style Sheets (CSS) @import directives in an HTML e-mail message.",
+          "epss_score": 0.19304,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-73570",
+          "cvss_score": 8.9,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-78 (OS Command Injection)",
+          "description": "A remote code execution vulnerability exists in Zimbra Collaboration (ZCS) before 10.1.20 when the optional zimbra-snmp package is installed and SNMP notifications are enabled. Due to improper sanitization of untrusted input during SNMP notification processing, an unauthenticated attacker can send specially crafted SMTP requests that may result in execution of arbitrary operating system commands as the Zimbra user.",
+          "epss_score": 0.01506,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-73750",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
     }
   ]
 }
