@@ -2,16 +2,16 @@
   "date": "2026-08-24",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
+    "scan_runs": 4,
     "total_articles_max": 1752,
     "matched_articles_max": 127,
-    "new_alerts": 3,
+    "new_alerts": 4,
     "cve_count": 0,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [],
     "keywords_hit": {
-      "Malware": 3,
+      "Malware": 4,
       "Botnet": 1
     }
   },
@@ -53,6 +53,20 @@
       "published": "2026-08-24T09:51:16+00:00",
       "keywords": [
         "Botnet",
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-08-24T23:01:21.270937+09:00",
+      "type": "single",
+      "title": "WordlistLoader Delivers Amatera via ClickFix, SynkLoader Phishes Windows Passwords",
+      "url": "https://thehackernews.com/2026/08/wordlistloader-delivers-amatera-via.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-08-24T12:35:36+00:00",
+      "keywords": [
         "Malware"
       ],
       "ioc_raw_text": "",
