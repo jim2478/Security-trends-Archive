@@ -2,16 +2,16 @@
   "date": "2026-08-25",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
+    "scan_runs": 3,
     "total_articles_max": 1752,
     "matched_articles_max": 120,
-    "new_alerts": 3,
+    "new_alerts": 4,
     "cve_count": 0,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [],
     "keywords_hit": {
-      "Malware": 3
+      "Malware": 4
     }
   },
   "alerts": [
@@ -50,6 +50,20 @@
       "url": "https://www.cybersecurity-insiders.com/can-a-malware-infection-spread-from-one-car-infotainment-system-to-another/",
       "source": "Cybersecurity Insiders (보안인사이트)",
       "published": "2026-08-24T15:19:59+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-08-25T07:01:05.714869+09:00",
+      "type": "single",
+      "title": "Foul Language: WordlistLoader Disguises Malware as Ordinary Text",
+      "url": "https://www.darkreading.com/data-privacy/wordlistloader-disguises-malware-ordinary-text",
+      "source": "Dark Reading (보안뉴스 종합) [RSS]",
+      "published": "2026-08-24T20:51:27+00:00",
       "keywords": [
         "Malware"
       ],
