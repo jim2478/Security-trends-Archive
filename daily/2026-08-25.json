@@ -2,10 +2,10 @@
   "date": "2026-08-25",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 4,
+    "scan_runs": 5,
     "total_articles_max": 1752,
-    "matched_articles_max": 120,
-    "new_alerts": 5,
+    "matched_articles_max": 122,
+    "new_alerts": 6,
     "cve_count": 3,
     "ioc_count": 0,
     "merged_count": 0,
@@ -16,7 +16,8 @@
     ],
     "keywords_hit": {
       "Malware": 4,
-      "CVE": 1
+      "CVE": 1,
+      "봇넷": 1
     }
   },
   "alerts": [
@@ -121,6 +122,20 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-08-25T11:01:02.636610+09:00",
+      "type": "single",
+      "title": "차량 내비게이션 뚫은 안드로이드 악성코드… 정상 업데이터 타고 광고 사기·봇넷 확산_보안뉴스",
+      "url": "https://www.boannews.com/news/articleView.html?idxno=145362",
+      "source": "KISIA 오늘의 뉴스 (웹)",
+      "published": "2026-08-24T16:05:00+09:00",
+      "keywords": [
+        "봇넷"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
