@@ -2,11 +2,11 @@
   "date": "2026-08-25",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 13,
+    "scan_runs": 14,
     "total_articles_max": 1752,
-    "matched_articles_max": 128,
-    "new_alerts": 18,
-    "cve_count": 10,
+    "matched_articles_max": 129,
+    "new_alerts": 20,
+    "cve_count": 12,
     "ioc_count": 12,
     "merged_count": 1,
     "unique_cves": [
@@ -19,7 +19,7 @@
     ],
     "keywords_hit": {
       "Malware": 10,
-      "CVE": 6,
+      "CVE": 8,
       "봇넷": 1,
       "Botnet": 1,
       "DDoS": 1
@@ -384,6 +384,56 @@
       "published": "2026-08-25T11:33:44+00:00",
       "keywords": [
         "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-08-25T23:01:11.069234+09:00",
+      "type": "single",
+      "title": "WordPress Websites Targeted via MiniOrange Plugin Vulnerabilities",
+      "url": "https://www.securityweek.com/wordpress-websites-targeted-via-miniorange-plugin-vulnerabilities/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-08-25T13:33:12+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-15981",
+        "CVE-2026-61979"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-15981",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-287 (Authentication Bypass)",
+          "description": "The SAML Single Sign On – SSO Login plugin for WordPress is vulnerable to Authentication Bypass in all versions up to, and including, 5.4.4. This is due to the mo_saml_validate_signature() function performing a loose boolean check on the raw tri-state integer returned by PHP's openssl_verify(), causing an error return value of -1 to be evaluated as truthy and therefore treated as a successful signature verification. This makes it possible for unauthenticated attackers to log in as any existing W",
+          "epss_score": 0.00796,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-61979",
+          "cvss_score": 8.1,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-266 (CWE-266)",
+          "description": "Unauthenticated Privilege Escalation in SAML SP Single Sign On <= 5.4.3 versions.",
+          "epss_score": 0.00264,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-08-25T23:01:11.069234+09:00",
+      "type": "single",
+      "title": "Marimo Notebook Flaw Could Run MCP Commands Before Cells Execute in Edit Mode",
+      "url": "https://thehackernews.com/2026/08/marimo-notebook-flaw-could-run-mcp.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-08-25T12:43:51+00:00",
+      "keywords": [
+        "CVE"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
