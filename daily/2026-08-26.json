@@ -2,17 +2,17 @@
   "date": "2026-08-26",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
+    "scan_runs": 3,
     "total_articles_max": 1731,
     "matched_articles_max": 128,
-    "new_alerts": 2,
+    "new_alerts": 3,
     "cve_count": 0,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [],
     "keywords_hit": {
-      "Malware": 1,
-      "DDoS": 1
+      "DDoS": 2,
+      "Malware": 1
     }
   },
   "alerts": [
@@ -37,6 +37,20 @@
       "url": "https://www.bleepingcomputer.com/news/security/massive-ddos-attack-disrupts-norways-government-digital-services/",
       "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
       "published": "2026-08-25T15:52:36+00:00",
+      "keywords": [
+        "DDoS"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-08-26T02:01:06.964591+09:00",
+      "type": "single",
+      "title": "Managed DDoS Protection UK: How to Choose a Provider (With Costs)",
+      "url": "http://www.ddosinfo.com/ddos-vendors/managed-ddos-protection-uk/",
+      "source": "DDoS Info [RSS]",
+      "published": "2026-08-25T15:37:55+00:00",
       "keywords": [
         "DDoS"
       ],
