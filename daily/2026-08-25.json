@@ -2,11 +2,11 @@
   "date": "2026-08-25",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 8,
+    "scan_runs": 9,
     "total_articles_max": 1752,
     "matched_articles_max": 126,
-    "new_alerts": 9,
-    "cve_count": 5,
+    "new_alerts": 10,
+    "cve_count": 6,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -17,7 +17,7 @@
     ],
     "keywords_hit": {
       "Malware": 5,
-      "CVE": 3,
+      "CVE": 4,
       "봇넷": 1
     }
   },
@@ -185,6 +185,32 @@
       "url": "https://www.securityweek.com/cisa-warns-of-exploited-oracle-weblogic-vulnerability/",
       "source": "SecurityWeek (보안뉴스 종합) [RSS]",
       "published": "2026-08-25T07:46:34+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-21962"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-21962",
+          "cvss_score": 10.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-284 (Improper Access Control)",
+          "description": "Vulnerability in the Oracle HTTP Server, Oracle Weblogic Server Proxy Plug-in product of Oracle Fusion Middleware (component: Weblogic Server Proxy Plug-in for Apache HTTP Server, Weblogic Server Proxy Plug-in for IIS).  Supported versions that are affected are 12.2.1.4.0, 14.1.1.0.0 and  14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle HTTP Server, Oracle Weblogic Server Proxy Plug-in.  While the vulnerability is in O",
+          "epss_score": 0.4323,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-08-25T18:01:01.085975+09:00",
+      "type": "single",
+      "title": "오라클 웹로직 CVSS 10점 취약점 실제 공격…CISA 긴급 경고",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=208185",
+      "source": "데일리시큐 (이슈) [RSS]",
+      "published": "2026-08-25T17:56:21+00:00",
       "keywords": [
         "CVE"
       ],
