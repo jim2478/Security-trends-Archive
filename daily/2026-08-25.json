@@ -2,10 +2,10 @@
   "date": "2026-08-25",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 5,
+    "scan_runs": 6,
     "total_articles_max": 1752,
     "matched_articles_max": 122,
-    "new_alerts": 6,
+    "new_alerts": 7,
     "cve_count": 3,
     "ioc_count": 0,
     "merged_count": 0,
@@ -15,7 +15,7 @@
       "CVE-2026-73750"
     ],
     "keywords_hit": {
-      "Malware": 4,
+      "Malware": 5,
       "CVE": 1,
       "봇넷": 1
     }
@@ -132,6 +132,20 @@
       "published": "2026-08-24T16:05:00+09:00",
       "keywords": [
         "봇넷"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-08-25T15:01:06.301149+09:00",
+      "type": "single",
+      "title": "The cybercrime supply chain has five stages, each with a price",
+      "url": "https://www.helpnetsecurity.com/2026/08/25/cybercrime-supply-chain-video/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-08-25T05:00:15+00:00",
+      "keywords": [
+        "Malware"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
