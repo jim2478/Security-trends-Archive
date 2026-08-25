@@ -2,22 +2,24 @@
   "date": "2026-08-25",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 9,
+    "scan_runs": 10,
     "total_articles_max": 1752,
     "matched_articles_max": 126,
-    "new_alerts": 10,
-    "cve_count": 6,
+    "new_alerts": 11,
+    "cve_count": 9,
     "ioc_count": 0,
-    "merged_count": 0,
+    "merged_count": 1,
     "unique_cves": [
       "CVE-2025-66376",
+      "CVE-2026-15981",
       "CVE-2026-21962",
+      "CVE-2026-61979",
       "CVE-2026-73570",
       "CVE-2026-73750"
     ],
     "keywords_hit": {
       "Malware": 5,
-      "CVE": 4,
+      "CVE": 5,
       "봇넷": 1
     }
   },
@@ -227,6 +229,50 @@
           "description": "Vulnerability in the Oracle HTTP Server, Oracle Weblogic Server Proxy Plug-in product of Oracle Fusion Middleware (component: Weblogic Server Proxy Plug-in for Apache HTTP Server, Weblogic Server Proxy Plug-in for IIS).  Supported versions that are affected are 12.2.1.4.0, 14.1.1.0.0 and  14.1.2.0.0. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle HTTP Server, Oracle Weblogic Server Proxy Plug-in.  While the vulnerability is in O",
           "epss_score": 0.4323,
           "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-08-25T19:01:09.516210+09:00",
+      "type": "merged",
+      "cve_ids": [
+        "CVE-2026-15981",
+        "CVE-2026-61979"
+      ],
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "sources": [
+        {
+          "title": "Attackers Target miniOrange SAML Flaws That Can Grant WordPress Admin Access",
+          "url": "https://thehackernews.com/2026/08/attackers-target-miniorange-saml-flaws.html",
+          "source": "The Hacker News (보안뉴스 종합) [RSS]"
+        },
+        {
+          "title": "워드프레스 관리자 계정 뚫렸다…미니오렌지 SSO 취약점 실제 공격 악용",
+          "url": "https://www.dailysecu.com/news/articleView.html?idxno=208186",
+          "source": "데일리시큐 (이슈) [RSS]"
+        }
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-61979",
+          "cvss_score": 8.1,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-266 (CWE-266)",
+          "description": "Unauthenticated Privilege Escalation in SAML SP Single Sign On <= 5.4.3 versions.",
+          "epss_score": 0.00264,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-15981",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-287 (Authentication Bypass)",
+          "description": "The SAML Single Sign On – SSO Login plugin for WordPress is vulnerable to Authentication Bypass in all versions up to, and including, 5.4.4. This is due to the mo_saml_validate_signature() function performing a loose boolean check on the raw tri-state integer returned by PHP's openssl_verify(), causing an error return value of -1 to be evaluated as truthy and therefore treated as a successful signature verification. This makes it possible for unauthenticated attackers to log in as any existing W",
+          "epss_score": 0.00796,
+          "kev": false
         }
       ]
     }
