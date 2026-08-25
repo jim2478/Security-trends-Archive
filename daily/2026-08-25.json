@@ -2,10 +2,10 @@
   "date": "2026-08-25",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 11,
+    "scan_runs": 12,
     "total_articles_max": 1752,
-    "matched_articles_max": 126,
-    "new_alerts": 13,
+    "matched_articles_max": 128,
+    "new_alerts": 15,
     "cve_count": 10,
     "ioc_count": 12,
     "merged_count": 1,
@@ -18,9 +18,11 @@
       "CVE-2026-73750"
     ],
     "keywords_hit": {
-      "Malware": 6,
+      "Malware": 7,
       "CVE": 6,
-      "봇넷": 1
+      "봇넷": 1,
+      "Botnet": 1,
+      "DDoS": 1
     }
   },
   "alerts": [
@@ -313,6 +315,35 @@
         "Malware"
       ],
       "ioc_raw_text": "[SHA256] 1619bcad3785be31ac2fdee0ab91392d08d9392032246e42673c3cb8964d4cb7\n[SHA256] 20ed21bfdb7aa970b12e7368eba8e26a711752f1cc5416b6fd6629d0e2a44e5d\n[SHA256] 4fb58687a364c3f6d6f7e0ca03654f9dec0f8832a499d61d40b0d424db1b1b14\n[SHA256] 5226ea8e0f516565ba825a1bbed10020982c16414750237068b602c5b4ac6abd\n[SHA256] 66dbf939c00b09d8d22c692864b68c4a602e7a59c4b925b2e2bef57b1ad047bd\n[SHA256] b1ef7b267d887e34bf0242a94b38e7dc9fd5e6f8b2c5c440ce4ec98cc74642fb\n[SHA256] bb932056cae8940742e50b4f2b994a802e703f7bc235e7dd647d085ae2b2baf7\n[SHA256] c233aec7917cf34294c19dd60ff79a6e0fac5ed6f0cb57af98013c08201a7a1c\n[SHA256] c398b3e06ef860670b9597daed85632834fa961aea87164b8ba8bb2f094a14ef\n[SHA256] dcf536edd67a98868759f4e72bcbd1f4404c70048a2a3257e77d8af06cb036ac\n[SHA256] dd15ce869aa79884753e3baad19b0437075202be86268b84f3ec2303e1ecd966\n[SHA256] e622f3b743c7fc0a011b07a2e656aa2b5e50a4876721bcf1f405d582ca4cda22",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-08-25T21:01:09.003079+09:00",
+      "type": "single",
+      "title": "First Malware Built Specifically for Car Head Units Fuels Botnet",
+      "url": "https://www.securityweek.com/first-malware-built-specifically-for-car-head-units-fuels-botnet/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-08-25T11:18:22+00:00",
+      "keywords": [
+        "Botnet",
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-08-25T21:01:09.003079+09:00",
+      "type": "single",
+      "title": "Large DDoS attack knocks Norwegian public services offline",
+      "url": "https://therecord.media/norway-cyberattack-ddos-government",
+      "source": "The Record by Recorded Future (위협뉴스) [RSS]",
+      "published": "2026-08-25T11:45:00+00:00",
+      "keywords": [
+        "DDoS"
+      ],
+      "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
     }
