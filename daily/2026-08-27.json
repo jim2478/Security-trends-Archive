@@ -2,10 +2,10 @@
   "date": "2026-08-27",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
+    "scan_runs": 3,
     "total_articles_max": 1732,
     "matched_articles_max": 123,
-    "new_alerts": 8,
+    "new_alerts": 9,
     "cve_count": 12,
     "ioc_count": 0,
     "merged_count": 0,
@@ -25,7 +25,7 @@
     ],
     "keywords_hit": {
       "CVE": 7,
-      "Malware": 1
+      "Malware": 2
     }
   },
   "alerts": [
@@ -265,6 +265,20 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-08-27T03:01:12.474540+09:00",
+      "type": "single",
+      "title": "Nimbus Manticore Expands Toolset With TWOSTROKE-Like Backdoor and SSH Tunneler",
+      "url": "https://thehackernews.com/2026/08/nimbus-manticore-expands-toolset-with.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-08-26T15:35:05+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
