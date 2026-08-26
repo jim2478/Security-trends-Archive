@@ -2,10 +2,10 @@
   "date": "2026-08-26",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 4,
+    "scan_runs": 5,
     "total_articles_max": 1731,
     "matched_articles_max": 128,
-    "new_alerts": 4,
+    "new_alerts": 5,
     "cve_count": 1,
     "ioc_count": 0,
     "merged_count": 0,
@@ -14,7 +14,7 @@
     ],
     "keywords_hit": {
       "DDoS": 2,
-      "Malware": 1,
+      "Malware": 2,
       "CVE": 1
     }
   },
@@ -86,6 +86,20 @@
           "kev": true
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-08-26T18:00:58.344281+09:00",
+      "type": "single",
+      "title": "Newly SLEEPWALKER Backdoor Waits for One Crafted Packet, Then Runs Its Own Bytecode",
+      "url": "https://thehackernews.com/2026/08/newly-sleepwalker-backdoor-waits-for.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-08-26T07:12:55+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
