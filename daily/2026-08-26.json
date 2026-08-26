@@ -2,10 +2,10 @@
   "date": "2026-08-26",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 5,
+    "scan_runs": 6,
     "total_articles_max": 1731,
     "matched_articles_max": 128,
-    "new_alerts": 5,
+    "new_alerts": 6,
     "cve_count": 1,
     "ioc_count": 0,
     "merged_count": 0,
@@ -13,7 +13,7 @@
       "CVE-2026-60004"
     ],
     "keywords_hit": {
-      "DDoS": 2,
+      "DDoS": 3,
       "Malware": 2,
       "CVE": 1
     }
@@ -96,6 +96,20 @@
       "published": "2026-08-26T07:12:55+00:00",
       "keywords": [
         "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-08-26T22:01:14.428436+09:00",
+      "type": "single",
+      "title": "DDoS Attack on an Airline: How Aviation Systems Fail and What Actually Protects Them",
+      "url": "http://www.ddosinfo.com/uncategorized/ddos-attack-on-airline/",
+      "source": "DDoS Info [RSS]",
+      "published": "2026-08-26T10:00:09+00:00",
+      "keywords": [
+        "DDoS"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
