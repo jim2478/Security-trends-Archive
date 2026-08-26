@@ -2,20 +2,22 @@
   "date": "2026-08-26",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 6,
-    "total_articles_max": 1731,
+    "scan_runs": 7,
+    "total_articles_max": 1732,
     "matched_articles_max": 128,
-    "new_alerts": 6,
-    "cve_count": 1,
+    "new_alerts": 7,
+    "cve_count": 3,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
+      "CVE-2026-19912",
+      "CVE-2026-19913",
       "CVE-2026-60004"
     ],
     "keywords_hit": {
       "DDoS": 3,
       "Malware": 2,
-      "CVE": 1
+      "CVE": 2
     }
   },
   "alerts": [
@@ -114,6 +116,42 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-08-26T23:01:07.928213+09:00",
+      "type": "single",
+      "title": "Unpatched Kaltura mwEmbed Flaws Could Let Remote Attackers Read Files and Run Code",
+      "url": "https://thehackernews.com/2026/08/unpatched-kaltura-mwembed-flaws-could.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-08-26T11:55:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-19912",
+        "CVE-2026-19913"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-19912",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": "The Kaltura HTML5 player (mwEmbed / html5lib) contains an unauthenticated remote code execution vulnerability caused by unsafe data deserialization and unsanitized filesystem path construction. mwEmbedLoader.php accepts a user‑controlled ServiceUrl, whose response is passed to unserialize(), and the resulting object’s fields are written to a cache path derived from attacker‑supplied uiconf_id without proper path validation. An attacker can write arbitrary files into web‑accessible locations and ",
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-19913",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": "The Kaltura HTML5 player (mwEmbed / html5lib) contains a local file disclosure vulnerability due to improper validation of the ServiceUrl parameter in mwEmbedLoader.php. This parameter is used as the base URL for a backend request and accepts non‑HTTP schemes such as file://. When an exception or error occurs, the response is subsequently deserialized and its raw contents are reflected to the client in an error message; this enables an unauthenticated, remote attacker to read any arbitrary inter",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
     }
   ]
 }
