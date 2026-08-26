@@ -1,0 +1,108 @@
+{
+  "date": "2026-08-27",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 1,
+    "total_articles_max": 1732,
+    "matched_articles_max": 118,
+    "new_alerts": 2,
+    "cve_count": 6,
+    "ioc_count": 0,
+    "merged_count": 0,
+    "unique_cves": [
+      "CVE-2025-13293",
+      "CVE-2025-13294",
+      "CVE-2025-15680",
+      "CVE-2025-15681",
+      "CVE-2025-15682",
+      "CVE-2025-15683"
+    ],
+    "keywords_hit": {
+      "CVE": 1,
+      "Malware": 1
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-08-27T01:20:36.304412+09:00",
+      "type": "single",
+      "title": "Multiple Vulnerabilities in TBEA TLogger Communication Box 3rd Generation",
+      "url": "https://seclists.org/fulldisclosure/2026/Aug/82",
+      "source": "SecLists Full Disclosure (취약점공개)",
+      "published": "2026-08-26T15:29:36+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2025-13293",
+        "CVE-2025-13294",
+        "CVE-2025-15680",
+        "CVE-2025-15681",
+        "CVE-2025-15682",
+        "CVE-2025-15683"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2025-13293",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-798 (Hard-coded Credentials)",
+          "description": "A hard-coded or default root account credential in TBEA TLogger V2.1.0.0B0.0.0.0 allows an unauthenticated remote attacker to obtain root-level access to the device via the exposed SSH service. The root password can be recovered from the password hash stored in /etc/shadow and used to authenticate to the SSH service. Successful exploitation provides full administrative control of the affected device.",
+          "epss_score": 0.00371,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2025-13294",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-89 (SQL Injection)",
+          "description": "An unauthenticated SQL injection vulnerability exists in the web server of TBEA TLogger V2.1.0.0B0.0.0.0. Multiple HTTP endpoints incorporate attacker-controlled parameters directly into SQLite queries without sufficient validation or parameterization. A remote unauthenticated attacker can exploit these endpoints to read, modify, or delete data stored in the device's CCU.db database.",
+          "epss_score": 0.00401,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2025-15680",
+          "cvss_score": 2.4,
+          "cvss_severity": "LOW",
+          "cwe": "CWE-497 (CWE-497)",
+          "description": "TBEA TLogger V2.1.0.0B0.0.0.0 exposes a UART interface on the device's circuit board without sufficient protection. A physically proximate attacker can connect to the UART interface and observe the device boot process and runtime debug output. The disclosed information includes operating system details, software versions, network configuration, filesystem paths, and other implementation and debugging information that may assist an attacker in further compromising the device.",
+          "epss_score": 0.00154,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2025-15681",
+          "cvss_score": 9.2,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-306 (Missing Authentication)",
+          "description": "TBEA TLogger V2.1.0.0B0.0.0.0 contains an authentication bypass in its web server. After a user has previously authenticated to the device, an unauthenticated attacker can directly access protected functionality through the /index.asp endpoint without providing valid credentials. This allows the attacker to access functionality intended for authenticated users and may expose or modify device configuration and data. Logging out from the bypassed state can additionally cause the web server to cras",
+          "epss_score": 0.00478,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2025-15682",
+          "cvss_score": 8.7,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-770 (CWE-770)",
+          "description": "TBEA TLogger V2.1.0.0B0.0.0.0 contains an unauthenticated resource exhaustion vulnerability in its web server. An unauthenticated remote attacker can send PUT requests to the /tmp/ endpoint, causing the web server to create persistent files containing attacker-controlled data under /opt/myapp/webserver/. The generated files are not removed because the web server attempts to move them into a non-existent directory. Repeated requests can therefore exhaust available storage and cause a denial-of-se",
+          "epss_score": 0.00396,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-08-27T01:20:36.304412+09:00",
+      "type": "single",
+      "title": "AI Speeds Up Malware Development, Not Its Success Rate: Analysis",
+      "url": "https://www.securityweek.com/ai-speeds-up-malware-development-not-its-success-rate-analysis/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-08-26T15:23:45+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
