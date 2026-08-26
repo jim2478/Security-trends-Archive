@@ -2,11 +2,11 @@
   "date": "2026-08-27",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 1,
+    "scan_runs": 2,
     "total_articles_max": 1732,
-    "matched_articles_max": 118,
-    "new_alerts": 2,
-    "cve_count": 6,
+    "matched_articles_max": 123,
+    "new_alerts": 8,
+    "cve_count": 12,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -15,10 +15,16 @@
       "CVE-2025-15680",
       "CVE-2025-15681",
       "CVE-2025-15682",
-      "CVE-2025-15683"
+      "CVE-2025-15683",
+      "CVE-2026-0009",
+      "CVE-2026-0010",
+      "CVE-2026-0011",
+      "CVE-2026-0012",
+      "CVE-2026-0013",
+      "CVE-2026-65053"
     ],
     "keywords_hit": {
-      "CVE": 1,
+      "CVE": 7,
       "Malware": 1
     }
   },
@@ -103,6 +109,162 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-08-27T02:12:46.416291+09:00",
+      "type": "single",
+      "title": "FD - Half-click unauthenticated remote code execution on Horde Groupware IMP (from a stored XSS)",
+      "url": "https://seclists.org/fulldisclosure/2026/Aug/115",
+      "source": "SecLists Full Disclosure (취약점공개)",
+      "published": "2026-08-26T16:46:52+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-65053"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-65053",
+          "cvss_score": 5.1,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-79 (XSS)",
+          "description": "Horde IMP's AppleDouble MIME viewer writes an attacker-controlled attachment name into an HTML status block without escaping it. In lib/Mime/Viewer/Appledouble.php, _IMPrender() obtains the name of the data part with IMP_Contents::getPartName(), which returns the MIME part's own name parameter as supplied by the message, and passes it through sprintf into the text of an IMP_Mime_Status object. IMP_Mime_Status::__toString() concatenates each text entry directly into the surrounding table markup, ",
+          "epss_score": 0.00246,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-08-27T02:12:46.416291+09:00",
+      "type": "single",
+      "title": "[NotCVE-2026-0013] CHIRP Kenwood ITM Driver Eval Injection Allows Arbitrary Code Execution via Crafted Radio File",
+      "url": "https://seclists.org/fulldisclosure/2026/Aug/114",
+      "source": "SecLists Full Disclosure (취약점공개)",
+      "published": "2026-08-26T16:46:38+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-0013"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-0013",
+          "cvss_score": 8.4,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-441 (CWE-441)",
+          "description": "In setupLayout of PickActivity.java, there is a possible way to start any activity as a DocumentsUI app due to a confused deputy. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
+          "epss_score": 0.00143,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-08-27T02:12:46.416291+09:00",
+      "type": "single",
+      "title": "[NotCVE-2026-0012] EmpManageX Hardcoded Administrative Credentials in Login API Allow Full Access to Employee Records",
+      "url": "https://seclists.org/fulldisclosure/2026/Aug/113",
+      "source": "SecLists Full Disclosure (취약점공개)",
+      "published": "2026-08-26T16:46:36+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-0012"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-0012",
+          "cvss_score": 6.2,
+          "cvss_severity": "MEDIUM",
+          "cwe": "NVD-CWE-noinfo (Insufficient Information)",
+          "description": "In setHideSensitive of ExpandableNotificationRow.java, there is a possible contact name leak due due to a logic error in the code. This could lead to local information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation.",
+          "epss_score": 0.001,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-08-27T02:12:46.416291+09:00",
+      "type": "single",
+      "title": "[NotCVE-2026-0011] Nmap 7.99 and Earlier nselib/packet.lua Zero-Length TCP Option Infinite Loop Allows Remote Denial of Service",
+      "url": "https://seclists.org/fulldisclosure/2026/Aug/112",
+      "source": "SecLists Full Disclosure (취약점공개)",
+      "published": "2026-08-26T16:46:35+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-0011"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-0011",
+          "cvss_score": 8.4,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-693 (CWE-693)",
+          "description": "In enableSystemPackageLPw of Settings.java, there is a possible way to prevent location access from working due to a logic error in the code. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
+          "epss_score": 0.00125,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-08-27T02:12:46.416291+09:00",
+      "type": "single",
+      "title": "[NotCVE-2026-0010] Barrier 2.4.0 for Windows Unauthenticated IPC Command Execution Allows Local Privilege Escalation to SYSTEM",
+      "url": "https://seclists.org/fulldisclosure/2026/Aug/111",
+      "source": "SecLists Full Disclosure (취약점공개)",
+      "published": "2026-08-26T16:46:34+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-0010"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-0010",
+          "cvss_score": 8.4,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-787 (Out-of-bounds Write)",
+          "description": "In onTransact of IDrmManagerService.cpp, there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
+          "epss_score": 0.00105,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-08-27T02:12:46.416291+09:00",
+      "type": "single",
+      "title": "[NotCVE-2026-0009] NitroShare Desktop 0.3.4 Path Traversal Allows LAN-Adjacent Arbitrary File Write",
+      "url": "https://seclists.org/fulldisclosure/2026/Aug/110",
+      "source": "SecLists Full Disclosure (취약점공개)",
+      "published": "2026-08-26T16:46:33+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-0009"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-0009",
+          "cvss_score": 7.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-269 (Improper Privilege Management)",
+          "description": "In multiple locations, there is a possible tapjacking due to a logic error in the code. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
+          "epss_score": 0.00083,
+          "kev": false
+        }
+      ]
     }
   ]
 }
