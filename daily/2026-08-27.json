@@ -2,10 +2,10 @@
   "date": "2026-08-27",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
+    "scan_runs": 4,
     "total_articles_max": 1732,
     "matched_articles_max": 123,
-    "new_alerts": 9,
+    "new_alerts": 10,
     "cve_count": 12,
     "ioc_count": 0,
     "merged_count": 0,
@@ -25,7 +25,8 @@
     ],
     "keywords_hit": {
       "CVE": 7,
-      "Malware": 2
+      "Malware": 3,
+      "Botnet": 1
     }
   },
   "alerts": [
@@ -274,6 +275,21 @@
       "source": "The Hacker News (보안뉴스 종합) [RSS]",
       "published": "2026-08-26T15:35:05+00:00",
       "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-08-27T04:01:19.920817+09:00",
+      "type": "single",
+      "title": "Android Malware Hijacks Update System for Car Head Units",
+      "url": "https://www.darkreading.com/cyberattacks-data-breaches/android-malware-hijacks-update-system-car-head-units",
+      "source": "Dark Reading (보안뉴스 종합) [RSS]",
+      "published": "2026-08-26T17:33:45+00:00",
+      "keywords": [
+        "Botnet",
         "Malware"
       ],
       "ioc_raw_text": "",
