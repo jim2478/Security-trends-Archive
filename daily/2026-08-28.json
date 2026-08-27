@@ -2,16 +2,19 @@
   "date": "2026-08-28",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 1,
+    "scan_runs": 2,
     "total_articles_max": 1712,
     "matched_articles_max": 115,
-    "new_alerts": 1,
-    "cve_count": 0,
+    "new_alerts": 3,
+    "cve_count": 1,
     "ioc_count": 0,
     "merged_count": 0,
-    "unique_cves": [],
+    "unique_cves": [
+      "CVE-2026-75604"
+    ],
     "keywords_hit": {
-      "CVE": 1
+      "CVE": 2,
+      "Botnet": 1
     }
   },
   "alerts": [
@@ -24,6 +27,46 @@
       "published": "2026-08-27T13:39:56+00:00",
       "keywords": [
         "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-08-28T02:01:07.334895+09:00",
+      "type": "single",
+      "title": "Next.js Patches Critical AVIF and Windows Flaws Enabling Unauthenticated RCE",
+      "url": "https://thehackernews.com/2026/08/nextjs-patches-critical-avif-and.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-08-27T15:13:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-75604"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-75604",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-08-28T02:01:07.334895+09:00",
+      "type": "single",
+      "title": "ThreatsDay: 296K IoT Botnet, 100+ Water Systems Targeted, SharePoint RCE Chain + 27 New Stories",
+      "url": "https://thehackernews.com/2026/08/threatsday-296k-iot-botnet-100-water.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-08-27T15:12:16+00:00",
+      "keywords": [
+        "Botnet"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
