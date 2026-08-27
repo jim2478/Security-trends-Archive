@@ -2,10 +2,10 @@
   "date": "2026-08-28",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
-    "total_articles_max": 1712,
-    "matched_articles_max": 115,
-    "new_alerts": 3,
+    "scan_runs": 3,
+    "total_articles_max": 1732,
+    "matched_articles_max": 116,
+    "new_alerts": 4,
     "cve_count": 1,
     "ioc_count": 0,
     "merged_count": 0,
@@ -13,7 +13,7 @@
       "CVE-2026-75604"
     ],
     "keywords_hit": {
-      "CVE": 2,
+      "CVE": 3,
       "Botnet": 1
     }
   },
@@ -67,6 +67,20 @@
       "published": "2026-08-27T15:12:16+00:00",
       "keywords": [
         "Botnet"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-08-28T04:01:11.162829+09:00",
+      "type": "single",
+      "title": "Agentic AI Risks, CVE Program Concerns Permeate Black Hat USA 2026",
+      "url": "https://www.darkreading.com/cybersecurity-operations/agentic-ai-risks-cve-program-concerns-black-hat-usa-2026",
+      "source": "Dark Reading (보안뉴스 종합) [RSS]",
+      "published": "2026-08-27T17:25:09+00:00",
+      "keywords": [
+        "CVE"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
