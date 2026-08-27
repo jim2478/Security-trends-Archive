@@ -2,11 +2,11 @@
   "date": "2026-08-27",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 5,
+    "scan_runs": 6,
     "total_articles_max": 1732,
     "matched_articles_max": 123,
-    "new_alerts": 11,
-    "cve_count": 12,
+    "new_alerts": 12,
+    "cve_count": 14,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -21,10 +21,12 @@
       "CVE-2026-0011",
       "CVE-2026-0012",
       "CVE-2026-0013",
-      "CVE-2026-65053"
+      "CVE-2026-65053",
+      "CVE-2026-8451",
+      "CVE-2026-8452"
     ],
     "keywords_hit": {
-      "CVE": 7,
+      "CVE": 8,
       "Malware": 4,
       "Botnet": 1
     }
@@ -309,6 +311,42 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-08-27T14:01:01.516090+09:00",
+      "type": "single",
+      "title": "Recent Citrix NetScaler Vulnerability Exploited in the Wild",
+      "url": "https://www.securityweek.com/recent-citrix-netscaler-vulnerability-exploited-in-the-wild/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-08-27T04:39:19+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-8451",
+        "CVE-2026-8452"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-8451",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-125 (Out-of-bounds Read)",
+          "description": "Insufficient input validation in NetScaler ADC and NetScaler Gateway leading to memory overread if NetScaler ADC or NetScaler Gateway is configured as a SAML IDP",
+          "epss_score": 0.15654,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-8452",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-119 (Buffer Overflow)",
+          "description": "Memory overflow vulnerability NetScaler ADC and NetScaler Gateway leading to unpredictable or erroneous behavior and Denial of Service if the appliance is configured as a Gateway (SSL VPN, ICA Proxy, CVPN, RDP Proxy) or AAA virtual server",
+          "epss_score": 0.01041,
+          "kev": true
+        }
+      ]
     }
   ]
 }
