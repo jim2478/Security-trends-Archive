@@ -2,14 +2,15 @@
   "date": "2026-08-27",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 6,
+    "scan_runs": 7,
     "total_articles_max": 1732,
     "matched_articles_max": 123,
-    "new_alerts": 12,
-    "cve_count": 14,
+    "new_alerts": 14,
+    "cve_count": 15,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
+      "CVE-2019-1068",
       "CVE-2025-13293",
       "CVE-2025-13294",
       "CVE-2025-15680",
@@ -26,8 +27,8 @@
       "CVE-2026-8452"
     ],
     "keywords_hit": {
-      "CVE": 8,
-      "Malware": 4,
+      "CVE": 9,
+      "Malware": 5,
       "Botnet": 1
     }
   },
@@ -347,6 +348,46 @@
           "kev": true
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-08-27T17:01:14.403808+09:00",
+      "type": "single",
+      "title": "CISA Adds Six Exploited Flaws to KEV, Including NetScaler, Linux, and SQL Server Bugs",
+      "url": "https://thehackernews.com/2026/08/cisa-adds-six-exploited-flaws-to-kev.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-08-27T07:05:28+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2019-1068"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2019-1068",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": "NVD-CWE-noinfo (Insufficient Information)",
+          "description": "A remote code execution vulnerability exists in Microsoft SQL Server when it incorrectly handles processing of internal functions, aka 'Microsoft SQL Server Remote Code Execution Vulnerability'.",
+          "epss_score": 0.44665,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-08-27T17:01:14.403808+09:00",
+      "type": "single",
+      "title": "FBI takes down China-linked hacking network behind attacks on NASA, DOJ and U.S. Senate",
+      "url": "https://www.helpnetsecurity.com/2026/08/27/fbi-disrupts-china-linked-hacking-network/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-08-27T07:19:34+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
