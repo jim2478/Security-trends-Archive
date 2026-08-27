@@ -2,10 +2,10 @@
   "date": "2026-08-27",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 7,
+    "scan_runs": 8,
     "total_articles_max": 1732,
     "matched_articles_max": 123,
-    "new_alerts": 14,
+    "new_alerts": 15,
     "cve_count": 15,
     "ioc_count": 0,
     "merged_count": 0,
@@ -28,7 +28,7 @@
     ],
     "keywords_hit": {
       "CVE": 9,
-      "Malware": 5,
+      "Malware": 6,
       "Botnet": 1
     }
   },
@@ -382,6 +382,20 @@
       "url": "https://www.helpnetsecurity.com/2026/08/27/fbi-disrupts-china-linked-hacking-network/",
       "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
       "published": "2026-08-27T07:19:34+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-08-27T20:01:00.206800+09:00",
+      "type": "single",
+      "title": "GoCaracal Malware Uses Ethereum Smart Contract to Fetch Replacement C2 Address",
+      "url": "https://thehackernews.com/2026/08/gocaracal-malware-uses-ethereum-smart.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-08-27T09:33:38+00:00",
       "keywords": [
         "Malware"
       ],
