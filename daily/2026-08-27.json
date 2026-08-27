@@ -2,10 +2,10 @@
   "date": "2026-08-27",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 8,
+    "scan_runs": 9,
     "total_articles_max": 1732,
     "matched_articles_max": 123,
-    "new_alerts": 15,
+    "new_alerts": 16,
     "cve_count": 15,
     "ioc_count": 0,
     "merged_count": 0,
@@ -29,7 +29,8 @@
     "keywords_hit": {
       "CVE": 9,
       "Malware": 6,
-      "Botnet": 1
+      "Botnet": 1,
+      "DDoS": 1
     }
   },
   "alerts": [
@@ -398,6 +399,20 @@
       "published": "2026-08-27T09:33:38+00:00",
       "keywords": [
         "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-08-27T21:01:00.494340+09:00",
+      "type": "single",
+      "title": "Best DDoS Mitigation Providers: How to Choose (With Trade-Offs)",
+      "url": "http://www.ddosinfo.com/ddos-vendors/best-ddos-mitigation-providers/",
+      "source": "DDoS Info [RSS]",
+      "published": "2026-08-27T10:00:03+00:00",
+      "keywords": [
+        "DDoS"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
