@@ -2,19 +2,20 @@
   "date": "2026-08-28",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 6,
+    "scan_runs": 7,
     "total_articles_max": 1732,
     "matched_articles_max": 116,
-    "new_alerts": 7,
-    "cve_count": 1,
+    "new_alerts": 9,
+    "cve_count": 2,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
+      "CVE-2026-65643",
       "CVE-2026-75604"
     ],
     "keywords_hit": {
-      "CVE": 4,
-      "Botnet": 1,
+      "CVE": 5,
+      "Botnet": 2,
       "DDoS": 1,
       "Malware": 1
     }
@@ -125,6 +126,46 @@
       "published": "2026-08-28T08:40:36+00:00",
       "keywords": [
         "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-08-28T20:01:15.937539+09:00",
+      "type": "single",
+      "title": "Critical cPanel Flaw Could Let One Hosting Customer Take Root Control of a Whole Server",
+      "url": "https://thehackernews.com/2026/08/critical-cpanel-flaw-could-let-one.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-08-28T09:45:15+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-65643"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-65643",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-08-28T20:01:15.937539+09:00",
+      "type": "single",
+      "title": "US Disrupts Global Botnet Used by China-Linked QTFY Hackers",
+      "url": "https://hackread.com/us-disrupts-botnet-china-linked-qtfy-hackers/",
+      "source": "HackRead (해킹/데이터유출) [RSS]",
+      "published": "2026-08-28T10:50:26+00:00",
+      "keywords": [
+        "Botnet"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
