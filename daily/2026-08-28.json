@@ -2,11 +2,11 @@
   "date": "2026-08-28",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 9,
+    "scan_runs": 10,
     "total_articles_max": 1732,
-    "matched_articles_max": 116,
-    "new_alerts": 11,
-    "cve_count": 6,
+    "matched_articles_max": 120,
+    "new_alerts": 13,
+    "cve_count": 8,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -15,13 +15,15 @@
       "CVE-2026-66384",
       "CVE-2026-74232",
       "CVE-2026-74233",
-      "CVE-2026-75604"
+      "CVE-2026-75604",
+      "CVE-2026-76639",
+      "CVE-2026-76640"
     ],
     "keywords_hit": {
-      "CVE": 7,
+      "CVE": 8,
       "Botnet": 2,
-      "DDoS": 1,
-      "Malware": 1
+      "Malware": 2,
+      "DDoS": 1
     }
   },
   "alerts": [
@@ -246,6 +248,56 @@
           "kev": true
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-08-28T23:01:22.252074+09:00",
+      "type": "single",
+      "title": "Two Unitree G1 EDU Humanoid Robot Flaws Enable Root RCE, One Starts Over Bluetooth",
+      "url": "https://thehackernews.com/2026/08/two-unitree-g1-edu-humanoid-robot-flaws.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-08-28T12:07:24+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-76639",
+        "CVE-2026-76640"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-76639",
+          "cvss_score": 8.7,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-22 (Path Traversal)",
+          "description": "Unitree G1 EDU firmware through 1.5.2 contains an unauthenticated remote code execution vulnerability that allows network-adjacent attackers to execute arbitrary commands as root by chaining three weaknesses: an unauthenticated WebRTC-to-DDS bridge on TCP port 9991, a static AES-128 key stored with world-readable permissions, and a path traversal flaw in the chat_go knowledge upload API. Attackers can publish DDS control messages to restart the bashrunner service, plant a malicious payload in it",
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-76640",
+          "cvss_score": 7.7,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-306 (Missing Authentication)",
+          "description": "Unitree G1 EDU firmware through 1.5.2 contains multiple chained vulnerabilities in the BLE GATT server and WiFi provisioning stack that allow unauthenticated proximate attackers to achieve root code execution without pairing or credentials by exploiting an unquoted heredoc variable in the WiFi provisioning script and a buffer overflow in the SSID chunk accumulator. Attackers can send crafted BLE writes to overflow a fixed BSS buffer across BLE connections, corrupting an adjacent mainloop functio",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-08-28T23:01:22.252074+09:00",
+      "type": "single",
+      "title": "Fake Indeed apps target Android job seekers with malware",
+      "url": "https://cybernews.com/security/fake-indeed-apps-infecting-android-job-seekers-with-malware/",
+      "source": "CyberNews [RSS]",
+      "published": "2026-08-28T12:59:09+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
