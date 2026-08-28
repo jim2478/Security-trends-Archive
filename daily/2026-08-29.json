@@ -1,0 +1,33 @@
+{
+  "date": "2026-08-29",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 1,
+    "total_articles_max": 1692,
+    "matched_articles_max": 121,
+    "new_alerts": 1,
+    "cve_count": 0,
+    "ioc_count": 0,
+    "merged_count": 0,
+    "unique_cves": [],
+    "keywords_hit": {
+      "Malware": 1
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-08-29T00:01:15.543824+09:00",
+      "type": "single",
+      "title": "Claude Code runs malware despite “Auto Mode” security, tries to fix it, gets denied",
+      "url": "https://cybernews.com/security/claude-code-auto-mode-malware-vulnerability/",
+      "source": "CyberNews [RSS]",
+      "published": "2026-08-28T13:37:33+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
