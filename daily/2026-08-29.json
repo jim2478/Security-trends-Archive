@@ -2,16 +2,18 @@
   "date": "2026-08-29",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 1,
-    "total_articles_max": 1692,
+    "scan_runs": 2,
+    "total_articles_max": 1712,
     "matched_articles_max": 121,
-    "new_alerts": 1,
-    "cve_count": 0,
+    "new_alerts": 2,
+    "cve_count": 1,
     "ioc_count": 0,
     "merged_count": 0,
-    "unique_cves": [],
+    "unique_cves": [
+      "CVE-2025-24993"
+    ],
     "keywords_hit": {
-      "Malware": 1
+      "Malware": 2
     }
   },
   "alerts": [
@@ -28,6 +30,32 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-08-29T03:01:11.931468+09:00",
+      "type": "single",
+      "title": "Detection blind spots: non-standard file formats in malicious email campaigns | Kaspersky official blog",
+      "url": "https://www.kaspersky.co.uk/blog/exotic-file-formats-detection-gaps-iso-one-xll-svg/30839/",
+      "source": "Kaspersky Blog UK (보안뉴스) [RSS]",
+      "published": "2026-08-28T17:12:19+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2025-24993"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2025-24993",
+          "cvss_score": 7.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-122 (CWE-122)",
+          "description": "Heap-based buffer overflow in Windows NTFS allows an unauthorized attacker to execute code locally.",
+          "epss_score": 0.02173,
+          "kev": true
+        }
+      ]
     }
   ]
 }
