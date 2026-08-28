@@ -2,19 +2,21 @@
   "date": "2026-08-28",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 7,
+    "scan_runs": 8,
     "total_articles_max": 1732,
     "matched_articles_max": 116,
-    "new_alerts": 9,
-    "cve_count": 2,
+    "new_alerts": 10,
+    "cve_count": 4,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2026-65643",
+      "CVE-2026-74232",
+      "CVE-2026-74233",
       "CVE-2026-75604"
     ],
     "keywords_hit": {
-      "CVE": 5,
+      "CVE": 6,
       "Botnet": 2,
       "DDoS": 1,
       "Malware": 1
@@ -170,6 +172,42 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-08-28T21:01:12.468388+09:00",
+      "type": "single",
+      "title": "China-Made ZBT Routers Ship With Two Implants Giving Unauthenticated Attackers Root Access",
+      "url": "https://thehackernews.com/2026/08/china-made-zbt-routers-ship-with-two.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-08-28T10:58:29+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-74232",
+        "CVE-2026-74233"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-74232",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-300 (CWE-300)",
+          "description": "Zbtlink L3_V2_8 firmware 3.0.0.4.528, Zbtlink WE826-T2 firmware 19.1101, Zbtlink ZBT-7628 firmware 1.0.0.2.007, Zbtlink ZBT-ZBT7621 firmware 1.0.0.3.001, MoreQuick MQAC-7620, MQAC-7620A, MQAP-7620, MQAP-7620A, and MQAP-7628 firmware 1.0.0.2.000, AP522 firmware 1.0.0.2.014, AP7628 and HC5661A firmware 3.0.0.4.380, APG721B firmware 19.0809, HK300 firmware 1.0.0.2.032, and MAP-N10 firmware 1.0.0.2.044 ship a backdoor command-and-control implant (yunmgrd) reachable over an unauthenticated cleartext ",
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-74233",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-78 (OS Command Injection)",
+          "description": "Zbtlink WE1326, WE357, WE5926, WE5926-WD, WE826-Q, WE826-T2, WE826-WD, WG108, and WG3526 firmware 19.1101, Zbtlink WE2426-C firmware 19.1112, Zbtlink WE5926-EC_QP firmware 20.0516, Zbtlink WF3526-P firmware 19.051, CTN720-W1, LF-1541, and MT7620N firmware 19.1101, and WRC1 firmware 20.0622 contain an unauthenticated command injection in the infosrvd service (UDP/9992). A remote unauthenticated attacker can send a crafted UDP packet to execute arbitrary commands as root. The service's authenticat",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
     }
   ]
 }
