@@ -2,10 +2,10 @@
   "date": "2026-08-28",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
+    "scan_runs": 4,
     "total_articles_max": 1732,
     "matched_articles_max": 116,
-    "new_alerts": 4,
+    "new_alerts": 5,
     "cve_count": 1,
     "ioc_count": 0,
     "merged_count": 0,
@@ -14,7 +14,8 @@
     ],
     "keywords_hit": {
       "CVE": 3,
-      "Botnet": 1
+      "Botnet": 1,
+      "DDoS": 1
     }
   },
   "alerts": [
@@ -81,6 +82,20 @@
       "published": "2026-08-27T17:25:09+00:00",
       "keywords": [
         "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-08-28T16:01:10.873902+09:00",
+      "type": "single",
+      "title": "넷스카우트, CDN 보안 사각지대 해소하는 AED 솔루션 강화",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=208251",
+      "source": "데일리시큐 (IT&생활) [RSS]",
+      "published": "2026-08-28T06:18:32+00:00",
+      "keywords": [
+        "DDoS"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
