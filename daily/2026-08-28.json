@@ -2,21 +2,23 @@
   "date": "2026-08-28",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 8,
+    "scan_runs": 9,
     "total_articles_max": 1732,
     "matched_articles_max": 116,
-    "new_alerts": 10,
-    "cve_count": 4,
+    "new_alerts": 11,
+    "cve_count": 6,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
+      "CVE-2026-53362",
       "CVE-2026-65643",
+      "CVE-2026-66384",
       "CVE-2026-74232",
       "CVE-2026-74233",
       "CVE-2026-75604"
     ],
     "keywords_hit": {
-      "CVE": 6,
+      "CVE": 7,
       "Botnet": 2,
       "DDoS": 1,
       "Malware": 1
@@ -206,6 +208,42 @@
           "description": "Zbtlink WE1326, WE357, WE5926, WE5926-WD, WE826-Q, WE826-T2, WE826-WD, WG108, and WG3526 firmware 19.1101, Zbtlink WE2426-C firmware 19.1112, Zbtlink WE5926-EC_QP firmware 20.0516, Zbtlink WF3526-P firmware 19.051, CTN720-W1, LF-1541, and MT7620N firmware 19.1101, and WRC1 firmware 20.0622 contain an unauthenticated command injection in the infosrvd service (UDP/9992). A remote unauthenticated attacker can send a crafted UDP packet to execute arbitrary commands as root. The service's authenticat",
           "epss_score": null,
           "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-08-28T22:01:10.129296+09:00",
+      "type": "single",
+      "title": "OpenAI Agents Exploited Linux Kernel Flaw on Company’s Own Systems",
+      "url": "https://www.securityweek.com/openai-agents-exploited-linux-kernel-flaw-on-companys-own-systems/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-08-28T12:36:53+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-53362",
+        "CVE-2026-66384"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-53362",
+          "cvss_score": 7.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-787 (Out-of-bounds Write)",
+          "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nipv6: account for fraggap on the paged allocation path\n\nIn __ip6_append_data(), when the paged-allocation branch is taken\n(MSG_MORE / NETIF_F_SG / large fraglen), alloclen and pagedlen are\ncomputed as\n\n\talloclen = fragheaderlen + transhdrlen;\n\tpagedlen = datalen - transhdrlen;\n\ndatalen already includes fraggap (datalen = length + fraggap). When\nfraggap is non-zero, this is not the first skb and transhdrlen is zero.\nThe fraggap ",
+          "epss_score": 0.00265,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-66384",
+          "cvss_score": 5.3,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-22 (Path Traversal)",
+          "description": "An authenticated user may write data outside the intended Docker cache path under specific remote-repository conditions.",
+          "epss_score": 0.00264,
+          "kev": true
         }
       ]
     }
