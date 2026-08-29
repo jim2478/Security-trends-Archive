@@ -2,10 +2,10 @@
   "date": "2026-08-29",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 4,
+    "scan_runs": 5,
     "total_articles_max": 1712,
     "matched_articles_max": 121,
-    "new_alerts": 4,
+    "new_alerts": 5,
     "cve_count": 2,
     "ioc_count": 0,
     "merged_count": 0,
@@ -15,7 +15,8 @@
     ],
     "keywords_hit": {
       "Malware": 2,
-      "CVE": 2
+      "CVE": 2,
+      "DDoS": 1
     }
   },
   "alerts": [
@@ -94,6 +95,20 @@
       "published": "2026-08-28T20:38:47+00:00",
       "keywords": [
         "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-08-29T20:00:58.746572+09:00",
+      "type": "single",
+      "title": "DDoS Protection Service Comparison: How To Judge 6 Vendor Claims Against Real Attacks",
+      "url": "http://www.ddosinfo.com/ddos-vendors/ddos-protection-service-comparison/",
+      "source": "DDoS Info [RSS]",
+      "published": "2026-08-29T09:00:05+00:00",
+      "keywords": [
+        "DDoS"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
