@@ -2,18 +2,24 @@
   "date": "2026-08-30",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 1,
+    "scan_runs": 2,
     "total_articles_max": 1712,
     "matched_articles_max": 118,
-    "new_alerts": 1,
-    "cve_count": 1,
+    "new_alerts": 3,
+    "cve_count": 7,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
+      "CVE-2025-70290",
+      "CVE-2025-70291",
+      "CVE-2025-70292",
+      "CVE-2025-70293",
+      "CVE-2026-29115",
+      "CVE-2026-29116",
       "CVE-2026-76581"
     ],
     "keywords_hit": {
-      "CVE": 1
+      "CVE": 3
     }
   },
   "alerts": [
@@ -39,6 +45,98 @@
           "cwe": "CWE-347 (CWE-347)",
           "description": "The WPMU DEV Dashboard plugin for WordPress is vulnerable to Authentication Bypass in all versions up to, and including, 5.0.1. This is due to inconsistent and ambiguous HMAC message construction between the unauthenticated `wdpsso_step1` and `wdpsso_step2` AJAX actions, where step 1 signs and discloses an unseparated concatenation of the token, state, redirect, and domain values, while step 2 verifies an unseparated concatenation that omits the domain field. This makes it possible for unauthent",
           "epss_score": 0.00339,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-08-30T16:01:10.048338+09:00",
+      "type": "single",
+      "title": "CyberDanube Security Research 20260611-0 | Multiple Denial of Service Vulnerabilities in Dahua IPC/SD/NVR/XVR/EVS/VTO/VTH/ASI/TPC Camera Series",
+      "url": "https://seclists.org/fulldisclosure/2026/Aug/120",
+      "source": "SecLists Full Disclosure (취약점공개)",
+      "published": "2026-08-30T06:19:12+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-29115",
+        "CVE-2026-29116"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-29115",
+          "cvss_score": 6.9,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-617 (CWE-617)",
+          "description": "A vulnerability has been found in some Dahua products could allow an authenticated remote attacker to send a specially crafted packet, triggering an exception that causes the system to reboot unexpectedly, resulting in a denial of service.",
+          "epss_score": 0.00362,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-29116",
+          "cvss_score": 8.7,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-617 (CWE-617)",
+          "description": "A vulnerability has been found in some Dahua products could\nallow an unauthenticated remote attacker to send a specially crafted packet,\ntriggering an exception that causes the system to reboot unexpectedly,\nresulting in a denial of service.",
+          "epss_score": 0.00395,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-08-30T16:01:10.048338+09:00",
+      "type": "single",
+      "title": "Multiple Integer Overflows in U-Boot Filesystem Parsing\t(CVE-2025-70290 through CVE-2025-70293)",
+      "url": "https://seclists.org/fulldisclosure/2026/Aug/119",
+      "source": "SecLists Full Disclosure (취약점공개)",
+      "published": "2026-08-30T06:19:03+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2025-70290",
+        "CVE-2025-70291",
+        "CVE-2025-70292",
+        "CVE-2025-70293"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2025-70290",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-190 (CWE-190)",
+          "description": "An issue was discovered in Denx U-Boot before 2026.04. An integer overflow vulnerability in the ZFS filesystem support can be triggered by malformed on-disk metadata. The issue may result in incorrect memory allocation followed by out-of-bounds memory access, potentially leading to a crash or arbitrary code execution during the boot process.",
+          "epss_score": 0.0046,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2025-70291",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2025-70292",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2025-70293",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": "An issue was discovered in Denx U-Boot before 2026.04. An integer overflow vulnerability exists in function ext4fs_get_bgdtable, the size calculation can lead to under allocation and this underallocated buffer will be used in memcpy() which could lead to arbitrary code execution, a denial of service, or other unspecified impacts.",
+          "epss_score": 0.00178,
           "kev": false
         }
       ]
