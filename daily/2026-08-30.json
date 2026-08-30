@@ -2,11 +2,11 @@
   "date": "2026-08-30",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
+    "scan_runs": 3,
     "total_articles_max": 1712,
-    "matched_articles_max": 118,
-    "new_alerts": 3,
-    "cve_count": 7,
+    "matched_articles_max": 119,
+    "new_alerts": 4,
+    "cve_count": 10,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -16,10 +16,13 @@
       "CVE-2025-70293",
       "CVE-2026-29115",
       "CVE-2026-29116",
-      "CVE-2026-76581"
+      "CVE-2026-60004",
+      "CVE-2026-73570",
+      "CVE-2026-76581",
+      "CVE-2026-8452"
     ],
     "keywords_hit": {
-      "CVE": 3
+      "CVE": 4
     }
   },
   "alerts": [
@@ -138,6 +141,52 @@
           "description": "An issue was discovered in Denx U-Boot before 2026.04. An integer overflow vulnerability exists in function ext4fs_get_bgdtable, the size calculation can lead to under allocation and this underallocated buffer will be used in memcpy() which could lead to arbitrary code execution, a denial of service, or other unspecified impacts.",
           "epss_score": 0.00178,
           "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-08-30T18:00:58.986576+09:00",
+      "type": "single",
+      "title": "Week in review: Compromised Zimbra servers, previously patched Citrix NetScaler flaw exploited",
+      "url": "https://www.helpnetsecurity.com/2026/08/30/week-in-review-compromised-zimbra-servers-previously-patched-citrix-netscaler-flaw-exploited/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-08-30T08:00:48+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-60004",
+        "CVE-2026-73570",
+        "CVE-2026-8452"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-60004",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-94 (Code Injection)",
+          "description": "Gitea before 1.27.1 allows remote code execution via the diffpatch API through Git hook installation.",
+          "epss_score": 0.84554,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-73570",
+          "cvss_score": 8.9,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-78 (OS Command Injection)",
+          "description": "A remote code execution vulnerability exists in Zimbra Collaboration (ZCS) before 10.1.20 when the optional zimbra-snmp package is installed and SNMP notifications are enabled. Due to improper sanitization of untrusted input during SNMP notification processing, an unauthenticated attacker can send specially crafted SMTP requests that may result in execution of arbitrary operating system commands as the Zimbra user.",
+          "epss_score": 0.20528,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-8452",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-119 (Buffer Overflow)",
+          "description": "Memory overflow vulnerability NetScaler ADC and NetScaler Gateway leading to unpredictable or erroneous behavior and Denial of Service if the appliance is configured as a Gateway (SSL VPN, ICA Proxy, CVPN, RDP Proxy) or AAA virtual server",
+          "epss_score": 0.01606,
+          "kev": true
         }
       ]
     }
