@@ -2,16 +2,20 @@
   "date": "2026-08-31",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 1,
-    "total_articles_max": 1692,
+    "scan_runs": 2,
+    "total_articles_max": 1712,
     "matched_articles_max": 121,
-    "new_alerts": 2,
-    "cve_count": 0,
+    "new_alerts": 3,
+    "cve_count": 2,
     "ioc_count": 0,
     "merged_count": 0,
-    "unique_cves": [],
+    "unique_cves": [
+      "CVE-2026-76639",
+      "CVE-2026-76640"
+    ],
     "keywords_hit": {
-      "Malware": 2
+      "Malware": 2,
+      "CVE": 1
     }
   },
   "alerts": [
@@ -42,6 +46,42 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-08-31T01:01:08.542827+09:00",
+      "type": "single",
+      "title": "유니트리 G1 휴머노이드 로봇서 원격 해킹 취약점…주변 로봇으로 공격 확산 가능",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=208268",
+      "source": "데일리시큐 (이슈) [RSS]",
+      "published": "2026-08-31T00:05:48+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-76639",
+        "CVE-2026-76640"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-76639",
+          "cvss_score": 8.7,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-22 (Path Traversal)",
+          "description": "Unitree G1 EDU firmware through 1.5.2 contains an unauthenticated remote code execution vulnerability that allows network-adjacent attackers to execute arbitrary commands as root by chaining three weaknesses: an unauthenticated WebRTC-to-DDS bridge on TCP port 9991, a static AES-128 key stored with world-readable permissions, and a path traversal flaw in the chat_go knowledge upload API. Attackers can publish DDS control messages to restart the bashrunner service, plant a malicious payload in it",
+          "epss_score": 0.00714,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-76640",
+          "cvss_score": 7.7,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-306 (Missing Authentication)",
+          "description": "Unitree G1 EDU firmware through 1.5.2 contains multiple chained vulnerabilities in the BLE GATT server and WiFi provisioning stack that allow unauthenticated proximate attackers to achieve root code execution without pairing or credentials by exploiting an unquoted heredoc variable in the WiFi provisioning script and a buffer overflow in the SSID chunk accumulator. Attackers can send crafted BLE writes to overflow a fixed BSS buffer across BLE connections, corrupting an adjacent mainloop functio",
+          "epss_score": 0.00347,
+          "kev": false
+        }
+      ]
     }
   ]
 }
