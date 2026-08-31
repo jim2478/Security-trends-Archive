@@ -2,10 +2,10 @@
   "date": "2026-08-31",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 6,
+    "scan_runs": 7,
     "total_articles_max": 1712,
     "matched_articles_max": 122,
-    "new_alerts": 7,
+    "new_alerts": 8,
     "cve_count": 4,
     "ioc_count": 65,
     "merged_count": 0,
@@ -16,7 +16,7 @@
       "CVE-2026-82078"
     ],
     "keywords_hit": {
-      "Malware": 4,
+      "Malware": 5,
       "CVE": 2,
       "DDoS": 1
     }
@@ -161,6 +161,20 @@
         "Malware"
       ],
       "ioc_raw_text": "[IP] 193[.]32[.]248[.]251\n[IP] 193[.]138[.]7[.]142\n[IP] 185[.]65[.]134[.]209\n[IP] 178[.]130[.]47[.]46\n[IP] 5[.]181[.]3[.]106\n[IP] 2[.]56[.]172[.]214\n[IP] 185[.]234[.]67[.]53\n[IP] 45[.]8[.]157[.]185\n[IP] 80[.]66[.]72[.]215\n[IP] 136[.]0[.]20[.]6\n[IP] 185[.]213[.]155[.]226\n[IP] 185[.]155[.]99[.]161\n[IP] 92[.]118[.]232[.]131\n[IP] 45[.]182[.]189[.]80\n[IP] 185[.]65[.]133[.]51\n[IP] 45[.]33[.]22[.]47\n[Domain] idigitalserviceoperation[.]onmicrosoft[.]com\n[Domain] hapsinfrastructureops[.]onmicrosoft[.]com\n[Domain] devsitoperationhub[.]onmicrosoft[.]com\n[Domain] appssupportsys[.]onmicrosoft[.]com\n[Domain] adevpsitplatformops[.]onmicrosoft[.]com\n[Domain] itplatformops[.]onmicrosoft[.]com\n[Domain] helpaphelpitinfraops[.]onmicrosoft[.]com\n[Domain] systemsupportoperations[.]onmicrosoft[.]com\n[Domain] opsnetsupportit[.]onmicrosoft[.]com\n[Domain] apsitsupporthub[.]onmicrosoft[.]com\n[Domain] apsitechsupportdesk[.]onmicrosoft[.]com\n[Domain] appopshelp[.]onmicrosoft[.]com\n[Domain] enterpriseoperationsflo[.]onmicrosoft[.]com\n[Domain] helpitsupportcore[.]onmicrosoft[.]com\n[Domain] itcoretechhelp[.]onmicrosoft[.]com\n[Domain] itservicedesk[.]onmicrosoft[.]com\n[Domain] techopshelpsupp[.]onmicrosoft[.]com\n[Domain] itopsupportdesk[.]onmicrosoft[.]com\n[Domain] netopsdeskhelp[.]onmicrosoft[.]com\n[Domain] netcorevdapp[.]onmicrosoft[.]com\n[Domain] applicationoperationsunit[.]onmicrosoft[.]com\n[Domain] syslanevdapp[.]onmicrosoft[.]com\n[Domain] supportopsupp[.]onmicrosoft[.]com\n[Domain] appdeploymentservices[.]onmicrosoft[.]com\n[Domain] infratechopsdesk[.]onmicrosoft[.]com\n[Domain] itopsdeskhelp[.]onmicrosoft[.]com\n[Domain] infrastructureopsdesk[.]onmicrosoft[.]com\n[Domain] ioseccloudsupport[.]onmicrosoft[.]com\n[Domain] infrastructureopsservice[.]onmicrosoft[.]com\n[Domain] systemdeploymentcenter[.]onmicrosoft[.]com\n[URL] hxxps://san-sid[.]com/owners\n[SHA256] 24ab9fe5d5be62d3bf055a0ca4508e8bca2996b6d78649dce8145d8a27bc1c5b\n[Email] helpcenter[@]ithelpcenter365[.]onmicrosoft[.]com\n[Email] helpdesk[@]itprotectiondepartment[.]onmicrosoft[.]com\n[Email] helpdesk[@]newsystemmaintenance[.]onmicrosoft[.]com\n[Email] helpdesk[@]officedesk365[.]onmicrosoft[.]com\n[Email] helpdesk[@]officesecures[.]onmicrosoft[.]com\n[Email] helpdesk[@]tbcsschid[.]onmicrosoft[.]com\n[Email] internal[@]internalusahelpdeskIT[.]onmicrosoft[.]com\n[Email] it_assistance[@]teams0137[.]onmicrosoft[.]com\n[Email] it[@]infrastructurefirewall[.]onmicrosoft[.]com\n[Email] itadmin[@]mandatorynetworkmonitoring[.]onmicrosoft[.]com\n[Email] itassistant[@]bilelonellc[.]onmicrosoft[.]com\n[Email] ithelp[@]certifiednetworksec[.]onmicrosoft[.]com\n[Email] ithelp[@]internalsystemsdaily[.]onmicrosoft[.]com\n[Email] ithelp[@]itprotectiondepartment[.]onmicrosoft[.]com\n[Email] ithelp[@]mandatorynetworkmonitoring[.]onmicrosoft[.]com\n[Email] ithelpdesk[@]certifiedupdatenetwork[.]onmicrosoft[.]com\n[Email] support[@]bilelonellc[.]onmicrosoft[.]com",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-08-31T21:01:02.355313+09:00",
+      "type": "single",
+      "title": "Anthropic locks out Claude users after infostealers hijack login sessions",
+      "url": "https://www.helpnetsecurity.com/2026/08/31/claude-accounts-compromised-through-infostealer/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-08-31T11:30:47+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
     }
