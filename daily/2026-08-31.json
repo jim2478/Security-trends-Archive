@@ -2,10 +2,10 @@
   "date": "2026-08-31",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 7,
+    "scan_runs": 8,
     "total_articles_max": 1712,
     "matched_articles_max": 122,
-    "new_alerts": 8,
+    "new_alerts": 9,
     "cve_count": 4,
     "ioc_count": 65,
     "merged_count": 0,
@@ -16,7 +16,7 @@
       "CVE-2026-82078"
     ],
     "keywords_hit": {
-      "Malware": 5,
+      "Malware": 6,
       "CVE": 2,
       "DDoS": 1
     }
@@ -171,6 +171,20 @@
       "url": "https://www.helpnetsecurity.com/2026/08/31/claude-accounts-compromised-through-infostealer/",
       "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
       "published": "2026-08-31T11:30:47+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-08-31T22:01:13.556809+09:00",
+      "type": "single",
+      "title": "ValleyRAT Backdoor Hides in Signed Adware That Users Add to Antivirus Exclusions",
+      "url": "https://thehackernews.com/2026/08/valleyrat-backdoor-hides-in-signed.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-08-31T12:14:00+00:00",
       "keywords": [
         "Malware"
       ],
