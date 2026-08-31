@@ -2,10 +2,10 @@
   "date": "2026-08-31",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
+    "scan_runs": 3,
     "total_articles_max": 1712,
-    "matched_articles_max": 121,
-    "new_alerts": 3,
+    "matched_articles_max": 122,
+    "new_alerts": 4,
     "cve_count": 2,
     "ioc_count": 0,
     "merged_count": 0,
@@ -15,7 +15,8 @@
     ],
     "keywords_hit": {
       "Malware": 2,
-      "CVE": 1
+      "CVE": 1,
+      "DDoS": 1
     }
   },
   "alerts": [
@@ -82,6 +83,20 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-08-31T09:01:04.105244+09:00",
+      "type": "single",
+      "title": "[이혁중 CISO 칼럼] 정보보호 30년을 돌아보며(3): 미래를 준비하기 위한 보안의 본질",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=208264",
+      "source": "데일리시큐 (IT&생활) [RSS]",
+      "published": "2026-08-30T23:00:00+00:00",
+      "keywords": [
+        "DDoS"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
