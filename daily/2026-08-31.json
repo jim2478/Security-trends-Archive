@@ -2,10 +2,10 @@
   "date": "2026-08-31",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 4,
+    "scan_runs": 5,
     "total_articles_max": 1712,
     "matched_articles_max": 122,
-    "new_alerts": 5,
+    "new_alerts": 6,
     "cve_count": 4,
     "ioc_count": 0,
     "merged_count": 0,
@@ -16,7 +16,7 @@
       "CVE-2026-82078"
     ],
     "keywords_hit": {
-      "Malware": 2,
+      "Malware": 3,
       "CVE": 2,
       "DDoS": 1
     }
@@ -135,6 +135,20 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-08-31T19:01:02.638000+09:00",
+      "type": "single",
+      "title": "Russian hackers plant nuclear weapon prompt in malware to trip AI safety guardrails",
+      "url": "https://www.helpnetsecurity.com/2026/08/31/russian-hackers-ai-safety-filters-manipulation/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-08-31T09:45:02+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
