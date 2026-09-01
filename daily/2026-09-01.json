@@ -2,16 +2,16 @@
   "date": "2026-09-01",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 1,
+    "scan_runs": 2,
     "total_articles_max": 1712,
     "matched_articles_max": 116,
-    "new_alerts": 1,
+    "new_alerts": 2,
     "cve_count": 0,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [],
     "keywords_hit": {
-      "Malware": 1
+      "Malware": 2
     }
   },
   "alerts": [
@@ -22,6 +22,20 @@
       "url": "https://www.kaspersky.co.uk/blog/manic-android-trojan/30842/",
       "source": "Kaspersky Blog UK (보안뉴스) [RSS]",
       "published": "2026-08-31T17:18:45+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-09-01T10:01:08.938052+09:00",
+      "type": "single",
+      "title": "Guildma (Astaroth) malware infection from Brazilian Portuguese email, (Tue, Sep 1st)",
+      "url": "https://isc.sans.edu/diary/rss/33300",
+      "source": "SANS ISC (인터넷폭풍센터) [RSS]",
+      "published": "2026-09-01T00:33:21+00:00",
       "keywords": [
         "Malware"
       ],
