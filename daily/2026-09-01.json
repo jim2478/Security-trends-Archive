@@ -2,16 +2,20 @@
   "date": "2026-09-01",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
+    "scan_runs": 3,
     "total_articles_max": 1712,
     "matched_articles_max": 116,
-    "new_alerts": 2,
-    "cve_count": 0,
+    "new_alerts": 3,
+    "cve_count": 2,
     "ioc_count": 0,
     "merged_count": 0,
-    "unique_cves": [],
+    "unique_cves": [
+      "CVE-2026-81578",
+      "CVE-2026-82078"
+    ],
     "keywords_hit": {
-      "Malware": 2
+      "Malware": 2,
+      "CVE": 1
     }
   },
   "alerts": [
@@ -42,6 +46,42 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-09-01T15:01:03.905900+09:00",
+      "type": "single",
+      "title": "PaperCut Exploitation Escalates to Active Intrusions",
+      "url": "https://www.securityweek.com/papercut-exploitation-escalates-to-active-intrusions/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-09-01T05:27:18+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-81578",
+        "CVE-2026-82078"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-81578",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-305 (CWE-305)",
+          "description": "An improper access control vulnerability exists in the web management interface of PaperCut MF and PaperCut NG. Under specific conditions, unauthenticated remote requests targeting administrative functions can trigger backend actions prior to the  completion of access validation checks. This allows an unauthenticated remote attacker to modify certain system configurations.",
+          "epss_score": 0.00393,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-82078",
+          "cvss_score": 9.4,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-470 (CWE-470)",
+          "description": "An unsafe dynamic class loading vulnerability exists in the database connection utilities of PaperCut MF and PaperCut NG. The application instantiates database driver classes based on configurable driver names without validating against an allowlist of approved drivers. If an attacker can manipulate system configuration parameters, this enables the execution of arbitrary Java bytecode residing on the application classpath under the security context of the PaperCut server process.",
+          "epss_score": 0.00462,
+          "kev": true
+        }
+      ]
     }
   ]
 }
