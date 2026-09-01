@@ -2,10 +2,10 @@
   "date": "2026-09-01",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 4,
+    "scan_runs": 5,
     "total_articles_max": 1712,
-    "matched_articles_max": 116,
-    "new_alerts": 5,
+    "matched_articles_max": 120,
+    "new_alerts": 6,
     "cve_count": 4,
     "ioc_count": 0,
     "merged_count": 0,
@@ -16,7 +16,7 @@
       "CVE-2026-82078"
     ],
     "keywords_hit": {
-      "Malware": 2,
+      "Malware": 3,
       "CVE": 2,
       "DDoS": 1
     }
@@ -131,6 +131,20 @@
       "published": "2026-09-01T16:40:18+00:00",
       "keywords": [
         "DDoS"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-09-01T19:01:10.066775+09:00",
+      "type": "single",
+      "title": "Five Venezuelans plead guilty to ATM jackpotting attacks in US",
+      "url": "https://www.bleepingcomputer.com/news/security/five-venezuelans-plead-guilty-to-atm-jackpotting-attacks-in-us/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-09-01T09:15:07+00:00",
+      "keywords": [
+        "Malware"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
