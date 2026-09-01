@@ -2,20 +2,23 @@
   "date": "2026-09-01",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
+    "scan_runs": 4,
     "total_articles_max": 1712,
     "matched_articles_max": 116,
-    "new_alerts": 3,
-    "cve_count": 2,
+    "new_alerts": 5,
+    "cve_count": 4,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
+      "CVE-2026-0768",
+      "CVE-2026-66066",
       "CVE-2026-81578",
       "CVE-2026-82078"
     ],
     "keywords_hit": {
       "Malware": 2,
-      "CVE": 1
+      "CVE": 2,
+      "DDoS": 1
     }
   },
   "alerts": [
@@ -82,6 +85,56 @@
           "kev": true
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-09-01T17:01:04.477339+09:00",
+      "type": "single",
+      "title": "Attackers Exploit Critical Langflow and Rails Flaws in Credential-Probing and C2 Activity",
+      "url": "https://thehackernews.com/2026/09/attackers-exploit-critical-langflow-and.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-09-01T07:22:30+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-0768",
+        "CVE-2026-66066"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-0768",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-94 (Code Injection)",
+          "description": "Langflow code Code Injection Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Langflow. Authentication is not required to exploit this vulnerability.\n\nThe specific flaw exists within the handling of the code parameter provided to the validate endpoint. The issue results from the lack of proper validation of a user-supplied string before using it to execute Python code. An attacker can leverage this vulnerabilit",
+          "epss_score": 0.02338,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-66066",
+          "cvss_score": 9.5,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-1188 (CWE-1188)",
+          "description": "Action Pack is a framework for handling and responding to web requests. In versions prior to 7.2.3.2, 8.0.5.1 and 8.1.3.1, Active Storage does not disable libvips operations marked unsafe for untrusted content, allowing a crafted upload to invoke such an operation. Consuming applications are affected when configured to use libvips and accept image uploads from untrusted users. An unauthenticated attacker may exploit this behavior to read arbitrary files accessible to the Rails process, including",
+          "epss_score": 0.27861,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-09-01T17:01:04.477339+09:00",
+      "type": "single",
+      "title": "KISA, '2026년 하반기 사이버 위기대응 모의훈련' 참여기업 모집",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=208297",
+      "source": "데일리시큐 (이슈) [RSS]",
+      "published": "2026-09-01T16:40:18+00:00",
+      "keywords": [
+        "DDoS"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
