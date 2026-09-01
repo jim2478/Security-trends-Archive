@@ -2,10 +2,10 @@
   "date": "2026-09-01",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 6,
+    "scan_runs": 7,
     "total_articles_max": 1712,
     "matched_articles_max": 122,
-    "new_alerts": 8,
+    "new_alerts": 9,
     "cve_count": 4,
     "ioc_count": 0,
     "merged_count": 0,
@@ -16,7 +16,7 @@
       "CVE-2026-82078"
     ],
     "keywords_hit": {
-      "Malware": 5,
+      "Malware": 6,
       "CVE": 2,
       "DDoS": 1
     }
@@ -171,6 +171,20 @@
       "url": "https://therecord.media/iranian-cyber-spies-target-aviation-fintech-new-malware",
       "source": "The Record by Recorded Future (위협뉴스) [RSS]",
       "published": "2026-09-01T12:33:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-09-01T23:01:16.899043+09:00",
+      "type": "single",
+      "title": "Iranian Hackers Pose as Recruiters to Deliver Cross-Platform RATs Through Coding Tests",
+      "url": "https://thehackernews.com/2026/09/iranian-hackers-pose-as-recruiters-to.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-09-01T13:08:58+00:00",
       "keywords": [
         "Malware"
       ],
