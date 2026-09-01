@@ -2,10 +2,10 @@
   "date": "2026-09-01",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 5,
+    "scan_runs": 6,
     "total_articles_max": 1712,
-    "matched_articles_max": 120,
-    "new_alerts": 6,
+    "matched_articles_max": 122,
+    "new_alerts": 8,
     "cve_count": 4,
     "ioc_count": 0,
     "merged_count": 0,
@@ -16,7 +16,7 @@
       "CVE-2026-82078"
     ],
     "keywords_hit": {
-      "Malware": 3,
+      "Malware": 5,
       "CVE": 2,
       "DDoS": 1
     }
@@ -143,6 +143,34 @@
       "url": "https://www.bleepingcomputer.com/news/security/five-venezuelans-plead-guilty-to-atm-jackpotting-attacks-in-us/",
       "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
       "published": "2026-09-01T09:15:07+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-09-01T22:01:03.250224+09:00",
+      "type": "single",
+      "title": "Fake Claude Opus 5 app delivers malware and wipes its own tracks",
+      "url": "https://www.helpnetsecurity.com/2026/09/01/revstealer-malware-claude-opus-5-github/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-09-01T12:21:35+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-09-01T22:01:03.250224+09:00",
+      "type": "single",
+      "title": "Iranian cyber spies target aviation, fintech developers with new malware",
+      "url": "https://therecord.media/iranian-cyber-spies-target-aviation-fintech-new-malware",
+      "source": "The Record by Recorded Future (위협뉴스) [RSS]",
+      "published": "2026-09-01T12:33:00+00:00",
       "keywords": [
         "Malware"
       ],
