@@ -2,10 +2,10 @@
   "date": "2026-09-02",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 6,
+    "scan_runs": 7,
     "total_articles_max": 1692,
     "matched_articles_max": 125,
-    "new_alerts": 11,
+    "new_alerts": 13,
     "cve_count": 9,
     "ioc_count": 0,
     "merged_count": 0,
@@ -21,9 +21,9 @@
       "CVE-2026-9586"
     ],
     "keywords_hit": {
+      "Malware": 6,
       "Botnet": 5,
-      "CVE": 4,
-      "Malware": 4
+      "CVE": 4
     }
   },
   "alerts": [
@@ -267,6 +267,34 @@
       "published": "2026-09-02T08:38:00+00:00",
       "keywords": [
         "Botnet"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-09-02T19:01:04.365194+09:00",
+      "type": "single",
+      "title": "US charges Russian for infecting 80,000 freelancers with malware",
+      "url": "https://www.bleepingcomputer.com/news/security/us-charges-russian-for-infecting-80-000-freelancers-with-malware/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-09-02T09:06:48+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-09-02T19:01:04.365194+09:00",
+      "type": "single",
+      "title": "Extradited Russian Hacker Faces Charges Over Excel Malware Campaign That Infected Thousands",
+      "url": "https://thehackernews.com/2026/09/extradited-russian-hacker-faces-charges.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-09-02T09:10:23+00:00",
+      "keywords": [
+        "Malware"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
