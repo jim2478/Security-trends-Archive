@@ -2,10 +2,10 @@
   "date": "2026-09-02",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
+    "scan_runs": 4,
     "total_articles_max": 1692,
     "matched_articles_max": 122,
-    "new_alerts": 3,
+    "new_alerts": 5,
     "cve_count": 7,
     "ioc_count": 0,
     "merged_count": 0,
@@ -20,7 +20,8 @@
     ],
     "keywords_hit": {
       "CVE": 2,
-      "Malware": 1
+      "Malware": 2,
+      "Botnet": 1
     }
   },
   "alerts": [
@@ -130,6 +131,34 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-09-02T10:01:08.538168+09:00",
+      "type": "single",
+      "title": "Counterfeit installers to system compromise: Tracking a deceptive software download campaign",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/09/01/counterfeit-installers-system-compromise-tracking-deceptive-software-download-campaign/",
+      "source": "Microsoft Security Blog (보안업데이트) [RSS]",
+      "published": "2026-09-01T22:48:28+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-09-02T10:01:08.538168+09:00",
+      "type": "single",
+      "title": "Peer Pressure: Inside the Sality Botnet Disruption Operation",
+      "url": "https://www.crowdstrike.com/en-us/blog/inside-sality-botnet-disruption-operation/",
+      "source": "CrowdStrike Blog (APT/위협인텔리전스) [RSS]",
+      "published": null,
+      "keywords": [
+        "Botnet"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
