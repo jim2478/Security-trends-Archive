@@ -2,11 +2,11 @@
   "date": "2026-09-02",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 8,
+    "scan_runs": 9,
     "total_articles_max": 1692,
     "matched_articles_max": 126,
-    "new_alerts": 14,
-    "cve_count": 11,
+    "new_alerts": 16,
+    "cve_count": 12,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -24,8 +24,9 @@
     ],
     "keywords_hit": {
       "Malware": 6,
+      "CVE": 6,
       "Botnet": 5,
-      "CVE": 5
+      "DDoS": 1
     }
   },
   "alerts": [
@@ -337,6 +338,46 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-09-02T21:01:11.807483+09:00",
+      "type": "single",
+      "title": "Attackers Exploit Two SonicWall SMA 1000 Zero-Days That May Form an Attack Chain",
+      "url": "https://thehackernews.com/2026/09/attackers-exploit-two-sonicwall-sma.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-09-02T10:53:49+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-83548"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-83548",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": "CWE-441 (CWE-441)",
+          "description": "A Pre-authentication SSRF vulnerability exists in the SMA1000 Appliance Work Place interface due to an unintended alternate access path. A remote unauthenticated attacker could potentially exploit this vulnerability to gain unauthorized access to sensitive functionality and perform unauthorized operations.",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-09-02T21:01:11.807483+09:00",
+      "type": "single",
+      "title": "DDOS Time to Mitigate: What SLA Seconds Really Mean (And How to Verify Them)",
+      "url": "http://www.ddosinfo.com/ddos-vendors/ddos-time-to-mitigate/",
+      "source": "DDoS Info [RSS]",
+      "published": "2026-09-02T10:00:03+00:00",
+      "keywords": [
+        "DDoS"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
