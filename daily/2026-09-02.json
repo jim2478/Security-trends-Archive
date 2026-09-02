@@ -2,12 +2,12 @@
   "date": "2026-09-02",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 9,
+    "scan_runs": 10,
     "total_articles_max": 1692,
     "matched_articles_max": 126,
-    "new_alerts": 16,
-    "cve_count": 12,
-    "ioc_count": 0,
+    "new_alerts": 18,
+    "cve_count": 13,
+    "ioc_count": 1,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2021-31886",
@@ -23,9 +23,9 @@
       "CVE-2026-9586"
     ],
     "keywords_hit": {
-      "Malware": 6,
-      "CVE": 6,
-      "Botnet": 5,
+      "Malware": 7,
+      "CVE": 7,
+      "Botnet": 6,
       "DDoS": 1
     }
   },
@@ -374,6 +374,47 @@
       "published": "2026-09-02T10:00:03+00:00",
       "keywords": [
         "DDoS"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-09-02T22:01:16.201998+09:00",
+      "type": "single",
+      "title": "Exploitation of Sangoma Switchvox flaw is underway (CVE-2026-9586)",
+      "url": "https://www.helpnetsecurity.com/2026/09/02/exploitation-of-sangoma-switchvox-flaw-underway-cve-2026-9586/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-09-02T12:42:26+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "[Domain] horizon3[.]ai",
+      "cve_ids": [
+        "CVE-2026-9586"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-9586",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-89 (SQL Injection)",
+          "description": "An unauthenticated SQL injection vulnerability exists in Sangoma Switchvox SMB Edition 8.3 (104997). The /pa endpoint processes XML content beginning with <PolycomIPPhone> and directly concatenates the user-controlled PhoneIP value into PostgreSQL queries without sanitization or parameterization. An unauthenticated remote attacker can execute arbitrary SQL statements against the backend PostgreSQL database using a single crafted request, including database operations and remote code execution.",
+          "epss_score": 0.00434,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-09-02T22:01:16.201998+09:00",
+      "type": "single",
+      "title": "Sality, one of the longest-running botnets, finally gets disrupted",
+      "url": "https://therecord.media/sality-botnet-cyber-doj",
+      "source": "The Record by Recorded Future (위협뉴스) [RSS]",
+      "published": "2026-09-02T12:15:00+00:00",
+      "keywords": [
+        "Botnet",
+        "Malware"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
