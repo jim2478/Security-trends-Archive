@@ -2,16 +2,16 @@
   "date": "2026-09-03",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 1,
-    "total_articles_max": 1652,
+    "scan_runs": 2,
+    "total_articles_max": 1692,
     "matched_articles_max": 127,
-    "new_alerts": 1,
+    "new_alerts": 2,
     "cve_count": 0,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [],
     "keywords_hit": {
-      "Malware": 1
+      "Malware": 2
     }
   },
   "alerts": [
@@ -22,6 +22,20 @@
       "url": "https://blog.qualys.com/category/product-tech",
       "source": "Qualys Blog (취약점관리) [RSS]",
       "published": "2026-09-02T15:00:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-09-03T02:01:04.632704+09:00",
+      "type": "single",
+      "title": "Threat Gang 'Springs' Vishing Attacks on Microsoft Teams Users",
+      "url": "https://www.darkreading.com/cyberattacks-data-breaches/threat-gang-springs-vishing-attacks-microsoft-teams-users",
+      "source": "Dark Reading (보안뉴스 종합) [RSS]",
+      "published": "2026-09-02T16:51:21+00:00",
       "keywords": [
         "Malware"
       ],
