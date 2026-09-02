@@ -2,26 +2,28 @@
   "date": "2026-09-02",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 4,
+    "scan_runs": 5,
     "total_articles_max": 1692,
     "matched_articles_max": 122,
-    "new_alerts": 5,
-    "cve_count": 7,
+    "new_alerts": 8,
+    "cve_count": 9,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
+      "CVE-2021-31886",
       "CVE-2026-0768",
       "CVE-2026-0770",
       "CVE-2026-33017",
       "CVE-2026-5027",
       "CVE-2026-55255",
       "CVE-2026-82329",
-      "CVE-2026-9198"
+      "CVE-2026-9198",
+      "CVE-2026-9586"
     ],
     "keywords_hit": {
-      "CVE": 2,
-      "Malware": 2,
-      "Botnet": 1
+      "CVE": 4,
+      "Malware": 3,
+      "Botnet": 2
     }
   },
   "alerts": [
@@ -155,6 +157,73 @@
       "published": null,
       "keywords": [
         "Botnet"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-09-02T17:01:10.534057+09:00",
+      "type": "single",
+      "title": "Researchers Use Claude to Port Pre-Auth RCE Exploit From One PLC Model to Another",
+      "url": "https://thehackernews.com/2026/09/researchers-use-claude-to-port-pre-auth.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-09-02T07:47:13+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2021-31886"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2021-31886",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-170 (CWE-170)",
+          "description": "A vulnerability has been identified in APOGEE MBC (PPC) (BACnet) (All versions), APOGEE MBC (PPC) (P2 Ethernet) (All versions), APOGEE MEC (PPC) (BACnet) (All versions), APOGEE MEC (PPC) (P2 Ethernet) (All versions), APOGEE PXC Compact (BACnet) (All versions < V3.5.4), APOGEE PXC Compact (P2 Ethernet) (All versions < V2.8.19), APOGEE PXC Modular (BACnet) (All versions < V3.5.4), APOGEE PXC Modular (P2 Ethernet) (All versions < V2.8.19), Desigo PXC00-E.D (All versions >= V2.3 and < V6.30.016), De",
+          "epss_score": 0.02949,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-09-02T17:01:10.534057+09:00",
+      "type": "single",
+      "title": "Attackers Exploit Critical Switchvox Flaw to Deploy Reverse Shells Without Credentials",
+      "url": "https://thehackernews.com/2026/09/attackers-exploit-critical-switchvox.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-09-02T07:08:50+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-9586"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-9586",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-89 (SQL Injection)",
+          "description": "An unauthenticated SQL injection vulnerability exists in Sangoma Switchvox SMB Edition 8.3 (104997). The /pa endpoint processes XML content beginning with <PolycomIPPhone> and directly concatenates the user-controlled PhoneIP value into PostgreSQL queries without sanitization or parameterization. An unauthenticated remote attacker can execute arbitrary SQL statements against the backend PostgreSQL database using a single crafted request, including database operations and remote code execution.",
+          "epss_score": 0.00434,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-09-02T17:01:10.534057+09:00",
+      "type": "single",
+      "title": "Authorities Turn Sality's P2P Network Against Itself, Cutting Off New Malware Payloads",
+      "url": "https://thehackernews.com/2026/09/authorities-turn-salitys-p2p-network.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-09-02T06:56:30+00:00",
+      "keywords": [
+        "Botnet",
+        "Malware"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
