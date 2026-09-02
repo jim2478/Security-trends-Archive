@@ -2,10 +2,10 @@
   "date": "2026-09-02",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 5,
+    "scan_runs": 6,
     "total_articles_max": 1692,
-    "matched_articles_max": 122,
-    "new_alerts": 8,
+    "matched_articles_max": 125,
+    "new_alerts": 11,
     "cve_count": 9,
     "ioc_count": 0,
     "merged_count": 0,
@@ -21,9 +21,9 @@
       "CVE-2026-9586"
     ],
     "keywords_hit": {
+      "Botnet": 5,
       "CVE": 4,
-      "Malware": 3,
-      "Botnet": 2
+      "Malware": 4
     }
   },
   "alerts": [
@@ -224,6 +224,49 @@
       "keywords": [
         "Botnet",
         "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-09-02T18:01:19.415261+09:00",
+      "type": "single",
+      "title": "Global sinkhole operation ends Sality botnet’s 23-year run",
+      "url": "https://www.helpnetsecurity.com/2026/09/02/sality-botnet-disruption-crowdstrike-law-enforcement/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-09-02T08:56:24+00:00",
+      "keywords": [
+        "Botnet"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-09-02T18:01:19.415261+09:00",
+      "type": "single",
+      "title": "Sality botnet infrastructure dismantled in joint global takedown",
+      "url": "https://www.bleepingcomputer.com/news/security/sality-botnet-infrastructure-dismantled-in-joint-global-takedown/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-09-02T08:00:43+00:00",
+      "keywords": [
+        "Botnet",
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-09-02T18:01:19.415261+09:00",
+      "type": "single",
+      "title": "23-Year-Old Sality P2P Botnet Disrupted",
+      "url": "https://www.securityweek.com/23-year-old-sality-p2p-botnet-disrupted/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-09-02T08:38:00+00:00",
+      "keywords": [
+        "Botnet"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
