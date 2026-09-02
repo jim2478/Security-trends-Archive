@@ -2,11 +2,11 @@
   "date": "2026-09-02",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 10,
+    "scan_runs": 11,
     "total_articles_max": 1692,
-    "matched_articles_max": 126,
-    "new_alerts": 18,
-    "cve_count": 13,
+    "matched_articles_max": 127,
+    "new_alerts": 19,
+    "cve_count": 15,
     "ioc_count": 1,
     "merged_count": 0,
     "unique_cves": [
@@ -14,8 +14,10 @@
       "CVE-2026-0768",
       "CVE-2026-0770",
       "CVE-2026-33017",
+      "CVE-2026-42897",
       "CVE-2026-5027",
       "CVE-2026-55255",
+      "CVE-2026-62911",
       "CVE-2026-82329",
       "CVE-2026-83548",
       "CVE-2026-83549",
@@ -23,8 +25,8 @@
       "CVE-2026-9586"
     ],
     "keywords_hit": {
+      "CVE": 8,
       "Malware": 7,
-      "CVE": 7,
       "Botnet": 6,
       "DDoS": 1
     }
@@ -419,6 +421,42 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-09-02T23:01:07.798530+09:00",
+      "type": "single",
+      "title": "Nearly 22,000 Microsoft Exchange servers remain exposed to critical security flaw (CVE-2026-62911)",
+      "url": "https://www.helpnetsecurity.com/2026/09/02/microsoft-exchange-cve-2026-62911-critical-authentication-bypass-flaw/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-09-02T13:24:09+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-42897",
+        "CVE-2026-62911"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-42897",
+          "cvss_score": 8.1,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-79 (XSS)",
+          "description": "Improper neutralization of input during web page generation ('cross-site scripting') in Microsoft Exchange Server allows an unauthorized attacker to perform spoofing over a network.",
+          "epss_score": 0.71205,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-62911",
+          "cvss_score": 8.0,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-294 (CWE-294)",
+          "description": "Authentication bypass by capture-replay in Microsoft Exchange Server allows an authorized attacker to elevate privileges over a network.",
+          "epss_score": 0.01248,
+          "kev": false
+        }
+      ]
     }
   ]
 }
