@@ -2,16 +2,16 @@
   "date": "2026-09-03",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
+    "scan_runs": 4,
     "total_articles_max": 1692,
-    "matched_articles_max": 128,
-    "new_alerts": 3,
+    "matched_articles_max": 129,
+    "new_alerts": 4,
     "cve_count": 0,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [],
     "keywords_hit": {
-      "Malware": 3
+      "Malware": 4
     }
   },
   "alerts": [
@@ -50,6 +50,20 @@
       "url": "https://thehackernews.com/2026/09/fake-software-installers-disable.html",
       "source": "The Hacker News (보안뉴스 종합) [RSS]",
       "published": "2026-09-02T16:41:06+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-09-03T04:01:02.843859+09:00",
+      "type": "single",
+      "title": "Russian national facing 20 years for malware campaign that infected 80,000 freelancers",
+      "url": "https://therecord.media/russian-national-facing-20-years-malware-campaign",
+      "source": "The Record by Recorded Future (위협뉴스) [RSS]",
+      "published": "2026-09-02T18:43:00+00:00",
       "keywords": [
         "Malware"
       ],
