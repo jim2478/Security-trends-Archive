@@ -2,16 +2,16 @@
   "date": "2026-09-03",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
+    "scan_runs": 3,
     "total_articles_max": 1692,
-    "matched_articles_max": 127,
-    "new_alerts": 2,
+    "matched_articles_max": 128,
+    "new_alerts": 3,
     "cve_count": 0,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [],
     "keywords_hit": {
-      "Malware": 2
+      "Malware": 3
     }
   },
   "alerts": [
@@ -36,6 +36,20 @@
       "url": "https://www.darkreading.com/cyberattacks-data-breaches/threat-gang-springs-vishing-attacks-microsoft-teams-users",
       "source": "Dark Reading (보안뉴스 종합) [RSS]",
       "published": "2026-09-02T16:51:21+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-09-03T03:01:23.597159+09:00",
+      "type": "single",
+      "title": "Fake Software Installers Disable Windows Update and Weaken Microsoft Defender",
+      "url": "https://thehackernews.com/2026/09/fake-software-installers-disable.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-09-02T16:41:06+00:00",
       "keywords": [
         "Malware"
       ],
