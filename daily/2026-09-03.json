@@ -1,0 +1,33 @@
+{
+  "date": "2026-09-03",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 1,
+    "total_articles_max": 1652,
+    "matched_articles_max": 127,
+    "new_alerts": 1,
+    "cve_count": 0,
+    "ioc_count": 0,
+    "merged_count": 0,
+    "unique_cves": [],
+    "keywords_hit": {
+      "Malware": 1
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-09-03T00:01:21.347248+09:00",
+      "type": "single",
+      "title": "Anatomy of a Silent Domain Takeover",
+      "url": "https://blog.qualys.com/category/product-tech",
+      "source": "Qualys Blog (취약점관리) [RSS]",
+      "published": "2026-09-02T15:00:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
