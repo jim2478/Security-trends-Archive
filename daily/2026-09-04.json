@@ -2,10 +2,10 @@
   "date": "2026-09-04",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
+    "scan_runs": 4,
     "total_articles_max": 1692,
     "matched_articles_max": 122,
-    "new_alerts": 3,
+    "new_alerts": 4,
     "cve_count": 4,
     "ioc_count": 0,
     "merged_count": 0,
@@ -17,7 +17,7 @@
     ],
     "keywords_hit": {
       "CVE": 2,
-      "Malware": 1
+      "Malware": 2
     }
   },
   "alerts": [
@@ -106,6 +106,20 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-09-04T06:01:11.606896+09:00",
+      "type": "single",
+      "title": "What We Missed: Did ShinyHunters 'Breach' ReliaQuest?",
+      "url": "https://www.darkreading.com/cybersecurity-operations/what-we-missed-did-shinyhunters-breach-reliaquest",
+      "source": "Dark Reading (보안뉴스 종합) [RSS]",
+      "published": "2026-09-03T19:42:39+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
