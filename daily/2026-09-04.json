@@ -2,18 +2,21 @@
   "date": "2026-09-04",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
-    "total_articles_max": 1672,
+    "scan_runs": 3,
+    "total_articles_max": 1692,
     "matched_articles_max": 122,
-    "new_alerts": 2,
-    "cve_count": 1,
+    "new_alerts": 3,
+    "cve_count": 4,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
+      "CVE-2026-28299",
+      "CVE-2026-28318",
+      "CVE-2026-28323",
       "CVE-2026-32475"
     ],
     "keywords_hit": {
-      "CVE": 1,
+      "CVE": 2,
       "Malware": 1
     }
   },
@@ -57,6 +60,52 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-09-04T03:01:06.270980+09:00",
+      "type": "single",
+      "title": "Signature Optional - Analysis of CVE-2026-28323",
+      "url": "https://bishopfox.com/blog/signature-optional-analysis-of-cve-2026-28323",
+      "source": "Bishop Fox (모의침투/취약점) [RSS]",
+      "published": "2026-09-03T13:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-28299",
+        "CVE-2026-28318",
+        "CVE-2026-28323"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-28299",
+          "cvss_score": 8.2,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-770 (CWE-770)",
+          "description": "SolarWinds Web Help Desk is found to be affected by a denial-of-service vulnerability, which when exploited, could cause the Web Help Desk server to crash due to insufficient memory.",
+          "epss_score": 0.00521,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-28318",
+          "cvss_score": 7.5,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-400 (Resource Exhaustion)",
+          "description": "SolarWinds Serv-U is susceptible to specially crafted POST requests that crash the Serv-U service without authentication using Content-Encoding: deflate. Mitigation steps are provided to secure customer environments in the SolarWinds Trust Center if you are unable to deploy the update",
+          "epss_score": 0.40012,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-28323",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-287 (Authentication Bypass)",
+          "description": "SolarWinds Web Help Desk is found to be affected by a SAML authentication bypass vulnerability. This requires the SAML 2.0 authentication method to be enabled.",
+          "epss_score": 0.00676,
+          "kev": false
+        }
+      ]
     }
   ]
 }
