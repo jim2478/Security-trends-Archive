@@ -2,16 +2,16 @@
   "date": "2026-09-03",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 4,
+    "scan_runs": 5,
     "total_articles_max": 1692,
     "matched_articles_max": 129,
-    "new_alerts": 4,
+    "new_alerts": 5,
     "cve_count": 0,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [],
     "keywords_hit": {
-      "Malware": 4
+      "Malware": 5
     }
   },
   "alerts": [
@@ -64,6 +64,20 @@
       "url": "https://therecord.media/russian-national-facing-20-years-malware-campaign",
       "source": "The Record by Recorded Future (위협뉴스) [RSS]",
       "published": "2026-09-02T18:43:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-09-03T15:01:07.156010+09:00",
+      "type": "single",
+      "title": "Your threat feed is someone else’s database: What ingesting malware intel at scale takes",
+      "url": "https://www.helpnetsecurity.com/2026/09/03/github-threat-intelligence-feed-ingestion/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-09-03T05:30:29+00:00",
       "keywords": [
         "Malware"
       ],
