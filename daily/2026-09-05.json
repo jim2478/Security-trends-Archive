@@ -2,10 +2,10 @@
   "date": "2026-09-05",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
+    "scan_runs": 3,
     "total_articles_max": 1692,
-    "matched_articles_max": 118,
-    "new_alerts": 3,
+    "matched_articles_max": 119,
+    "new_alerts": 4,
     "cve_count": 5,
     "ioc_count": 0,
     "merged_count": 0,
@@ -17,7 +17,8 @@
       "CVE-2026-73749"
     ],
     "keywords_hit": {
-      "CVE": 3
+      "CVE": 3,
+      "Malware": 1
     }
   },
   "alerts": [
@@ -118,6 +119,20 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-09-05T06:00:59.955203+09:00",
+      "type": "single",
+      "title": "The 5 Best Antiviruses With Parental Controls",
+      "url": "https://www.pandasecurity.com/en/mediacenter/best-antivirus-with-parental-controls/",
+      "source": "Panda Security (엔드포인트보안) [RSS]",
+      "published": "2026-09-04T20:41:12+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
