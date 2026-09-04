@@ -2,11 +2,11 @@
   "date": "2026-09-04",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 7,
+    "scan_runs": 8,
     "total_articles_max": 1692,
     "matched_articles_max": 122,
-    "new_alerts": 7,
-    "cve_count": 7,
+    "new_alerts": 9,
+    "cve_count": 8,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -16,10 +16,11 @@
       "CVE-2026-28299",
       "CVE-2026-28318",
       "CVE-2026-28323",
-      "CVE-2026-32475"
+      "CVE-2026-32475",
+      "CVE-2026-85046"
     ],
     "keywords_hit": {
-      "CVE": 3,
+      "CVE": 5,
       "Malware": 3,
       "DDoS": 1
     }
@@ -194,6 +195,46 @@
       "published": "2026-09-04T06:40:13+00:00",
       "keywords": [
         "DDoS"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-09-04T18:01:07.729688+09:00",
+      "type": "single",
+      "title": "Google Releases Chrome Update to Patch Actively Exploited V8 Zero-Day",
+      "url": "https://thehackernews.com/2026/09/google-releases-chrome-update-to-patch.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-09-04T07:18:47+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-85046"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-85046",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-843 (CWE-843)",
+          "description": "Type confusion in V8 in Google Chrome prior to 152.0.7977.82 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-09-04T18:01:07.729688+09:00",
+      "type": "single",
+      "title": "Plex Urges Immediate Updates After Patching Multiple Undisclosed Security Flaws",
+      "url": "https://thehackernews.com/2026/09/plex-urges-immediate-updates-after.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-09-04T07:35:14+00:00",
+      "keywords": [
+        "CVE"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
