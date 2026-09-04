@@ -2,10 +2,10 @@
   "date": "2026-09-04",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 6,
+    "scan_runs": 7,
     "total_articles_max": 1692,
     "matched_articles_max": 122,
-    "new_alerts": 6,
+    "new_alerts": 7,
     "cve_count": 7,
     "ioc_count": 0,
     "merged_count": 0,
@@ -20,7 +20,8 @@
     ],
     "keywords_hit": {
       "CVE": 3,
-      "Malware": 3
+      "Malware": 3,
+      "DDoS": 1
     }
   },
   "alerts": [
@@ -179,6 +180,20 @@
       "published": "2026-09-04T05:00:59+00:00",
       "keywords": [
         "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-09-04T17:01:01.182405+09:00",
+      "type": "single",
+      "title": "넷스카우트, QKS 그룹 스파크 매트릭스 'DDoS 방어 리더' 2년 연속 선정",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=208338",
+      "source": "데일리시큐 (IT&생활) [RSS]",
+      "published": "2026-09-04T06:40:13+00:00",
+      "keywords": [
+        "DDoS"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
