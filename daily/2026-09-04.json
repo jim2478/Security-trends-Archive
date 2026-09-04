@@ -2,26 +2,32 @@
   "date": "2026-09-04",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 10,
+    "scan_runs": 11,
     "total_articles_max": 1692,
     "matched_articles_max": 122,
-    "new_alerts": 11,
-    "cve_count": 9,
+    "new_alerts": 13,
+    "cve_count": 16,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
+      "CVE-2026-11645",
       "CVE-2026-12554",
       "CVE-2026-12555",
       "CVE-2026-12556",
       "CVE-2026-14894",
+      "CVE-2026-2441",
       "CVE-2026-28299",
       "CVE-2026-28318",
       "CVE-2026-28323",
       "CVE-2026-32475",
+      "CVE-2026-3909",
+      "CVE-2026-3910",
+      "CVE-2026-5281",
+      "CVE-2026-6471",
       "CVE-2026-85046"
     ],
     "keywords_hit": {
-      "CVE": 6,
+      "CVE": 8,
       "Malware": 4,
       "DDoS": 1,
       "Botnet": 1
@@ -282,6 +288,99 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-09-04T22:01:12.910827+09:00",
+      "type": "single",
+      "title": "Google patches actively exploited Chrome zero-day (CVE-2026-85046)",
+      "url": "https://www.helpnetsecurity.com/2026/09/04/google-chrome-zero-day-cve-2026-85046/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-09-04T12:09:13+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-11645",
+        "CVE-2026-2441",
+        "CVE-2026-3909",
+        "CVE-2026-3910",
+        "CVE-2026-5281",
+        "CVE-2026-85046"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-11645",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-125 (Out-of-bounds Read)",
+          "description": "Out of bounds read and write in V8 in Google Chrome prior to 149.0.7827.103 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
+          "epss_score": 0.0219,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-2441",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-416 (Use After Free)",
+          "description": "Use after free in CSS in Google Chrome prior to 145.0.7632.75 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
+          "epss_score": 0.2202,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-3909",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-787 (Out-of-bounds Write)",
+          "description": "Out of bounds write in Skia in Google Chrome prior to 146.0.7680.75 allowed a remote attacker to perform out of bounds memory access via a crafted HTML page. (Chromium security severity: High)",
+          "epss_score": 0.01629,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-3910",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-94 (Code Injection)",
+          "description": "Inappropriate implementation in V8 in Google Chrome prior to 146.0.7680.75 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
+          "epss_score": 0.02,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-5281",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-416 (Use After Free)",
+          "description": "Use after free in Dawn in Google Chrome prior to 146.0.7680.178 allowed a remote attacker who had compromised the renderer process to execute arbitrary code via a crafted HTML page. (Chromium security severity: High)",
+          "epss_score": 0.04938,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-09-04T22:01:12.910827+09:00",
+      "type": "single",
+      "title": "12-Year-Old PostgreSQL Vulnerability Enables Database, Server Takeover",
+      "url": "https://www.securityweek.com/12-year-old-postgresql-vulnerability-enables-database-server-takeover/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-09-04T12:06:13+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-6471"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-6471",
+          "cvss_score": 7.2,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-862 (Missing Authorization)",
+          "description": "Missing authorization in PostgreSQL logical decoding allows a non-superuser holding REPLICATION privilege to dlopen any file visible to the operating system account running the server, via the choice of logical decoding plugin.  This in turn runs arbitrary code as that account.  Versions before PostgreSQL 18.6, 17.11, 16.15, 15.19, and 14.24 are affected.",
+          "epss_score": 0.00285,
+          "kev": false
+        }
+      ]
     }
   ]
 }
