@@ -2,17 +2,18 @@
   "date": "2026-09-04",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 8,
+    "scan_runs": 9,
     "total_articles_max": 1692,
     "matched_articles_max": 122,
-    "new_alerts": 9,
-    "cve_count": 8,
+    "new_alerts": 10,
+    "cve_count": 9,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2026-12554",
       "CVE-2026-12555",
       "CVE-2026-12556",
+      "CVE-2026-14894",
       "CVE-2026-28299",
       "CVE-2026-28318",
       "CVE-2026-28323",
@@ -20,7 +21,7 @@
       "CVE-2026-85046"
     ],
     "keywords_hit": {
-      "CVE": 5,
+      "CVE": 6,
       "Malware": 3,
       "DDoS": 1
     }
@@ -239,6 +240,32 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-09-04T19:01:08.383505+09:00",
+      "type": "single",
+      "title": "Over 440,000 Exploit Attempts Target Super Forms and Elementor Pro RCE Flaws",
+      "url": "https://thehackernews.com/2026/09/over-440000-exploit-attempts-target.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-09-04T08:48:45+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-14894"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-14894",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-434 (Unrestricted File Upload)",
+          "description": "The Super Forms – Drag & Drop Form Builder plugin for WordPress is vulnerable to Arbitrary File Upload in all versions up to, and including, 6.3.313 via the submit_form function. This is due to missing file type validation and the absence of any capability check on the submit_form nopriv AJAX handler, whose only barrier is a session nonce freely obtainable by unauthenticated visitors via a separate nopriv endpoint. This makes it possible for unauthenticated attackers to upload files that may be ",
+          "epss_score": 0.03484,
+          "kev": false
+        }
+      ]
     }
   ]
 }
