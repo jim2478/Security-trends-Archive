@@ -2,20 +2,22 @@
   "date": "2026-09-05",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 1,
+    "scan_runs": 2,
     "total_articles_max": 1692,
-    "matched_articles_max": 115,
-    "new_alerts": 1,
-    "cve_count": 3,
+    "matched_articles_max": 118,
+    "new_alerts": 3,
+    "cve_count": 5,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2026-19490",
       "CVE-2026-3055",
-      "CVE-2026-4368"
+      "CVE-2026-4368",
+      "CVE-2026-6471",
+      "CVE-2026-73749"
     ],
     "keywords_hit": {
-      "CVE": 1
+      "CVE": 3
     }
   },
   "alerts": [
@@ -61,6 +63,58 @@
           "cwe": "CWE-362 (CWE-362)",
           "description": "Race Condition in NetScaler ADC and NetScaler Gateway when appliance is configured as Gateway (SSL VPN, ICA Proxy, CVPN, RDP Proxy) or AAA virtual server leading to User Session Mixup",
           "epss_score": 0.03618,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-09-05T02:01:05.507411+09:00",
+      "type": "single",
+      "title": "HPE Patches Critical RCE Vulnerabilities in AOS-CX",
+      "url": "https://www.securityweek.com/hpe-patches-critical-rce-vulnerabilities-in-aos-cx/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-09-04T16:11:06+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-73749"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-73749",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-284 (Improper Access Control)",
+          "description": "Multiple vulnerabilities exist in a daemon of AOS-CX that may allow for improper processing of malformed input. An unauthenticated remote attacker could exploit these vulnerabilities by sending specially crafted packets to the affected service. Successful exploitation could result in remote code execution with elevated privileges.",
+          "epss_score": 0.00487,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-09-05T02:01:05.507411+09:00",
+      "type": "single",
+      "title": "PostgreSQL Fixes 12-Year-Old Logical Decoding Flaw Enabling Replication-Role Code Execution",
+      "url": "https://thehackernews.com/2026/09/postgresql-fixes-12-year-old-logical.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-09-04T15:20:19+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-6471"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-6471",
+          "cvss_score": 7.2,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-862 (Missing Authorization)",
+          "description": "Missing authorization in PostgreSQL logical decoding allows a non-superuser holding REPLICATION privilege to dlopen any file visible to the operating system account running the server, via the choice of logical decoding plugin.  This in turn runs arbitrary code as that account.  Versions before PostgreSQL 18.6, 17.11, 16.15, 15.19, and 14.24 are affected.",
+          "epss_score": 0.00285,
           "kev": false
         }
       ]
