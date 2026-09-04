@@ -2,10 +2,10 @@
   "date": "2026-09-04",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 9,
+    "scan_runs": 10,
     "total_articles_max": 1692,
     "matched_articles_max": 122,
-    "new_alerts": 10,
+    "new_alerts": 11,
     "cve_count": 9,
     "ioc_count": 0,
     "merged_count": 0,
@@ -22,8 +22,9 @@
     ],
     "keywords_hit": {
       "CVE": 6,
-      "Malware": 3,
-      "DDoS": 1
+      "Malware": 4,
+      "DDoS": 1,
+      "Botnet": 1
     }
   },
   "alerts": [
@@ -266,6 +267,21 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-09-04T20:01:06.377966+09:00",
+      "type": "single",
+      "title": "Sality botnet disrupted after two decades of malware",
+      "url": "https://cybernews.com/news/sality-botnet-taken-down/",
+      "source": "CyberNews [RSS]",
+      "published": "2026-09-04T08:49:45+00:00",
+      "keywords": [
+        "Botnet",
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
