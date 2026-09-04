@@ -1,0 +1,69 @@
+{
+  "date": "2026-09-05",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 1,
+    "total_articles_max": 1692,
+    "matched_articles_max": 115,
+    "new_alerts": 1,
+    "cve_count": 3,
+    "ioc_count": 0,
+    "merged_count": 0,
+    "unique_cves": [
+      "CVE-2026-19490",
+      "CVE-2026-3055",
+      "CVE-2026-4368"
+    ],
+    "keywords_hit": {
+      "CVE": 1
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-09-05T01:01:05.833771+09:00",
+      "type": "single",
+      "title": "Critical Citrix NetScaler auth bypass now leveraged in attacks",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-target-critical-citrix-netscaler-auth-bypass-in-attacks/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-09-04T15:25:59+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-19490",
+        "CVE-2026-3055",
+        "CVE-2026-4368"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-19490",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-288 (CWE-288)",
+          "description": "Vulnerability in NetScaler ADC and NetScaler Gateway.\n\nThis issue affects ADC: from 14.1 through 73.32 and from 13.1 through 63.21; Gateway: from 14.1 through 73.32 and from 13.1 through 63.21.",
+          "epss_score": 0.03372,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-3055",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-125 (Out-of-bounds Read)",
+          "description": "Insufficient input validation in NetScaler ADC and NetScaler Gateway when configured as a SAML IDP leading to memory overread",
+          "epss_score": 0.87166,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-4368",
+          "cvss_score": 7.7,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-362 (CWE-362)",
+          "description": "Race Condition in NetScaler ADC and NetScaler Gateway when appliance is configured as Gateway (SSL VPN, ICA Proxy, CVPN, RDP Proxy) or AAA virtual server leading to User Session Mixup",
+          "epss_score": 0.03618,
+          "kev": false
+        }
+      ]
+    }
+  ]
+}
