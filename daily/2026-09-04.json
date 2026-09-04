@@ -2,10 +2,10 @@
   "date": "2026-09-04",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 5,
+    "scan_runs": 6,
     "total_articles_max": 1692,
     "matched_articles_max": 122,
-    "new_alerts": 5,
+    "new_alerts": 6,
     "cve_count": 7,
     "ioc_count": 0,
     "merged_count": 0,
@@ -20,7 +20,7 @@
     ],
     "keywords_hit": {
       "CVE": 3,
-      "Malware": 2
+      "Malware": 3
     }
   },
   "alerts": [
@@ -169,6 +169,20 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-09-04T15:00:58.432741+09:00",
+      "type": "single",
+      "title": "Scammers have figured out the best time to text you",
+      "url": "https://www.helpnetsecurity.com/2026/09/04/scam-texts-peak-research/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-09-04T05:00:59+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
