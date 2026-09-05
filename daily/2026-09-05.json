@@ -2,10 +2,10 @@
   "date": "2026-09-05",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 4,
+    "scan_runs": 5,
     "total_articles_max": 1692,
     "matched_articles_max": 119,
-    "new_alerts": 5,
+    "new_alerts": 6,
     "cve_count": 7,
     "ioc_count": 0,
     "merged_count": 0,
@@ -20,7 +20,8 @@
     ],
     "keywords_hit": {
       "CVE": 4,
-      "Malware": 1
+      "Malware": 1,
+      "DDoS": 1
     }
   },
   "alerts": [
@@ -171,6 +172,20 @@
           "kev": true
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-09-05T20:00:59.672116+09:00",
+      "type": "single",
+      "title": "Always-On vs On-Demand DDOS Protection: Which Fits Your Traffic (and Budget)",
+      "url": "http://www.ddosinfo.com/ddos-vendors/always-on-vs-on-demand-ddos/",
+      "source": "DDoS Info [RSS]",
+      "published": "2026-09-05T09:00:03+00:00",
+      "keywords": [
+        "DDoS"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
