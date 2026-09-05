@@ -2,16 +2,17 @@
   "date": "2026-09-05",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 5,
+    "scan_runs": 6,
     "total_articles_max": 1692,
     "matched_articles_max": 119,
-    "new_alerts": 6,
-    "cve_count": 7,
+    "new_alerts": 7,
+    "cve_count": 8,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2026-19490",
       "CVE-2026-3055",
+      "CVE-2026-32475",
       "CVE-2026-4368",
       "CVE-2026-6471",
       "CVE-2026-73749",
@@ -19,7 +20,7 @@
       "CVE-2026-82078"
     ],
     "keywords_hit": {
-      "CVE": 4,
+      "CVE": 5,
       "Malware": 1,
       "DDoS": 1
     }
@@ -186,6 +187,32 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-09-05T22:01:03.427527+09:00",
+      "type": "single",
+      "title": "Elementor Pro WordPress Plugin Vulnerability Exploited to Hack Sites",
+      "url": "https://www.securityweek.com/elementor-pro-wordpress-plugin-vulnerability-exploited-to-hack-sites/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-09-05T13:00:28+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-32475"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-32475",
+          "cvss_score": 9.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-434 (Unrestricted File Upload)",
+          "description": "Unrestricted Upload of File with Dangerous Type vulnerability in Elementor Elementor Pro allows Using Malicious Files.\n\nThis issue affects Elementor Pro: from n/a through 4.2.1.",
+          "epss_score": 0.02374,
+          "kev": false
+        }
+      ]
     }
   ]
 }
