@@ -1,0 +1,58 @@
+{
+  "date": "2026-09-07",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 1,
+    "total_articles_max": 1692,
+    "matched_articles_max": 117,
+    "new_alerts": 1,
+    "cve_count": 2,
+    "ioc_count": 0,
+    "merged_count": 0,
+    "unique_cves": [
+      "CVE-2026-67276",
+      "CVE-2026-86060"
+    ],
+    "keywords_hit": {
+      "CVE": 1
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-09-07T01:01:03.638090+09:00",
+      "type": "single",
+      "title": "마이크로틱 라우터 ‘인증 없이 관리자 탈취’ 공격 확산…SSH 외부 노출 장비 주의",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=208345",
+      "source": "데일리시큐 (이슈) [RSS]",
+      "published": "2026-09-07T00:46:37+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-67276",
+        "CVE-2026-86060"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-67276",
+          "cvss_score": 9.2,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-347 (CWE-347)",
+          "description": "RouterOS does not compare the complete RSA public key when matching an SSH authentication request to an authorized user key, checking the key type and modulus but omitting the exponent. Because signature verification uses the client-supplied key, an attacker knowing an authorized RSA modulus can supply a key with exponent one, forge a valid signature, and open an SSH command channel as the target user without the private key.This issue was fixed in versions: 6.49.21 (Long-term), 7.23.4 (Long-ter",
+          "epss_score": 0.00249,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-86060",
+          "cvss_score": 9.2,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-88 (CWE-88)",
+          "description": "RouterOS contains an argument-handling flaw in the SSH login\npath involving usernames that begin with a prohibited character, allowing for the trusted RouterOS policy mask to be changed, leading to privilege escalation. Exploitation requires an unauthenticated SSH session to reach the RouterOS login helper.This issue was fixed in versions: 6.49.21 (Long-term), 7.23.4 (Long-term) and 7.24.2 (Stable)",
+          "epss_score": 0.00401,
+          "kev": false
+        }
+      ]
+    }
+  ]
+}
