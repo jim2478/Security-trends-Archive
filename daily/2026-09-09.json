@@ -1,0 +1,101 @@
+{
+  "date": "2026-09-09",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 1,
+    "total_articles_max": 1692,
+    "matched_articles_max": 101,
+    "new_alerts": 3,
+    "cve_count": 3,
+    "ioc_count": 0,
+    "merged_count": 0,
+    "unique_cves": [
+      "CVE-2025-34115",
+      "CVE-2026-2035703",
+      "CVE-2026-52307"
+    ],
+    "keywords_hit": {
+      "CVE": 3
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-09-09T03:01:14.647646+09:00",
+      "type": "single",
+      "title": "[0day-rubbish] OP5 Monitor 9.20 Command injection surviving the CVE-2025-34115 patch (OPT-IN fix ineffective) (8.8)",
+      "url": "https://seclists.org/fulldisclosure/2026/Sep/38",
+      "source": "SecLists Full Disclosure (취약점공개)",
+      "published": "2026-09-08T17:31:07+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2025-34115"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2025-34115",
+          "cvss_score": 8.7,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-20 (Improper Input Validation)",
+          "description": "An authenticated command injection vulnerability exists in OP5 Monitor through version 7.1.9 via the 'cmd_str' parameter in the command_test.php endpoint. A user with access to the web interface can exploit the 'Test this command' feature to execute arbitrary shell commands as the unprivileged web application user. The vulnerability resides in the configuration section of the application and requires valid login credentials with access to the command testing functionality. This issue is fixed in",
+          "epss_score": 0.03321,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-09-09T03:01:14.647646+09:00",
+      "type": "single",
+      "title": "**Subject:** CVE-2026-2035703: Tozed ZLT X300 5G CPE — Unauthenticated Remote Root Code Execution via TR-069 Command Injection (CVSS 9.8)",
+      "url": "https://seclists.org/fulldisclosure/2026/Sep/32",
+      "source": "SecLists Full Disclosure (취약점공개)",
+      "published": "2026-09-08T17:30:54+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-2035703"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-2035703",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-09-09T03:01:14.647646+09:00",
+      "type": "single",
+      "title": "CVE-2026-52307: Stored XSS in 1CMS v5.6",
+      "url": "https://seclists.org/fulldisclosure/2026/Sep/31",
+      "source": "SecLists Full Disclosure (취약점공개)",
+      "published": "2026-09-08T17:24:14+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-52307"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-52307",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": "An authenticated stored cross-site scripting (XSS) vulnerability in the Column Management component of ClassCMS 1CMS v5.6 allows attackers to execute arbitrary web scripts or HTML via injecting a crafted payload into the title field.",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    }
+  ]
+}
