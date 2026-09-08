@@ -2,20 +2,24 @@
   "date": "2026-09-09",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 1,
+    "scan_runs": 2,
     "total_articles_max": 1692,
-    "matched_articles_max": 101,
-    "new_alerts": 3,
-    "cve_count": 3,
+    "matched_articles_max": 103,
+    "new_alerts": 4,
+    "cve_count": 7,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2025-34115",
       "CVE-2026-2035703",
-      "CVE-2026-52307"
+      "CVE-2026-48273",
+      "CVE-2026-52307",
+      "CVE-2026-75650",
+      "CVE-2026-75746",
+      "CVE-2026-82004"
     ],
     "keywords_hit": {
-      "CVE": 3
+      "CVE": 4
     }
   },
   "alerts": [
@@ -92,6 +96,62 @@
           "cvss_severity": null,
           "cwe": null,
           "description": "An authenticated stored cross-site scripting (XSS) vulnerability in the Column Management component of ClassCMS 1CMS v5.6 allows attackers to execute arbitrary web scripts or HTML via injecting a crafted payload into the title field.",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-09-09T04:01:10.922009+09:00",
+      "type": "single",
+      "title": "Adobe Patches Over 170 Vulnerabilities, Including Commerce Zero-Day",
+      "url": "https://www.securityweek.com/adobe-patches-over-170-vulnerabilities-including-commerce-zero-day/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-09-08T18:37:17+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-48273",
+        "CVE-2026-75650",
+        "CVE-2026-75746",
+        "CVE-2026-82004"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-48273",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-75650",
+          "cvss_score": 10.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-1336 (CWE-1336)",
+          "description": "Adobe Commerce is affected by an Improper Neutralization of Special Elements Used in a Template Engine vulnerability that could result in arbitrary code execution in the context of the current user. An attacker could exploit this vulnerability to execute arbitrary code. Exploitation of this issue does not require user interaction. Scope is changed.",
+          "epss_score": 0.00676,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-75746",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-82004",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
           "epss_score": null,
           "kev": false
         }
