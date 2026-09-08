@@ -2,19 +2,19 @@
   "date": "2026-09-08",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
+    "scan_runs": 3,
     "total_articles_max": 1692,
     "matched_articles_max": 114,
-    "new_alerts": 3,
+    "new_alerts": 4,
     "cve_count": 1,
-    "ioc_count": 0,
+    "ioc_count": 20,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2026-75650"
     ],
     "keywords_hit": {
-      "CVE": 2,
-      "Malware": 2
+      "Malware": 3,
+      "CVE": 2
     }
   },
   "alerts": [
@@ -70,6 +70,20 @@
         "Malware"
       ],
       "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-09-08T20:01:06.914755+09:00",
+      "type": "single",
+      "title": "HVNC Backdoor Targets LATAM Organizations with Fake Tax and DocuSign Lures",
+      "url": "https://any.run/cybersecurity-blog/hvnc-backdoor-targets-latam/",
+      "source": "ANY.RUN (악성코드샌드박스분석) [RSS]",
+      "published": "2026-09-08T10:24:30+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "[IP] 1[.]2[.]0[.]4\n[IP] 5[.]230[.]54[.]41\n[Domain] receitafederal[.]digital\n[Domain] aapj[.]digital\n[Domain] gerenciadorcaixa[.]digital\n[Domain] cookies[.]sqlite\n[Domain] places[.]sqlite\n[Domain] permissions[.]sqlite\n[URL] hxxp://5[.]230[.]249[.]49/dl.php?f=cresol.exe&k=chave_tecl_cresol\n[URL] hxxp://5[.]230[.]249[.]49/dl.php?f=payed.exe\n[URL] hxxp://40[.]124[.]169[.]27/dl.php?f=NotaFiscal...&k=nfe_valid_access_key_2026_secure\n[SHA256] 1f2d41c4aa5db0bc33ebf7b66d72943a817d7ce6cbe880502a9403823633093f\n[SHA256] 25db85830d86cafbb93a660242f8b4017273cc4612e94dd7a8af29c948651bbe\n[SHA256] 54716f0738af891f283d213b5c8d11b25896bb8ee3097d301eae718560cf974e\n[SHA256] 5fbfc7929858c3c3d79637db857525695db3c0f41b9bf2a7b964c26b7226bde3\n[SHA256] 7c26614e1d733892c2deac7e245ce115504b1d80592dd0a01b08e3e5a55f89ca\n[SHA256] 97f35ba586fc121590c867b4d6707777fbeca2ace5ad077807ec806540bb47cd\n[SHA256] d1f4225df2cd877dbf130d5668a021dce3f94118455ff5ec952061c30afc9ce7\n[SHA256] debf48e690abd4288e5f76fa7e9f98a9fb3411171eba82906ef0d2bf1ef2dd6d\n[SHA256] e4d637f884f5babea6525266e1cb6ab332a16a446d6084dd51b4222540c1f16c",
       "cve_ids": [],
       "cve_details": []
     }
