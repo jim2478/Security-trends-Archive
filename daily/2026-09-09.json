@@ -2,10 +2,10 @@
   "date": "2026-09-09",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
+    "scan_runs": 3,
     "total_articles_max": 1692,
-    "matched_articles_max": 103,
-    "new_alerts": 4,
+    "matched_articles_max": 105,
+    "new_alerts": 5,
     "cve_count": 7,
     "ioc_count": 0,
     "merged_count": 0,
@@ -19,7 +19,7 @@
       "CVE-2026-82004"
     ],
     "keywords_hit": {
-      "CVE": 4
+      "CVE": 5
     }
   },
   "alerts": [
@@ -156,6 +156,20 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-09-09T15:01:02.669593+09:00",
+      "type": "single",
+      "title": "AI-Infra-Guard: Open-source security scanner for AI systems",
+      "url": "https://www.helpnetsecurity.com/2026/09/09/ai-infra-guard-open-source-security-scanner-ai-systems/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-09-09T05:30:53+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
