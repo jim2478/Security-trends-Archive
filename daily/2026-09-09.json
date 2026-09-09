@@ -2,11 +2,11 @@
   "date": "2026-09-09",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
+    "scan_runs": 4,
     "total_articles_max": 1692,
-    "matched_articles_max": 105,
-    "new_alerts": 5,
-    "cve_count": 7,
+    "matched_articles_max": 108,
+    "new_alerts": 8,
+    "cve_count": 9,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -14,12 +14,15 @@
       "CVE-2026-2035703",
       "CVE-2026-48273",
       "CVE-2026-52307",
+      "CVE-2026-69414",
       "CVE-2026-75650",
       "CVE-2026-75746",
-      "CVE-2026-82004"
+      "CVE-2026-82004",
+      "CVE-2026-87491"
     ],
     "keywords_hit": {
-      "CVE": 5
+      "CVE": 7,
+      "Malware": 1
     }
   },
   "alerts": [
@@ -166,6 +169,72 @@
       "published": "2026-09-09T05:30:53+00:00",
       "keywords": [
         "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-09-09T19:01:05.900694+09:00",
+      "type": "single",
+      "title": "Chrome V8 Zero-Day Exploited in the Wild Enables Code Execution Inside Sandbox",
+      "url": "https://thehackernews.com/2026/09/chrome-v8-zero-day-exploited-in-wild.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-09-09T09:11:03+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-87491"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-87491",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": "CWE-787 (Out-of-bounds Write)",
+          "description": "Out of bounds write in V8 in Google Chrome prior to 153.0.8010.36 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: Medium)",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-09-09T19:01:05.900694+09:00",
+      "type": "single",
+      "title": "Researcher Drops New Microsoft Defender PoC Showing ShieldBreak Patch Can Be Bypassed",
+      "url": "https://thehackernews.com/2026/09/researcher-drops-new-microsoft-defender.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-09-09T06:47:27+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-69414"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-69414",
+          "cvss_score": 7.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-284 (Improper Access Control)",
+          "description": "Microsoft is aware of an elevation of privilege in the Microsoft Malware Protection Engine in Microsoft Defender publicly referred to as &quot;ShieldBreak &quot;.",
+          "epss_score": 0.00557,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-09-09T19:01:05.900694+09:00",
+      "type": "single",
+      "title": "F5 BIG-IP APM Malware Injects a PHP Web Shell Into Memory, Evading Disk Scans",
+      "url": "https://thehackernews.com/2026/09/f5-big-ip-apm-malware-injects-php-web.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-09-09T07:36:49+00:00",
+      "keywords": [
+        "Malware"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
