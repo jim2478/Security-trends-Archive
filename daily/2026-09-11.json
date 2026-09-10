@@ -2,10 +2,10 @@
   "date": "2026-09-11",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
+    "scan_runs": 3,
     "total_articles_max": 1692,
-    "matched_articles_max": 108,
-    "new_alerts": 2,
+    "matched_articles_max": 110,
+    "new_alerts": 3,
     "cve_count": 3,
     "ioc_count": 25,
     "merged_count": 0,
@@ -15,7 +15,7 @@
       "CVE-2026-82329"
     ],
     "keywords_hit": {
-      "Malware": 1,
+      "Malware": 2,
       "CVE": 1
     }
   },
@@ -79,6 +79,20 @@
           "kev": true
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-09-11T07:01:08.376726+09:00",
+      "type": "single",
+      "title": "New Android malware encrypts files, steals data, and harasses victims",
+      "url": "https://www.bleepingcomputer.com/news/security/new-android-malware-encrypts-files-steals-data-and-harasses-victims/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-09-10T21:40:43+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
