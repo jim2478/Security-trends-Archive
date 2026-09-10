@@ -2,10 +2,10 @@
   "date": "2026-09-10",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
+    "scan_runs": 3,
     "total_articles_max": 1692,
     "matched_articles_max": 103,
-    "new_alerts": 2,
+    "new_alerts": 4,
     "cve_count": 3,
     "ioc_count": 0,
     "merged_count": 0,
@@ -15,7 +15,8 @@
       "CVE-2026-20316"
     ],
     "keywords_hit": {
-      "CVE": 2
+      "CVE": 2,
+      "Malware": 2
     }
   },
   "alerts": [
@@ -80,6 +81,34 @@
           "kev": true
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-09-10T19:03:01.609879+09:00",
+      "type": "single",
+      "title": "Fake GTA 6 download delivers malware-packed bundle to impatient gamers",
+      "url": "https://www.helpnetsecurity.com/2026/09/10/fake-gta-6-downloads-malware-ransomware/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-09-10T09:51:44+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-09-10T19:03:01.609879+09:00",
+      "type": "single",
+      "title": "ANY.RUN Secures Leader Status in G2’s Malware Analysis Rankings",
+      "url": "https://any.run/cybersecurity-blog/g2-leader-fall-2026/",
+      "source": "ANY.RUN (악성코드샌드박스분석) [RSS]",
+      "published": "2026-09-10T09:39:01+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
