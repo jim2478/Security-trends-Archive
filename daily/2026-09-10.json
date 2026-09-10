@@ -2,19 +2,20 @@
   "date": "2026-09-10",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 1,
+    "scan_runs": 2,
     "total_articles_max": 1692,
     "matched_articles_max": 103,
-    "new_alerts": 1,
-    "cve_count": 2,
+    "new_alerts": 2,
+    "cve_count": 3,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
+      "CVE-2025-25249",
       "CVE-2026-20079",
       "CVE-2026-20316"
     ],
     "keywords_hit": {
-      "CVE": 1
+      "CVE": 2
     }
   },
   "alerts": [
@@ -50,6 +51,32 @@
           "cwe": "CWE-259 (CWE-259)",
           "description": "A vulnerability in the web interface of Cisco Secure Firewall Management Center (FMC) Software could allow an unauthenticated, remote attacker to log in to an affected device using a low-privileged account to access sensitive data within the impacted systems.\r\n\r\nThis vulnerability is due to the presence of static user credentials for a low-privileged&nbsp;account. An attacker could exploit this vulnerability by using the account to log in to an affected system. A successful exploit could allow t",
           "epss_score": 0.09816,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-09-10T16:01:05.072147+09:00",
+      "type": "single",
+      "title": "Fortinet Code Execution Flaw Exploited in PivotC2 RAT Attacks",
+      "url": "https://www.securityweek.com/fortinet-code-execution-flaw-exploited-in-pivotc2-rat-attacks/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-09-10T06:33:36+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2025-25249"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2025-25249",
+          "cvss_score": 8.1,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-122 (CWE-122)",
+          "description": "A heap-based buffer overflow vulnerability in Fortinet FortiOS 7.6.0 through 7.6.3, FortiOS 7.4.0 through 7.4.8, FortiOS 7.2.0 through 7.2.11, FortiOS 7.0.0 through 7.0.17, FortiOS 6.4 all versions, FortiSwitchManager 7.2.0 through 7.2.6, FortiSwitchManager 7.0.0 through 7.0.5 allows attacker to execute unauthorized code or commands via specially crafted packets",
+          "epss_score": 0.00759,
           "kev": true
         }
       ]
