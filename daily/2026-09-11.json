@@ -2,16 +2,21 @@
   "date": "2026-09-11",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 1,
-    "total_articles_max": 1682,
+    "scan_runs": 2,
+    "total_articles_max": 1692,
     "matched_articles_max": 108,
-    "new_alerts": 1,
-    "cve_count": 0,
-    "ioc_count": 0,
+    "new_alerts": 2,
+    "cve_count": 3,
+    "ioc_count": 25,
     "merged_count": 0,
-    "unique_cves": [],
+    "unique_cves": [
+      "CVE-2026-42016",
+      "CVE-2026-42018",
+      "CVE-2026-82329"
+    ],
     "keywords_hit": {
-      "Malware": 1
+      "Malware": 1,
+      "CVE": 1
     }
   },
   "alerts": [
@@ -28,6 +33,52 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-09-11T05:01:10.258834+09:00",
+      "type": "single",
+      "title": "Artifactory Under Attack: In-the-Wild Exploitation of CVE-2026-42016, CVE-2026-42018 & CVE-2026-82329",
+      "url": "https://www.wiz.io/blog/artifactory-under-attack-in-the-wild-exploitation-of-cve-2026-42016-cve-2026-4201",
+      "source": "Wiz Blog (클라우드보안) [RSS]",
+      "published": "2026-09-10T19:04:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "[IP] 93[.]104[.]155[.]133\n[IP] 64[.]207[.]232[.]6\n[IP] 149[.]102[.]229[.]150\n[IP] 186[.]247[.]79[.]240\n[IP] 182[.]62[.]201[.]69\n[IP] 146[.]19[.]216[.]120\n[IP] 185[.]190[.]58[.]172\n[IP] 45[.]61[.]176[.]88\n[IP] 223[.]144[.]227[.]110\n[IP] 129[.]121[.]56[.]234\n[IP] 16[.]54[.]250[.]190\n[IP] 105[.]188[.]75[.]16\n[IP] 103[.]124[.]165[.]42\n[IP] 176[.]88[.]121[.]152\n[IP] 155[.]254[.]120[.]23\n[IP] 220[.]246[.]124[.]92\n[IP] 15[.]157[.]64[.]113\n[IP] 104[.]28[.]251[.]139\n[IP] 137[.]184[.]111[.]69\n[URL] hxxp://log[.]gitclone[.]org:45678/smtp\n[URL] hxxp://3[.]88[.]162[.]79:36789/smtp\n[SHA1] 513a907b69edffc3cb77a494da395178d21ef9bd\n[CVE] CVE-2026-42016\n[CVE] CVE-2026-42018\n[CVE] CVE-2026-82329",
+      "cve_ids": [
+        "CVE-2026-42016",
+        "CVE-2026-42018",
+        "CVE-2026-82329"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-42016",
+          "cvss_score": 8.1,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-863 (CWE-863)",
+          "description": "JFrog Artifactory (Self Hosted) versions before 7.133.11 are vulnerable to a privilege escalation attack due to a validation check of the token signature/issuer and not the token’s scope.",
+          "epss_score": 0.00266,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-42018",
+          "cvss_score": 7.5,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-287 (Authentication Bypass)",
+          "description": "JFrog Artifactory could return an internal anonymous-user token to an unauthenticated caller when anonymous access is disabled, potentially exposing sensitive resources.",
+          "epss_score": 0.00349,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-82329",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-287 (Authentication Bypass)",
+          "description": "JFrog Artifactory contains an authentication weakness that, under default configuration, may allow an unauthenticated attacker with network access to obtain administrative privileges.",
+          "epss_score": 0.07666,
+          "kev": true
+        }
+      ]
     }
   ]
 }
