@@ -2,20 +2,21 @@
   "date": "2026-09-10",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
+    "scan_runs": 4,
     "total_articles_max": 1692,
-    "matched_articles_max": 103,
-    "new_alerts": 4,
-    "cve_count": 3,
+    "matched_articles_max": 104,
+    "new_alerts": 5,
+    "cve_count": 6,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2025-25249",
       "CVE-2026-20079",
+      "CVE-2026-20131",
       "CVE-2026-20316"
     ],
     "keywords_hit": {
-      "CVE": 2,
+      "CVE": 3,
       "Malware": 2
     }
   },
@@ -109,6 +110,52 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-09-10T20:01:04.647690+09:00",
+      "type": "single",
+      "title": "Organizations Warned of Cisco Secure FMC Exploitation",
+      "url": "https://www.securityweek.com/organizations-warned-of-cisco-secure-fmc-exploitation/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-09-10T10:06:20+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-20079",
+        "CVE-2026-20131",
+        "CVE-2026-20316"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-20079",
+          "cvss_score": 10.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-288 (CWE-288)",
+          "description": "A vulnerability in the web interface of Cisco Secure Firewall Management Center (FMC) Software could allow an unauthenticated, remote attacker to bypass authentication and execute script files on an affected device to obtain root access to the underlying operating system.&nbsp;\r\n\r\nThis vulnerability is due to an improper system process that is created at boot time. An attacker could exploit this vulnerability by sending crafted HTTP requests to an affected device. A successful exploit could allo",
+          "epss_score": 0.35946,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-20131",
+          "cvss_score": 10.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-502 (Deserialization)",
+          "description": "A vulnerability in the web-based management interface of Cisco Secure Firewall Management Center (FMC) Software could allow an unauthenticated, remote attacker to execute arbitrary Java code as root&nbsp;on an affected device.\r\n\r\nThis vulnerability is due to insecure deserialization of a user-supplied Java byte stream. An attacker could exploit this vulnerability by sending a crafted serialized Java object to the web-based management interface of an affected device. A successful exploit could al",
+          "epss_score": 0.31231,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-20316",
+          "cvss_score": 5.3,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-259 (CWE-259)",
+          "description": "A vulnerability in the web interface of Cisco Secure Firewall Management Center (FMC) Software could allow an unauthenticated, remote attacker to log in to an affected device using a low-privileged account to access sensitive data within the impacted systems.\r\n\r\nThis vulnerability is due to the presence of static user credentials for a low-privileged&nbsp;account. An attacker could exploit this vulnerability by using the account to log in to an affected system. A successful exploit could allow t",
+          "epss_score": 0.09816,
+          "kev": true
+        }
+      ]
     }
   ]
 }
