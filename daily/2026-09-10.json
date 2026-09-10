@@ -2,10 +2,10 @@
   "date": "2026-09-10",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 5,
+    "scan_runs": 6,
     "total_articles_max": 1692,
-    "matched_articles_max": 106,
-    "new_alerts": 6,
+    "matched_articles_max": 110,
+    "new_alerts": 8,
     "cve_count": 9,
     "ioc_count": 0,
     "merged_count": 1,
@@ -17,7 +17,8 @@
     ],
     "keywords_hit": {
       "CVE": 4,
-      "Malware": 2
+      "Malware": 3,
+      "DDoS": 1
     }
   },
   "alerts": [
@@ -200,6 +201,34 @@
           "kev": true
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-09-10T23:01:13.507444+09:00",
+      "type": "single",
+      "title": "Gigabud Creates Android Work Profiles to Hide From Banking App Malware Checks",
+      "url": "https://thehackernews.com/2026/09/gigabud-creates-android-work-profiles.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-09-10T11:33:43+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-09-10T23:01:13.507444+09:00",
+      "type": "single",
+      "title": "Russian e-commerce giant Wildberries says DDoS attack delayed payments to sellers",
+      "url": "https://therecord.media/russian-e-commerce-giant-wildberries-says-payments-disrupted",
+      "source": "The Record by Recorded Future (위협뉴스) [RSS]",
+      "published": "2026-09-10T13:31:00+00:00",
+      "keywords": [
+        "DDoS"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
