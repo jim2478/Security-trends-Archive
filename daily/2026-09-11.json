@@ -2,22 +2,27 @@
   "date": "2026-09-11",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 5,
+    "scan_runs": 6,
     "total_articles_max": 1692,
     "matched_articles_max": 110,
-    "new_alerts": 5,
-    "cve_count": 4,
+    "new_alerts": 6,
+    "cve_count": 9,
     "ioc_count": 25,
     "merged_count": 0,
     "unique_cves": [
+      "CVE-2021-22175",
+      "CVE-2021-39935",
+      "CVE-2023-2825",
       "CVE-2026-20079",
       "CVE-2026-42016",
       "CVE-2026-42018",
-      "CVE-2026-82329"
+      "CVE-2026-82329",
+      "CVE-2026-85706",
+      "CVE-2026-87719"
     ],
     "keywords_hit": {
       "Malware": 3,
-      "CVE": 2
+      "CVE": 3
     }
   },
   "alerts": [
@@ -134,6 +139,72 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-09-11T21:01:13.734604+09:00",
+      "type": "single",
+      "title": "GitLab urges users to patch max severity path traversal flaw",
+      "url": "https://www.bleepingcomputer.com/news/security/gitlab-urges-users-to-patch-max-severity-path-traversal-flaw/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-09-11T11:15:22+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2021-22175",
+        "CVE-2021-39935",
+        "CVE-2023-2825",
+        "CVE-2026-85706",
+        "CVE-2026-87719"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2021-22175",
+          "cvss_score": 6.8,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-918 (SSRF)",
+          "description": "When requests to the internal network for webhooks are enabled, a server-side request forgery vulnerability in GitLab affecting all versions starting from 10.5 was possible to exploit for an unauthenticated attacker even on a GitLab instance where registration is disabled",
+          "epss_score": 0.53372,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2021-39935",
+          "cvss_score": 6.8,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-918 (SSRF)",
+          "description": "An issue has been discovered in GitLab CE/EE affecting all versions starting from 10.5 before 14.3.6, all versions starting from 14.4 before 14.4.4, all versions starting from 14.5 before 14.5.2. Unauthorized external users could perform Server Side Requests via the CI Lint API",
+          "epss_score": 0.35649,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2023-2825",
+          "cvss_score": 10.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-22 (Path Traversal)",
+          "description": "An issue has been discovered in GitLab CE/EE affecting only version 16.0.0. An unauthenticated malicious user can use a path traversal vulnerability to read arbitrary files on the server when an attachment exists in a public project nested within at least five groups.",
+          "epss_score": 0.71641,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-85706",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-87719",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
     }
   ]
 }
