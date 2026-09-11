@@ -2,16 +2,20 @@
   "date": "2026-09-12",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
+    "scan_runs": 3,
     "total_articles_max": 1692,
-    "matched_articles_max": 109,
-    "new_alerts": 2,
-    "cve_count": 0,
+    "matched_articles_max": 113,
+    "new_alerts": 4,
+    "cve_count": 3,
     "ioc_count": 0,
     "merged_count": 0,
-    "unique_cves": [],
+    "unique_cves": [
+      "CVE-2026-42016",
+      "CVE-2026-42018",
+      "CVE-2026-82329"
+    ],
     "keywords_hit": {
-      "Malware": 2
+      "Malware": 4
     }
   },
   "alerts": [
@@ -36,6 +40,66 @@
       "url": "https://thehackernews.com/2026/09/russian-state-sponsored-hackers-use.html",
       "source": "The Hacker News (보안뉴스 종합) [RSS]",
       "published": "2026-09-11T14:10:20+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-09-12T02:01:11.575706+09:00",
+      "type": "single",
+      "title": "Artifactory flaws chained in attacks deploying backdoor malware",
+      "url": "https://www.bleepingcomputer.com/news/security/artifactory-flaws-chained-in-attacks-deploying-backdoor-malware/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-09-11T16:29:44+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-42016",
+        "CVE-2026-42018",
+        "CVE-2026-82329"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-42016",
+          "cvss_score": 8.1,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-863 (CWE-863)",
+          "description": "JFrog Artifactory (Self Hosted) versions before 7.133.11 are vulnerable to a privilege escalation attack due to a validation check of the token signature/issuer and not the token’s scope.",
+          "epss_score": 0.00266,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-42018",
+          "cvss_score": 7.5,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-287 (Authentication Bypass)",
+          "description": "JFrog Artifactory could return an internal anonymous-user token to an unauthenticated caller when anonymous access is disabled, potentially exposing sensitive resources.",
+          "epss_score": 0.00349,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-82329",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-287 (Authentication Bypass)",
+          "description": "JFrog Artifactory contains an authentication weakness that, under default configuration, may allow an unauthenticated attacker with network access to obtain administrative privileges.",
+          "epss_score": 0.07666,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-09-12T02:01:11.575706+09:00",
+      "type": "single",
+      "title": "Google Doc Sidebar Sends Mac and Windows Users Down Different Paths to Malware",
+      "url": "https://www.huntress.com/blog/google-doc-sidebar-malware-mac-windows",
+      "source": "Huntress (매니지드탐지/SMB보안) [RSS]",
+      "published": "2026-09-15T13:00:00+00:00",
       "keywords": [
         "Malware"
       ],
