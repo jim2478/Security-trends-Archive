@@ -2,10 +2,10 @@
   "date": "2026-09-11",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 4,
+    "scan_runs": 5,
     "total_articles_max": 1692,
     "matched_articles_max": 110,
-    "new_alerts": 4,
+    "new_alerts": 5,
     "cve_count": 4,
     "ioc_count": 25,
     "merged_count": 0,
@@ -16,7 +16,7 @@
       "CVE-2026-82329"
     ],
     "keywords_hit": {
-      "Malware": 2,
+      "Malware": 3,
       "CVE": 2
     }
   },
@@ -120,6 +120,20 @@
           "kev": true
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-09-11T18:01:42.418388+09:00",
+      "type": "single",
+      "title": "Anthropic Says Russian Hackers Used Claude AI to Automate Malware Evasion",
+      "url": "https://www.securityweek.com/anthropic-says-russian-hackers-used-claude-ai-to-automate-malware-evasion/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-09-11T08:47:07+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
