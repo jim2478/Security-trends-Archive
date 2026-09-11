@@ -2,21 +2,22 @@
   "date": "2026-09-11",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
+    "scan_runs": 4,
     "total_articles_max": 1692,
     "matched_articles_max": 110,
-    "new_alerts": 3,
-    "cve_count": 3,
+    "new_alerts": 4,
+    "cve_count": 4,
     "ioc_count": 25,
     "merged_count": 0,
     "unique_cves": [
+      "CVE-2026-20079",
       "CVE-2026-42016",
       "CVE-2026-42018",
       "CVE-2026-82329"
     ],
     "keywords_hit": {
       "Malware": 2,
-      "CVE": 1
+      "CVE": 2
     }
   },
   "alerts": [
@@ -93,6 +94,32 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-09-11T17:01:10.319008+09:00",
+      "type": "single",
+      "title": "Cisco FMC Flaws Exploited to Steal Credentials and Deploy Qilin Ransomware",
+      "url": "https://thehackernews.com/2026/09/cisco-fmc-flaws-exploited-to-steal.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-09-11T06:19:59+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-20079"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-20079",
+          "cvss_score": 10.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-288 (CWE-288)",
+          "description": "A vulnerability in the web interface of Cisco Secure Firewall Management Center (FMC) Software could allow an unauthenticated, remote attacker to bypass authentication and execute script files on an affected device to obtain root access to the underlying operating system.&nbsp;\r\n\r\nThis vulnerability is due to an improper system process that is created at boot time. An attacker could exploit this vulnerability by sending crafted HTTP requests to an affected device. A successful exploit could allo",
+          "epss_score": 0.74697,
+          "kev": true
+        }
+      ]
     }
   ]
 }
