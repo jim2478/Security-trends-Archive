@@ -2,20 +2,22 @@
   "date": "2026-09-12",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
+    "scan_runs": 4,
     "total_articles_max": 1692,
-    "matched_articles_max": 113,
-    "new_alerts": 4,
-    "cve_count": 3,
+    "matched_articles_max": 114,
+    "new_alerts": 6,
+    "cve_count": 5,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2026-42016",
       "CVE-2026-42018",
-      "CVE-2026-82329"
+      "CVE-2026-82329",
+      "CVE-2026-85706"
     ],
     "keywords_hit": {
-      "Malware": 4
+      "Malware": 4,
+      "CVE": 2
     }
   },
   "alerts": [
@@ -106,6 +108,58 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-09-12T03:01:14.344687+09:00",
+      "type": "single",
+      "title": "GitLab CVSS 10 File-Read Flaw Draws In-the-Wild Probes After Disclosure",
+      "url": "https://thehackernews.com/2026/09/gitlab-cvss-10-file-read-flaw-draws-in.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-09-11T16:30:18+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-85706"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-85706",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-09-12T03:01:14.344687+09:00",
+      "type": "single",
+      "title": "CVE-2026-82329: Unauthenticated Administrative Access in JFrog Artifactory via an Empty Cluster Join Key",
+      "url": "https://bishopfox.com/blog/cve-2026-82329-unauthenticated-administrative-access-in-jfrog-artifactory-via-an-empty-cluster-join-key",
+      "source": "Bishop Fox (모의침투/취약점) [RSS]",
+      "published": "2026-09-11T13:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-82329"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-82329",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-287 (Authentication Bypass)",
+          "description": "JFrog Artifactory contains an authentication weakness that, under default configuration, may allow an unauthenticated attacker with network access to obtain administrative privileges.",
+          "epss_score": 0.07666,
+          "kev": true
+        }
+      ]
     }
   ]
 }
