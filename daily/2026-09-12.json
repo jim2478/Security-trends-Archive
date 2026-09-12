@@ -2,10 +2,10 @@
   "date": "2026-09-12",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 4,
+    "scan_runs": 5,
     "total_articles_max": 1692,
     "matched_articles_max": 114,
-    "new_alerts": 6,
+    "new_alerts": 7,
     "cve_count": 5,
     "ioc_count": 0,
     "merged_count": 0,
@@ -17,7 +17,9 @@
     ],
     "keywords_hit": {
       "Malware": 4,
-      "CVE": 2
+      "CVE": 2,
+      "DDoS": 1,
+      "Botnet": 1
     }
   },
   "alerts": [
@@ -160,6 +162,21 @@
           "kev": true
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-09-12T19:01:07.783405+09:00",
+      "type": "single",
+      "title": "Botnet for Hire DDOS: What Defenders Should Do",
+      "url": "http://www.ddosinfo.com/ddos-criminals/botnet-for-hire-ddos/",
+      "source": "DDoS Info [RSS]",
+      "published": "2026-09-12T09:00:03+00:00",
+      "keywords": [
+        "DDoS",
+        "Botnet"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
