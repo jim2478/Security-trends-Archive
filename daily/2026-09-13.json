@@ -1,0 +1,58 @@
+{
+  "date": "2026-09-13",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 1,
+    "total_articles_max": 1672,
+    "matched_articles_max": 112,
+    "new_alerts": 1,
+    "cve_count": 2,
+    "ioc_count": 0,
+    "merged_count": 0,
+    "unique_cves": [
+      "CVE-2026-85102",
+      "CVE-2026-85103"
+    ],
+    "keywords_hit": {
+      "CVE": 1
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-09-13T00:01:23.087917+09:00",
+      "type": "single",
+      "title": "Dutch NCSC: Critical Check Point VPN flaws exploitation is imminent",
+      "url": "https://www.bleepingcomputer.com/news/security/dutch-ncsc-critical-check-point-vpn-flaws-exploitation-is-imminent/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-09-12T14:14:32+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-85102",
+        "CVE-2026-85103"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-85102",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-295 (CWE-295)",
+          "description": "Improper certificate trust validation during VPN negotiation in Check Point Quantum Security Gateway may allow an unauthenticated remote attacker to execute arbitrary code on the Gateway.",
+          "epss_score": 0.00329,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-85103",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-122 (CWE-122)",
+          "description": "A heap-based buffer overflow in VPN certificate ASN.1 decoding may allow an unauthenticated remote attacker to execute arbitrary code on Check Point Quantum Security Management and Quantum Security Gateway systems.",
+          "epss_score": 0.00361,
+          "kev": false
+        }
+      ]
+    }
+  ]
+}
