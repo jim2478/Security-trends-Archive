@@ -2,19 +2,20 @@
   "date": "2026-09-13",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 1,
-    "total_articles_max": 1672,
-    "matched_articles_max": 112,
-    "new_alerts": 1,
-    "cve_count": 2,
+    "scan_runs": 2,
+    "total_articles_max": 1692,
+    "matched_articles_max": 113,
+    "new_alerts": 2,
+    "cve_count": 3,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
+      "CVE-2026-42016",
       "CVE-2026-85102",
       "CVE-2026-85103"
     ],
     "keywords_hit": {
-      "CVE": 1
+      "CVE": 2
     }
   },
   "alerts": [
@@ -51,6 +52,32 @@
           "description": "A heap-based buffer overflow in VPN certificate ASN.1 decoding may allow an unauthenticated remote attacker to execute arbitrary code on Check Point Quantum Security Management and Quantum Security Gateway systems.",
           "epss_score": 0.00361,
           "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-09-13T03:01:10.068212+09:00",
+      "type": "single",
+      "title": "CISA Adds 5 Actively Exploited Artifactory, ScreenConnect, and RouterOS Flaws to KEV",
+      "url": "https://thehackernews.com/2026/09/cisa-adds-5-actively-exploited.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-09-12T15:54:45+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-42016"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-42016",
+          "cvss_score": 8.1,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-863 (CWE-863)",
+          "description": "JFrog Artifactory (Self Hosted) versions before 7.133.11 are vulnerable to a privilege escalation attack due to a validation check of the token signature/issuer and not the token’s scope.",
+          "epss_score": 0.00886,
+          "kev": true
         }
       ]
     }
