@@ -2,21 +2,24 @@
   "date": "2026-09-15",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 4,
+    "scan_runs": 5,
     "total_articles_max": 1692,
     "matched_articles_max": 111,
-    "new_alerts": 4,
-    "cve_count": 3,
+    "new_alerts": 5,
+    "cve_count": 5,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2026-19478",
+      "CVE-2026-20079",
+      "CVE-2026-20316",
       "CVE-2026-75650",
       "CVE-2026-85706"
     ],
     "keywords_hit": {
-      "Malware": 2,
-      "CVE": 2
+      "Malware": 3,
+      "CVE": 2,
+      "Botnet": 1
     }
   },
   "alerts": [
@@ -106,6 +109,43 @@
           "cwe": "CWE-22 (Path Traversal)",
           "description": "GitLab has remediated an issue in GitLab CE/EE affecting all versions from 18.7 before 19.1.8, 19.2 before 19.2.6, and 19.3 before 19.3.2 that, under certain conditions, an unauthenticated user could have read arbitrary files from the GitLab server due to improper path confinement and missing authentication enforcement in the repository commits API.",
           "epss_score": 0.11115,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-09-15T07:01:07.420259+09:00",
+      "type": "single",
+      "title": "'Sandworm' Chains Cisco Vulnerabilities to Deploy Cyclops Blink",
+      "url": "https://www.darkreading.com/cyberattacks-data-breaches/sandworm-chains-cisco-vulnerabilities-cyclops-blink",
+      "source": "Dark Reading (보안뉴스 종합) [RSS]",
+      "published": "2026-09-14T21:37:28+00:00",
+      "keywords": [
+        "Botnet",
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-20079",
+        "CVE-2026-20316"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-20079",
+          "cvss_score": 10.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-288 (CWE-288)",
+          "description": "A vulnerability in the web interface of Cisco Secure Firewall Management Center (FMC) Software could allow an unauthenticated, remote attacker to bypass authentication and execute script files on an affected device to obtain root access to the underlying operating system.&nbsp;\r\n\r\nThis vulnerability is due to an improper system process that is created at boot time. An attacker could exploit this vulnerability by sending crafted HTTP requests to an affected device. A successful exploit could allo",
+          "epss_score": 0.75752,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-20316",
+          "cvss_score": 5.3,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-259 (CWE-259)",
+          "description": "A vulnerability in the web interface of Cisco Secure Firewall Management Center (FMC) Software could allow an unauthenticated, remote attacker to log in to an affected device using a low-privileged account to access sensitive data within the impacted systems.\r\n\r\nThis vulnerability is due to the presence of static user credentials for a low-privileged&nbsp;account. An attacker could exploit this vulnerability by using the account to log in to an affected system. A successful exploit could allow t",
+          "epss_score": 0.11153,
           "kev": true
         }
       ]
