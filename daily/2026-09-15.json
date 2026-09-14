@@ -2,19 +2,21 @@
   "date": "2026-09-15",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
+    "scan_runs": 4,
     "total_articles_max": 1692,
     "matched_articles_max": 111,
-    "new_alerts": 3,
-    "cve_count": 1,
+    "new_alerts": 4,
+    "cve_count": 3,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
-      "CVE-2026-75650"
+      "CVE-2026-19478",
+      "CVE-2026-75650",
+      "CVE-2026-85706"
     ],
     "keywords_hit": {
       "Malware": 2,
-      "CVE": 1
+      "CVE": 2
     }
   },
   "alerts": [
@@ -71,6 +73,42 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-09-15T06:01:06.896174+09:00",
+      "type": "single",
+      "title": "Maximum Severity GitLab Flaw Puts Supply Chains at Risk",
+      "url": "https://www.darkreading.com/cyberattacks-data-breaches/maximum-severity-gitlab-flaw-supply-chains-risk",
+      "source": "Dark Reading (보안뉴스 종합) [RSS]",
+      "published": "2026-09-14T20:19:22+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-19478",
+        "CVE-2026-85706"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-19478",
+          "cvss_score": 9.4,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-94 (Code Injection)",
+          "description": "GitLab has remediated an issue in GitLab CE/EE affecting all versions from 18.2 before 18.11.11, 19.0 before 19.0.8, 19.1 before 19.1.6, and 19.2 before 19.2.4 that under certain conditions could allow an unauthenticated user to remotely modify or delete public projects and user data via a GraphQL directive.",
+          "epss_score": 0.05811,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-85706",
+          "cvss_score": 10.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-22 (Path Traversal)",
+          "description": "GitLab has remediated an issue in GitLab CE/EE affecting all versions from 18.7 before 19.1.8, 19.2 before 19.2.6, and 19.3 before 19.3.2 that, under certain conditions, an unauthenticated user could have read arbitrary files from the GitLab server due to improper path confinement and missing authentication enforcement in the repository commits API.",
+          "epss_score": 0.11115,
+          "kev": true
+        }
+      ]
     }
   ]
 }
