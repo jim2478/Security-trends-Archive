@@ -2,18 +2,18 @@
   "date": "2026-09-14",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 1,
+    "scan_runs": 2,
     "total_articles_max": 1692,
     "matched_articles_max": 114,
-    "new_alerts": 1,
-    "cve_count": 1,
+    "new_alerts": 2,
+    "cve_count": 2,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2026-51990"
     ],
     "keywords_hit": {
-      "CVE": 1,
+      "CVE": 2,
       "Malware": 1
     }
   },
@@ -28,6 +28,32 @@
       "keywords": [
         "CVE",
         "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-51990"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-51990",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-09-14T09:01:12.934838+09:00",
+      "type": "single",
+      "title": "중국 연계 해커, ‘Sogou 입력기’ 취약점 실제 악용…클릭 한 번에 백도어 설치",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=208433",
+      "source": "데일리시큐 (이슈) [RSS]",
+      "published": "2026-09-14T08:24:39+00:00",
+      "keywords": [
+        "CVE"
       ],
       "ioc_raw_text": "",
       "cve_ids": [
