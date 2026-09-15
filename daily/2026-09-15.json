@@ -2,10 +2,10 @@
   "date": "2026-09-15",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 7,
+    "scan_runs": 8,
     "total_articles_max": 1692,
-    "matched_articles_max": 112,
-    "new_alerts": 7,
+    "matched_articles_max": 114,
+    "new_alerts": 8,
     "cve_count": 10,
     "ioc_count": 0,
     "merged_count": 0,
@@ -20,7 +20,7 @@
     ],
     "keywords_hit": {
       "CVE": 4,
-      "Malware": 3,
+      "Malware": 4,
       "Botnet": 1
     }
   },
@@ -233,6 +233,20 @@
           "kev": true
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-09-15T22:01:12.226364+09:00",
+      "type": "single",
+      "title": "China spy chief points at US AI models in cyber threat warning",
+      "url": "https://therecord.media/china-spy-chief-warns-of-us-ai-models",
+      "source": "The Record by Recorded Future (위협뉴스) [RSS]",
+      "published": "2026-09-15T12:54:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
