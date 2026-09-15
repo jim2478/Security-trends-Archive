@@ -2,11 +2,11 @@
   "date": "2026-09-15",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 6,
+    "scan_runs": 7,
     "total_articles_max": 1692,
-    "matched_articles_max": 111,
-    "new_alerts": 6,
-    "cve_count": 9,
+    "matched_articles_max": 112,
+    "new_alerts": 7,
+    "cve_count": 10,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -19,8 +19,8 @@
       "CVE-2026-85706"
     ],
     "keywords_hit": {
+      "CVE": 4,
       "Malware": 3,
-      "CVE": 3,
       "Botnet": 1
     }
   },
@@ -197,6 +197,32 @@
           "epss_score": 0.11153,
           "kev": true
         },
+        {
+          "cve_id": "CVE-2026-76461",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-89 (SQL Injection)",
+          "description": "A vulnerability in the email parsing of Cisco AsyncOS Software for Cisco Secure Email Gateway could allow an unauthenticated, remote attacker to execute arbitrary commands with root privileges on the underlying operating system.\r\n\r\nThis vulnerability is due to insufficient validation in the email parsing logic. An attacker could exploit this vulnerability by sending a crafted email message that contains malicious SQL statements through an affected device. A successful exploit could allow the att",
+          "epss_score": null,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-09-15T16:01:06.914219+09:00",
+      "type": "single",
+      "title": "Cisco Secure Email Gateway Flaw Exploited in the Wild, Enables Root Command Execution",
+      "url": "https://thehackernews.com/2026/09/cisco-secure-email-gateway-flaw.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-09-15T06:11:11+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-76461"
+      ],
+      "cve_details": [
         {
           "cve_id": "CVE-2026-76461",
           "cvss_score": 9.8,
