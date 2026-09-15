@@ -2,16 +2,16 @@
   "date": "2026-09-16",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
+    "scan_runs": 3,
     "total_articles_max": 1692,
-    "matched_articles_max": 118,
-    "new_alerts": 2,
+    "matched_articles_max": 119,
+    "new_alerts": 3,
     "cve_count": 0,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [],
     "keywords_hit": {
-      "Malware": 2
+      "Malware": 3
     }
   },
   "alerts": [
@@ -36,6 +36,20 @@
       "url": "https://www.darkreading.com/endpoint-security/vectrarat-hack-windows-enterprises",
       "source": "Dark Reading (보안뉴스 종합) [RSS]",
       "published": "2026-09-15T16:45:37+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-09-16T03:01:05.120240+09:00",
+      "type": "single",
+      "title": "Iranian Hackers Use Telegram-Controlled Malware to Spy on Dissidents and Journalists",
+      "url": "https://thehackernews.com/2026/09/iranian-hackers-use-telegram-controlled.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-09-15T16:29:51+00:00",
       "keywords": [
         "Malware"
       ],
