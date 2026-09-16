@@ -1,0 +1,74 @@
+{
+  "date": "2026-09-17",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 1,
+    "total_articles_max": 1672,
+    "matched_articles_max": 123,
+    "new_alerts": 2,
+    "cve_count": 2,
+    "ioc_count": 0,
+    "merged_count": 0,
+    "unique_cves": [
+      "CVE-2026-27540",
+      "CVE-2026-58704"
+    ],
+    "keywords_hit": {
+      "CVE": 2
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-09-17T00:01:25.190721+09:00",
+      "type": "single",
+      "title": "구글 픽셀 모뎀 제로데이 실제 악용…사용자 조작 없이 권한 상승",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=208520",
+      "source": "데일리시큐 (이슈) [RSS]",
+      "published": "2026-09-16T23:33:03+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-58704"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-58704",
+          "cvss_score": 8.0,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-285 (CWE-285)",
+          "description": "In Cellular Modem, there is a possible permission bypass due to a logic error in the code. This could lead to remote (proximal/adjacent) escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
+          "epss_score": 0.00112,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-09-17T00:01:25.190721+09:00",
+      "type": "single",
+      "title": "우커머스 플러그인 치명적 취약점 실제 악용…PHP 웹셸 심어 사이트 장악",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=208519",
+      "source": "데일리시큐 (이슈) [RSS]",
+      "published": "2026-09-16T23:04:02+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-27540"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-27540",
+          "cvss_score": 9.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-434 (Unrestricted File Upload)",
+          "description": "Unrestricted Upload of File with Dangerous Type vulnerability in Rymera Web Co Pty Ltd. Woocommerce Wholesale Lead Capture woocommerce-wholesale-lead-capture allows Using Malicious Files.This issue affects Woocommerce Wholesale Lead Capture: from n/a through <= 2.0.3.1.",
+          "epss_score": 0.02317,
+          "kev": false
+        }
+      ]
+    }
+  ]
+}
