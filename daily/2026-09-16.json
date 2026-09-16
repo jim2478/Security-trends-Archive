@@ -2,11 +2,11 @@
   "date": "2026-09-16",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 5,
+    "scan_runs": 6,
     "total_articles_max": 1692,
     "matched_articles_max": 119,
-    "new_alerts": 5,
-    "cve_count": 1,
+    "new_alerts": 6,
+    "cve_count": 2,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -14,7 +14,7 @@
     ],
     "keywords_hit": {
       "Malware": 4,
-      "CVE": 1
+      "CVE": 2
     }
   },
   "alerts": [
@@ -81,6 +81,32 @@
       "url": "https://thehackernews.com/2026/09/active-exploitation-attempts-target.html",
       "source": "The Hacker News (보안뉴스 종합) [RSS]",
       "published": "2026-09-16T05:18:06+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-5430"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-5430",
+          "cvss_score": 10.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-347 (CWE-347)",
+          "description": "The JWT authentication mechanism accepts tokens signed with algorithms other than those explicitly configured or supported. This allows an attacker to craft a JWT with an unsupported algorithm, which is then incorrectly validated, leading to unauthorized access.\n\nSuccessful exploitation of this vulnerability may result in unauthorized access to the system, including the potential compromise of administrative accounts and full account takeover. The CVSS score is adjusted to 9.8 (CVSS:3.1/AV:N/AC:",
+          "epss_score": 0.00223,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-09-16T18:01:12.097073+09:00",
+      "type": "single",
+      "title": "Enterprises Warned of Attacks Exploiting WSO2 Vulnerability",
+      "url": "https://www.securityweek.com/enterprises-warned-of-attacks-exploiting-wso2-vulnerability/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-09-16T08:39:05+00:00",
       "keywords": [
         "CVE"
       ],
