@@ -2,10 +2,10 @@
   "date": "2026-09-17",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 1,
-    "total_articles_max": 1672,
+    "scan_runs": 2,
+    "total_articles_max": 1682,
     "matched_articles_max": 123,
-    "new_alerts": 2,
+    "new_alerts": 3,
     "cve_count": 2,
     "ioc_count": 0,
     "merged_count": 0,
@@ -14,7 +14,8 @@
       "CVE-2026-58704"
     ],
     "keywords_hit": {
-      "CVE": 2
+      "CVE": 2,
+      "Malware": 1
     }
   },
   "alerts": [
@@ -69,6 +70,20 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-09-17T04:01:07.791908+09:00",
+      "type": "single",
+      "title": "Malware bypasses browser checks to force install Chrome, Edge extensions",
+      "url": "https://www.bleepingcomputer.com/news/security/malware-bypasses-browser-checks-to-force-install-chrome-edge-extensions/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-09-16T18:50:53+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
