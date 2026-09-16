@@ -2,21 +2,22 @@
   "date": "2026-09-16",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 9,
+    "scan_runs": 10,
     "total_articles_max": 1692,
-    "matched_articles_max": 119,
-    "new_alerts": 11,
-    "cve_count": 5,
+    "matched_articles_max": 120,
+    "new_alerts": 13,
+    "cve_count": 6,
     "ioc_count": 12,
     "merged_count": 1,
     "unique_cves": [
       "CVE-2026-5430",
       "CVE-2026-58704",
-      "CVE-2026-87886"
+      "CVE-2026-87886",
+      "CVE-2026-90894"
     ],
     "keywords_hit": {
-      "Malware": 6,
-      "CVE": 4,
+      "Malware": 7,
+      "CVE": 5,
       "DDoS": 1
     }
   },
@@ -224,6 +225,46 @@
       "url": "https://www.securityweek.com/us-uk-dutch-agencies-expose-iranian-chosen-brick-surveillance-malware/",
       "source": "SecurityWeek (보안뉴스 종합) [RSS]",
       "published": "2026-09-16T12:00:14+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-09-16T22:01:12.949686+09:00",
+      "type": "single",
+      "title": "Parallels Desktop flaw hands any local user root on a Mac (CVE-2026-90894)",
+      "url": "https://www.helpnetsecurity.com/2026/09/16/parallels-desktop-cve-2026-90894-parashells-vulnerability/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-09-16T12:36:30+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-90894"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-90894",
+          "cvss_score": 7.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-78 (OS Command Injection)",
+          "description": "Parallels Desktop runs prl_disp_service as root. Local clients reach it on the world-writable socket /var/run/prl_disp_service.socket. PrlSrv_LoginLocal accepts peer credentials. No Parallels signature. No admin group.\n\n\n\nAfter login, PrlSrv_InstallAppliance lets you pick the appliance folder (sVmParentPath). The daemon unpacks with one string, tar -xf \"%1\" -C \"%2\", then Qt QProcess::splitCommand chops that string into words. A quote in the folder name closes early. The leftover text becomes ext",
+          "epss_score": 0.00148,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-09-16T22:01:12.949686+09:00",
+      "type": "single",
+      "title": "N0va Phishkit Targets US and EU Businesses: A New Challenge for Identity Security",
+      "url": "https://thehackernews.com/2026/09/n0va-phishkit-targets-us-and-eu.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-09-16T11:58:00+00:00",
       "keywords": [
         "Malware"
       ],
