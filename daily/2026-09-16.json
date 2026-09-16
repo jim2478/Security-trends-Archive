@@ -2,20 +2,21 @@
   "date": "2026-09-16",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 8,
+    "scan_runs": 9,
     "total_articles_max": 1692,
     "matched_articles_max": 119,
-    "new_alerts": 9,
-    "cve_count": 4,
+    "new_alerts": 11,
+    "cve_count": 5,
     "ioc_count": 12,
     "merged_count": 1,
     "unique_cves": [
       "CVE-2026-5430",
+      "CVE-2026-58704",
       "CVE-2026-87886"
     ],
     "keywords_hit": {
-      "Malware": 5,
-      "CVE": 3,
+      "Malware": 6,
+      "CVE": 4,
       "DDoS": 1
     }
   },
@@ -185,6 +186,46 @@
       "published": "2026-09-16T10:00:03+00:00",
       "keywords": [
         "DDoS"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-09-16T21:03:15.893916+09:00",
+      "type": "single",
+      "title": "Google Patches Pixel Modem Flaw Amid Signs of Limited Targeted Exploitation",
+      "url": "https://thehackernews.com/2026/09/google-patches-pixel-modem-flaw-amid.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-09-16T11:15:58+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-58704"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-58704",
+          "cvss_score": 8.0,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-285 (CWE-285)",
+          "description": "In Cellular Modem, there is a possible permission bypass due to a logic error in the code. This could lead to remote (proximal/adjacent) escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-09-16T21:03:15.893916+09:00",
+      "type": "single",
+      "title": "US, UK, Dutch Agencies Expose Iranian ‘Chosen Brick’ Surveillance Malware",
+      "url": "https://www.securityweek.com/us-uk-dutch-agencies-expose-iranian-chosen-brick-surveillance-malware/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-09-16T12:00:14+00:00",
+      "keywords": [
+        "Malware"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
