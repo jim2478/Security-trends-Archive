@@ -2,20 +2,21 @@
   "date": "2026-09-16",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 7,
+    "scan_runs": 8,
     "total_articles_max": 1692,
     "matched_articles_max": 119,
-    "new_alerts": 7,
+    "new_alerts": 9,
     "cve_count": 4,
-    "ioc_count": 0,
+    "ioc_count": 12,
     "merged_count": 1,
     "unique_cves": [
       "CVE-2026-5430",
       "CVE-2026-87886"
     ],
     "keywords_hit": {
-      "Malware": 4,
-      "CVE": 3
+      "Malware": 5,
+      "CVE": 3,
+      "DDoS": 1
     }
   },
   "alerts": [
@@ -160,6 +161,34 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-09-16T20:01:14.601554+09:00",
+      "type": "single",
+      "title": "Atomic macOS (AMOS) Stealer Activity",
+      "url": "https://unit42.paloaltonetworks.com/atomic-macos-amos-stealer-activity/",
+      "source": "Palo Alto Unit42 (위협리서치) [RSS]",
+      "published": "2026-09-16T10:00:06+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "[Domain] com[.]apple[.]accountsd\n[Domain] com[.]apple[.]metadata[.]mds\n[URL] hxxps://ferncore13[.]com/curl/608e70d1338612686917ee5cd300ff7ed8e318dfd787a50257f92142e99bd688\n[URL] hxxps://getmacouscloud[.]com\n[URL] hxxps://grove-89[.]com/api/metrics/run?event=pasted\n[URL] hxxps://ferncore13[.]com/2kqYRM0DCrnyJgoS4gVLl_FHJRRdTUhGCbjyuYwpZ6c/m1/update\n[SHA256] 4504006d1911057be42435d4625f03d83c4d0b7b6898d14beb9cdeba6cf667b9\n[SHA256] 608e70d1338612686917ee5cd300ff7ed8e318dfd787a50257f92142e99bd688\n[SHA256] 6bfcdb4920383375b7e519918df7eb4db751b974b5571a15ce66b82478012620\n[SHA256] 71781ad8adefb499aee9bcbe1a166e69ccc37a47066682f617d65c76d8cde88c\n[SHA256] 7ea6ff8b12c59aaae1ab6f4f5a57045dad5a8127954f3ffd3d1c154d40d7ca3a\n[SHA256] a598fcdcd49247312861ff90c16cb4a5d49fede6072e30e7416dd276668fa2a9",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-09-16T20:01:14.601554+09:00",
+      "type": "single",
+      "title": "Terabit DDOS Attack: What It Means for Your Site",
+      "url": "http://www.ddosinfo.com/ddos-news/terabit-ddos-attack/",
+      "source": "DDoS Info [RSS]",
+      "published": "2026-09-16T10:00:03+00:00",
+      "keywords": [
+        "DDoS"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
