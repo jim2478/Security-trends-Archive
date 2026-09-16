@@ -2,19 +2,20 @@
   "date": "2026-09-16",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 6,
+    "scan_runs": 7,
     "total_articles_max": 1692,
     "matched_articles_max": 119,
-    "new_alerts": 6,
-    "cve_count": 2,
+    "new_alerts": 7,
+    "cve_count": 4,
     "ioc_count": 0,
-    "merged_count": 0,
+    "merged_count": 1,
     "unique_cves": [
-      "CVE-2026-5430"
+      "CVE-2026-5430",
+      "CVE-2026-87886"
     ],
     "keywords_hit": {
       "Malware": 4,
-      "CVE": 2
+      "CVE": 3
     }
   },
   "alerts": [
@@ -122,6 +123,40 @@
           "cwe": "CWE-347 (CWE-347)",
           "description": "The JWT authentication mechanism accepts tokens signed with algorithms other than those explicitly configured or supported. This allows an attacker to craft a JWT with an unsupported algorithm, which is then incorrectly validated, leading to unauthorized access.\n\nSuccessful exploitation of this vulnerability may result in unauthorized access to the system, including the potential compromise of administrative accounts and full account takeover. The CVSS score is adjusted to 9.8 (CVSS:3.1/AV:N/AC:",
           "epss_score": 0.00223,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-09-16T19:01:05.149345+09:00",
+      "type": "merged",
+      "cve_ids": [
+        "CVE-2026-87886"
+      ],
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "sources": [
+        {
+          "title": "Acronis Patches Exploited Vulnerability in cPanel Backup Plugin",
+          "url": "https://www.securityweek.com/acronis-patches-exploited-vulnerability-in-cpanel-backup-plugin/",
+          "source": "SecurityWeek (보안뉴스 종합) [RSS]"
+        },
+        {
+          "title": "Acronis backup plugin flaw exploited in targeted attacks (CVE-2026-87886)",
+          "url": "https://www.helpnetsecurity.com/2026/09/16/acronis-backup-plugin-vulnerability-exploited-cve-2026-87886/",
+          "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]"
+        }
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-87886",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
           "kev": false
         }
       ]
