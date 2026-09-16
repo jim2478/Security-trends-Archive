@@ -2,22 +2,24 @@
   "date": "2026-09-16",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 10,
+    "scan_runs": 11,
     "total_articles_max": 1692,
-    "matched_articles_max": 120,
-    "new_alerts": 13,
-    "cve_count": 6,
+    "matched_articles_max": 123,
+    "new_alerts": 16,
+    "cve_count": 9,
     "ioc_count": 12,
     "merged_count": 1,
     "unique_cves": [
       "CVE-2026-5430",
       "CVE-2026-58704",
+      "CVE-2026-59310",
+      "CVE-2026-76461",
       "CVE-2026-87886",
       "CVE-2026-90894"
     ],
     "keywords_hit": {
+      "CVE": 8,
       "Malware": 7,
-      "CVE": 5,
       "DDoS": 1
     }
   },
@@ -271,6 +273,84 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-09-16T23:01:19.207316+09:00",
+      "type": "single",
+      "title": "Pixel Modem Zero-Day Exploited in Targeted Attacks",
+      "url": "https://www.securityweek.com/pixel-modem-zero-day-exploited-in-targeted-attacks/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-09-16T13:10:54+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-58704"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-58704",
+          "cvss_score": 8.0,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-285 (CWE-285)",
+          "description": "In Cellular Modem, there is a possible permission bypass due to a logic error in the code. This could lead to remote (proximal/adjacent) escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
+          "epss_score": null,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-09-16T23:01:19.207316+09:00",
+      "type": "single",
+      "title": "브이엠웨어 vCenter 치명적 RCE 실제 악용…ESXi 랜섬웨어 공격까지 확인",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=208516",
+      "source": "데일리시큐 (이슈) [RSS]",
+      "published": "2026-09-16T22:31:16+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-59310"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-59310",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-22 (Path Traversal)",
+          "description": "VMware vCenter contains a directory traversal vulnerability in the Syslog server. A malicious actor with network access to vCenter may exploit this issue to execute arbitrary code.",
+          "epss_score": 0.45878,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-09-16T23:01:19.207316+09:00",
+      "type": "single",
+      "title": "시스코 이메일 보안장비 제로데이 악용…악성 메일 한 통에 ‘루트 권한’ 탈취",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=208515",
+      "source": "데일리시큐 (이슈) [RSS]",
+      "published": "2026-09-16T22:23:44+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-76461"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-76461",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-89 (SQL Injection)",
+          "description": "A vulnerability in the email parsing of Cisco AsyncOS Software for Cisco Secure Email Gateway could allow an unauthenticated, remote attacker to execute arbitrary commands with root privileges on the underlying operating system.\r\n\r\nThis vulnerability is due to insufficient validation in the email parsing logic. An attacker could exploit this vulnerability by sending a crafted email message that contains malicious SQL statements through an affected device. A successful exploit could allow the att",
+          "epss_score": 0.02162,
+          "kev": true
+        }
+      ]
     }
   ]
 }
