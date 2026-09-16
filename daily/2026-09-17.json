@@ -2,10 +2,10 @@
   "date": "2026-09-17",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
+    "scan_runs": 3,
     "total_articles_max": 1682,
     "matched_articles_max": 123,
-    "new_alerts": 3,
+    "new_alerts": 4,
     "cve_count": 2,
     "ioc_count": 0,
     "merged_count": 0,
@@ -15,7 +15,7 @@
     ],
     "keywords_hit": {
       "CVE": 2,
-      "Malware": 1
+      "Malware": 2
     }
   },
   "alerts": [
@@ -78,6 +78,20 @@
       "url": "https://www.bleepingcomputer.com/news/security/malware-bypasses-browser-checks-to-force-install-chrome-edge-extensions/",
       "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
       "published": "2026-09-16T18:50:53+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-09-17T06:01:16.052028+09:00",
+      "type": "single",
+      "title": "Iranian hackers use CHOSEN BRICK Windows malware to spy on targets",
+      "url": "https://www.bleepingcomputer.com/news/security/iranian-hackers-use-chosen-brick-windows-malware-to-spy-on-targets/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-09-16T20:24:55+00:00",
       "keywords": [
         "Malware"
       ],
