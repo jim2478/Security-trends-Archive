@@ -2,10 +2,10 @@
   "date": "2026-09-17",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 6,
+    "scan_runs": 7,
     "total_articles_max": 1692,
-    "matched_articles_max": 125,
-    "new_alerts": 9,
+    "matched_articles_max": 126,
+    "new_alerts": 11,
     "cve_count": 3,
     "ioc_count": 0,
     "merged_count": 0,
@@ -16,7 +16,8 @@
     ],
     "keywords_hit": {
       "Malware": 6,
-      "CVE": 3
+      "CVE": 3,
+      "DDoS": 2
     }
   },
   "alerts": [
@@ -177,6 +178,34 @@
       "published": "2026-09-17T10:10:31+00:00",
       "keywords": [
         "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-09-17T21:01:07.606140+09:00",
+      "type": "single",
+      "title": "US takes down NightmareStresser DDoS-for-hire platform",
+      "url": "https://www.bleepingcomputer.com/news/security/fbi-seizes-nightmarestresser-service-linked-to-thousands-of-ddos-attacks/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-09-17T11:33:35+00:00",
+      "keywords": [
+        "DDoS"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-09-17T21:01:07.606140+09:00",
+      "type": "single",
+      "title": "FBI takes down one of the longest-running DDoS-for-hire services",
+      "url": "https://www.helpnetsecurity.com/2026/09/17/fbi-nightmarestresser-ddos-for-hire-service-seized/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-09-17T11:40:11+00:00",
+      "keywords": [
+        "DDoS"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
