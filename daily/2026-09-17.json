@@ -2,10 +2,10 @@
   "date": "2026-09-17",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
-    "total_articles_max": 1682,
-    "matched_articles_max": 123,
-    "new_alerts": 4,
+    "scan_runs": 4,
+    "total_articles_max": 1692,
+    "matched_articles_max": 125,
+    "new_alerts": 5,
     "cve_count": 2,
     "ioc_count": 0,
     "merged_count": 0,
@@ -14,8 +14,8 @@
       "CVE-2026-58704"
     ],
     "keywords_hit": {
-      "CVE": 2,
-      "Malware": 2
+      "Malware": 3,
+      "CVE": 2
     }
   },
   "alerts": [
@@ -92,6 +92,20 @@
       "url": "https://www.bleepingcomputer.com/news/security/iranian-hackers-use-chosen-brick-windows-malware-to-spy-on-targets/",
       "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
       "published": "2026-09-16T20:24:55+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-09-17T09:01:04.761803+09:00",
+      "type": "single",
+      "title": "Smashing Security podcast #485: These researchers got drunk to hack an LG TV",
+      "url": "https://grahamcluley.com/smashing-security-podcast-485/",
+      "source": "Graham Cluley (보안칼럼) [RSS]",
+      "published": "2026-09-16T23:07:19+00:00",
       "keywords": [
         "Malware"
       ],
