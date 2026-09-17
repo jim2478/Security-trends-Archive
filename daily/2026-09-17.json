@@ -2,21 +2,22 @@
   "date": "2026-09-17",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 7,
+    "scan_runs": 8,
     "total_articles_max": 1692,
     "matched_articles_max": 126,
-    "new_alerts": 11,
-    "cve_count": 3,
+    "new_alerts": 13,
+    "cve_count": 4,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2026-27540",
       "CVE-2026-58704",
-      "CVE-2026-76460"
+      "CVE-2026-76460",
+      "CVE-2026-81642"
     ],
     "keywords_hit": {
       "Malware": 6,
-      "CVE": 3,
+      "CVE": 5,
       "DDoS": 2
     }
   },
@@ -206,6 +207,46 @@
       "published": "2026-09-17T11:40:11+00:00",
       "keywords": [
         "DDoS"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-09-17T23:01:08.838724+09:00",
+      "type": "single",
+      "title": "Critical Unbound DNSSEC Validator Flaw Could Allow RCE via a Malicious DNS Zone",
+      "url": "https://thehackernews.com/2026/09/critical-unbound-dnssec-validator-flaw.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-09-17T12:30:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-81642"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-81642",
+          "cvss_score": 9.1,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-122 (CWE-122)",
+          "description": "In NLnet Labs Unbound up to and including 1.26.0, a vulnerability was found in the DNSSEC validator that enables denial of service and possible remote code execution as a result of digesting DNSKEYs. A DNSKEY with an owner compression pointer to its own RDATA can overflow the digest buffer. Remote code execution is possible through attacker controlled data. An adversary can exploit the vulnerability by controlling a malicious zone and querying a vulnerable Unbound.",
+          "epss_score": 0.00521,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-09-17T23:01:08.838724+09:00",
+      "type": "single",
+      "title": "Can You Prove a New CVE Is Exploitable Before Attackers Do? Learn How in This Webinar",
+      "url": "https://thehackernews.com/2026/09/can-you-prove-new-cve-is-exploitable.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-09-17T11:50:00+00:00",
+      "keywords": [
+        "CVE"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
