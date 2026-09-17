@@ -2,16 +2,16 @@
   "date": "2026-09-18",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 1,
+    "scan_runs": 2,
     "total_articles_max": 1692,
-    "matched_articles_max": 121,
-    "new_alerts": 2,
+    "matched_articles_max": 122,
+    "new_alerts": 3,
     "cve_count": 0,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [],
     "keywords_hit": {
-      "Malware": 2
+      "Malware": 3
     }
   },
   "alerts": [
@@ -36,6 +36,20 @@
       "url": "https://cybernews.com/security/brevo-supply-chain-attack-clickfix-malware/",
       "source": "CyberNews [RSS]",
       "published": "2026-09-17T14:42:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-09-18T03:01:03.716047+09:00",
+      "type": "single",
+      "title": "Brevo supply-chain attack injected ClickFix scripts on customer sites",
+      "url": "https://www.bleepingcomputer.com/news/security/brevo-supply-chain-attack-injected-clickfix-scripts-on-customer-sites/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-09-17T17:11:34+00:00",
       "keywords": [
         "Malware"
       ],
