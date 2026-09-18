@@ -2,20 +2,21 @@
   "date": "2026-09-18",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 8,
+    "scan_runs": 9,
     "total_articles_max": 1692,
     "matched_articles_max": 122,
-    "new_alerts": 11,
-    "cve_count": 1,
+    "new_alerts": 12,
+    "cve_count": 2,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
-      "CVE-2026-58138"
+      "CVE-2026-58138",
+      "CVE-2026-85889"
     ],
     "keywords_hit": {
       "Malware": 8,
       "DDoS": 2,
-      "CVE": 1
+      "CVE": 2
     }
   },
   "alerts": [
@@ -184,6 +185,32 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-09-18T23:01:12.181802+09:00",
+      "type": "single",
+      "title": "Microsoft Patches CVSS 10.0 Azure AI Foundry Flaw Enabling Unauthorized Privilege Escalation",
+      "url": "https://thehackernews.com/2026/09/microsoft-patches-cvss-100-azure-ai.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-09-18T12:47:04+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-85889"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-85889",
+          "cvss_score": 10.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-306 (Missing Authentication)",
+          "description": "Missing authentication for critical function in Azure AI Foundry allows an unauthorized attacker to elevate privileges over a network.",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
     }
   ]
 }
