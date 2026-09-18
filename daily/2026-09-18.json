@@ -2,10 +2,10 @@
   "date": "2026-09-18",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 5,
+    "scan_runs": 6,
     "total_articles_max": 1692,
     "matched_articles_max": 122,
-    "new_alerts": 6,
+    "new_alerts": 8,
     "cve_count": 1,
     "ioc_count": 0,
     "merged_count": 0,
@@ -13,7 +13,7 @@
       "CVE-2026-58138"
     ],
     "keywords_hit": {
-      "Malware": 5,
+      "Malware": 7,
       "CVE": 1
     }
   },
@@ -113,6 +113,34 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-09-18T19:01:05.763491+09:00",
+      "type": "single",
+      "title": "Claimed Bug Bounty Hunter Likely Used LLM to Build PhantomRaven npm Stealer",
+      "url": "https://thehackernews.com/2026/09/claimed-bug-bounty-hunter-likely-used.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-09-18T09:18:03+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-09-18T19:01:05.763491+09:00",
+      "type": "single",
+      "title": "Brevo Supply Chain Attack Injects Malware Into 100,000 Websites",
+      "url": "https://www.securityweek.com/brevo-supply-chain-attack-injects-malware-into-100000-websites/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-09-18T09:46:57+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
