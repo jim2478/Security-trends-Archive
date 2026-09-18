@@ -2,10 +2,10 @@
   "date": "2026-09-18",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 6,
+    "scan_runs": 7,
     "total_articles_max": 1692,
     "matched_articles_max": 122,
-    "new_alerts": 8,
+    "new_alerts": 10,
     "cve_count": 1,
     "ioc_count": 0,
     "merged_count": 0,
@@ -13,8 +13,9 @@
       "CVE-2026-58138"
     ],
     "keywords_hit": {
-      "Malware": 7,
-      "CVE": 1
+      "Malware": 8,
+      "CVE": 1,
+      "DDoS": 1
     }
   },
   "alerts": [
@@ -135,6 +136,34 @@
       "url": "https://www.securityweek.com/brevo-supply-chain-attack-injects-malware-into-100000-websites/",
       "source": "SecurityWeek (보안뉴스 종합) [RSS]",
       "published": "2026-09-18T09:46:57+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-09-18T20:01:17.144248+09:00",
+      "type": "single",
+      "title": "NightmareStresser DDoS Service Disrupted in International Operation",
+      "url": "https://www.securityweek.com/nightmarestresser-ddos-service-disrupted-in-international-operation/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-09-18T10:12:33+00:00",
+      "keywords": [
+        "DDoS"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-09-18T20:01:17.144248+09:00",
+      "type": "single",
+      "title": "WeaselBiscuit Stealer Spreads via 13 npm Packages to Harvest Chrome Extension Storage",
+      "url": "https://thehackernews.com/2026/09/weaselbiscuit-stealer-spreads-via-13.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-09-18T10:40:06+00:00",
       "keywords": [
         "Malware"
       ],
