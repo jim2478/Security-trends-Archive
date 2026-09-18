@@ -2,20 +2,24 @@
   "date": "2026-09-19",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
+    "scan_runs": 4,
     "total_articles_max": 1692,
     "matched_articles_max": 124,
-    "new_alerts": 3,
-    "cve_count": 3,
+    "new_alerts": 4,
+    "cve_count": 6,
     "ioc_count": 47,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2026-15315",
       "CVE-2026-15316",
-      "CVE-2026-44756"
+      "CVE-2026-20129",
+      "CVE-2026-20223",
+      "CVE-2026-44756",
+      "CVE-2026-76460"
     ],
     "keywords_hit": {
-      "Malware": 3
+      "Malware": 3,
+      "CVE": 1
     }
   },
   "alerts": [
@@ -92,6 +96,52 @@
       "ioc_raw_text": "[IP] 176[.]97[.]114[.]232\n[IP] 45[.]11[.]59[.]140\n[IP] 85[.]137[.]56[.]245\n[IP] 85[.]137[.]56[.]10\n[Domain] technicais[.]sytes[.]net\n[Domain] storage[.]hubpage[.]cloud\n[Domain] grenight[.]com\n[Domain] com[.]apple[.]itunescloud\n[Domain] com[.]apple[.]internal[.]ck\n[Domain] com[.]apple[.]appleaccountd\n[Domain] 185-66-91-112[.]cprapid[.]com\n[Domain] 213-111-146-132[.]cprapid[.]com\n[Domain] anesthesiaschool[.]com\n[Domain] app[.]heyhay[.]online\n[Domain] dela[.]servehttp[.]com\n[Domain] galaxy-royal[.]online\n[Domain] game[.]galaxy-royal[.]online\n[Domain] heyhay[.]online\n[Domain] mactroubleshoots[.]pro\n[Domain] mx01[.]galaxy-royal[.]online\n[Domain] ns4[.]galaxy-royal[.]online\n[Domain] tinklify[.]com\n[Domain] update[.]heyhay[.]online\n[Domain] vaimage[.]com\n[Domain] wss[.]sytes[.]net\n[Domain] www[.]anesthesiaschool[.]com\n[Domain] www[.]freehealth[.]lat\n[Domain] www[.]heyhay[.]online\n[Domain] www[.]mactroubleshoots[.]pro\n[Domain] www[.]tinklify[.]com\n[Domain] hashicorp-aws[.]com\n[Domain] terraform[.]lock[.]hcl\n[Domain] hashicorp-aws[.]io\n[Domain] hashicorp-terraform[.]io\n[URL] hxxps://github[.]com/exubient0/terraform-candidate-repo/blob/main/.terraform.lock.hcl\n[URL] hxxps://github[.]com/radupopa369/gtn-candidate-repo/blob/feat/three-tier-infrastructure/live/.terraform.lock.hcl\n[URL] hxxps://github[.]com/chainstacker/Northwind-IAC/blob/930e5be6d34511bedbfb0d762bd08fffe64e9630/aws/us-east-1/prod/northwind/global/vpc/.terraform.lock.hcl\n[URL] hxxps://github[.]com/RyanLRay/Technical-Assessments/blob/19af09ebe8b7ad03419677dda515507dd099bc39/README.md?plain=1#L175\n[URL] hxxps://github[.]com/Steed-LHV/assessment\n[SHA256] 4b2d3e8ccce8920a6d01e7d02b84236545a20e5f754b3eec253f8b416b731daa\n[SHA1] 02df07a173ab03b82a4fb6a08973fff8b1467f28\n[SHA1] 19af09ebe8b7ad03419677dda515507dd099bc39\n[SHA1] 4ad92bf92ee614b05c340ce17bef7b6ef5a25e82\n[SHA1] 5728b11d30586bbfc1d8bd12df1c722a06e767a2\n[SHA1] 930e5be6d34511bedbfb0d762bd08fffe64e9630\n[SHA1] c491d477dbe0ae04e9aed9dbe237144c03f73ec4\n[MD5] 1cd6d13ff15adbf7a42025d10ec99b4a",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-09-19T05:01:05.495563+09:00",
+      "type": "single",
+      "title": "Cisco Zero-Day Highlights API Endpoint Authentication Issues",
+      "url": "https://www.darkreading.com/vulnerabilities-threats/cisco-zero-day-api-endpoint-authentication-issues",
+      "source": "Dark Reading (보안뉴스 종합) [RSS]",
+      "published": "2026-09-18T19:26:47+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-20129",
+        "CVE-2026-20223",
+        "CVE-2026-76460"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-20129",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-287 (Authentication Bypass)",
+          "description": "A vulnerability in the API user authentication of Cisco Catalyst SD-WAN Manager could allow an unauthenticated, remote attacker to gain access to an affected system as a user who has the&nbsp;netadmin role.\r\n\r\nThe vulnerability is due to improper authentication for requests that are sent to the API. An attacker could exploit this vulnerability by sending a crafted request to the API of an affected system. A successful exploit could allow the attacker to execute commands with the privileges of th",
+          "epss_score": 0.00717,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-20223",
+          "cvss_score": 10.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-306 (Missing Authentication)",
+          "description": "A vulnerability in the&nbsp;access validation of internal REST APIs of Cisco Secure Workload could allow an unauthenticated, remote attacker to access site resources with the privileges of the&nbsp;Site Admin role.\r\n\r\nThis vulnerability is due to insufficient validation and authentication when accessing REST API endpoints. An attacker could exploit this vulnerability if they are able to send a crafted API request to an affected endpoint. A successful exploit could allow the attacker to read sens",
+          "epss_score": 0.00835,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-76460",
+          "cvss_score": 10.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-648 (CWE-648)",
+          "description": "A vulnerability in an API of Cisco Identity Services Engine (ISE) could allow an unauthenticated, remote attacker to bypass authentication.\r\n\r\nThis vulnerability is due to insufficient authentication control on an API endpoint. An attacker could exploit this vulnerability by sending a crafted request to an affected API endpoint. A successful exploit could allow the attacker to gain unauthorized access to the affected device by bypassing the web-based management interface.",
+          "epss_score": null,
+          "kev": true
+        }
+      ]
     }
   ]
 }
