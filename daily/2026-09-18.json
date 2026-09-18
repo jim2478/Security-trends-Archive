@@ -2,16 +2,19 @@
   "date": "2026-09-18",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 4,
+    "scan_runs": 5,
     "total_articles_max": 1692,
     "matched_articles_max": 122,
-    "new_alerts": 5,
-    "cve_count": 0,
+    "new_alerts": 6,
+    "cve_count": 1,
     "ioc_count": 0,
     "merged_count": 0,
-    "unique_cves": [],
+    "unique_cves": [
+      "CVE-2026-58138"
+    ],
     "keywords_hit": {
-      "Malware": 5
+      "Malware": 5,
+      "CVE": 1
     }
   },
   "alerts": [
@@ -84,6 +87,32 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-09-18T18:01:03.616852+09:00",
+      "type": "single",
+      "title": "Critical Orkes Conductor Vulnerability Exploited in Attacks",
+      "url": "https://www.securityweek.com/critical-orkes-conductor-vulnerability-exploited-in-attacks/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-09-18T08:42:18+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-58138"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-58138",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-94 (Code Injection)",
+          "description": "Orkes Conductor 3.21.21 before 3.30.2 contains an unauthenticated remote code execution vulnerability that allows remote attackers to execute arbitrary OS commands by submitting inline workflow definitions containing malicious JavaScript or Python expressions to the workflow API endpoint prior to authentication. Attackers can exploit unsandboxed GraalVM evaluators configured with HostAccess.ALL or allowAllAccess(true) through INLINE, LAMBDA, DO_WHILE, and SWITCH task types to invoke arbitrary sy",
+          "epss_score": 0.09257,
+          "kev": false
+        }
+      ]
     }
   ]
 }
