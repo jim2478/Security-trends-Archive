@@ -2,10 +2,10 @@
   "date": "2026-09-19",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 1,
-    "total_articles_max": 1672,
-    "matched_articles_max": 122,
-    "new_alerts": 1,
+    "scan_runs": 2,
+    "total_articles_max": 1692,
+    "matched_articles_max": 123,
+    "new_alerts": 2,
     "cve_count": 3,
     "ioc_count": 0,
     "merged_count": 0,
@@ -15,7 +15,7 @@
       "CVE-2026-44756"
     ],
     "keywords_hit": {
-      "Malware": 1
+      "Malware": 2
     }
   },
   "alerts": [
@@ -64,6 +64,20 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-09-19T01:01:07.263577+09:00",
+      "type": "single",
+      "title": "Fake LastPass Authenticator GitHub repos push new Rapuncel infostealer",
+      "url": "https://www.bleepingcomputer.com/news/security/fake-lastpass-authenticator-github-repos-push-new-rapuncel-infostealer/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-09-18T15:19:06+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
