@@ -2,10 +2,10 @@
   "date": "2026-09-18",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 7,
+    "scan_runs": 8,
     "total_articles_max": 1692,
     "matched_articles_max": 122,
-    "new_alerts": 10,
+    "new_alerts": 11,
     "cve_count": 1,
     "ioc_count": 0,
     "merged_count": 0,
@@ -14,8 +14,8 @@
     ],
     "keywords_hit": {
       "Malware": 8,
-      "CVE": 1,
-      "DDoS": 1
+      "DDoS": 2,
+      "CVE": 1
     }
   },
   "alerts": [
@@ -166,6 +166,20 @@
       "published": "2026-09-18T10:40:06+00:00",
       "keywords": [
         "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-09-18T21:01:06.853110+09:00",
+      "type": "single",
+      "title": "Authoritative DNS DDOS Protection: A Buyer’s Guide",
+      "url": "http://www.ddosinfo.com/ddos-vendors/authoritative-dns-ddos-protection/",
+      "source": "DDoS Info [RSS]",
+      "published": "2026-09-18T10:00:04+00:00",
+      "keywords": [
+        "DDoS"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
