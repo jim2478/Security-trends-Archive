@@ -2,11 +2,11 @@
   "date": "2026-09-19",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 4,
+    "scan_runs": 5,
     "total_articles_max": 1692,
     "matched_articles_max": 124,
-    "new_alerts": 4,
-    "cve_count": 6,
+    "new_alerts": 5,
+    "cve_count": 7,
     "ioc_count": 47,
     "merged_count": 0,
     "unique_cves": [
@@ -15,11 +15,12 @@
       "CVE-2026-20129",
       "CVE-2026-20223",
       "CVE-2026-44756",
+      "CVE-2026-58138",
       "CVE-2026-76460"
     ],
     "keywords_hit": {
       "Malware": 3,
-      "CVE": 1
+      "CVE": 2
     }
   },
   "alerts": [
@@ -140,6 +141,32 @@
           "description": "A vulnerability in an API of Cisco Identity Services Engine (ISE) could allow an unauthenticated, remote attacker to bypass authentication.\r\n\r\nThis vulnerability is due to insufficient authentication control on an API endpoint. An attacker could exploit this vulnerability by sending a crafted request to an affected API endpoint. A successful exploit could allow the attacker to gain unauthorized access to the affected device by bypassing the web-based management interface.",
           "epss_score": null,
           "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-09-19T18:00:58.564789+09:00",
+      "type": "single",
+      "title": "Critical Pre-Auth RCE in Orkes Conductor Workflow Platform Exploited in the Wild",
+      "url": "https://thehackernews.com/2026/09/critical-pre-auth-rce-in-orkes.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-09-19T08:18:54+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-58138"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-58138",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-94 (Code Injection)",
+          "description": "Orkes Conductor 3.21.21 before 3.30.2 contains an unauthenticated remote code execution vulnerability that allows remote attackers to execute arbitrary OS commands by submitting inline workflow definitions containing malicious JavaScript or Python expressions to the workflow API endpoint prior to authentication. Attackers can exploit unsandboxed GraalVM evaluators configured with HostAccess.ALL or allowAllAccess(true) through INLINE, LAMBDA, DO_WHILE, and SWITCH task types to invoke arbitrary sy",
+          "epss_score": 0.09257,
+          "kev": false
         }
       ]
     }
