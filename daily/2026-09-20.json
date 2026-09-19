@@ -1,0 +1,58 @@
+{
+  "date": "2026-09-20",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 1,
+    "total_articles_max": 1692,
+    "matched_articles_max": 124,
+    "new_alerts": 1,
+    "cve_count": 2,
+    "ioc_count": 0,
+    "merged_count": 0,
+    "unique_cves": [
+      "CVE-2026-0628",
+      "CVE-2026-55945"
+    ],
+    "keywords_hit": {
+      "CVE": 1
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-09-20T00:01:11.750481+09:00",
+      "type": "single",
+      "title": "BragJack attacks hijack AI browser agents through malicious extensions",
+      "url": "https://www.bleepingcomputer.com/news/security/bragjack-attacks-hijack-ai-browser-agents-through-malicious-extensions/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-09-19T14:56:31+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-0628",
+        "CVE-2026-55945"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-0628",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-862 (Missing Authorization)",
+          "description": "Insufficient policy enforcement in WebView tag in Google Chrome prior to 143.0.7499.192 allowed an attacker who convinced a user to install a malicious extension to inject scripts or HTML into a privileged page via a crafted Chrome Extension. (Chromium security severity: High)",
+          "epss_score": 0.0663,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-55945",
+          "cvss_score": 4.2,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-362 (CWE-362)",
+          "description": "Concurrent execution using shared resource with improper synchronization ('race condition') in Microsoft Edge (Chromium-based) allows an authorized attacker to disclose information locally.",
+          "epss_score": 0.00186,
+          "kev": false
+        }
+      ]
+    }
+  ]
+}
