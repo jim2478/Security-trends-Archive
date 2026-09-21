@@ -2,16 +2,16 @@
   "date": "2026-09-22",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 1,
-    "total_articles_max": 1672,
-    "matched_articles_max": 115,
-    "new_alerts": 1,
+    "scan_runs": 2,
+    "total_articles_max": 1682,
+    "matched_articles_max": 118,
+    "new_alerts": 2,
     "cve_count": 0,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [],
     "keywords_hit": {
-      "Malware": 1
+      "Malware": 2
     }
   },
   "alerts": [
@@ -22,6 +22,20 @@
       "url": "https://www.helpnetsecurity.com/2026/09/21/taskstomp-windows-backdoor/",
       "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
       "published": "2026-09-21T14:00:18+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-09-22T01:01:13.322598+09:00",
+      "type": "single",
+      "title": "Fake LastPass Installers Push Kernel-Level EDR Killer, ‘Rapuncel’ Stealer",
+      "url": "https://www.securityweek.com/fake-lastpass-installers-push-kernel-level-edr-killer-rapuncel-stealer/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-09-21T15:46:58+00:00",
       "keywords": [
         "Malware"
       ],
