@@ -2,16 +2,16 @@
   "date": "2026-09-22",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
-    "total_articles_max": 1682,
+    "scan_runs": 3,
+    "total_articles_max": 1692,
     "matched_articles_max": 118,
-    "new_alerts": 2,
+    "new_alerts": 3,
     "cve_count": 0,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [],
     "keywords_hit": {
-      "Malware": 2
+      "Malware": 3
     }
   },
   "alerts": [
@@ -36,6 +36,20 @@
       "url": "https://www.securityweek.com/fake-lastpass-installers-push-kernel-level-edr-killer-rapuncel-stealer/",
       "source": "SecurityWeek (보안뉴스 종합) [RSS]",
       "published": "2026-09-21T15:46:58+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-09-22T05:01:06.516082+09:00",
+      "type": "single",
+      "title": "Cybercriminals Are Hiding New Malware in Torrents for Popular Films",
+      "url": "https://www.darkreading.com/cyberattacks-data-breaches/cybercriminals-hiding-new-malware-torrents-popular-films",
+      "source": "Dark Reading (보안뉴스 종합) [RSS]",
+      "published": "2026-09-21T19:11:26+00:00",
       "keywords": [
         "Malware"
       ],
