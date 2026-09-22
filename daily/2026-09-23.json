@@ -2,19 +2,23 @@
   "date": "2026-09-23",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
+    "scan_runs": 4,
     "total_articles_max": 1692,
-    "matched_articles_max": 118,
-    "new_alerts": 4,
-    "cve_count": 1,
+    "matched_articles_max": 119,
+    "new_alerts": 6,
+    "cve_count": 5,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
-      "CVE-2026-17613"
+      "CVE-2026-17613",
+      "CVE-2026-44756",
+      "CVE-2026-89082",
+      "CVE-2026-89083",
+      "CVE-2026-89084"
     ],
     "keywords_hit": {
-      "Malware": 2,
-      "CVE": 2
+      "CVE": 4,
+      "Malware": 2
     }
   },
   "alerts": [
@@ -85,6 +89,78 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-09-23T05:01:07.631716+09:00",
+      "type": "single",
+      "title": "HP Advance / Output Central: unauthenticated SYSTEM RCE and two additional vulnerabilities (CVE-2026-89082/89083/89084)",
+      "url": "https://seclists.org/fulldisclosure/2026/Sep/66",
+      "source": "SecLists Full Disclosure (취약점공개)",
+      "published": "2026-09-22T18:32:59+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-89082",
+        "CVE-2026-89083",
+        "CVE-2026-89084"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-89082",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-94 (Code Injection)",
+          "description": "HP has identified potential security vulnerabilities in the HP Advance software that may enable elevation of privilege, remote code execution, or arbitrary file write under certain conditions, impacting the HP Advance server hosting the software.",
+          "epss_score": 0.00506,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-89083",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-94 (Code Injection)",
+          "description": "HP\nhas identified potential security vulnerabilities in the HP Advance software\nthat may enable elevation of privilege, remote code execution, or arbitrary\nfile write under certain conditions, impacting the HP Advance server hosting\nthe software.",
+          "epss_score": 0.00506,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-89084",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-22 (Path Traversal)",
+          "description": "HP\nhas identified potential security vulnerabilities in the HP Advance software\nthat may enable elevation of privilege, remote code execution, or arbitrary\nfile write under certain conditions, impacting the HP Advance server hosting\nthe software.",
+          "epss_score": 0.00577,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-09-23T05:01:07.631716+09:00",
+      "type": "single",
+      "title": "CVE-2026-44756: Pre-Auth RCE in SAP EPP Processing (ICM, Web Dispatcher, disp+work)",
+      "url": "https://seclists.org/fulldisclosure/2026/Sep/65",
+      "source": "SecLists Full Disclosure (취약점공개)",
+      "published": "2026-09-22T18:31:55+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-44756"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-44756",
+          "cvss_score": 10.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-120 (CWE-120)",
+          "description": "A memory safety vulnerability exists in the Extended Passport Protocol (EPP) processing library. Under specific conditions, an unauthenticated attacker could exploit a crafted network request containing a malformed EPP header, potentially resulting in undefined behavior and abnormal program termination. Successful exploitation may have a high impact on the confidentiality, integrity, and availability of the application.",
+          "epss_score": 0.00321,
+          "kev": false
+        }
+      ]
     }
   ]
 }
