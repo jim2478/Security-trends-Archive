@@ -2,21 +2,25 @@
   "date": "2026-09-22",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 7,
+    "scan_runs": 8,
     "total_articles_max": 1702,
     "matched_articles_max": 120,
-    "new_alerts": 10,
-    "cve_count": 3,
+    "new_alerts": 12,
+    "cve_count": 8,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2026-26980",
+      "CVE-2026-32996",
+      "CVE-2026-60004",
+      "CVE-2026-60137",
+      "CVE-2026-63030",
       "CVE-2026-7273",
       "CVE-2026-93485"
     ],
     "keywords_hit": {
-      "Malware": 7,
-      "CVE": 3
+      "Malware": 8,
+      "CVE": 4
     }
   },
   "alerts": [
@@ -189,6 +193,86 @@
       "url": "https://blog.talosintelligence.com/introducing-cairn-frontier-tracking-for-ai-integrated-malware/",
       "source": "Cisco Talos Intelligence (위협분석) [RSS]",
       "published": "2026-09-22T10:00:25+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-09-22T20:01:10.311859+09:00",
+      "type": "single",
+      "title": "Attacker compromised nearly 1000 Zyxel switches since August (CVE-2026-7273)",
+      "url": "https://www.helpnetsecurity.com/2026/09/22/zyxel-switches-cve-2026-7273-vulnerability-exploited/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-09-22T10:42:54+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-32996",
+        "CVE-2026-60004",
+        "CVE-2026-60137",
+        "CVE-2026-63030",
+        "CVE-2026-7273"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-32996",
+          "cvss_score": 7.3,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-532 (CWE-532)",
+          "description": "This vulnerability in Veeam Agent for Microsoft Windows allows for Local Privilege Escalation.",
+          "epss_score": 0.00154,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-60004",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-94 (Code Injection)",
+          "description": "Gitea before 1.27.1 allows remote code execution via the diffpatch API through Git hook installation.",
+          "epss_score": 0.86777,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-60137",
+          "cvss_score": 5.9,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-89 (SQL Injection)",
+          "description": "WordPress 6.8.x before 6.8.6, 6.9.x before 6.9.5, and 7.0.x before 7.0.2 does not properly sanitise the author__not_in parameter of WP_Query, which could allow SQL Injection when a plugin or theme passes untrusted input to the parameter.",
+          "epss_score": 0.78305,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-63030",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-436 (CWE-436)",
+          "description": "WordPress 6.9.x before 6.9.5 and 7.0.x before 7.0.2 is affected by a REST API batch endpoint route confusion issue which, combined with the author__not_in WP_Query SQL Injection (CVE-2026-60137), could allow an attacker to perform SQL Injection and achieve Remote Code Execution.",
+          "epss_score": 0.97271,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-7273",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-121 (CWE-121)",
+          "description": "A stack-based buffer overflow vulnerability in the CGI program of Zyxel GS1900-48HPv2 firmware versions through 2.90(ABTQ.1)C0 could allow a LAN-based, unauthenticated attacker to exploit the flaw and potentially execute OS commands via a crafted HTTP request.",
+          "epss_score": 0.00315,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-09-22T20:01:10.311859+09:00",
+      "type": "single",
+      "title": "The Closed Quorum: Inside the first reported autonomous AI C2 implant",
+      "url": "https://blog.talosintelligence.com/the-closed-quorum-inside-the-first-reported-autonomous-ai-c2-implant/",
+      "source": "Cisco Talos Intelligence (위협분석) [RSS]",
+      "published": "2026-09-22T10:00:58+00:00",
       "keywords": [
         "Malware"
       ],
