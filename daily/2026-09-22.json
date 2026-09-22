@@ -2,11 +2,11 @@
   "date": "2026-09-22",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 9,
+    "scan_runs": 10,
     "total_articles_max": 1702,
     "matched_articles_max": 122,
-    "new_alerts": 15,
-    "cve_count": 10,
+    "new_alerts": 16,
+    "cve_count": 12,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -17,12 +17,14 @@
       "CVE-2026-63030",
       "CVE-2026-65660",
       "CVE-2026-7273",
+      "CVE-2026-86296",
+      "CVE-2026-86510",
       "CVE-2026-89775",
       "CVE-2026-93485"
     ],
     "keywords_hit": {
       "Malware": 9,
-      "CVE": 6
+      "CVE": 7
     }
   },
   "alerts": [
@@ -347,6 +349,42 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-09-22T22:01:06.548777+09:00",
+      "type": "single",
+      "title": "D-Link warns of max severity zero-day bug in DIR-822A routers",
+      "url": "https://www.bleepingcomputer.com/news/security/d-link-warns-of-max-severity-zero-day-bug-in-dir-822a-routers/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-09-22T12:48:06+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-86296",
+        "CVE-2026-86510"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-86296",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-119 (Buffer Overflow)",
+          "description": "A vulnerability was determined in D-Link DIR-822A A_101. This vulnerability affects the function strcpy of the file udhcpcd/serverpacket.c of the component udhcpcd. This manipulation causes stack-based buffer overflow. The attack is possible to be carried out remotely. The exploit has been publicly disclosed and may be utilized.",
+          "epss_score": 0.01346,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-86510",
+          "cvss_score": 8.6,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-119 (Buffer Overflow)",
+          "description": "A vulnerability has been found in D-Link DIR-822A A_101. Affected is the function tunnel_set_params of the component L2TP Control Message Parser. Such manipulation leads to out-of-bounds write. The attack can be launched remotely. The exploit has been disclosed to the public and may be used.",
+          "epss_score": 0.00463,
+          "kev": false
+        }
+      ]
     }
   ]
 }
