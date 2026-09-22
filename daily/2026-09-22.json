@@ -2,10 +2,10 @@
   "date": "2026-09-22",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 6,
+    "scan_runs": 7,
     "total_articles_max": 1702,
     "matched_articles_max": 120,
-    "new_alerts": 9,
+    "new_alerts": 10,
     "cve_count": 3,
     "ioc_count": 0,
     "merged_count": 0,
@@ -15,7 +15,7 @@
       "CVE-2026-93485"
     ],
     "keywords_hit": {
-      "Malware": 6,
+      "Malware": 7,
       "CVE": 3
     }
   },
@@ -175,6 +175,20 @@
       "url": "https://www.helpnetsecurity.com/2026/09/22/fake-ai-subscription-sites-google-sign-in/",
       "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
       "published": "2026-09-22T08:54:30+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-09-22T19:01:00.577402+09:00",
+      "type": "single",
+      "title": "Introducing CAIRN: Frontier tracking for AI-integrated malware",
+      "url": "https://blog.talosintelligence.com/introducing-cairn-frontier-tracking-for-ai-integrated-malware/",
+      "source": "Cisco Talos Intelligence (위협분석) [RSS]",
+      "published": "2026-09-22T10:00:25+00:00",
       "keywords": [
         "Malware"
       ],
