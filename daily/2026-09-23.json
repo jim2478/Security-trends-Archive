@@ -2,16 +2,17 @@
   "date": "2026-09-23",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 1,
+    "scan_runs": 2,
     "total_articles_max": 1692,
-    "matched_articles_max": 117,
-    "new_alerts": 1,
+    "matched_articles_max": 118,
+    "new_alerts": 2,
     "cve_count": 0,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [],
     "keywords_hit": {
-      "Malware": 1
+      "Malware": 1,
+      "CVE": 1
     }
   },
   "alerts": [
@@ -24,6 +25,20 @@
       "published": "2026-09-22T15:44:09+00:00",
       "keywords": [
         "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-09-23T03:01:06.402004+09:00",
+      "type": "single",
+      "title": "Researcher Drops BigDiskBuster Zero-Day PoC That Blocks Microsoft Defender Updates",
+      "url": "https://thehackernews.com/2026/09/researcher-drops-bigdiskbuster-zero-day.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-09-22T16:14:04+00:00",
+      "keywords": [
+        "CVE"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
