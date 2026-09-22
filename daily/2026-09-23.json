@@ -1,0 +1,33 @@
+{
+  "date": "2026-09-23",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 1,
+    "total_articles_max": 1692,
+    "matched_articles_max": 117,
+    "new_alerts": 1,
+    "cve_count": 0,
+    "ioc_count": 0,
+    "merged_count": 0,
+    "unique_cves": [],
+    "keywords_hit": {
+      "Malware": 1
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-09-23T01:01:12.826654+09:00",
+      "type": "single",
+      "title": "MovieReaper Malware Uses The Odyssey Torrents to Infect Users Worldwide",
+      "url": "https://hackread.com/moviereaper-malware-odyssey-torrents-infect-users/",
+      "source": "HackRead (해킹/데이터유출) [RSS]",
+      "published": "2026-09-22T15:44:09+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
