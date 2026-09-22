@@ -2,16 +2,16 @@
   "date": "2026-09-22",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
-    "total_articles_max": 1692,
+    "scan_runs": 4,
+    "total_articles_max": 1702,
     "matched_articles_max": 118,
-    "new_alerts": 3,
+    "new_alerts": 4,
     "cve_count": 0,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [],
     "keywords_hit": {
-      "Malware": 3
+      "Malware": 4
     }
   },
   "alerts": [
@@ -50,6 +50,20 @@
       "url": "https://www.darkreading.com/cyberattacks-data-breaches/cybercriminals-hiding-new-malware-torrents-popular-films",
       "source": "Dark Reading (보안뉴스 종합) [RSS]",
       "published": "2026-09-21T19:11:26+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-09-22T14:01:05.591182+09:00",
+      "type": "single",
+      "title": "Cybersecurity jobs available right now: September 22, 2026",
+      "url": "https://www.helpnetsecurity.com/2026/09/22/cybersecurity-jobs-available-right-now-september-22-2026/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-09-22T04:00:23+00:00",
       "keywords": [
         "Malware"
       ],
