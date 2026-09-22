@@ -2,11 +2,11 @@
   "date": "2026-09-22",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 8,
+    "scan_runs": 9,
     "total_articles_max": 1702,
-    "matched_articles_max": 120,
-    "new_alerts": 12,
-    "cve_count": 8,
+    "matched_articles_max": 122,
+    "new_alerts": 15,
+    "cve_count": 10,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -15,12 +15,14 @@
       "CVE-2026-60004",
       "CVE-2026-60137",
       "CVE-2026-63030",
+      "CVE-2026-65660",
       "CVE-2026-7273",
+      "CVE-2026-89775",
       "CVE-2026-93485"
     ],
     "keywords_hit": {
-      "Malware": 8,
-      "CVE": 4
+      "Malware": 9,
+      "CVE": 6
     }
   },
   "alerts": [
@@ -273,6 +275,72 @@
       "url": "https://blog.talosintelligence.com/the-closed-quorum-inside-the-first-reported-autonomous-ai-c2-implant/",
       "source": "Cisco Talos Intelligence (위협분석) [RSS]",
       "published": "2026-09-22T10:00:58+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-09-22T21:01:13.473876+09:00",
+      "type": "single",
+      "title": "New Linux Kernel Flaw Gives ARM64 KVM Guests Read-Write Access to Host Memory",
+      "url": "https://thehackernews.com/2026/09/new-linux-kernel-flaw-gives-arm64-kvm.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-09-22T11:38:40+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-89775"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-89775",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": null,
+          "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nKVM: arm64: Handle negative S1 walk levels in VNCR TLB size evaluation\n\nComputing the effects of a TLB invalidation involves looking at\nthe size of the mapping cached by the TLB. For S1 mappings such as\nVNCR, this is deducted from the combination of the base granule size\nand the mapping level.\n\nHowever, this implies that the S1 MMU is *on*. When the MMU is off,\nwe indicate this with the level being set to a \"creative\" value of\n",
+          "epss_score": 0.0017,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-09-22T21:01:13.473876+09:00",
+      "type": "single",
+      "title": "SharePoint Flaw Initially Listed as Spoofing by Microsoft Enables Authenticated RCE",
+      "url": "https://thehackernews.com/2026/09/sharepoint-flaw-initially-listed-as.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-09-22T11:17:41+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-65660"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-65660",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-94 (Code Injection)",
+          "description": "Improper control of generation of code ('code injection') in Microsoft Office SharePoint allows an authorized attacker to execute code over a network.",
+          "epss_score": 0.00807,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-09-22T21:01:13.473876+09:00",
+      "type": "single",
+      "title": "Malicious B-tree NPM Package Accumulates Millions of Downloads",
+      "url": "https://www.securityweek.com/malicious-b-tree-npm-package-accumulates-millions-of-downloads/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-09-22T11:33:59+00:00",
       "keywords": [
         "Malware"
       ],
