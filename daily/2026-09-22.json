@@ -2,20 +2,21 @@
   "date": "2026-09-22",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 5,
+    "scan_runs": 6,
     "total_articles_max": 1702,
-    "matched_articles_max": 118,
-    "new_alerts": 7,
-    "cve_count": 2,
+    "matched_articles_max": 120,
+    "new_alerts": 9,
+    "cve_count": 3,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
+      "CVE-2026-26980",
       "CVE-2026-7273",
       "CVE-2026-93485"
     ],
     "keywords_hit": {
-      "Malware": 5,
-      "CVE": 2
+      "Malware": 6,
+      "CVE": 3
     }
   },
   "alerts": [
@@ -134,6 +135,46 @@
       "url": "https://thehackernews.com/2026/09/one-hidden-meta-muse-setting-could-let.html",
       "source": "The Hacker News (보안뉴스 종합) [RSS]",
       "published": "2026-09-22T06:33:57+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-09-22T18:02:12.845915+09:00",
+      "type": "single",
+      "title": "AI가 찾은 취약점 225개 중 실제 악용은 1건…‘발견’과 ‘공격 위험’은 달랐다",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=208573",
+      "source": "데일리시큐 (이슈) [RSS]",
+      "published": "2026-09-22T17:40:48+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-26980"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-26980",
+          "cvss_score": 9.4,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-89 (SQL Injection)",
+          "description": "Ghost is a Node.js content management system. Versions 3.24.0 through 6.19.0 allow unauthenticated attackers to perform arbitrary reads from the database. This issue has been fixed in version 6.19.1.",
+          "epss_score": 0.70208,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-09-22T18:02:12.845915+09:00",
+      "type": "single",
+      "title": "Scammers use genuine Google sign-ins to sell costly, unverified AI subscriptions",
+      "url": "https://www.helpnetsecurity.com/2026/09/22/fake-ai-subscription-sites-google-sign-in/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-09-22T08:54:30+00:00",
       "keywords": [
         "Malware"
       ],
