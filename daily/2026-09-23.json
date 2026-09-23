@@ -2,16 +2,17 @@
   "date": "2026-09-23",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 7,
+    "scan_runs": 8,
     "total_articles_max": 1692,
     "matched_articles_max": 119,
-    "new_alerts": 11,
-    "cve_count": 12,
+    "new_alerts": 12,
+    "cve_count": 13,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2026-17613",
       "CVE-2026-44756",
+      "CVE-2026-80521",
       "CVE-2026-85046",
       "CVE-2026-85102",
       "CVE-2026-85880",
@@ -24,7 +25,7 @@
       "CVE-2026-94127"
     ],
     "keywords_hit": {
-      "CVE": 8,
+      "CVE": 9,
       "Malware": 3,
       "DDoS": 1
     }
@@ -316,6 +317,32 @@
           "description": "A directory traversal and file upload vulnerability allows an unauthenticated attacker to upload and execute arbitrary scripts on Check Point Management Server.",
           "epss_score": null,
           "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-09-23T22:01:39.354256+09:00",
+      "type": "single",
+      "title": "Exploit Released for Unpatched Ubuntu Linux Flaw Enabling Host-Root Container Escape",
+      "url": "https://thehackernews.com/2026/09/exploit-released-for-unpatched-ubuntu.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-09-23T11:12:18+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-80521"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-80521",
+          "cvss_score": 7.8,
+          "cvss_severity": "HIGH",
+          "cwe": null,
+          "description": "In the Linux kernel, the following vulnerability has been resolved:\n\naf_unix: Unlink scc_entry in unix_del_edge().\n\nKyle Zeng reported that GC could free a dead SCC partially.\n\nThe scenario is as follows:\n\n   1) Create two SCCs:\n\n       X -.   A <-> B\n       ^--'\n\n   2) Run the following concurrently:\n\n      2-1) send() sk-B to sk-B from sk-X\n      2-2) close() both A and B\n\nAt 2-1), there is a small window where unix_add_edges()\npublishes a new edge (B <-> B) to GC but its skb is not queued\nby ",
+          "epss_score": 0.00128,
+          "kev": false
         }
       ]
     }
