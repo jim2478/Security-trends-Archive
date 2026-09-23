@@ -2,10 +2,10 @@
   "date": "2026-09-24",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 1,
+    "scan_runs": 2,
     "total_articles_max": 1692,
     "matched_articles_max": 113,
-    "new_alerts": 1,
+    "new_alerts": 2,
     "cve_count": 3,
     "ioc_count": 0,
     "merged_count": 0,
@@ -15,7 +15,8 @@
       "CVE-2026-53266"
     ],
     "keywords_hit": {
-      "CVE": 1
+      "CVE": 1,
+      "Malware": 1
     }
   },
   "alerts": [
@@ -64,6 +65,20 @@
           "kev": true
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-09-24T01:01:10.861281+09:00",
+      "type": "single",
+      "title": "This Windows Malware is Built to Let Up to Four AI Models Vote on Its Next Move",
+      "url": "https://thehackernews.com/2026/09/windows-malware-is-built-to-let-up-to.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-09-23T14:17:58+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
