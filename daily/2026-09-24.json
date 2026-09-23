@@ -2,20 +2,22 @@
   "date": "2026-09-24",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
+    "scan_runs": 3,
     "total_articles_max": 1692,
     "matched_articles_max": 113,
-    "new_alerts": 2,
-    "cve_count": 3,
+    "new_alerts": 3,
+    "cve_count": 5,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2025-39682",
       "CVE-2025-39964",
-      "CVE-2026-53266"
+      "CVE-2026-53266",
+      "CVE-2026-67279",
+      "CVE-2026-86060"
     ],
     "keywords_hit": {
-      "CVE": 1,
+      "CVE": 2,
       "Malware": 1
     }
   },
@@ -79,6 +81,42 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-09-24T02:01:12.833469+09:00",
+      "type": "single",
+      "title": "MikroTrick Chain Let Attackers Take Over MikroTik Routers Without a Password or SSH Key",
+      "url": "https://thehackernews.com/2026/09/mikrotrick-chain-let-attackers-take.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-09-23T16:06:41+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-67279",
+        "CVE-2026-86060"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-67279",
+          "cvss_score": 6.9,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-841 (CWE-841)",
+          "description": "RouterOS SSH enters the connection protocol after a client-requested rekey even though user authentication was never attempted, allowing an unauthenticated client to open a session channel and send an exec request. On affected builds the server dispatches the command, enabling unauthenticated creation, overwrite, and reconstruction of files in the RouterOS managed file namespace, including support files containing configuration and diagnostic data.This issue was fixed in versions: 6.49.21 (Long-",
+          "epss_score": 0.00446,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-86060",
+          "cvss_score": 9.2,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-88 (CWE-88)",
+          "description": "RouterOS contains an argument-handling flaw in the SSH login\npath involving usernames that begin with a prohibited character, allowing for the trusted RouterOS policy mask to be changed, leading to privilege escalation. Exploitation requires an unauthenticated SSH session to reach the RouterOS login helper.This issue was fixed in versions: 6.49.21 (Long-term), 7.23.4 (Long-term) and 7.24.2 (Stable)",
+          "epss_score": 0.01057,
+          "kev": true
+        }
+      ]
     }
   ]
 }
