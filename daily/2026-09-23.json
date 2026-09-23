@@ -2,11 +2,11 @@
   "date": "2026-09-23",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 5,
+    "scan_runs": 6,
     "total_articles_max": 1692,
     "matched_articles_max": 119,
-    "new_alerts": 9,
-    "cve_count": 9,
+    "new_alerts": 10,
+    "cve_count": 10,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -15,13 +15,14 @@
       "CVE-2026-85046",
       "CVE-2026-85880",
       "CVE-2026-87491",
+      "CVE-2026-87902",
       "CVE-2026-89082",
       "CVE-2026-89083",
       "CVE-2026-89084",
       "CVE-2026-94127"
     ],
     "keywords_hit": {
-      "CVE": 6,
+      "CVE": 7,
       "Malware": 3,
       "DDoS": 1
     }
@@ -253,6 +254,32 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-09-23T19:01:43.130090+09:00",
+      "type": "single",
+      "title": "WordPress 7.1.2 fixes critical unauthenticated path traversal vulnerability (CVE-2026-87902)",
+      "url": "https://www.helpnetsecurity.com/2026/09/23/cve-2026-87902-wordpress-7-1-2-security-release/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-09-23T09:01:45+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-87902"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-87902",
+          "cvss_score": 8.1,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-98 (CWE-98)",
+          "description": "An unauthenticated attacker can make `get_page_template()` page-template resolution include a chosen readable local `.php` file outside the active theme directories. If relevant pre-conditions for both the server and the active theme are met, this can lead to RCE.",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
     }
   ]
 }
