@@ -2,11 +2,11 @@
   "date": "2026-09-24",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
+    "scan_runs": 4,
     "total_articles_max": 1692,
-    "matched_articles_max": 113,
-    "new_alerts": 3,
-    "cve_count": 5,
+    "matched_articles_max": 114,
+    "new_alerts": 4,
+    "cve_count": 6,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -14,10 +14,11 @@
       "CVE-2025-39964",
       "CVE-2026-53266",
       "CVE-2026-67279",
-      "CVE-2026-86060"
+      "CVE-2026-86060",
+      "CVE-2026-87902"
     ],
     "keywords_hit": {
-      "CVE": 2,
+      "CVE": 3,
       "Malware": 1
     }
   },
@@ -115,6 +116,32 @@
           "description": "RouterOS contains an argument-handling flaw in the SSH login\npath involving usernames that begin with a prohibited character, allowing for the trusted RouterOS policy mask to be changed, leading to privilege escalation. Exploitation requires an unauthenticated SSH session to reach the RouterOS login helper.This issue was fixed in versions: 6.49.21 (Long-term), 7.23.4 (Long-term) and 7.24.2 (Stable)",
           "epss_score": 0.01057,
           "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-09-24T04:01:04.309761+09:00",
+      "type": "single",
+      "title": "Hackers start exploiting critical WordPress flaw for code execution",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-start-exploiting-critical-wordpress-flaw-for-code-execution/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-09-23T18:31:22+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-87902"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-87902",
+          "cvss_score": 8.1,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-98 (CWE-98)",
+          "description": "An unauthenticated attacker can make `get_page_template()` page-template resolution include a chosen readable local `.php` file outside the active theme directories. If relevant pre-conditions for both the server and the active theme are met, this can lead to RCE.",
+          "epss_score": 0.0042,
+          "kev": false
         }
       ]
     }
