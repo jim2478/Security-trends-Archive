@@ -2,11 +2,11 @@
   "date": "2026-09-24",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 4,
+    "scan_runs": 5,
     "total_articles_max": 1692,
-    "matched_articles_max": 114,
-    "new_alerts": 4,
-    "cve_count": 6,
+    "matched_articles_max": 115,
+    "new_alerts": 6,
+    "cve_count": 8,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -14,12 +14,14 @@
       "CVE-2025-39964",
       "CVE-2026-53266",
       "CVE-2026-67279",
+      "CVE-2026-85102",
       "CVE-2026-86060",
-      "CVE-2026-87902"
+      "CVE-2026-87902",
+      "CVE-2026-93616"
     ],
     "keywords_hit": {
-      "CVE": 3,
-      "Malware": 1
+      "CVE": 4,
+      "Malware": 2
     }
   },
   "alerts": [
@@ -144,6 +146,56 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-09-24T05:01:01.506544+09:00",
+      "type": "single",
+      "title": "Check Point warns of hackers exploiting Security Gateway VPN RCE flaw",
+      "url": "https://www.bleepingcomputer.com/news/security/check-point-warns-of-hackers-exploiting-security-gateway-vpn-rce-flaw/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-09-23T19:53:54+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-85102",
+        "CVE-2026-93616"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-85102",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-295 (CWE-295)",
+          "description": "Improper certificate trust validation during VPN negotiation in Check Point Quantum Security Gateway may allow an unauthenticated remote attacker to execute arbitrary code on the Gateway.",
+          "epss_score": 0.0066,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-93616",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-22 (Path Traversal)",
+          "description": "A directory traversal and file upload vulnerability allows an unauthenticated attacker to upload and execute arbitrary scripts on Check Point Management Server.",
+          "epss_score": 0.02422,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-09-24T05:01:01.506544+09:00",
+      "type": "single",
+      "title": "Attackers Use Malicious Terraform Providers to Deliver Go Malware via HashiCorp Registry",
+      "url": "https://thehackernews.com/2026/09/attackers-use-malicious-terraform.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-09-23T18:06:30+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
