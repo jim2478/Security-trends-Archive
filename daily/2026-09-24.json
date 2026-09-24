@@ -2,10 +2,10 @@
   "date": "2026-09-24",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 7,
+    "scan_runs": 8,
     "total_articles_max": 1692,
     "matched_articles_max": 116,
-    "new_alerts": 8,
+    "new_alerts": 9,
     "cve_count": 9,
     "ioc_count": 0,
     "merged_count": 0,
@@ -21,7 +21,7 @@
       "CVE-2026-94127"
     ],
     "keywords_hit": {
-      "CVE": 5,
+      "CVE": 6,
       "Malware": 3
     }
   },
@@ -237,6 +237,20 @@
           "kev": true
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-09-24T14:01:02.972414+09:00",
+      "type": "single",
+      "title": "Ubuntu kernel CVE fixes are moving to a weekly release schedule",
+      "url": "https://www.helpnetsecurity.com/2026/09/24/ubuntu-kernel-cve-fixes-release-schedule/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-09-24T04:27:02+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
