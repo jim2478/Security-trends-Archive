@@ -2,7 +2,7 @@
   "date": "2026-09-24",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 11,
+    "scan_runs": 12,
     "total_articles_max": 1692,
     "matched_articles_max": 121,
     "new_alerts": 15,
@@ -27,7 +27,9 @@
     "keywords_hit": {
       "CVE": 9,
       "Malware": 6
-    }
+    },
+    "cve_total": 14,
+    "alerts_with_cve": 8
   },
   "alerts": [
     {
