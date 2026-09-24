@@ -2,10 +2,10 @@
   "date": "2026-09-24",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 9,
+    "scan_runs": 10,
     "total_articles_max": 1692,
-    "matched_articles_max": 116,
-    "new_alerts": 11,
+    "matched_articles_max": 118,
+    "new_alerts": 13,
     "cve_count": 11,
     "ioc_count": 0,
     "merged_count": 0,
@@ -23,7 +23,7 @@
     ],
     "keywords_hit": {
       "CVE": 8,
-      "Malware": 3
+      "Malware": 5
     }
   },
   "alerts": [
@@ -304,6 +304,34 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-09-24T19:01:06.533135+09:00",
+      "type": "single",
+      "title": "New Android malware RemControl steals banking PINs and blocks removal attempts",
+      "url": "https://www.helpnetsecurity.com/2026/09/24/remcontrol-android-banking-trojan-fake-tv-app/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-09-24T09:40:43+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-09-24T19:01:06.533135+09:00",
+      "type": "single",
+      "title": "New AvisLoader Windows Malware Uses ClickFix Lure and Tox P2P for C2",
+      "url": "https://hackread.com/avisloader-windows-malware-clickfix-tox-p2p-c2/",
+      "source": "HackRead (해킹/데이터유출) [RSS]",
+      "published": "2026-09-24T09:52:07+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
