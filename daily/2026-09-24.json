@@ -2,16 +2,19 @@
   "date": "2026-09-24",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 10,
+    "scan_runs": 11,
     "total_articles_max": 1692,
-    "matched_articles_max": 118,
-    "new_alerts": 13,
-    "cve_count": 11,
+    "matched_articles_max": 121,
+    "new_alerts": 15,
+    "cve_count": 14,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2025-39682",
       "CVE-2025-39964",
+      "CVE-2026-28324",
+      "CVE-2026-28325",
+      "CVE-2026-28326",
       "CVE-2026-53266",
       "CVE-2026-67279",
       "CVE-2026-85102",
@@ -22,8 +25,8 @@
       "CVE-2026-94127"
     ],
     "keywords_hit": {
-      "CVE": 8,
-      "Malware": 5
+      "CVE": 9,
+      "Malware": 6
     }
   },
   "alerts": [
@@ -326,6 +329,66 @@
       "url": "https://hackread.com/avisloader-windows-malware-clickfix-tox-p2p-c2/",
       "source": "HackRead (해킹/데이터유출) [RSS]",
       "published": "2026-09-24T09:52:07+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-09-24T20:01:05.116436+09:00",
+      "type": "single",
+      "title": "SolarWinds Patches Critical RCE Flaws in Observability Self-Hosted",
+      "url": "https://www.securityweek.com/solarwinds-patches-critical-rce-flaws-in-observability-self-hosted/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-09-24T10:40:40+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-28324",
+        "CVE-2026-28325",
+        "CVE-2026-28326"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-28324",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-345 (CWE-345)",
+          "description": "SolarWinds Observability Self-Hosted was found to be affected by an unauthenticated remote code execution vulnerability due to the insufficient integrity checks. Installations configured in a non-default and non-secure configuration are affected.",
+          "epss_score": 0.00654,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-28325",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-502 (Deserialization)",
+          "description": "SolarWinds Observability Self-Hosted was found to be affected by an unauthenticated remote code execution vulnerability stemming from deserialization of untrusted data when the application is configured to use a specific communication mode.",
+          "epss_score": 0.01518,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-28326",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-321 (CWE-321)",
+          "description": "SolarWinds Access Rights Manager was reported to be affected by an unauthenticated remote code execution vulnerability. The issue stems from a hardcoded static key.",
+          "epss_score": 0.00548,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-09-24T20:01:05.116436+09:00",
+      "type": "single",
+      "title": "17,000 URLs Reveal How ClickFix Turns Trusted Websites Into Malware Traps: Report by CTM360",
+      "url": "https://thehackernews.com/2026/09/17000-urls-reveal-how-clickfix-turns.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-09-24T09:14:21+00:00",
       "keywords": [
         "Malware"
       ],
