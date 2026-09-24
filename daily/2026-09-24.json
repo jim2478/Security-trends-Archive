@@ -2,11 +2,11 @@
   "date": "2026-09-24",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 8,
+    "scan_runs": 9,
     "total_articles_max": 1692,
     "matched_articles_max": 116,
-    "new_alerts": 9,
-    "cve_count": 9,
+    "new_alerts": 11,
+    "cve_count": 11,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -17,11 +17,12 @@
       "CVE-2026-85102",
       "CVE-2026-86060",
       "CVE-2026-87902",
+      "CVE-2026-88924",
       "CVE-2026-93616",
       "CVE-2026-94127"
     ],
     "keywords_hit": {
-      "CVE": 6,
+      "CVE": 8,
       "Malware": 3
     }
   },
@@ -251,6 +252,58 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-09-24T18:01:04.599052+09:00",
+      "type": "single",
+      "title": "GNOME 50.5 security fixes patch a gvfs CVE and Epiphany code injection",
+      "url": "https://www.helpnetsecurity.com/2026/09/24/gnome-50-5-security-fixes/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-09-24T08:17:04+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-88924"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-88924",
+          "cvss_score": 7.0,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-367 (CWE-367)",
+          "description": "A flaw was found in the admin backend of gvfs. The privileged gvfsd-admin daemon changes the ownership of newly created private D-Bus sockets by calling the link-following chown() function on a pathname inside a user-controlled directory. A local attacker can exploit this via a Time-of-Check Time-of-Use (TOCTOU) race condition and exchange the socket pathname with a symbolic link pointing to an arbitrary root-owned file (such as /etc/pam.d/su). The daemon subsequently follows the symlink and cha",
+          "epss_score": 0.00171,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-09-24T18:01:04.599052+09:00",
+      "type": "single",
+      "title": "Attackers Exploit WordPress CVE-2026-87902 Within Hours of Disclosure",
+      "url": "https://thehackernews.com/2026/09/attackers-exploit-wordpress-cve-2026.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-09-24T05:36:18+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-87902"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-87902",
+          "cvss_score": 8.1,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-98 (CWE-98)",
+          "description": "An unauthenticated attacker can make `get_page_template()` page-template resolution include a chosen readable local `.php` file outside the active theme directories. If relevant pre-conditions for both the server and the active theme are met, this can lead to RCE.",
+          "epss_score": 0.0042,
+          "kev": false
+        }
+      ]
     }
   ]
 }
