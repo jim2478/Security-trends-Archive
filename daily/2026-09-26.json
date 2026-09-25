@@ -1,0 +1,18 @@
+{
+  "date": "2026-09-26",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 1,
+    "total_articles_max": 1643,
+    "matched_articles_max": 108,
+    "new_alerts": 0,
+    "cve_total": 0,
+    "alerts_with_cve": 0,
+    "cve_count": 0,
+    "ioc_count": 0,
+    "merged_count": 0,
+    "unique_cves": [],
+    "keywords_hit": {}
+  },
+  "alerts": []
+}
