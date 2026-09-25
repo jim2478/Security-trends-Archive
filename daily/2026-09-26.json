@@ -2,23 +2,26 @@
   "date": "2026-09-26",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
-    "total_articles_max": 1683,
-    "matched_articles_max": 113,
-    "new_alerts": 5,
-    "cve_total": 3,
-    "alerts_with_cve": 3,
-    "cve_count": 3,
-    "ioc_count": 0,
+    "scan_runs": 3,
+    "total_articles_max": 1826,
+    "matched_articles_max": 172,
+    "new_alerts": 9,
+    "cve_total": 6,
+    "alerts_with_cve": 5,
+    "cve_count": 6,
+    "ioc_count": 3,
     "merged_count": 0,
     "unique_cves": [
+      "CVE-2025-4632",
       "CVE-2026-28326",
       "CVE-2026-42542",
+      "CVE-2026-65660",
+      "CVE-2026-67279",
       "CVE-2026-87902"
     ],
     "keywords_hit": {
-      "CVE": 2,
-      "Malware": 2,
+      "CVE": 4,
+      "Malware": 4,
       "Botnet": 1
     }
   },
@@ -126,6 +129,96 @@
         "Malware"
       ],
       "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-09-26T02:01:27.873583+09:00",
+      "type": "single",
+      "title": "Attackers build “silent” cryptominer on victim’s machine and give themselves away",
+      "url": "https://www.itsecurityguru.org/2026/09/25/attackers-build-silent-cryptominer-on-victims-machine-and-give-themselves-away/?utm_source=rss&utm_medium=rss&utm_campaign=attackers-build-silent-cryptominer-on-victims-machine-and-give-themselves-away",
+      "source": "IT Security Guru (보안뉴스) [RSS]",
+      "published": "2026-09-25T12:20:43+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2025-4632"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2025-4632",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-22 (Path Traversal)",
+          "description": "Improper limitation of a pathname to a restricted directory vulnerability in Samsung MagicINFO 9 Server version before 21.1052 allows attackers to write arbitrary file as system authority.",
+          "epss_score": 0.24295,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-09-26T02:01:27.873583+09:00",
+      "type": "single",
+      "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/09/25/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-09-25T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-65660",
+        "CVE-2026-67279"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-65660",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-94 (Code Injection)",
+          "description": "Improper control of generation of code ('code injection') in Microsoft Office SharePoint allows an authorized attacker to execute code over a network.",
+          "epss_score": 0.01221,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-67279",
+          "cvss_score": 6.9,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-841",
+          "description": "RouterOS SSH enters the connection protocol after a client-requested rekey even though user authentication was never attempted, allowing an unauthenticated client to open a session channel and send an exec request. On affected builds the server dispatches the command, enabling unauthenticated creation, overwrite, and reconstruction of files in the RouterOS managed file namespace, including support files containing configuration and diagnostic data.This issue was fixed in versions: 6.49.21 (Long-",
+          "epss_score": 0.0071,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-09-26T02:01:27.873583+09:00",
+      "type": "single",
+      "title": "A Closer Look at Malware From the Macfinger ClickFix Campaign, (Fri, Sep 25th)",
+      "url": "https://isc.sans.edu/diary/rss/33368",
+      "source": "SANS ISC (인터넷폭풍센터) [RSS]",
+      "published": "2026-09-25T12:45:19+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-09-26T02:01:27.873583+09:00",
+      "type": "single",
+      "title": "Kothamine malware uses Tailscale’s tailcat to evade network detection",
+      "url": "https://www.malwarebytes.com/blog/threat-intel/2026/09/kothamine-malware-uses-tailscales-tailcat-to-evade-network-detection",
+      "source": "Malwarebytes Labs (악성코드/스캠) [RSS]",
+      "published": "2026-09-25T14:57:29+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "[URL] hxxps://github[.]com/cphc811-ui/\n[SHA256] 74eca3973ad72a6ddc9397aff8250d9ee287211fc9a055d5ee290d01cf76a70c\n[SHA256] ec4219a7ecf132c29080fbb20e4ab410c57faa85aeed7acade1eb15d905a6ee0",
       "cve_ids": [],
       "cve_details": []
     }
