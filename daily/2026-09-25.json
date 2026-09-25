@@ -2,7 +2,7 @@
   "date": "2026-09-25",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 14,
+    "scan_runs": 15,
     "total_articles_max": 1683,
     "matched_articles_max": 116,
     "new_alerts": 2,
