@@ -2,22 +2,27 @@
   "date": "2026-09-25",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 16,
+    "scan_runs": 17,
     "total_articles_max": 1683,
     "matched_articles_max": 116,
-    "new_alerts": 3,
-    "cve_total": 1,
-    "alerts_with_cve": 1,
-    "cve_count": 1,
+    "new_alerts": 5,
+    "cve_total": 6,
+    "alerts_with_cve": 3,
+    "cve_count": 6,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
+      "CVE-2024-37383",
+      "CVE-2025-49113",
+      "CVE-2025-68461",
+      "CVE-2026-48842",
+      "CVE-2026-5430",
       "CVE-2026-63077"
     ],
     "keywords_hit": {
+      "CVE": 3,
       "Malware": 2,
-      "Botnet": 1,
-      "CVE": 1
+      "Botnet": 1
     }
   },
   "alerts": [
@@ -73,6 +78,88 @@
           "description": null,
           "epss_score": null,
           "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-09-25T16:01:31.027239+09:00",
+      "type": "single",
+      "title": "WSO2 and Adobe Commerce Flaws Exploited in Attacks, Added to CISA KEV",
+      "url": "https://thehackernews.com/2026/09/wso2-and-adobe-commerce-flaws-exploited.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-09-25T04:46:34+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-5430"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-5430",
+          "cvss_score": 10.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-347",
+          "description": "The JWT authentication mechanism accepts tokens signed with algorithms other than those explicitly configured or supported. This allows an attacker to craft a JWT with an unsupported algorithm, which is then incorrectly validated, leading to unauthorized access.\n\nSuccessful exploitation of this vulnerability may result in unauthorized access to the system, including the potential compromise of administrative accounts and full account takeover. The CVSS score is adjusted to 9.8 (CVSS:3.1/AV:N/AC:",
+          "epss_score": 0.00374,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-09-25T16:01:31.027239+09:00",
+      "type": "single",
+      "title": "Roundcube Webmail Vulnerability in Attackers’ Crosshairs",
+      "url": "https://www.securityweek.com/roundcube-webmail-vulnerability-in-attackers-crosshairs/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-09-25T06:57:40+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2024-37383",
+        "CVE-2025-49113",
+        "CVE-2025-68461",
+        "CVE-2026-48842"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2024-37383",
+          "cvss_score": 6.1,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-79 (XSS)",
+          "description": "Roundcube Webmail before 1.5.7 and 1.6.x before 1.6.7 allows XSS via SVG animate attributes.",
+          "epss_score": 0.73296,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2025-49113",
+          "cvss_score": 9.9,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-502 (Deserialization)",
+          "description": "Roundcube Webmail before 1.5.10 and 1.6.x before 1.6.11 allows remote code execution by authenticated users because the _from parameter in a URL is not validated in program/actions/settings/upload.php, leading to PHP Object Deserialization.",
+          "epss_score": 0.98897,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2025-68461",
+          "cvss_score": 7.2,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-79 (XSS)",
+          "description": "Roundcube Webmail before 1.5.12 and 1.6 before 1.6.12 is prone to a Cross-Site-Scripting (XSS) vulnerability via the animate tag in an SVG document.",
+          "epss_score": 0.26842,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-48842",
+          "cvss_score": 8.1,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-89 (SQL Injection)",
+          "description": "Roundcube Webmail 1.6.x before 1.6.16 and 1.7.x before 1.7.1 has Pre-authentication SQL injection in the virtuser_query plugin via a preg_replace() backslash escape bypass.",
+          "epss_score": 0.00888,
+          "kev": false
         }
       ]
     }
