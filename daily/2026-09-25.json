@@ -2,13 +2,13 @@
   "date": "2026-09-25",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 22,
+    "scan_runs": 23,
     "total_articles_max": 1683,
     "matched_articles_max": 116,
-    "new_alerts": 7,
-    "cve_total": 7,
-    "alerts_with_cve": 4,
-    "cve_count": 7,
+    "new_alerts": 9,
+    "cve_total": 8,
+    "alerts_with_cve": 5,
+    "cve_count": 8,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -17,12 +17,14 @@
       "CVE-2025-68461",
       "CVE-2026-48842",
       "CVE-2026-5430",
-      "CVE-2026-63077"
+      "CVE-2026-63077",
+      "CVE-2026-87902"
     ],
     "keywords_hit": {
-      "CVE": 4,
+      "CVE": 5,
       "Malware": 3,
-      "Botnet": 1
+      "Botnet": 1,
+      "봇넷": 1
     }
   },
   "alerts": [
@@ -202,6 +204,46 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-09-25T22:01:24.208435+09:00",
+      "type": "single",
+      "title": "워드프레스 취약점 공개 수시간 만에 공격…PHP 파일 생성 시도 포착",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=208601",
+      "source": "데일리시큐 (이슈) [RSS]",
+      "published": "2026-09-25T21:05:37+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-87902"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-87902",
+          "cvss_score": 8.1,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-98",
+          "description": "An unauthenticated attacker can make `get_page_template()` page-template resolution include a chosen readable local `.php` file outside the active theme directories. If relevant pre-conditions for both the server and the active theme are met, this can lead to RCE.",
+          "epss_score": 0.02877,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-09-25T22:01:24.208435+09:00",
+      "type": "single",
+      "title": "AI 에이전트 결합한 ‘카르보나토’ 봇넷…노출된 도커 서버 타고 확산",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=208602",
+      "source": "데일리시큐 (이슈) [RSS]",
+      "published": "2026-09-25T21:12:31+00:00",
+      "keywords": [
+        "봇넷"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
