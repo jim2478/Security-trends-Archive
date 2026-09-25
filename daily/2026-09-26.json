@@ -2,17 +2,132 @@
   "date": "2026-09-26",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 1,
-    "total_articles_max": 1643,
-    "matched_articles_max": 108,
-    "new_alerts": 0,
-    "cve_total": 0,
-    "alerts_with_cve": 0,
-    "cve_count": 0,
+    "scan_runs": 2,
+    "total_articles_max": 1683,
+    "matched_articles_max": 113,
+    "new_alerts": 5,
+    "cve_total": 3,
+    "alerts_with_cve": 3,
+    "cve_count": 3,
     "ioc_count": 0,
     "merged_count": 0,
-    "unique_cves": [],
-    "keywords_hit": {}
+    "unique_cves": [
+      "CVE-2026-28326",
+      "CVE-2026-42542",
+      "CVE-2026-87902"
+    ],
+    "keywords_hit": {
+      "CVE": 2,
+      "Malware": 2,
+      "Botnet": 1
+    }
   },
-  "alerts": []
+  "alerts": [
+    {
+      "scan_time_kst": "2026-09-26T01:01:41.260560+09:00",
+      "type": "single",
+      "title": "In Other News: Clop Leak Site Takeover, Docker Botnet Hunts AI Keys, Water Utility Exposure",
+      "url": "https://www.securityweek.com/in-other-news-clop-leak-site-takeover-docker-botnet-hunts-ai-keys-water-utility-exposure/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-09-25T15:07:31+00:00",
+      "keywords": [
+        "Botnet"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-42542"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-42542",
+          "cvss_score": 7.5,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-191",
+          "description": "TDengine is an open source, time-series database optimized for Internet of Things devices. In versions 3.4.0.0 through 3.4.1.5, an unauthenticated remote attacker can crash the taosd server process by sending a single crafted RPC packet. No credentials or prior session state are required. Version 3.4.1.6 fixes the issue.",
+          "epss_score": 0.00633,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-09-26T01:01:41.260560+09:00",
+      "type": "single",
+      "title": "Master Key Included: Detecting SolarWinds ARM CVE-2026-28326",
+      "url": "https://bishopfox.com/blog/detecting-solarwinds-arm-cve-2026-28326",
+      "source": "Bishop Fox (모의침투/취약점) [RSS]",
+      "published": "2026-09-25T13:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-28326"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-28326",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-321",
+          "description": "SolarWinds Access Rights Manager was reported to be affected by an unauthenticated remote code execution vulnerability. The issue stems from a hardcoded static key.",
+          "epss_score": 0.00694,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-09-26T01:01:41.260560+09:00",
+      "type": "single",
+      "title": "CVE-2026-87902: Critical Vulnerability in WordPress",
+      "url": "https://www.kaspersky.co.uk/blog/cve-2026-87902-wordpress-vulnerability/30915/",
+      "source": "Kaspersky Blog UK (보안뉴스) [RSS]",
+      "published": "2026-09-25T15:24:37+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-87902"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-87902",
+          "cvss_score": 8.1,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-98",
+          "description": "An unauthenticated attacker can make `get_page_template()` page-template resolution include a chosen readable local `.php` file outside the active theme directories. If relevant pre-conditions for both the server and the active theme are met, this can lead to RCE.",
+          "epss_score": 0.02877,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-09-26T01:01:41.260560+09:00",
+      "type": "single",
+      "title": "Compromised GitHub Actions Came Back Online and Resumed Executing Mini Shai-Hulud Malware",
+      "url": "https://thehackernews.com/2026/09/compromised-github-actions-came-back.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-09-25T14:44:41+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-09-26T01:01:41.260560+09:00",
+      "type": "single",
+      "title": "PamStealer macOS Malware Adds Live C2 Payload Decryption and Multi-Layer Persistence",
+      "url": "https://thehackernews.com/2026/09/pamstealer-macos-malware-adds-live-c2.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-09-25T13:18:06+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
 }
