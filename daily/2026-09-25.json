@@ -2,10 +2,10 @@
   "date": "2026-09-25",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 19,
+    "scan_runs": 20,
     "total_articles_max": 1683,
     "matched_articles_max": 116,
-    "new_alerts": 5,
+    "new_alerts": 6,
     "cve_total": 6,
     "alerts_with_cve": 3,
     "cve_count": 6,
@@ -21,7 +21,7 @@
     ],
     "keywords_hit": {
       "CVE": 3,
-      "Malware": 2,
+      "Malware": 3,
       "Botnet": 1
     }
   },
@@ -162,6 +162,20 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-09-25T19:01:13.382015+09:00",
+      "type": "single",
+      "title": "MacSync info-stealing malware hides malicious commands in an iCloud calendar",
+      "url": "https://www.helpnetsecurity.com/2026/09/25/macsync-info-stealing-malware-for-macos/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-09-25T09:22:45+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
