@@ -2,19 +2,22 @@
   "date": "2026-09-25",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 15,
+    "scan_runs": 16,
     "total_articles_max": 1683,
     "matched_articles_max": 116,
-    "new_alerts": 2,
-    "cve_total": 0,
-    "alerts_with_cve": 0,
-    "cve_count": 0,
+    "new_alerts": 3,
+    "cve_total": 1,
+    "alerts_with_cve": 1,
+    "cve_count": 1,
     "ioc_count": 0,
     "merged_count": 0,
-    "unique_cves": [],
+    "unique_cves": [
+      "CVE-2026-63077"
+    ],
     "keywords_hit": {
       "Malware": 2,
-      "Botnet": 1
+      "Botnet": 1,
+      "CVE": 1
     }
   },
   "alerts": [
@@ -46,6 +49,32 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-09-25T15:01:12.744742+09:00",
+      "type": "single",
+      "title": "랜섬웨어 공격에 악용된 팀시티 취약점…빌드 서버 점검 시급",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=208600",
+      "source": "데일리시큐 (이슈) [RSS]",
+      "published": "2026-09-25T14:45:14+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-63077"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-63077",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": true
+        }
+      ]
     }
   ]
 }
