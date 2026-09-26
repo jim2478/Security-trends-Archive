@@ -2,25 +2,26 @@
   "date": "2026-09-26",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 23,
+    "scan_runs": 24,
     "total_articles_max": 1826,
     "matched_articles_max": 173,
-    "new_alerts": 13,
-    "cve_total": 8,
-    "alerts_with_cve": 7,
-    "cve_count": 8,
+    "new_alerts": 14,
+    "cve_total": 9,
+    "alerts_with_cve": 8,
+    "cve_count": 9,
     "ioc_count": 3,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2025-4632",
       "CVE-2026-28326",
+      "CVE-2026-35273",
       "CVE-2026-42542",
       "CVE-2026-65660",
       "CVE-2026-67279",
       "CVE-2026-87902"
     ],
     "keywords_hit": {
-      "CVE": 7,
+      "CVE": 8,
       "Malware": 4,
       "Botnet": 2
     }
@@ -301,6 +302,32 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-09-26T23:01:08.146335+09:00",
+      "type": "single",
+      "title": "ShinyHunters Bypass WAF Rules to Resume Oracle PeopleSoft Attacks",
+      "url": "https://hackread.com/shinyhunters-bypass-waf-rules-oracle-peoplesoft-attacks/",
+      "source": "HackRead (해킹/데이터유출) [RSS]",
+      "published": "2026-09-26T13:36:11+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-35273"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-35273",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-306 (Missing Authentication)",
+          "description": "Vulnerability in the PeopleSoft Enterprise PeopleTools product of Oracle PeopleSoft (component: Updates Environment Management). Supported versions that are affected are 8.61 and 8.62. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise PeopleSoft Enterprise PeopleTools. Successful attacks of this vulnerability can result in takeover of PeopleSoft Enterprise PeopleTools. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability i",
+          "epss_score": 0.09444,
+          "kev": true
+        }
+      ]
     }
   ]
 }
