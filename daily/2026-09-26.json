@@ -2,10 +2,10 @@
   "date": "2026-09-26",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 21,
+    "scan_runs": 22,
     "total_articles_max": 1826,
     "matched_articles_max": 173,
-    "new_alerts": 12,
+    "new_alerts": 13,
     "cve_total": 8,
     "alerts_with_cve": 7,
     "cve_count": 8,
@@ -22,7 +22,7 @@
     "keywords_hit": {
       "CVE": 7,
       "Malware": 4,
-      "Botnet": 1
+      "Botnet": 2
     }
   },
   "alerts": [
@@ -283,6 +283,20 @@
       "published": "2026-09-26T09:55:22+00:00",
       "keywords": [
         "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-09-26T21:01:03.994155+09:00",
+      "type": "single",
+      "title": "New x47.c Windows Botnet Weaponizes xAI Grok, AI API Draining",
+      "url": "https://www.securityweek.com/new-x47-c-windows-botnet-weaponizes-xai-grok-ai-api-draining/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-09-26T12:00:00+00:00",
+      "keywords": [
+        "Botnet"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
