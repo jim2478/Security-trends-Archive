@@ -2,20 +2,21 @@
   "date": "2026-09-27",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 14,
+    "scan_runs": 15,
     "total_articles_max": 1820,
-    "matched_articles_max": 173,
-    "new_alerts": 2,
-    "cve_total": 1,
-    "alerts_with_cve": 1,
-    "cve_count": 1,
+    "matched_articles_max": 174,
+    "new_alerts": 4,
+    "cve_total": 2,
+    "alerts_with_cve": 2,
+    "cve_count": 2,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
+      "CVE-2026-13742",
       "CVE-2026-35273"
     ],
     "keywords_hit": {
-      "CVE": 1,
+      "CVE": 3,
       "Malware": 1
     }
   },
@@ -55,6 +56,46 @@
       "published": "2026-09-26T18:22:52+00:00",
       "keywords": [
         "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-09-27T14:01:08.748166+09:00",
+      "type": "single",
+      "title": "SEC Consult SA-20260923-0 :: Local Privilege Escalation in Honeywell IQ MultiAccess Update Service #CVE-2026-13742",
+      "url": "https://seclists.org/fulldisclosure/2026/Sep/88",
+      "source": "SecLists Full Disclosure (취약점공개)",
+      "published": "2026-09-27T04:16:15+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-13742"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-13742",
+          "cvss_score": 5.9,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-367",
+          "description": "Honeywell IQ MultiAccess, all versions prior to and including version 28, contain an improper digital signature verification vulnerability. An attacker could potentially exploit this vulnerability, leading to the replacement of downloaded file with a malicious one. Honeywell also recommends updating to the most recent version of this product, service, or offering [V27 SP1, V28 SP1]",
+          "epss_score": 0.00115,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-09-27T14:01:08.748166+09:00",
+      "type": "single",
+      "title": "[SYSS-2026-071]: GDCM (Grassroots DICOM) - Format String\t(CWE-134)",
+      "url": "https://seclists.org/fulldisclosure/2026/Sep/87",
+      "source": "SecLists Full Disclosure (취약점공개)",
+      "published": "2026-09-27T04:16:13+00:00",
+      "keywords": [
+        "CVE"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
