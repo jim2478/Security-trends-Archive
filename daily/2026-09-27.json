@@ -2,21 +2,22 @@
   "date": "2026-09-27",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 18,
+    "scan_runs": 19,
     "total_articles_max": 1824,
     "matched_articles_max": 174,
-    "new_alerts": 4,
-    "cve_total": 2,
-    "alerts_with_cve": 2,
-    "cve_count": 2,
+    "new_alerts": 5,
+    "cve_total": 3,
+    "alerts_with_cve": 3,
+    "cve_count": 3,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2026-13742",
-      "CVE-2026-35273"
+      "CVE-2026-35273",
+      "CVE-2026-65660"
     ],
     "keywords_hit": {
-      "CVE": 3,
+      "CVE": 4,
       "Malware": 1
     }
   },
@@ -100,6 +101,32 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-09-27T18:00:57.377012+09:00",
+      "type": "single",
+      "title": "셰어포인트·마이크로틱 취약점 실제 공격…미 CISA 긴급 경고",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=208611",
+      "source": "데일리시큐 (전체) [RSS]",
+      "published": "2026-09-27T17:03:24+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-65660"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-65660",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-94 (Code Injection)",
+          "description": "Improper control of generation of code ('code injection') in Microsoft Office SharePoint allows an authorized attacker to execute code over a network.",
+          "epss_score": 0.02101,
+          "kev": true
+        }
+      ]
     }
   ]
 }
