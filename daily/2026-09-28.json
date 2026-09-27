@@ -2,17 +2,34 @@
   "date": "2026-09-28",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 1,
-    "total_articles_max": 1806,
+    "scan_runs": 2,
+    "total_articles_max": 1826,
     "matched_articles_max": 174,
-    "new_alerts": 0,
+    "new_alerts": 1,
     "cve_total": 0,
     "alerts_with_cve": 0,
     "cve_count": 0,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [],
-    "keywords_hit": {}
+    "keywords_hit": {
+      "Malware": 1
+    }
   },
-  "alerts": []
+  "alerts": [
+    {
+      "scan_time_kst": "2026-09-28T01:01:05.373108+09:00",
+      "type": "single",
+      "title": "SECURITY AFFAIRS MALWARE NEWSLETTER ROUND 116",
+      "url": "https://securityaffairs.com/199850/malware/security-affairs-malware-newsletter-round-116.html",
+      "source": "Security Affairs (보안뉴스/위협동향) [RSS]",
+      "published": "2026-09-27T15:05:39+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
 }
