@@ -2,10 +2,10 @@
   "date": "2026-09-29",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 4,
+    "scan_runs": 5,
     "total_articles_max": 1821,
     "matched_articles_max": 174,
-    "new_alerts": 1,
+    "new_alerts": 2,
     "cve_total": 0,
     "alerts_with_cve": 0,
     "cve_count": 0,
@@ -13,7 +13,7 @@
     "merged_count": 0,
     "unique_cves": [],
     "keywords_hit": {
-      "Malware": 1
+      "Malware": 2
     }
   },
   "alerts": [
@@ -24,6 +24,20 @@
       "url": "https://www.microsoft.com/en-us/security/blog/2026/09/28/needymantis-unpacking-a-post-compromise-malware-family-used-in-targeted-operations/",
       "source": "Microsoft Security Blog (보안업데이트) [RSS]",
       "published": "2026-09-28T15:00:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-09-29T04:01:08.655723+09:00",
+      "type": "single",
+      "title": "RatHat Android Malware Console Uses Gemini to Identify Higher-Value Victims",
+      "url": "https://thehackernews.com/2026/09/rathat-android-malware-console-uses.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-09-28T17:38:33+00:00",
       "keywords": [
         "Malware"
       ],
