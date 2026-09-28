@@ -2,22 +2,25 @@
   "date": "2026-09-28",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 17,
+    "scan_runs": 18,
     "total_articles_max": 1826,
     "matched_articles_max": 175,
-    "new_alerts": 3,
-    "cve_total": 3,
-    "alerts_with_cve": 2,
-    "cve_count": 3,
+    "new_alerts": 4,
+    "cve_total": 8,
+    "alerts_with_cve": 3,
+    "cve_count": 8,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2024-3596",
+      "CVE-2026-19490",
+      "CVE-2026-65660",
+      "CVE-2026-8452",
       "CVE-2026-88771",
       "CVE-2026-88772"
     ],
     "keywords_hit": {
-      "CVE": 2,
+      "CVE": 3,
       "Malware": 1
     }
   },
@@ -95,6 +98,72 @@
           "description": "RADIUS Protocol under RFC 2865 is susceptible to forgery attacks by a local attacker who can modify any valid Response (Access-Accept, Access-Reject, or Access-Challenge) to any other response using a chosen-prefix collision attack against MD5 Response Authenticator signature.",
           "epss_score": 0.14859,
           "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-09-28T17:01:23.019290+09:00",
+      "type": "single",
+      "title": "Citrix Confirms 2 NetScaler Zero-Days After Admins Pulled the Plug",
+      "url": "https://www.securityweek.com/citrix-confirms-2-netscaler-zero-days-after-admins-pulled-the-plug/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-09-28T07:29:51+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-88771",
+        "CVE-2026-88772",
+        "CVE-2026-19490",
+        "CVE-2026-8452",
+        "CVE-2026-65660"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-88771",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-88772",
+          "cvss_score": 9.5,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-119 (Buffer Overflow)",
+          "description": "Vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.\n\nThis issue affects ADC: before 14.1-73.37, before 13.1-64.23, before 14.1-73.37 FIPS, and before 13.1.37.279 FIPS and NDcPP; Gateway: before 14.1-73.37 and before 13.1-64.23 leading to Remote Code Execution or Denial of Service",
+          "epss_score": null,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-19490",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-288",
+          "description": "Vulnerability in NetScaler ADC and NetScaler Gateway.\n\nThis issue affects ADC: from 14.1 through 73.32 and from 13.1 through 63.21; Gateway: from 14.1 through 73.32 and from 13.1 through 63.21.",
+          "epss_score": 0.0701,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-8452",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-119 (Buffer Overflow)",
+          "description": "Memory overflow vulnerability NetScaler ADC and NetScaler Gateway leading to unpredictable or erroneous behavior and Denial of Service if the appliance is configured as a Gateway (SSL VPN, ICA Proxy, CVPN, RDP Proxy) or AAA virtual server",
+          "epss_score": 0.01011,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-65660",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-94 (Code Injection)",
+          "description": "Improper control of generation of code ('code injection') in Microsoft Office SharePoint allows an authorized attacker to execute code over a network.",
+          "epss_score": 0.02101,
+          "kev": true
         }
       ]
     }
