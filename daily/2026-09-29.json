@@ -2,13 +2,13 @@
   "date": "2026-09-29",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 8,
+    "scan_runs": 9,
     "total_articles_max": 1821,
     "matched_articles_max": 176,
-    "new_alerts": 4,
-    "cve_total": 1,
-    "alerts_with_cve": 1,
-    "cve_count": 1,
+    "new_alerts": 5,
+    "cve_total": 2,
+    "alerts_with_cve": 2,
+    "cve_count": 2,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -16,7 +16,7 @@
     ],
     "keywords_hit": {
       "Malware": 3,
-      "CVE": 1
+      "CVE": 2
     }
   },
   "alerts": [
@@ -87,6 +87,32 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-09-29T08:01:10.951026+09:00",
+      "type": "single",
+      "title": "Apple Emergency Patch for iOS 26, macOS26, macOS15 (CVE-2026-86950), (Mon, Sep 28th)",
+      "url": "https://isc.sans.edu/diary/rss/33376",
+      "source": "SANS ISC (인터넷폭풍센터) [RSS]",
+      "published": "2026-09-28T22:35:35+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-86950"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-86950",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-787 (Out-of-bounds Write)",
+          "description": "An out-of-bounds write issue was addressed with improved bounds checking. This issue is fixed in iOS 26.7.1 and iPadOS 26.7.1, macOS Sequoia 15.8.1, macOS Tahoe 26.7.1. Processing a maliciously crafted file may lead to arbitrary code execution. Apple is aware of a report that this issue may have been exploited in an extremely sophisticated attack against specific targeted individuals on versions of iOS before iOS 27.",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
     }
   ]
 }
