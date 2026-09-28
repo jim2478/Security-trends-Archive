@@ -2,22 +2,23 @@
   "date": "2026-09-28",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 16,
+    "scan_runs": 17,
     "total_articles_max": 1826,
-    "matched_articles_max": 174,
-    "new_alerts": 2,
-    "cve_total": 2,
-    "alerts_with_cve": 1,
-    "cve_count": 2,
+    "matched_articles_max": 175,
+    "new_alerts": 3,
+    "cve_total": 3,
+    "alerts_with_cve": 2,
+    "cve_count": 3,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
+      "CVE-2024-3596",
       "CVE-2026-88771",
       "CVE-2026-88772"
     ],
     "keywords_hit": {
-      "Malware": 1,
-      "CVE": 1
+      "CVE": 2,
+      "Malware": 1
     }
   },
   "alerts": [
@@ -67,6 +68,32 @@
           "cwe": null,
           "description": "Vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.\n\nThis issue affects ADC: before 14.1-73.37, before 13.1-64.23, before 14.1-73.37 FIPS, and before 13.1.37.279 FIPS and NDcPP; Gateway: before 14.1-73.37 and before 13.1-64.23 leading to Remote Code Execution or Denial of Service",
           "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-09-28T16:01:10.241724+09:00",
+      "type": "single",
+      "title": "빅오, 네트워크 인증 취약점 재현…비밀번호 틀렸는데 접속 성공",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=208616",
+      "source": "데일리시큐 (전체) [RSS]",
+      "published": "2026-09-28T15:55:35+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2024-3596"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2024-3596",
+          "cvss_score": 9.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-354",
+          "description": "RADIUS Protocol under RFC 2865 is susceptible to forgery attacks by a local attacker who can modify any valid Response (Access-Accept, Access-Reject, or Access-Challenge) to any other response using a chosen-prefix collision attack against MD5 Response Authenticator signature.",
+          "epss_score": 0.14859,
           "kev": false
         }
       ]
