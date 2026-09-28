@@ -2,10 +2,10 @@
   "date": "2026-09-28",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 22,
+    "scan_runs": 23,
     "total_articles_max": 1826,
     "matched_articles_max": 175,
-    "new_alerts": 8,
+    "new_alerts": 10,
     "cve_total": 22,
     "alerts_with_cve": 6,
     "cve_count": 22,
@@ -27,9 +27,10 @@
       "CVE-2026-88778"
     ],
     "keywords_hit": {
-      "CVE": 6,
-      "Malware": 1,
-      "DDoS": 1
+      "CVE": 7,
+      "Malware": 2,
+      "DDoS": 1,
+      "Botnet": 1
     }
   },
   "alerts": [
@@ -347,6 +348,35 @@
           "kev": true
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-09-28T22:02:57.708119+09:00",
+      "type": "single",
+      "title": "Carbonato Botnet Compromises Docker Hosts to Deploy Telegram-Controlled Hermes AI Agent",
+      "url": "https://thehackernews.com/2026/09/carbonato-botnet-compromises-docker.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-09-28T11:46:00+00:00",
+      "keywords": [
+        "Botnet",
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-09-28T22:02:57.708119+09:00",
+      "type": "single",
+      "title": "'제로데이 공격' 증가...보안기업들 AI 적용 대응 나서",
+      "url": "https://zdnet.co.kr/view/?no=20260928172513",
+      "source": "지디넷코리아 [RSS]",
+      "published": "2026-09-28T10:24:18+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
