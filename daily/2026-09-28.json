@@ -2,26 +2,32 @@
   "date": "2026-09-28",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 20,
+    "scan_runs": 21,
     "total_articles_max": 1826,
     "matched_articles_max": 175,
-    "new_alerts": 6,
-    "cve_total": 11,
-    "alerts_with_cve": 4,
-    "cve_count": 11,
+    "new_alerts": 8,
+    "cve_total": 22,
+    "alerts_with_cve": 6,
+    "cve_count": 22,
     "ioc_count": 0,
-    "merged_count": 0,
+    "merged_count": 1,
     "unique_cves": [
       "CVE-2024-3596",
       "CVE-2026-19490",
+      "CVE-2026-35273",
       "CVE-2026-65660",
       "CVE-2026-8452",
       "CVE-2026-88771",
       "CVE-2026-88772",
+      "CVE-2026-88773",
+      "CVE-2026-88774",
+      "CVE-2026-88775",
+      "CVE-2026-88776",
+      "CVE-2026-88777",
       "CVE-2026-88778"
     ],
     "keywords_hit": {
-      "CVE": 4,
+      "CVE": 6,
       "Malware": 1,
       "DDoS": 1
     }
@@ -228,6 +234,119 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-09-28T20:01:15.105759+09:00",
+      "type": "merged",
+      "cve_ids": [
+        "CVE-2026-88771",
+        "CVE-2026-88772",
+        "CVE-2026-88773",
+        "CVE-2026-88774",
+        "CVE-2026-88775",
+        "CVE-2026-88776",
+        "CVE-2026-88777",
+        "CVE-2026-88778"
+      ],
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "sources": [
+        {
+          "title": "CISA Says Attackers Are Exploiting Two Critical Citrix NetScaler Flaws Globally",
+          "url": "https://thehackernews.com/2026/09/cisa-says-attackers-are-exploiting-two.html",
+          "source": "The Hacker News (보안뉴스 종합) [RSS]"
+        },
+        {
+          "title": "Oh Look, The Foot Gun Went Off Again (Citrix NetScaler PreAuth Command Injection CVE-2026-88771)",
+          "url": "https://labs.watchtowr.com/oh-look-the-foot-gun-went-off-again-citrix-netscaler-preauth-command-injection-cve-2026-88771/",
+          "source": "watchTowr Labs (취약점연구) [RSS]"
+        }
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-88771",
+          "cvss_score": 9.5,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-20 (Improper Input Validation)",
+          "description": "Improper input validation vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.\n\nThis issue affects ADC: before 14.1-73.37, before 13.1-64.23, before 14.1-73.37 FIPS, and before 13.1.37.279 FIPS and NDcPP; Gateway: before 14.1-73.37 and before 13.1-64.23 leading to an unauthenticated attacker to execute arbitrary commands.",
+          "epss_score": null,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-88772",
+          "cvss_score": 9.5,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-119 (Buffer Overflow)",
+          "description": "Vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.\n\nThis issue affects ADC: before 14.1-73.37, before 13.1-64.23, before 14.1-73.37 FIPS, and before 13.1.37.279 FIPS and NDcPP; Gateway: before 14.1-73.37 and before 13.1-64.23 leading to Remote Code Execution or Denial of Service",
+          "epss_score": null,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-88773",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-444",
+          "description": "Inconsistent interpretation of HTTP requests ('HTTP Request/Response smuggling') vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.\n\nThis issue affects ADC: before 14.1-73.37, before 13.1-64.23, before 14.1-73.37 FIPS, and before 13.1-37.279 and NDcPP; Gateway: before 14.1-73.37 FIPS and before 13.1-64.23.",
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-88774",
+          "cvss_score": 7.0,
+          "cvss_severity": "HIGH",
+          "cwe": null,
+          "description": "Vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.\n\nThis issue affects ADC: before 14.1-73.37, before 13.1-64.23, before 14.1-73.37 FIPS, and before 13.1.37.279 FIPS and NDcPP; Gateway: before 14.1-73.37 and before 13.1-64.23 leading to a feature policy bypass due to improper HTTP URL based expression usage.",
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-88775",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": null,
+          "description": "Memory overflow vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.\n\nThis issue affects ADC: before 14.1-73.37, before 13.1-64.23, before 14.1-73.37 FIPS, and before 13.1.37.279 FIPS and NDcPP; Gateway: before 14.1-73.37 and before 13.1-64.23 leading Memory overflow vulnerability leading to unpredictable or erroneous behavior or Denial of Service",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-09-28T20:01:15.105759+09:00",
+      "type": "single",
+      "title": "Google Warns of ShinyHunters’ Fresh Oracle PeopleSoft Campaign",
+      "url": "https://www.securityweek.com/google-warns-of-shinyhunters-fresh-oracle-peoplesoft-campaign/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-09-28T10:56:46+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-35273",
+        "CVE-2026-65660"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-35273",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-306 (Missing Authentication)",
+          "description": "Vulnerability in the PeopleSoft Enterprise PeopleTools product of Oracle PeopleSoft (component: Updates Environment Management). Supported versions that are affected are 8.61 and 8.62. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise PeopleSoft Enterprise PeopleTools. Successful attacks of this vulnerability can result in takeover of PeopleSoft Enterprise PeopleTools. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability i",
+          "epss_score": 0.09444,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-65660",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-94 (Code Injection)",
+          "description": "Improper control of generation of code ('code injection') in Microsoft Office SharePoint allows an authorized attacker to execute code over a network.",
+          "epss_score": 0.02101,
+          "kev": true
+        }
+      ]
     }
   ]
 }
