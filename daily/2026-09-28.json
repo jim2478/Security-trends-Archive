@@ -2,13 +2,13 @@
   "date": "2026-09-28",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 19,
+    "scan_runs": 20,
     "total_articles_max": 1826,
     "matched_articles_max": 175,
-    "new_alerts": 4,
-    "cve_total": 8,
-    "alerts_with_cve": 3,
-    "cve_count": 8,
+    "new_alerts": 6,
+    "cve_total": 11,
+    "alerts_with_cve": 4,
+    "cve_count": 11,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -17,11 +17,13 @@
       "CVE-2026-65660",
       "CVE-2026-8452",
       "CVE-2026-88771",
-      "CVE-2026-88772"
+      "CVE-2026-88772",
+      "CVE-2026-88778"
     ],
     "keywords_hit": {
-      "CVE": 3,
-      "Malware": 1
+      "CVE": 4,
+      "Malware": 1,
+      "DDoS": 1
     }
   },
   "alerts": [
@@ -166,6 +168,66 @@
           "kev": true
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-09-28T19:01:13.597503+09:00",
+      "type": "single",
+      "title": "Citrix NetScaler RCE zero-days exploited globally for weeks (CVE-2026-88771, CVE-2026-88772)",
+      "url": "https://www.helpnetsecurity.com/2026/09/28/citrix-netscaler-rce-zero-days-exploited-for-weeks-cve-2026-88771-cve-2026-88772/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-09-28T09:51:32+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-88771",
+        "CVE-2026-88772",
+        "CVE-2026-88778"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-88771",
+          "cvss_score": 9.5,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-20 (Improper Input Validation)",
+          "description": "Improper input validation vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.\n\nThis issue affects ADC: before 14.1-73.37, before 13.1-64.23, before 14.1-73.37 FIPS, and before 13.1.37.279 FIPS and NDcPP; Gateway: before 14.1-73.37 and before 13.1-64.23 leading to an unauthenticated attacker to execute arbitrary commands.",
+          "epss_score": null,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-88772",
+          "cvss_score": 9.5,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-119 (Buffer Overflow)",
+          "description": "Vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.\n\nThis issue affects ADC: before 14.1-73.37, before 13.1-64.23, before 14.1-73.37 FIPS, and before 13.1.37.279 FIPS and NDcPP; Gateway: before 14.1-73.37 and before 13.1-64.23 leading to Remote Code Execution or Denial of Service",
+          "epss_score": null,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-88778",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-342",
+          "description": "Predictable exact value from previous values vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.\n\nThis issue affects ADC: before 14.1-73.37, before 13.1-64.23, before 14.1-73.37 FIPS, and before 13.1.37.279 FIPS and NDcPP; Gateway: before 14.1-73.37 and before 13.1-64.23.",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-09-28T19:01:13.597503+09:00",
+      "type": "single",
+      "title": "Hacktivist DDOS Attack Motives: What They Predict",
+      "url": "http://www.ddosinfo.com/ddos-criminals/hacktivist-ddos-attack-motives/",
+      "source": "DDoS Info [RSS]",
+      "published": "2026-09-28T09:00:03+00:00",
+      "keywords": [
+        "DDoS"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
