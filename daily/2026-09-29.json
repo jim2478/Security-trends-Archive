@@ -2,17 +2,34 @@
   "date": "2026-09-29",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 1,
-    "total_articles_max": 1771,
-    "matched_articles_max": 172,
-    "new_alerts": 0,
+    "scan_runs": 2,
+    "total_articles_max": 1821,
+    "matched_articles_max": 173,
+    "new_alerts": 1,
     "cve_total": 0,
     "alerts_with_cve": 0,
     "cve_count": 0,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [],
-    "keywords_hit": {}
+    "keywords_hit": {
+      "Malware": 1
+    }
   },
-  "alerts": []
+  "alerts": [
+    {
+      "scan_time_kst": "2026-09-29T01:01:23.628587+09:00",
+      "type": "single",
+      "title": "NeedyMantis: Unpacking a post-compromise malware family used in targeted operations",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/09/28/needymantis-unpacking-a-post-compromise-malware-family-used-in-targeted-operations/",
+      "source": "Microsoft Security Blog (보안업데이트) [RSS]",
+      "published": "2026-09-28T15:00:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
 }
