@@ -2,13 +2,13 @@
   "date": "2026-09-30",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 4,
+    "scan_runs": 5,
     "total_articles_max": 1821,
     "matched_articles_max": 171,
-    "new_alerts": 10,
-    "cve_total": 28,
-    "alerts_with_cve": 8,
-    "cve_count": 28,
+    "new_alerts": 11,
+    "cve_total": 30,
+    "alerts_with_cve": 9,
+    "cve_count": 30,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -42,8 +42,8 @@
       "CVE-2026-96587"
     ],
     "keywords_hit": {
-      "CVE": 8,
-      "Malware": 2
+      "CVE": 9,
+      "Malware": 3
     }
   },
   "alerts": [
@@ -399,6 +399,43 @@
           "description": null,
           "epss_score": null,
           "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-09-30T04:01:14.097600+09:00",
+      "type": "single",
+      "title": "Hackers exploit Citrix NetScaler zero-day to deploy web shells",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-citrix-netscaler-zero-day-to-deploy-web-shells/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-09-29T18:37:12+00:00",
+      "keywords": [
+        "CVE",
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-88772",
+        "CVE-2026-88771"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-88772",
+          "cvss_score": 9.5,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-119 (Buffer Overflow)",
+          "description": "Vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.\n\nThis issue affects ADC: before 14.1-73.37, before 13.1-64.23, before 14.1-73.37 FIPS, and before 13.1.37.279 FIPS and NDcPP; Gateway: before 14.1-73.37 and before 13.1-64.23 leading to Remote Code Execution or Denial of Service",
+          "epss_score": 0.01301,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-88771",
+          "cvss_score": 9.5,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-20 (Improper Input Validation)",
+          "description": "Improper input validation vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.\n\nThis issue affects ADC: before 14.1-73.37, before 13.1-64.23, before 14.1-73.37 FIPS, and before 13.1.37.279 FIPS and NDcPP; Gateway: before 14.1-73.37 and before 13.1-64.23 leading to an unauthenticated attacker to execute arbitrary commands.",
+          "epss_score": 0.01063,
+          "kev": true
         }
       ]
     }
