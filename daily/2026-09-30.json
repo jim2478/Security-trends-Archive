@@ -2,10 +2,10 @@
   "date": "2026-09-30",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 6,
+    "scan_runs": 7,
     "total_articles_max": 1821,
     "matched_articles_max": 171,
-    "new_alerts": 11,
+    "new_alerts": 12,
     "cve_total": 30,
     "alerts_with_cve": 9,
     "cve_count": 30,
@@ -43,7 +43,7 @@
     ],
     "keywords_hit": {
       "CVE": 9,
-      "Malware": 3
+      "Malware": 4
     }
   },
   "alerts": [
@@ -438,6 +438,20 @@
           "kev": true
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-09-30T06:01:10.008589+09:00",
+      "type": "single",
+      "title": "Custom ChatGPTs push ClickFix attacks to deploy RAT malware",
+      "url": "https://www.bleepingcomputer.com/news/security/custom-chatgpts-push-clickfix-attacks-to-deploy-rat-malware/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-09-29T20:59:39+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
