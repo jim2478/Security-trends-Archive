@@ -1,0 +1,35 @@
+{
+  "date": "2026-09-30",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 1,
+    "total_articles_max": 1801,
+    "matched_articles_max": 171,
+    "new_alerts": 1,
+    "cve_total": 0,
+    "alerts_with_cve": 0,
+    "cve_count": 0,
+    "ioc_count": 0,
+    "merged_count": 0,
+    "unique_cves": [],
+    "keywords_hit": {
+      "Malware": 1
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-09-30T00:01:22.273013+09:00",
+      "type": "single",
+      "title": "RatHat's Evolving C2 Panel Points to Malware-as-a-Service Model",
+      "url": "https://www.infosecurity-magazine.com/news/rathat-c2-panel-malware-as-a/",
+      "source": "Infosecurity Magazine (보안뉴스) [RSS]",
+      "published": "2026-09-29T14:30:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
