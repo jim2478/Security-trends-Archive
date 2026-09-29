@@ -2,10 +2,10 @@
   "date": "2026-09-29",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 21,
+    "scan_runs": 22,
     "total_articles_max": 1821,
     "matched_articles_max": 176,
-    "new_alerts": 10,
+    "new_alerts": 11,
     "cve_total": 7,
     "alerts_with_cve": 4,
     "cve_count": 7,
@@ -19,7 +19,7 @@
     ],
     "keywords_hit": {
       "CVE": 5,
-      "Malware": 4,
+      "Malware": 5,
       "DDoS": 1
     }
   },
@@ -237,6 +237,20 @@
       "published": "2026-09-29T08:00:10+00:00",
       "keywords": [
         "DDoS"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-09-29T21:01:07.799890+09:00",
+      "type": "single",
+      "title": "Malicious Custom GPT on chatgpt.com lures users into installing a RAT",
+      "url": "https://www.helpnetsecurity.com/2026/09/29/malicious-chatgpt-custom-gpt-malware-via-clickfix/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-09-29T11:55:25+00:00",
+      "keywords": [
+        "Malware"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
