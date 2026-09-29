@@ -2,22 +2,48 @@
   "date": "2026-09-30",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
-    "total_articles_max": 1811,
+    "scan_runs": 3,
+    "total_articles_max": 1821,
     "matched_articles_max": 171,
-    "new_alerts": 3,
-    "cve_total": 2,
-    "alerts_with_cve": 1,
-    "cve_count": 2,
+    "new_alerts": 10,
+    "cve_total": 28,
+    "alerts_with_cve": 8,
+    "cve_count": 28,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
+      "CVE-2026-100291",
+      "CVE-2026-100292",
+      "CVE-2026-100293",
+      "CVE-2026-100294",
+      "CVE-2026-100295",
+      "CVE-2026-100296",
+      "CVE-2026-100297",
+      "CVE-2026-100298",
+      "CVE-2026-100299",
+      "CVE-2026-22755",
+      "CVE-2026-63713",
+      "CVE-2026-68068",
+      "CVE-2026-68954",
+      "CVE-2026-69662",
+      "CVE-2026-70356",
+      "CVE-2026-71189",
+      "CVE-2026-71302",
+      "CVE-2026-71379",
+      "CVE-2026-72507",
+      "CVE-2026-72510",
+      "CVE-2026-84409",
+      "CVE-2026-84411",
       "CVE-2026-88771",
-      "CVE-2026-88772"
+      "CVE-2026-88772",
+      "CVE-2026-91191",
+      "CVE-2026-94204",
+      "CVE-2026-96274",
+      "CVE-2026-96587"
     ],
     "keywords_hit": {
-      "Malware": 2,
-      "CVE": 1
+      "CVE": 8,
+      "Malware": 2
     }
   },
   "alerts": [
@@ -84,6 +110,297 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-09-30T02:01:52.128439+09:00",
+      "type": "single",
+      "title": "Baicells Nova 430H",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-272-04",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-09-29T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-96274"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-96274",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-09-30T02:01:52.128439+09:00",
+      "type": "single",
+      "title": "MikroTik RouterOS",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-272-06",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-09-29T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-84411"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-84411",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-09-30T02:01:52.128439+09:00",
+      "type": "single",
+      "title": "VIVOTEK Camera Firmware",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-272-03",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-09-29T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-22755"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-22755",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-77 (Command Injection)",
+          "description": "Improper Neutralization of Special Elements used in a Command ('Command Injection') vulnerability in Vivotek Affected device model numbers are FD8365, FD8365v2, FD9165, FD9171, FD9187, FD9189, FD9365, FD9371, FD9381, FD9387, FD9389, FD9391,FE9180,FE9181, FE9191, FE9381, FE9382, FE9391, FE9582, IB9365, IB93587LPR, IB9371,IB9381, IB9387, IB9389, IB939,IP9165,IP9171, IP9172, IP9181, IP9191, IT9389, MA9321, MA9322, MS9321, MS9390, TB9330 (Firmware modules) allows OS Command Injection.This issue affe",
+          "epss_score": 0.20439,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-09-30T02:01:52.128439+09:00",
+      "type": "single",
+      "title": "Anjvision YSSD-RTMP-H5",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-272-05",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-09-29T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-100291",
+        "CVE-2026-100292",
+        "CVE-2026-100293",
+        "CVE-2026-100294",
+        "CVE-2026-100295",
+        "CVE-2026-100296",
+        "CVE-2026-100297",
+        "CVE-2026-100298",
+        "CVE-2026-100299"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-100291",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-100292",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-100293",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-100294",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-100295",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-09-30T02:01:52.128439+09:00",
+      "type": "single",
+      "title": "Viidure Dashcam Android Application",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-272-07",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-09-29T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-94204",
+        "CVE-2026-96587"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-94204",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-96587",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-09-30T02:01:52.128439+09:00",
+      "type": "single",
+      "title": "Toptech TMS7 and TopHAT",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-272-02",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-09-29T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-71379",
+        "CVE-2026-70356",
+        "CVE-2026-72510",
+        "CVE-2026-63713",
+        "CVE-2026-68954",
+        "CVE-2026-68068",
+        "CVE-2026-72507",
+        "CVE-2026-71302",
+        "CVE-2026-69662",
+        "CVE-2026-71189"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-71379",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-70356",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-72510",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-63713",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-68954",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-09-30T02:01:52.128439+09:00",
+      "type": "single",
+      "title": "Lantronix G520 Series Cellular Gateway",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-272-01",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-09-29T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-84409",
+        "CVE-2026-91191"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-84409",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-91191",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
     }
   ]
 }
