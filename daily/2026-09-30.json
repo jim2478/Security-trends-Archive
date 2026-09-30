@@ -2,13 +2,13 @@
   "date": "2026-09-30",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 12,
+    "scan_runs": 13,
     "total_articles_max": 1821,
     "matched_articles_max": 171,
-    "new_alerts": 12,
-    "cve_total": 30,
-    "alerts_with_cve": 9,
-    "cve_count": 30,
+    "new_alerts": 13,
+    "cve_total": 32,
+    "alerts_with_cve": 10,
+    "cve_count": 32,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -34,6 +34,8 @@
       "CVE-2026-72510",
       "CVE-2026-84409",
       "CVE-2026-84411",
+      "CVE-2026-86869",
+      "CVE-2026-86950",
       "CVE-2026-88771",
       "CVE-2026-88772",
       "CVE-2026-91191",
@@ -42,7 +44,7 @@
       "CVE-2026-96587"
     ],
     "keywords_hit": {
-      "CVE": 9,
+      "CVE": 10,
       "Malware": 4
     }
   },
@@ -452,6 +454,42 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-09-30T12:01:09.350813+09:00",
+      "type": "single",
+      "title": "\"iOS 26 쓴다면 지금 즉시 업데이트\"…애플, 아이폰·맥 긴급 보안 패치",
+      "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=703868",
+      "source": "디지털투데이 (전체기사) [RSS]",
+      "published": "2026-09-30T02:22:07+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-86950",
+        "CVE-2026-86869"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-86950",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-787 (Out-of-bounds Write)",
+          "description": "An out-of-bounds write issue was addressed with improved bounds checking. This issue is fixed in iOS 26.7.1 and iPadOS 26.7.1, macOS Sequoia 15.8.1, macOS Tahoe 26.7.1. Processing a maliciously crafted file may lead to arbitrary code execution. Apple is aware of a report that this issue may have been exploited in an extremely sophisticated attack against specific targeted individuals on versions of iOS before iOS 27.",
+          "epss_score": 0.00812,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-86869",
+          "cvss_score": 6.5,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-787 (Out-of-bounds Write)",
+          "description": "An out-of-bounds write issue was addressed with improved bounds checking. This issue is fixed in iOS 26.7 and iPadOS 26.7, macOS Golden Gate 27. Processing a maliciously crafted image may lead to unexpected app termination.",
+          "epss_score": 0.00341,
+          "kev": false
+        }
+      ]
     }
   ]
 }
