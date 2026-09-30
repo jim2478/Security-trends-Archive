@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-01",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 1,
+    "total_articles_max": 1791,
+    "matched_articles_max": 166,
+    "new_alerts": 2,
+    "cve_total": 0,
+    "alerts_with_cve": 0,
+    "cve_count": 0,
+    "ioc_count": 22,
+    "merged_count": 0,
+    "unique_cves": [],
+    "keywords_hit": {
+      "Malware": 2
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-10-01T00:01:25.478630+09:00",
+      "type": "single",
+      "title": "Mobile malware warning from Ukrainian researchers includes iPhone exploit kit",
+      "url": "https://therecord.media/ukraine-ssscip-mobile-malware-warning-ios-android",
+      "source": "The Record by Recorded Future (위협뉴스) [RSS]",
+      "published": "2026-09-30T14:00:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-01T00:01:25.478630+09:00",
+      "type": "single",
+      "title": "2CLoader: A New Malware Loader Delivering Vidar and Remus",
+      "url": "https://www.zscaler.com/blogs/security-research/2cloader-new-malware-loader-delivering-vidar-and-remus",
+      "source": "Zscaler ThreatLabz (위협연구) [RSS]",
+      "published": "2026-09-30T14:28:23+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "[URL] hxxps://aware-cr1[.]com/api/beacon\n[URL] hxxp://62[.]60[.]226[.]185/t0907.exe\n[SHA256] 0017821181723261801e24abb9d33c739f382889d46dbf46d320c87ac62e5ca6\n[SHA256] 06185d74edbdc06f99095e96f74aa2e49a1cda2d02a294c11a9ac35a0231075e\n[SHA256] 066d83b98a2081e0bb075c94376aebc9b0fd6499025cab1762d83bbb4d7576c6\n[SHA256] 0a2ef2c360cf6e3e3e5d844ca03fecc31924ba0e8c3ecd8aefa778cae10fb19e\n[SHA256] 0d2abd7d872196abd951f1d7ed6406486499e5d5acc04f28fcd4f45b1851711e\n[SHA256] 0e4d6c385922938ecc1962dbc7e5950b086459b172b70a945414cffe4395aa27\n[SHA256] 0ee6df8a309443c86c0bba8b376f39531513d3451b46bebd4b79bb9d5bf8dcb1\n[SHA256] 1337ed6fe9c6205b569670a40eab42b51ba69c5c1724d61474e8595acd90ecfb\n[SHA256] 1447ed0893b9095f671e2f35a2a0127890040b5459534813b0f83c3e1fffa0bf\n[SHA256] 1b195181a2603b0b2608d49134af8c170225c2e06873c1fe5cd537db9018807f\n[SHA256] 246717653bc2ae2e09036bac56c9d79940c652972a73f4c6aa9b925c28cce095\n[SHA256] 2ad9b5e1c9952e95cfa55a4255e952962b6208ae1ca610caf1c7c2383be7e74b\n[SHA256] 2c786f7009cc5e1fba5471a88b23b34dce6e1578ee9f664ec62bf48227ba384b\n[SHA256] 2d43d592630ad1e012da63ef7279f95dd4a8e94964e12ca2f996051875574fa6\n[SHA256] 30cf47caf9700a74a8ea4a728b8b7c88cb1f8e22261b4ac01575b112c1e224ca\n[SHA256] 3286ff477ccd888479b96d0ffb2bd53962862db7267a4bd1c8d8f8c22fec63d4\n[SHA256] 331fd58d489e9fb888a5e4193d0e36f6ff29063808c59a164d98e26835054972\n[SHA256] 45d46e7064ba4b4cb578659f73ee354ad26cf2cc1e7f59bd3d15028e1e46a38b\n[SHA256] 4c16f5ebd5c633b7a793ffa2cd96daddc5a503d82ed4fbe636109d89164ec02b\n[SHA256] 5edcaa75a28e5cd700bf7643b275fe5d28649aa41a0711f391ec1fca795a4e8a",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
