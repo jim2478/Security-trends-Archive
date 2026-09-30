@@ -2,10 +2,10 @@
   "date": "2026-10-01",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
+    "scan_runs": 3,
     "total_articles_max": 1811,
-    "matched_articles_max": 168,
-    "new_alerts": 4,
+    "matched_articles_max": 169,
+    "new_alerts": 5,
     "cve_total": 1,
     "alerts_with_cve": 1,
     "cve_count": 1,
@@ -16,7 +16,7 @@
     ],
     "keywords_hit": {
       "Malware": 3,
-      "CVE": 1
+      "CVE": 2
     }
   },
   "alerts": [
@@ -83,6 +83,20 @@
       "published": "2026-09-30T15:00:15+00:00",
       "keywords": [
         "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-01T02:01:21.347709+09:00",
+      "type": "single",
+      "title": "Securing the Kubernetes Supply Chain: Introducing WizOS Helm Charts",
+      "url": "https://www.wiz.io/blog/wizos-helm-charts",
+      "source": "Wiz Blog (클라우드보안) [RSS]",
+      "published": "2026-09-30T15:52:31+00:00",
+      "keywords": [
+        "CVE"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
