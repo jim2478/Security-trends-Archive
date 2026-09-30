@@ -2,13 +2,13 @@
   "date": "2026-09-30",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 20,
+    "scan_runs": 21,
     "total_articles_max": 1821,
     "matched_articles_max": 171,
-    "new_alerts": 16,
-    "cve_total": 34,
-    "alerts_with_cve": 12,
-    "cve_count": 34,
+    "new_alerts": 17,
+    "cve_total": 35,
+    "alerts_with_cve": 13,
+    "cve_count": 35,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -32,6 +32,7 @@
       "CVE-2026-71379",
       "CVE-2026-72507",
       "CVE-2026-72510",
+      "CVE-2026-82329",
       "CVE-2026-84409",
       "CVE-2026-84411",
       "CVE-2026-86869",
@@ -44,7 +45,7 @@
       "CVE-2026-96587"
     ],
     "keywords_hit": {
-      "CVE": 12,
+      "CVE": 13,
       "Malware": 4,
       "DDoS": 1
     }
@@ -557,6 +558,32 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-09-30T20:01:02.364348+09:00",
+      "type": "single",
+      "title": "OpenInfra Europe’s JFrog Artifactory instance breached, packages potentially compromised",
+      "url": "https://www.helpnetsecurity.com/2026/09/30/openinfra-jfrog-artifactory-instance-compromised/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-09-30T10:39:26+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-82329"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-82329",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-287 (Authentication Bypass)",
+          "description": "JFrog Artifactory contains an authentication weakness that, under default configuration, may allow an unauthenticated attacker with network access to obtain administrative privileges.",
+          "epss_score": 0.14121,
+          "kev": true
+        }
+      ]
     }
   ]
 }
