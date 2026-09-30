@@ -2,10 +2,10 @@
   "date": "2026-10-01",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 8,
+    "scan_runs": 9,
     "total_articles_max": 1821,
     "matched_articles_max": 173,
-    "new_alerts": 8,
+    "new_alerts": 9,
     "cve_total": 3,
     "alerts_with_cve": 3,
     "cve_count": 3,
@@ -17,7 +17,7 @@
       "CVE-2026-86131"
     ],
     "keywords_hit": {
-      "Malware": 4,
+      "Malware": 5,
       "CVE": 4
     }
   },
@@ -163,6 +163,20 @@
       "url": "https://www.bleepingcomputer.com/news/security/russian-state-hackers-use-new-redflick-technique-to-push-malware/",
       "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
       "published": "2026-09-30T20:34:01+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-01T08:01:11.485868+09:00",
+      "type": "single",
+      "title": "US sanctions 10 over ATM malware scheme tied to Tren de Aragua",
+      "url": "https://therecord.media/us-sanctions-10-atm-jackpotting-tren-de-aragua",
+      "source": "The Record by Recorded Future (위협뉴스) [RSS]",
+      "published": "2026-09-30T22:35:00+00:00",
       "keywords": [
         "Malware"
       ],
