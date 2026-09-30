@@ -2,10 +2,10 @@
   "date": "2026-09-30",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 18,
+    "scan_runs": 19,
     "total_articles_max": 1821,
     "matched_articles_max": 171,
-    "new_alerts": 15,
+    "new_alerts": 16,
     "cve_total": 34,
     "alerts_with_cve": 12,
     "cve_count": 34,
@@ -45,7 +45,8 @@
     ],
     "keywords_hit": {
       "CVE": 12,
-      "Malware": 4
+      "Malware": 4,
+      "DDoS": 1
     }
   },
   "alerts": [
@@ -542,6 +543,20 @@
           "kev": true
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-09-30T18:01:05.006358+09:00",
+      "type": "single",
+      "title": "Why DDOS Attacks on Government Websites Succeed",
+      "url": "http://www.ddosinfo.com/uncategorized/ddos-attacks-on-government-websites/",
+      "source": "DDoS Info [RSS]",
+      "published": "2026-09-30T08:00:07+00:00",
+      "keywords": [
+        "DDoS"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
