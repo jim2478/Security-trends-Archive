@@ -2,22 +2,23 @@
   "date": "2026-10-01",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 6,
+    "scan_runs": 7,
     "total_articles_max": 1821,
-    "matched_articles_max": 171,
-    "new_alerts": 6,
-    "cve_total": 2,
-    "alerts_with_cve": 2,
-    "cve_count": 2,
+    "matched_articles_max": 173,
+    "new_alerts": 8,
+    "cve_total": 3,
+    "alerts_with_cve": 3,
+    "cve_count": 3,
     "ioc_count": 22,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2026-73570",
-      "CVE-2026-76504"
+      "CVE-2026-76504",
+      "CVE-2026-86131"
     ],
     "keywords_hit": {
-      "Malware": 3,
-      "CVE": 3
+      "Malware": 4,
+      "CVE": 4
     }
   },
   "alerts": [
@@ -128,6 +129,46 @@
           "kev": true
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-10-01T06:01:14.045083+09:00",
+      "type": "single",
+      "title": "WatchGuard fixes critical Fireware OS flaw allowing remote code execution",
+      "url": "https://securityaffairs.com/200108/security/watchguard-fixes-critical-fireware-os-flaw-allowing-remote-code-execution.html",
+      "source": "Security Affairs (보안뉴스/위협동향) [RSS]",
+      "published": "2026-09-30T19:29:45+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-86131"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-86131",
+          "cvss_score": 9.2,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-94 (Code Injection)",
+          "description": "A code injection vulnerability in WatchGuard Fireware OS's BOVPN Over TLS client configuration handling allows an attacker who controls the remote VPN server to execute arbitrary commands as root on the connecting Firebox.",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-01T06:01:14.045083+09:00",
+      "type": "single",
+      "title": "Russian state hackers use new RedFlick technique to push malware",
+      "url": "https://www.bleepingcomputer.com/news/security/russian-state-hackers-use-new-redflick-technique-to-push-malware/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-09-30T20:34:01+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
