@@ -2,10 +2,10 @@
   "date": "2026-09-30",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 21,
+    "scan_runs": 22,
     "total_articles_max": 1821,
     "matched_articles_max": 171,
-    "new_alerts": 17,
+    "new_alerts": 18,
     "cve_total": 35,
     "alerts_with_cve": 13,
     "cve_count": 35,
@@ -46,7 +46,7 @@
     ],
     "keywords_hit": {
       "CVE": 13,
-      "Malware": 4,
+      "Malware": 5,
       "DDoS": 1
     }
   },
@@ -584,6 +584,20 @@
           "kev": true
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-09-30T21:01:09.399159+09:00",
+      "type": "single",
+      "title": "Attackers Combine ChatGPT Feature Abuse With ClickFix to Deliver Trojan Malware",
+      "url": "https://www.infosecurity-magazine.com/news/chatgpt-feature-abuse-to-deliver/",
+      "source": "Infosecurity Magazine (보안뉴스) [RSS]",
+      "published": "2026-09-30T11:30:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
