@@ -2,15 +2,15 @@
   "date": "2026-09-30",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 22,
+    "scan_runs": 23,
     "total_articles_max": 1821,
     "matched_articles_max": 171,
-    "new_alerts": 18,
-    "cve_total": 35,
-    "alerts_with_cve": 13,
-    "cve_count": 35,
+    "new_alerts": 20,
+    "cve_total": 40,
+    "alerts_with_cve": 14,
+    "cve_count": 40,
     "ioc_count": 0,
-    "merged_count": 0,
+    "merged_count": 1,
     "unique_cves": [
       "CVE-2026-100291",
       "CVE-2026-100292",
@@ -23,6 +23,7 @@
       "CVE-2026-100299",
       "CVE-2026-22755",
       "CVE-2026-63713",
+      "CVE-2026-65660",
       "CVE-2026-68068",
       "CVE-2026-68954",
       "CVE-2026-69662",
@@ -45,8 +46,8 @@
       "CVE-2026-96587"
     ],
     "keywords_hit": {
-      "CVE": 13,
-      "Malware": 5,
+      "CVE": 14,
+      "Malware": 6,
       "DDoS": 1
     }
   },
@@ -592,6 +593,74 @@
       "url": "https://www.infosecurity-magazine.com/news/chatgpt-feature-abuse-to-deliver/",
       "source": "Infosecurity Magazine (보안뉴스) [RSS]",
       "published": "2026-09-30T11:30:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-09-30T22:01:28.255943+09:00",
+      "type": "merged",
+      "cve_ids": [
+        "CVE-2026-88771",
+        "CVE-2026-88772",
+        "CVE-2026-65660"
+      ],
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "sources": [
+        {
+          "title": "Government, Finance Orgs Targeted in Weeks-Long NetScaler Zero-Day Attacks",
+          "url": "https://www.securityweek.com/government-finance-orgs-targeted-in-weeks-long-netscaler-zero-day-attacks/",
+          "source": "SecurityWeek (보안뉴스 종합) [RSS]"
+        },
+        {
+          "title": "Suspected state-sponsored hackers exploited NetScaler zero-day since early September (CVE-2026-88772)",
+          "url": "https://www.helpnetsecurity.com/2026/09/30/cve-2026-88772-netscaler-exploitation-zero-day/",
+          "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]"
+        }
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-88771",
+          "cvss_score": 9.5,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-20 (Improper Input Validation)",
+          "description": "Improper input validation vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.\n\nThis issue affects ADC: before 14.1-73.37, before 13.1-64.23, before 14.1-73.37 FIPS, and before 13.1.37.279 FIPS and NDcPP; Gateway: before 14.1-73.37 and before 13.1-64.23 leading to an unauthenticated attacker to execute arbitrary commands.",
+          "epss_score": 0.01063,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-88772",
+          "cvss_score": 9.5,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-119 (Buffer Overflow)",
+          "description": "Vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.\n\nThis issue affects ADC: before 14.1-73.37, before 13.1-64.23, before 14.1-73.37 FIPS, and before 13.1.37.279 FIPS and NDcPP; Gateway: before 14.1-73.37 and before 13.1-64.23 leading to Remote Code Execution or Denial of Service",
+          "epss_score": 0.01301,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-65660",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-94 (Code Injection)",
+          "description": "Improper control of generation of code ('code injection') in Microsoft Office SharePoint allows an authorized attacker to execute code over a network.",
+          "epss_score": 0.02101,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-09-30T22:01:28.255943+09:00",
+      "type": "single",
+      "title": "Russian FSB-linked hackers scale up phishing attacks against Ukraine supporters",
+      "url": "https://therecord.media/russia-hackers-ukraine-blizzard",
+      "source": "The Record by Recorded Future (위협뉴스) [RSS]",
+      "published": "2026-09-30T12:00:00+00:00",
       "keywords": [
         "Malware"
       ],
