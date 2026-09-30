@@ -2,13 +2,13 @@
   "date": "2026-09-30",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 17,
+    "scan_runs": 18,
     "total_articles_max": 1821,
     "matched_articles_max": 171,
-    "new_alerts": 14,
-    "cve_total": 33,
-    "alerts_with_cve": 11,
-    "cve_count": 33,
+    "new_alerts": 15,
+    "cve_total": 34,
+    "alerts_with_cve": 12,
+    "cve_count": 34,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -44,7 +44,7 @@
       "CVE-2026-96587"
     ],
     "keywords_hit": {
-      "CVE": 11,
+      "CVE": 12,
       "Malware": 4
     }
   },
@@ -498,6 +498,32 @@
       "url": "https://thehackernews.com/2026/09/citrix-netscaler-cve-2026-88772-exploit.html",
       "source": "The Hacker News (보안뉴스 종합) [RSS]",
       "published": "2026-09-30T05:30:30+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-88772"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-88772",
+          "cvss_score": 9.5,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-119 (Buffer Overflow)",
+          "description": "Vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.\n\nThis issue affects ADC: before 14.1-73.37, before 13.1-64.23, before 14.1-73.37 FIPS, and before 13.1.37.279 FIPS and NDcPP; Gateway: before 14.1-73.37 and before 13.1-64.23 leading to Remote Code Execution or Denial of Service",
+          "epss_score": 0.01301,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-09-30T17:01:07.628906+09:00",
+      "type": "single",
+      "title": "WHIPSHOT and SLAPSHOT: the tools behind an active Citrix NetScaler campaign",
+      "url": "https://securityaffairs.com/200046/security/whipshot-and-slapshot-the-tools-behind-an-active-citrix-netscaler-campaign.html",
+      "source": "Security Affairs (보안뉴스/위협동향) [RSS]",
+      "published": "2026-09-30T07:25:36+00:00",
       "keywords": [
         "CVE"
       ],
