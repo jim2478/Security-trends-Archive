@@ -2,15 +2,15 @@
   "date": "2026-10-01",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 20,
+    "scan_runs": 21,
     "total_articles_max": 1821,
-    "matched_articles_max": 181,
-    "new_alerts": 17,
-    "cve_total": 14,
-    "alerts_with_cve": 8,
-    "cve_count": 14,
+    "matched_articles_max": 182,
+    "new_alerts": 20,
+    "cve_total": 16,
+    "alerts_with_cve": 9,
+    "cve_count": 16,
     "ioc_count": 22,
-    "merged_count": 0,
+    "merged_count": 1,
     "unique_cves": [
       "CVE-2025-3248",
       "CVE-2026-0017",
@@ -27,8 +27,8 @@
       "CVE-2026-86950"
     ],
     "keywords_hit": {
-      "CVE": 9,
-      "Malware": 7,
+      "CVE": 10,
+      "Malware": 9,
       "DDoS": 1
     }
   },
@@ -422,6 +422,68 @@
       "published": "2026-10-01T09:00:02+00:00",
       "keywords": [
         "DDoS"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-01T20:01:13.647415+09:00",
+      "type": "merged",
+      "cve_ids": [
+        "CVE-2026-76504"
+      ],
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "sources": [
+        {
+          "title": "CISA Adds Exploited Cisco Catalyst SD-WAN Manager Auth Bypass to KEV",
+          "url": "https://thehackernews.com/2026/10/cisa-adds-exploited-cisco-catalyst-sd.html",
+          "source": "The Hacker News (보안뉴스 종합) [RSS]"
+        },
+        {
+          "title": "New Cisco SD-WAN zero-day exploited in-the-wild (CVE-2026-76504)",
+          "url": "https://www.helpnetsecurity.com/2026/10/01/new-cisco-sd-wan-zero-day-exploited-in-the-wild-cve-2026-76504/",
+          "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]"
+        }
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-76504",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-177",
+          "description": "A vulnerability in the API session-based authentication management of Cisco Catalyst SD-WAN Manager could allow an unauthenticated, remote attacker to access an affected system with privileges of the admin user.\r\n\r\nThis vulnerability is due to improper handling of URI encoding in an HTTP request, which allows the request to bypass an authentication rule that is intended to restrict access to a specific API endpoint. An attacker could exploit this vulnerability by sending a crafted HTTP request t",
+          "epss_score": null,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-01T20:01:13.647415+09:00",
+      "type": "single",
+      "title": "Treasury Blacklists Most-Wanted ATM Malware Developer and His Network",
+      "url": "https://www.securityweek.com/treasury-blacklists-most-wanted-atm-malware-developer-and-his-network/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-10-01T10:51:39+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-01T20:01:13.647415+09:00",
+      "type": "single",
+      "title": "Malwarebytes earns another Top Product award in independent testing",
+      "url": "https://www.malwarebytes.com/blog/product/2026/10/malwarebytes-earns-another-top-product-award-in-independent-testing",
+      "source": "Malwarebytes Labs (악성코드/스캠) [RSS]",
+      "published": "2026-10-01T10:51:52+00:00",
+      "keywords": [
+        "Malware"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
