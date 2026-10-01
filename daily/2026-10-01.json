@@ -2,10 +2,10 @@
   "date": "2026-10-01",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 19,
+    "scan_runs": 20,
     "total_articles_max": 1821,
     "matched_articles_max": 181,
-    "new_alerts": 16,
+    "new_alerts": 17,
     "cve_total": 14,
     "alerts_with_cve": 8,
     "cve_count": 14,
@@ -28,7 +28,8 @@
     ],
     "keywords_hit": {
       "CVE": 9,
-      "Malware": 7
+      "Malware": 7,
+      "DDoS": 1
     }
   },
   "alerts": [
@@ -411,6 +412,20 @@
           "kev": true
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-10-01T19:01:03.514290+09:00",
+      "type": "single",
+      "title": "DDOS Protection Cost UK: What You Really Pay",
+      "url": "http://www.ddosinfo.com/ddos-vendors/ddos-protection-cost-uk/",
+      "source": "DDoS Info [RSS]",
+      "published": "2026-10-01T09:00:02+00:00",
+      "keywords": [
+        "DDoS"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
