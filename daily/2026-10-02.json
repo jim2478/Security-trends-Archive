@@ -2,17 +2,33 @@
   "date": "2026-10-02",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
+    "scan_runs": 3,
     "total_articles_max": 1801,
     "matched_articles_max": 180,
-    "new_alerts": 1,
-    "cve_total": 0,
-    "alerts_with_cve": 0,
-    "cve_count": 0,
+    "new_alerts": 7,
+    "cve_total": 14,
+    "alerts_with_cve": 5,
+    "cve_count": 14,
     "ioc_count": 0,
     "merged_count": 0,
-    "unique_cves": [],
+    "unique_cves": [
+      "CVE-2023-46604",
+      "CVE-2026-101104",
+      "CVE-2026-15952",
+      "CVE-2026-15953",
+      "CVE-2026-64892",
+      "CVE-2026-93474",
+      "CVE-2026-94591",
+      "CVE-2026-94592",
+      "CVE-2026-94593",
+      "CVE-2026-94594",
+      "CVE-2026-95102",
+      "CVE-2026-96613",
+      "CVE-2026-97212",
+      "CVE-2026-97363"
+    ],
     "keywords_hit": {
+      "CVE": 6,
       "Malware": 1
     }
   },
@@ -26,6 +42,240 @@
       "published": "2026-10-01T14:37:35+00:00",
       "keywords": [
         "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-02T02:01:55.013670+09:00",
+      "type": "single",
+      "title": "Armatura LLC Armatura One",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-274-01",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-10-01T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2023-46604",
+        "CVE-2026-94591",
+        "CVE-2026-94592",
+        "CVE-2026-94593",
+        "CVE-2026-94594"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2023-46604",
+          "cvss_score": 10.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-502 (Deserialization)",
+          "description": "The Java OpenWire protocol marshaller is vulnerable to Remote Code \nExecution. This vulnerability may allow a remote attacker with network \naccess to either a Java-based OpenWire broker or client to run arbitrary\n shell commands by manipulating serialized class types in the OpenWire \nprotocol to cause either the client or the broker (respectively) to \ninstantiate any class on the classpath.\n\nUsers are recommended to upgrade\n both brokers and clients to version 5.15.16, 5.16.7, 5.17.6, or 5.18.3 ",
+          "epss_score": 0.99891,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-94591",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-94592",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-94593",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-94594",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-02T02:01:55.013670+09:00",
+      "type": "single",
+      "title": "Monta monta.app",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-274-02",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-10-01T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-95102",
+        "CVE-2026-97363",
+        "CVE-2026-97212",
+        "CVE-2026-93474"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-95102",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-97363",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-97212",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-93474",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-02T02:01:55.013670+09:00",
+      "type": "single",
+      "title": "Johnson Controls EasyIO Neo Series EC and CW Controllers",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-274-04",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-10-01T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-64892"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-64892",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-02T02:01:55.013670+09:00",
+      "type": "single",
+      "title": "Meari IoT Cloud Platform OpenAPI Service",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-274-06",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-10-01T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-101104",
+        "CVE-2026-96613"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-101104",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-96613",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-02T02:01:55.013670+09:00",
+      "type": "single",
+      "title": "ABB Protection and Control IED Manager PCM600",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-274-03",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-10-01T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-15952",
+        "CVE-2026-15953"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-15952",
+          "cvss_score": 7.1,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-732",
+          "description": "Incorrect Permission Assignment for Critical Resource vulnerability in ABB Protection and control IED manager (PCM600).\n\nThis issue affects Protection and control IED manager (PCM600): through 2.14.",
+          "epss_score": 0.00092,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-15953",
+          "cvss_score": 5.6,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-22 (Path Traversal)",
+          "description": "Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability in ABB Protection and control IED manager (PCM600).\n\nThis issue affects Protection and control IED manager (PCM600): through 2.14.",
+          "epss_score": 0.00115,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-02T02:01:55.013670+09:00",
+      "type": "single",
+      "title": "CISA Malcolm",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-254-01",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-10-01T12:00:00+00:00",
+      "keywords": [
+        "CVE"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
