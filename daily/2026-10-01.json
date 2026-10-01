@@ -2,17 +2,19 @@
   "date": "2026-10-01",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 16,
+    "scan_runs": 17,
     "total_articles_max": 1821,
-    "matched_articles_max": 177,
-    "new_alerts": 13,
-    "cve_total": 11,
-    "alerts_with_cve": 5,
-    "cve_count": 11,
+    "matched_articles_max": 181,
+    "new_alerts": 15,
+    "cve_total": 13,
+    "alerts_with_cve": 7,
+    "cve_count": 13,
     "ioc_count": 22,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2025-3248",
+      "CVE-2026-0017",
+      "CVE-2026-0019",
       "CVE-2026-1731",
       "CVE-2026-19490",
       "CVE-2026-42271",
@@ -24,8 +26,8 @@
       "CVE-2026-86218"
     ],
     "keywords_hit": {
-      "Malware": 7,
-      "CVE": 6
+      "CVE": 8,
+      "Malware": 7
     }
   },
   "alerts": [
@@ -330,6 +332,58 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-01T16:01:12.256371+09:00",
+      "type": "single",
+      "title": "[NotCVE-2026-0019] game-music-emu through 0.6.5 VGM Command Interpreter Missing Operand Length Check Allows Heap Out-of-Bounds Read",
+      "url": "https://seclists.org/fulldisclosure/2026/Sep/95",
+      "source": "SecLists Full Disclosure (취약점공개)",
+      "published": "2026-10-01T06:16:41+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-0019"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-0019",
+          "cvss_score": 7.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-269 (Improper Privilege Management)",
+          "description": "In SettingsLib, there is a possible way to disable system components due to a logic error in the code. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
+          "epss_score": 0.0008,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-01T16:01:12.256371+09:00",
+      "type": "single",
+      "title": "[NotCVE-2026-0017] game-music-emu (libgme) 0.6.5 and Earlier AY Loader NULL Pointer Dereference Allows Denial of Service",
+      "url": "https://seclists.org/fulldisclosure/2026/Sep/93",
+      "source": "SecLists Full Disclosure (취약점공개)",
+      "published": "2026-10-01T06:16:39+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-0017"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-0017",
+          "cvss_score": 7.7,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-285",
+          "description": "In onChange of BiometricService.java, there is a possible way to enable fingerprint unlock due to a logic error in the code. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation.",
+          "epss_score": 0.00097,
+          "kev": false
+        }
+      ]
     }
   ]
 }
