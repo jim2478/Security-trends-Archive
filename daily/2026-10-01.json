@@ -2,17 +2,21 @@
   "date": "2026-10-01",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 15,
+    "scan_runs": 16,
     "total_articles_max": 1821,
-    "matched_articles_max": 175,
-    "new_alerts": 10,
-    "cve_total": 7,
-    "alerts_with_cve": 4,
-    "cve_count": 7,
+    "matched_articles_max": 177,
+    "new_alerts": 13,
+    "cve_total": 11,
+    "alerts_with_cve": 5,
+    "cve_count": 11,
     "ioc_count": 22,
     "merged_count": 0,
     "unique_cves": [
+      "CVE-2025-3248",
+      "CVE-2026-1731",
       "CVE-2026-19490",
+      "CVE-2026-42271",
+      "CVE-2026-5027",
       "CVE-2026-73570",
       "CVE-2026-76504",
       "CVE-2026-85706",
@@ -20,8 +24,8 @@
       "CVE-2026-86218"
     ],
     "keywords_hit": {
-      "Malware": 5,
-      "CVE": 5
+      "Malware": 7,
+      "CVE": 6
     }
   },
   "alerts": [
@@ -242,6 +246,90 @@
           "kev": true
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-10-01T15:01:14.439673+09:00",
+      "type": "single",
+      "title": "The vulnerabilities AI finds are the ones attackers want",
+      "url": "https://www.helpnetsecurity.com/2026/10/01/google-ai-discovered-vulnerabilities-remote-code-execution/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-10-01T05:00:35+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-1731",
+        "CVE-2026-42271",
+        "CVE-2026-5027",
+        "CVE-2025-3248"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-1731",
+          "cvss_score": 9.9,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-78 (OS Command Injection)",
+          "description": "BeyondTrust Remote Support (RS) and certain older versions of Privileged Remote Access (PRA) contain a critical pre-authentication remote code execution vulnerability. By sending specially crafted requests, an unauthenticated remote attacker may be able to execute operating system commands in the context of the site user.",
+          "epss_score": 0.90963,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-42271",
+          "cvss_score": 8.7,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-77 (Command Injection)",
+          "description": "LiteLLM is a proxy server (AI Gateway) to call LLM APIs in OpenAI (or native) format. From version 1.74.2 to before version 1.83.7, two endpoints used to preview an MCP server before saving it — POST /mcp-rest/test/connection and POST /mcp-rest/test/tools/list — accepted a full server configuration in the request body, including the command, args, and env fields used by the stdio transport. When called with a stdio configuration, the endpoints attempted to connect, which spawned the supplied com",
+          "epss_score": 0.9257,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-5027",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-22 (Path Traversal)",
+          "description": "The 'POST /api/v2/files' endpoint does not sanitize the 'filename' parameter from the multipart form data, allowing an attacker to write files to arbitrary locations on the filesystem using path traversal sequences ('../').",
+          "epss_score": 0.04758,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2025-3248",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-306 (Missing Authentication)",
+          "description": "Langflow versions prior to 1.3.0 are susceptible to code injection in \nthe /api/v1/validate/code endpoint. A remote and unauthenticated attacker can send crafted HTTP requests to execute arbitrary\ncode.",
+          "epss_score": 0.99993,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-01T15:01:14.439673+09:00",
+      "type": "single",
+      "title": "Many expect AI in the SOC to make entry jobs harder to get",
+      "url": "https://www.helpnetsecurity.com/2026/10/01/ai-soc-entry-jobs/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-10-01T05:30:08+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-01T15:01:14.439673+09:00",
+      "type": "single",
+      "title": "ScreenConnect Client (Ab)used by Attackers, (Thu, Oct 1st)",
+      "url": "https://isc.sans.edu/diary/rss/33388",
+      "source": "SANS ISC (인터넷폭풍센터) [RSS]",
+      "published": "2026-10-01T05:32:13+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
