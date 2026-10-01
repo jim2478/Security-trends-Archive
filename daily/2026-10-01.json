@@ -2,23 +2,26 @@
   "date": "2026-10-01",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 10,
+    "scan_runs": 11,
     "total_articles_max": 1821,
-    "matched_articles_max": 173,
-    "new_alerts": 9,
-    "cve_total": 3,
-    "alerts_with_cve": 3,
-    "cve_count": 3,
+    "matched_articles_max": 174,
+    "new_alerts": 10,
+    "cve_total": 7,
+    "alerts_with_cve": 4,
+    "cve_count": 7,
     "ioc_count": 22,
     "merged_count": 0,
     "unique_cves": [
+      "CVE-2026-19490",
       "CVE-2026-73570",
       "CVE-2026-76504",
-      "CVE-2026-86131"
+      "CVE-2026-85706",
+      "CVE-2026-86131",
+      "CVE-2026-86218"
     ],
     "keywords_hit": {
       "Malware": 5,
-      "CVE": 4
+      "CVE": 5
     }
   },
   "alerts": [
@@ -183,6 +186,62 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-01T10:00:59.091118+09:00",
+      "type": "single",
+      "title": "CVE-2026-76504 | Cisco Catalyst SD-WAN Manager API Authentication Bypass Vulnerability | Reversed by Horizon3",
+      "url": "https://horizon3.ai/attack-research/vulnerabilities/cve-2026-76504/",
+      "source": "Horizon3.ai (공격시뮬레이션) [RSS]",
+      "published": "2026-10-01T00:35:46+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-76504",
+        "CVE-2026-19490",
+        "CVE-2026-86218",
+        "CVE-2026-85706"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-76504",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-177",
+          "description": "A vulnerability in the API session-based authentication management of Cisco Catalyst SD-WAN Manager could allow an unauthenticated, remote attacker to access an affected system with privileges of the admin user.\r\n\r\nThis vulnerability is due to improper handling of URI encoding in an HTTP request, which allows the request to bypass an authentication rule that is intended to restrict access to a specific API endpoint. An attacker could exploit this vulnerability by sending a crafted HTTP request t",
+          "epss_score": null,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-19490",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-288",
+          "description": "Vulnerability in NetScaler ADC and NetScaler Gateway.\n\nThis issue affects ADC: from 14.1 through 73.32 and from 13.1 through 63.21; Gateway: from 14.1 through 73.32 and from 13.1 through 63.21.",
+          "epss_score": 0.0701,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-86218",
+          "cvss_score": 10.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-96",
+          "description": "N-central is vulnerable to a pre-auth remote code execution This issue affects N-central: before 2026.3.1.14.",
+          "epss_score": 0.12928,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-85706",
+          "cvss_score": 10.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-22 (Path Traversal)",
+          "description": "GitLab has remediated an issue in GitLab CE/EE affecting all versions from 18.7 before 18.11.12, 19.0 before 19.0.9, 19.1 before 19.1.8, 19.2 before 19.2.6, and 19.3 before 19.3.2 that, under certain conditions, an unauthenticated user could have read arbitrary files from the GitLab server due to improper path confinement and missing authentication enforcement in the repository commits API.",
+          "epss_score": 0.91425,
+          "kev": true
+        }
+      ]
     }
   ]
 }
