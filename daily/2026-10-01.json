@@ -2,10 +2,10 @@
   "date": "2026-10-01",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 23,
+    "scan_runs": 24,
     "total_articles_max": 1821,
     "matched_articles_max": 184,
-    "new_alerts": 22,
+    "new_alerts": 23,
     "cve_total": 18,
     "alerts_with_cve": 11,
     "cve_count": 18,
@@ -28,7 +28,7 @@
     ],
     "keywords_hit": {
       "CVE": 12,
-      "Malware": 9,
+      "Malware": 10,
       "DDoS": 1
     }
   },
@@ -540,6 +540,20 @@
           "kev": true
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-10-01T23:01:20.832651+09:00",
+      "type": "single",
+      "title": "Threat Coverage Digest: New Malware Reports and 1,100+ Detection Rules",
+      "url": "https://any.run/cybersecurity-blog/september-threat-coverage-2026/",
+      "source": "ANY.RUN (악성코드샌드박스분석) [RSS]",
+      "published": "2026-10-01T13:13:27+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
