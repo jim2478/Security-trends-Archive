@@ -2,13 +2,13 @@
   "date": "2026-10-01",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 22,
+    "scan_runs": 23,
     "total_articles_max": 1821,
     "matched_articles_max": 184,
-    "new_alerts": 20,
-    "cve_total": 16,
-    "alerts_with_cve": 9,
-    "cve_count": 16,
+    "new_alerts": 22,
+    "cve_total": 18,
+    "alerts_with_cve": 11,
+    "cve_count": 18,
     "ioc_count": 22,
     "merged_count": 1,
     "unique_cves": [
@@ -27,7 +27,7 @@
       "CVE-2026-86950"
     ],
     "keywords_hit": {
-      "CVE": 10,
+      "CVE": 12,
       "Malware": 9,
       "DDoS": 1
     }
@@ -488,6 +488,58 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-01T22:01:24.011301+09:00",
+      "type": "single",
+      "title": "Zimbra Vulnerability Exploited in the Wild Prior to Public Disclosure",
+      "url": "https://www.securityweek.com/zimbra-vulnerability-exploited-in-the-wild-prior-to-public-disclosure/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-10-01T12:55:57+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-73570"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-73570",
+          "cvss_score": 8.9,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-78 (OS Command Injection)",
+          "description": "A remote code execution vulnerability exists in Zimbra Collaboration (ZCS) before 10.1.20 when the optional zimbra-snmp package is installed and SNMP notifications are enabled. Due to improper sanitization of untrusted input during SNMP notification processing, an unauthenticated attacker can send specially crafted SMTP requests that may result in execution of arbitrary operating system commands as the Zimbra user.",
+          "epss_score": 0.11736,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-01T22:01:24.011301+09:00",
+      "type": "single",
+      "title": "Public PoC Released for Apple CoreGraphics Zero-Day CVE-2026-86950",
+      "url": "https://securityaffairs.com/200175/hacking/public-poc-released-for-apple-coregraphics-zero-day-cve-2026-86950.html",
+      "source": "Security Affairs (보안뉴스/위협동향) [RSS]",
+      "published": "2026-10-01T12:08:19+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-86950"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-86950",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-787 (Out-of-bounds Write)",
+          "description": "An out-of-bounds write issue was addressed with improved bounds checking. This issue is fixed in iOS 26.7.1 and iPadOS 26.7.1, macOS Sequoia 15.8.1, macOS Tahoe 26.7.1. Processing a maliciously crafted file may lead to arbitrary code execution. Apple is aware of a report that this issue may have been exploited in an extremely sophisticated attack against specific targeted individuals on versions of iOS before iOS 27.",
+          "epss_score": 0.00812,
+          "kev": true
+        }
+      ]
     }
   ]
 }
