@@ -2,10 +2,10 @@
   "date": "2026-10-02",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 14,
+    "scan_runs": 15,
     "total_articles_max": 1821,
     "matched_articles_max": 184,
-    "new_alerts": 8,
+    "new_alerts": 9,
     "cve_total": 14,
     "alerts_with_cve": 5,
     "cve_count": 14,
@@ -29,7 +29,8 @@
     ],
     "keywords_hit": {
       "CVE": 6,
-      "Malware": 2
+      "Malware": 2,
+      "Botnet": 1
     }
   },
   "alerts": [
@@ -290,6 +291,20 @@
       "published": "2026-10-01T19:32:47+00:00",
       "keywords": [
         "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-02T14:01:00.006595+09:00",
+      "type": "single",
+      "title": "Botnets, adversarial attacks and data poisoning top leaders’ AI threat list",
+      "url": "https://www.helpnetsecurity.com/2026/10/02/pwc-attacks-on-ai-systems/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-10-02T05:00:28+00:00",
+      "keywords": [
+        "Botnet"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
