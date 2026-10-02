@@ -2,10 +2,10 @@
   "date": "2026-10-02",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 22,
+    "scan_runs": 23,
     "total_articles_max": 1821,
     "matched_articles_max": 186,
-    "new_alerts": 13,
+    "new_alerts": 14,
     "cve_total": 16,
     "alerts_with_cve": 7,
     "cve_count": 16,
@@ -30,7 +30,7 @@
     ],
     "keywords_hit": {
       "CVE": 8,
-      "Malware": 3,
+      "Malware": 4,
       "Botnet": 1,
       "DDoS": 1
     }
@@ -387,6 +387,20 @@
       "published": "2026-10-02T06:51:26+00:00",
       "keywords": [
         "DDoS"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-02T22:01:21.192560+09:00",
+      "type": "single",
+      "title": "AI is giving attackers a head start, Microsoft warns",
+      "url": "https://www.helpnetsecurity.com/2026/10/02/ai-cybersecurity-threats-microsoft-report/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-10-02T12:47:00+00:00",
+      "keywords": [
+        "Malware"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
