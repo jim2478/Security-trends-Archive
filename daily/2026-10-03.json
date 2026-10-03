@@ -2,20 +2,21 @@
   "date": "2026-10-03",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 21,
+    "scan_runs": 22,
     "total_articles_max": 1821,
     "matched_articles_max": 186,
-    "new_alerts": 1,
-    "cve_total": 1,
-    "alerts_with_cve": 1,
-    "cve_count": 1,
+    "new_alerts": 2,
+    "cve_total": 2,
+    "alerts_with_cve": 2,
+    "cve_count": 2,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
-      "CVE-2026-63688"
+      "CVE-2026-63688",
+      "CVE-2026-90970"
     ],
     "keywords_hit": {
-      "CVE": 1
+      "CVE": 2
     }
   },
   "alerts": [
@@ -40,6 +41,32 @@
           "cvss_severity": null,
           "cwe": null,
           "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-03T21:00:59.078635+09:00",
+      "type": "single",
+      "title": "CVE-2026-90970: Critical GitLab AI Gateway Flaw Fixed",
+      "url": "https://securityaffairs.com/200283/hacking/cve-2026-90970-critical-gitlab-ai-gateway-flaw-fixed.html",
+      "source": "Security Affairs (보안뉴스/위협동향) [RSS]",
+      "published": "2026-10-03T10:43:39+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-90970"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-90970",
+          "cvss_score": 9.9,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-1336",
+          "description": "GitLab has remediated a vulnerability in the GitLab AI Gateway component affecting all versions of the AI Gateway from 18.1.6 before 19.2.4, 19.3 before 19.3.2, and 19.4 before 19.4.1 that, under certain conditions, could have allowed an authenticated user with Duo Agent Platform access to escape the prompt template sandbox via a specially crafted flow configuration, resulting in arbitrary command execution on the AI Gateway.",
           "epss_score": null,
           "kev": false
         }
