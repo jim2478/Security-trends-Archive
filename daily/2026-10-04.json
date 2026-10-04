@@ -2,13 +2,13 @@
   "date": "2026-10-04",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 18,
+    "scan_runs": 19,
     "total_articles_max": 1813,
     "matched_articles_max": 182,
-    "new_alerts": 2,
-    "cve_total": 7,
-    "alerts_with_cve": 2,
-    "cve_count": 7,
+    "new_alerts": 3,
+    "cve_total": 8,
+    "alerts_with_cve": 3,
+    "cve_count": 8,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -18,10 +18,11 @@
       "CVE-2026-76504",
       "CVE-2026-86950",
       "CVE-2026-88771",
-      "CVE-2026-88772"
+      "CVE-2026-88772",
+      "CVE-2026-90970"
     ],
     "keywords_hit": {
-      "CVE": 2
+      "CVE": 3
     }
   },
   "alerts": [
@@ -124,6 +125,32 @@
           "description": "An improper limitation of a pathname to a restricted directory ('path traversal') vulnerability in Fortinet FortiMail 8.0.0 through 8.0.1, FortiMail 7.6.0 through 7.6.6, FortiMail 7.4.0 through 7.4.8, FortiMail 7.2.0 through 7.2.9 may allow an unauthenticated attacker to write arbitrary files on the underlying system via crafted HTTP or HTTPS requests.",
           "epss_score": 0.02201,
           "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-04T18:01:05.578464+09:00",
+      "type": "single",
+      "title": "Security Affairs newsletter Round 598 by Pierluigi Paganini – INTERNATIONAL EDITION",
+      "url": "https://securityaffairs.com/200326/breaking-news/security-affairs-newsletter-round-598-by-pierluigi-paganini-international-edition.html",
+      "source": "Security Affairs (보안뉴스/위협동향) [RSS]",
+      "published": "2026-10-04T07:58:06+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-90970"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-90970",
+          "cvss_score": 9.9,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-1336",
+          "description": "GitLab has remediated a vulnerability in the GitLab AI Gateway component affecting all versions of the AI Gateway from 18.1.6 before 19.2.4, 19.3 before 19.3.2, and 19.4 before 19.4.1 that, under certain conditions, could have allowed an authenticated user with Duo Agent Platform access to escape the prompt template sandbox via a specially crafted flow configuration, resulting in arbitrary command execution on the AI Gateway.",
+          "epss_score": 0.00943,
+          "kev": false
         }
       ]
     }
