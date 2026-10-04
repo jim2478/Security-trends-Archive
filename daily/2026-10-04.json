@@ -2,17 +2,59 @@
   "date": "2026-10-04",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 12,
+    "scan_runs": 13,
     "total_articles_max": 1813,
     "matched_articles_max": 182,
-    "new_alerts": 0,
-    "cve_total": 0,
-    "alerts_with_cve": 0,
-    "cve_count": 0,
+    "new_alerts": 1,
+    "cve_total": 2,
+    "alerts_with_cve": 1,
+    "cve_count": 2,
     "ioc_count": 0,
     "merged_count": 0,
-    "unique_cves": [],
-    "keywords_hit": {}
+    "unique_cves": [
+      "CVE-2026-102489",
+      "CVE-2026-102490"
+    ],
+    "keywords_hit": {
+      "CVE": 1
+    }
   },
-  "alerts": []
+  "alerts": [
+    {
+      "scan_time_kst": "2026-10-04T12:01:06.794236+09:00",
+      "type": "single",
+      "title": "자마드 제로데이 2종 실제 공격 악용…RCE에서 루트 권한까지 장악",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=208719",
+      "source": "데일리시큐 (전체) [RSS]",
+      "published": "2026-10-04T11:45:25+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-102489",
+        "CVE-2026-102490"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-102489",
+          "cvss_score": 9.4,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-384",
+          "description": "Zammad versions 6.3.0 to 6.5.4 are vulnerable a session hijack vulnerability that leads to remote code execution as the zammad user. The vulnerability is also present in version 7.0.0 to version 7.1.3, but not exploitable due to environment conditions.",
+          "epss_score": 0.01396,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-102490",
+          "cvss_score": 9.4,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-269 (Improper Privilege Management)",
+          "description": "All versions of Zammad including the latest alpha enable the local zammad user to escalate privileges to root.",
+          "epss_score": 0.00629,
+          "kev": true
+        }
+      ]
+    }
+  ]
 }
