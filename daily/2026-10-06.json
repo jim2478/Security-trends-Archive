@@ -2,10 +2,10 @@
   "date": "2026-10-06",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 5,
+    "scan_runs": 6,
     "total_articles_max": 1821,
-    "matched_articles_max": 182,
-    "new_alerts": 4,
+    "matched_articles_max": 183,
+    "new_alerts": 5,
     "cve_total": 12,
     "alerts_with_cve": 4,
     "cve_count": 12,
@@ -27,7 +27,8 @@
     ],
     "keywords_hit": {
       "CVE": 3,
-      "Malware": 1
+      "Malware": 1,
+      "DDoS": 1
     }
   },
   "alerts": [
@@ -196,6 +197,20 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-10-06T05:06:13.581152+09:00",
+      "type": "single",
+      "title": "‘AI 지휘’ 금융권 해킹 규모-속도 과거와 달라… “방어도 AI로”",
+      "url": "https://www.donga.com/news/Economy/article/all/20261006/134789518/2",
+      "source": "동아일보 (사회) [RSS]",
+      "published": "2026-10-05T19:30:00+00:00",
+      "keywords": [
+        "DDoS"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
