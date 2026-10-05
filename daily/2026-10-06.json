@@ -2,13 +2,13 @@
   "date": "2026-10-06",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
+    "scan_runs": 4,
     "total_articles_max": 1811,
-    "matched_articles_max": 179,
-    "new_alerts": 2,
-    "cve_total": 10,
-    "alerts_with_cve": 2,
-    "cve_count": 10,
+    "matched_articles_max": 180,
+    "new_alerts": 3,
+    "cve_total": 11,
+    "alerts_with_cve": 3,
+    "cve_count": 11,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -21,10 +21,11 @@
       "CVE-2026-36356",
       "CVE-2026-88771",
       "CVE-2026-88772",
-      "CVE-2026-88779"
+      "CVE-2026-88779",
+      "CVE-2026-96940"
     ],
     "keywords_hit": {
-      "CVE": 1,
+      "CVE": 2,
       "Malware": 1
     }
   },
@@ -140,6 +141,32 @@
           "description": "A command injection vulnerability in web components of Ivanti Connect Secure (9.x, 22.x) and Ivanti Policy Secure (9.x, 22.x)  allows an authenticated administrator to send specially crafted requests and execute arbitrary commands on the appliance.",
           "epss_score": 0.99999,
           "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-06T03:01:09.707213+09:00",
+      "type": "single",
+      "title": "Microsoft Exchange Flaw Lets Authenticated Attackers Read Other Users' Mailboxes",
+      "url": "https://thehackernews.com/2026/10/microsoft-exchange-flaw-lets.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-10-05T16:21:52+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-96940"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-96940",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-1390",
+          "description": "Weak authorization in Microsoft Exchange Server allows an authenticated attacker to elevate privileges over a network.",
+          "epss_score": 0.00496,
+          "kev": false
         }
       ]
     }
