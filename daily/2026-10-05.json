@@ -2,22 +2,23 @@
   "date": "2026-10-05",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 19,
+    "scan_runs": 20,
     "total_articles_max": 1821,
     "matched_articles_max": 183,
-    "new_alerts": 2,
-    "cve_total": 4,
-    "alerts_with_cve": 2,
-    "cve_count": 4,
+    "new_alerts": 3,
+    "cve_total": 5,
+    "alerts_with_cve": 3,
+    "cve_count": 5,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
+      "CVE-2026-61500",
       "CVE-2026-88771",
       "CVE-2026-88772",
       "CVE-2026-88779"
     ],
     "keywords_hit": {
-      "CVE": 2
+      "CVE": 3
     }
   },
   "alerts": [
@@ -90,6 +91,32 @@
           "description": "Vulnerability in NetScaler ADC and NetScaler Gateway.\n\nThis issue affects ADC: before 14.1-73.41, before 13.1-64.28, before 14.1-73.41 FIPS, and before 13.1-37.282; Gateway: before 14.1-73.41 and before 13.1-64.28.",
           "epss_score": 0.00276,
           "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-05T19:01:05.107729+09:00",
+      "type": "single",
+      "title": "Attackers Target Rejetto HFS Flaw That Enables Admin Session Forgery and RCE",
+      "url": "https://thehackernews.com/2026/10/attackers-target-rejetto-hfs-flaw-that.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-10-05T08:09:23+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-61500"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-61500",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-338",
+          "description": "Rejetto HFS 3.0.0 through 3.2.0 derives its session-cookie signing key from the non-cryptographic Math.random() generator and discloses outputs of the same generator to unauthenticated clients during login. A remote attacker can collect a small number of login responses, reconstruct the generator's state, recover the signing key, and forge a valid administrator session cookie, leading to full administrative access and remote code execution via the server_code configuration feature.",
+          "epss_score": 0.00987,
+          "kev": false
         }
       ]
     }
