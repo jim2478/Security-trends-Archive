@@ -2,13 +2,13 @@
   "date": "2026-10-06",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 4,
-    "total_articles_max": 1811,
-    "matched_articles_max": 180,
-    "new_alerts": 3,
-    "cve_total": 11,
-    "alerts_with_cve": 3,
-    "cve_count": 11,
+    "scan_runs": 5,
+    "total_articles_max": 1821,
+    "matched_articles_max": 182,
+    "new_alerts": 4,
+    "cve_total": 12,
+    "alerts_with_cve": 4,
+    "cve_count": 12,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -19,13 +19,14 @@
       "CVE-2025-34035",
       "CVE-2025-67038",
       "CVE-2026-36356",
+      "CVE-2026-61500",
       "CVE-2026-88771",
       "CVE-2026-88772",
       "CVE-2026-88779",
       "CVE-2026-96940"
     ],
     "keywords_hit": {
-      "CVE": 2,
+      "CVE": 3,
       "Malware": 1
     }
   },
@@ -166,6 +167,32 @@
           "cwe": "CWE-1390",
           "description": "Weak authorization in Microsoft Exchange Server allows an authenticated attacker to elevate privileges over a network.",
           "epss_score": 0.00496,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-06T04:01:13.023156+09:00",
+      "type": "single",
+      "title": "Anthropic Mythos Found A Bug in Rejetto HFS. Attackers Are Now Exploiting It.",
+      "url": "https://securityaffairs.com/200444/ai/anthropic-mythos-found-a-bug-in-rejetto-hfs-attackers-are-now-exploiting-it.html",
+      "source": "Security Affairs (보안뉴스/위협동향) [RSS]",
+      "published": "2026-10-05T18:15:12+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-61500"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-61500",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-338",
+          "description": "Rejetto HFS 3.0.0 through 3.2.0 derives its session-cookie signing key from the non-cryptographic Math.random() generator and discloses outputs of the same generator to unauthenticated clients during login. A remote attacker can collect a small number of login responses, reconstruct the generator's state, recover the signing key, and forge a valid administrator session cookie, leading to full administrative access and remote code execution via the server_code configuration feature.",
+          "epss_score": 0.00987,
           "kev": false
         }
       ]
