@@ -2,13 +2,13 @@
   "date": "2026-10-06",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 6,
+    "scan_runs": 7,
     "total_articles_max": 1821,
-    "matched_articles_max": 183,
-    "new_alerts": 5,
-    "cve_total": 12,
-    "alerts_with_cve": 4,
-    "cve_count": 12,
+    "matched_articles_max": 186,
+    "new_alerts": 6,
+    "cve_total": 13,
+    "alerts_with_cve": 5,
+    "cve_count": 13,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -26,7 +26,7 @@
       "CVE-2026-96940"
     ],
     "keywords_hit": {
-      "CVE": 3,
+      "CVE": 4,
       "Malware": 1,
       "DDoS": 1
     }
@@ -211,6 +211,32 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-06T06:06:10.877187+09:00",
+      "type": "single",
+      "title": "Rejetto HFS servers now actively scanned for critical RCE flaw",
+      "url": "https://www.bleepingcomputer.com/news/security/rejetto-hfs-servers-now-actively-scanned-for-critical-rce-flaw/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-10-05T20:20:05+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-61500"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-61500",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-338",
+          "description": "Rejetto HFS 3.0.0 through 3.2.0 derives its session-cookie signing key from the non-cryptographic Math.random() generator and discloses outputs of the same generator to unauthenticated clients during login. A remote attacker can collect a small number of login responses, reconstruct the generator's state, recover the signing key, and forge a valid administrator session cookie, leading to full administrative access and remote code execution via the server_code configuration feature.",
+          "epss_score": 0.00987,
+          "kev": false
+        }
+      ]
     }
   ]
 }
