@@ -2,10 +2,10 @@
   "date": "2026-10-05",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 23,
+    "scan_runs": 24,
     "total_articles_max": 1821,
     "matched_articles_max": 183,
-    "new_alerts": 6,
+    "new_alerts": 10,
     "cve_total": 7,
     "alerts_with_cve": 5,
     "cve_count": 7,
@@ -20,7 +20,8 @@
     ],
     "keywords_hit": {
       "CVE": 5,
-      "Malware": 1
+      "Malware": 5,
+      "Botnet": 1
     }
   },
   "alerts": [
@@ -181,6 +182,63 @@
       "url": "https://hackread.com/star-blizzard-organizations-phishing-redflick-technique/",
       "source": "HackRead (해킹/데이터유출) [RSS]",
       "published": "2026-10-05T11:01:08+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-05T23:01:26.483105+09:00",
+      "type": "single",
+      "title": "Realtek Jungle SDK Exploit Attempts Deliver Cling Botnet With STUN-Based C2",
+      "url": "https://thehackernews.com/2026/10/realtek-jungle-sdk-exploit-attempts.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-10-05T11:46:25+00:00",
+      "keywords": [
+        "Botnet",
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-05T23:01:26.483105+09:00",
+      "type": "single",
+      "title": "Alleged dev of Ploutus ATM malware appears in US court after arrest",
+      "url": "https://www.bleepingcomputer.com/news/security/suspected-dev-of-ploutus-atm-malware-appears-in-us-court-after-arrest/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-10-05T13:01:45+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-05T23:01:26.483105+09:00",
+      "type": "single",
+      "title": "Malwarebytes Scam Link Check analyzes URLs and explains potential risks",
+      "url": "https://www.helpnetsecurity.com/2026/10/05/malwarebytes-scam-link-check/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-10-05T13:56:28+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-05T23:01:26.483105+09:00",
+      "type": "single",
+      "title": "New Stealthy Linux Backdoors Target Telecoms, Masquerade as Email Traffic",
+      "url": "https://www.infosecurity-magazine.com/news/smtp-linux-backdoors-network-edge/",
+      "source": "Infosecurity Magazine (보안뉴스) [RSS]",
+      "published": "2026-10-05T14:00:00+00:00",
       "keywords": [
         "Malware"
       ],
