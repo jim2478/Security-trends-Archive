@@ -2,23 +2,24 @@
   "date": "2026-10-05",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 20,
+    "scan_runs": 21,
     "total_articles_max": 1821,
     "matched_articles_max": 183,
-    "new_alerts": 3,
-    "cve_total": 5,
-    "alerts_with_cve": 3,
-    "cve_count": 5,
+    "new_alerts": 5,
+    "cve_total": 7,
+    "alerts_with_cve": 5,
+    "cve_count": 7,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2026-61500",
       "CVE-2026-88771",
       "CVE-2026-88772",
-      "CVE-2026-88779"
+      "CVE-2026-88779",
+      "CVE-2026-96940"
     ],
     "keywords_hit": {
-      "CVE": 3
+      "CVE": 5
     }
   },
   "alerts": [
@@ -116,6 +117,58 @@
           "cwe": "CWE-338",
           "description": "Rejetto HFS 3.0.0 through 3.2.0 derives its session-cookie signing key from the non-cryptographic Math.random() generator and discloses outputs of the same generator to unauthenticated clients during login. A remote attacker can collect a small number of login responses, reconstruct the generator's state, recover the signing key, and forge a valid administrator session cookie, leading to full administrative access and remote code execution via the server_code configuration feature.",
           "epss_score": 0.00987,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-05T20:01:10.455757+09:00",
+      "type": "single",
+      "title": "Exploitation Hits Rejetto HFS Vulnerability Discovered by AI",
+      "url": "https://www.securityweek.com/exploitation-hits-rejetto-hfs-vulnerability-discovered-by-ai/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-10-05T11:00:05+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-61500"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-61500",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-338",
+          "description": "Rejetto HFS 3.0.0 through 3.2.0 derives its session-cookie signing key from the non-cryptographic Math.random() generator and discloses outputs of the same generator to unauthenticated clients during login. A remote attacker can collect a small number of login responses, reconstruct the generator's state, recover the signing key, and forge a valid administrator session cookie, leading to full administrative access and remote code execution via the server_code configuration feature.",
+          "epss_score": 0.00987,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-05T20:01:10.455757+09:00",
+      "type": "single",
+      "title": "Out-of-band Exchange Server update fixes high-severity mailbox access bug (CVE-2026-96940)",
+      "url": "https://www.helpnetsecurity.com/2026/10/05/exchange-server-vulnerability-cve-2026-96940/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-10-05T10:38:42+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-96940"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-96940",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-1390",
+          "description": "Weak authorization in Microsoft Exchange Server allows an authenticated attacker to elevate privileges over a network.",
+          "epss_score": 0.00496,
           "kev": false
         }
       ]
