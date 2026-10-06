@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-07",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 1,
+    "total_articles_max": 1800,
+    "matched_articles_max": 170,
+    "new_alerts": 1,
+    "cve_total": 1,
+    "alerts_with_cve": 1,
+    "cve_count": 1,
+    "ioc_count": 0,
+    "merged_count": 0,
+    "unique_cves": [
+      "CVE-2026-96940"
+    ],
+    "keywords_hit": {
+      "CVE": 1
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-10-07T00:01:27.062174+09:00",
+      "type": "single",
+      "title": "CVE-2026-96940: Microsoft Fixes Exchange Server Flaw For Which Exploitation Is More Likely",
+      "url": "https://securityaffairs.com/200476/security/cve-2026-96940-microsoft-fixes-high-severity-exchange-server-flaw.html",
+      "source": "Security Affairs (보안뉴스/위협동향) [RSS]",
+      "published": "2026-10-06T14:09:17+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-96940"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-96940",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-1390",
+          "description": "Weak authorization in Microsoft Exchange Server allows an authenticated attacker to elevate privileges over a network.",
+          "epss_score": 0.00496,
+          "kev": false
+        }
+      ]
+    }
+  ]
+}
