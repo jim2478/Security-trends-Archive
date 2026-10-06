@@ -2,13 +2,13 @@
   "date": "2026-10-06",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 17,
+    "scan_runs": 18,
     "total_articles_max": 1821,
     "matched_articles_max": 186,
-    "new_alerts": 7,
-    "cve_total": 13,
-    "alerts_with_cve": 5,
-    "cve_count": 13,
+    "new_alerts": 9,
+    "cve_total": 15,
+    "alerts_with_cve": 7,
+    "cve_count": 15,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -18,15 +18,17 @@
       "CVE-2024-23625",
       "CVE-2025-34035",
       "CVE-2025-67038",
+      "CVE-2026-21589",
       "CVE-2026-36356",
       "CVE-2026-61500",
+      "CVE-2026-86360",
       "CVE-2026-88771",
       "CVE-2026-88772",
       "CVE-2026-88779",
       "CVE-2026-96940"
     ],
     "keywords_hit": {
-      "CVE": 4,
+      "CVE": 6,
       "Malware": 2,
       "DDoS": 1
     }
@@ -251,6 +253,58 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-06T17:01:20.878322+09:00",
+      "type": "single",
+      "title": "Critical Atlassian Flaw Lets Unauthenticated Attackers Read Known Files Across 8 Products",
+      "url": "https://thehackernews.com/2026/10/critical-atlassian-flaw-lets.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-10-06T06:58:56+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-21589"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-21589",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": null,
+          "description": "h3. Summary\n\nThis is a vulnerability in Bitbucket Data Center, Confluence Data Center, Jira Service Management Data Center, Jira Software Data Center, Bamboo Data Center. Crowd Data Center, Crucible and Fisheye. This Arbitrary File Access vulnerability allows an unauthenticated attacker to access specific files within the web application root directory in affected versions. Exploitation requires prior knowledge of the target file's exact name and path; this vulnerability does not allow attackers",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-06T17:01:20.878322+09:00",
+      "type": "single",
+      "title": "Dell Urges Customers to Patch Critical DSU Flaw That Can Give Attackers Root Access",
+      "url": "https://securityaffairs.com/200458/security/dell-urges-customers-to-patch-critical-dsu-flaw-that-can-give-attackers-root-access.html",
+      "source": "Security Affairs (보안뉴스/위협동향) [RSS]",
+      "published": "2026-10-06T07:01:46+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-86360"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-86360",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
     }
   ]
 }
