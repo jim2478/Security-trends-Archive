@@ -2,10 +2,10 @@
   "date": "2026-10-06",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 23,
+    "scan_runs": 24,
     "total_articles_max": 1821,
     "matched_articles_max": 186,
-    "new_alerts": 15,
+    "new_alerts": 16,
     "cve_total": 21,
     "alerts_with_cve": 9,
     "cve_count": 21,
@@ -33,7 +33,7 @@
     ],
     "keywords_hit": {
       "CVE": 8,
-      "Malware": 5,
+      "Malware": 6,
       "DDoS": 2
     }
   },
@@ -451,6 +451,20 @@
       "url": "https://www.securityweek.com/fbi-arrests-most-wanted-developer-of-ploutus-atm-malware/",
       "source": "SecurityWeek (보안뉴스 종합) [RSS]",
       "published": "2026-10-06T12:47:57+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-06T23:01:13.118722+09:00",
+      "type": "single",
+      "title": "ClickFix campaign in Ukraine compromises over 100 websites to spread Lunex malware",
+      "url": "https://therecord.media/clickfix-campaign-ukraine-lunex-stealer",
+      "source": "The Record by Recorded Future (위협뉴스) [RSS]",
+      "published": "2026-10-06T13:17:00+00:00",
       "keywords": [
         "Malware"
       ],
