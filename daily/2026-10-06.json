@@ -2,10 +2,10 @@
   "date": "2026-10-06",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 18,
+    "scan_runs": 19,
     "total_articles_max": 1821,
     "matched_articles_max": 186,
-    "new_alerts": 9,
+    "new_alerts": 10,
     "cve_total": 15,
     "alerts_with_cve": 7,
     "cve_count": 15,
@@ -30,7 +30,7 @@
     "keywords_hit": {
       "CVE": 6,
       "Malware": 2,
-      "DDoS": 1
+      "DDoS": 2
     }
   },
   "alerts": [
@@ -305,6 +305,20 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-10-06T18:01:05.194376+09:00",
+      "type": "single",
+      "title": "DDOS Scrubbing Capacity: How to Judge Tbps Claims",
+      "url": "http://www.ddosinfo.com/ddos-vendors/ddos-scrubbing-capacity/",
+      "source": "DDoS Info [RSS]",
+      "published": "2026-10-06T08:00:03+00:00",
+      "keywords": [
+        "DDoS"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
