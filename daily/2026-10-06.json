@@ -2,14 +2,14 @@
   "date": "2026-10-06",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 20,
+    "scan_runs": 21,
     "total_articles_max": 1821,
     "matched_articles_max": 186,
-    "new_alerts": 10,
-    "cve_total": 15,
-    "alerts_with_cve": 7,
-    "cve_count": 15,
-    "ioc_count": 0,
+    "new_alerts": 13,
+    "cve_total": 20,
+    "alerts_with_cve": 8,
+    "cve_count": 20,
+    "ioc_count": 21,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2022-36553",
@@ -21,15 +21,19 @@
       "CVE-2026-21589",
       "CVE-2026-36356",
       "CVE-2026-61500",
+      "CVE-2026-63697",
+      "CVE-2026-71168",
       "CVE-2026-86360",
+      "CVE-2026-86361",
+      "CVE-2026-86362",
       "CVE-2026-88771",
       "CVE-2026-88772",
       "CVE-2026-88779",
       "CVE-2026-96940"
     ],
     "keywords_hit": {
-      "CVE": 6,
-      "Malware": 2,
+      "CVE": 7,
+      "Malware": 4,
       "DDoS": 2
     }
   },
@@ -317,6 +321,100 @@
         "DDoS"
       ],
       "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-06T20:01:20.773673+09:00",
+      "type": "single",
+      "title": "Dell System Update flaw allows attackers to gain root privileges (CVE-2026-86360)",
+      "url": "https://www.helpnetsecurity.com/2026/10/06/dell-system-update-vulnerability-cve-2026-86360/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-10-06T10:44:41+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-86360",
+        "CVE-2026-63697",
+        "CVE-2026-71168",
+        "CVE-2026-86361",
+        "CVE-2026-86362"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-86360",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-63697",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-71168",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-86361",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-86362",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-06T20:01:20.773673+09:00",
+      "type": "single",
+      "title": "Long-Running NPM Malware Campaign Accumulates 40,000 Downloads",
+      "url": "https://www.securityweek.com/long-running-npm-malware-campaign-accumulates-40000-downloads/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-10-06T10:34:25+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-06T20:01:20.773673+09:00",
+      "type": "single",
+      "title": "Blinder Tunnel Campaign Targets Iraqi Infrastructure",
+      "url": "https://unit42.paloaltonetworks.com/blinder-tunnel-targets-critical-infrastructure/",
+      "source": "Palo Alto Unit42 (위협리서치) [RSS]",
+      "published": "2026-10-06T10:00:33+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "[IP] 91[.]107[.]156[.]29\n[IP] 65[.]109[.]214[.]145\n[IP] 87[.]248[.]129[.]239\n[IP] 38[.]180[.]136[.]127\n[Domain] flightmanager[.]csproj\n[Domain] cloud[.]g-drive[.]cam\n[Domain] googeldrive[.]cam\n[Domain] drivegoogel[.]cam\n[Domain] googelmeet[.]online\n[Domain] meetonline[.]cam\n[Domain] asdfafadafg[.]online\n[URL] hxxps://github[.]com/peakyblinders-tm\n[URL] hxxps://github[.]com/GreenBeret0\n[SHA256] 3fd810a3aa0039993393741b32287c367a9a5037a41e826906440887cdd3ed13\n[SHA256] 53f35e49eb9b271fd8cbcd3daacb525328dbf159a03dbd1c7adebe0363daa402\n[SHA256] 6e7d9b33f1e72ea1ede71373a604ecdb060dab7d42055179c1eede9ecd1fd239\n[SHA256] 76273382e4252c1f60a2251141e108942494409c759358320735891762c0682e\n[SHA256] 7cc571aca6d8715d9aaad3d83e1bcd30467565d583db1dfe73697c5d00a1f875\n[SHA256] d3561bd4aad003dc3e08157b0891860bb496b80cd6e44901692e08ab1d4e8260\n[SHA256] f5b12772db6817f7a765a6fe7565fd3d4f87edc28e42fe3ec0244a372a410fc9\n[SHA256] f5ba1645694c62f527ed6ceda8c68a5c3dd92b4032439167e8e937e72803b4bd",
       "cve_ids": [],
       "cve_details": []
     }
