@@ -2,25 +2,28 @@
   "date": "2026-10-07",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
+    "scan_runs": 4,
     "total_articles_max": 1810,
     "matched_articles_max": 173,
-    "new_alerts": 4,
-    "cve_total": 6,
-    "alerts_with_cve": 4,
-    "cve_count": 6,
+    "new_alerts": 7,
+    "cve_total": 10,
+    "alerts_with_cve": 6,
+    "cve_count": 10,
     "ioc_count": 0,
-    "merged_count": 0,
+    "merged_count": 1,
     "unique_cves": [
       "CVE-2024-8176",
       "CVE-2025-59375",
       "CVE-2026-15340",
+      "CVE-2026-21589",
       "CVE-2026-27872",
       "CVE-2026-27873",
+      "CVE-2026-4637",
+      "CVE-2026-4638",
       "CVE-2026-96940"
     ],
     "keywords_hit": {
-      "CVE": 4
+      "CVE": 7
     }
   },
   "alerts": [
@@ -147,6 +150,90 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-10-07T03:01:36.752428+09:00",
+      "type": "merged",
+      "cve_ids": [
+        "CVE-2026-21589"
+      ],
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "sources": [
+        {
+          "title": "Atlassian warns of critical file-access flaw in Jira, Confluence",
+          "url": "https://www.bleepingcomputer.com/news/security/atlassian-warns-of-critical-file-access-flaw-in-jira-confluence/",
+          "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]"
+        },
+        {
+          "title": "You Won’t Hear About These, Even In Myths (Atlassian Jira, Confluence (and more) Pre-Auth Arbitrary File Read CVE-2026-21589)",
+          "url": "https://labs.watchtowr.com/you-wont-hear-about-these-even-in-myths-atlassian-jira-confluence-and-more-pre-auth-arbitrary-file-read-cve-2026-21589/",
+          "source": "watchTowr Labs (취약점연구) [RSS]"
+        }
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-21589",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-552",
+          "description": "This is a vulnerability in Bitbucket Data Center, Confluence Data Center, Jira Service Management Data Center, Jira Software Data Center, Bamboo Data Center. Crowd Data Center, Crucible and Fisheye. This Arbitrary File Access vulnerability allows an unauthenticated attacker to access specific files within the web application root directory in affected versions. Exploitation requires prior knowledge of the target file's exact name and path; this vulnerability does not allow attackers to enumerate",
+          "epss_score": 0.00738,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-07T03:01:36.752428+09:00",
+      "type": "single",
+      "title": "SEC Consult SA-20260924-0 :: Multiple Vulnerabilities in Paessler PRTG Network Monitor #CVE-2026-4637 #CVE-2026-4638",
+      "url": "https://seclists.org/fulldisclosure/2026/Oct/0",
+      "source": "SecLists Full Disclosure (취약점공개)",
+      "published": "2026-10-06T17:44:41+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-4637",
+        "CVE-2026-4638"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-4637",
+          "cvss_score": 5.1,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-79 (XSS)",
+          "description": "Paessler PRTG Network Monitor before version 26.2.120.1449 is affected by a reflected Cross-Site Scripting (XSS) vulnerability. When a request is made for a non-existent resource ending in \\\".htm\\\", the web interface returns an HTTP 403 \\\"Forbidden Path\\\" error page that echoes the requested URL path into the HTML response body without proper output encoding or sanitization.\n\n\n\n\nAn unauthenticated, remote attacker can craft a URL containing an HTML/JavaScript payload in the path (e.g. https:////",
+          "epss_score": 0.00552,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-4638",
+          "cvss_score": 7.1,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-209",
+          "description": "PRTG Network Monitor before version 26.2.120.1449 ships a demo EXE/Script sensor that multiplies two integer parameters using cscript.exe. If a non-numeric value is passed instead, cscript.exe raises a 'Type mismatch' runtime error that includes the offending parameter value in plaintext. PRTG provides a documented placeholder variable, %windowspassword, which resolves to the configured Windows/domain password used by PRTG and can be passed as a sensor parameter. \n\n\n\n\nAny PRTG user who is not re",
+          "epss_score": 0.00268,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-07T03:01:36.752428+09:00",
+      "type": "single",
+      "title": "SEC Consult Research 20261001 :: Arbitrary Email sender spoofing in Apple iCloud mail",
+      "url": "https://seclists.org/fulldisclosure/2026/Oct/1",
+      "source": "SecLists Full Disclosure (취약점공개)",
+      "published": "2026-10-06T17:44:42+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
