@@ -2,20 +2,25 @@
   "date": "2026-10-07",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
+    "scan_runs": 3,
     "total_articles_max": 1810,
     "matched_articles_max": 173,
-    "new_alerts": 1,
-    "cve_total": 1,
-    "alerts_with_cve": 1,
-    "cve_count": 1,
+    "new_alerts": 4,
+    "cve_total": 6,
+    "alerts_with_cve": 4,
+    "cve_count": 6,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
+      "CVE-2024-8176",
+      "CVE-2025-59375",
+      "CVE-2026-15340",
+      "CVE-2026-27872",
+      "CVE-2026-27873",
       "CVE-2026-96940"
     ],
     "keywords_hit": {
-      "CVE": 1
+      "CVE": 4
     }
   },
   "alerts": [
@@ -41,6 +46,104 @@
           "cwe": "CWE-1390",
           "description": "Weak authorization in Microsoft Exchange Server allows an authenticated attacker to elevate privileges over a network.",
           "epss_score": 0.00496,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-07T02:01:31.004630+09:00",
+      "type": "single",
+      "title": "Hitachi Energy REB500",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-279-05",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-10-06T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2024-8176",
+        "CVE-2025-59375"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2024-8176",
+          "cvss_score": 7.5,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-674",
+          "description": "A stack overflow vulnerability exists in the libexpat library due to the way it handles recursive entity expansion in XML documents. When parsing an XML document with deeply nested entity references, libexpat can be forced to recurse indefinitely, exhausting the stack space and causing a crash. This issue could lead to denial of service (DoS) or, in some cases, exploitable memory corruption, depending on the environment and library usage.",
+          "epss_score": 0.01326,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2025-59375",
+          "cvss_score": 7.5,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-770",
+          "description": "libexpat in Expat before 2.7.2 allows attackers to trigger large dynamic memory allocations via a small document that is submitted for parsing.",
+          "epss_score": 0.01315,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-07T02:01:31.004630+09:00",
+      "type": "single",
+      "title": "Johnson Controls EasyIO FG",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-279-01",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-10-06T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-27872",
+        "CVE-2026-27873"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-27872",
+          "cvss_score": 5.6,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-269 (Improper Privilege Management)",
+          "description": "- Improper Privilege Management vulnerability in Johnson Controls Easy IO FG allows (Brute Force).\n\nThis issue affects Easy IO FG: before 2.0b52.",
+          "epss_score": 0.00087,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-27873",
+          "cvss_score": 5.6,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-798 (Hard-coded Credentials)",
+          "description": "- Use of Hard-coded Credentials vulnerability in Johnson Controls EasyIO FG allows - Pasword Spraying.\n\nThis issue affects EasyIO FG: before 2.0b52.",
+          "epss_score": 0.00087,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-07T02:01:31.004630+09:00",
+      "type": "single",
+      "title": "Savannah lwIP SMTP client",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-279-02",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-10-06T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-15340"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-15340",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
           "kev": false
         }
       ]
