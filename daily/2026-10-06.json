@@ -2,13 +2,13 @@
   "date": "2026-10-06",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 22,
+    "scan_runs": 23,
     "total_articles_max": 1821,
     "matched_articles_max": 186,
-    "new_alerts": 13,
-    "cve_total": 20,
-    "alerts_with_cve": 8,
-    "cve_count": 20,
+    "new_alerts": 15,
+    "cve_total": 21,
+    "alerts_with_cve": 9,
+    "cve_count": 21,
     "ioc_count": 21,
     "merged_count": 0,
     "unique_cves": [
@@ -32,8 +32,8 @@
       "CVE-2026-96940"
     ],
     "keywords_hit": {
-      "CVE": 7,
-      "Malware": 4,
+      "CVE": 8,
+      "Malware": 5,
       "DDoS": 2
     }
   },
@@ -415,6 +415,46 @@
         "Malware"
       ],
       "ioc_raw_text": "[IP] 91[.]107[.]156[.]29\n[IP] 65[.]109[.]214[.]145\n[IP] 87[.]248[.]129[.]239\n[IP] 38[.]180[.]136[.]127\n[Domain] flightmanager[.]csproj\n[Domain] cloud[.]g-drive[.]cam\n[Domain] googeldrive[.]cam\n[Domain] drivegoogel[.]cam\n[Domain] googelmeet[.]online\n[Domain] meetonline[.]cam\n[Domain] asdfafadafg[.]online\n[URL] hxxps://github[.]com/peakyblinders-tm\n[URL] hxxps://github[.]com/GreenBeret0\n[SHA256] 3fd810a3aa0039993393741b32287c367a9a5037a41e826906440887cdd3ed13\n[SHA256] 53f35e49eb9b271fd8cbcd3daacb525328dbf159a03dbd1c7adebe0363daa402\n[SHA256] 6e7d9b33f1e72ea1ede71373a604ecdb060dab7d42055179c1eede9ecd1fd239\n[SHA256] 76273382e4252c1f60a2251141e108942494409c759358320735891762c0682e\n[SHA256] 7cc571aca6d8715d9aaad3d83e1bcd30467565d583db1dfe73697c5d00a1f875\n[SHA256] d3561bd4aad003dc3e08157b0891860bb496b80cd6e44901692e08ab1d4e8260\n[SHA256] f5b12772db6817f7a765a6fe7565fd3d4f87edc28e42fe3ec0244a372a410fc9\n[SHA256] f5ba1645694c62f527ed6ceda8c68a5c3dd92b4032439167e8e937e72803b4bd",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-06T22:01:14.459437+09:00",
+      "type": "single",
+      "title": "Atlassian urges immediate patching of critical Data Center file access vulnerability (CVE-2026-21589)",
+      "url": "https://www.helpnetsecurity.com/2026/10/06/atlassian-data-center-cve-2026-21589/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-10-06T12:26:30+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-21589"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-21589",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": null,
+          "description": "h3. Summary\n\nThis is a vulnerability in Bitbucket Data Center, Confluence Data Center, Jira Service Management Data Center, Jira Software Data Center, Bamboo Data Center. Crowd Data Center, Crucible and Fisheye. This Arbitrary File Access vulnerability allows an unauthenticated attacker to access specific files within the web application root directory in affected versions. Exploitation requires prior knowledge of the target file's exact name and path; this vulnerability does not allow attackers",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-06T22:01:14.459437+09:00",
+      "type": "single",
+      "title": "FBI Arrests ‘Most Wanted’ Developer of Ploutus ATM Malware",
+      "url": "https://www.securityweek.com/fbi-arrests-most-wanted-developer-of-ploutus-atm-malware/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-10-06T12:47:57+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
     }
