@@ -2,21 +2,23 @@
   "date": "2026-10-08",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
+    "scan_runs": 3,
     "total_articles_max": 1811,
     "matched_articles_max": 168,
-    "new_alerts": 1,
-    "cve_total": 2,
-    "alerts_with_cve": 1,
-    "cve_count": 2,
+    "new_alerts": 2,
+    "cve_total": 3,
+    "alerts_with_cve": 2,
+    "cve_count": 3,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
+      "CVE-2026-21589",
       "CVE-2026-42271",
       "CVE-2026-48710"
     ],
     "keywords_hit": {
-      "Malware": 1
+      "Malware": 1,
+      "CVE": 1
     }
   },
   "alerts": [
@@ -53,6 +55,32 @@
           "description": "Starlette is a lightweight ASGI framework/toolkit. Prior to version 1.0.1, the HTTP `Host` request header was not validated before being used to reconstruct `request.url`. Because the routing algorithm relies on the raw HTTP path while `request.url` is rebuilt from the `Host` header, a malformed header could make `request.url.path` differ from the path that was actually requested. Middleware and endpoints that apply security restrictions based on `request.url` (rather than the raw `scope` path) ",
           "epss_score": 0.07056,
           "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-08T02:04:46.855693+09:00",
+      "type": "single",
+      "title": "CVE-2026-21589: Critical Arbitrary File Read Vulnerability in Atlassian Products",
+      "url": "https://www.akamai.com/blog/security-research/2026/oct/cve-2026-21589-atlassian-arbitrary-file-read-vulnerability",
+      "source": "Akamai Blog (보안리서치/위협분석) [RSS]",
+      "published": "2026-10-07T16:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-21589"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-21589",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-552",
+          "description": "This is a vulnerability in Bitbucket Data Center, Confluence Data Center, Jira Service Management Data Center, Jira Software Data Center, Bamboo Data Center. Crowd Data Center, Crucible and Fisheye. This Arbitrary File Access vulnerability allows an unauthenticated attacker to access specific files within the web application root directory in affected versions. Exploitation requires prior knowledge of the target file's exact name and path; this vulnerability does not allow attackers to enumerate",
+          "epss_score": 0.01755,
+          "kev": false
         }
       ]
     }
