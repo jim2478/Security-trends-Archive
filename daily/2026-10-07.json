@@ -2,18 +2,20 @@
   "date": "2026-10-07",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 19,
+    "scan_runs": 20,
     "total_articles_max": 1810,
     "matched_articles_max": 173,
-    "new_alerts": 11,
-    "cve_total": 17,
-    "alerts_with_cve": 7,
-    "cve_count": 17,
+    "new_alerts": 13,
+    "cve_total": 19,
+    "alerts_with_cve": 8,
+    "cve_count": 19,
     "ioc_count": 0,
     "merged_count": 1,
     "unique_cves": [
       "CVE-2024-8176",
       "CVE-2025-59375",
+      "CVE-2026-102489",
+      "CVE-2026-102490",
       "CVE-2026-15340",
       "CVE-2026-21589",
       "CVE-2026-27872",
@@ -30,8 +32,8 @@
       "CVE-2026-96940"
     ],
     "keywords_hit": {
-      "CVE": 9,
-      "Malware": 1,
+      "CVE": 10,
+      "Malware": 2,
       "DDoS": 1
     }
   },
@@ -349,6 +351,56 @@
       "published": "2026-10-07T08:00:06+00:00",
       "keywords": [
         "DDoS"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-07T19:01:14.006222+09:00",
+      "type": "single",
+      "title": "Zammad CVE-2026-102489: Session Leak to RCE",
+      "url": "https://horizon3.ai/attack-research/disclosures/cve-2026-102489-zammad-session-leak-rce/",
+      "source": "Horizon3.ai (공격시뮬레이션) [RSS]",
+      "published": "2026-10-07T10:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-102489",
+        "CVE-2026-102490"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-102489",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-102490",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-07T19:01:14.006222+09:00",
+      "type": "single",
+      "title": "Anthropic loosens Claude’s cyber restrictions for verified defenders",
+      "url": "https://www.helpnetsecurity.com/2026/10/07/anthropic-expands-cyber-verification-program/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-10-07T09:00:20+00:00",
+      "keywords": [
+        "Malware"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
