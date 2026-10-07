@@ -2,10 +2,10 @@
   "date": "2026-10-07",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 23,
+    "scan_runs": 24,
     "total_articles_max": 1811,
     "matched_articles_max": 173,
-    "new_alerts": 16,
+    "new_alerts": 17,
     "cve_total": 27,
     "alerts_with_cve": 10,
     "cve_count": 27,
@@ -39,7 +39,7 @@
     ],
     "keywords_hit": {
       "CVE": 12,
-      "Malware": 3,
+      "Malware": 4,
       "DDoS": 1
     }
   },
@@ -520,6 +520,20 @@
       "url": "https://cybernews.com/news/atm-jackpotting-kingpin/",
       "source": "CyberNews [RSS]",
       "published": "2026-10-07T11:04:10+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-07T23:01:09.466797+09:00",
+      "type": "single",
+      "title": "Tanium adds endpoint behavior detection and AI-assisted threat hunting",
+      "url": "https://www.helpnetsecurity.com/2026/10/07/tanium-security-operations/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-10-07T13:00:56+00:00",
       "keywords": [
         "Malware"
       ],
