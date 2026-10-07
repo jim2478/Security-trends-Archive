@@ -2,17 +2,59 @@
   "date": "2026-10-08",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 1,
-    "total_articles_max": 1791,
+    "scan_runs": 2,
+    "total_articles_max": 1811,
     "matched_articles_max": 168,
-    "new_alerts": 0,
-    "cve_total": 0,
-    "alerts_with_cve": 0,
-    "cve_count": 0,
+    "new_alerts": 1,
+    "cve_total": 2,
+    "alerts_with_cve": 1,
+    "cve_count": 2,
     "ioc_count": 0,
     "merged_count": 0,
-    "unique_cves": [],
-    "keywords_hit": {}
+    "unique_cves": [
+      "CVE-2026-42271",
+      "CVE-2026-48710"
+    ],
+    "keywords_hit": {
+      "Malware": 1
+    }
   },
-  "alerts": []
+  "alerts": [
+    {
+      "scan_time_kst": "2026-10-08T01:01:18.516314+09:00",
+      "type": "single",
+      "title": "PoeLLM malware infects exposed AI servers in cryptomining attacks",
+      "url": "https://www.bleepingcomputer.com/news/security/poellm-malware-infects-exposed-ai-servers-in-cryptomining-attacks/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-10-07T15:04:08+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-42271",
+        "CVE-2026-48710"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-42271",
+          "cvss_score": 8.7,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-77 (Command Injection)",
+          "description": "LiteLLM is a proxy server (AI Gateway) to call LLM APIs in OpenAI (or native) format. From version 1.74.2 to before version 1.83.7, two endpoints used to preview an MCP server before saving it — POST /mcp-rest/test/connection and POST /mcp-rest/test/tools/list — accepted a full server configuration in the request body, including the command, args, and env fields used by the stdio transport. When called with a stdio configuration, the endpoints attempted to connect, which spawned the supplied com",
+          "epss_score": 0.9257,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-48710",
+          "cvss_score": 6.5,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-444",
+          "description": "Starlette is a lightweight ASGI framework/toolkit. Prior to version 1.0.1, the HTTP `Host` request header was not validated before being used to reconstruct `request.url`. Because the routing algorithm relies on the raw HTTP path while `request.url` is rebuilt from the `Host` header, a malformed header could make `request.url.path` differ from the path that was actually requested. Middleware and endpoints that apply security restrictions based on `request.url` (rather than the raw `scope` path) ",
+          "epss_score": 0.07056,
+          "kev": true
+        }
+      ]
+    }
+  ]
 }
