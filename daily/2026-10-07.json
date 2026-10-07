@@ -2,13 +2,13 @@
   "date": "2026-10-07",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 15,
+    "scan_runs": 16,
     "total_articles_max": 1810,
     "matched_articles_max": 173,
-    "new_alerts": 7,
-    "cve_total": 10,
-    "alerts_with_cve": 6,
-    "cve_count": 10,
+    "new_alerts": 9,
+    "cve_total": 17,
+    "alerts_with_cve": 7,
+    "cve_count": 17,
     "ioc_count": 0,
     "merged_count": 1,
     "unique_cves": [
@@ -20,10 +20,17 @@
       "CVE-2026-27873",
       "CVE-2026-4637",
       "CVE-2026-4638",
+      "CVE-2026-93515",
+      "CVE-2026-93519",
+      "CVE-2026-93520",
+      "CVE-2026-93521",
+      "CVE-2026-93522",
+      "CVE-2026-93524",
+      "CVE-2026-93536",
       "CVE-2026-96940"
     ],
     "keywords_hit": {
-      "CVE": 7
+      "CVE": 9
     }
   },
   "alerts": [
@@ -228,6 +235,88 @@
       "url": "https://seclists.org/fulldisclosure/2026/Oct/1",
       "source": "SecLists Full Disclosure (취약점공개)",
       "published": "2026-10-06T17:44:42+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-07T15:01:22.409589+09:00",
+      "type": "single",
+      "title": "Check your X.Org server version because a dozen vulnerabilities have been patched",
+      "url": "https://www.helpnetsecurity.com/2026/10/07/x-org-server-fixed-vulnerabilities/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-10-07T03:58:02+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-93524",
+        "CVE-2026-93536",
+        "CVE-2026-93522",
+        "CVE-2026-93515",
+        "CVE-2026-93519",
+        "CVE-2026-93520",
+        "CVE-2026-93521"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-93524",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-93536",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-93522",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-93515",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-93519",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-07T15:01:22.409589+09:00",
+      "type": "single",
+      "title": "AI endpoint management: Visibility, compliance, and remediation",
+      "url": "https://www.helpnetsecurity.com/2026/10/07/hcl-software-ai-endpoint-management/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-10-07T05:00:22+00:00",
       "keywords": [
         "CVE"
       ],
