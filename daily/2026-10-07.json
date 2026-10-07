@@ -2,26 +2,32 @@
   "date": "2026-10-07",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 20,
+    "scan_runs": 21,
     "total_articles_max": 1810,
     "matched_articles_max": 173,
-    "new_alerts": 13,
-    "cve_total": 19,
-    "alerts_with_cve": 8,
-    "cve_count": 19,
+    "new_alerts": 14,
+    "cve_total": 25,
+    "alerts_with_cve": 9,
+    "cve_count": 25,
     "ioc_count": 0,
     "merged_count": 1,
     "unique_cves": [
       "CVE-2024-8176",
       "CVE-2025-59375",
+      "CVE-2026-102255",
+      "CVE-2026-102256",
+      "CVE-2026-102257",
+      "CVE-2026-102258",
       "CVE-2026-102489",
       "CVE-2026-102490",
       "CVE-2026-15340",
+      "CVE-2026-15409",
       "CVE-2026-21589",
       "CVE-2026-27872",
       "CVE-2026-27873",
       "CVE-2026-4637",
       "CVE-2026-4638",
+      "CVE-2026-83548",
       "CVE-2026-93515",
       "CVE-2026-93519",
       "CVE-2026-93520",
@@ -32,7 +38,7 @@
       "CVE-2026-96940"
     ],
     "keywords_hit": {
-      "CVE": 10,
+      "CVE": 11,
       "Malware": 2,
       "DDoS": 1
     }
@@ -405,6 +411,73 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-07T20:01:12.970790+09:00",
+      "type": "single",
+      "title": "SonicWall fixes pre-auth SSRF flaw in SMA 1000 appliances (CVE-2026-102255)",
+      "url": "https://www.helpnetsecurity.com/2026/10/07/sonicwall-fixes-pre-auth-ssrf-flaw-in-sma-1000-appliances-cve-2026-102255/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-10-07T10:37:53+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-102255",
+        "CVE-2026-15409",
+        "CVE-2026-83548",
+        "CVE-2026-102256",
+        "CVE-2026-102257",
+        "CVE-2026-102258"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-102255",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-15409",
+          "cvss_score": 10.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-918 (SSRF)",
+          "description": "A Server-side request forgery (SSRF) vulnerability has been identified in the SMA1000 Appliance Work Place interface. A remote unauthenticated attacker could potentially cause the appliance to make requests to unintended location.",
+          "epss_score": 0.06795,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-83548",
+          "cvss_score": 10.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-441",
+          "description": "A Pre-authentication SSRF vulnerability exists in the SMA1000 Appliance Work Place interface due to an unintended alternate access path. A remote unauthenticated attacker could potentially exploit this vulnerability to gain unauthorized access to sensitive functionality and perform unauthorized operations.",
+          "epss_score": 0.08757,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-102256",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-102257",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
     }
   ]
 }
