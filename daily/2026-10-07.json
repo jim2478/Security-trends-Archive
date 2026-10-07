@@ -2,10 +2,10 @@
   "date": "2026-10-07",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 17,
+    "scan_runs": 18,
     "total_articles_max": 1810,
     "matched_articles_max": 173,
-    "new_alerts": 9,
+    "new_alerts": 10,
     "cve_total": 17,
     "alerts_with_cve": 7,
     "cve_count": 17,
@@ -30,7 +30,8 @@
       "CVE-2026-96940"
     ],
     "keywords_hit": {
-      "CVE": 9
+      "CVE": 9,
+      "Malware": 1
     }
   },
   "alerts": [
@@ -319,6 +320,20 @@
       "published": "2026-10-07T05:00:22+00:00",
       "keywords": [
         "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-07T17:01:09.616447+09:00",
+      "type": "single",
+      "title": "100+ Compromised Websites Use Fake Cloudflare Checks to Deliver LunexStealer",
+      "url": "https://thehackernews.com/2026/10/100-compromised-websites-use-fake.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-10-07T06:57:54+00:00",
+      "keywords": [
+        "Malware"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
