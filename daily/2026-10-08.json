@@ -2,10 +2,10 @@
   "date": "2026-10-08",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 22,
+    "scan_runs": 23,
     "total_articles_max": 1811,
-    "matched_articles_max": 169,
-    "new_alerts": 12,
+    "matched_articles_max": 170,
+    "new_alerts": 14,
     "cve_total": 9,
     "alerts_with_cve": 7,
     "cve_count": 9,
@@ -20,7 +20,7 @@
       "CVE-2026-48710"
     ],
     "keywords_hit": {
-      "Malware": 5,
+      "Malware": 7,
       "CVE": 4,
       "DDoS": 3,
       "Botnet": 1
@@ -295,6 +295,34 @@
       "published": "2026-10-08T11:36:00+00:00",
       "keywords": [
         "DDoS"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-08T22:01:22.859763+09:00",
+      "type": "single",
+      "title": "Russia-Aligned UAC-0099 Evolves MATCHBOIL Malware",
+      "url": "https://www.infosecurity-magazine.com/news/russia-aligned-uac-0099-evolves/",
+      "source": "Infosecurity Magazine (보안뉴스) [RSS]",
+      "published": "2026-10-08T13:00:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-08T22:01:22.859763+09:00",
+      "type": "single",
+      "title": "Russian-aligned spies upgrade malware used in attacks on Ukrainian transport, energy firms",
+      "url": "https://therecord.media/russia-ukraine-malware-transportation",
+      "source": "The Record by Recorded Future (위협뉴스) [RSS]",
+      "published": "2026-10-08T12:30:00+00:00",
+      "keywords": [
+        "Malware"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
