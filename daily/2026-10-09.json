@@ -2,10 +2,10 @@
   "date": "2026-10-09",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 4,
+    "scan_runs": 5,
     "total_articles_max": 1811,
     "matched_articles_max": 172,
-    "new_alerts": 7,
+    "new_alerts": 8,
     "cve_total": 15,
     "alerts_with_cve": 4,
     "cve_count": 15,
@@ -30,7 +30,7 @@
     ],
     "keywords_hit": {
       "CVE": 4,
-      "Malware": 3
+      "Malware": 4
     }
   },
   "alerts": [
@@ -256,6 +256,20 @@
       "url": "https://www.bleepingcomputer.com/news/security/fakegit-malware-campaign-returns-with-17-610-malicious-github-repos/",
       "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
       "published": "2026-10-08T17:10:55+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-09T04:01:05.660268+09:00",
+      "type": "single",
+      "title": "Russian Spies Give 'MatchBoil' Malware a Stealthy Facelift",
+      "url": "https://www.darkreading.com/cyberattacks-data-breaches/russian-spies-matchboil-malware-facelift",
+      "source": "Dark Reading (보안뉴스 종합) [RSS]",
+      "published": "2026-10-08T18:01:50+00:00",
       "keywords": [
         "Malware"
       ],
