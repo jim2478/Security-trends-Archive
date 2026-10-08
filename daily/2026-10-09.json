@@ -2,10 +2,10 @@
   "date": "2026-10-09",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 1,
-    "total_articles_max": 1801,
-    "matched_articles_max": 168,
-    "new_alerts": 1,
+    "scan_runs": 2,
+    "total_articles_max": 1811,
+    "matched_articles_max": 172,
+    "new_alerts": 3,
     "cve_total": 1,
     "alerts_with_cve": 1,
     "cve_count": 1,
@@ -15,6 +15,7 @@
       "CVE-2026-21589"
     ],
     "keywords_hit": {
+      "Malware": 2,
       "CVE": 1
     }
   },
@@ -44,6 +45,34 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-10-09T01:01:21.935008+09:00",
+      "type": "single",
+      "title": "UAC-0099 Targets Ukrainian Government Personnel With ASHVEIN RAT Hiding Commands in HTML",
+      "url": "https://thehackernews.com/2026/10/uac-0099-targets-ukrainian-government.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-10-08T15:26:56+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-09T01:01:21.935008+09:00",
+      "type": "single",
+      "title": "Midnight Mimosa Malware Found Preinstalled on Low-Cost Android Phones",
+      "url": "https://hackread.com/midnight-mimosa-malware-preinstalled-android-phones/",
+      "source": "HackRead (해킹/데이터유출) [RSS]",
+      "published": "2026-10-08T15:28:24+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
