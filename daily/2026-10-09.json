@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-09",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 1,
+    "total_articles_max": 1801,
+    "matched_articles_max": 168,
+    "new_alerts": 1,
+    "cve_total": 1,
+    "alerts_with_cve": 1,
+    "cve_count": 1,
+    "ioc_count": 0,
+    "merged_count": 0,
+    "unique_cves": [
+      "CVE-2026-21589"
+    ],
+    "keywords_hit": {
+      "CVE": 1
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-10-09T00:01:13.773062+09:00",
+      "type": "single",
+      "title": "Attackers Target Critical Atlassian Vulnerability Within Hours of PoC Publication",
+      "url": "https://www.securityweek.com/attackers-target-critical-atlassian-vulnerability-within-hours-of-poc-publication/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-10-08T14:04:44+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-21589"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-21589",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-552",
+          "description": "This is a vulnerability in Bitbucket Data Center, Confluence Data Center, Jira Service Management Data Center, Jira Software Data Center, Bamboo Data Center. Crowd Data Center, Crucible and Fisheye. This Arbitrary File Access vulnerability allows an unauthenticated attacker to access specific files within the web application root directory in affected versions. Exploitation requires prior knowledge of the target file's exact name and path; this vulnerability does not allow attackers to enumerate",
+          "epss_score": 0.01773,
+          "kev": false
+        }
+      ]
+    }
+  ]
+}
