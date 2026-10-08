@@ -2,21 +2,35 @@
   "date": "2026-10-09",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
+    "scan_runs": 3,
     "total_articles_max": 1811,
     "matched_articles_max": 172,
-    "new_alerts": 3,
-    "cve_total": 1,
-    "alerts_with_cve": 1,
-    "cve_count": 1,
+    "new_alerts": 6,
+    "cve_total": 15,
+    "alerts_with_cve": 4,
+    "cve_count": 15,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
-      "CVE-2026-21589"
+      "CVE-2026-100730",
+      "CVE-2026-101022",
+      "CVE-2026-104629",
+      "CVE-2026-105269",
+      "CVE-2026-105278",
+      "CVE-2026-105281",
+      "CVE-2026-21589",
+      "CVE-2026-28745",
+      "CVE-2026-29797",
+      "CVE-2026-32645",
+      "CVE-2026-33272",
+      "CVE-2026-33367",
+      "CVE-2026-39453",
+      "CVE-2026-39460",
+      "CVE-2026-85479"
     ],
     "keywords_hit": {
-      "Malware": 2,
-      "CVE": 1
+      "CVE": 4,
+      "Malware": 2
     }
   },
   "alerts": [
@@ -73,6 +87,167 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-09T02:01:41.626457+09:00",
+      "type": "single",
+      "title": "Red Lion Controls N-Tron 700 Series",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-281-01",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-10-08T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-32645",
+        "CVE-2026-39460",
+        "CVE-2026-28745",
+        "CVE-2026-33367",
+        "CVE-2026-29797",
+        "CVE-2026-39453",
+        "CVE-2026-33272"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-32645",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-39460",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-28745",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-33367",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-29797",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-09T02:01:41.626457+09:00",
+      "type": "single",
+      "title": "Satel Netco Design",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-281-03",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-10-08T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-105269"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-105269",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-09T02:01:41.626457+09:00",
+      "type": "single",
+      "title": "Grid Protection Alliance openPDC and openHistorian",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-281-02",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-10-08T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-104629",
+        "CVE-2026-100730",
+        "CVE-2026-105281",
+        "CVE-2026-85479",
+        "CVE-2026-101022",
+        "CVE-2026-105278"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-104629",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-100730",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-105281",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-85479",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-101022",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
     }
   ]
 }
