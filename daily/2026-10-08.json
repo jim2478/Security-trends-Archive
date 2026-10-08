@@ -2,10 +2,10 @@
   "date": "2026-10-08",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 11,
+    "scan_runs": 12,
     "total_articles_max": 1811,
     "matched_articles_max": 169,
-    "new_alerts": 3,
+    "new_alerts": 4,
     "cve_total": 3,
     "alerts_with_cve": 2,
     "cve_count": 3,
@@ -18,7 +18,8 @@
     ],
     "keywords_hit": {
       "Malware": 2,
-      "CVE": 1
+      "CVE": 1,
+      "DDoS": 1
     }
   },
   "alerts": [
@@ -93,6 +94,20 @@
       "published": "2026-10-07T17:43:20+00:00",
       "keywords": [
         "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-08T11:01:04.702130+09:00",
+      "type": "single",
+      "title": "[단독]금융권 해킹범 추정 텔레그램 계정, ‘디도스 공격 대행’ 커뮤니티도 운영해",
+      "url": "https://www.khan.co.kr/article/202610081026011",
+      "source": "경향신문 (경제) [RSS]",
+      "published": "2026-10-08T01:26:00+00:00",
+      "keywords": [
+        "DDoS"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
