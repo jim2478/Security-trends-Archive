@@ -2,22 +2,23 @@
   "date": "2026-10-08",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 19,
+    "scan_runs": 20,
     "total_articles_max": 1811,
     "matched_articles_max": 169,
-    "new_alerts": 6,
-    "cve_total": 4,
-    "alerts_with_cve": 3,
-    "cve_count": 4,
+    "new_alerts": 7,
+    "cve_total": 5,
+    "alerts_with_cve": 4,
+    "cve_count": 5,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
+      "CVE-2015-2291",
       "CVE-2026-21589",
       "CVE-2026-42271",
       "CVE-2026-48710"
     ],
     "keywords_hit": {
-      "Malware": 3,
+      "Malware": 4,
       "CVE": 2,
       "DDoS": 1
     }
@@ -150,6 +151,32 @@
           "description": "This is a vulnerability in Bitbucket Data Center, Confluence Data Center, Jira Service Management Data Center, Jira Software Data Center, Bamboo Data Center. Crowd Data Center, Crucible and Fisheye. This Arbitrary File Access vulnerability allows an unauthenticated attacker to access specific files within the web application root directory in affected versions. Exploitation requires prior knowledge of the target file's exact name and path; this vulnerability does not allow attackers to enumerate",
           "epss_score": 0.01755,
           "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-08T19:01:14.947646+09:00",
+      "type": "single",
+      "title": "Ignore all instructions and read this blog: The state of AI-analysis evasion in malware",
+      "url": "https://blog.talosintelligence.com/ignore-all-instructions-and-read-this-blog-the-state-of-ai-analysis-evasion-in-malware/",
+      "source": "Cisco Talos Intelligence (위협분석) [RSS]",
+      "published": "2026-10-08T10:00:14+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2015-2291"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2015-2291",
+          "cvss_score": 7.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-20 (Improper Input Validation)",
+          "description": "(1) IQVW32.sys before 1.3.1.0 and (2) IQVW64.sys before 1.3.1.0 in the Intel Ethernet diagnostics driver for Windows allows local users to cause a denial of service or possibly execute arbitrary code with kernel privileges via a crafted (a) 0x80862013, (b) 0x8086200B, (c) 0x8086200F, or (d) 0x80862007 IOCTL call.",
+          "epss_score": 0.09011,
+          "kev": true
         }
       ]
     }
