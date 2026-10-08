@@ -2,10 +2,10 @@
   "date": "2026-10-09",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
+    "scan_runs": 4,
     "total_articles_max": 1811,
     "matched_articles_max": 172,
-    "new_alerts": 6,
+    "new_alerts": 7,
     "cve_total": 15,
     "alerts_with_cve": 4,
     "cve_count": 15,
@@ -30,7 +30,7 @@
     ],
     "keywords_hit": {
       "CVE": 4,
-      "Malware": 2
+      "Malware": 3
     }
   },
   "alerts": [
@@ -248,6 +248,20 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-10-09T03:01:11.959585+09:00",
+      "type": "single",
+      "title": "FakeGit malware campaign returns with 17,610 malicious GitHub repos",
+      "url": "https://www.bleepingcomputer.com/news/security/fakegit-malware-campaign-returns-with-17-610-malicious-github-repos/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-10-08T17:10:55+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
