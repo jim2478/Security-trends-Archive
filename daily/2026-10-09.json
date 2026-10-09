@@ -2,13 +2,13 @@
   "date": "2026-10-09",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 20,
+    "scan_runs": 21,
     "total_articles_max": 1811,
-    "matched_articles_max": 174,
-    "new_alerts": 16,
-    "cve_total": 16,
-    "alerts_with_cve": 5,
-    "cve_count": 16,
+    "matched_articles_max": 175,
+    "new_alerts": 17,
+    "cve_total": 17,
+    "alerts_with_cve": 6,
+    "cve_count": 17,
     "ioc_count": 27,
     "merged_count": 0,
     "unique_cves": [
@@ -31,7 +31,7 @@
     ],
     "keywords_hit": {
       "Malware": 9,
-      "CVE": 5,
+      "CVE": 6,
       "DDoS": 2
     }
   },
@@ -402,6 +402,32 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-09T20:01:15.078160+09:00",
+      "type": "single",
+      "title": "CVE-2026-107406: Citrix Fixes Critical NetScaler ADC and Gateway Vulnerability",
+      "url": "https://securityaffairs.com/200670/security/cve-2026-107406-citrix-fixes-critical-netscaler-adc-and-gateway-vulnerability.html",
+      "source": "Security Affairs (보안뉴스/위협동향) [RSS]",
+      "published": "2026-10-09T10:04:43+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-107406"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-107406",
+          "cvss_score": 9.5,
+          "cvss_severity": "CRITICAL",
+          "cwe": null,
+          "description": "Memory overflow vulnerability leading to Remote Code Execution or Denial of Service Vulnerability in NetScaler ADC.\n\n\nNetScaler ADC or NetScaler Gateway must be configured as a SAML SP or SAML IdP, subject to the following version-specific requirements:\n\n\n\n \n\n  *  For the following versions: Applicable only when configured as a SAML IdP:\n  *  NetScaler ADC and NetScaler Gateway between 14.1-73.37 and 14.1-73.41, inclusive\n  *  NetScaler ADC 14.1-FIPS between 14.1-73.37 FIPS and 14.1-73.41 FIPS, ",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
     }
   ]
 }
