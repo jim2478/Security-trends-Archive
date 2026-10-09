@@ -1,0 +1,78 @@
+{
+  "date": "2026-10-10",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 1,
+    "total_articles_max": 1789,
+    "matched_articles_max": 177,
+    "new_alerts": 3,
+    "cve_total": 1,
+    "alerts_with_cve": 1,
+    "cve_count": 1,
+    "ioc_count": 0,
+    "merged_count": 0,
+    "unique_cves": [
+      "CVE-2026-105133"
+    ],
+    "keywords_hit": {
+      "CVE": 2,
+      "DDoS": 1
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-10-10T00:01:34.448738+09:00",
+      "type": "single",
+      "title": "Attackers Exploit AhsayCBS Flaws to Deploy XMRig Miners Disguised as Microsoft Edge",
+      "url": "https://thehackernews.com/2026/10/attackers-exploit-ahsaycbs-flaws-to.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-10-09T12:47:26+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-105133"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-105133",
+          "cvss_score": 5.5,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-287 (Authentication Bypass)",
+          "description": "A vulnerability was detected in Ahsay AhsayCBS up to 10.3.2. This affects the function checkSysPwd of the file com/ahsay/obs/api/ApiStructsAction.java of the component API. Performing a manipulation of the argument random results in improper authentication. It is possible to initiate the attack remotely. The exploit is now public and may be used. Upgrading to version 10.3.4 is able to mitigate this issue. It is recommended to upgrade the affected component.",
+          "epss_score": 0.00383,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-10T00:01:34.448738+09:00",
+      "type": "single",
+      "title": "Researchers Publish Working Exploit for Pre-Auth AnyDesk Linux Flaw That Gives Root Access",
+      "url": "https://thehackernews.com/2026/10/researchers-publish-working-exploit-for.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-10-09T12:59:22+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-10T00:01:34.448738+09:00",
+      "type": "single",
+      "title": "韓금융권 노린 해커 정체는…“中디도스 대행 조직 배후 정황”",
+      "url": "https://www.joongang.co.kr/article/25468488",
+      "source": "중앙일보 (경제) [RSS]",
+      "published": "2026-10-09T14:37:26+00:00",
+      "keywords": [
+        "DDoS"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
