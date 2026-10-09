@@ -2,13 +2,13 @@
   "date": "2026-10-09",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 19,
+    "scan_runs": 20,
     "total_articles_max": 1811,
     "matched_articles_max": 174,
-    "new_alerts": 14,
-    "cve_total": 15,
-    "alerts_with_cve": 4,
-    "cve_count": 15,
+    "new_alerts": 16,
+    "cve_total": 16,
+    "alerts_with_cve": 5,
+    "cve_count": 16,
     "ioc_count": 27,
     "merged_count": 0,
     "unique_cves": [
@@ -18,6 +18,7 @@
       "CVE-2026-105269",
       "CVE-2026-105278",
       "CVE-2026-105281",
+      "CVE-2026-107406",
       "CVE-2026-21589",
       "CVE-2026-28745",
       "CVE-2026-29797",
@@ -29,8 +30,8 @@
       "CVE-2026-85479"
     ],
     "keywords_hit": {
-      "Malware": 8,
-      "CVE": 4,
+      "Malware": 9,
+      "CVE": 5,
       "DDoS": 2
     }
   },
@@ -357,6 +358,46 @@
       "published": "2026-10-09T16:01:17+00:00",
       "keywords": [
         "DDoS"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-09T19:01:54.824858+09:00",
+      "type": "single",
+      "title": "Citrix Patches Critical NetScaler Flaw That Could Enable RCE in SAML Deployments",
+      "url": "https://thehackernews.com/2026/10/citrix-patches-critical-netscaler-flaw.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-10-09T08:11:33+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-107406"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-107406",
+          "cvss_score": 9.5,
+          "cvss_severity": "CRITICAL",
+          "cwe": null,
+          "description": "Memory overflow vulnerability leading to Remote Code Execution or Denial of Service Vulnerability in NetScaler ADC.\n\n\nNetScaler ADC or NetScaler Gateway must be configured as a SAML SP or SAML IdP, subject to the following version-specific requirements:\n\n\n\n \n\n  *  For the following versions: Applicable only when configured as a SAML IdP:\n  *  NetScaler ADC and NetScaler Gateway between 14.1-73.37 and 14.1-73.41, inclusive\n  *  NetScaler ADC 14.1-FIPS between 14.1-73.37 FIPS and 14.1-73.41 FIPS, ",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-09T19:01:54.824858+09:00",
+      "type": "single",
+      "title": "Pre-Baked Firmware Malware Hits Budget Android Devices in 150+ Countries",
+      "url": "https://www.securityweek.com/pre-baked-firmware-malware-hits-budget-android-devices-in-150-countries/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-10-09T09:55:35+00:00",
+      "keywords": [
+        "Malware"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
