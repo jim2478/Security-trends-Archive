@@ -2,10 +2,10 @@
   "date": "2026-10-09",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 17,
+    "scan_runs": 18,
     "total_articles_max": 1811,
-    "matched_articles_max": 172,
-    "new_alerts": 12,
+    "matched_articles_max": 174,
+    "new_alerts": 14,
     "cve_total": 15,
     "alerts_with_cve": 4,
     "cve_count": 15,
@@ -30,7 +30,8 @@
     ],
     "keywords_hit": {
       "Malware": 8,
-      "CVE": 4
+      "CVE": 4,
+      "DDoS": 2
     }
   },
   "alerts": [
@@ -328,6 +329,34 @@
       "published": "2026-10-09T06:00:22+00:00",
       "keywords": [
         "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-09T17:01:16.087868+09:00",
+      "type": "single",
+      "title": "NCSC Hacktivist DDOS Warning: A 7-Step Response",
+      "url": "http://www.ddosinfo.com/ddos-news/ncsc-hacktivist-ddos-warning/",
+      "source": "DDoS Info [RSS]",
+      "published": "2026-10-09T07:00:02+00:00",
+      "keywords": [
+        "DDoS"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-09T17:01:16.087868+09:00",
+      "type": "single",
+      "title": "[단독] 한국 금융사 해킹 용의자 28개월간 행적 추적...공격대행·해커 커뮤니티 운영 정황 드러나",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=208807",
+      "source": "데일리시큐 (전체) [RSS]",
+      "published": "2026-10-09T16:01:17+00:00",
+      "keywords": [
+        "DDoS"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
