@@ -2,23 +2,27 @@
   "date": "2026-10-09",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 22,
+    "scan_runs": 23,
     "total_articles_max": 1811,
-    "matched_articles_max": 175,
-    "new_alerts": 17,
-    "cve_total": 17,
-    "alerts_with_cve": 6,
-    "cve_count": 17,
+    "matched_articles_max": 176,
+    "new_alerts": 20,
+    "cve_total": 25,
+    "alerts_with_cve": 9,
+    "cve_count": 25,
     "ioc_count": 27,
-    "merged_count": 0,
+    "merged_count": 1,
     "unique_cves": [
+      "CVE-2015-3306",
       "CVE-2026-100730",
       "CVE-2026-101022",
+      "CVE-2026-102255",
       "CVE-2026-104629",
       "CVE-2026-105269",
       "CVE-2026-105278",
       "CVE-2026-105281",
       "CVE-2026-107406",
+      "CVE-2026-15409",
+      "CVE-2026-15410",
       "CVE-2026-21589",
       "CVE-2026-28745",
       "CVE-2026-29797",
@@ -27,12 +31,16 @@
       "CVE-2026-33367",
       "CVE-2026-39453",
       "CVE-2026-39460",
+      "CVE-2026-47483",
+      "CVE-2026-83548",
+      "CVE-2026-83549",
       "CVE-2026-85479"
     ],
     "keywords_hit": {
       "Malware": 9,
-      "CVE": 6,
-      "DDoS": 2
+      "CVE": 9,
+      "DDoS": 2,
+      "Botnet": 1
     }
   },
   "alerts": [
@@ -425,6 +433,133 @@
           "cwe": null,
           "description": "Memory overflow vulnerability leading to Remote Code Execution or Denial of Service Vulnerability in NetScaler ADC.\n\n\nNetScaler ADC or NetScaler Gateway must be configured as a SAML SP or SAML IdP, subject to the following version-specific requirements:\n\n\n\n \n\n  *  For the following versions: Applicable only when configured as a SAML IdP:\n  *  NetScaler ADC and NetScaler Gateway between 14.1-73.37 and 14.1-73.41, inclusive\n  *  NetScaler ADC 14.1-FIPS between 14.1-73.37 FIPS and 14.1-73.41 FIPS, ",
           "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-09T22:01:30.282285+09:00",
+      "type": "single",
+      "title": "Flax Typhoon Exploits Five Flaws as CISA Sets October 11 Deadline for Federal Agencies",
+      "url": "https://thehackernews.com/2026/10/flax-typhoon-exploits-five-flaws-as.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-10-09T12:21:51+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2015-3306"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2015-3306",
+          "cvss_score": 10.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-284 (Improper Access Control)",
+          "description": "The mod_copy module in ProFTPD 1.3.5 allows remote attackers to read and write to arbitrary files via the site cpfr and site cpto commands.",
+          "epss_score": 0.96752,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-09T22:01:30.282285+09:00",
+      "type": "single",
+      "title": "Max severity SonicWall SMA1000 flaw now exploited in attacks",
+      "url": "https://www.bleepingcomputer.com/news/security/max-severity-sonicwall-sma1000-flaw-now-exploited-in-attacks/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-10-09T12:32:16+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-102255",
+        "CVE-2026-15409",
+        "CVE-2026-15410",
+        "CVE-2026-83548",
+        "CVE-2026-83549"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-102255",
+          "cvss_score": 10.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-441",
+          "description": "A Pre-authentication SSRF vulnerability exists in the SMA1000 Appliance Work Place interface due to an unintended alternate access path. By abusing this path, a remote unauthenticated attacker could potentially exploit this vulnerability to direct the appliance to issue requests on their behalf and reach internal functionality and perform unauthorized operations.",
+          "epss_score": 0.00477,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-15409",
+          "cvss_score": 10.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-918 (SSRF)",
+          "description": "A Server-side request forgery (SSRF) vulnerability has been identified in the SMA1000 Appliance Work Place interface. A remote unauthenticated attacker could potentially cause the appliance to make requests to unintended location.",
+          "epss_score": 0.06795,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-15410",
+          "cvss_score": 7.2,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-94 (Code Injection)",
+          "description": "Post-authentication improper control of generation of code ('Code Injection') vulnerability has been identified in the SMA1000 Appliance Management Console (AMC) which in specific conditions could potentially enable a remote authenticated attacker as administrator to execute arbitrary OS commands.",
+          "epss_score": 0.11791,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-83548",
+          "cvss_score": 10.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-441",
+          "description": "A Pre-authentication SSRF vulnerability exists in the SMA1000 Appliance Work Place interface due to an unintended alternate access path. A remote unauthenticated attacker could potentially exploit this vulnerability to gain unauthorized access to sensitive functionality and perform unauthorized operations.",
+          "epss_score": 0.08757,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-83549",
+          "cvss_score": 7.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-78 (OS Command Injection)",
+          "description": "Post-authentication Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability has been identified in the SMA1000 Appliance Management Console (AMC) which in specific conditions could potentially enable a remote authenticated attacker as administrator to execute arbitrary OS commands, resulting in remote code execution.",
+          "epss_score": 0.1076,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-09T22:01:30.282285+09:00",
+      "type": "merged",
+      "cve_ids": [
+        "CVE-2026-47483"
+      ],
+      "keywords": [
+        "Botnet",
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "sources": [
+        {
+          "title": "In Other News: AI Used in Korean Bank Breaches, Poem-Guided Botnet, Empire Admin Gets 40 Years",
+          "url": "https://www.securityweek.com/in-other-news-ai-used-in-korean-bank-breaches-poem-guided-botnet-empire-admin-gets-40-years/",
+          "source": "SecurityWeek (보안뉴스 종합) [RSS]"
+        },
+        {
+          "title": "High-severity NVIDIA vulnerability lets unauthenticated attackers crash GPU monitoring",
+          "url": "https://www.helpnetsecurity.com/2026/10/09/nvidia-dcgm-exporter-vulnerability-cve-2026-47483/",
+          "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]"
+        }
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-47483",
+          "cvss_score": 8.2,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-770",
+          "description": "NVIDIA DCGM Exporter for all platforms contains a vulnerability in the /debug/pprof endpoints, where an attacker could cause uncontrolled resource consumption by submitting concurrent unauthenticated profiling requests. A successful exploit of this vulnerability might lead to denial of service and information disclosure.",
+          "epss_score": 0.00551,
           "kev": false
         }
       ]
