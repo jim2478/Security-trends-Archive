@@ -2,20 +2,26 @@
   "date": "2026-10-10",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
+    "scan_runs": 4,
     "total_articles_max": 1809,
     "matched_articles_max": 178,
-    "new_alerts": 3,
-    "cve_total": 1,
-    "alerts_with_cve": 1,
-    "cve_count": 1,
+    "new_alerts": 4,
+    "cve_total": 7,
+    "alerts_with_cve": 2,
+    "cve_count": 7,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
-      "CVE-2026-105133"
+      "CVE-2023-27350",
+      "CVE-2023-27351",
+      "CVE-2026-105133",
+      "CVE-2026-81578",
+      "CVE-2026-81579",
+      "CVE-2026-82077",
+      "CVE-2026-82078"
     ],
     "keywords_hit": {
-      "CVE": 2,
+      "CVE": 3,
       "DDoS": 1
     }
   },
@@ -73,6 +79,73 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-10T03:01:30.116122+09:00",
+      "type": "single",
+      "title": "Death By A Thousand PaperCuts (PaperCut Pre-Auth RCE Chain and Patch Bypasses WT-2026-0141-0144/CVE-2026-82077/CVE-2026-82078/CVE-2026-81578)",
+      "url": "https://labs.watchtowr.com/death-by-a-thousand-papercuts-papercut-pre-auth-rce-chain-and-patch-bypasses-wt-2026-0141-0144-cve-2026-82077-cve-2026-82078-cve-2026-81578/",
+      "source": "watchTowr Labs (취약점연구) [RSS]",
+      "published": "2026-10-09T17:31:14+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-82077",
+        "CVE-2026-82078",
+        "CVE-2026-81578",
+        "CVE-2023-27351",
+        "CVE-2023-27350",
+        "CVE-2026-81579"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-82077",
+          "cvss_score": 7.3,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-22 (Path Traversal)",
+          "description": "An improper limitation of a pathname to a restricted directory (path traversal) vulnerability in the Scan-to-Fax component of PaperCut NG and PaperCut MF allows an authenticated administrator to execute arbitrary commands on the underlying host via crafted fax provider settings.",
+          "epss_score": 0.00738,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-82078",
+          "cvss_score": 9.4,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-470",
+          "description": "An unsafe dynamic class loading vulnerability exists in the database connection utilities of PaperCut MF and PaperCut NG. The application instantiates database driver classes based on configurable driver names without validating against an allowlist of approved drivers. If an attacker can manipulate system configuration parameters, this enables the execution of arbitrary Java bytecode residing on the application classpath under the security context of the PaperCut server process.",
+          "epss_score": 0.63532,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-81578",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-305",
+          "description": "An improper access control vulnerability exists in the web management interface of PaperCut MF and PaperCut NG. Under specific conditions, unauthenticated remote requests targeting administrative functions can trigger backend actions prior to the  completion of access validation checks. This allows an unauthenticated remote attacker to modify certain system configurations.",
+          "epss_score": 0.85581,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2023-27351",
+          "cvss_score": 7.5,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-287 (Authentication Bypass)",
+          "description": "This vulnerability allows remote attackers to bypass authentication on affected installations of PaperCut NG 22.0.5 (Build 63914). Authentication is not required to exploit this vulnerability. The specific flaw exists within the SecurityRequestFilter class. The issue results from improper implementation of the authentication algorithm. An attacker can leverage this vulnerability to bypass authentication on the system. Was ZDI-CAN-19226.",
+          "epss_score": 0.78052,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2023-27350",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-284 (Improper Access Control)",
+          "description": "This vulnerability allows remote attackers to bypass authentication on affected installations of PaperCut NG 22.0.5 (Build 63914). Authentication is not required to exploit this vulnerability. The specific flaw exists within the SetupCompleted class. The issue results from improper access control. An attacker can leverage this vulnerability to bypass authentication and execute arbitrary code in the context of SYSTEM. Was ZDI-CAN-18987.",
+          "epss_score": 0.99999,
+          "kev": true
+        }
+      ]
     }
   ]
 }
