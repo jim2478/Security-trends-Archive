@@ -2,10 +2,10 @@
   "date": "2026-10-09",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 16,
+    "scan_runs": 17,
     "total_articles_max": 1811,
     "matched_articles_max": 172,
-    "new_alerts": 11,
+    "new_alerts": 12,
     "cve_total": 15,
     "alerts_with_cve": 4,
     "cve_count": 15,
@@ -29,7 +29,7 @@
       "CVE-2026-85479"
     ],
     "keywords_hit": {
-      "Malware": 7,
+      "Malware": 8,
       "CVE": 4
     }
   },
@@ -316,6 +316,20 @@
         "Malware"
       ],
       "ioc_raw_text": "[Domain] hiraginosans-bold[.]woff\n[Domain] hiraginosans-regular[.]woff\n[Domain] malgungothic-bold[.]woff\n[Domain] malgungothic-italic[.]woff\n[Domain] notosanscjk-bold[.]woff\n[Domain] notosanscjk-extrabold[.]woff\n[Domain] notosanscjk-italic[.]woff\n[Domain] notosanscjk-regular[.]woff\n[Domain] delay[.]servehttp[.]com\n[URL] hxxps://diagnose[.]hashicorp-terraform[.]io/plugins/grpc/v6/schema/metrics/333afe63-c5a2-43f0-b046-7cbaa7797e8a\n[URL] hxxps://supportaru[.]serveftp[.]com/statics/cache/v11/\n[URL] hxxps://raw[.]githubusercontent[.]com/bluearuhost/hospitalrun-frontend/refs/heads/main/public/fonts/version1/\n[URL] hxxps://stage-fashion365[.]vercel[.]app/static/tinymce4.7.5/plugins/fonts/v1104/\n[URL] hxxps://arusupport-region1-webhook[.]online/statics/cache/v11/abicfjej\n[URL] hxxps://pastebin[.]com/raw/3yptBDhL\n[MD5] 116f7189ed7b41f1b339a749d56e63be\n[MD5] 2621753691be9521288664bb551dfba6\n[MD5] 2b81aceab0142472d94eb42e500b27b1\n[MD5] 34a52e6a4d803e94fe497bab682abfd3\n[MD5] 3826dc7a9ba8bd5b1c143560c1530d89\n[MD5] 4b8509cde757b5428e5f99c8dffe73ca\n[MD5] 58fa0d651898446d5f5d2ed8a27a3330\n[MD5] 73adaea97f003735335505858c1c6def\n[MD5] 9d78ece09457907b730d139e4e0c64dd\n[MD5] 9d88b4494c7bc27b10358b68a899ad54\n[MD5] ad0b1b6d2c8b9d09d6473a4a299470ab\n[MD5] be60c52ca8a01fef7dc15c2f0ebb77d8",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-09T16:01:16.110283+09:00",
+      "type": "single",
+      "title": "What the BPFDoor backdoor tells us about attacks on the network edge",
+      "url": "https://www.helpnetsecurity.com/2026/10/09/christiaan-beek-rapid7-bpfdoor-backdoor/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-10-09T06:00:22+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
     }
