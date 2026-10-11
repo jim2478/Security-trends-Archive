@@ -2,10 +2,10 @@
   "date": "2026-10-12",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 1,
-    "total_articles_max": 1791,
+    "scan_runs": 2,
+    "total_articles_max": 1801,
     "matched_articles_max": 174,
-    "new_alerts": 1,
+    "new_alerts": 2,
     "cve_total": 0,
     "alerts_with_cve": 0,
     "cve_count": 0,
@@ -13,7 +13,8 @@
     "merged_count": 0,
     "unique_cves": [],
     "keywords_hit": {
-      "Malware": 1
+      "Malware": 2,
+      "Botnet": 1
     }
   },
   "alerts": [
@@ -25,6 +26,21 @@
       "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
       "published": "2026-10-11T14:23:46+00:00",
       "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-12T01:01:12.073707+09:00",
+      "type": "single",
+      "title": "Bitdefender finds preinstalled Android malware you can’t uninstall, seen in 150 countries",
+      "url": "https://securityaffairs.com/200759/malware/bitdefender-finds-preinstalled-android-malware-you-cant-uninstall-seen-in-150-countries.html",
+      "source": "Security Affairs (보안뉴스/위협동향) [RSS]",
+      "published": "2026-10-11T14:41:18+00:00",
+      "keywords": [
+        "Botnet",
         "Malware"
       ],
       "ioc_raw_text": "",
