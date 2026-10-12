@@ -2,19 +2,22 @@
   "date": "2026-10-12",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 19,
+    "scan_runs": 20,
     "total_articles_max": 1811,
     "matched_articles_max": 176,
-    "new_alerts": 2,
-    "cve_total": 0,
-    "alerts_with_cve": 0,
-    "cve_count": 0,
+    "new_alerts": 3,
+    "cve_total": 1,
+    "alerts_with_cve": 1,
+    "cve_count": 1,
     "ioc_count": 0,
     "merged_count": 0,
-    "unique_cves": [],
+    "unique_cves": [
+      "CVE-2026-85097"
+    ],
     "keywords_hit": {
       "Malware": 2,
-      "Botnet": 1
+      "Botnet": 1,
+      "CVE": 1
     }
   },
   "alerts": [
@@ -46,6 +49,32 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-12T19:01:19.228280+09:00",
+      "type": "single",
+      "title": "Attackers Exploit CVSS 10.0 Bricksforge WordPress Flaw Enabling Unauthenticated RCE",
+      "url": "https://thehackernews.com/2026/10/attackers-exploit-cvss-100-bricksforge.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-10-12T09:02:14+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-85097"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-85097",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-434 (Unrestricted File Upload)",
+          "description": "The Bricksforge plugin for WordPress is vulnerable to unauthenticated arbitrary file upload in versions up to, and including, 3.1.8.9. This is due to insufficient validation of the attacker-controlled URL field in the 'temporaryFileUploads' parameter during form submission. An unauthenticated attacker can first obtain a valid nonce via the bricksforge_regenerate_nonce AJAX endpoint, then upload a GIF/PHP polyglot file to the temporary upload directory where MIME type validation is correctly perf",
+          "epss_score": 0.00312,
+          "kev": false
+        }
+      ]
     }
   ]
 }
