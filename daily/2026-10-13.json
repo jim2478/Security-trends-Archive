@@ -2,10 +2,10 @@
   "date": "2026-10-13",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 6,
+    "scan_runs": 7,
     "total_articles_max": 1791,
     "matched_articles_max": 172,
-    "new_alerts": 3,
+    "new_alerts": 4,
     "cve_total": 1,
     "alerts_with_cve": 1,
     "cve_count": 1,
@@ -16,7 +16,8 @@
     ],
     "keywords_hit": {
       "Malware": 2,
-      "CVE": 1
+      "CVE": 1,
+      "DDoS": 1
     }
   },
   "alerts": [
@@ -69,6 +70,20 @@
       "published": "2026-10-12T15:16:26+00:00",
       "keywords": [
         "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-13T06:01:09.033861+09:00",
+      "type": "single",
+      "title": "Canonical Hit by Second DDoS Attack in 2026, Public Websites Disrupted",
+      "url": "https://securityaffairs.com/200832/security/canonical-hit-by-second-ddos-attack-in-2026.html",
+      "source": "Security Affairs (보안뉴스/위협동향) [RSS]",
+      "published": "2026-10-12T20:02:20+00:00",
+      "keywords": [
+        "DDoS"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
