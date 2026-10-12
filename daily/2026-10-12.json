@@ -2,10 +2,10 @@
   "date": "2026-10-12",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 22,
+    "scan_runs": 23,
     "total_articles_max": 1811,
     "matched_articles_max": 176,
-    "new_alerts": 6,
+    "new_alerts": 7,
     "cve_total": 2,
     "alerts_with_cve": 2,
     "cve_count": 2,
@@ -18,8 +18,8 @@
     "keywords_hit": {
       "Malware": 3,
       "CVE": 2,
-      "Botnet": 1,
-      "DDoS": 1
+      "DDoS": 2,
+      "Botnet": 1
     }
   },
   "alerts": [
@@ -131,6 +131,20 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-10-12T22:01:12.161739+09:00",
+      "type": "single",
+      "title": "Canonical Websites Disrupted in Second DDoS Attack This Year",
+      "url": "https://www.securityweek.com/canonical-websites-disrupted-in-second-ddos-attack-this-year/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-10-12T11:58:39+00:00",
+      "keywords": [
+        "DDoS"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
