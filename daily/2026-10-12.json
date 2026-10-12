@@ -2,10 +2,10 @@
   "date": "2026-10-12",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 20,
+    "scan_runs": 21,
     "total_articles_max": 1811,
     "matched_articles_max": 176,
-    "new_alerts": 3,
+    "new_alerts": 5,
     "cve_total": 1,
     "alerts_with_cve": 1,
     "cve_count": 1,
@@ -15,9 +15,10 @@
       "CVE-2026-85097"
     ],
     "keywords_hit": {
-      "Malware": 2,
+      "Malware": 3,
       "Botnet": 1,
-      "CVE": 1
+      "CVE": 1,
+      "DDoS": 1
     }
   },
   "alerts": [
@@ -75,6 +76,34 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-10-12T20:01:12.691353+09:00",
+      "type": "single",
+      "title": "Low-cost Android phones are arriving with malware that owners can’t uninstall",
+      "url": "https://www.helpnetsecurity.com/2026/10/12/midnight-mimosa-malware-cheap-android-phones/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-10-12T10:53:51+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-12T20:01:12.691353+09:00",
+      "type": "single",
+      "title": "DDOS Protected Hosting Provider: 6 Checks Before You Buy",
+      "url": "http://www.ddosinfo.com/ddos-vendors/ddos-protected-hosting-provider/",
+      "source": "DDoS Info [RSS]",
+      "published": "2026-10-12T09:00:03+00:00",
+      "keywords": [
+        "DDoS"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
