@@ -2,10 +2,10 @@
   "date": "2026-10-14",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 8,
+    "scan_runs": 9,
     "total_articles_max": 1791,
     "matched_articles_max": 172,
-    "new_alerts": 6,
+    "new_alerts": 7,
     "cve_total": 5,
     "alerts_with_cve": 3,
     "cve_count": 5,
@@ -20,7 +20,8 @@
     ],
     "keywords_hit": {
       "CVE": 3,
-      "Botnet": 3
+      "Botnet": 3,
+      "봇넷": 1
     }
   },
   "alerts": [
@@ -159,6 +160,20 @@
       "published": "2026-10-13T21:16:34+00:00",
       "keywords": [
         "Botnet"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-14T08:01:11.463367+09:00",
+      "type": "single",
+      "title": "’자가복제 AI, 강제종료에 저항하고 웹 마비’ 경고",
+      "url": "https://www.hani.co.kr/arti/international/international_general/1282272.html",
+      "source": "한겨레 (국제) [RSS]",
+      "published": "2026-10-13T22:35:00+00:00",
+      "keywords": [
+        "봇넷"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
