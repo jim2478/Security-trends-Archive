@@ -2,24 +2,25 @@
   "date": "2026-10-14",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 7,
+    "scan_runs": 8,
     "total_articles_max": 1791,
     "matched_articles_max": 172,
-    "new_alerts": 4,
-    "cve_total": 4,
-    "alerts_with_cve": 2,
-    "cve_count": 4,
+    "new_alerts": 6,
+    "cve_total": 5,
+    "alerts_with_cve": 3,
+    "cve_count": 5,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2026-105445",
       "CVE-2026-107605",
       "CVE-2026-107606",
-      "CVE-2026-107607"
+      "CVE-2026-107607",
+      "CVE-2026-39919"
     ],
     "keywords_hit": {
-      "CVE": 2,
-      "Botnet": 2
+      "CVE": 3,
+      "Botnet": 3
     }
   },
   "alerts": [
@@ -116,6 +117,46 @@
       "url": "https://thehackernews.com/2026/10/anthropic-warns-small-ai-models-could.html",
       "source": "The Hacker News (보안뉴스 종합) [RSS]",
       "published": "2026-10-13T18:20:57+00:00",
+      "keywords": [
+        "Botnet"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-14T07:01:19.566375+09:00",
+      "type": "single",
+      "title": "Ghostscript flaw lets hackers hijack servers via PDF uploads",
+      "url": "https://www.bleepingcomputer.com/news/security/ghostscript-flaw-lets-hackers-hijack-servers-via-pdf-uploads/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-10-13T21:33:26+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-39919"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-39919",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-122",
+          "description": "Ghostscript before 10.08.0 contains a heap-based buffer overflow vulnerability in the JPEG 2000 output adapter (base/sjpx_openjpeg.c) that allows attackers to cause memory corruption by supplying a crafted PDF containing a JPEG 2000 image with mismatched component subsampling factors. When image components declare different subsampling values, the non-samescale sub-byte-depth output path allocates a row buffer sized for packed output but writes a full byte per output column regardless of bit dep",
+          "epss_score": 0.00784,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-14T07:01:19.566375+09:00",
+      "type": "single",
+      "title": "Anthropic warns self-replicating AI could spread to your smart devices",
+      "url": "https://www.bleepingcomputer.com/news/security/anthropic-warns-self-replicating-ai-could-spread-to-your-smart-devices/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-10-13T21:16:34+00:00",
       "keywords": [
         "Botnet"
       ],
