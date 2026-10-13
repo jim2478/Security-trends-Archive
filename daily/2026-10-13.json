@@ -2,10 +2,10 @@
   "date": "2026-10-13",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 23,
+    "scan_runs": 24,
     "total_articles_max": 1791,
     "matched_articles_max": 173,
-    "new_alerts": 7,
+    "new_alerts": 8,
     "cve_total": 4,
     "alerts_with_cve": 2,
     "cve_count": 4,
@@ -19,8 +19,8 @@
     ],
     "keywords_hit": {
       "Malware": 3,
-      "CVE": 2,
-      "DDoS": 2
+      "DDoS": 3,
+      "CVE": 2
     }
   },
   "alerts": [
@@ -161,6 +161,20 @@
       "published": "2026-10-13T11:13:10+00:00",
       "keywords": [
         "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-13T23:01:11.324520+09:00",
+      "type": "single",
+      "title": "Russian internet provider SkyNet reports outages after cyberattack claimed by Ukrainian hackers",
+      "url": "https://therecord.media/russian-internet-provider-skynet-reports-outages-ddos",
+      "source": "The Record by Recorded Future (위협뉴스) [RSS]",
+      "published": "2026-10-13T13:20:00+00:00",
+      "keywords": [
+        "DDoS"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
