@@ -2,10 +2,10 @@
   "date": "2026-10-13",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 21,
+    "scan_runs": 22,
     "total_articles_max": 1791,
     "matched_articles_max": 173,
-    "new_alerts": 6,
+    "new_alerts": 7,
     "cve_total": 4,
     "alerts_with_cve": 2,
     "cve_count": 4,
@@ -18,7 +18,7 @@
       "CVE-2026-97229"
     ],
     "keywords_hit": {
-      "Malware": 2,
+      "Malware": 3,
       "CVE": 2,
       "DDoS": 2
     }
@@ -147,6 +147,20 @@
       "published": "2026-10-13T08:00:03+00:00",
       "keywords": [
         "DDoS"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-13T21:01:08.291077+09:00",
+      "type": "single",
+      "title": "XWorm RAT Evolves Into Surveillance Platform",
+      "url": "https://www.securityweek.com/xworm-rat-evolves-into-surveillance-platform/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-10-13T11:13:10+00:00",
+      "keywords": [
+        "Malware"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
