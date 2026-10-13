@@ -2,21 +2,24 @@
   "date": "2026-10-14",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
+    "scan_runs": 3,
     "total_articles_max": 1791,
     "matched_articles_max": 172,
-    "new_alerts": 2,
-    "cve_total": 1,
-    "alerts_with_cve": 1,
-    "cve_count": 1,
+    "new_alerts": 3,
+    "cve_total": 4,
+    "alerts_with_cve": 2,
+    "cve_count": 4,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
-      "CVE-2026-105445"
+      "CVE-2026-105445",
+      "CVE-2026-107605",
+      "CVE-2026-107606",
+      "CVE-2026-107607"
     ],
     "keywords_hit": {
-      "Botnet": 1,
-      "CVE": 1
+      "CVE": 2,
+      "Botnet": 1
     }
   },
   "alerts": [
@@ -51,6 +54,52 @@
       "cve_details": [
         {
           "cve_id": "CVE-2026-105445",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-14T02:01:24.012553+09:00",
+      "type": "single",
+      "title": "Swann Communications SWIFI-SE2KIC",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-286-02",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-10-13T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-107605",
+        "CVE-2026-107606",
+        "CVE-2026-107607"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-107605",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-107606",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-107607",
           "cvss_score": null,
           "cvss_severity": null,
           "cwe": null,
