@@ -2,22 +2,25 @@
   "date": "2026-10-13",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 19,
+    "scan_runs": 20,
     "total_articles_max": 1791,
-    "matched_articles_max": 172,
-    "new_alerts": 4,
-    "cve_total": 1,
-    "alerts_with_cve": 1,
-    "cve_count": 1,
+    "matched_articles_max": 173,
+    "new_alerts": 6,
+    "cve_total": 4,
+    "alerts_with_cve": 2,
+    "cve_count": 4,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
-      "CVE-2026-102255"
+      "CVE-2026-102255",
+      "CVE-2026-19478",
+      "CVE-2026-7767",
+      "CVE-2026-97229"
     ],
     "keywords_hit": {
       "Malware": 2,
-      "CVE": 1,
-      "DDoS": 1
+      "CVE": 2,
+      "DDoS": 2
     }
   },
   "alerts": [
@@ -82,6 +85,66 @@
       "url": "https://securityaffairs.com/200832/security/canonical-hit-by-second-ddos-attack-in-2026.html",
       "source": "Security Affairs (보안뉴스/위협동향) [RSS]",
       "published": "2026-10-12T20:02:20+00:00",
+      "keywords": [
+        "DDoS"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-13T19:01:29.395888+09:00",
+      "type": "single",
+      "title": "GitLab admins urged to patch critical RCE flaw (CVE-2026-97229)",
+      "url": "https://www.helpnetsecurity.com/2026/10/13/gitlab-ci-cd-regular-expression-compiler-vulnerability-cve-2026-97229/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-10-13T09:19:45+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-97229",
+        "CVE-2026-7767",
+        "CVE-2026-19478"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-97229",
+          "cvss_score": 10.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-190",
+          "description": "GitLab has remediated an issue in GitLab CE/EE affecting all versions from 19.2 before 19.2.8, 19.3 before 19.3.5, and 19.4 before 19.4.2 that, under certain conditions, could have allowed an unauthenticated user to execute arbitrary code on the GitLab server via a specially crafted regular expression in a CI/CD configuration, due to insufficient regular expression validation.",
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-7767",
+          "cvss_score": 5.8,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-601",
+          "description": "GitLab has remediated an issue in GitLab CE/EE affecting all versions from 13.11 before 19.2.8, 19.3 before 19.3.5, and 19.4 before 19.4.2 that, under certain conditions, could have allowed an authenticated user controlling a Kubernetes agent to cause sensitive authentication tokens to be sent to an unintended server due to improper redirect validation in the Kubernetes proxy.",
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-19478",
+          "cvss_score": 9.4,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-94 (Code Injection)",
+          "description": "GitLab has remediated an issue in GitLab CE/EE affecting all versions from 18.2 before 18.11.11, 19.0 before 19.0.8, 19.1 before 19.1.6, and 19.2 before 19.2.4 that under certain conditions could allow an unauthenticated user to remotely modify or delete public projects and user data via a GraphQL directive.",
+          "epss_score": 0.60204,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-13T19:01:29.395888+09:00",
+      "type": "single",
+      "title": "ISP DDOS Protection UK: What It Covers (And Doesn’t)",
+      "url": "http://www.ddosinfo.com/ddos-vendors/isp-ddos-protection-uk/",
+      "source": "DDoS Info [RSS]",
+      "published": "2026-10-13T08:00:03+00:00",
       "keywords": [
         "DDoS"
       ],
