@@ -2,10 +2,10 @@
   "date": "2026-10-14",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 20,
+    "scan_runs": 21,
     "total_articles_max": 1791,
     "matched_articles_max": 173,
-    "new_alerts": 12,
+    "new_alerts": 13,
     "cve_total": 11,
     "alerts_with_cve": 6,
     "cve_count": 11,
@@ -27,9 +27,9 @@
     "keywords_hit": {
       "CVE": 6,
       "Botnet": 3,
+      "DDoS": 2,
       "봇넷": 1,
-      "Malware": 1,
-      "DDoS": 1
+      "Malware": 1
     }
   },
   "alerts": [
@@ -316,6 +316,20 @@
       "url": "http://www.ddosinfo.com/ddos-vendors/data-centre-ddos-protection-colocation-checklist/",
       "source": "DDoS Info [RSS]",
       "published": "2026-10-14T08:00:03+00:00",
+      "keywords": [
+        "DDoS"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-14T20:01:16.409150+09:00",
+      "type": "single",
+      "title": "티빙, 국태호 신임 CISO 선임…정보보호 체계 강화",
+      "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=707197",
+      "source": "디지털투데이 (전체기사) [RSS]",
+      "published": "2026-10-14T09:44:12+00:00",
       "keywords": [
         "DDoS"
       ],
