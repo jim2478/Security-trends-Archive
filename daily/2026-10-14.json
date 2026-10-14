@@ -2,13 +2,13 @@
   "date": "2026-10-14",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 22,
+    "scan_runs": 23,
     "total_articles_max": 1791,
     "matched_articles_max": 173,
-    "new_alerts": 14,
-    "cve_total": 11,
-    "alerts_with_cve": 6,
-    "cve_count": 11,
+    "new_alerts": 15,
+    "cve_total": 12,
+    "alerts_with_cve": 7,
+    "cve_count": 12,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -25,7 +25,7 @@
       "CVE-2026-96951"
     ],
     "keywords_hit": {
-      "CVE": 6,
+      "CVE": 7,
       "Botnet": 3,
       "DDoS": 2,
       "Malware": 2,
@@ -350,6 +350,32 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-14T22:01:21.256511+09:00",
+      "type": "single",
+      "title": "CISA Urges Immediate Ivanti Connect Secure Updates as Honeypots Log 105 Exploit Attempts",
+      "url": "https://thehackernews.com/2026/10/cisa-urges-immediate-ivanti-connect.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-10-14T12:30:42+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-104935"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-104935",
+          "cvss_score": 8.6,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-290",
+          "description": "Authentication bypass by spoofing in ICS before version 25.1.3.0 allows a remote unauthenticated attacker to execute arbitrary commands. This does not impact ICS version 22.7R2.14 or prior.",
+          "epss_score": null,
+          "kev": true
+        }
+      ]
     }
   ]
 }
