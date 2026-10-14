@@ -2,10 +2,10 @@
   "date": "2026-10-14",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 23,
+    "scan_runs": 24,
     "total_articles_max": 1791,
     "matched_articles_max": 173,
-    "new_alerts": 15,
+    "new_alerts": 16,
     "cve_total": 12,
     "alerts_with_cve": 7,
     "cve_count": 12,
@@ -27,8 +27,8 @@
     "keywords_hit": {
       "CVE": 7,
       "Botnet": 3,
+      "Malware": 3,
       "DDoS": 2,
-      "Malware": 2,
       "봇넷": 1
     }
   },
@@ -376,6 +376,20 @@
           "kev": true
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-10-14T23:01:12.687174+09:00",
+      "type": "single",
+      "title": "ROMULUS Malware Server Leverages ClickFix to Deliver Multiple Payloads",
+      "url": "https://www.infosecurity-magazine.com/news/romulus-malware-clickfix-deliver/",
+      "source": "Infosecurity Magazine (보안뉴스) [RSS]",
+      "published": "2026-10-14T14:00:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
