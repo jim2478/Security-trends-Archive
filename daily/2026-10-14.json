@@ -2,10 +2,10 @@
   "date": "2026-10-14",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 21,
+    "scan_runs": 22,
     "total_articles_max": 1791,
     "matched_articles_max": 173,
-    "new_alerts": 13,
+    "new_alerts": 14,
     "cve_total": 11,
     "alerts_with_cve": 6,
     "cve_count": 11,
@@ -28,8 +28,8 @@
       "CVE": 6,
       "Botnet": 3,
       "DDoS": 2,
-      "봇넷": 1,
-      "Malware": 1
+      "Malware": 2,
+      "봇넷": 1
     }
   },
   "alerts": [
@@ -332,6 +332,20 @@
       "published": "2026-10-14T09:44:12+00:00",
       "keywords": [
         "DDoS"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-14T21:01:18.568353+09:00",
+      "type": "single",
+      "title": "Hirudo Android malware replaces banking apps to evade security checks",
+      "url": "https://www.bleepingcomputer.com/news/security/hirudo-android-malware-replaces-banking-apps-to-evade-security-checks/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-10-14T11:41:20+00:00",
+      "keywords": [
+        "Malware"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
