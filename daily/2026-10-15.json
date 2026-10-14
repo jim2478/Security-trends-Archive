@@ -2,21 +2,22 @@
   "date": "2026-10-15",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 7,
+    "scan_runs": 8,
     "total_articles_max": 1791,
     "matched_articles_max": 166,
-    "new_alerts": 2,
-    "cve_total": 2,
-    "alerts_with_cve": 1,
-    "cve_count": 2,
+    "new_alerts": 3,
+    "cve_total": 3,
+    "alerts_with_cve": 2,
+    "cve_count": 3,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
+      "CVE-2026-104935",
       "CVE-2026-105133",
       "CVE-2026-105134"
     ],
     "keywords_hit": {
-      "CVE": 1,
+      "CVE": 2,
       "Malware": 1
     }
   },
@@ -70,6 +71,32 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-15T07:01:15.672920+09:00",
+      "type": "single",
+      "title": "Ivanti ICS Zero-Day Attacks Highlight Vendor Patching Hurdles",
+      "url": "https://www.darkreading.com/vulnerabilities-threats/ivanti-ics-zero-day-attacks-vendor-patching",
+      "source": "Dark Reading (보안뉴스 종합) [RSS]",
+      "published": "2026-10-14T21:20:13+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-104935"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-104935",
+          "cvss_score": 8.6,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-290",
+          "description": "Authentication bypass by spoofing in ICS before version 25.1.3.0 allows a remote unauthenticated attacker to execute arbitrary commands. This does not impact ICS version 22.7R2.14 or prior.",
+          "epss_score": 0.25982,
+          "kev": true
+        }
+      ]
     }
   ]
 }
