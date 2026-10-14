@@ -2,13 +2,13 @@
   "date": "2026-10-14",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 19,
+    "scan_runs": 20,
     "total_articles_max": 1791,
     "matched_articles_max": 173,
-    "new_alerts": 10,
-    "cve_total": 10,
-    "alerts_with_cve": 5,
-    "cve_count": 10,
+    "new_alerts": 12,
+    "cve_total": 11,
+    "alerts_with_cve": 6,
+    "cve_count": 11,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -21,13 +21,15 @@
       "CVE-2026-21510",
       "CVE-2026-32202",
       "CVE-2026-39919",
+      "CVE-2026-74580",
       "CVE-2026-96951"
     ],
     "keywords_hit": {
-      "CVE": 5,
+      "CVE": 6,
       "Botnet": 3,
       "봇넷": 1,
-      "Malware": 1
+      "Malware": 1,
+      "DDoS": 1
     }
   },
   "alerts": [
@@ -280,6 +282,46 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-10-14T19:01:27.732980+09:00",
+      "type": "single",
+      "title": "AI-Found Linux Kernel Flaw Gives Local Users Root, and Can Break a Guest Out to the Host",
+      "url": "https://thehackernews.com/2026/10/ai-found-linux-kernel-flaw-gives-local.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-10-14T07:46:57+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-74580"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-74580",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": null,
+          "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nvhost: reset the vring metadata cache on vring reconfiguration\n\nvq->meta_iotlb[] caches the vhost_iotlb_map that backs each vring\nmetadata region, and iotlb_access_ok() returns early on a cache hit,\ntaking the hit as proof that the region has already been validated:\n\n\tif (vhost_vq_meta_fetch(vq, addr, len, type))\n\t\treturn true;\n\nThe cache is reset on VHOST_IOTLB_UPDATE and VHOST_IOTLB_INVALIDATE, on\ndevice IOTLB (re)initialisat",
+          "epss_score": 0.00121,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-14T19:01:27.732980+09:00",
+      "type": "single",
+      "title": "Data Centre DDOS Protection: A Colocation Checklist",
+      "url": "http://www.ddosinfo.com/ddos-vendors/data-centre-ddos-protection-colocation-checklist/",
+      "source": "DDoS Info [RSS]",
+      "published": "2026-10-14T08:00:03+00:00",
+      "keywords": [
+        "DDoS"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
