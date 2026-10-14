@@ -2,17 +2,59 @@
   "date": "2026-10-15",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
-    "total_articles_max": 1781,
+    "scan_runs": 3,
+    "total_articles_max": 1791,
     "matched_articles_max": 166,
-    "new_alerts": 0,
-    "cve_total": 0,
-    "alerts_with_cve": 0,
-    "cve_count": 0,
+    "new_alerts": 1,
+    "cve_total": 2,
+    "alerts_with_cve": 1,
+    "cve_count": 2,
     "ioc_count": 0,
     "merged_count": 0,
-    "unique_cves": [],
-    "keywords_hit": {}
+    "unique_cves": [
+      "CVE-2026-105133",
+      "CVE-2026-105134"
+    ],
+    "keywords_hit": {
+      "CVE": 1
+    }
   },
-  "alerts": []
+  "alerts": [
+    {
+      "scan_time_kst": "2026-10-15T02:01:25.326481+09:00",
+      "type": "single",
+      "title": "AhsayCBS Deep-Dive: Auth Bypass to RCE",
+      "url": "https://horizon3.ai/attack-research/attack-blogs/ahsaycbs-cve-2026-105133-cve-2026-105134-technical-analysis/",
+      "source": "Horizon3.ai (공격시뮬레이션) [RSS]",
+      "published": "2026-10-14T16:47:17+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-105133",
+        "CVE-2026-105134"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-105133",
+          "cvss_score": 5.5,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-287 (Authentication Bypass)",
+          "description": "A vulnerability was detected in Ahsay AhsayCBS up to 10.3.2. This affects the function checkSysPwd of the file com/ahsay/obs/api/ApiStructsAction.java of the component API. Performing a manipulation of the argument random results in improper authentication. It is possible to initiate the attack remotely. The exploit is now public and may be used. Upgrading to version 10.3.4 is able to mitigate this issue. It is recommended to upgrade the affected component.",
+          "epss_score": 0.00383,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-105134",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-77 (Command Injection)",
+          "description": "A flaw has been found in Ahsay AhsayCBS up to 10.3.2. This vulnerability affects unknown code of the file /rps/api/json/UpdateReceivers.do of the component Replication Receiver. Executing a manipulation of the argument random can lead to os command injection. It is possible to launch the attack remotely. The exploit has been published and may be used. Upgrading to version 10.3.4 is able to resolve this issue. Upgrading the affected component is advised.",
+          "epss_score": 0.01843,
+          "kev": false
+        }
+      ]
+    }
+  ]
 }
