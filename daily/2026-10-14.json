@@ -2,25 +2,29 @@
   "date": "2026-10-14",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 17,
+    "scan_runs": 18,
     "total_articles_max": 1791,
     "matched_articles_max": 173,
-    "new_alerts": 9,
-    "cve_total": 6,
-    "alerts_with_cve": 4,
-    "cve_count": 6,
+    "new_alerts": 10,
+    "cve_total": 10,
+    "alerts_with_cve": 5,
+    "cve_count": 10,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
+      "CVE-2026-102866",
       "CVE-2026-104935",
       "CVE-2026-105445",
       "CVE-2026-107605",
       "CVE-2026-107606",
       "CVE-2026-107607",
-      "CVE-2026-39919"
+      "CVE-2026-21510",
+      "CVE-2026-32202",
+      "CVE-2026-39919",
+      "CVE-2026-96951"
     ],
     "keywords_hit": {
-      "CVE": 4,
+      "CVE": 5,
       "Botnet": 3,
       "봇넷": 1,
       "Malware": 1
@@ -220,6 +224,62 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-14T17:01:22.053677+09:00",
+      "type": "single",
+      "title": "Microsoft fixes exploited Mark of the Web bypass vulnerability (CVE-2026-96951)",
+      "url": "https://www.helpnetsecurity.com/2026/10/14/microsoft-patch-tuesday-cve-2026-96951-motw-bypass/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-10-14T07:53:17+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-96951",
+        "CVE-2026-21510",
+        "CVE-2026-32202",
+        "CVE-2026-102866"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-96951",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-77 (Command Injection)",
+          "description": "Improper neutralization of special elements used in a command ('command injection') in Windows Shell allows an unauthorized attacker to bypass a security feature over a network.",
+          "epss_score": null,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-21510",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-693",
+          "description": "Protection mechanism failure in Windows Shell allows an unauthorized attacker to bypass a security feature over a network.",
+          "epss_score": 0.24537,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-32202",
+          "cvss_score": 4.3,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-693",
+          "description": "Protection mechanism failure in Windows Shell allows an unauthorized attacker to perform spoofing over a network.",
+          "epss_score": 0.04902,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-102866",
+          "cvss_score": 8.1,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-347",
+          "description": "Improper verification of cryptographic signature in Microsoft Office SharePoint allows an unauthorized attacker to elevate privileges over a network.",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
     }
   ]
 }
