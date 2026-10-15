@@ -2,10 +2,10 @@
   "date": "2026-10-15",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 23,
+    "scan_runs": 24,
     "total_articles_max": 1791,
-    "matched_articles_max": 172,
-    "new_alerts": 21,
+    "matched_articles_max": 173,
+    "new_alerts": 23,
     "cve_total": 27,
     "alerts_with_cve": 14,
     "cve_count": 27,
@@ -31,7 +31,7 @@
     ],
     "keywords_hit": {
       "CVE": 16,
-      "Malware": 6
+      "Malware": 8
     }
   },
   "alerts": [
@@ -621,6 +621,34 @@
       "url": "https://www.malwarebytes.com/blog/product/2026/10/is-this-link-safe-find-out-with-malwarebytes-scam-link-check",
       "source": "Malwarebytes Labs (악성코드/스캠) [RSS]",
       "published": "2026-10-15T12:55:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-15T23:01:22.761532+09:00",
+      "type": "single",
+      "title": "KGB RAT trojan packs webcam spying, password theft and a “fun” menu to terrorize victims",
+      "url": "https://www.helpnetsecurity.com/2026/10/15/kgb-rat-windows-trojan-webcam-spying-password-theft/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-10-15T13:51:03+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-15T23:01:22.761532+09:00",
+      "type": "single",
+      "title": "Fake CAPTCHAs are tricking users into running malware on their own devices",
+      "url": "https://www.helpnetsecurity.com/2026/10/15/barracuda-fake-captcha-phishing-attacks/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-10-15T13:29:01+00:00",
       "keywords": [
         "Malware"
       ],
