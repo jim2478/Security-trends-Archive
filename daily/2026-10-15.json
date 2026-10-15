@@ -2,13 +2,13 @@
   "date": "2026-10-15",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 20,
+    "scan_runs": 21,
     "total_articles_max": 1791,
-    "matched_articles_max": 167,
-    "new_alerts": 13,
-    "cve_total": 19,
-    "alerts_with_cve": 10,
-    "cve_count": 19,
+    "matched_articles_max": 168,
+    "new_alerts": 15,
+    "cve_total": 23,
+    "alerts_with_cve": 11,
+    "cve_count": 23,
     "ioc_count": 21,
     "merged_count": 0,
     "unique_cves": [
@@ -28,8 +28,8 @@
       "CVE-2026-76519"
     ],
     "keywords_hit": {
-      "CVE": 12,
-      "Malware": 2
+      "CVE": 13,
+      "Malware": 3
     }
   },
   "alerts": [
@@ -425,6 +425,76 @@
           "kev": true
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-10-15T20:01:24.246742+09:00",
+      "type": "single",
+      "title": "CISA flags exploited flaws in Palo Alto, Cisco and Ahsay products",
+      "url": "https://www.helpnetsecurity.com/2026/10/15/cve-2026-0322-cve-2026-76519-cve-2026-105133-cve-2026-105134-exploted/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-10-15T10:43:51+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-0322",
+        "CVE-2026-76519",
+        "CVE-2026-105133",
+        "CVE-2026-105134"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-0322",
+          "cvss_score": 8.6,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-94 (Code Injection)",
+          "description": "A remote code execution (RCE) vulnerability in the management interface of Palo Alto Networks PAN-OS® software enables an authenticated attacker with network access to execute arbitrary code with root privileges on the firewall.\n\n\n\nThe security risk posed by this issue is minimized by restricting access to the management interface to only trusted internal IP addresses according to our recommended  best practice deployment guidelines https://live.paloaltonetworks.com/t5/community-blogs/tips-amp-t",
+          "epss_score": null,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-76519",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-23",
+          "description": "A vulnerability in the Advanced Malware Protection (AMP) feature of Cisco Secure Email Gateway could allow an unauthenticated, remote attacker to write arbitrary files on the underlying operating system.\r\n\r\nThis vulnerability is due to improper handling of email attachments when the file reputation service is enabled. An attacker could exploit this vulnerability by sending an email that contains a crafted attachment through an affected device. A successful exploit could allow the attacker to wri",
+          "epss_score": null,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-105133",
+          "cvss_score": 5.5,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-287 (Authentication Bypass)",
+          "description": "A vulnerability was detected in Ahsay AhsayCBS up to 10.3.2. This affects the function checkSysPwd of the file com/ahsay/obs/api/ApiStructsAction.java of the component API. Performing a manipulation of the argument random results in improper authentication. It is possible to initiate the attack remotely. The exploit is now public and may be used. Upgrading to version 10.3.4 is able to mitigate this issue. It is recommended to upgrade the affected component.",
+          "epss_score": 0.00383,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-105134",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-77 (Command Injection)",
+          "description": "A flaw has been found in Ahsay AhsayCBS up to 10.3.2. This vulnerability affects unknown code of the file /rps/api/json/UpdateReceivers.do of the component Replication Receiver. Executing a manipulation of the argument random can lead to os command injection. It is possible to launch the attack remotely. The exploit has been published and may be used. Upgrading to version 10.3.4 is able to resolve this issue. Upgrading the affected component is advised.",
+          "epss_score": 0.01843,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-15T20:01:24.246742+09:00",
+      "type": "single",
+      "title": "Novel Android RAT ‘Hirudo’ Replaces Banking Apps With Trojanized Copies",
+      "url": "https://www.securityweek.com/novel-android-banking-rat-hirudo-replaces-banking-apps-with-trojanized-copies/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-10-15T10:15:32+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
