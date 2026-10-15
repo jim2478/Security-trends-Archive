@@ -2,13 +2,13 @@
   "date": "2026-10-15",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 19,
+    "scan_runs": 20,
     "total_articles_max": 1791,
     "matched_articles_max": 167,
-    "new_alerts": 10,
-    "cve_total": 15,
-    "alerts_with_cve": 7,
-    "cve_count": 15,
+    "new_alerts": 13,
+    "cve_total": 19,
+    "alerts_with_cve": 10,
+    "cve_count": 19,
     "ioc_count": 21,
     "merged_count": 0,
     "unique_cves": [
@@ -22,11 +22,13 @@
       "CVE-2026-104935",
       "CVE-2026-105133",
       "CVE-2026-105134",
+      "CVE-2026-105740",
       "CVE-2026-21589",
-      "CVE-2026-76504"
+      "CVE-2026-76504",
+      "CVE-2026-76519"
     ],
     "keywords_hit": {
-      "CVE": 9,
+      "CVE": 12,
       "Malware": 2
     }
   },
@@ -335,6 +337,94 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-15T19:01:38.860835+09:00",
+      "type": "single",
+      "title": "Langflow's Critical Authenticated RCE Flaw Targeted in 1,423 Honeypot Exploit Attempts",
+      "url": "https://thehackernews.com/2026/10/langflows-critical-authenticated-rce.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-10-15T07:07:05+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-105740"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-105740",
+          "cvss_score": 9.9,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-78 (OS Command Injection)",
+          "description": "Langflow is a tool for building and deploying AI-powered agents and workflows. Prior to 1.9.0, any authenticated Langflow user can achieve Remote Code Execution (RCE) on the server by adding an MCP server with the \"Stdio\" transport. The user-supplied command field is passed directly to bash -c \"exec {command}\" with zero validation, no allowlisting, and no sandboxing. The command executes immediately when the server list is fetched. Additionally, the env field allows arbitrary environment variabl",
+          "epss_score": 0.00589,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-15T19:01:38.860835+09:00",
+      "type": "single",
+      "title": "AhsayCBS Flaws Exploited to Deploy Web Shells Get New Fixes After Incomplete Patches",
+      "url": "https://thehackernews.com/2026/10/ahsaycbs-flaws-exploited-to-deploy-web.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-10-15T06:43:08+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-105133",
+        "CVE-2026-105134"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-105133",
+          "cvss_score": 5.5,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-287 (Authentication Bypass)",
+          "description": "A vulnerability was detected in Ahsay AhsayCBS up to 10.3.2. This affects the function checkSysPwd of the file com/ahsay/obs/api/ApiStructsAction.java of the component API. Performing a manipulation of the argument random results in improper authentication. It is possible to initiate the attack remotely. The exploit is now public and may be used. Upgrading to version 10.3.4 is able to mitigate this issue. It is recommended to upgrade the affected component.",
+          "epss_score": 0.00383,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-105134",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-77 (Command Injection)",
+          "description": "A flaw has been found in Ahsay AhsayCBS up to 10.3.2. This vulnerability affects unknown code of the file /rps/api/json/UpdateReceivers.do of the component Replication Receiver. Executing a manipulation of the argument random can lead to os command injection. It is possible to launch the attack remotely. The exploit has been published and may be used. Upgrading to version 10.3.4 is able to resolve this issue. Upgrading the affected component is advised.",
+          "epss_score": 0.01843,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-15T19:01:38.860835+09:00",
+      "type": "single",
+      "title": "Cisco Urges Customers to Patch Email Gateway Flaw and Check for Compromise",
+      "url": "https://securityaffairs.com/200985/security/cisco-urges-customers-to-patch-email-gateway-flaw-and-check-for-compromise.html",
+      "source": "Security Affairs (보안뉴스/위협동향) [RSS]",
+      "published": "2026-10-15T09:27:34+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-76519"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-76519",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-23",
+          "description": "A vulnerability in the Advanced Malware Protection (AMP) feature of Cisco Secure Email Gateway could allow an unauthenticated, remote attacker to write arbitrary files on the underlying operating system.\r\n\r\nThis vulnerability is due to improper handling of email attachments when the file reputation service is enabled. An attacker could exploit this vulnerability by sending an email that contains a crafted attachment through an affected device. A successful exploit could allow the attacker to wri",
+          "epss_score": null,
+          "kev": true
+        }
+      ]
     }
   ]
 }
