@@ -2,17 +2,170 @@
   "date": "2026-10-16",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
-    "total_articles_max": 1771,
+    "scan_runs": 3,
+    "total_articles_max": 1781,
     "matched_articles_max": 171,
-    "new_alerts": 0,
-    "cve_total": 0,
-    "alerts_with_cve": 0,
-    "cve_count": 0,
+    "new_alerts": 3,
+    "cve_total": 10,
+    "alerts_with_cve": 3,
+    "cve_count": 10,
     "ioc_count": 0,
     "merged_count": 0,
-    "unique_cves": [],
-    "keywords_hit": {}
+    "unique_cves": [
+      "CVE-2026-101021",
+      "CVE-2026-105273",
+      "CVE-2026-105279",
+      "CVE-2026-105664",
+      "CVE-2026-105667",
+      "CVE-2026-107617",
+      "CVE-2026-107621",
+      "CVE-2026-107777",
+      "CVE-2026-97851",
+      "CVE-2026-97858"
+    ],
+    "keywords_hit": {
+      "CVE": 3
+    }
   },
-  "alerts": []
+  "alerts": [
+    {
+      "scan_time_kst": "2026-10-16T02:01:47.621992+09:00",
+      "type": "single",
+      "title": "Thermo Fisher Torrent Suite Software",
+      "url": "https://www.cisa.gov/news-events/ics-medical-advisories/icsma-26-288-01",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-10-15T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-107777"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-107777",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-16T02:01:47.621992+09:00",
+      "type": "single",
+      "title": "J4Care dcm4che",
+      "url": "https://www.cisa.gov/news-events/ics-medical-advisories/icsma-26-288-02",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-10-15T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-97851",
+        "CVE-2026-107621",
+        "CVE-2026-105273",
+        "CVE-2026-101021",
+        "CVE-2026-105279",
+        "CVE-2026-105667"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-97851",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-107621",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-105273",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-101021",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-105279",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-16T02:01:47.621992+09:00",
+      "type": "single",
+      "title": "Guangzhou Juan IoT Technology EseeCloud",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-288-02",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-10-15T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-107617",
+        "CVE-2026-97858",
+        "CVE-2026-105664"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-107617",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-97858",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-105664",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    }
+  ]
 }
