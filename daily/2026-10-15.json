@@ -2,10 +2,10 @@
   "date": "2026-10-15",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 18,
+    "scan_runs": 19,
     "total_articles_max": 1791,
     "matched_articles_max": 167,
-    "new_alerts": 9,
+    "new_alerts": 10,
     "cve_total": 15,
     "alerts_with_cve": 7,
     "cve_count": 15,
@@ -26,7 +26,7 @@
       "CVE-2026-76504"
     ],
     "keywords_hit": {
-      "CVE": 8,
+      "CVE": 9,
       "Malware": 2
     }
   },
@@ -321,6 +321,20 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-10-15T18:01:17.374212+09:00",
+      "type": "single",
+      "title": "[SYSS-2026-080]: dcm4che - Path Traversal (CWE-22)",
+      "url": "https://seclists.org/fulldisclosure/2026/Oct/25",
+      "source": "SecLists Full Disclosure (취약점공개)",
+      "published": "2026-10-15T07:43:25+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
