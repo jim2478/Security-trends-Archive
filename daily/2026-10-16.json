@@ -2,13 +2,13 @@
   "date": "2026-10-16",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 6,
+    "scan_runs": 7,
     "total_articles_max": 1791,
-    "matched_articles_max": 171,
-    "new_alerts": 5,
-    "cve_total": 13,
-    "alerts_with_cve": 4,
-    "cve_count": 13,
+    "matched_articles_max": 173,
+    "new_alerts": 8,
+    "cve_total": 15,
+    "alerts_with_cve": 6,
+    "cve_count": 15,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -23,12 +23,15 @@
       "CVE-2026-107617",
       "CVE-2026-107621",
       "CVE-2026-107777",
+      "CVE-2026-110447",
       "CVE-2026-97851",
-      "CVE-2026-97858"
+      "CVE-2026-97858",
+      "CVE-2026-99999"
     ],
     "keywords_hit": {
-      "CVE": 4,
-      "Malware": 1
+      "CVE": 6,
+      "Malware": 1,
+      "DDoS": 1
     }
   },
   "alerts": [
@@ -226,6 +229,72 @@
       "published": "2026-10-15T17:12:31+00:00",
       "keywords": [
         "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-16T06:01:24.522008+09:00",
+      "type": "single",
+      "title": "Critical PwnEscape Linux Kernel Vulnerability Lets Guest VMs Read Host Memory",
+      "url": "https://thehackernews.com/2026/10/critical-pwnescape-linux-kernel.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-10-15T20:24:36+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-99999"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-99999",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": null,
+          "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nipv4: validate checksum_start before completing checksum\n\nIf a packet with bad checksum metadata gets into the ipv4 stack,\nskb_checksum_help can corrupt the network header and cause a bunch of\nmischief.\n\nThis was discovered and reported by Paulos, and has been reporoduced\nby others independently since.\n\nWe really shouldn't allow such packets in, but as a defence\nin depth measure, let's also check before we complete the checksum",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-16T06:01:24.522008+09:00",
+      "type": "single",
+      "title": "Hackers exploit Collabora RCE flaw to backdoor Nextcloud servers",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-collabora-rce-flaw-to-backdoor-nextcloud-servers/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-10-15T20:25:04+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-110447"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-110447",
+          "cvss_score": 9.2,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-78 (OS Command Injection)",
+          "description": "Collabora Online Built-in CODE Server before 26.4.303 (richdocumentscode), a Nextcloud app, allows remote code execution, as exploited in the wild in September and October 2026, a different vulnerability than CVE-2025-66208. This is an OS command injection in proxy.php when the CODE server isn't running (e.g., the product was recently restarted). The vulnerability is not present in standalone Collabora Online servers; only this deployment with CODE Server is affected.",
+          "epss_score": 0.01225,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-16T06:01:24.522008+09:00",
+      "type": "single",
+      "title": "화웨이 NG WAN 솔루션, 대규모 상용화로 통신사업자 성장 견인",
+      "url": "https://zdnet.co.kr/view/?no=20261016021003",
+      "source": "지디넷코리아 [RSS]",
+      "published": "2026-10-15T17:10:03+00:00",
+      "keywords": [
+        "DDoS"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
