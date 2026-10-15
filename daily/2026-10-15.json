@@ -2,13 +2,13 @@
   "date": "2026-10-15",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 21,
+    "scan_runs": 22,
     "total_articles_max": 1791,
-    "matched_articles_max": 168,
-    "new_alerts": 15,
-    "cve_total": 23,
-    "alerts_with_cve": 11,
-    "cve_count": 23,
+    "matched_articles_max": 171,
+    "new_alerts": 19,
+    "cve_total": 27,
+    "alerts_with_cve": 14,
+    "cve_count": 27,
     "ioc_count": 21,
     "merged_count": 0,
     "unique_cves": [
@@ -24,12 +24,14 @@
       "CVE-2026-105134",
       "CVE-2026-105740",
       "CVE-2026-21589",
+      "CVE-2026-35029",
+      "CVE-2026-59823",
       "CVE-2026-76504",
       "CVE-2026-76519"
     ],
     "keywords_hit": {
-      "CVE": 13,
-      "Malware": 3
+      "CVE": 16,
+      "Malware": 4
     }
   },
   "alerts": [
@@ -489,6 +491,108 @@
       "url": "https://www.securityweek.com/novel-android-banking-rat-hirudo-replaces-banking-apps-with-trojanized-copies/",
       "source": "SecurityWeek (보안뉴스 종합) [RSS]",
       "published": "2026-10-15T10:15:32+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-15T21:01:30.237544+09:00",
+      "type": "single",
+      "title": "Warning Over High-Risk Vulnerabilities in Widely Used LLM Gateway Tool",
+      "url": "https://www.infosecurity-magazine.com/news/high-risk-vulnerabilities-llm-tool/",
+      "source": "Infosecurity Magazine (보안뉴스) [RSS]",
+      "published": "2026-10-15T11:30:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-35029",
+        "CVE-2026-59823"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-35029",
+          "cvss_score": 8.7,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-863",
+          "description": "LiteLLM is a proxy server (AI Gateway) to call LLM APIs in OpenAI (or native) format. Prior to 1.83.0, the /config/update endpoint does not enforce admin role authorization. A user who is already authenticated into the platform can then use this endpoint to modify proxy configuration and environment variables, register custom pass-through endpoint handlers pointing to attacker-controlled Python code, achieving remote code execution, read arbitrary server files by setting UI_LOGO_PATH and fetchin",
+          "epss_score": 0.03982,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-59823",
+          "cvss_score": 5.3,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-918 (SSRF)",
+          "description": "LiteLLM is a proxy server (AI Gateway) to call LLM APIs in OpenAI (or native) format. Prior to 1.83.9, an authenticated LiteLLM Proxy caller with a valid virtual key can place api_base inside the user_config request body to bypass is_request_body_safe, which blocks top-level api_base and base_url but previously did not inspect or reject user_config. Because user_config constructs the outbound router, the nested destination redirects a server-side request to an internal or external host selected ",
+          "epss_score": 0.00439,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-15T21:01:30.237544+09:00",
+      "type": "single",
+      "title": "메일 보안장비가 공격 통로로…시스코, 심각도 9.8 취약점 긴급 대응",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=208892",
+      "source": "데일리시큐 (전체) [RSS]",
+      "published": "2026-10-15T20:07:29+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-76519"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-76519",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-23",
+          "description": "A vulnerability in the Advanced Malware Protection (AMP) feature of Cisco Secure Email Gateway could allow an unauthenticated, remote attacker to write arbitrary files on the underlying operating system.\r\n\r\nThis vulnerability is due to improper handling of email attachments when the file reputation service is enabled. An attacker could exploit this vulnerability by sending an email that contains a crafted attachment through an affected device. A successful exploit could allow the attacker to wri",
+          "epss_score": null,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-15T21:01:30.237544+09:00",
+      "type": "single",
+      "title": "팔로알토 PAN-OS 취약점 실제 악용…방화벽 루트 권한 탈취 위험",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=208891",
+      "source": "데일리시큐 (전체) [RSS]",
+      "published": "2026-10-15T20:03:09+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-0322"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-0322",
+          "cvss_score": 8.6,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-94 (Code Injection)",
+          "description": "A remote code execution (RCE) vulnerability in the management interface of Palo Alto Networks PAN-OS® software enables an authenticated attacker with network access to execute arbitrary code with root privileges on the firewall.\n\n\n\nThe security risk posed by this issue is minimized by restricting access to the management interface to only trusted internal IP addresses according to our recommended  best practice deployment guidelines https://live.paloaltonetworks.com/t5/community-blogs/tips-amp-t",
+          "epss_score": null,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-15T21:01:30.237544+09:00",
+      "type": "single",
+      "title": "CikaBika Bot RAT Uses Discord for C&C",
+      "url": "https://www.securityweek.com/cikabika-bot-rat-uses-discord-for-cc/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-10-15T11:25:58+00:00",
       "keywords": [
         "Malware"
       ],
