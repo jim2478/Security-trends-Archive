@@ -2,10 +2,10 @@
   "date": "2026-10-15",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 22,
+    "scan_runs": 23,
     "total_articles_max": 1791,
-    "matched_articles_max": 171,
-    "new_alerts": 19,
+    "matched_articles_max": 172,
+    "new_alerts": 21,
     "cve_total": 27,
     "alerts_with_cve": 14,
     "cve_count": 27,
@@ -31,7 +31,7 @@
     ],
     "keywords_hit": {
       "CVE": 16,
-      "Malware": 4
+      "Malware": 6
     }
   },
   "alerts": [
@@ -593,6 +593,34 @@
       "url": "https://www.securityweek.com/cikabika-bot-rat-uses-discord-for-cc/",
       "source": "SecurityWeek (보안뉴스 종합) [RSS]",
       "published": "2026-10-15T11:25:58+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-15T22:01:16.368825+09:00",
+      "type": "single",
+      "title": "Fake AI Attacks Spread Across US Companies: How MSSPs Can Stop Incidents Early",
+      "url": "https://thehackernews.com/2026/10/fake-ai-attacks-spread-across-us.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-10-15T11:46:59+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-15T22:01:16.368825+09:00",
+      "type": "single",
+      "title": "Is this link safe? Find out with Malwarebytes Scam Link Check",
+      "url": "https://www.malwarebytes.com/blog/product/2026/10/is-this-link-safe-find-out-with-malwarebytes-scam-link-check",
+      "source": "Malwarebytes Labs (악성코드/스캠) [RSS]",
+      "published": "2026-10-15T12:55:00+00:00",
       "keywords": [
         "Malware"
       ],
