@@ -2,13 +2,13 @@
   "date": "2026-10-15",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 17,
+    "scan_runs": 18,
     "total_articles_max": 1791,
     "matched_articles_max": 167,
-    "new_alerts": 8,
-    "cve_total": 12,
-    "alerts_with_cve": 6,
-    "cve_count": 12,
+    "new_alerts": 9,
+    "cve_total": 15,
+    "alerts_with_cve": 7,
+    "cve_count": 15,
     "ioc_count": 21,
     "merged_count": 0,
     "unique_cves": [
@@ -16,6 +16,9 @@
       "CVE-2025-61624",
       "CVE-2026-0322",
       "CVE-2026-102489",
+      "CVE-2026-104082",
+      "CVE-2026-104083",
+      "CVE-2026-104084",
       "CVE-2026-104935",
       "CVE-2026-105133",
       "CVE-2026-105134",
@@ -23,7 +26,7 @@
       "CVE-2026-76504"
     ],
     "keywords_hit": {
-      "CVE": 7,
+      "CVE": 8,
       "Malware": 2
     }
   },
@@ -270,6 +273,52 @@
           "description": "A remote code execution (RCE) vulnerability in the management interface of Palo Alto Networks PAN-OS® software enables an authenticated attacker with network access to execute arbitrary code with root privileges on the firewall.\n\n\n\nThe security risk posed by this issue is minimized by restricting access to the management interface to only trusted internal IP addresses according to our recommended  best practice deployment guidelines https://live.paloaltonetworks.com/t5/community-blogs/tips-amp-t",
           "epss_score": null,
           "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-15T17:01:28.289347+09:00",
+      "type": "single",
+      "title": "SmarterMail <9777 Pre-Auth RCE (half click lol): CVE-2026-104082, CVE-2026-104083, CVE-2026-104084",
+      "url": "https://seclists.org/fulldisclosure/2026/Oct/9",
+      "source": "SecLists Full Disclosure (취약점공개)",
+      "published": "2026-10-15T07:40:48+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-104082",
+        "CVE-2026-104083",
+        "CVE-2026-104084"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-104082",
+          "cvss_score": 8.6,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-94 (Code Injection)",
+          "description": "SmarterMail before build 9777 contains a remote code execution vulnerability that allows an attacker holding a SysAdmin-scoped access token to bypass the Volume Mount script-directory containment control by provisioning a new mail domain with an arbitrary FileStore root path inside the trusted Scripts directory via the domain-put endpoint. Attackers can disclose the Scripts path through the AddOrUpdateMount endpoint, clear the upload extension blacklist via the global-mail endpoint, then upload ",
+          "epss_score": 0.0061,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-104083",
+          "cvss_score": 5.3,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-79 (XSS)",
+          "description": "SmarterMail before build 9777 contains a stored mutation cross-site scripting vulnerability that allows remote attackers to inject executable script by placing payloads inside a <style> element nested within MathML foreign content (<math><mtext><mglyph>), which the custom HTML sanitizer treats as inert CDATA text but browsers reparse as live markup. Attackers can deliver a crafted calendar (iCal) message containing an <img src=x onerror=...> payload that executes automatically in the recipient's",
+          "epss_score": 0.00287,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-104084",
+          "cvss_score": 8.7,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-613",
+          "description": "SmarterMail before build 9777 contains a privilege escalation vulnerability where JWT access and refresh tokens embed a role claim at issuance that is not revalidated against the account's current role when redeemed through POST /api/v1/auth/refresh-token. Attackers who capture a refresh token issued before an administrator demotion, or a demoted user whose session was not actively polling at the time of demotion, can replay the stale token to obtain a new access token retaining the higher-privi",
+          "epss_score": 0.00274,
+          "kev": false
         }
       ]
     }
