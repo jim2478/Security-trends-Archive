@@ -2,13 +2,13 @@
   "date": "2026-10-16",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 23,
+    "scan_runs": 24,
     "total_articles_max": 1791,
     "matched_articles_max": 173,
-    "new_alerts": 16,
-    "cve_total": 23,
-    "alerts_with_cve": 9,
-    "cve_count": 23,
+    "new_alerts": 18,
+    "cve_total": 25,
+    "alerts_with_cve": 10,
+    "cve_count": 25,
     "ioc_count": 33,
     "merged_count": 0,
     "unique_cves": [
@@ -30,14 +30,16 @@
       "CVE-2026-107621",
       "CVE-2026-107777",
       "CVE-2026-110447",
+      "CVE-2026-15176",
       "CVE-2026-22769",
+      "CVE-2026-93479",
       "CVE-2026-97851",
       "CVE-2026-97858",
       "CVE-2026-99999"
     ],
     "keywords_hit": {
-      "CVE": 10,
-      "Malware": 4,
+      "CVE": 11,
+      "Malware": 5,
       "DDoS": 3,
       "Botnet": 1
     }
@@ -494,6 +496,56 @@
       "published": "2026-10-16T10:25:57+00:00",
       "keywords": [
         "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-16T23:01:31.655053+09:00",
+      "type": "single",
+      "title": "F5 addressed critical RCE flaws in NGINX",
+      "url": "https://securityaffairs.com/201106/security/f5-addressed-critical-rce-flaws-in-nginx.html",
+      "source": "Security Affairs (보안뉴스/위협동향) [RSS]",
+      "published": "2026-10-16T13:36:52+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-15176",
+        "CVE-2026-93479"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-15176",
+          "cvss_score": 9.2,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-122",
+          "description": "A vulnerability exists in NGINX Plus and NGINX Open Source when a location is configured that uses the alias directive together with rewrite and a set or return directive referencing the $request_filename variable. Alternatively, the same result could be achieved when the $request_filename variable is used in an access log format directive. An unauthenticated attacker along with conditions beyond their control can exploit this vulnerability by sending crafted HTTP requests. This may cause a heap",
+          "epss_score": 0.00516,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-93479",
+          "cvss_score": 9.2,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-122",
+          "description": "A vulnerability exists in NGINX Plus and NGINX Open Source when a map directive uses regex matching and the root directive or access log format references the map's regex capture variables before referencing the map output variable. Alternatively, the same result could be achieved by using a non-cacheable variable in a string expression under certain conditions. An unauthenticated attacker along with conditions beyond their control can exploit this vulnerability by sending crafted HTTP requests.",
+          "epss_score": 0.00554,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-16T23:01:31.655053+09:00",
+      "type": "single",
+      "title": "Forescout uncovers ROMULUS malware delivery platform behind ClickFix attacks",
+      "url": "https://www.itsecurityguru.org/2026/10/16/forescout-uncovers-romulus-malware-delivery-platform-behind-clickfix-attacks/?utm_source=rss&utm_medium=rss&utm_campaign=forescout-uncovers-romulus-malware-delivery-platform-behind-clickfix-attacks",
+      "source": "IT Security Guru (보안뉴스) [RSS]",
+      "published": "2026-10-16T13:50:21+00:00",
+      "keywords": [
+        "Malware"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
