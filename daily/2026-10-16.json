@@ -2,10 +2,10 @@
   "date": "2026-10-16",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 21,
+    "scan_runs": 22,
     "total_articles_max": 1791,
     "matched_articles_max": 173,
-    "new_alerts": 15,
+    "new_alerts": 16,
     "cve_total": 23,
     "alerts_with_cve": 9,
     "cve_count": 23,
@@ -36,7 +36,7 @@
       "CVE-2026-99999"
     ],
     "keywords_hit": {
-      "CVE": 9,
+      "CVE": 10,
       "Malware": 4,
       "DDoS": 3,
       "Botnet": 1
@@ -480,6 +480,20 @@
       "published": "2026-10-16T09:00:00+00:00",
       "keywords": [
         "DDoS"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-16T21:01:17.263505+09:00",
+      "type": "single",
+      "title": "코히어, AI 보안 스타트업 아일 인수 추진",
+      "url": "https://zdnet.co.kr/view/?no=20261016192557",
+      "source": "지디넷코리아 [RSS]",
+      "published": "2026-10-16T10:25:57+00:00",
+      "keywords": [
+        "CVE"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
