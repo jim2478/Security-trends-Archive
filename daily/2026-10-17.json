@@ -2,20 +2,22 @@
   "date": "2026-10-17",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 6,
+    "scan_runs": 7,
     "total_articles_max": 1791,
     "matched_articles_max": 170,
-    "new_alerts": 2,
-    "cve_total": 1,
-    "alerts_with_cve": 1,
-    "cve_count": 1,
+    "new_alerts": 3,
+    "cve_total": 2,
+    "alerts_with_cve": 2,
+    "cve_count": 2,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
+      "CVE-2026-103849",
       "CVE-2026-105740"
     ],
     "keywords_hit": {
-      "Malware": 2
+      "Malware": 2,
+      "CVE": 1
     }
   },
   "alerts": [
@@ -58,6 +60,32 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-17T06:01:11.681764+09:00",
+      "type": "single",
+      "title": "Critical BlockStrap flaw lets hackers run code on Magento servers",
+      "url": "https://www.bleepingcomputer.com/news/security/critical-blockstrap-flaw-lets-hackers-run-code-on-magento-servers/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-10-16T20:00:59+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-103849"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-103849",
+          "cvss_score": 10.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-1336",
+          "description": "Adobe Commerce is affected by an Improper Neutralization of Special Elements Used in a Template Engine vulnerability that could result in arbitrary code execution in the context of the current user, potentially gaining elevated access or control over the victim's account or session. Exploitation of this issue does not require user interaction. Scope is changed.",
+          "epss_score": 0.00778,
+          "kev": false
+        }
+      ]
     }
   ]
 }
