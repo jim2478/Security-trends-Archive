@@ -2,13 +2,13 @@
   "date": "2026-10-16",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 17,
+    "scan_runs": 18,
     "total_articles_max": 1791,
     "matched_articles_max": 173,
-    "new_alerts": 11,
-    "cve_total": 16,
-    "alerts_with_cve": 7,
-    "cve_count": 16,
+    "new_alerts": 12,
+    "cve_total": 17,
+    "alerts_with_cve": 8,
+    "cve_count": 17,
     "ioc_count": 33,
     "merged_count": 0,
     "unique_cves": [
@@ -16,6 +16,7 @@
       "CVE-2015-1000013",
       "CVE-2025-61624",
       "CVE-2026-101021",
+      "CVE-2026-102764",
       "CVE-2026-104935",
       "CVE-2026-105273",
       "CVE-2026-105279",
@@ -30,7 +31,7 @@
       "CVE-2026-99999"
     ],
     "keywords_hit": {
-      "CVE": 7,
+      "CVE": 8,
       "Malware": 3,
       "DDoS": 2,
       "Botnet": 1
@@ -354,6 +355,32 @@
           "cwe": "CWE-22 (Path Traversal)",
           "description": "An Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') [CWE-22] vulnerability in Fortinet FortiOS 7.6.0 through 7.6.4, FortiOS 7.4.0 through 7.4.9, FortiOS 7.2 all versions, FortiOS 7.0 all versions, FortiOS 6.4 all versions, FortiPAM 1.7.0, FortiPAM 1.6 all versions, FortiPAM 1.5 all versions, FortiPAM 1.4 all versions, FortiPAM 1.3 all versions, FortiPAM 1.2 all versions, FortiPAM 1.1 all versions, FortiPAM 1.0 all versions, FortiProxy 7.6.0 through 7.6.4, FortiProxy",
           "epss_score": 0.00535,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-16T17:01:16.855031+09:00",
+      "type": "single",
+      "title": "China-Linked Hackers Exploited BeyondTrust Zero-Day to Take Over Remote Support Servers",
+      "url": "https://thehackernews.com/2026/10/china-linked-hackers-exploited.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-10-16T06:55:55+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-102764"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-102764",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-290",
+          "description": "The vulnerability exists within internal components of BeyondTrust’s Remote Support product. The components did not adequately validate the origin of the messages it received. Under the right conditions, this could allow an attacker to perform file operations on the appliance.",
+          "epss_score": null,
           "kev": false
         }
       ]
