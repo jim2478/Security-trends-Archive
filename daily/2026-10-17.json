@@ -1,0 +1,63 @@
+{
+  "date": "2026-10-17",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 1,
+    "total_articles_max": 1771,
+    "matched_articles_max": 170,
+    "new_alerts": 2,
+    "cve_total": 1,
+    "alerts_with_cve": 1,
+    "cve_count": 1,
+    "ioc_count": 0,
+    "merged_count": 0,
+    "unique_cves": [
+      "CVE-2026-105740"
+    ],
+    "keywords_hit": {
+      "Malware": 2
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-10-17T00:01:31.260284+09:00",
+      "type": "single",
+      "title": "In Other News: ICS-Sniper Attack, Hacking XWorm Malware Operators, $250k Chrome Exploit",
+      "url": "https://www.securityweek.com/in-other-news-ics-sniper-attack-hacking-xworm-malware-operators-250k-chrome-exploit/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-10-16T14:09:51+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-105740"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-105740",
+          "cvss_score": 9.9,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-78 (OS Command Injection)",
+          "description": "Langflow is a tool for building and deploying AI-powered agents and workflows. Prior to 1.9.0, any authenticated Langflow user can achieve Remote Code Execution (RCE) on the server by adding an MCP server with the \"Stdio\" transport. The user-supplied command field is passed directly to bash -c \"exec {command}\" with zero validation, no allowlisting, and no sandboxing. The command executes immediately when the server list is fetched. Additionally, the env field allows arbitrary environment variabl",
+          "epss_score": 0.00589,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-17T00:01:31.260284+09:00",
+      "type": "single",
+      "title": "Cyber Threat Actors Use a Variety of Techniques to Target Election and Campaign Officials",
+      "url": "https://www.cisa.gov/resources-tools/resources/cyber-threat-actors-use-variety-techniques-target-election-and-campaign-officials",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-10-16T12:00:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
