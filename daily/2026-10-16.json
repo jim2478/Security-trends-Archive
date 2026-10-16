@@ -2,18 +2,22 @@
   "date": "2026-10-16",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 20,
+    "scan_runs": 21,
     "total_articles_max": 1791,
     "matched_articles_max": 173,
-    "new_alerts": 13,
-    "cve_total": 17,
-    "alerts_with_cve": 8,
-    "cve_count": 17,
+    "new_alerts": 15,
+    "cve_total": 23,
+    "alerts_with_cve": 9,
+    "cve_count": 23,
     "ioc_count": 33,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2014-125110",
       "CVE-2015-1000013",
+      "CVE-2023-46805",
+      "CVE-2023-4966",
+      "CVE-2024-21887",
+      "CVE-2025-0282",
       "CVE-2025-61624",
       "CVE-2026-101021",
       "CVE-2026-102764",
@@ -26,14 +30,15 @@
       "CVE-2026-107621",
       "CVE-2026-107777",
       "CVE-2026-110447",
+      "CVE-2026-22769",
       "CVE-2026-97851",
       "CVE-2026-97858",
       "CVE-2026-99999"
     ],
     "keywords_hit": {
-      "CVE": 8,
+      "CVE": 9,
       "Malware": 4,
-      "DDoS": 2,
+      "DDoS": 3,
       "Botnet": 1
     }
   },
@@ -394,6 +399,87 @@
       "published": "2026-10-16T09:08:57+00:00",
       "keywords": [
         "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-16T20:01:17.705583+09:00",
+      "type": "single",
+      "title": "Chinese APT Exploited BeyondTrust Vulnerability as Zero-Day",
+      "url": "https://www.securityweek.com/chinese-apt-exploited-beyondtrust-vulnerability-as-zero-day/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-10-16T10:53:22+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-102764",
+        "CVE-2023-4966",
+        "CVE-2023-46805",
+        "CVE-2024-21887",
+        "CVE-2025-0282",
+        "CVE-2026-22769"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-102764",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-290",
+          "description": "The vulnerability exists within internal components of BeyondTrust’s Remote Support product. The components did not adequately validate the origin of the messages it received. Under the right conditions, this could allow an attacker to perform file operations on the appliance.",
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2023-4966",
+          "cvss_score": 9.4,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-119 (Buffer Overflow)",
+          "description": "Sensitive information disclosure in NetScaler ADC and NetScaler Gateway when configured as a Gateway (VPN virtual server, ICA Proxy, CVPN, RDP Proxy) or AAA  virtual server.",
+          "epss_score": 0.99999,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2023-46805",
+          "cvss_score": 8.2,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-287 (Authentication Bypass)",
+          "description": "An authentication bypass vulnerability in the web component of Ivanti ICS 9.x, 22.x and Ivanti Policy Secure allows a remote attacker to access restricted resources by bypassing control checks.",
+          "epss_score": 0.99986,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2024-21887",
+          "cvss_score": 9.1,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-77 (Command Injection)",
+          "description": "A command injection vulnerability in web components of Ivanti Connect Secure (9.x, 22.x) and Ivanti Policy Secure (9.x, 22.x)  allows an authenticated administrator to send specially crafted requests and execute arbitrary commands on the appliance.",
+          "epss_score": 0.99999,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2025-0282",
+          "cvss_score": 9.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-121",
+          "description": "A stack-based buffer overflow in Ivanti Connect Secure before version 22.7R2.5, Ivanti Policy Secure before version 22.7R1.2, and Ivanti Neurons for ZTA gateways before version 22.7R2.3 allows a remote unauthenticated attacker to achieve remote code execution.",
+          "epss_score": 0.99981,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-16T20:01:17.705583+09:00",
+      "type": "single",
+      "title": "DDOS for Hire UK: Who Buys It and How to Defend",
+      "url": "http://www.ddosinfo.com/ddos-criminals/ddos-for-hire-uk/",
+      "source": "DDoS Info [RSS]",
+      "published": "2026-10-16T09:00:00+00:00",
+      "keywords": [
+        "DDoS"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
