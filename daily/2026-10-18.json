@@ -2,8 +2,8 @@
   "date": "2026-10-18",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 16,
-    "total_articles_max": 1798,
+    "scan_runs": 17,
+    "total_articles_max": 1799,
     "matched_articles_max": 165,
     "new_alerts": 0,
     "cve_total": 0,
