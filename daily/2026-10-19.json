@@ -2,21 +2,23 @@
   "date": "2026-10-19",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 23,
+    "scan_runs": 24,
     "total_articles_max": 1786,
     "matched_articles_max": 160,
-    "new_alerts": 2,
-    "cve_total": 1,
-    "alerts_with_cve": 1,
-    "cve_count": 1,
+    "new_alerts": 4,
+    "cve_total": 3,
+    "alerts_with_cve": 2,
+    "cve_count": 3,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
-      "CVE-2026-106931"
+      "CVE-2026-106931",
+      "CVE-2026-88771",
+      "CVE-2026-88772"
     ],
     "keywords_hit": {
-      "CVE": 1,
-      "Malware": 1
+      "CVE": 2,
+      "Malware": 2
     }
   },
   "alerts": [
@@ -53,6 +55,56 @@
       "url": "https://thehackernews.com/2026/10/fake-web3-accelerator-uses-npm-packages.html",
       "source": "The Hacker News (보안뉴스 종합) [RSS]",
       "published": "2026-10-19T10:06:40+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-19T23:01:16.673680+09:00",
+      "type": "single",
+      "title": "Beyond the patch: Protecting your NetScaler gateway against future vulnerabilities",
+      "url": "https://blog.cloudflare.com/protect-your-netscaler-gateway/",
+      "source": "Cloudflare Blog (DDoS/웹보안) [RSS]",
+      "published": "2026-10-19T13:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-88771",
+        "CVE-2026-88772"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-88771",
+          "cvss_score": 9.5,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-20 (Improper Input Validation)",
+          "description": "Improper input validation vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.\n\nThis issue affects ADC: before 14.1-73.37, before 13.1-64.23, before 14.1-73.37 FIPS, and before 13.1.37.279 FIPS and NDcPP; Gateway: before 14.1-73.37 and before 13.1-64.23 leading to an unauthenticated attacker to execute arbitrary commands.",
+          "epss_score": 0.01083,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-88772",
+          "cvss_score": 9.5,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-119 (Buffer Overflow)",
+          "description": "Vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.\n\nThis issue affects ADC: before 14.1-73.37, before 13.1-64.23, before 14.1-73.37 FIPS, and before 13.1.37.279 FIPS and NDcPP; Gateway: before 14.1-73.37 and before 13.1-64.23 leading to Remote Code Execution or Denial of Service",
+          "epss_score": 0.01301,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-19T23:01:16.673680+09:00",
+      "type": "single",
+      "title": "GhostAction Attackers Plant Credential Stealer Disguised as Font in 94 GitHub Repositories",
+      "url": "https://thehackernews.com/2026/10/ghostaction-attackers-plant-credential.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-10-19T13:05:45+00:00",
       "keywords": [
         "Malware"
       ],
