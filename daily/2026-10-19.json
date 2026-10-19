@@ -2,10 +2,10 @@
   "date": "2026-10-19",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 21,
+    "scan_runs": 22,
     "total_articles_max": 1786,
     "matched_articles_max": 160,
-    "new_alerts": 1,
+    "new_alerts": 2,
     "cve_total": 1,
     "alerts_with_cve": 1,
     "cve_count": 1,
@@ -15,7 +15,8 @@
       "CVE-2026-106931"
     ],
     "keywords_hit": {
-      "CVE": 1
+      "CVE": 1,
+      "Malware": 1
     }
   },
   "alerts": [
@@ -44,6 +45,20 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-10-19T21:01:13.510064+09:00",
+      "type": "single",
+      "title": "Fake Web3 Accelerator Uses npm Packages to Spread Malware and Hijack AI Agent Traffic",
+      "url": "https://thehackernews.com/2026/10/fake-web3-accelerator-uses-npm-packages.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-10-19T10:06:40+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
