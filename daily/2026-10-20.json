@@ -2,18 +2,20 @@
   "date": "2026-10-20",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 4,
+    "scan_runs": 5,
     "total_articles_max": 1801,
-    "matched_articles_max": 160,
-    "new_alerts": 4,
-    "cve_total": 0,
-    "alerts_with_cve": 0,
-    "cve_count": 0,
+    "matched_articles_max": 161,
+    "new_alerts": 5,
+    "cve_total": 1,
+    "alerts_with_cve": 1,
+    "cve_count": 1,
     "ioc_count": 0,
     "merged_count": 0,
-    "unique_cves": [],
+    "unique_cves": [
+      "CVE-2026-110936"
+    ],
     "keywords_hit": {
-      "Malware": 3,
+      "Malware": 4,
       "CVE": 1
     }
   },
@@ -73,6 +75,32 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-20T04:01:26.670430+09:00",
+      "type": "single",
+      "title": "Siemens Software Center Vulnerability Exploited in ClickFix Malware Attacks",
+      "url": "https://www.securityweek.com/siemens-software-center-vulnerability-exploited-in-clickfix-malware-attacks/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-10-19T18:15:39+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-110936"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-110936",
+          "cvss_score": 8.4,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-427",
+          "description": "A vulnerability has been identified in Siemens Software Center (All versions < V4.0.9.8). The affected application loads dynamic-link libraries (DLLs) from an uncontrolled search path. This could allow an authenticated local attacker to place a specially crafted DLL in a directory that the application searches, leading to arbitrary code execution with the privileges of the affected application.",
+          "epss_score": 0.00135,
+          "kev": false
+        }
+      ]
     }
   ]
 }
