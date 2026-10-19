@@ -1,0 +1,50 @@
+{
+  "date": "2026-10-20",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 1,
+    "total_articles_max": 1761,
+    "matched_articles_max": 160,
+    "new_alerts": 2,
+    "cve_total": 0,
+    "alerts_with_cve": 0,
+    "cve_count": 0,
+    "ioc_count": 0,
+    "merged_count": 0,
+    "unique_cves": [],
+    "keywords_hit": {
+      "Malware": 1,
+      "CVE": 1
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-10-20T00:01:27.196914+09:00",
+      "type": "single",
+      "title": "AOMEI Backupper update servers hijacked to push malware: Check your PC",
+      "url": "https://www.malwarebytes.com/blog/news/2026/10/aomei-backupper-update-servers-hijacked-to-push-malware-check-your-pc",
+      "source": "Malwarebytes Labs (악성코드/스캠) [RSS]",
+      "published": "2026-10-19T14:21:22+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-20T00:01:27.196914+09:00",
+      "type": "single",
+      "title": "Supply Chain Zero Days: Closing the Gap Between Publication and Detection",
+      "url": "https://www.wiz.io/blog/detect-supply-chain-zero-days-at-publication",
+      "source": "Wiz Blog (클라우드보안) [RSS]",
+      "published": "2026-10-19T14:39:29+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
