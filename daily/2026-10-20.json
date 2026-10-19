@@ -2,10 +2,10 @@
   "date": "2026-10-20",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 1,
-    "total_articles_max": 1761,
+    "scan_runs": 2,
+    "total_articles_max": 1791,
     "matched_articles_max": 160,
-    "new_alerts": 2,
+    "new_alerts": 3,
     "cve_total": 0,
     "alerts_with_cve": 0,
     "cve_count": 0,
@@ -13,7 +13,7 @@
     "merged_count": 0,
     "unique_cves": [],
     "keywords_hit": {
-      "Malware": 1,
+      "Malware": 2,
       "CVE": 1
     }
   },
@@ -41,6 +41,20 @@
       "published": "2026-10-19T14:39:29+00:00",
       "keywords": [
         "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-20T01:01:13.619768+09:00",
+      "type": "single",
+      "title": "Rank Math PRO WordPress Plugin Compromised in Supply Chain Attack",
+      "url": "https://www.securityweek.com/rank-math-pro-wordpress-plugin-compromised-in-supply-chain-attack/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-10-19T15:20:53+00:00",
+      "keywords": [
+        "Malware"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
