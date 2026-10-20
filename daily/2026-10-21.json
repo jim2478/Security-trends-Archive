@@ -2,22 +2,23 @@
   "date": "2026-10-21",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 1,
-    "total_articles_max": 1761,
+    "scan_runs": 2,
+    "total_articles_max": 1771,
     "matched_articles_max": 164,
-    "new_alerts": 2,
-    "cve_total": 3,
-    "alerts_with_cve": 1,
-    "cve_count": 3,
+    "new_alerts": 3,
+    "cve_total": 4,
+    "alerts_with_cve": 2,
+    "cve_count": 4,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
+      "CVE-2026-110936",
       "CVE-2026-21510",
       "CVE-2026-32202",
       "CVE-2026-35540"
     ],
     "keywords_hit": {
-      "CVE": 1,
+      "CVE": 2,
       "Malware": 1
     }
   },
@@ -81,6 +82,32 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-21T01:01:24.859925+09:00",
+      "type": "single",
+      "title": "지멘스 소프트웨어 센터 취약점 실제 공격에 악용, 정상 프로그램으로 악성코드 실행",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=208971",
+      "source": "데일리시큐 (전체) [RSS]",
+      "published": "2026-10-21T00:08:33+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-110936"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-110936",
+          "cvss_score": 8.4,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-427",
+          "description": "A vulnerability has been identified in Siemens Software Center (All versions < V4.0.9.8). The affected application loads dynamic-link libraries (DLLs) from an uncontrolled search path. This could allow an authenticated local attacker to place a specially crafted DLL in a directory that the application searches, leading to arbitrary code execution with the privileges of the affected application.",
+          "epss_score": 0.00135,
+          "kev": false
+        }
+      ]
     }
   ]
 }
