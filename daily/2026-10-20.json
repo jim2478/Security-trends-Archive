@@ -2,28 +2,32 @@
   "date": "2026-10-20",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 22,
+    "scan_runs": 23,
     "total_articles_max": 1801,
     "matched_articles_max": 164,
-    "new_alerts": 12,
-    "cve_total": 9,
-    "alerts_with_cve": 3,
-    "cve_count": 9,
-    "ioc_count": 0,
+    "new_alerts": 14,
+    "cve_total": 14,
+    "alerts_with_cve": 5,
+    "cve_count": 14,
+    "ioc_count": 1,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2023-27532",
+      "CVE-2023-34992",
+      "CVE-2024-23108",
       "CVE-2025-40947",
       "CVE-2025-40948",
+      "CVE-2025-64155",
       "CVE-2026-0257",
       "CVE-2026-0300",
+      "CVE-2026-106173",
       "CVE-2026-110936",
       "CVE-2026-88771",
       "CVE-2026-88772"
     ],
     "keywords_hit": {
-      "Malware": 8,
-      "CVE": 3,
+      "Malware": 9,
+      "CVE": 5,
       "봇넷": 1
     }
   },
@@ -273,6 +277,89 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-20T22:01:28.499478+09:00",
+      "type": "single",
+      "title": "Attackers exploit Siemens Software Center flaw in active ClickFix malware campaign",
+      "url": "https://www.helpnetsecurity.com/2026/10/20/exploitation-siemens-software-center-vulnerability-cve-2026-110936/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-10-20T12:23:08+00:00",
+      "keywords": [
+        "CVE",
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-110936"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-110936",
+          "cvss_score": 8.4,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-427",
+          "description": "A vulnerability has been identified in Siemens Software Center (All versions < V4.0.9.8). The affected application loads dynamic-link libraries (DLLs) from an uncontrolled search path. This could allow an authenticated local attacker to place a specially crafted DLL in a directory that the application searches, leading to arbitrary code execution with the privileges of the affected application.",
+          "epss_score": 0.00135,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-20T22:01:28.499478+09:00",
+      "type": "single",
+      "title": "CVE-2026-106173 Deep-Dive: FortiSIEM gRPC Path Traversal File Write RCE",
+      "url": "https://horizon3.ai/attack-research/cve-2026-106173-deep-dive-fortisiem-grpc-path-traversal-file-write-rce/",
+      "source": "Horizon3.ai (공격시뮬레이션) [RSS]",
+      "published": "2026-10-20T12:34:42+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "[Domain] redishb[.]sh",
+      "cve_ids": [
+        "CVE-2026-106173",
+        "CVE-2023-34992",
+        "CVE-2024-23108",
+        "CVE-2025-64155"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-106173",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-22 (Path Traversal)",
+          "description": "A improper limitation of a pathname to a restricted directory ('path traversal') vulnerability in Fortinet FortiSIEM 7.5.0 may allow attacker to execute unauthorized code or commands via specially crafted packets.",
+          "epss_score": 0.00433,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2023-34992",
+          "cvss_score": 10.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-78 (OS Command Injection)",
+          "description": "A improper neutralization of special elements used in an os command ('os command injection') vulnerability in Fortinet  allows attacker to execute unauthorized code or commands via crafted API requests.",
+          "epss_score": 0.81698,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2024-23108",
+          "cvss_score": 10.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-78 (OS Command Injection)",
+          "description": "An improper neutralization of special elements used in an os command ('os command injection') vulnerability in Fortinet  allows attacker to execute unauthorized code or commands via via crafted API requests.",
+          "epss_score": 0.80304,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2025-64155",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-78 (OS Command Injection)",
+          "description": "An improper neutralization of special elements used in an os command ('os command injection') vulnerability in Fortinet FortiSIEM 7.4.0, FortiSIEM 7.3.0 through 7.3.4, FortiSIEM 7.1.0 through 7.1.8, FortiSIEM 7.0.0 through 7.0.4, FortiSIEM 6.7.0 through 6.7.10 may allow an attacker to execute unauthorized code or commands via  crafted TCP requests.",
+          "epss_score": 0.42543,
+          "kev": false
+        }
+      ]
     }
   ]
 }
