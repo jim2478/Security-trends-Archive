@@ -1,0 +1,86 @@
+{
+  "date": "2026-10-21",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 1,
+    "total_articles_max": 1761,
+    "matched_articles_max": 164,
+    "new_alerts": 2,
+    "cve_total": 3,
+    "alerts_with_cve": 1,
+    "cve_count": 3,
+    "ioc_count": 0,
+    "merged_count": 0,
+    "unique_cves": [
+      "CVE-2026-21510",
+      "CVE-2026-32202",
+      "CVE-2026-35540"
+    ],
+    "keywords_hit": {
+      "CVE": 1,
+      "Malware": 1
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-10-21T00:01:40.828745+09:00",
+      "type": "single",
+      "title": "Incomplete security patches show hackers where to look next",
+      "url": "https://www.helpnetsecurity.com/2026/10/20/ncomplete-security-patches-broken-fixes-rise/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-10-20T14:13:04+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-35540",
+        "CVE-2026-21510",
+        "CVE-2026-32202"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-35540",
+          "cvss_score": 5.4,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-669",
+          "description": "An issue was discovered in Roundcube Webmail 1.6.0 before 1.6.14. Insufficient Cascading Style Sheets (CSS) sanitization in HTML e-mail messages may lead to SSRF or Information Disclosure, e.g., if stylesheet links point to local network hosts.",
+          "epss_score": 0.00386,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-21510",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-693",
+          "description": "Protection mechanism failure in Windows Shell allows an unauthorized attacker to bypass a security feature over a network.",
+          "epss_score": 0.24537,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-32202",
+          "cvss_score": 4.3,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-693",
+          "description": "Protection mechanism failure in Windows Shell allows an unauthorized attacker to perform spoofing over a network.",
+          "epss_score": 0.04902,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-21T00:01:40.828745+09:00",
+      "type": "single",
+      "title": "AOMEI yet to notify customers after hackers hijacked its software updates",
+      "url": "https://therecord.media/aomei-yet-to-notify-customers-hijack-software",
+      "source": "The Record by Recorded Future (위협뉴스) [RSS]",
+      "published": "2026-10-20T14:11:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
