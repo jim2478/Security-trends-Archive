@@ -2,23 +2,38 @@
   "date": "2026-10-21",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
+    "scan_runs": 3,
     "total_articles_max": 1771,
     "matched_articles_max": 164,
-    "new_alerts": 3,
-    "cve_total": 4,
-    "alerts_with_cve": 2,
-    "cve_count": 4,
+    "new_alerts": 9,
+    "cve_total": 19,
+    "alerts_with_cve": 8,
+    "cve_count": 19,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
+      "CVE-2026-0257",
+      "CVE-2026-101103",
+      "CVE-2026-103672",
+      "CVE-2026-105960",
+      "CVE-2026-106173",
+      "CVE-2026-109576",
+      "CVE-2026-109812",
+      "CVE-2026-109813",
+      "CVE-2026-110322",
       "CVE-2026-110936",
       "CVE-2026-21510",
       "CVE-2026-32202",
-      "CVE-2026-35540"
+      "CVE-2026-35540",
+      "CVE-2026-80466",
+      "CVE-2026-88850",
+      "CVE-2026-94188",
+      "CVE-2026-9852",
+      "CVE-2026-9853",
+      "CVE-2026-9854"
     ],
     "keywords_hit": {
-      "CVE": 2,
+      "CVE": 8,
       "Malware": 1
     }
   },
@@ -105,6 +120,243 @@
           "cwe": "CWE-427",
           "description": "A vulnerability has been identified in Siemens Software Center (All versions < V4.0.9.8). The affected application loads dynamic-link libraries (DLLs) from an uncontrolled search path. This could allow an authenticated local attacker to place a specially crafted DLL in a directory that the application searches, leading to arbitrary code execution with the privileges of the affected application.",
           "epss_score": 0.00135,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-21T02:02:03.038674+09:00",
+      "type": "single",
+      "title": "Critical FortiSIEM Flaw Gets Public Exploit PoC for Unauthenticated Remote Code Execution",
+      "url": "https://thehackernews.com/2026/10/critical-fortisiem-flaw-gets-public.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-10-20T15:38:52+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-106173"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-106173",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-22 (Path Traversal)",
+          "description": "A improper limitation of a pathname to a restricted directory ('path traversal') vulnerability in Fortinet FortiSIEM 7.5.0 may allow attacker to execute unauthorized code or commands via specially crafted packets.",
+          "epss_score": 0.00433,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-21T02:02:03.038674+09:00",
+      "type": "single",
+      "title": "Qilin and INC Ransomware Groups Exploit Palo Alto Networks Flaw to Bypass MFA",
+      "url": "https://thehackernews.com/2026/10/qilin-and-inc-ransomware-groups-exploit.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-10-20T15:32:27+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-0257"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-0257",
+          "cvss_score": 7.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-565",
+          "description": "Authentication bypass vulnerabilities in the GlobalProtect portal and gateway of Palo Alto Networks PAN-OS® software allows the attacker to bypass security restrictions and establish an unauthorized VPN connection.\n\nPanorama and Cloud NGFW are not impacted by these issues.",
+          "epss_score": 0.96895,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-21T02:02:03.038674+09:00",
+      "type": "single",
+      "title": "HMS Networks PEAK-System PCAN Windows drivers",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-293-01",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-10-20T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-109576",
+        "CVE-2026-101103",
+        "CVE-2026-94188",
+        "CVE-2026-103672",
+        "CVE-2026-110322",
+        "CVE-2026-105960"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-109576",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-101103",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-94188",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-103672",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-110322",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-21T02:02:03.038674+09:00",
+      "type": "single",
+      "title": "WAGO OS Linux",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-293-02",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-10-20T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-80466",
+        "CVE-2026-88850"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-80466",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-88850",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-21T02:02:03.038674+09:00",
+      "type": "single",
+      "title": "Moxa AIG-302 ThingsPro Edge",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-293-03",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-10-20T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-109812",
+        "CVE-2026-109813"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-109812",
+          "cvss_score": 6.9,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-862 (Missing Authorization)",
+          "description": "A missing authorization vulnerability exists in the internal API `/api/v1/secrets/` of some of Moxa's industrial computing products. A low-privileged authenticated attacker with adjacent network access could exploit this vulnerability to access sensitive information, potentially resulting in the disclosure of confidential data, including cryptographic key material.",
+          "epss_score": 0.00125,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-109813",
+          "cvss_score": 8.6,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-321",
+          "description": "A hard-coded cryptographic key vulnerability exists in the `/usr/bin/sysman` of some of Moxa's industrial computing products. An unauthenticated attacker with adjacent network access could exploit the exposed private key material to compromise the confidentiality and integrity of communications.",
+          "epss_score": 0.00153,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-21T02:02:03.038674+09:00",
+      "type": "single",
+      "title": "Hitachi Energy MicroSCADA X SYS600 Product",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-293-04",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-10-20T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-9852",
+        "CVE-2026-9853",
+        "CVE-2026-9854"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-9852",
+          "cvss_score": 4.6,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-1236",
+          "description": "A CSV injection vulnerability exists in SYS600. Injected malicious formulas can add or modify data to the spreadsheet, insert links, exfiltrate data, and in some cases, depending on how the user has their environment configured, execute malicious code on the user’s machine. To exploit this issue attackers would need a way to create arbitrary log messages. This could be achieved through normal functionality via SCIL scripts, a log injection vulnerability, or via the SYS600 broker. This vulnerabil",
+          "epss_score": 0.00209,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-9853",
+          "cvss_score": 8.5,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-303",
+          "description": "A vulnerability exists in SYS600 which allows any user authenticated to the operating system of the server hosting the application to read and modify application objects without being authenticated to the SYS600 system itself.\n\nOnly the SYS600 system users should be permitted to view and modify application objects.",
+          "epss_score": 0.00144,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-9854",
+          "cvss_score": 8.5,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-303",
+          "description": "A vulnerability exists in SYS600 RBAC mechanism where users having access to the engineering tools could elevate their privileges to administrator level on the underlying Windows host, granting themselves full control over the host machine.",
+          "epss_score": 0.00144,
           "kev": false
         }
       ]
