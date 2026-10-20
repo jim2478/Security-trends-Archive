@@ -2,21 +2,29 @@
   "date": "2026-10-20",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 9,
+    "scan_runs": 10,
     "total_articles_max": 1801,
-    "matched_articles_max": 162,
-    "new_alerts": 6,
-    "cve_total": 1,
-    "alerts_with_cve": 1,
-    "cve_count": 1,
+    "matched_articles_max": 163,
+    "new_alerts": 8,
+    "cve_total": 8,
+    "alerts_with_cve": 2,
+    "cve_count": 8,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
-      "CVE-2026-110936"
+      "CVE-2023-27532",
+      "CVE-2025-40947",
+      "CVE-2025-40948",
+      "CVE-2026-0257",
+      "CVE-2026-0300",
+      "CVE-2026-110936",
+      "CVE-2026-88771",
+      "CVE-2026-88772"
     ],
     "keywords_hit": {
       "Malware": 5,
-      "CVE": 1
+      "CVE": 2,
+      "봇넷": 1
     }
   },
   "alerts": [
@@ -111,6 +119,88 @@
       "published": "2026-10-19T19:40:58+00:00",
       "keywords": [
         "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-20T09:01:28.074294+09:00",
+      "type": "single",
+      "title": "Threat Brief: Active Exploitation of PAN-OS CVE-2026-0257 (Updated October 19)",
+      "url": "https://unit42.paloaltonetworks.com/active-exploitation-of-pan-os-cve-2026-0257/",
+      "source": "Palo Alto Unit42 (위협리서치) [RSS]",
+      "published": "2026-10-19T22:35:42+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-0257",
+        "CVE-2023-27532",
+        "CVE-2026-88771",
+        "CVE-2026-88772",
+        "CVE-2025-40947",
+        "CVE-2025-40948",
+        "CVE-2026-0300"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-0257",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2023-27532",
+          "cvss_score": 7.5,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-306 (Missing Authentication)",
+          "description": "Vulnerability in Veeam Backup & Replication component allows encrypted credentials stored in the configuration database to be obtained. This may lead to gaining access to the backup infrastructure hosts.",
+          "epss_score": 0.81326,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-88771",
+          "cvss_score": 9.5,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-20 (Improper Input Validation)",
+          "description": "Improper input validation vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.\n\nThis issue affects ADC: before 14.1-73.37, before 13.1-64.23, before 14.1-73.37 FIPS, and before 13.1.37.279 FIPS and NDcPP; Gateway: before 14.1-73.37 and before 13.1-64.23 leading to an unauthenticated attacker to execute arbitrary commands.",
+          "epss_score": 0.01083,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-88772",
+          "cvss_score": 9.5,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-119 (Buffer Overflow)",
+          "description": "Vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway.\n\nThis issue affects ADC: before 14.1-73.37, before 13.1-64.23, before 14.1-73.37 FIPS, and before 13.1.37.279 FIPS and NDcPP; Gateway: before 14.1-73.37 and before 13.1-64.23 leading to Remote Code Execution or Denial of Service",
+          "epss_score": 0.01301,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2025-40947",
+          "cvss_score": 7.7,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-78 (OS Command Injection)",
+          "description": "A vulnerability has been identified in RUGGEDCOM ROX MX5000 (All versions < V2.17.1), RUGGEDCOM ROX MX5000RE (All versions < V2.17.1), RUGGEDCOM ROX RX1400 (All versions < V2.17.1), RUGGEDCOM ROX RX1500 (All versions < V2.17.1), RUGGEDCOM ROX RX1501 (All versions < V2.17.1), RUGGEDCOM ROX RX1510 (All versions < V2.17.1), RUGGEDCOM ROX RX1511 (All versions < V2.17.1), RUGGEDCOM ROX RX1512 (All versions < V2.17.1), RUGGEDCOM ROX RX1524 (All versions < V2.17.1), RUGGEDCOM ROX RX1536 (All versions <",
+          "epss_score": 0.0054,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-20T09:01:28.074294+09:00",
+      "type": "single",
+      "title": "AI 웜이 우리 집 오븐까지 장악할까?…IoT 봇넷, 위협 수준 진단",
+      "url": "https://www.itworld.co.kr/article/4237349/ai-%ec%9b%9c%ec%9d%b4-%ec%9a%b0%eb%a6%ac-%ec%a7%91-%ec%98%a4%eb%b8%90%ea%b9%8c%ec%a7%80-%ec%9e%a5%ec%95%85%ed%95%a0%ea%b9%8c-iot-%eb%b4%87%eb%84%b7-%ec%9c%84%ed%98%91-%ec%88%98%ec%a4%80-%ec%a7%84.html",
+      "source": "ITWorld [RSS]",
+      "published": "2026-10-19T23:47:46+00:00",
+      "keywords": [
+        "봇넷"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
