@@ -1,0 +1,88 @@
+{
+  "date": "2026-10-22",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 1,
+    "total_articles_max": 1751,
+    "matched_articles_max": 148,
+    "new_alerts": 2,
+    "cve_total": 6,
+    "alerts_with_cve": 1,
+    "cve_count": 6,
+    "ioc_count": 0,
+    "merged_count": 2,
+    "unique_cves": [
+      "CVE-2026-109618",
+      "CVE-2026-109619"
+    ],
+    "keywords_hit": {
+      "CVE": 1,
+      "Malware": 1
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-10-22T00:01:48.539834+09:00",
+      "type": "merged",
+      "cve_ids": [
+        "CVE-2026-109618",
+        "CVE-2026-109619"
+      ],
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "sources": [
+        {
+          "title": "PHP ships emergency patches for critical PHP2Shell flaws",
+          "url": "https://www.bleepingcomputer.com/news/security/php-ships-emergency-patches-for-critical-php2shell-flaws/",
+          "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]"
+        },
+        {
+          "title": "PHP2Shell: When PHP Runs Out of Memory at the Wrong Moment",
+          "url": "https://www.imperva.com/blog/php2shell-vulnerability-updates/",
+          "source": "Imperva Blog (DDoS/봇 방어) [RSS]"
+        },
+        {
+          "title": "[긴급] PHP ‘PHP2Shell’ 치명적 취약점 2건…인증 없이 원격 코드 실행 위험",
+          "url": "https://www.dailysecu.com/news/articleView.html?idxno=208978",
+          "source": "데일리시큐 (전체) [RSS]"
+        }
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-109618",
+          "cvss_score": 9.2,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-416 (Use After Free)",
+          "description": "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. Some contexts may not properly account for this scenario and leave request memory in an uninitialized state before performing an allocation. The subsequent request cleanup procedure may read or branch on this memory. Multiple OOM strategies can consistently trigger this condition and lead to remote code execution (RCE).",
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-109619",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-22T00:01:48.539834+09:00",
+      "type": "single",
+      "title": "ClickFix has never been bigger, and AI tools are its most convincing lure yet",
+      "url": "https://www.bleepingcomputer.com/news/security/clickfix-has-never-been-bigger-and-ai-tools-are-its-most-convincing-lure-yet/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-10-21T14:00:10+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
