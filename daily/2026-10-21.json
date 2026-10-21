@@ -2,15 +2,15 @@
   "date": "2026-10-21",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 23,
+    "scan_runs": 24,
     "total_articles_max": 1781,
     "matched_articles_max": 166,
-    "new_alerts": 17,
-    "cve_total": 31,
-    "alerts_with_cve": 13,
-    "cve_count": 31,
+    "new_alerts": 20,
+    "cve_total": 36,
+    "alerts_with_cve": 15,
+    "cve_count": 36,
     "ioc_count": 17,
-    "merged_count": 0,
+    "merged_count": 1,
     "unique_cves": [
       "CVE-2023-27532",
       "CVE-2026-0257",
@@ -32,6 +32,7 @@
       "CVE-2026-110936",
       "CVE-2026-21510",
       "CVE-2026-32202",
+      "CVE-2026-33825",
       "CVE-2026-35540",
       "CVE-2026-80466",
       "CVE-2026-88850",
@@ -42,8 +43,8 @@
       "CVE-2026-9854"
     ],
     "keywords_hit": {
-      "CVE": 14,
-      "Malware": 3
+      "CVE": 16,
+      "Malware": 5
     }
   },
   "alerts": [
@@ -611,6 +612,91 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-10-21T23:01:26.686765+09:00",
+      "type": "merged",
+      "cve_ids": [
+        "CVE-2026-109618",
+        "CVE-2026-109619"
+      ],
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "sources": [
+        {
+          "title": "PHP2Shell: Critical PHP vulnerabilities patched, update now!",
+          "url": "https://www.helpnetsecurity.com/2026/10/21/php2shell-php-vulnerabilities-patched-cve-2026-109618-cve-2026-109619/",
+          "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]"
+        },
+        {
+          "title": "Critical security issue affecting PHP",
+          "url": "https://www.ncsc.gov.uk/news/critical-security-issue-affecting-php",
+          "source": "NCSC UK (영국 국가사이버보안센터) [RSS]"
+        }
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-109618",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-109619",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-21T23:01:26.686765+09:00",
+      "type": "single",
+      "title": "The Science of Exploitability: Decoding BlueHammer",
+      "url": "https://blog.qualys.com/category/vulnerabilities-threat-research",
+      "source": "Qualys Blog (취약점관리) [RSS]",
+      "published": "2026-10-21T13:00:00+00:00",
+      "keywords": [
+        "CVE",
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-33825"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-33825",
+          "cvss_score": 7.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-1220",
+          "description": "Insufficient granularity of access control in Microsoft Defender allows an authorized attacker to elevate privileges locally.",
+          "epss_score": 0.00399,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-21T23:01:26.686765+09:00",
+      "type": "single",
+      "title": "Decades-Old Windows Utility Powers Modern ClickFix Attack",
+      "url": "https://www.darkreading.com/cyberattacks-data-breaches/decades-old-windows-utility-modern-clickfix-attack",
+      "source": "Dark Reading (보안뉴스 종합) [RSS]",
+      "published": "2026-10-21T13:00:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
