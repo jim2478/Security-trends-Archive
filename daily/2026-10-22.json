@@ -2,13 +2,13 @@
   "date": "2026-10-22",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
+    "scan_runs": 4,
     "total_articles_max": 1761,
     "matched_articles_max": 154,
-    "new_alerts": 3,
-    "cve_total": 8,
-    "alerts_with_cve": 2,
-    "cve_count": 8,
+    "new_alerts": 4,
+    "cve_total": 10,
+    "alerts_with_cve": 3,
+    "cve_count": 10,
     "ioc_count": 0,
     "merged_count": 2,
     "unique_cves": [
@@ -16,7 +16,7 @@
       "CVE-2026-109619"
     ],
     "keywords_hit": {
-      "CVE": 2,
+      "CVE": 3,
       "Malware": 1
     }
   },
@@ -91,6 +91,42 @@
       "url": "https://www.cisa.gov/news-events/alerts/2026/10/21/critical-vulnerabilities-php-require-immediate-patching",
       "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
       "published": "2026-10-21T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-109618",
+        "CVE-2026-109619"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-109618",
+          "cvss_score": 9.2,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-416 (Use After Free)",
+          "description": "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. Some contexts may not properly account for this scenario and leave request memory in an uninitialized state before performing an allocation. The subsequent request cleanup procedure may read or branch on this memory. Multiple OOM strategies can consistently trigger this condition and lead to remote code execution (RCE).",
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-109619",
+          "cvss_score": 9.2,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-416 (Use After Free)",
+          "description": "PHP has various global state that temporarily points into request memory. In some scenarios, global state may not be correctly reset, or may be repopulated after being reset. The global state may then refer to request memory even after it has been freed. Subsequent requests may read or branch on this stale state before it is fully initialized. Multiple strategies can trigger this condition and produce remote code execution (RCE).",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-22T03:01:11.632420+09:00",
+      "type": "single",
+      "title": "PHP2Shell Patches Land as First Exploitation Attempts Hit Sensors",
+      "url": "https://www.securityweek.com/php2shell-patches-land-as-first-exploitation-attempts-hit-sensors/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-10-21T16:50:40+00:00",
       "keywords": [
         "CVE"
       ],
