@@ -2,16 +2,17 @@
   "date": "2026-10-21",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 21,
+    "scan_runs": 22,
     "total_articles_max": 1781,
     "matched_articles_max": 166,
-    "new_alerts": 15,
-    "cve_total": 27,
-    "alerts_with_cve": 11,
-    "cve_count": 27,
+    "new_alerts": 16,
+    "cve_total": 29,
+    "alerts_with_cve": 12,
+    "cve_count": 29,
     "ioc_count": 17,
     "merged_count": 0,
     "unique_cves": [
+      "CVE-2023-27532",
       "CVE-2026-0257",
       "CVE-2026-101103",
       "CVE-2026-101767",
@@ -41,7 +42,7 @@
       "CVE-2026-9854"
     ],
     "keywords_hit": {
-      "CVE": 12,
+      "CVE": 13,
       "Malware": 3
     }
   },
@@ -538,6 +539,42 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-21T21:01:28.782153+09:00",
+      "type": "single",
+      "title": "Ransomware gangs have been exploiting Palo Alto GlobalProtect VPN flaw since June",
+      "url": "https://www.helpnetsecurity.com/2026/10/21/ransomware-groups-exploit-palo-alto-globalprotect-cve-2026-0257/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-10-21T11:13:39+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-0257",
+        "CVE-2023-27532"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-0257",
+          "cvss_score": 7.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-565",
+          "description": "Authentication bypass vulnerabilities in the GlobalProtect portal and gateway of Palo Alto Networks PAN-OS® software allows the attacker to bypass security restrictions and establish an unauthorized VPN connection.\n\nPanorama and Cloud NGFW are not impacted by these issues.",
+          "epss_score": 0.96895,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2023-27532",
+          "cvss_score": 7.5,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-306 (Missing Authentication)",
+          "description": "Vulnerability in Veeam Backup & Replication component allows encrypted credentials stored in the configuration database to be obtained. This may lead to gaining access to the backup infrastructure hosts.",
+          "epss_score": 0.81326,
+          "kev": true
+        }
+      ]
     }
   ]
 }
