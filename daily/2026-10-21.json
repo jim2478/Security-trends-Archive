@@ -2,13 +2,13 @@
   "date": "2026-10-21",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 17,
+    "scan_runs": 18,
     "total_articles_max": 1781,
     "matched_articles_max": 166,
-    "new_alerts": 12,
-    "cve_total": 24,
-    "alerts_with_cve": 9,
-    "cve_count": 24,
+    "new_alerts": 14,
+    "cve_total": 27,
+    "alerts_with_cve": 11,
+    "cve_count": 27,
     "ioc_count": 17,
     "merged_count": 0,
     "unique_cves": [
@@ -23,6 +23,8 @@
       "CVE-2026-105960",
       "CVE-2026-106173",
       "CVE-2026-109576",
+      "CVE-2026-109618",
+      "CVE-2026-109619",
       "CVE-2026-109812",
       "CVE-2026-109813",
       "CVE-2026-110322",
@@ -33,12 +35,13 @@
       "CVE-2026-80466",
       "CVE-2026-88850",
       "CVE-2026-94188",
+      "CVE-2026-96652",
       "CVE-2026-9852",
       "CVE-2026-9853",
       "CVE-2026-9854"
     ],
     "keywords_hit": {
-      "CVE": 10,
+      "CVE": 12,
       "Malware": 2
     }
   },
@@ -459,6 +462,68 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-21T17:01:14.919137+09:00",
+      "type": "single",
+      "title": "CISA Orders Federal Agencies to Patch Exploited Plex2Shell, Siemens, and SiteGuard Flaws",
+      "url": "https://thehackernews.com/2026/10/cisa-orders-federal-agencies-to-patch.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-10-21T07:26:49+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-96652"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-96652",
+          "cvss_score": 5.3,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-918 (SSRF)",
+          "description": "Plex Media Server before 1.43.3.10861 allows SSRF via '/player/timeline'. An attacker using any X-Plex-Token value can include a full URL in the 'protocol' parameter and force the Plex server to POST to the attacker's chosen destination.",
+          "epss_score": 0.00222,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-21T17:01:14.919137+09:00",
+      "type": "single",
+      "title": "PHP2Shell: Mass Exploitation Looms for Leaked Critical PHP Flaws",
+      "url": "https://www.securityweek.com/php2shell-mass-exploitation-looms-for-leaked-critical-php-flaws/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-10-21T07:02:06+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-109618",
+        "CVE-2026-109619"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-109618",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-109619",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
     }
   ]
 }
