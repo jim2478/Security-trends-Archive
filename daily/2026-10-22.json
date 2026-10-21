@@ -2,10 +2,10 @@
   "date": "2026-10-22",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 8,
+    "scan_runs": 9,
     "total_articles_max": 1761,
     "matched_articles_max": 154,
-    "new_alerts": 6,
+    "new_alerts": 7,
     "cve_total": 10,
     "alerts_with_cve": 3,
     "cve_count": 10,
@@ -16,8 +16,8 @@
       "CVE-2026-109619"
     ],
     "keywords_hit": {
-      "CVE": 3,
-      "Malware": 3
+      "Malware": 4,
+      "CVE": 3
     }
   },
   "alerts": [
@@ -177,6 +177,20 @@
       "url": "https://www.bleepingcomputer.com/news/security/japans-onamae-desktop-cloud-hacked-up-to-27-000-servers-affected/",
       "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
       "published": "2026-10-21T21:43:27+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-22T08:01:15.294517+09:00",
+      "type": "single",
+      "title": "Chrome puts insecure sites behind a permission prompt",
+      "url": "https://www.helpnetsecurity.com/2026/10/22/google-chrome-https-protection/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-10-21T22:30:30+00:00",
       "keywords": [
         "Malware"
       ],
