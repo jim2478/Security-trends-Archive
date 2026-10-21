@@ -2,10 +2,10 @@
   "date": "2026-10-21",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 15,
+    "scan_runs": 16,
     "total_articles_max": 1781,
     "matched_articles_max": 166,
-    "new_alerts": 11,
+    "new_alerts": 12,
     "cve_total": 24,
     "alerts_with_cve": 9,
     "cve_count": 24,
@@ -38,7 +38,7 @@
       "CVE-2026-9854"
     ],
     "keywords_hit": {
-      "CVE": 9,
+      "CVE": 10,
       "Malware": 2
     }
   },
@@ -443,6 +443,20 @@
         "Malware"
       ],
       "ioc_raw_text": "[Domain] msadc[.]inc\n[Domain] javadevhouse[.]co[.]kr\n[Domain] pythonapischool[.]com\n[URL] hxxps://cubedesign[.]co[.]kr/news\n[URL] hxxps://cubedesign[.]co[.]kr/mobile/fashion\n[URL] hxxps://fp-news[.]co[.]kr/shop/cart\n[URL] hxxps://k-wbc[.]co[.]kr/skin/social/social_view.php\n[URL] hxxps://rcsh[.]co[.]kr/modules/bbs/tiles/bbs_div/inputForm.php\n[URL] hxxps://www[.]ksog[.]org/insert_file/handle.php\n[MD5] 2f8475a90a25624ed02f1d18d4e6d65d\n[MD5] 676fabe30a28b53925fba98e34b35986\n[MD5] a28cba214058fcae2883d8cffc883abd\n[MD5] b4a7eff35f048f06fb0a2d7631f23a7d\n[MD5] c105d6b16f544582772de0159f24c00a\n[MD5] ec84d6cb2ae7974767aedac246b50a3e\n[MD5] ff07641dc56914dd90ee0bd7404d7ad7",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-21T15:01:14.409231+09:00",
+      "type": "single",
+      "title": "DevGuard: Open-source vulnerability management for the software supply chain",
+      "url": "https://www.helpnetsecurity.com/2026/10/21/devguard-open-source-vulnerability-management/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-10-21T05:30:45+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
     }
