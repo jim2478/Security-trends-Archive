@@ -2,17 +2,22 @@
   "date": "2026-10-23",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
+    "scan_runs": 4,
     "total_articles_max": 1781,
     "matched_articles_max": 159,
-    "new_alerts": 1,
-    "cve_total": 0,
-    "alerts_with_cve": 0,
-    "cve_count": 0,
+    "new_alerts": 3,
+    "cve_total": 3,
+    "alerts_with_cve": 2,
+    "cve_count": 3,
     "ioc_count": 22,
     "merged_count": 0,
-    "unique_cves": [],
+    "unique_cves": [
+      "CVE-2026-109618",
+      "CVE-2026-109619",
+      "CVE-2026-111497"
+    ],
     "keywords_hit": {
+      "CVE": 2,
       "Malware": 1
     }
   },
@@ -30,6 +35,68 @@
       "ioc_raw_text": "[IP] 82[.]153[.]135[.]80\n[IP] 186[.]2[.]175[.]183\n[IP] 186[.]2[.]163[.]185\n[IP] 190[.]115[.]31[.]69\n[IP] 209[.]99[.]186[.]187\n[Domain] choclatey[.]org\n[Domain] massgravel[.]net\n[Domain] workerstats[.]net\n[Domain] pymons[.]is\n[Domain] datamons[.]org\n[Domain] niceer[.]net\n[Domain] supertrap[.]net\n[SHA256] 04d2828155ed2a276cfd3c97d4f966d328391dd818e04e773212cd601e49fa74\n[SHA256] 0ea99fbbe29af6f797e3866ed5f822c7a5d3e9cdb990a8c382a715069f156499\n[SHA256] 237ba698d7dc8936c43e0e78e7644002375e51e8baf9b3a7d4e18683f871ee31\n[SHA256] 3e3b62a9836697d978cbb620dc8af8f6eefdf8cb73fc30d16bb394d1c58f4c97\n[SHA256] 5410c2f239c3649928383c4478dea182f90b21f5b258081fec07e9d297ae4b1c\n[SHA256] 56f05c4fb1c25c04e0dde60e2e5e41ac164a6dc53688d0f9eb52a55f82106389\n[SHA256] 8fb7aaf2b9270b8b75f6844aaefd5242b4f926fb89cba10fff3d9b908a769788\n[SHA256] be0329d0795dd62ae587faf97e704bb36413e5c98ddd8fe575f5077db3c84e5f\n[SHA256] f3846ec2a6ff0a27d9ef2b9bf7908743b81d295ef29344acfb96ff83fff994f9\n[SHA256] fb1181160e9f10ce1eb5e5dc9bc23e1498a39110ee9ea361fd150454cb01b292",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-23T03:01:38.648544+09:00",
+      "type": "single",
+      "title": "PHP2Shell: Early Attack Activity Through Imperva’s Lens",
+      "url": "https://www.imperva.com/blog/php2shell-early-attack-activity-through-impervas-lens/",
+      "source": "Imperva Blog (DDoS/봇 방어) [RSS]",
+      "published": "2026-10-22T16:30:48+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-109618",
+        "CVE-2026-109619"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-109618",
+          "cvss_score": 9.2,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-416 (Use After Free)",
+          "description": "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. Some contexts may not properly account for this scenario and leave request memory in an uninitialized state before performing an allocation. The subsequent request cleanup procedure may read or branch on this memory. Multiple OOM strategies can consistently trigger this condition and lead to remote code execution (RCE).",
+          "epss_score": 0.05307,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-109619",
+          "cvss_score": 9.2,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-416 (Use After Free)",
+          "description": "PHP has various global state that temporarily points into request memory. In some scenarios, global state may not be correctly reset, or may be repopulated after being reset. The global state may then refer to request memory even after it has been freed. Subsequent requests may read or branch on this stale state before it is fully initialized. Multiple strategies can trigger this condition and produce remote code execution (RCE).",
+          "epss_score": 0.05757,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-23T03:01:38.648544+09:00",
+      "type": "single",
+      "title": "Node2Shell: From Brotli Data to Remote Code Execution",
+      "url": "https://www.imperva.com/blog/node2shell-from-brotli-data-to-remote-code-execution/",
+      "source": "Imperva Blog (DDoS/봇 방어) [RSS]",
+      "published": "2026-10-22T12:22:01+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-111497"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-111497",
+          "cvss_score": 9.2,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-252",
+          "description": "A buffer overflow vulnerability in the Brotli decoder (c/dec/decode.c) in Google Brotli versions 1.0.3 through 1.2.0 on all platforms allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause a denial of service, or potentially execute arbitrary code using a crafted Brotli-compressed stream.\n\n\n\n\n\nUsers need to update any Brotli libraries or binaries between 1.0.3 through 1.2.0 to the latest available version: 1.0.10 or 1.1.1 or 1",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
     }
   ]
 }
