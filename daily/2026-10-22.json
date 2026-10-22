@@ -2,13 +2,13 @@
   "date": "2026-10-22",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 13,
+    "scan_runs": 14,
     "total_articles_max": 1761,
     "matched_articles_max": 166,
-    "new_alerts": 10,
-    "cve_total": 22,
-    "alerts_with_cve": 6,
-    "cve_count": 22,
+    "new_alerts": 11,
+    "cve_total": 24,
+    "alerts_with_cve": 7,
+    "cve_count": 24,
     "ioc_count": 2,
     "merged_count": 5,
     "unique_cves": [
@@ -16,7 +16,7 @@
       "CVE-2026-109619"
     ],
     "keywords_hit": {
-      "CVE": 6,
+      "CVE": 7,
       "Malware": 4
     }
   },
@@ -302,6 +302,42 @@
           "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=709118",
           "source": "디지털투데이 (전체기사) [RSS]"
         }
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-109618",
+          "cvss_score": 9.2,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-416 (Use After Free)",
+          "description": "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. Some contexts may not properly account for this scenario and leave request memory in an uninitialized state before performing an allocation. The subsequent request cleanup procedure may read or branch on this memory. Multiple OOM strategies can consistently trigger this condition and lead to remote code execution (RCE).",
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-109619",
+          "cvss_score": 9.2,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-416 (Use After Free)",
+          "description": "PHP has various global state that temporarily points into request memory. In some scenarios, global state may not be correctly reset, or may be repopulated after being reset. The global state may then refer to request memory even after it has been freed. Subsequent requests may read or branch on this stale state before it is fully initialized. Multiple strategies can trigger this condition and produce remote code execution (RCE).",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-22T13:01:12.987516+09:00",
+      "type": "single",
+      "title": "웹사이트 75% 쓰는 PHP서 보안 취약점…KISA “즉시 업데이트”",
+      "url": "https://www.donga.com/news/It/article/all/20261022/134888959/1",
+      "source": "동아일보 (경제) [RSS]",
+      "published": "2026-10-22T03:37:46+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-109618",
+        "CVE-2026-109619"
       ],
       "cve_details": [
         {
