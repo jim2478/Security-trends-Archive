@@ -2,22 +2,23 @@
   "date": "2026-10-22",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 18,
+    "scan_runs": 19,
     "total_articles_max": 1781,
     "matched_articles_max": 166,
-    "new_alerts": 13,
-    "cve_total": 27,
-    "alerts_with_cve": 9,
-    "cve_count": 27,
+    "new_alerts": 14,
+    "cve_total": 28,
+    "alerts_with_cve": 10,
+    "cve_count": 28,
     "ioc_count": 2,
     "merged_count": 5,
     "unique_cves": [
       "CVE-2022-21894",
       "CVE-2026-109618",
-      "CVE-2026-109619"
+      "CVE-2026-109619",
+      "CVE-2026-113380"
     ],
     "keywords_hit": {
-      "CVE": 9,
+      "CVE": 10,
       "Malware": 4
     }
   },
@@ -419,6 +420,32 @@
           "cwe": "CWE-416 (Use After Free)",
           "description": "PHP has various global state that temporarily points into request memory. In some scenarios, global state may not be correctly reset, or may be repopulated after being reset. The global state may then refer to request memory even after it has been freed. Subsequent requests may read or branch on this stale state before it is fully initialized. Multiple strategies can trigger this condition and produce remote code execution (RCE).",
           "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-22T18:01:28.351165+09:00",
+      "type": "single",
+      "title": "Signal flaw could expose audio and video even after users hang up",
+      "url": "https://www.helpnetsecurity.com/2026/10/22/signal-ringrtc-vulnerability-cve-2026-113380/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-10-22T08:39:57+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-113380"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-113380",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-754",
+          "description": "In the RingRTC library before 2.72.0 for Signal, a peer that saturates a call's FSM queue can interfere with the ability of a local hangup to tear the call (with its audio and perhaps also video track) down.",
+          "epss_score": 0.00321,
           "kev": false
         }
       ]
