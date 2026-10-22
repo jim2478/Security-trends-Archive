@@ -2,10 +2,10 @@
   "date": "2026-10-22",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 23,
+    "scan_runs": 24,
     "total_articles_max": 1781,
     "matched_articles_max": 166,
-    "new_alerts": 15,
+    "new_alerts": 17,
     "cve_total": 29,
     "alerts_with_cve": 11,
     "cve_count": 29,
@@ -20,7 +20,7 @@
     ],
     "keywords_hit": {
       "CVE": 11,
-      "Malware": 4
+      "Malware": 6
     }
   },
   "alerts": [
@@ -476,6 +476,34 @@
           "kev": true
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-10-22T23:01:21.903184+09:00",
+      "type": "single",
+      "title": "LiteLLM hit by second supply chain attack this year, users urged to rotate credentials",
+      "url": "https://www.helpnetsecurity.com/2026/10/22/litellm-compromised-supply-chain-attack-pypi-docker/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-10-22T13:10:28+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-22T23:01:21.903184+09:00",
+      "type": "single",
+      "title": "Iranian Hacking Group Found Hosting C2 Infrastructure in the US",
+      "url": "https://www.infosecurity-magazine.com/news/iranian-hacking-group-hosting-c2/",
+      "source": "Infosecurity Magazine (보안뉴스) [RSS]",
+      "published": "2026-10-22T13:05:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
