@@ -2,21 +2,21 @@
   "date": "2026-10-22",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 12,
+    "scan_runs": 13,
     "total_articles_max": 1761,
-    "matched_articles_max": 162,
-    "new_alerts": 9,
-    "cve_total": 14,
-    "alerts_with_cve": 5,
-    "cve_count": 14,
+    "matched_articles_max": 166,
+    "new_alerts": 10,
+    "cve_total": 22,
+    "alerts_with_cve": 6,
+    "cve_count": 22,
     "ioc_count": 2,
-    "merged_count": 2,
+    "merged_count": 5,
     "unique_cves": [
       "CVE-2026-109618",
       "CVE-2026-109619"
     ],
     "keywords_hit": {
-      "CVE": 5,
+      "CVE": 6,
       "Malware": 4
     }
   },
@@ -248,6 +248,60 @@
       "cve_ids": [
         "CVE-2026-109618",
         "CVE-2026-109619"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-109618",
+          "cvss_score": 9.2,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-416 (Use After Free)",
+          "description": "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. Some contexts may not properly account for this scenario and leave request memory in an uninitialized state before performing an allocation. The subsequent request cleanup procedure may read or branch on this memory. Multiple OOM strategies can consistently trigger this condition and lead to remote code execution (RCE).",
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-109619",
+          "cvss_score": 9.2,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-416 (Use After Free)",
+          "description": "PHP has various global state that temporarily points into request memory. In some scenarios, global state may not be correctly reset, or may be repopulated after being reset. The global state may then refer to request memory even after it has been freed. Subsequent requests may read or branch on this stale state before it is fully initialized. Multiple strategies can trigger this condition and produce remote code execution (RCE).",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-22T12:01:11.223971+09:00",
+      "type": "merged",
+      "cve_ids": [
+        "CVE-2026-109618",
+        "CVE-2026-109619"
+      ],
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "sources": [
+        {
+          "title": "티오리, 치명적 PHP 취약점 ‘PHP2Shell’ 재현·검증 완료…긴급 대응 방안 공개",
+          "url": "https://www.dailysecu.com/news/articleView.html?idxno=208986",
+          "source": "데일리시큐 (전체) [RSS]"
+        },
+        {
+          "title": "“전 세계 2,200만 PHP 인스턴스 노출…국내 기업 보안 대응 시급”",
+          "url": "https://www.dailysecu.com/news/articleView.html?idxno=208985",
+          "source": "데일리시큐 (전체) [RSS]"
+        },
+        {
+          "title": "웹사이트 70%가 쓰는 PHP에 비상…AI가 결함 찾아내",
+          "url": "https://it.chosun.com/news/articleView.html?idxno=2023092172543",
+          "source": "IT조선 [RSS]"
+        },
+        {
+          "title": "티오리, ‘PHP2Shell’ 취약점 분석·긴급 대응 방안 발표",
+          "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=709118",
+          "source": "디지털투데이 (전체기사) [RSS]"
+        }
       ],
       "cve_details": [
         {
