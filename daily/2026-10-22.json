@@ -2,23 +2,24 @@
   "date": "2026-10-22",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 20,
+    "scan_runs": 21,
     "total_articles_max": 1781,
     "matched_articles_max": 166,
-    "new_alerts": 14,
-    "cve_total": 28,
-    "alerts_with_cve": 10,
-    "cve_count": 28,
+    "new_alerts": 15,
+    "cve_total": 29,
+    "alerts_with_cve": 11,
+    "cve_count": 29,
     "ioc_count": 2,
     "merged_count": 5,
     "unique_cves": [
       "CVE-2022-21894",
+      "CVE-2026-0257",
       "CVE-2026-109618",
       "CVE-2026-109619",
       "CVE-2026-113380"
     ],
     "keywords_hit": {
-      "CVE": 10,
+      "CVE": 11,
       "Malware": 4
     }
   },
@@ -447,6 +448,32 @@
           "description": "In the RingRTC library before 2.72.0 for Signal, a peer that saturates a call's FSM queue can interfere with the ability of a local hangup to tear the call (with its audio and perhaps also video track) down.",
           "epss_score": 0.00321,
           "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-22T20:01:22.627235+09:00",
+      "type": "single",
+      "title": "Qilin and INC Exploit Palo Alto VPN Flaw in Ransomware Attacks",
+      "url": "https://hackread.com/qilin-inc-exploit-palo-alto-vpn-flaw-ransomware-attacks/",
+      "source": "HackRead (해킹/데이터유출) [RSS]",
+      "published": "2026-10-22T10:15:31+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-0257"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-0257",
+          "cvss_score": 7.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-565",
+          "description": "Authentication bypass vulnerabilities in the GlobalProtect portal and gateway of Palo Alto Networks PAN-OS® software allows the attacker to bypass security restrictions and establish an unauthorized VPN connection.\n\nPanorama and Cloud NGFW are not impacted by these issues.",
+          "epss_score": 0.96895,
+          "kev": true
         }
       ]
     }
