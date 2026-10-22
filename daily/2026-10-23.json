@@ -2,17 +2,34 @@
   "date": "2026-10-23",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
-    "total_articles_max": 1761,
-    "matched_articles_max": 156,
-    "new_alerts": 0,
+    "scan_runs": 3,
+    "total_articles_max": 1781,
+    "matched_articles_max": 159,
+    "new_alerts": 1,
     "cve_total": 0,
     "alerts_with_cve": 0,
     "cve_count": 0,
-    "ioc_count": 0,
+    "ioc_count": 22,
     "merged_count": 0,
     "unique_cves": [],
-    "keywords_hit": {}
+    "keywords_hit": {
+      "Malware": 1
+    }
   },
-  "alerts": []
+  "alerts": [
+    {
+      "scan_time_kst": "2026-10-23T02:01:20.213702+09:00",
+      "type": "single",
+      "title": "SEO Poisoning Campaign Delivers New Armorsteal Malware",
+      "url": "https://www.zscaler.com/blogs/security-research/seo-poisoning-campaign-delivers-new-armorsteal-malware",
+      "source": "Zscaler ThreatLabz (위협연구) [RSS]",
+      "published": "2026-10-22T16:10:15+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "[IP] 82[.]153[.]135[.]80\n[IP] 186[.]2[.]175[.]183\n[IP] 186[.]2[.]163[.]185\n[IP] 190[.]115[.]31[.]69\n[IP] 209[.]99[.]186[.]187\n[Domain] choclatey[.]org\n[Domain] massgravel[.]net\n[Domain] workerstats[.]net\n[Domain] pymons[.]is\n[Domain] datamons[.]org\n[Domain] niceer[.]net\n[Domain] supertrap[.]net\n[SHA256] 04d2828155ed2a276cfd3c97d4f966d328391dd818e04e773212cd601e49fa74\n[SHA256] 0ea99fbbe29af6f797e3866ed5f822c7a5d3e9cdb990a8c382a715069f156499\n[SHA256] 237ba698d7dc8936c43e0e78e7644002375e51e8baf9b3a7d4e18683f871ee31\n[SHA256] 3e3b62a9836697d978cbb620dc8af8f6eefdf8cb73fc30d16bb394d1c58f4c97\n[SHA256] 5410c2f239c3649928383c4478dea182f90b21f5b258081fec07e9d297ae4b1c\n[SHA256] 56f05c4fb1c25c04e0dde60e2e5e41ac164a6dc53688d0f9eb52a55f82106389\n[SHA256] 8fb7aaf2b9270b8b75f6844aaefd5242b4f926fb89cba10fff3d9b908a769788\n[SHA256] be0329d0795dd62ae587faf97e704bb36413e5c98ddd8fe575f5077db3c84e5f\n[SHA256] f3846ec2a6ff0a27d9ef2b9bf7908743b81d295ef29344acfb96ff83fff994f9\n[SHA256] fb1181160e9f10ce1eb5e5dc9bc23e1498a39110ee9ea361fd150454cb01b292",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
 }
