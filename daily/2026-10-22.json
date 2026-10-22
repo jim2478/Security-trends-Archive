@@ -2,21 +2,22 @@
   "date": "2026-10-22",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 16,
+    "scan_runs": 17,
     "total_articles_max": 1771,
     "matched_articles_max": 166,
-    "new_alerts": 11,
-    "cve_total": 24,
-    "alerts_with_cve": 7,
-    "cve_count": 24,
+    "new_alerts": 13,
+    "cve_total": 27,
+    "alerts_with_cve": 9,
+    "cve_count": 27,
     "ioc_count": 2,
     "merged_count": 5,
     "unique_cves": [
+      "CVE-2022-21894",
       "CVE-2026-109618",
       "CVE-2026-109619"
     ],
     "keywords_hit": {
-      "CVE": 7,
+      "CVE": 9,
       "Malware": 4
     }
   },
@@ -331,6 +332,68 @@
       "url": "https://www.donga.com/news/It/article/all/20261022/134888959/1",
       "source": "동아일보 (경제) [RSS]",
       "published": "2026-10-22T03:37:46+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-109618",
+        "CVE-2026-109619"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-109618",
+          "cvss_score": 9.2,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-416 (Use After Free)",
+          "description": "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. Some contexts may not properly account for this scenario and leave request memory in an uninitialized state before performing an allocation. The subsequent request cleanup procedure may read or branch on this memory. Multiple OOM strategies can consistently trigger this condition and lead to remote code execution (RCE).",
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-109619",
+          "cvss_score": 9.2,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-416 (Use After Free)",
+          "description": "PHP has various global state that temporarily points into request memory. In some scenarios, global state may not be correctly reset, or may be repopulated after being reset. The global state may then refer to request memory even after it has been freed. Subsequent requests may read or branch on this stale state before it is fully initialized. Multiple strategies can trigger this condition and produce remote code execution (RCE).",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-22T16:01:14.892711+09:00",
+      "type": "single",
+      "title": "How APT41 revived the BlackLotus bootkit to attack diplomatic organizations in Central Asia",
+      "url": "https://securelist.com/uefi-bootkit-blackx/121539/",
+      "source": "Kaspersky Securelist (위협분석) [RSS]",
+      "published": "2026-10-22T06:00:48+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2022-21894"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2022-21894",
+          "cvss_score": 4.4,
+          "cvss_severity": "MEDIUM",
+          "cwe": "NVD-CWE-noinfo (Insufficient Information)",
+          "description": "Secure Boot Security Feature Bypass Vulnerability",
+          "epss_score": 0.06567,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-22T16:01:14.892711+09:00",
+      "type": "single",
+      "title": "\"PHP2shell 취약점 무료 점검\"...스틸리언, 서비스 출시",
+      "url": "https://zdnet.co.kr/view/?no=20261022151732",
+      "source": "지디넷코리아 [RSS]",
+      "published": "2026-10-22T06:17:32+00:00",
       "keywords": [
         "CVE"
       ],
