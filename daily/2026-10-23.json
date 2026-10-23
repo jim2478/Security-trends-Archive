@@ -2,13 +2,13 @@
   "date": "2026-10-23",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 21,
+    "scan_runs": 22,
     "total_articles_max": 1781,
-    "matched_articles_max": 168,
-    "new_alerts": 12,
-    "cve_total": 22,
-    "alerts_with_cve": 9,
-    "cve_count": 22,
+    "matched_articles_max": 171,
+    "new_alerts": 15,
+    "cve_total": 25,
+    "alerts_with_cve": 11,
+    "cve_count": 25,
     "ioc_count": 22,
     "merged_count": 2,
     "unique_cves": [
@@ -18,11 +18,12 @@
       "CVE-2026-109619",
       "CVE-2026-111497",
       "CVE-2026-112900",
+      "CVE-2026-115560",
       "CVE-2026-76268"
     ],
     "keywords_hit": {
-      "CVE": 9,
-      "Malware": 3,
+      "CVE": 11,
+      "Malware": 4,
       "DDoS": 1,
       "Botnet": 1
     }
@@ -411,6 +412,82 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-10-23T21:01:41.373688+09:00",
+      "type": "single",
+      "title": "URGENT - PHP Warns of Another Unpatched RCE Two Days After Emergency PHP2Shell Patches",
+      "url": "https://thehackernews.com/2026/10/urgent-php-warns-of-another-unpatched.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-10-23T11:25:43+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-115560"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-115560",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-23T21:01:41.373688+09:00",
+      "type": "single",
+      "title": "PHP2Shell: Millions of Attacks, No Confirmed Successful Exploits Yet",
+      "url": "https://securityaffairs.com/201538/hacking/php2shell-millions-of-attacks-no-confirmed-successful-exploits-yet.html",
+      "source": "Security Affairs (보안뉴스/위협동향) [RSS]",
+      "published": "2026-10-23T10:52:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-109618",
+        "CVE-2026-109619"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-109618",
+          "cvss_score": 9.2,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-416 (Use After Free)",
+          "description": "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. Some contexts may not properly account for this scenario and leave request memory in an uninitialized state before performing an allocation. The subsequent request cleanup procedure may read or branch on this memory. Multiple OOM strategies can consistently trigger this condition and lead to remote code execution (RCE).",
+          "epss_score": 0.05307,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-109619",
+          "cvss_score": 9.2,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-416 (Use After Free)",
+          "description": "PHP has various global state that temporarily points into request memory. In some scenarios, global state may not be correctly reset, or may be repopulated after being reset. The global state may then refer to request memory even after it has been freed. Subsequent requests may read or branch on this stale state before it is fully initialized. Multiple strategies can trigger this condition and produce remote code execution (RCE).",
+          "epss_score": 0.05757,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-23T21:01:41.373688+09:00",
+      "type": "single",
+      "title": "Russian-Linked Hackers Used New Mesh Network Backdoor in Destructive Ukraine Attack",
+      "url": "https://thehackernews.com/2026/10/russian-linked-hackers-used-new-mesh.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-10-23T11:11:23+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
