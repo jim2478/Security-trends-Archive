@@ -2,10 +2,10 @@
   "date": "2026-10-23",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 15,
+    "scan_runs": 16,
     "total_articles_max": 1781,
-    "matched_articles_max": 164,
-    "new_alerts": 6,
+    "matched_articles_max": 165,
+    "new_alerts": 7,
     "cve_total": 14,
     "alerts_with_cve": 4,
     "cve_count": 14,
@@ -21,7 +21,8 @@
     ],
     "keywords_hit": {
       "CVE": 4,
-      "Malware": 2
+      "Malware": 2,
+      "DDoS": 1
     }
   },
   "alerts": [
@@ -232,6 +233,20 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-10-23T15:01:22.178979+09:00",
+      "type": "single",
+      "title": "넷스카우트, 2026년 상반기 DDoS 위협 보고서 발표...1Tbps 이상 대형 공격 급증",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=209020",
+      "source": "데일리시큐 (전체) [RSS]",
+      "published": "2026-10-23T14:13:22+00:00",
+      "keywords": [
+        "DDoS"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
