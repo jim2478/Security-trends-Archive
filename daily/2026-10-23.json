@@ -2,15 +2,15 @@
   "date": "2026-10-23",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 11,
+    "scan_runs": 12,
     "total_articles_max": 1781,
-    "matched_articles_max": 161,
-    "new_alerts": 5,
-    "cve_total": 10,
-    "alerts_with_cve": 3,
-    "cve_count": 10,
+    "matched_articles_max": 162,
+    "new_alerts": 6,
+    "cve_total": 14,
+    "alerts_with_cve": 4,
+    "cve_count": 14,
     "ioc_count": 22,
-    "merged_count": 1,
+    "merged_count": 2,
     "unique_cves": [
       "CVE-2026-101767",
       "CVE-2026-104935",
@@ -20,7 +20,7 @@
       "CVE-2026-76268"
     ],
     "keywords_hit": {
-      "CVE": 3,
+      "CVE": 4,
       "Malware": 2
     }
   },
@@ -186,6 +186,50 @@
           "description": "Authentication bypass by spoofing in ICS before version 25.1.3.0 allows a remote unauthenticated attacker to execute arbitrary commands. This does not impact ICS version 22.7R2.14 or prior.",
           "epss_score": 0.25982,
           "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-23T11:01:08.668206+09:00",
+      "type": "merged",
+      "cve_ids": [
+        "CVE-2026-109618",
+        "CVE-2026-109619"
+      ],
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "sources": [
+        {
+          "title": "파이오링크, PHP 치명적 취약점 ‘PHP2Shell’ 긴급 점검 페이지 공개",
+          "url": "https://www.dailysecu.com/news/articleView.html?idxno=209015",
+          "source": "데일리시큐 (전체) [RSS]"
+        },
+        {
+          "title": "엔키화이트햇, PHP2Shell 취약점 무료 진단 스캐너·분석 보고서 공개",
+          "url": "https://www.dailysecu.com/news/articleView.html?idxno=209014",
+          "source": "데일리시큐 (전체) [RSS]"
+        }
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-109618",
+          "cvss_score": 9.2,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-416 (Use After Free)",
+          "description": "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. Some contexts may not properly account for this scenario and leave request memory in an uninitialized state before performing an allocation. The subsequent request cleanup procedure may read or branch on this memory. Multiple OOM strategies can consistently trigger this condition and lead to remote code execution (RCE).",
+          "epss_score": 0.05307,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-109619",
+          "cvss_score": 9.2,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-416 (Use After Free)",
+          "description": "PHP has various global state that temporarily points into request memory. In some scenarios, global state may not be correctly reset, or may be repopulated after being reset. The global state may then refer to request memory even after it has been freed. Subsequent requests may read or branch on this stale state before it is fully initialized. Multiple strategies can trigger this condition and produce remote code execution (RCE).",
+          "epss_score": 0.05757,
+          "kev": false
         }
       ]
     }
