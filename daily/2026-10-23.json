@@ -2,13 +2,13 @@
   "date": "2026-10-23",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 16,
+    "scan_runs": 17,
     "total_articles_max": 1781,
     "matched_articles_max": 165,
-    "new_alerts": 7,
-    "cve_total": 14,
-    "alerts_with_cve": 4,
-    "cve_count": 14,
+    "new_alerts": 8,
+    "cve_total": 16,
+    "alerts_with_cve": 5,
+    "cve_count": 16,
     "ioc_count": 22,
     "merged_count": 2,
     "unique_cves": [
@@ -20,7 +20,7 @@
       "CVE-2026-76268"
     ],
     "keywords_hit": {
-      "CVE": 4,
+      "CVE": 5,
       "Malware": 2,
       "DDoS": 1
     }
@@ -247,6 +247,42 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-23T16:01:24.699238+09:00",
+      "type": "single",
+      "title": "PHP·Node.js 보안 취약점 여파에 사이버위기 경보 상향...넥시얼, 무료 진단 지원",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=209029",
+      "source": "데일리시큐 (전체) [RSS]",
+      "published": "2026-10-23T15:37:11+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-109618",
+        "CVE-2026-109619"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-109618",
+          "cvss_score": 9.2,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-416 (Use After Free)",
+          "description": "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. Some contexts may not properly account for this scenario and leave request memory in an uninitialized state before performing an allocation. The subsequent request cleanup procedure may read or branch on this memory. Multiple OOM strategies can consistently trigger this condition and lead to remote code execution (RCE).",
+          "epss_score": 0.05307,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-109619",
+          "cvss_score": 9.2,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-416 (Use After Free)",
+          "description": "PHP has various global state that temporarily points into request memory. In some scenarios, global state may not be correctly reset, or may be repopulated after being reset. The global state may then refer to request memory even after it has been freed. Subsequent requests may read or branch on this stale state before it is fully initialized. Multiple strategies can trigger this condition and produce remote code execution (RCE).",
+          "epss_score": 0.05757,
+          "kev": false
+        }
+      ]
     }
   ]
 }
