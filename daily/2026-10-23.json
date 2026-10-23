@@ -2,13 +2,13 @@
   "date": "2026-10-23",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 20,
+    "scan_runs": 21,
     "total_articles_max": 1781,
-    "matched_articles_max": 167,
-    "new_alerts": 11,
-    "cve_total": 21,
-    "alerts_with_cve": 8,
-    "cve_count": 21,
+    "matched_articles_max": 168,
+    "new_alerts": 12,
+    "cve_total": 22,
+    "alerts_with_cve": 9,
+    "cve_count": 22,
     "ioc_count": 22,
     "merged_count": 2,
     "unique_cves": [
@@ -17,10 +17,11 @@
       "CVE-2026-109618",
       "CVE-2026-109619",
       "CVE-2026-111497",
+      "CVE-2026-112900",
       "CVE-2026-76268"
     ],
     "keywords_hit": {
-      "CVE": 8,
+      "CVE": 9,
       "Malware": 3,
       "DDoS": 1,
       "Botnet": 1
@@ -381,6 +382,32 @@
           "cwe": "CWE-416 (Use After Free)",
           "description": "PHP has various global state that temporarily points into request memory. In some scenarios, global state may not be correctly reset, or may be repopulated after being reset. The global state may then refer to request memory even after it has been freed. Subsequent requests may read or branch on this stale state before it is fully initialized. Multiple strategies can trigger this condition and produce remote code execution (RCE).",
           "epss_score": 0.05757,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-23T20:01:32.624280+09:00",
+      "type": "single",
+      "title": "Critical Flaw in Python’s Popular Pillow Image Library Allows Code Execution via a Crafted Image",
+      "url": "https://thehackernews.com/2026/10/critical-flaw-in-pythons-popular-pillow.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-10-23T09:36:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-112900"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-112900",
+          "cvss_score": 9.2,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-78 (OS Command Injection)",
+          "description": "Pillow is a Python imaging library. From 2.6.0 until 13.0.0, Pillow is vulnerable to argument injection when invoking Ghostscript for EPS input. EpsImagePlugin.Ghostscript passes a caller-controlled input filename after -f without converting it to a safe absolute path, so a name beginning with a hyphen can be interpreted as a Ghostscript option. An attacker who controls the filename can inject Ghostscript arguments. Arbitrary command execution specifically requires a leading @ argument-file file",
+          "epss_score": 0.00431,
           "kev": false
         }
       ]
