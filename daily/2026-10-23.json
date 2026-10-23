@@ -2,13 +2,13 @@
   "date": "2026-10-23",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 23,
+    "scan_runs": 24,
     "total_articles_max": 1781,
     "matched_articles_max": 171,
-    "new_alerts": 16,
-    "cve_total": 27,
-    "alerts_with_cve": 12,
-    "cve_count": 27,
+    "new_alerts": 17,
+    "cve_total": 28,
+    "alerts_with_cve": 13,
+    "cve_count": 28,
     "ioc_count": 22,
     "merged_count": 2,
     "unique_cves": [
@@ -22,7 +22,7 @@
       "CVE-2026-76268"
     ],
     "keywords_hit": {
-      "CVE": 11,
+      "CVE": 12,
       "Malware": 4,
       "Botnet": 2,
       "DDoS": 1
@@ -521,6 +521,32 @@
           "cwe": "CWE-416 (Use After Free)",
           "description": "PHP has various global state that temporarily points into request memory. In some scenarios, global state may not be correctly reset, or may be repopulated after being reset. The global state may then refer to request memory even after it has been freed. Subsequent requests may read or branch on this stale state before it is fully initialized. Multiple strategies can trigger this condition and produce remote code execution (RCE).",
           "epss_score": 0.05757,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-23T23:01:27.981424+09:00",
+      "type": "single",
+      "title": "Node.js Patches Brotli Remote Code Execution Flaw: Find Vulnerable Runtimes Before Attackers Do",
+      "url": "https://blog.qualys.com/category/vulnerabilities-threat-research",
+      "source": "Qualys Blog (취약점관리) [RSS]",
+      "published": "2026-10-23T12:58:02+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-111497"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-111497",
+          "cvss_score": 9.2,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-252",
+          "description": "A buffer overflow vulnerability in the Brotli decoder (c/dec/decode.c) in Google Brotli versions 1.0.3 through 1.2.0 on all platforms allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause a denial of service, or potentially execute arbitrary code using a crafted Brotli-compressed stream.\n\n\n\n\n\nUsers need to update any Brotli libraries or binaries between 1.0.3 through 1.2.0 to the latest available version: 1.0.10 or 1.1.1 or 1",
+          "epss_score": null,
           "kev": false
         }
       ]
