@@ -2,10 +2,10 @@
   "date": "2026-10-24",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
+    "scan_runs": 4,
     "total_articles_max": 1781,
     "matched_articles_max": 173,
-    "new_alerts": 1,
+    "new_alerts": 2,
     "cve_total": 3,
     "alerts_with_cve": 1,
     "cve_count": 3,
@@ -17,7 +17,8 @@
       "CVE-2026-115560"
     ],
     "keywords_hit": {
-      "CVE": 1
+      "CVE": 1,
+      "Malware": 1
     }
   },
   "alerts": [
@@ -66,6 +67,20 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-10-24T03:01:21.244314+09:00",
+      "type": "single",
+      "title": "Overlord RAT Uses Fake Legal Notices to Infect Windows PCs in New Campaign",
+      "url": "https://hackread.com/overlord-rat-fake-legal-notices-infect-windows-pcs/",
+      "source": "HackRead (해킹/데이터유출) [RSS]",
+      "published": "2026-10-23T17:31:31+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
