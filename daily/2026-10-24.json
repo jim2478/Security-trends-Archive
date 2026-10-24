@@ -2,23 +2,24 @@
   "date": "2026-10-24",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 9,
+    "scan_runs": 10,
     "total_articles_max": 1781,
-    "matched_articles_max": 174,
-    "new_alerts": 3,
-    "cve_total": 3,
-    "alerts_with_cve": 1,
-    "cve_count": 3,
+    "matched_articles_max": 176,
+    "new_alerts": 4,
+    "cve_total": 4,
+    "alerts_with_cve": 2,
+    "cve_count": 4,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2026-109618",
       "CVE-2026-109619",
+      "CVE-2026-111497",
       "CVE-2026-115560"
     ],
     "keywords_hit": {
       "Malware": 2,
-      "CVE": 1
+      "CVE": 2
     }
   },
   "alerts": [
@@ -95,6 +96,32 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-24T09:01:32.542391+09:00",
+      "type": "single",
+      "title": "[긴급] PHP2Shell 이어 이번엔 ‘Node2Shell’…Node.js 치명적 취약점, 인증 없이 서버 장악 위험",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=209034",
+      "source": "데일리시큐 (전체) [RSS]",
+      "published": "2026-10-24T08:32:33+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-111497"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-111497",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
     }
   ]
 }
