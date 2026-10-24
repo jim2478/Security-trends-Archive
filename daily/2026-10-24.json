@@ -2,13 +2,13 @@
   "date": "2026-10-24",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 20,
+    "scan_runs": 21,
     "total_articles_max": 1781,
-    "matched_articles_max": 179,
-    "new_alerts": 7,
-    "cve_total": 8,
-    "alerts_with_cve": 5,
-    "cve_count": 8,
+    "matched_articles_max": 181,
+    "new_alerts": 9,
+    "cve_total": 9,
+    "alerts_with_cve": 6,
+    "cve_count": 9,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -21,8 +21,9 @@
       "CVE-2026-115560"
     ],
     "keywords_hit": {
-      "CVE": 5,
-      "Malware": 2
+      "CVE": 6,
+      "Malware": 2,
+      "Botnet": 1
     }
   },
   "alerts": [
@@ -213,6 +214,46 @@
           "kev": true
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-10-24T20:01:24.288383+09:00",
+      "type": "single",
+      "title": "Brotli Decoder Flaw Behind Node.js RCE Also Affects Bun, Python and Other Widely Used Software",
+      "url": "https://thehackernews.com/2026/10/brotli-decoder-flaw-behind-nodejs-rce.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-10-24T08:45:56+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-111497"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-111497",
+          "cvss_score": 9.2,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-252",
+          "description": "A buffer overflow vulnerability in the Brotli decoder (c/dec/decode.c) in Google Brotli versions 1.0.3 through 1.2.0 on all platforms allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause a denial of service, or potentially execute arbitrary code using a crafted Brotli-compressed stream.\n\n\n\n\n\nUsers need to update any Brotli libraries or binaries between 1.0.3 through 1.2.0 to the latest available version: 1.0.10 or 1.1.1 or 1",
+          "epss_score": 0.0048,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-24T20:01:24.288383+09:00",
+      "type": "single",
+      "title": "Researchers Push Over 2 Million Updates to Remotely Disable Popcorn Time Updater That Could Fuel a Botnet",
+      "url": "https://thehackernews.com/2026/10/researchers-push-over-2-million-updates.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-10-24T09:04:24+00:00",
+      "keywords": [
+        "Botnet"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
