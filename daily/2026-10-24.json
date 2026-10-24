@@ -2,25 +2,26 @@
   "date": "2026-10-24",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 17,
+    "scan_runs": 18,
     "total_articles_max": 1781,
     "matched_articles_max": 177,
-    "new_alerts": 6,
-    "cve_total": 7,
-    "alerts_with_cve": 4,
-    "cve_count": 7,
+    "new_alerts": 7,
+    "cve_total": 8,
+    "alerts_with_cve": 5,
+    "cve_count": 8,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2026-109618",
       "CVE-2026-109619",
+      "CVE-2026-110447",
       "CVE-2026-111497",
       "CVE-2026-111943",
       "CVE-2026-111944",
       "CVE-2026-115560"
     ],
     "keywords_hit": {
-      "CVE": 4,
+      "CVE": 5,
       "Malware": 2
     }
   },
@@ -184,6 +185,32 @@
           "description": null,
           "epss_score": null,
           "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-24T17:01:06.070026+09:00",
+      "type": "single",
+      "title": "CISA Flags Two Actively Exploited Critical Flaws in Collabora Online and Arista VeloCloud",
+      "url": "https://thehackernews.com/2026/10/cisa-flags-two-actively-exploited.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-10-24T06:25:57+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-110447"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-110447",
+          "cvss_score": 9.2,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-78 (OS Command Injection)",
+          "description": "Collabora Online Built-in CODE Server before 26.4.303 (richdocumentscode), a Nextcloud app, allows remote code execution, as exploited in the wild in September and October 2026, a different vulnerability than CVE-2025-66208. This is an OS command injection in proxy.php when the CODE server isn't running (e.g., the product was recently restarted). The vulnerability is not present in standalone Collabora Online servers; only this deployment with CODE Server is affected.",
+          "epss_score": 0.01225,
+          "kev": true
         }
       ]
     }
