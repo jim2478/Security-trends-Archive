@@ -2,24 +2,26 @@
   "date": "2026-10-26",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 22,
+    "scan_runs": 23,
     "total_articles_max": 1781,
     "matched_articles_max": 181,
-    "new_alerts": 10,
-    "cve_total": 19,
-    "alerts_with_cve": 7,
-    "cve_count": 19,
+    "new_alerts": 11,
+    "cve_total": 21,
+    "alerts_with_cve": 8,
+    "cve_count": 21,
     "ioc_count": 0,
     "merged_count": 3,
     "unique_cves": [
+      "CVE-2025-54236",
       "CVE-2026-109618",
       "CVE-2026-109619",
       "CVE-2026-111497",
-      "CVE-2026-115560"
+      "CVE-2026-115560",
+      "CVE-2026-48356"
     ],
     "keywords_hit": {
       "CVE": 8,
-      "Malware": 2
+      "Malware": 3
     }
   },
   "alerts": [
@@ -314,6 +316,42 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-26T22:01:29.767684+09:00",
+      "type": "single",
+      "title": "953 Online Stores Infected in Long-Lasting Malware Campaign",
+      "url": "https://www.securityweek.com/953-online-stores-infected-in-long-lasting-malware-campaign/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-10-26T12:46:44+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-48356",
+        "CVE-2025-54236"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-48356",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-434 (Unrestricted File Upload)",
+          "description": "Adobe Commerce is affected by an Unrestricted Upload of File with Dangerous Type vulnerability that could result in arbitrary code execution in the context of the current user, potentially gaining elevated access or control over the victim's account or session. Exploitation of this issue requires user interaction in that a victim must visit a maliciously crafted URL or interact with a compromised web page. Scope is changed.",
+          "epss_score": 0.01001,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2025-54236",
+          "cvss_score": 9.1,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-20 (Improper Input Validation)",
+          "description": "Adobe Commerce versions 2.4.9-alpha2, 2.4.8-p2, 2.4.7-p7, 2.4.6-p12, 2.4.5-p14, 2.4.4-p15 and earlier are affected by an Improper Input Validation vulnerability. A successful attacker can abuse this to achieve session takeover, increasing the confidentiality, and integrity impact to high. Exploitation of this issue does not require user interaction.",
+          "epss_score": 0.9466,
+          "kev": true
+        }
+      ]
     }
   ]
 }
