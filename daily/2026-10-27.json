@@ -2,13 +2,13 @@
   "date": "2026-10-27",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 4,
+    "scan_runs": 5,
     "total_articles_max": 1781,
     "matched_articles_max": 176,
-    "new_alerts": 3,
-    "cve_total": 3,
-    "alerts_with_cve": 2,
-    "cve_count": 3,
+    "new_alerts": 4,
+    "cve_total": 4,
+    "alerts_with_cve": 3,
+    "cve_count": 4,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -17,7 +17,7 @@
       "CVE-2026-111497"
     ],
     "keywords_hit": {
-      "CVE": 2,
+      "CVE": 3,
       "Malware": 1
     }
   },
@@ -97,6 +97,32 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-27T04:01:22.208463+09:00",
+      "type": "single",
+      "title": "Inside Node2Shell: A Closer Look at CVE-2026-111497",
+      "url": "https://www.akamai.com/blog/security-research/2026/oct/inside-node2shell-closer-look-cve-2026-111497",
+      "source": "Akamai Blog (보안리서치/위협분석) [RSS]",
+      "published": "2026-10-26T16:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-111497"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-111497",
+          "cvss_score": 9.2,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-252",
+          "description": "A buffer overflow vulnerability in the Brotli decoder (c/dec/decode.c) in Google Brotli versions 1.0.3 through 1.2.0 on all platforms allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause a denial of service, or potentially execute arbitrary code using a crafted Brotli-compressed stream.\n\n\n\n\n\nUsers need to update any Brotli libraries or binaries between 1.0.3 through 1.2.0 to the latest available version: 1.0.10 or 1.1.1 or 1",
+          "epss_score": 0.36027,
+          "kev": false
+        }
+      ]
     }
   ]
 }
