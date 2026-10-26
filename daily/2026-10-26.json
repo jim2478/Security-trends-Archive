@@ -2,22 +2,23 @@
   "date": "2026-10-26",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 19,
+    "scan_runs": 20,
     "total_articles_max": 1781,
     "matched_articles_max": 181,
-    "new_alerts": 6,
-    "cve_total": 7,
-    "alerts_with_cve": 5,
-    "cve_count": 7,
+    "new_alerts": 7,
+    "cve_total": 17,
+    "alerts_with_cve": 6,
+    "cve_count": 17,
     "ioc_count": 0,
-    "merged_count": 0,
+    "merged_count": 3,
     "unique_cves": [
       "CVE-2026-109618",
       "CVE-2026-109619",
-      "CVE-2026-111497"
+      "CVE-2026-111497",
+      "CVE-2026-115560"
     ],
     "keywords_hit": {
-      "CVE": 5,
+      "CVE": 6,
       "Malware": 1
     }
   },
@@ -185,6 +186,70 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-26T19:01:25.639903+09:00",
+      "type": "merged",
+      "cve_ids": [
+        "CVE-2026-109618",
+        "CVE-2026-109619",
+        "CVE-2026-115560"
+      ],
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "sources": [
+        {
+          "title": "PHP2Shell security flaws now sucessfully exploited in the wild",
+          "url": "https://www.bleepingcomputer.com/news/security/php2shell-security-flaws-now-sucessfully-exploited-in-the-wild/",
+          "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]"
+        },
+        {
+          "title": "PHP Publishes Mitigation Advice for New RCE Flaw",
+          "url": "https://www.infosecurity-magazine.com/news/php-publishes-mitigation-advice/",
+          "source": "Infosecurity Magazine (보안뉴스) [RSS]"
+        },
+        {
+          "title": "URL로 위험 진단…로그프레소, ‘PHP투셸 스캐너’ 공개",
+          "url": "https://www.itdaily.kr/news/articleView.html?idxno=242447",
+          "source": "아이티데일리 [RSS]"
+        },
+        {
+          "title": "케이디시스, 런제로 통해 PHP 보안 취약점 대응",
+          "url": "https://www.itdaily.kr/news/articleView.html?idxno=242443",
+          "source": "아이티데일리 [RSS]"
+        }
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-109618",
+          "cvss_score": 9.2,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-416 (Use After Free)",
+          "description": "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. Some contexts may not properly account for this scenario and leave request memory in an uninitialized state before performing an allocation. The subsequent request cleanup procedure may read or branch on this memory. Multiple OOM strategies can consistently trigger this condition and lead to remote code execution (RCE).",
+          "epss_score": 0.99981,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-109619",
+          "cvss_score": 9.2,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-416 (Use After Free)",
+          "description": "PHP has various global state that temporarily points into request memory. In some scenarios, global state may not be correctly reset, or may be repopulated after being reset. The global state may then refer to request memory even after it has been freed. Subsequent requests may read or branch on this stale state before it is fully initialized. Multiple strategies can trigger this condition and produce remote code execution (RCE).",
+          "epss_score": 0.99997,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-115560",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
     }
   ]
 }
