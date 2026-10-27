@@ -2,18 +2,29 @@
   "date": "2026-10-28",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
+    "scan_runs": 3,
     "total_articles_max": 1761,
-    "matched_articles_max": 171,
-    "new_alerts": 1,
-    "cve_total": 0,
-    "alerts_with_cve": 0,
-    "cve_count": 0,
+    "matched_articles_max": 173,
+    "new_alerts": 5,
+    "cve_total": 9,
+    "alerts_with_cve": 3,
+    "cve_count": 9,
     "ioc_count": 0,
     "merged_count": 0,
-    "unique_cves": [],
+    "unique_cves": [
+      "CVE-2023-4863",
+      "CVE-2026-114595",
+      "CVE-2026-114596",
+      "CVE-2026-114597",
+      "CVE-2026-114598",
+      "CVE-2026-16436",
+      "CVE-2026-16437",
+      "CVE-2026-16438",
+      "CVE-2026-86950"
+    ],
     "keywords_hit": {
-      "Malware": 1
+      "CVE": 3,
+      "Malware": 2
     }
   },
   "alerts": [
@@ -24,6 +35,158 @@
       "url": "https://hackread.com/hackers-abuse-microsoft-teams-external-chats-pc/",
       "source": "HackRead (해킹/데이터유출) [RSS]",
       "published": "2026-10-27T14:43:40+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-28T02:02:00.676207+09:00",
+      "type": "single",
+      "title": "Apple Backports Fix for Exploited CoreGraphics Flaw to Older iPhones and iPads",
+      "url": "https://thehackernews.com/2026/10/apple-backports-fix-for-exploited.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-10-27T13:59:09+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-86950"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-86950",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-787 (Out-of-bounds Write)",
+          "description": "An out-of-bounds write issue was addressed with improved bounds checking. This issue is fixed in iOS 18.7.11 and iPadOS 18.7.11, iOS 26.7.1 and iPadOS 26.7.1, macOS Sequoia 15.8.1, macOS Tahoe 26.7.1. Processing a maliciously crafted file may lead to arbitrary code execution. Apple is aware of a report that this issue may have been exploited in an extremely sophisticated attack against specific targeted individuals on versions of iOS before iOS 27.",
+          "epss_score": 0.26166,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-28T02:02:00.676207+09:00",
+      "type": "single",
+      "title": "Mitsubishi Electric GENESIS, GENESIS64, ICONICS Suite, Hyper Historian, AnalytiX, MobileHMI, IoTWorX, MC Works64, GENESIS32 and BizViz",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-300-02",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-10-27T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2023-4863",
+        "CVE-2026-16436",
+        "CVE-2026-16437",
+        "CVE-2026-16438"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2023-4863",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-787 (Out-of-bounds Write)",
+          "description": "Heap buffer overflow in libwebp in Google Chrome prior to 116.0.5845.187 and libwebp 1.3.2 allowed a remote attacker to perform an out of bounds memory write via a crafted HTML page. (Chromium security severity: Critical)",
+          "epss_score": 0.99979,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-16436",
+          "cvss_score": 9.2,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-640",
+          "description": "Weak Password Recovery Mechanism for Forgotten Password vulnerability in Mitsubishi Electric GENESIS versions 11.03 and prior, GENESIS64 versions 10.97.3 and prior, ICONICS Suite versions 10.97.3 and prior, Hyper Historian versions 10.97.3 and prior, AnalytiX versions 10.97.3 and prior, MobileHMI 10.97.3 and prior, IoTWorX 10.97.3 and prior, MC Works64 all versions, GENESIS32 all versions, BizViz all versions, Mitsubishi Electric Iconics Digital Solutions GENESIS versions 11.03 and prior, GENESI",
+          "epss_score": 0.00322,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-16437",
+          "cvss_score": 7.1,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-640",
+          "description": "Weak Password Recovery Mechanism for Forgotten Password vulnerability in Mitsubishi Electric GENESIS versions 11.03 and prior, GENESIS64 versions 10.97.3 and prior, ICONICS Suite versions 10.97.3 and prior, Hyper Historian versions 10.97.3 and prior, AnalytiX versions 10.97.3 and prior, MobileHMI 10.97.3 and prior, IoTWorX 10.97.3 and prior, MC Works64 all versions, GENESIS32 all versions, BizViz all versions, Mitsubishi Electric Iconics Digital Solutions GENESIS versions 11.03 and prior, GENESI",
+          "epss_score": 0.00093,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-16438",
+          "cvss_score": 9.4,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-266",
+          "description": "Incorrect Privilege Assignment vulnerability in Mitsubishi Electric GENESIS64 versions 10.97.3 and prior, ICONICS Suite versions 10.97.3 and prior, Hyper Historian versions 10.97.3 and prior, AnalytiX versions 10.97.3 and prior, MobileHMI 10.97.3 and prior, MC Works64 all versions, Mitsubishi Electric Iconics Digital Solutions GENESIS64 versions 10.97.3 and prior, ICONICS Suite versions 10.97.3 and prior, Hyper Historian versions 10.97.3 and prior, AnalytiX versions 10.97.3 and prior, and Mobile",
+          "epss_score": 0.00253,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-28T02:02:00.676207+09:00",
+      "type": "single",
+      "title": "EPICS Base",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-300-01",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-10-27T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-114595",
+        "CVE-2026-114596",
+        "CVE-2026-114597",
+        "CVE-2026-114598"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-114595",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-114596",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-114597",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-114598",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-28T02:02:00.676207+09:00",
+      "type": "single",
+      "title": "'Aokigahara' Stealer Targets 'Developer Keyrings' &amp; AI Assistants",
+      "url": "https://www.darkreading.com/endpoint-security/aokigahara-stealer-developer-keyrings-ai-assistants",
+      "source": "Dark Reading (보안뉴스 종합) [RSS]",
+      "published": "2026-10-27T16:47:20+00:00",
       "keywords": [
         "Malware"
       ],
