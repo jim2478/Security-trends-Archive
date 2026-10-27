@@ -2,10 +2,10 @@
   "date": "2026-10-28",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 7,
+    "scan_runs": 8,
     "total_articles_max": 1781,
     "matched_articles_max": 175,
-    "new_alerts": 6,
+    "new_alerts": 7,
     "cve_total": 11,
     "alerts_with_cve": 4,
     "cve_count": 11,
@@ -26,7 +26,7 @@
     ],
     "keywords_hit": {
       "CVE": 4,
-      "Malware": 2
+      "Malware": 3
     }
   },
   "alerts": [
@@ -231,6 +231,20 @@
           "kev": true
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-10-28T07:01:16.348238+09:00",
+      "type": "single",
+      "title": "External Teams Chats Anchor 15-Minute Malware Delivery",
+      "url": "https://www.darkreading.com/cloud-security/email-bombing-external-teams-chats-repeatable-access-path",
+      "source": "Dark Reading (보안뉴스 종합) [RSS]",
+      "published": "2026-10-27T20:42:40+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
