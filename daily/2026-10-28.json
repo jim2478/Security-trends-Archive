@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-28",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 1,
+    "total_articles_max": 1761,
+    "matched_articles_max": 169,
+    "new_alerts": 1,
+    "cve_total": 0,
+    "alerts_with_cve": 0,
+    "cve_count": 0,
+    "ioc_count": 0,
+    "merged_count": 0,
+    "unique_cves": [],
+    "keywords_hit": {
+      "Malware": 1
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-10-28T00:01:27.741882+09:00",
+      "type": "single",
+      "title": "Hackers Abuse Microsoft Teams External Chats to Access Corporate PCs",
+      "url": "https://hackread.com/hackers-abuse-microsoft-teams-external-chats-pc/",
+      "source": "HackRead (해킹/데이터유출) [RSS]",
+      "published": "2026-10-27T14:43:40+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
