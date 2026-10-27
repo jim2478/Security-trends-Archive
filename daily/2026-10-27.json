@@ -2,22 +2,26 @@
   "date": "2026-10-27",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 17,
+    "scan_runs": 18,
     "total_articles_max": 1781,
     "matched_articles_max": 177,
-    "new_alerts": 8,
-    "cve_total": 9,
-    "alerts_with_cve": 7,
-    "cve_count": 9,
+    "new_alerts": 10,
+    "cve_total": 16,
+    "alerts_with_cve": 9,
+    "cve_count": 16,
     "ioc_count": 0,
-    "merged_count": 0,
+    "merged_count": 1,
     "unique_cves": [
+      "CVE-2019-11043",
       "CVE-2026-109618",
       "CVE-2026-109619",
-      "CVE-2026-111497"
+      "CVE-2026-111497",
+      "CVE-2026-4950",
+      "CVE-2026-4951",
+      "CVE-2026-4952"
     ],
     "keywords_hit": {
-      "CVE": 7,
+      "CVE": 9,
       "Malware": 1
     }
   },
@@ -235,6 +239,106 @@
           "description": "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. Some contexts may not properly account for this scenario and leave request memory in an uninitialized state before performing an allocation. The subsequent request cleanup procedure may read or branch on this memory. Multiple OOM strategies can consistently trigger this condition and lead to remote code execution (RCE).",
           "epss_score": 0.99981,
           "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-27T17:01:30.516589+09:00",
+      "type": "merged",
+      "cve_ids": [
+        "CVE-2026-109618",
+        "CVE-2019-11043",
+        "CVE-2026-109619"
+      ],
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "sources": [
+        {
+          "title": "CVE-2026-109618: PHP-CGI Pointer Underflow → Remote Code Execution (CVSS 9.2)",
+          "url": "https://seclists.org/fulldisclosure/2026/Oct/38",
+          "source": "SecLists Full Disclosure (취약점공개)"
+        },
+        {
+          "title": "박세준 티오리 대표 \"PHP 취약점 공개 이후 많은 공격 시도 관측\"",
+          "url": "https://zdnet.co.kr/view/?no=20261027104307",
+          "source": "지디넷코리아 [RSS]"
+        }
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-109618",
+          "cvss_score": 9.2,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-416 (Use After Free)",
+          "description": "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. Some contexts may not properly account for this scenario and leave request memory in an uninitialized state before performing an allocation. The subsequent request cleanup procedure may read or branch on this memory. Multiple OOM strategies can consistently trigger this condition and lead to remote code execution (RCE).",
+          "epss_score": 0.99981,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2019-11043",
+          "cvss_score": 8.7,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-120",
+          "description": "In PHP versions 7.1.x below 7.1.33, 7.2.x below 7.2.24 and 7.3.x below 7.3.11 in certain configurations of FPM setup it is possible to cause FPM module to write past allocated buffers into the space reserved for FCGI protocol data, thus opening the possibility of remote code execution.",
+          "epss_score": 0.99748,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-109619",
+          "cvss_score": 9.2,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-416 (Use After Free)",
+          "description": "PHP has various global state that temporarily points into request memory. In some scenarios, global state may not be correctly reset, or may be repopulated after being reset. The global state may then refer to request memory even after it has been freed. Subsequent requests may read or branch on this stale state before it is fully initialized. Multiple strategies can trigger this condition and produce remote code execution (RCE).",
+          "epss_score": 0.99997,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-27T17:01:30.516589+09:00",
+      "type": "single",
+      "title": "SEC Consult SA-20261023-0 :: Multiple Cross-Site Scripting Vulnerabilities in VertiGIS WebOrderSystem",
+      "url": "https://seclists.org/fulldisclosure/2026/Oct/37",
+      "source": "SecLists Full Disclosure (취약점공개)",
+      "published": "2026-10-27T07:29:06+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-4950",
+        "CVE-2026-4951",
+        "CVE-2026-4952"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-4950",
+          "cvss_score": 4.8,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-79 (XSS)",
+          "description": "The CustomerAdministration portal (KundenManager) of VertiGIS WebOrderSystem allows privileged users to manage the employees of defined companies (user groups). User properties, for example the \"secondName\" parameter, can be filled with JavaScript code while editing a user. The code is stored and executed in the browser of any other privileged user who opens the edited user entry or the user overview of the corresponding user group. An authenticated attacker with access to the portal can use thi",
+          "epss_score": 0.00309,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-4951",
+          "cvss_score": 5.1,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-79 (XSS)",
+          "description": "The CustomerAdministration portal (KundenManager) of VertiGIS WebOrderSystem allows privileged users to search for employees across all defined companies (user groups). The search term can be passed in the \"searchValue\" URL parameter, so the search is performed when a logged-in user opens such a URL. JavaScript code placed in this parameter is executed in the victim's browser. An unauthenticated attacker who knows the URL structure can craft a link that contains script code. The code runs if a p",
+          "epss_score": 0.00362,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-4952",
+          "cvss_score": 5.1,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-79 (XSS)",
+          "description": "The \"ASMobile\" web interface, which is part of the VertiGIS software package \"GIS Portal\", allows authenticated users to define a business reference. JavaScript code can be inserted into this field. On its own this only affects the user who entered it (self-XSS). However, the business reference is included in the order details when the user places an order through the web interface. The order is later listed in the OrderAdministration portal (AuftragsManager) of VertiGIS WebOrderSystem, where th",
+          "epss_score": 0.00284,
+          "kev": false
         }
       ]
     }
