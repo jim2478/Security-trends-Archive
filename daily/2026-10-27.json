@@ -2,13 +2,13 @@
   "date": "2026-10-27",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 14,
+    "scan_runs": 15,
     "total_articles_max": 1781,
     "matched_articles_max": 177,
-    "new_alerts": 6,
-    "cve_total": 6,
-    "alerts_with_cve": 5,
-    "cve_count": 6,
+    "new_alerts": 7,
+    "cve_total": 8,
+    "alerts_with_cve": 6,
+    "cve_count": 8,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -17,7 +17,7 @@
       "CVE-2026-111497"
     ],
     "keywords_hit": {
-      "CVE": 5,
+      "CVE": 6,
       "Malware": 1
     }
   },
@@ -173,6 +173,42 @@
           "description": "A buffer overflow vulnerability in the Brotli decoder (c/dec/decode.c) in Google Brotli versions 1.0.3 through 1.2.0 on all platforms allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause a denial of service, or potentially execute arbitrary code using a crafted Brotli-compressed stream.\n\n\n\n\n\nUsers need to update any Brotli libraries or binaries between 1.0.3 through 1.2.0 to the latest available version: 1.0.10 or 1.1.1 or 1",
           "epss_score": 0.36027,
           "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-27T14:01:11.835582+09:00",
+      "type": "single",
+      "title": "포티넷, PHP 고위험 취약점 'PHP2Shell' 대응 가이드 발표",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=209087",
+      "source": "데일리시큐 (전체) [RSS]",
+      "published": "2026-10-27T13:32:17+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-109618",
+        "CVE-2026-109619"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-109618",
+          "cvss_score": 9.2,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-416 (Use After Free)",
+          "description": "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. Some contexts may not properly account for this scenario and leave request memory in an uninitialized state before performing an allocation. The subsequent request cleanup procedure may read or branch on this memory. Multiple OOM strategies can consistently trigger this condition and lead to remote code execution (RCE).",
+          "epss_score": 0.99981,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-109619",
+          "cvss_score": 9.2,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-416 (Use After Free)",
+          "description": "PHP has various global state that temporarily points into request memory. In some scenarios, global state may not be correctly reset, or may be repopulated after being reset. The global state may then refer to request memory even after it has been freed. Subsequent requests may read or branch on this stale state before it is fully initialized. Multiple strategies can trigger this condition and produce remote code execution (RCE).",
+          "epss_score": 0.99997,
+          "kev": true
         }
       ]
     }
