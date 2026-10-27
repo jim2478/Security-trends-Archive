@@ -2,13 +2,13 @@
   "date": "2026-10-27",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 13,
+    "scan_runs": 14,
     "total_articles_max": 1781,
     "matched_articles_max": 177,
-    "new_alerts": 5,
-    "cve_total": 5,
-    "alerts_with_cve": 4,
-    "cve_count": 5,
+    "new_alerts": 6,
+    "cve_total": 6,
+    "alerts_with_cve": 5,
+    "cve_count": 6,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -17,7 +17,7 @@
       "CVE-2026-111497"
     ],
     "keywords_hit": {
-      "CVE": 4,
+      "CVE": 5,
       "Malware": 1
     }
   },
@@ -131,6 +131,32 @@
       "url": "https://zdnet.co.kr/view/?no=20261027060701",
       "source": "지디넷코리아 [RSS]",
       "published": "2026-10-26T21:07:01+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-111497"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-111497",
+          "cvss_score": 9.2,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-252",
+          "description": "A buffer overflow vulnerability in the Brotli decoder (c/dec/decode.c) in Google Brotli versions 1.0.3 through 1.2.0 on all platforms allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause a denial of service, or potentially execute arbitrary code using a crafted Brotli-compressed stream.\n\n\n\n\n\nUsers need to update any Brotli libraries or binaries between 1.0.3 through 1.2.0 to the latest available version: 1.0.10 or 1.1.1 or 1",
+          "epss_score": 0.36027,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-27T13:01:09.409713+09:00",
+      "type": "single",
+      "title": "엔키화이트햇, Node.js 고위험 취약점 'Node2Shell' 내부 점검 스크립트 배포",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=209084",
+      "source": "데일리시큐 (전체) [RSS]",
+      "published": "2026-10-27T12:48:42+00:00",
       "keywords": [
         "CVE"
       ],
