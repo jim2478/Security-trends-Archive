@@ -2,13 +2,13 @@
   "date": "2026-10-28",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 13,
+    "scan_runs": 14,
     "total_articles_max": 1781,
     "matched_articles_max": 180,
-    "new_alerts": 13,
-    "cve_total": 18,
-    "alerts_with_cve": 10,
-    "cve_count": 18,
+    "new_alerts": 14,
+    "cve_total": 21,
+    "alerts_with_cve": 11,
+    "cve_count": 21,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -21,6 +21,7 @@
       "CVE-2026-114596",
       "CVE-2026-114597",
       "CVE-2026-114598",
+      "CVE-2026-115560",
       "CVE-2026-116818",
       "CVE-2026-116827",
       "CVE-2026-16436",
@@ -30,7 +31,7 @@
       "CVE-2026-93328"
     ],
     "keywords_hit": {
-      "CVE": 10,
+      "CVE": 11,
       "Malware": 3
     }
   },
@@ -414,6 +415,52 @@
           "description": "PHP has various global state that temporarily points into request memory. In some scenarios, global state may not be correctly reset, or may be repopulated after being reset. The global state may then refer to request memory even after it has been freed. Subsequent requests may read or branch on this stale state before it is fully initialized. Multiple strategies can trigger this condition and produce remote code execution (RCE).",
           "epss_score": 0.99999,
           "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-28T13:01:15.356560+09:00",
+      "type": "single",
+      "title": "민관 'PHP2셸 취약점' 총력 대응…점검·대응 방안 제공",
+      "url": "https://zdnet.co.kr/view/?no=20261028110228",
+      "source": "지디넷코리아 [RSS]",
+      "published": "2026-10-28T02:15:21+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-109618",
+        "CVE-2026-109619",
+        "CVE-2026-115560"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-109618",
+          "cvss_score": 9.2,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-416 (Use After Free)",
+          "description": "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. Some contexts may not properly account for this scenario and leave request memory in an uninitialized state before performing an allocation. The subsequent request cleanup procedure may read or branch on this memory. Multiple OOM strategies can consistently trigger this condition and lead to remote code execution (RCE).",
+          "epss_score": 0.99999,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-109619",
+          "cvss_score": 9.2,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-416 (Use After Free)",
+          "description": "PHP has various global state that temporarily points into request memory. In some scenarios, global state may not be correctly reset, or may be repopulated after being reset. The global state may then refer to request memory even after it has been freed. Subsequent requests may read or branch on this stale state before it is fully initialized. Multiple strategies can trigger this condition and produce remote code execution (RCE).",
+          "epss_score": 0.99999,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-115560",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
         }
       ]
     }
