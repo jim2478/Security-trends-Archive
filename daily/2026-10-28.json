@@ -2,13 +2,13 @@
   "date": "2026-10-28",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 23,
+    "scan_runs": 24,
     "total_articles_max": 1781,
     "matched_articles_max": 180,
-    "new_alerts": 29,
-    "cve_total": 37,
-    "alerts_with_cve": 23,
-    "cve_count": 37,
+    "new_alerts": 30,
+    "cve_total": 42,
+    "alerts_with_cve": 24,
+    "cve_count": 42,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -33,15 +33,17 @@
       "CVE-2026-16436",
       "CVE-2026-16437",
       "CVE-2026-16438",
+      "CVE-2026-20362",
       "CVE-2026-35273",
       "CVE-2026-46817",
+      "CVE-2026-76268",
       "CVE-2026-86950",
       "CVE-2026-92885",
       "CVE-2026-93328",
       "CVE-2026-97631"
     ],
     "keywords_hit": {
-      "CVE": 23,
+      "CVE": 24,
       "Malware": 5,
       "DDoS": 1
     }
@@ -868,6 +870,72 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-28T23:01:26.692663+09:00",
+      "type": "single",
+      "title": "CVE-2026-20362 | Cisco Finesse Server-Side Request Forgery Vulnerability",
+      "url": "https://horizon3.ai/attack-research/vulnerabilities/cve-2026-20362/",
+      "source": "Horizon3.ai (공격시뮬레이션) [RSS]",
+      "published": "2026-10-28T13:13:26+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-20362",
+        "CVE-2026-109618",
+        "CVE-2026-109619",
+        "CVE-2026-76268",
+        "CVE-2026-101767"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-20362",
+          "cvss_score": 7.2,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-918 (SSRF)",
+          "description": "A vulnerability in the web-based management interface of Cisco Finesse could allow an unauthenticated, remote attacker to conduct server-side request forgery (SSRF) attacks through an affected device.\r\n\r\nThis vulnerability is due to improper input validation for specific HTTP requests. An attacker could exploit this vulnerability by sending a crafted HTTP request to an affected device. A successful exploit could allow the attacker to obtain limited sensitive information for services that are ass",
+          "epss_score": 0.00569,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-109618",
+          "cvss_score": 9.2,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-416 (Use After Free)",
+          "description": "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. Some contexts may not properly account for this scenario and leave request memory in an uninitialized state before performing an allocation. The subsequent request cleanup procedure may read or branch on this memory. Multiple OOM strategies can consistently trigger this condition and lead to remote code execution (RCE).",
+          "epss_score": 0.99999,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-109619",
+          "cvss_score": 9.2,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-416 (Use After Free)",
+          "description": "PHP has various global state that temporarily points into request memory. In some scenarios, global state may not be correctly reset, or may be repopulated after being reset. The global state may then refer to request memory even after it has been freed. Subsequent requests may read or branch on this stale state before it is fully initialized. Multiple strategies can trigger this condition and produce remote code execution (RCE).",
+          "epss_score": 0.99999,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-76268",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-306 (Missing Authentication)",
+          "description": "In Splunk Enterprise versions below 10.4.3 and 10.2.7, an unauthenticated user with network access to the Patroni Representational State Transfer (REST) Application Programming Interface (API) on a search head cluster member could execute attacker-controlled operating-system commands. The vulnerability is possible because this interface does not require authentication for critical configuration operations. For more information see Sidecar configuration settings (https://help.splunk.com/en/data-m",
+          "epss_score": 0.04795,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-101767",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-287 (Authentication Bypass)",
+          "description": "Vulnerability in the Oracle Application Object Library product of Oracle E-Business Suite (component: Core).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Application Object Library.  Successful attacks of this vulnerability can result in takeover of Oracle Application Object Library. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability impacts).  CVSS Ve",
+          "epss_score": 0.00614,
+          "kev": false
+        }
+      ]
     }
   ]
 }
