@@ -2,30 +2,35 @@
   "date": "2026-10-28",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 9,
+    "scan_runs": 10,
     "total_articles_max": 1781,
-    "matched_articles_max": 175,
-    "new_alerts": 7,
-    "cve_total": 11,
-    "alerts_with_cve": 4,
-    "cve_count": 11,
+    "matched_articles_max": 180,
+    "new_alerts": 13,
+    "cve_total": 18,
+    "alerts_with_cve": 10,
+    "cve_count": 18,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2023-4863",
+      "CVE-2026-105765",
       "CVE-2026-109618",
       "CVE-2026-109619",
+      "CVE-2026-112346",
       "CVE-2026-114595",
       "CVE-2026-114596",
       "CVE-2026-114597",
       "CVE-2026-114598",
+      "CVE-2026-116818",
+      "CVE-2026-116827",
       "CVE-2026-16436",
       "CVE-2026-16437",
       "CVE-2026-16438",
-      "CVE-2026-86950"
+      "CVE-2026-86950",
+      "CVE-2026-93328"
     ],
     "keywords_hit": {
-      "CVE": 4,
+      "CVE": 10,
       "Malware": 3
     }
   },
@@ -245,6 +250,172 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-28T09:01:58.821549+09:00",
+      "type": "single",
+      "title": "하시코프 콘술 접근통제 우회 취약점…서비스 인증서·개인키 노출 위험",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=209103",
+      "source": "데일리시큐 (전체) [RSS]",
+      "published": "2026-10-28T08:54:43+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-105765"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-105765",
+          "cvss_score": 7.5,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-862 (Missing Authorization)",
+          "description": "HashiCorp Consul and Consul Enterprise 1.17.0 up to 2.0.4 are vulnerable to an authorization bypass in the agent's service mesh leaf certificate API that may allow an attacker without a valid ACL token to retrieve a cached service leaf certificate and its private key. This vulnerability (CVE-2026-105765) is fixed in Consul Community Edition 2.1.0 and Consul Enterprise 2.1.0 and 1.21.19.",
+          "epss_score": 0.00237,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-28T09:01:58.821549+09:00",
+      "type": "single",
+      "title": "예스위키 고위험 취약점 공개…내부망·클라우드 인증정보 노출 가능",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=209102",
+      "source": "데일리시큐 (전체) [RSS]",
+      "published": "2026-10-28T08:53:20+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-116827"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-116827",
+          "cvss_score": 8.2,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-918 (SSRF)",
+          "description": "YesWiki before 4.7.0 contains a server-side request forgery vulnerability in the Bazar CSV import copyUrlToLocalFile() function that allows authenticated administrators to make arbitrary outbound requests by supplying crafted URLs in CSV file or image fields. Attackers can bypass the extension check with a query-string suffix or redirects to fetch cloud metadata credentials, internal services, or local files via file://, with responses stored in the web-accessible files/ directory.",
+          "epss_score": 0.00345,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-28T09:01:58.821549+09:00",
+      "type": "single",
+      "title": "구글 클라우드 AI 연결도구에 치명적 취약점…서버 파일 탈취·변조 가능",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=209099",
+      "source": "데일리시큐 (전체) [RSS]",
+      "published": "2026-10-28T08:48:44+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-93328"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-93328",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-22 (Path Traversal)",
+          "description": "Path Traversal and Missing Authorization in cloud-storage source in Google Cloud MCP Toolbox for Databases (googleapis/mcp-toolbox) versions 1.2.0 through 1.4.0 allows an unauthenticated remote attacker to exfiltrate host files to external Google Cloud Storage buckets and overwrite arbitrary local files via crafted tool invocation parameters.",
+          "epss_score": 0.00526,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-28T09:01:58.821549+09:00",
+      "type": "single",
+      "title": "AI 코딩 에이전트 오픈핸즈에 치명적 취약점…인증 없이 관리자 권한 명령 실행 가능",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=209098",
+      "source": "데일리시큐 (전체) [RSS]",
+      "published": "2026-10-28T08:45:49+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-112346"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-112346",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-1327",
+          "description": "OpenHands Software Agent SDK before 1.52.0 contains an unauthenticated remote code execution vulnerability where the DockerWorkspace and Apptainer workspace launchers bind the sandbox agent server to all network interfaces (0.0.0.0) with an empty session_api_keys list, disabling authentication by default. Attackers who can reach the published container port can send unauthenticated HTTP and WebSocket requests to execute arbitrary shell commands as root in the sandbox, access the mounted workspac",
+          "epss_score": 0.01014,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-28T09:01:58.821549+09:00",
+      "type": "single",
+      "title": "오픈패널 고위험 취약점 공개, 로그인 없이 다른 고객의 분석정보 조회 가능",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=209100",
+      "source": "데일리시큐 (전체) [RSS]",
+      "published": "2026-10-27T19:06:36+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-116818"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-116818",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-89 (SQL Injection)",
+          "description": "OpenPanel before 3.0.0 contains an unauthenticated ClickHouse sql injection vulnerability that allows remote attackers to inject SQL through the projectId parameter of the /live/visitors/:projectId WebSocket, which lacks session and project-access checks. Attackers can use UNION or boolean count oracles to read other tenants' events and profiles, and project members can similarly inject via the cohort.preview timeframe values.",
+          "epss_score": 0.0043,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-28T09:01:58.821549+09:00",
+      "type": "single",
+      "title": "美 정부, 치명적 PHP 취약점 악용 확인…긴급 패치 지시",
+      "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=710441",
+      "source": "디지털투데이 (전체기사) [RSS]",
+      "published": "2026-10-27T23:34:55+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-109618",
+        "CVE-2026-109619"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-109618",
+          "cvss_score": 9.2,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-416 (Use After Free)",
+          "description": "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. Some contexts may not properly account for this scenario and leave request memory in an uninitialized state before performing an allocation. The subsequent request cleanup procedure may read or branch on this memory. Multiple OOM strategies can consistently trigger this condition and lead to remote code execution (RCE).",
+          "epss_score": 0.99999,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-109619",
+          "cvss_score": 9.2,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-416 (Use After Free)",
+          "description": "PHP has various global state that temporarily points into request memory. In some scenarios, global state may not be correctly reset, or may be repopulated after being reset. The global state may then refer to request memory even after it has been freed. Subsequent requests may read or branch on this stale state before it is fully initialized. Multiple strategies can trigger this condition and produce remote code execution (RCE).",
+          "epss_score": 0.99999,
+          "kev": true
+        }
+      ]
     }
   ]
 }
