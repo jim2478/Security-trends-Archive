@@ -2,18 +2,19 @@
   "date": "2026-10-28",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 21,
+    "scan_runs": 22,
     "total_articles_max": 1781,
     "matched_articles_max": 180,
-    "new_alerts": 26,
-    "cve_total": 35,
-    "alerts_with_cve": 21,
-    "cve_count": 35,
+    "new_alerts": 29,
+    "cve_total": 37,
+    "alerts_with_cve": 23,
+    "cve_count": 37,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2023-4863",
       "CVE-2026-101767",
+      "CVE-2026-104351",
       "CVE-2026-105765",
       "CVE-2026-109618",
       "CVE-2026-109619",
@@ -36,11 +37,12 @@
       "CVE-2026-46817",
       "CVE-2026-86950",
       "CVE-2026-92885",
-      "CVE-2026-93328"
+      "CVE-2026-93328",
+      "CVE-2026-97631"
     ],
     "keywords_hit": {
-      "CVE": 21,
-      "Malware": 4,
+      "CVE": 23,
+      "Malware": 5,
       "DDoS": 1
     }
   },
@@ -794,6 +796,72 @@
       "url": "https://hackread.com/fake-us-court-notices-target-businesses-lodarat/",
       "source": "HackRead (해킹/데이터유출) [RSS]",
       "published": "2026-10-28T10:04:16+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-28T21:01:22.787224+09:00",
+      "type": "single",
+      "title": "Adobe Fixes 8 Critical Campaign Classic Flaws Allowing Code Execution and Security Bypass",
+      "url": "https://thehackernews.com/2026/10/adobe-fixes-8-critical-campaign-classic.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-10-28T11:15:51+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-104351"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-104351",
+          "cvss_score": 9.9,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-94 (Code Injection)",
+          "description": "Adobe Campaign Classic (ACC) is affected by an Improper Control of Generation of Code ('Code Injection') vulnerability that could result in arbitrary code execution in the context of the current user. A low-privileged attacker could exploit this vulnerability to execute arbitrary code. Exploitation of this issue does not require user interaction. Scope is changed.",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-28T21:01:22.787224+09:00",
+      "type": "single",
+      "title": "CVE-2026-97631: 16-Year-Old UEFI Flaw Threatens Servers",
+      "url": "https://securityaffairs.com/201928/security/cve-2026-97631-16-year-old-uefi-flaw-threatens-servers.html",
+      "source": "Security Affairs (보안뉴스/위협동향) [RSS]",
+      "published": "2026-10-28T11:15:56+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-97631"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-97631",
+          "cvss_score": 9.5,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-120",
+          "description": "EDK2 contains a vulnerability in BIOS where a user may cause “Out-of-bounds\nWrite”, Classic\nBuffer Overflow, and “Incorrect Calculation of Buffer Size” by remote access. Successful exploitation of this vulnerability\ncan lead to arbitrary\ncode execution. It could also impact\nConfidentiality,\nIntegrity,\nand Availability.",
+          "epss_score": 0.00432,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-28T21:01:22.787224+09:00",
+      "type": "single",
+      "title": "AI-Powered Malware & Phishing Analysis for SOC Teams: Cut Workload and Speed Up Response",
+      "url": "https://any.run/cybersecurity-blog/ai-malware-analysis-soc-teams/",
+      "source": "ANY.RUN (악성코드샌드박스분석) [RSS]",
+      "published": "2026-10-28T11:38:18+00:00",
       "keywords": [
         "Malware"
       ],
