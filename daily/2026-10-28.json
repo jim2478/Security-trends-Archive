@@ -2,13 +2,13 @@
   "date": "2026-10-28",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 17,
+    "scan_runs": 18,
     "total_articles_max": 1781,
     "matched_articles_max": 180,
-    "new_alerts": 20,
-    "cve_total": 28,
-    "alerts_with_cve": 17,
-    "cve_count": 28,
+    "new_alerts": 23,
+    "cve_total": 30,
+    "alerts_with_cve": 19,
+    "cve_count": 30,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -31,13 +31,15 @@
       "CVE-2026-16436",
       "CVE-2026-16437",
       "CVE-2026-16438",
+      "CVE-2026-35273",
       "CVE-2026-86950",
       "CVE-2026-92885",
       "CVE-2026-93328"
     ],
     "keywords_hit": {
-      "CVE": 17,
-      "Malware": 3
+      "CVE": 19,
+      "Malware": 3,
+      "DDoS": 1
     }
   },
   "alerts": [
@@ -634,6 +636,72 @@
           "kev": true
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-10-28T17:01:28.180413+09:00",
+      "type": "single",
+      "title": "ShinyHunters-Exploited Oracle PeopleSoft Zero-Day Turns Out to Be Three Chained Flaws",
+      "url": "https://thehackernews.com/2026/10/shinyhunters-exploited-oracle.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-10-28T06:04:58+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-35273"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-35273",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-306 (Missing Authentication)",
+          "description": "Vulnerability in the PeopleSoft Enterprise PeopleTools product of Oracle PeopleSoft (component: Updates Environment Management). Supported versions that are affected are 8.61 and 8.62. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise PeopleSoft Enterprise PeopleTools. Successful attacks of this vulnerability can result in takeover of PeopleSoft Enterprise PeopleTools. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability i",
+          "epss_score": 0.96678,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-28T17:01:28.180413+09:00",
+      "type": "single",
+      "title": "Adobe Commerce PolyShell Attacks Breach Hundreds of Stores as Brotli Exploit Traffic Emerges",
+      "url": "https://thehackernews.com/2026/10/adobe-commerce-polyshell-attacks-breach.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-10-28T05:42:26+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-111497"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-111497",
+          "cvss_score": 9.2,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-252",
+          "description": "A buffer overflow vulnerability in the Brotli decoder (c/dec/decode.c) in Google Brotli versions 1.0.3 through 1.2.0 on all platforms allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause a denial of service, or potentially execute arbitrary code using a crafted Brotli-compressed stream.\n\n\n\n\n\nUsers need to update any Brotli libraries or binaries between 1.0.3 through 1.2.0 to the latest available version: 1.0.10 or 1.1.1 or 1",
+          "epss_score": 0.55483,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-28T17:01:28.180413+09:00",
+      "type": "single",
+      "title": "금융권 겨냥 해킹 북한 IP 대규모 접근…당국 “해커 국적 단정 어려워”",
+      "url": "https://www.donga.com/news/Economy/article/all/20261028/134925844/1",
+      "source": "동아일보 (경제) [RSS]",
+      "published": "2026-10-28T07:03:49+00:00",
+      "keywords": [
+        "DDoS"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
