@@ -2,10 +2,10 @@
   "date": "2026-10-29",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 4,
-    "total_articles_max": 1761,
-    "matched_articles_max": 174,
-    "new_alerts": 4,
+    "scan_runs": 5,
+    "total_articles_max": 1771,
+    "matched_articles_max": 175,
+    "new_alerts": 5,
     "cve_total": 2,
     "alerts_with_cve": 2,
     "cve_count": 2,
@@ -16,8 +16,8 @@
       "CVE-2026-111497"
     ],
     "keywords_hit": {
-      "CVE": 2,
-      "Malware": 2
+      "Malware": 3,
+      "CVE": 2
     }
   },
   "alerts": [
@@ -94,6 +94,20 @@
       "url": "https://www.helpnetsecurity.com/2026/10/28/github-package-firewall-npm/",
       "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
       "published": "2026-10-28T17:09:14+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-29T04:01:21.837833+09:00",
+      "type": "single",
+      "title": "Attackers Hide Malware Behind Signed ChatGPT and Claude Binaries",
+      "url": "https://www.infosecurity-magazine.com/news/attackers-hide-malware-behind/",
+      "source": "Infosecurity Magazine (보안뉴스) [RSS]",
+      "published": "2026-10-28T15:13:00+00:00",
       "keywords": [
         "Malware"
       ],
