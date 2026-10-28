@@ -2,13 +2,13 @@
   "date": "2026-10-28",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 15,
+    "scan_runs": 16,
     "total_articles_max": 1781,
     "matched_articles_max": 180,
-    "new_alerts": 15,
-    "cve_total": 23,
-    "alerts_with_cve": 12,
-    "cve_count": 23,
+    "new_alerts": 19,
+    "cve_total": 27,
+    "alerts_with_cve": 16,
+    "cve_count": 27,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -22,16 +22,20 @@
       "CVE-2026-114597",
       "CVE-2026-114598",
       "CVE-2026-115560",
+      "CVE-2026-116816",
       "CVE-2026-116818",
       "CVE-2026-116827",
+      "CVE-2026-116843",
+      "CVE-2026-117532",
       "CVE-2026-16436",
       "CVE-2026-16437",
       "CVE-2026-16438",
       "CVE-2026-86950",
+      "CVE-2026-92885",
       "CVE-2026-93328"
     ],
     "keywords_hit": {
-      "CVE": 12,
+      "CVE": 16,
       "Malware": 3
     }
   },
@@ -497,6 +501,110 @@
           "description": "PHP has various global state that temporarily points into request memory. In some scenarios, global state may not be correctly reset, or may be repopulated after being reset. The global state may then refer to request memory even after it has been freed. Subsequent requests may read or branch on this stale state before it is fully initialized. Multiple strategies can trigger this condition and produce remote code execution (RCE).",
           "epss_score": 0.99999,
           "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-28T15:01:36.075749+09:00",
+      "type": "single",
+      "title": "워드프레스 회원관리 플러그인에 치명적 취약점 발견, 웹사이트 전체 장악 위험",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=209129",
+      "source": "데일리시큐 (전체) [RSS]",
+      "published": "2026-10-28T14:41:36+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-92885"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-92885",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-287 (Authentication Bypass)",
+          "description": "The Qode Membership plugin for WordPress is vulnerable to Authentication Bypass leading to Account Takeover in all versions up to, and including, 2.0.6.2 via the qode_membership_check_facebook_user AJAX action. This is due to a typographic error in the Facebook OAuth token verification guard within the qode_membership_login_user_from_social_network function — the guard condition tests an undefined variable ($check_social_useqoder instead of $check_social_user), causing empty() to always return t",
+          "epss_score": 0.00368,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-28T15:01:36.075749+09:00",
+      "type": "single",
+      "title": "오픈소스 AI 실행도구 'llama.cpp'서 고위험 취약점 발견돼...악성 AI 모델 파일로 시스템 공격 가능",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=209125",
+      "source": "데일리시큐 (전체) [RSS]",
+      "published": "2026-10-28T14:25:14+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-116816"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-116816",
+          "cvss_score": 8.5,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-129",
+          "description": "llama.cpp b5899 before b10261 contains a heap out-of-bounds write vulnerability in llm_tokenizer_plamo2::build that allows attackers to corrupt heap memory via crafted GGUF models. Attackers can supply BYTE-typed token text like <0x-1> whose negative parsed value writes token ids before the bytes_ buffer during model loading, causing crashes or potential code execution.",
+          "epss_score": 0.00135,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-28T15:01:36.075749+09:00",
+      "type": "single",
+      "title": "레닥소 웹사이트 관리도구에 치명적 인증 우회 취약점 공개, 비밀번호 없이 관리자 권한 탈취 가능",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=209123",
+      "source": "데일리시큐 (전체) [RSS]",
+      "published": "2026-10-28T14:14:24+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-117532"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-117532",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-287 (Authentication Bypass)",
+          "description": "REDAXO core from 5.3.0 before 5.21.4 contains an authentication bypass vulnerability in the structure/history plugin that allows unauthenticated attackers to forge temporary login tokens. Attackers can force the session-tied secret into a predictable state and forge tokens for accounts like admin, gaining backend access and code execution outside live mode.",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-28T15:01:36.075749+09:00",
+      "type": "single",
+      "title": "미스트랄 AI 코딩도구 ‘바이브’서 고위험 취약점 발견…악성 저장소 통해 개발자 PC 장악 위험",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=209121",
+      "source": "데일리시큐 (전체) [RSS]",
+      "published": "2026-10-28T14:06:01+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-116843"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-116843",
+          "cvss_score": 8.7,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-829",
+          "description": "Mistral Vibe before 3.0.3 contains a remote code execution vulnerability that allows attackers to run commands by defining git filter drivers in an untrusted repository's .git/config. When started with --worktree, git worktree add applies .gitattributes and runs filter smudge, clean, or process commands before the trusted-folder check, executing attacker commands with user privileges.",
+          "epss_score": 0.00433,
+          "kev": false
         }
       ]
     }
