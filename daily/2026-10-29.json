@@ -2,22 +2,23 @@
   "date": "2026-10-29",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 7,
+    "scan_runs": 8,
     "total_articles_max": 1781,
     "matched_articles_max": 177,
-    "new_alerts": 5,
-    "cve_total": 2,
-    "alerts_with_cve": 2,
-    "cve_count": 2,
+    "new_alerts": 6,
+    "cve_total": 3,
+    "alerts_with_cve": 3,
+    "cve_count": 3,
     "ioc_count": 20,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2026-101767",
-      "CVE-2026-111497"
+      "CVE-2026-111497",
+      "CVE-2026-20127"
     ],
     "keywords_hit": {
       "Malware": 3,
-      "CVE": 2
+      "CVE": 3
     }
   },
   "alerts": [
@@ -114,6 +115,32 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-29T07:01:08.465771+09:00",
+      "type": "single",
+      "title": "Inside KeyDrift: Analyzing historical UAT-11473 activity on Cisco SD-WAN",
+      "url": "https://blog.talosintelligence.com/uat-11473-keydrift/",
+      "source": "Cisco Talos Intelligence (위협분석) [RSS]",
+      "published": "2026-10-28T21:32:02+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-20127"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-20127",
+          "cvss_score": 10.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-287 (Authentication Bypass)",
+          "description": "A vulnerability in the peering authentication in Cisco Catalyst SD-WAN Controller, formerly SD-WAN vSmart, Cisco Catalyst SD-WAN Manager, formerly SD-WAN vManage, and Cisco Catalyst SD-WAN Validator, formerly SD-WAN vBond, could allow an unauthenticated, remote attacker to bypass authentication and obtain administrative privileges on an affected system.\r\n\r\nThis vulnerability exists because the peering authentication mechanism in an affected system is not working properly. An attacker could explo",
+          "epss_score": 0.89294,
+          "kev": true
+        }
+      ]
     }
   ]
 }
