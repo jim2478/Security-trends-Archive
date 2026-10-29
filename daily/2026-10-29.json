@@ -2,13 +2,13 @@
   "date": "2026-10-29",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 19,
+    "scan_runs": 20,
     "total_articles_max": 1781,
     "matched_articles_max": 177,
-    "new_alerts": 12,
-    "cve_total": 9,
-    "alerts_with_cve": 6,
-    "cve_count": 9,
+    "new_alerts": 13,
+    "cve_total": 11,
+    "alerts_with_cve": 7,
+    "cve_count": 11,
     "ioc_count": 20,
     "merged_count": 0,
     "unique_cves": [
@@ -17,12 +17,14 @@
       "CVE-2026-109619",
       "CVE-2026-111497",
       "CVE-2026-20127",
+      "CVE-2026-20349",
       "CVE-2026-41709",
       "CVE-2026-59309",
-      "CVE-2026-59310"
+      "CVE-2026-59310",
+      "CVE-2026-76418"
     ],
     "keywords_hit": {
-      "CVE": 6,
+      "CVE": 7,
       "Malware": 6
     }
   },
@@ -296,6 +298,42 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-29T19:01:23.896480+09:00",
+      "type": "single",
+      "title": "Attackers Exploit Second Cisco Firewall VPN Zero-Day Since August",
+      "url": "https://www.securityweek.com/attackers-exploit-second-cisco-firewall-vpn-zero-day-since-august/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-10-29T09:47:10+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-76418",
+        "CVE-2026-20349"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-76418",
+          "cvss_score": 8.6,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-690",
+          "description": "A vulnerability in the Remote Access SSL VPN service of Cisco Secure Firewall Adaptive Security Appliance (ASA) Software and Cisco Secure Firewall Threat Defense (FTD) Software could allow an unauthenticated, remote attacker to cause the device to reload unexpectedly, resulting in a denial of service (DoS) condition. This vulnerability is due to logic errors when secondary authentication is configured on a tunnel group. An attacker could exploit this vulnerability by sending a crafted request wh",
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-20349",
+          "cvss_score": 8.6,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-244",
+          "description": "A vulnerability in the Remote Access SSL VPN service for Cisco Secure Firewall Adaptive Security Appliance (ASA) Software and Cisco Secure Firewall Threat Defense (FTD) Software could allow an unauthenticated, remote attacker to cause the device to reload unexpectedly, resulting in a denial of service (DoS) condition.&nbsp;\r\n\r\nThis vulnerability is due to insufficient error checking when processing HTTP requests. An attacker could exploit this vulnerability by sending a crafted HTTP request to t",
+          "epss_score": 0.0101,
+          "kev": true
+        }
+      ]
     }
   ]
 }
