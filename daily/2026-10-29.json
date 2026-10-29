@@ -2,13 +2,13 @@
   "date": "2026-10-29",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 18,
+    "scan_runs": 19,
     "total_articles_max": 1781,
     "matched_articles_max": 177,
-    "new_alerts": 9,
-    "cve_total": 6,
-    "alerts_with_cve": 5,
-    "cve_count": 6,
+    "new_alerts": 12,
+    "cve_total": 9,
+    "alerts_with_cve": 6,
+    "cve_count": 9,
     "ioc_count": 20,
     "merged_count": 0,
     "unique_cves": [
@@ -16,11 +16,14 @@
       "CVE-2026-109618",
       "CVE-2026-109619",
       "CVE-2026-111497",
-      "CVE-2026-20127"
+      "CVE-2026-20127",
+      "CVE-2026-41709",
+      "CVE-2026-59309",
+      "CVE-2026-59310"
     ],
     "keywords_hit": {
-      "CVE": 5,
-      "Malware": 4
+      "CVE": 6,
+      "Malware": 6
     }
   },
   "alerts": [
@@ -213,6 +216,80 @@
       "url": "https://isc.sans.edu/diary/rss/33470",
       "source": "SANS ISC (인터넷폭풍센터) [RSS]",
       "published": "2026-10-29T06:17:41+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-29T18:01:30.302713+09:00",
+      "type": "single",
+      "title": "Chinese Hackers Quietly Used Low-Severity ESXi Logging Flaw as Zero-Day",
+      "url": "https://www.securityweek.com/chinese-hackers-quietly-used-low-severity-esxi-logging-flaw-as-zero-day/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-10-29T08:01:05+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-41709",
+        "CVE-2026-59309",
+        "CVE-2026-59310"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-41709",
+          "cvss_score": 2.7,
+          "cvss_severity": "LOW",
+          "cwe": "CWE-778",
+          "description": "VMware ESX contains an insufficient logging vulnerability. A malicious administrator could exploit this issue to perform certain operations without them being logged.",
+          "epss_score": 0.00297,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-59309",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-303",
+          "description": "VMware vCenter contains an authentication bypass vulnerability in the VMware Directory Service. A malicious actor with network access to vCenter may exploit this issue to bypass authentication and gain unauthorized access to the system.",
+          "epss_score": 0.00611,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-59310",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-22 (Path Traversal)",
+          "description": "VMware vCenter contains a directory traversal vulnerability in the Syslog server. A malicious actor with network access to vCenter may exploit this issue to execute arbitrary code.",
+          "epss_score": 0.02565,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-29T18:01:30.302713+09:00",
+      "type": "single",
+      "title": "Hackers Exploited Cisco SD-WAN Flaw to Plant Malware Built to Steal Encryption Keys",
+      "url": "https://thehackernews.com/2026/10/hackers-exploited-cisco-sd-wan-flaw-to.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-10-29T08:24:22+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-29T18:01:30.302713+09:00",
+      "type": "single",
+      "title": "MR ROBOT Malware-as-a-Service Targets Indian Bank Customers",
+      "url": "https://www.infosecurity-magazine.com/news/robot-malware-indian-bank-customers/",
+      "source": "Infosecurity Magazine (보안뉴스) [RSS]",
+      "published": "2026-10-29T09:00:00+00:00",
       "keywords": [
         "Malware"
       ],
