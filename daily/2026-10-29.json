@@ -2,10 +2,10 @@
   "date": "2026-10-29",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 16,
+    "scan_runs": 17,
     "total_articles_max": 1781,
     "matched_articles_max": 177,
-    "new_alerts": 8,
+    "new_alerts": 9,
     "cve_total": 6,
     "alerts_with_cve": 5,
     "cve_count": 6,
@@ -20,7 +20,7 @@
     ],
     "keywords_hit": {
       "CVE": 5,
-      "Malware": 3
+      "Malware": 4
     }
   },
   "alerts": [
@@ -205,6 +205,20 @@
           "kev": true
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-10-29T16:01:22.213414+09:00",
+      "type": "single",
+      "title": "Deploying a Local Ghidra Server for Your Malware Analysis Lab, (Thu, Oct 29th)",
+      "url": "https://isc.sans.edu/diary/rss/33470",
+      "source": "SANS ISC (인터넷폭풍센터) [RSS]",
+      "published": "2026-10-29T06:17:41+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
