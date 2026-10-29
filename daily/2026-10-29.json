@@ -2,13 +2,13 @@
   "date": "2026-10-29",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 21,
+    "scan_runs": 22,
     "total_articles_max": 1781,
     "matched_articles_max": 177,
-    "new_alerts": 15,
-    "cve_total": 12,
-    "alerts_with_cve": 8,
-    "cve_count": 12,
+    "new_alerts": 17,
+    "cve_total": 14,
+    "alerts_with_cve": 10,
+    "cve_count": 14,
     "ioc_count": 20,
     "merged_count": 0,
     "unique_cves": [
@@ -21,10 +21,11 @@
       "CVE-2026-41709",
       "CVE-2026-59309",
       "CVE-2026-59310",
-      "CVE-2026-76418"
+      "CVE-2026-76418",
+      "CVE-2026-97229"
     ],
     "keywords_hit": {
-      "CVE": 7,
+      "CVE": 9,
       "Malware": 7,
       "DDoS": 1
     }
@@ -375,6 +376,58 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-29T21:01:14.882059+09:00",
+      "type": "single",
+      "title": "Cisco Patches Actively Exploited ASA and FTD VPN Flaw That Can Crash Firewalls",
+      "url": "https://thehackernews.com/2026/10/cisco-patches-actively-exploited-asa.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-10-29T10:44:46+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-76418"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-76418",
+          "cvss_score": 8.6,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-690",
+          "description": "A vulnerability in the Remote Access SSL VPN service of Cisco Secure Firewall Adaptive Security Appliance (ASA) Software and Cisco Secure Firewall Threat Defense (FTD) Software could allow an unauthenticated, remote attacker to cause the device to reload unexpectedly, resulting in a denial of service (DoS) condition. This vulnerability is due to logic errors when secondary authentication is configured on a tunnel group. An attacker could exploit this vulnerability by sending a crafted request wh",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-29T21:01:14.882059+09:00",
+      "type": "single",
+      "title": "Attacker Tried to Exploit Alpine Linux’s GitLab via CVSS 10.0 Flaw Its Ruby Left Open",
+      "url": "https://thehackernews.com/2026/10/attacker-tried-to-exploit-alpine-linuxs.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-10-29T09:05:39+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-97229"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-97229",
+          "cvss_score": 10.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-190",
+          "description": "GitLab has remediated an issue in GitLab CE/EE affecting all versions from 19.2 before 19.2.8, 19.3 before 19.3.5, and 19.4 before 19.4.2 that, under certain conditions, could have allowed an unauthenticated user to execute arbitrary code on the GitLab server via a specially crafted regular expression in a CI/CD configuration, due to insufficient regular expression validation.",
+          "epss_score": 0.18427,
+          "kev": false
+        }
+      ]
     }
   ]
 }
