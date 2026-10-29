@@ -2,13 +2,13 @@
   "date": "2026-10-29",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 20,
+    "scan_runs": 21,
     "total_articles_max": 1781,
     "matched_articles_max": 177,
-    "new_alerts": 13,
-    "cve_total": 11,
-    "alerts_with_cve": 7,
-    "cve_count": 11,
+    "new_alerts": 15,
+    "cve_total": 12,
+    "alerts_with_cve": 8,
+    "cve_count": 12,
     "ioc_count": 20,
     "merged_count": 0,
     "unique_cves": [
@@ -25,7 +25,8 @@
     ],
     "keywords_hit": {
       "CVE": 7,
-      "Malware": 6
+      "Malware": 7,
+      "DDoS": 1
     }
   },
   "alerts": [
@@ -334,6 +335,46 @@
           "kev": true
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-10-29T20:01:23.677546+09:00",
+      "type": "single",
+      "title": "Cisco SD-WAN Zero-Day Exploitation Tied to Volt Typhoon’s ‘Silent Train’ Network",
+      "url": "https://www.securityweek.com/cisco-sd-wan-zero-day-exploitation-tied-to-volt-typhoons-silent-train-network/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-10-29T10:29:25+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-20127"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-20127",
+          "cvss_score": 10.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-287 (Authentication Bypass)",
+          "description": "A vulnerability in the peering authentication in Cisco Catalyst SD-WAN Controller, formerly SD-WAN vSmart, Cisco Catalyst SD-WAN Manager, formerly SD-WAN vManage, and Cisco Catalyst SD-WAN Validator, formerly SD-WAN vBond, could allow an unauthenticated, remote attacker to bypass authentication and obtain administrative privileges on an affected system.\r\n\r\nThis vulnerability exists because the peering authentication mechanism in an affected system is not working properly. An attacker could explo",
+          "epss_score": 0.89294,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-29T20:01:23.677546+09:00",
+      "type": "single",
+      "title": "Hacktivists leak 41,000 DHS staff records, revealing undercover ICE agents",
+      "url": "https://www.helpnetsecurity.com/2026/10/29/icepick-dhs-leak-ice-undercover-agents/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-10-29T10:16:18+00:00",
+      "keywords": [
+        "DDoS"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
