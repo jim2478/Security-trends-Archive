@@ -2,18 +2,19 @@
   "date": "2026-10-30",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 4,
+    "scan_runs": 5,
     "total_articles_max": 1771,
     "matched_articles_max": 174,
-    "new_alerts": 6,
-    "cve_total": 7,
-    "alerts_with_cve": 3,
-    "cve_count": 7,
+    "new_alerts": 7,
+    "cve_total": 8,
+    "alerts_with_cve": 4,
+    "cve_count": 8,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2026-109618",
       "CVE-2026-109619",
+      "CVE-2026-20127",
       "CVE-2026-41709",
       "CVE-2026-46300",
       "CVE-2026-76418",
@@ -21,8 +22,8 @@
       "CVE-2026-98432"
     ],
     "keywords_hit": {
-      "Malware": 3,
-      "CVE": 3
+      "Malware": 4,
+      "CVE": 4
     }
   },
   "alerts": [
@@ -183,6 +184,33 @@
           "description": "A vulnerability in the Remote Access SSL VPN service of Cisco Secure Firewall Adaptive Security Appliance (ASA) Software and Cisco Secure Firewall Threat Defense (FTD) Software could allow an unauthenticated, remote attacker to cause the device to reload unexpectedly, resulting in a denial of service (DoS) condition. This vulnerability is due to logic errors when secondary authentication is configured on a tunnel group. An attacker could exploit this vulnerability by sending a crafted request wh",
           "epss_score": 0.00574,
           "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-30T04:01:21.756567+09:00",
+      "type": "single",
+      "title": "Hackers exploit Cisco SD-WAN flaw to deploy custom KeyDrift malware",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-cisco-sd-wan-flaw-to-deploy-custom-keydrift-malware/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-10-29T18:38:26+00:00",
+      "keywords": [
+        "CVE",
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-20127"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-20127",
+          "cvss_score": 10.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-287 (Authentication Bypass)",
+          "description": "A vulnerability in the peering authentication in Cisco Catalyst SD-WAN Controller, formerly SD-WAN vSmart, Cisco Catalyst SD-WAN Manager, formerly SD-WAN vManage, and Cisco Catalyst SD-WAN Validator, formerly SD-WAN vBond, could allow an unauthenticated, remote attacker to bypass authentication and obtain administrative privileges on an affected system.\r\n\r\nThis vulnerability exists because the peering authentication mechanism in an affected system is not working properly. An attacker could explo",
+          "epss_score": 0.89294,
+          "kev": true
         }
       ]
     }
