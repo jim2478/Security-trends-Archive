@@ -2,21 +2,27 @@
   "date": "2026-10-30",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
+    "scan_runs": 3,
     "total_articles_max": 1771,
     "matched_articles_max": 174,
-    "new_alerts": 4,
-    "cve_total": 1,
-    "alerts_with_cve": 1,
-    "cve_count": 1,
+    "new_alerts": 6,
+    "cve_total": 7,
+    "alerts_with_cve": 3,
+    "cve_count": 7,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
-      "CVE-2026-89209"
+      "CVE-2026-109618",
+      "CVE-2026-109619",
+      "CVE-2026-41709",
+      "CVE-2026-46300",
+      "CVE-2026-76418",
+      "CVE-2026-89209",
+      "CVE-2026-98432"
     ],
     "keywords_hit": {
       "Malware": 3,
-      "CVE": 1
+      "CVE": 3
     }
   },
   "alerts": [
@@ -87,6 +93,98 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-30T02:01:43.894585+09:00",
+      "type": "single",
+      "title": "Linux Kernel TCP Flaw With 9.8 CVSS Score Affects Ubuntu, Red Hat and Other Distributions",
+      "url": "https://thehackernews.com/2026/10/linux-kernel-tcp-flaw-with-98-cvss.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-10-29T15:57:05+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-98432"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-98432",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": null,
+          "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nipv4: free inet_opt and ireq_opt after an RCU grace period\n\ntcp_v4_syn_recv_sock() transfers ownership of ireq->ireq_opt to the\nchild socket (newinet->inet_opt) without copying it.\n\nAnother cpu can concurrently process a retransmitted SYN for the same\nrequest socket, and send a SYNACK from tcp_check_req().\ntcp_v4_send_synack() and inet_csk_route_req() read ireq->ireq_opt\nunder rcu_read_lock() only, and ip_build_and_send_pkt() a",
+          "epss_score": 0.00388,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-30T02:01:43.894585+09:00",
+      "type": "single",
+      "title": "Chinese hackers used VMware ESX zero-day; PHP2Shell and Fragnesia chained to root firewalls",
+      "url": "https://www.helpnetsecurity.com/2026/10/29/php2shell-fragnesia-vmware-esx-zero-day/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-10-29T16:25:10+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-41709",
+        "CVE-2026-46300",
+        "CVE-2026-109618",
+        "CVE-2026-109619",
+        "CVE-2026-76418"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-41709",
+          "cvss_score": 2.7,
+          "cvss_severity": "LOW",
+          "cwe": "CWE-778",
+          "description": "VMware ESX contains an insufficient logging vulnerability. A malicious administrator could exploit this issue to perform certain operations without them being logged.",
+          "epss_score": 0.00764,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-46300",
+          "cvss_score": 7.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-787 (Out-of-bounds Write)",
+          "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nnet: skbuff: preserve shared-frag marker during coalescing\n\nskb_try_coalesce() can attach paged frags from @from to @to.  If @from\nhas SKBFL_SHARED_FRAG set, the resulting @to skb can contain the same\nexternally-owned or page-cache-backed frags, but the shared-frag marker\nis currently lost.\n\nThat breaks the invariant relied on by later in-place writers.  In\nparticular, ESP input checks skb_has_shared_frag() before deciding\nwhet",
+          "epss_score": 0.15719,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-109618",
+          "cvss_score": 9.2,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-416 (Use After Free)",
+          "description": "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. Some contexts may not properly account for this scenario and leave request memory in an uninitialized state before performing an allocation. The subsequent request cleanup procedure may read or branch on this memory. Multiple OOM strategies can consistently trigger this condition and lead to remote code execution (RCE).",
+          "epss_score": 0.99999,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-109619",
+          "cvss_score": 9.2,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-416 (Use After Free)",
+          "description": "PHP has various global state that temporarily points into request memory. In some scenarios, global state may not be correctly reset, or may be repopulated after being reset. The global state may then refer to request memory even after it has been freed. Subsequent requests may read or branch on this stale state before it is fully initialized. Multiple strategies can trigger this condition and produce remote code execution (RCE).",
+          "epss_score": 0.99999,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-76418",
+          "cvss_score": 8.6,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-690",
+          "description": "A vulnerability in the Remote Access SSL VPN service of Cisco Secure Firewall Adaptive Security Appliance (ASA) Software and Cisco Secure Firewall Threat Defense (FTD) Software could allow an unauthenticated, remote attacker to cause the device to reload unexpectedly, resulting in a denial of service (DoS) condition. This vulnerability is due to logic errors when secondary authentication is configured on a tunnel group. An attacker could exploit this vulnerability by sending a crafted request wh",
+          "epss_score": 0.00574,
+          "kev": false
+        }
+      ]
     }
   ]
 }
