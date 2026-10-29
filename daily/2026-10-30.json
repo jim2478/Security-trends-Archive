@@ -2,10 +2,10 @@
   "date": "2026-10-30",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 1,
-    "total_articles_max": 1731,
+    "scan_runs": 2,
+    "total_articles_max": 1771,
     "matched_articles_max": 174,
-    "new_alerts": 3,
+    "new_alerts": 4,
     "cve_total": 1,
     "alerts_with_cve": 1,
     "cve_count": 1,
@@ -15,7 +15,7 @@
       "CVE-2026-89209"
     ],
     "keywords_hit": {
-      "Malware": 2,
+      "Malware": 3,
       "CVE": 1
     }
   },
@@ -67,6 +67,20 @@
       "url": "https://www.infosecurity-magazine.com/news/nik-c2-malware-victims-openai-keys/",
       "source": "Infosecurity Magazine (보안뉴스) [RSS]",
       "published": "2026-10-29T15:00:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-30T01:01:10.666023+09:00",
+      "type": "single",
+      "title": "Fake ChatGPT and Claude Apps Abuse Signed Executables to Deploy Crypto Miners",
+      "url": "https://thehackernews.com/2026/10/fake-chatgpt-and-claude-apps-abuse.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-10-29T15:20:29+00:00",
       "keywords": [
         "Malware"
       ],
