@@ -2,27 +2,33 @@
   "date": "2026-10-30",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 17,
+    "scan_runs": 18,
     "total_articles_max": 1781,
     "matched_articles_max": 175,
-    "new_alerts": 10,
-    "cve_total": 11,
-    "alerts_with_cve": 6,
-    "cve_count": 11,
+    "new_alerts": 13,
+    "cve_total": 21,
+    "alerts_with_cve": 9,
+    "cve_count": 21,
     "ioc_count": 0,
-    "merged_count": 0,
+    "merged_count": 1,
     "unique_cves": [
       "CVE-2026-109618",
       "CVE-2026-109619",
       "CVE-2026-20127",
+      "CVE-2026-23479",
+      "CVE-2026-23631",
+      "CVE-2026-25243",
+      "CVE-2026-25588",
+      "CVE-2026-25589",
       "CVE-2026-41709",
       "CVE-2026-46300",
       "CVE-2026-76418",
       "CVE-2026-89209",
+      "CVE-2026-97229",
       "CVE-2026-98432"
     ],
     "keywords_hit": {
-      "CVE": 6,
+      "CVE": 9,
       "Malware": 5
     }
   },
@@ -287,6 +293,142 @@
           "description": "VMware ESX contains an insufficient logging vulnerability. A malicious administrator could exploit this issue to perform certain operations without them being logged.",
           "epss_score": 0.00764,
           "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-30T17:01:31.450413+09:00",
+      "type": "single",
+      "title": "CISA Adds Actively Exploited GitLab RCE and Cisco Firewall DoS Flaws to KEV",
+      "url": "https://thehackernews.com/2026/10/cisa-adds-actively-exploited-gitlab-rce.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-10-30T07:27:05+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-97229"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-97229",
+          "cvss_score": 10.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-190",
+          "description": "GitLab has remediated an issue in GitLab CE/EE affecting all versions from 19.2 before 19.2.8, 19.3 before 19.3.5, and 19.4 before 19.4.2 that, under certain conditions, could have allowed an unauthenticated user to execute arbitrary code on the GitLab server via a specially crafted regular expression in a CI/CD configuration, due to insufficient regular expression validation.",
+          "epss_score": 0.18427,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-30T17:01:31.450413+09:00",
+      "type": "merged",
+      "cve_ids": [
+        "CVE-2026-109618",
+        "CVE-2026-109619"
+      ],
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "sources": [
+        {
+          "title": "[주의] 시놀로지 NAS서 PHP2Shell 치명적 취약점 확인…KISA, 취약 제품 긴급 점검 권고",
+          "url": "https://www.dailysecu.com/news/articleView.html?idxno=209192",
+          "source": "데일리시큐 (전체) [RSS]"
+        },
+        {
+          "title": "지니언스 \"PHP2셸 뇌관은 내부망…내부 장비 96% 취약점 노출\"",
+          "url": "https://zdnet.co.kr/view/?no=20261030155301",
+          "source": "지디넷코리아 [RSS]"
+        }
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-109618",
+          "cvss_score": 9.2,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-416 (Use After Free)",
+          "description": "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. Some contexts may not properly account for this scenario and leave request memory in an uninitialized state before performing an allocation. The subsequent request cleanup procedure may read or branch on this memory. Multiple OOM strategies can consistently trigger this condition and lead to remote code execution (RCE).",
+          "epss_score": 0.99999,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-109619",
+          "cvss_score": 9.2,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-416 (Use After Free)",
+          "description": "PHP has various global state that temporarily points into request memory. In some scenarios, global state may not be correctly reset, or may be repopulated after being reset. The global state may then refer to request memory even after it has been freed. Subsequent requests may read or branch on this stale state before it is fully initialized. Multiple strategies can trigger this condition and produce remote code execution (RCE).",
+          "epss_score": 0.99999,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-30T17:01:31.450413+09:00",
+      "type": "single",
+      "title": "[긴급] 레디스서 원격코드실행 취약점 5건 발견…KISA, 보안 업데이트 권고",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=209191",
+      "source": "데일리시큐 (전체) [RSS]",
+      "published": "2026-10-30T16:17:27+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-25243",
+        "CVE-2026-23479",
+        "CVE-2026-25588",
+        "CVE-2026-25589",
+        "CVE-2026-23631"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-25243",
+          "cvss_score": 7.7,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-122",
+          "description": "Redis is an in-memory data structure store. In versions of redis-server up to 8.6.3, the RESTORE command does not properly validate serialized values. An authenticated attacker with permission to execute RESTORE can supply a crafted serialized payload that triggers invalid memory access and may lead to remote code execution. A workaround is to restrict access to the RESTORE command with ACL rules. This is patched in version 8.6.3.",
+          "epss_score": 0.04033,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-23479",
+          "cvss_score": 7.7,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-416 (Use After Free)",
+          "description": "Redis is an in-memory data structure store. In redis-server from 7.2.0 until 8.6.3, the unblock client flow does not handle an error return from `processCommandAndResetClient` when re-executing a blocked command. If a blocked client is evicted during this flow, an authenticated attacker can trigger a use-after-free that may lead to remote code execution. This has been patched in version 8.6.3.",
+          "epss_score": 0.02612,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-25588",
+          "cvss_score": 7.7,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-122",
+          "description": "RedisTimeSeries is a time-series module for Redis. In all versions before 1.12.14 of RedisTimeSeries, the module does not properly validate serialized values processed through the Redis RESTORE command. An authenticated attacker with permission to execute RESTORE on a server with the RedisTimeSeries module loaded can supply a crafted serialized payload that triggers invalid memory access and may lead to remote code execution. A workaround is to restrict access to the RESTORE command with ACL rul",
+          "epss_score": 0.0128,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-25589",
+          "cvss_score": 7.7,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-122",
+          "description": "RedisBloom is a probabilistic data structures module for Redis. In all versions of RedisBloom before 2.8.20, the module does not properly validate serialized values processed through the Redis RESTORE command. An authenticated attacker with permission to execute RESTORE on a server with the RedisBloom module loaded can supply a crafted serialized payload that triggers invalid memory access and may lead to remote code execution. A workaround is to restrict access to the RESTORE command with ACL r",
+          "epss_score": 0.017,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-23631",
+          "cvss_score": 6.1,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-416 (Use After Free)",
+          "description": "Redis is an in-memory data structure store. In all versions of redis-server with Lua scripting, an authenticated attacker can exploit the master-replica synchronization mechanism to trigger a use-after-free on replicas where replica-read-only is disabled or can be disabled, which may lead to remote code execution. A workaround is to prevent users from executing Lua scripts or avoid using replicas where replica-read-only is disabled. This is patched in version 8.6.3.",
+          "epss_score": 0.03088,
+          "kev": false
         }
       ]
     }
