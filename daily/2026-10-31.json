@@ -1,0 +1,92 @@
+{
+  "date": "2026-10-31",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 1,
+    "total_articles_max": 1751,
+    "matched_articles_max": 180,
+    "new_alerts": 4,
+    "cve_total": 1,
+    "alerts_with_cve": 1,
+    "cve_count": 1,
+    "ioc_count": 0,
+    "merged_count": 0,
+    "unique_cves": [
+      "CVE-2026-97631"
+    ],
+    "keywords_hit": {
+      "Malware": 3,
+      "CVE": 1
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-10-31T00:01:45.007659+09:00",
+      "type": "single",
+      "title": "In Other News: Anthropic Breach Dispute, UEFI Flaw Hits Most Servers, Cloudflare AI Data Leak",
+      "url": "https://www.securityweek.com/in-other-news-anthropic-breach-dispute-uefi-flaw-hits-most-servers-cloudflare-ai-data-leak/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-10-30T14:41:35+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-97631"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-97631",
+          "cvss_score": 9.5,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-120",
+          "description": "EDK2 contains a vulnerability in BIOS where a user may cause “Out-of-bounds\nWrite”, Classic\nBuffer Overflow, and “Incorrect Calculation of Buffer Size” by remote access. Successful exploitation of this vulnerability\ncan lead to arbitrary\ncode execution. It could also impact\nConfidentiality,\nIntegrity,\nand Availability.",
+          "epss_score": 0.00635,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-31T00:01:45.007659+09:00",
+      "type": "single",
+      "title": "Malicious Claude Code extension on Cursor planted SSH backdoors",
+      "url": "https://www.bleepingcomputer.com/news/security/malicious-claude-code-extension-on-cursor-planted-ssh-backdoors/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-10-30T14:36:54+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-31T00:01:45.007659+09:00",
+      "type": "single",
+      "title": "Fake GitHub Repo Tricks AI Agents Into Installing SolanaCry Malware",
+      "url": "https://hackread.com/fake-github-repo-ai-coding-agents-solanacry-malware/",
+      "source": "HackRead (해킹/데이터유출) [RSS]",
+      "published": "2026-10-30T14:12:28+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-31T00:01:45.007659+09:00",
+      "type": "single",
+      "title": "Operationalizing CISA AA26-194A: Automating Cisco Router Security Assessments with Qualys Policy Audit",
+      "url": "https://blog.qualys.com/category/product-tech",
+      "source": "Qualys Blog (취약점관리) [RSS]",
+      "published": "2026-10-30T15:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
