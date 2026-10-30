@@ -2,13 +2,13 @@
   "date": "2026-10-30",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 20,
+    "scan_runs": 21,
     "total_articles_max": 1781,
     "matched_articles_max": 179,
-    "new_alerts": 16,
-    "cve_total": 26,
-    "alerts_with_cve": 12,
-    "cve_count": 26,
+    "new_alerts": 18,
+    "cve_total": 28,
+    "alerts_with_cve": 13,
+    "cve_count": 28,
     "ioc_count": 0,
     "merged_count": 1,
     "unique_cves": [
@@ -32,8 +32,8 @@
       "CVE-2026-98432"
     ],
     "keywords_hit": {
-      "CVE": 12,
-      "Malware": 5
+      "CVE": 13,
+      "Malware": 6
     }
   },
   "alerts": [
@@ -533,6 +533,56 @@
           "kev": true
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-10-30T20:01:10.416778+09:00",
+      "type": "single",
+      "title": "PHP 취약점 ‘일파만파’…추가 연계 공격 사례까지 등장",
+      "url": "https://www.itdaily.kr/news/articleView.html?idxno=242587",
+      "source": "아이티데일리 [RSS]",
+      "published": "2026-10-30T08:14:05+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-109618",
+        "CVE-2026-46300"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-109618",
+          "cvss_score": 9.2,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-416 (Use After Free)",
+          "description": "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. Some contexts may not properly account for this scenario and leave request memory in an uninitialized state before performing an allocation. The subsequent request cleanup procedure may read or branch on this memory. Multiple OOM strategies can consistently trigger this condition and lead to remote code execution (RCE).",
+          "epss_score": 0.99999,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-46300",
+          "cvss_score": 7.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-787 (Out-of-bounds Write)",
+          "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nnet: skbuff: preserve shared-frag marker during coalescing\n\nskb_try_coalesce() can attach paged frags from @from to @to.  If @from\nhas SKBFL_SHARED_FRAG set, the resulting @to skb can contain the same\nexternally-owned or page-cache-backed frags, but the shared-frag marker\nis currently lost.\n\nThat breaks the invariant relied on by later in-place writers.  In\nparticular, ESP input checks skb_has_shared_frag() before deciding\nwhet",
+          "epss_score": 0.15719,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-30T20:01:10.416778+09:00",
+      "type": "single",
+      "title": "Official Claude Code VS Code Extension Compromised to Install Persistent SSH Backdoor",
+      "url": "https://thehackernews.com/2026/10/official-claude-code-vs-code-extension.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-10-30T08:55:47+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
