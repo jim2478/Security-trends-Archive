@@ -2,10 +2,10 @@
   "date": "2026-10-30",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 22,
+    "scan_runs": 23,
     "total_articles_max": 1781,
     "matched_articles_max": 179,
-    "new_alerts": 18,
+    "new_alerts": 19,
     "cve_total": 28,
     "alerts_with_cve": 13,
     "cve_count": 28,
@@ -33,7 +33,7 @@
     ],
     "keywords_hit": {
       "CVE": 13,
-      "Malware": 6
+      "Malware": 7
     }
   },
   "alerts": [
@@ -577,6 +577,20 @@
       "url": "https://thehackernews.com/2026/10/official-claude-code-vs-code-extension.html",
       "source": "The Hacker News (보안뉴스 종합) [RSS]",
       "published": "2026-10-30T08:55:47+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-30T22:01:19.465271+09:00",
+      "type": "single",
+      "title": "Hackers target government Windows systems in Asia with new malware",
+      "url": "https://therecord.media/hackers-target-government-windows-systems-asia-new-malware",
+      "source": "The Record by Recorded Future (위협뉴스) [RSS]",
+      "published": "2026-10-30T12:36:00+00:00",
       "keywords": [
         "Malware"
       ],
