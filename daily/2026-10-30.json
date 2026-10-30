@@ -2,18 +2,20 @@
   "date": "2026-10-30",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 18,
+    "scan_runs": 19,
     "total_articles_max": 1781,
-    "matched_articles_max": 175,
-    "new_alerts": 13,
-    "cve_total": 21,
-    "alerts_with_cve": 9,
-    "cve_count": 21,
+    "matched_articles_max": 179,
+    "new_alerts": 15,
+    "cve_total": 25,
+    "alerts_with_cve": 11,
+    "cve_count": 25,
     "ioc_count": 0,
     "merged_count": 1,
     "unique_cves": [
       "CVE-2026-109618",
       "CVE-2026-109619",
+      "CVE-2026-111585",
+      "CVE-2026-118539",
       "CVE-2026-20127",
       "CVE-2026-23479",
       "CVE-2026-23631",
@@ -24,11 +26,13 @@
       "CVE-2026-46300",
       "CVE-2026-76418",
       "CVE-2026-89209",
+      "CVE-2026-92372",
+      "CVE-2026-92374",
       "CVE-2026-97229",
       "CVE-2026-98432"
     ],
     "keywords_hit": {
-      "CVE": 9,
+      "CVE": 11,
       "Malware": 5
     }
   },
@@ -428,6 +432,78 @@
           "cwe": "CWE-416 (Use After Free)",
           "description": "Redis is an in-memory data structure store. In all versions of redis-server with Lua scripting, an authenticated attacker can exploit the master-replica synchronization mechanism to trigger a use-after-free on replicas where replica-read-only is disabled or can be disabled, which may lead to remote code execution. A workaround is to prevent users from executing Lua scripts or avoid using replicas where replica-read-only is disabled. This is patched in version 8.6.3.",
           "epss_score": 0.03088,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-30T18:01:32.500294+09:00",
+      "type": "single",
+      "title": "Hackers Actively Exploit Highly Critical Drupal Commerce Core Authorization Bypass Flaw",
+      "url": "https://thehackernews.com/2026/10/hackers-actively-exploit-highly.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-10-30T07:45:30+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-118539"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-118539",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": "CWE-862 (Missing Authorization)",
+          "description": "Missing Authorization vulnerability in Drupal Commerce Core allows Forceful Browsing. This issue affects Commerce Core versions: from 0.0.0 to 2.41, from 3.0.0 to 3.3.13.",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-30T18:01:32.500294+09:00",
+      "type": "single",
+      "title": "TeamViewer Flaw Could Let Malicious Hosts Take Over Support Technicians’ Machines",
+      "url": "https://www.securityweek.com/teamviewer-flaw-could-let-malicious-hosts-take-over-support-technicians-machines/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-10-30T08:44:49+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-111585",
+        "CVE-2026-92372",
+        "CVE-2026-92374"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-111585",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-190",
+          "description": "An integer overflow in the remote-control\nscreen processing component of TeamViewer clients (Full Client, Portable and Remote\nControl App) prior to version 15.83 may allow a malicious remote host to cause\na denial of service or, depending on the platform, potentially execute\narbitrary code with the privileges of the viewer process. Exploitation requires\na user to establish a remote-control session to an attacker-controlled or\ncompromised host.",
+          "epss_score": 0.00288,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-92372",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-123",
+          "description": "An out-of-bounds write vulnerability in the\nscreen-image decoder of TeamViewer Full Client for Linux and macOS prior to\nversion 15.83 allows a remote attacker to execute arbitrary code by supplying\ncrafted screen-image data during a remote-control session. The vulnerability\ncan also be exploited by persuading a user to open a specially crafted\nTeamViewer session recording (.tvs). Missing destination bounds checking in the\ndecoder allows crafted screen-image data to cause an out-of-bounds write t",
+          "epss_score": 0.00426,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-92374",
+          "cvss_score": 7.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-367",
+          "description": "A time-of-check time-of-use (TOCTOU) race condition combined with improper symbolic link handling in the privileged helper of TeamViewer Full Client and Host prior to version 15.83 for macOS allows a local attacker with low privileges to bypass installer package verification and install a malicious package. Successful exploitation can lead to local privilege escalation to root.",
+          "epss_score": 0.00092,
           "kev": false
         }
       ]
