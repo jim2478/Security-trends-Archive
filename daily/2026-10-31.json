@@ -2,10 +2,10 @@
   "date": "2026-10-31",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
-    "total_articles_max": 1761,
-    "matched_articles_max": 180,
-    "new_alerts": 4,
+    "scan_runs": 3,
+    "total_articles_max": 1771,
+    "matched_articles_max": 181,
+    "new_alerts": 5,
     "cve_total": 1,
     "alerts_with_cve": 1,
     "cve_count": 1,
@@ -16,7 +16,7 @@
     ],
     "keywords_hit": {
       "Malware": 3,
-      "CVE": 1
+      "CVE": 2
     }
   },
   "alerts": [
@@ -81,6 +81,20 @@
       "url": "https://blog.qualys.com/category/product-tech",
       "source": "Qualys Blog (취약점관리) [RSS]",
       "published": "2026-10-30T15:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-31T02:01:10.810845+09:00",
+      "type": "single",
+      "title": "WordPress RCE Flaw Draws Nearly 63,000 Attack Attempts in Just 24 Hours",
+      "url": "https://thehackernews.com/2026/10/wordpress-rce-flaw-draws-nearly-63000.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-10-30T14:08:14+00:00",
       "keywords": [
         "CVE"
       ],
