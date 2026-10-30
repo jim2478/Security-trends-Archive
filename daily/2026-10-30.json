@@ -2,13 +2,13 @@
   "date": "2026-10-30",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 19,
+    "scan_runs": 20,
     "total_articles_max": 1781,
     "matched_articles_max": 179,
-    "new_alerts": 15,
-    "cve_total": 25,
-    "alerts_with_cve": 11,
-    "cve_count": 25,
+    "new_alerts": 16,
+    "cve_total": 26,
+    "alerts_with_cve": 12,
+    "cve_count": 26,
     "ioc_count": 0,
     "merged_count": 1,
     "unique_cves": [
@@ -32,7 +32,7 @@
       "CVE-2026-98432"
     ],
     "keywords_hit": {
-      "CVE": 11,
+      "CVE": 12,
       "Malware": 5
     }
   },
@@ -505,6 +505,32 @@
           "description": "A time-of-check time-of-use (TOCTOU) race condition combined with improper symbolic link handling in the privileged helper of TeamViewer Full Client and Host prior to version 15.83 for macOS allows a local attacker with low privileges to bypass installer package verification and install a malicious package. Successful exploitation can lead to local privilege escalation to root.",
           "epss_score": 0.00092,
           "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-30T19:01:23.290093+09:00",
+      "type": "single",
+      "title": "Max-Severity GitLab Vulnerability Exploited Against Alpine Linux",
+      "url": "https://www.securityweek.com/max-severity-gitlab-vulnerability-exploited-against-alpine-linux/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-10-30T09:32:27+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-97229"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-97229",
+          "cvss_score": 10.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-190",
+          "description": "GitLab has remediated an issue in GitLab CE/EE affecting all versions from 19.2 before 19.2.8, 19.3 before 19.3.5, and 19.4 before 19.4.2 that, under certain conditions, could have allowed an unauthenticated user to execute arbitrary code on the GitLab server via a specially crafted regular expression in a CI/CD configuration, due to insufficient regular expression validation.",
+          "epss_score": 0.18427,
+          "kev": true
         }
       ]
     }
