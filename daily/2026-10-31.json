@@ -2,21 +2,23 @@
   "date": "2026-10-31",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 19,
+    "scan_runs": 20,
     "total_articles_max": 1781,
     "matched_articles_max": 181,
-    "new_alerts": 7,
-    "cve_total": 1,
-    "alerts_with_cve": 1,
-    "cve_count": 1,
+    "new_alerts": 9,
+    "cve_total": 3,
+    "alerts_with_cve": 3,
+    "cve_count": 3,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
+      "CVE-2026-111357",
+      "CVE-2026-118539",
       "CVE-2026-97631"
     ],
     "keywords_hit": {
       "Malware": 4,
-      "CVE": 2,
+      "CVE": 4,
       "DDoS": 1
     }
   },
@@ -130,6 +132,58 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-10-31T19:01:13.671235+09:00",
+      "type": "single",
+      "title": "Attackers Chain Three Ivanti Connect Secure Flaws to Gain Unauthenticated Root Access",
+      "url": "https://thehackernews.com/2026/10/attackers-chain-three-ivanti-connect.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-10-31T08:27:43+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-111357"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-111357",
+          "cvss_score": 7.0,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-829",
+          "description": "Ivanti Connect Secure 22.8R2.4 mishandles the manner in which the dsinvoked broker trusts DSCache configuration data, leading to privilege escalation to root, as exploited in the wild in October 2026.",
+          "epss_score": 0.00316,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-10-31T19:01:13.671235+09:00",
+      "type": "single",
+      "title": "Attackers Exploit Critical Drupal Commerce Core Vulnerability CVE-2026-118539",
+      "url": "https://securityaffairs.com/202162/security/attackers-exploit-critical-drupal-commerce-core-vulnerability-cve-2026-118539.html",
+      "source": "Security Affairs (보안뉴스/위협동향) [RSS]",
+      "published": "2026-10-31T09:08:58+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-118539"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-118539",
+          "cvss_score": 6.5,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-862 (Missing Authorization)",
+          "description": "Missing Authorization vulnerability in Drupal Commerce Core allows Forceful Browsing. This issue affects Commerce Core versions: from 0.0.0 to 2.41, from 3.0.0 to 3.3.13.",
+          "epss_score": 0.00222,
+          "kev": false
+        }
+      ]
     }
   ]
 }
