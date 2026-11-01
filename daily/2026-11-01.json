@@ -2,20 +2,26 @@
   "date": "2026-11-01",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 12,
-    "total_articles_max": 1791,
-    "matched_articles_max": 175,
-    "new_alerts": 1,
-    "cve_total": 1,
-    "alerts_with_cve": 1,
-    "cve_count": 1,
+    "scan_runs": 13,
+    "total_articles_max": 1801,
+    "matched_articles_max": 179,
+    "new_alerts": 5,
+    "cve_total": 7,
+    "alerts_with_cve": 5,
+    "cve_count": 7,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
+      "CVE-2026-109220",
+      "CVE-2026-114217",
+      "CVE-2026-116512",
+      "CVE-2026-116964",
+      "CVE-2026-117681",
+      "CVE-2026-118235",
       "CVE-2026-58882"
     ],
     "keywords_hit": {
-      "CVE": 1
+      "CVE": 5
     }
   },
   "alerts": [
@@ -41,6 +47,130 @@
           "cwe": null,
           "description": null,
           "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-01T12:01:44.218484+09:00",
+      "type": "single",
+      "title": "소프트웨어 공급망 노리는 보안 위협…레드햇 Konflux CI서 고위험 취약점 발견",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=209223",
+      "source": "데일리시큐 (전체) [RSS]",
+      "published": "2026-11-01T11:53:03+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-114217",
+        "CVE-2026-116964",
+        "CVE-2026-117681"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-114217",
+          "cvss_score": 8.6,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-312",
+          "description": "A flaw was found in konflux-ci. Continuous Integration (CI) automation scripts store sensitive GitHub access tokens in plaintext on the runner without cleaning them up after execution. A local attacker with access to the CI environment can read these stored credentials to gain unauthorized repository access, potentially allowing them to modify source code or release artifacts.",
+          "epss_score": 0.00086,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-116964",
+          "cvss_score": 8.4,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-94 (Code Injection)",
+          "description": "A flaw was found in konflux-ci. An attacker with repository write access can achieve arbitrary code execution within the Continuous Integration and Continuous Delivery (CI/CD) workflow environment. By injecting shell commands into environment export scripts, the attacker causes manifest synchronization scripts to dynamically evaluate unvalidated script output. Successful exploitation allows the attacker to compromise CI/CD pipelines, steal sensitive authentication tokens and deployment credentia",
+          "epss_score": 0.00337,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-117681",
+          "cvss_score": 8.0,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-295",
+          "description": "A flaw was found in konflux-ci. This vulnerability allows privilege escalation when the user interface proxy automatically disables Transport Layer Security (TLS) certificate verification for connections to internal backend services in environments lacking a default service certificate authority. Because the proxy attaches a cluster-scoped authentication token with user impersonation rights to these requests, an adjacent network attacker capable of intercepting traffic can capture the credential",
+          "epss_score": 0.00097,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-01T12:01:44.218484+09:00",
+      "type": "single",
+      "title": "워드프레스 심플폼에 치명적 보안 취약점…로그인 없이 악성파일 업로드 가능",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=209222",
+      "source": "데일리시큐 (전체) [RSS]",
+      "published": "2026-11-01T11:48:04+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-118235"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-118235",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-434 (Unrestricted File Upload)",
+          "description": "The SimpleForm – Form Maker to Chat Apps with Quiz, Poll and Multi Lead Notifications plugin for WordPress is vulnerable to Arbitrary File Upload in all versions up to, and including, 3.10.2 via the handle_upload function. This is due to missing server-side file key allowlist and pre-sanitization extension derivation that allows a trailing-dot filename to bypass all extension and MIME validation in handle_upload. This makes it possible for unauthenticated attackers to upload files that may be ex",
+          "epss_score": 0.0074,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-01T12:01:44.218484+09:00",
+      "type": "single",
+      "title": "워드프레스 쇼핑몰 플러그인에 CVSS 9.8 취약점…국내 쇼핑몰도 긴급 점검 필요",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=209221",
+      "source": "데일리시큐 (전체) [RSS]",
+      "published": "2026-11-01T11:41:28+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-109220"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-109220",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-502 (Deserialization)",
+          "description": "The PDF Invoice for WooCommerce + Drag and Drop Template Builder plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 7.1.1 via the 'customer_note' parameter parameter. This is due to insufficient sanitization of the customer_note checkout field, which is inlined verbatim into invoice HTML, entity-decoded back into a live tag by simplehtmldom, reassembled into raw bytes by mPDF, and passed to unserialize() in _getObjAttr without validation. This makes ",
+          "epss_score": 0.0052,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-01T12:01:44.218484+09:00",
+      "type": "single",
+      "title": "워드프레스 프로젝트 매니저 취약점 공개…원격코드실행 위험에 긴급 업데이트",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=209220",
+      "source": "데일리시큐 (전체) [RSS]",
+      "published": "2026-11-01T11:31:11+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-116512"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-116512",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-434 (Unrestricted File Upload)",
+          "description": "The Project Manager – AI Powered Project Management, Task Management, Kanban Board & Time Tracker plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 4.1.1 via the 'id' parameter parameter. This is due to unsanitized 'id' parameter value concatenated directly into the pipe-delimited validation rule string, which is then split and each token invoked as a dynamic PHP function with no allowlist check. This makes it possible for unauthenticated attackers",
+          "epss_score": 0.00584,
           "kev": false
         }
       ]
