@@ -2,10 +2,10 @@
   "date": "2026-11-03",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 4,
+    "scan_runs": 5,
     "total_articles_max": 1791,
     "matched_articles_max": 174,
-    "new_alerts": 7,
+    "new_alerts": 8,
     "cve_total": 5,
     "alerts_with_cve": 3,
     "cve_count": 5,
@@ -18,9 +18,10 @@
       "CVE-2026-98432"
     ],
     "keywords_hit": {
+      "CVE": 4,
       "Malware": 3,
-      "CVE": 3,
-      "Botnet": 2
+      "Botnet": 3,
+      "DDoS": 1
     }
   },
   "alerts": [
@@ -173,6 +174,22 @@
       "source": "The Hacker News (보안뉴스 종합) [RSS]",
       "published": "2026-11-02T15:50:26+00:00",
       "keywords": [
+        "Botnet"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-03T04:01:21.112329+09:00",
+      "type": "single",
+      "title": "⚡ Weekly Recap: Critical CVEs, Linux DDoS Botnet, Device-Code Phishing, Android Spyware and More",
+      "url": "https://thehackernews.com/2026/11/weekly-recap-critical-cves-linux-ddos.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-11-02T16:57:56+00:00",
+      "keywords": [
+        "DDoS",
+        "CVE",
         "Botnet"
       ],
       "ioc_raw_text": "",
