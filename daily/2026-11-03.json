@@ -2,10 +2,10 @@
   "date": "2026-11-03",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 7,
+    "scan_runs": 8,
     "total_articles_max": 1791,
-    "matched_articles_max": 174,
-    "new_alerts": 8,
+    "matched_articles_max": 178,
+    "new_alerts": 9,
     "cve_total": 5,
     "alerts_with_cve": 3,
     "cve_count": 5,
@@ -18,7 +18,7 @@
       "CVE-2026-98432"
     ],
     "keywords_hit": {
-      "CVE": 4,
+      "CVE": 5,
       "Malware": 3,
       "Botnet": 3,
       "DDoS": 1
@@ -191,6 +191,20 @@
         "DDoS",
         "CVE",
         "Botnet"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-03T07:01:14.988216+09:00",
+      "type": "single",
+      "title": "What exploited vulnerabilities have in common: A data-driven analysis of real-world attacks",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/11/02/exploited-vulnerabilities-common-data-driven-analysis-real-world-attacks/",
+      "source": "Microsoft Security Blog (보안업데이트) [RSS]",
+      "published": "2026-11-02T20:20:59+00:00",
+      "keywords": [
+        "CVE"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
