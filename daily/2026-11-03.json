@@ -1,0 +1,105 @@
+{
+  "date": "2026-11-03",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 1,
+    "total_articles_max": 1771,
+    "matched_articles_max": 170,
+    "new_alerts": 4,
+    "cve_total": 2,
+    "alerts_with_cve": 2,
+    "cve_count": 2,
+    "ioc_count": 0,
+    "merged_count": 0,
+    "unique_cves": [
+      "CVE-2026-104935",
+      "CVE-2026-98432"
+    ],
+    "keywords_hit": {
+      "CVE": 2,
+      "Malware": 2
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-11-03T00:01:44.833403+09:00",
+      "type": "single",
+      "title": "Mutipath TCP: Use and Detection, (Mon, Nov 2nd)",
+      "url": "https://isc.sans.edu/diary/rss/33482",
+      "source": "SANS ISC (인터넷폭풍센터) [RSS]",
+      "published": "2026-11-02T14:52:05+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-98432"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-98432",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": null,
+          "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nipv4: free inet_opt and ireq_opt after an RCU grace period\n\ntcp_v4_syn_recv_sock() transfers ownership of ireq->ireq_opt to the\nchild socket (newinet->inet_opt) without copying it.\n\nAnother cpu can concurrently process a retransmitted SYN for the same\nrequest socket, and send a SYNACK from tcp_check_req().\ntcp_v4_send_synack() and inet_csk_route_req() read ireq->ireq_opt\nunder rcu_read_lock() only, and ip_build_and_send_pkt() a",
+          "epss_score": 0.00457,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-03T00:01:44.833403+09:00",
+      "type": "single",
+      "title": "이반티 VPN, 기존 패치 적용했어도 추가 업데이트 필수…제로데이 연쇄 악용 확인",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=209274",
+      "source": "데일리시큐 (전체) [RSS]",
+      "published": "2026-11-02T23:59:04+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-104935"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-104935",
+          "cvss_score": 8.6,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-290",
+          "description": "Authentication bypass by spoofing in ICS before version 25.1.3.0 allows a remote unauthenticated attacker to execute arbitrary commands. This does not impact ICS version 22.7R2.14 or prior.",
+          "epss_score": 0.86766,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-03T00:01:44.833403+09:00",
+      "type": "single",
+      "title": "BITTER APT Using Fake Diplomatic Documents to Deliver PapRAT Spyware",
+      "url": "https://hackread.com/bitter-apt-fake-diplomatic-documents-paprat-spyware/",
+      "source": "HackRead (해킹/데이터유출) [RSS]",
+      "published": "2026-11-02T14:01:36+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-03T00:01:44.833403+09:00",
+      "type": "single",
+      "title": "AI-powered infostealer picks out the most profitable parts of your stolen data",
+      "url": "https://www.helpnetsecurity.com/2026/11/02/ai-powered-infostealer-volta-victim-profiling/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-11-02T14:47:57+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
