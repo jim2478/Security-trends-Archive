@@ -2,10 +2,10 @@
   "date": "2026-11-02",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 23,
+    "scan_runs": 24,
     "total_articles_max": 1801,
     "matched_articles_max": 179,
-    "new_alerts": 8,
+    "new_alerts": 9,
     "cve_total": 7,
     "alerts_with_cve": 5,
     "cve_count": 7,
@@ -21,7 +21,7 @@
     ],
     "keywords_hit": {
       "CVE": 6,
-      "Malware": 2
+      "Malware": 3
     }
   },
   "alerts": [
@@ -210,6 +210,20 @@
       "url": "https://any.run/cybersecurity-blog/it-sa-2026-recap/",
       "source": "ANY.RUN (악성코드샌드박스분석) [RSS]",
       "published": "2026-11-02T12:12:32+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-02T23:01:31.602491+09:00",
+      "type": "single",
+      "title": "Bitter Deploys PapRAT in Asian Cyber-Espionage Campaign",
+      "url": "https://www.infosecurity-magazine.com/news/paprat-bitter-cyberespionage/",
+      "source": "Infosecurity Magazine (보안뉴스) [RSS]",
+      "published": "2026-11-02T14:00:00+00:00",
       "keywords": [
         "Malware"
       ],
