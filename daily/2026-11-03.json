@@ -2,13 +2,13 @@
   "date": "2026-11-03",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 8,
+    "scan_runs": 9,
     "total_articles_max": 1791,
     "matched_articles_max": 178,
-    "new_alerts": 9,
-    "cve_total": 5,
-    "alerts_with_cve": 3,
-    "cve_count": 5,
+    "new_alerts": 10,
+    "cve_total": 6,
+    "alerts_with_cve": 4,
+    "cve_count": 6,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -18,7 +18,7 @@
       "CVE-2026-98432"
     ],
     "keywords_hit": {
-      "CVE": 5,
+      "CVE": 6,
       "Malware": 3,
       "Botnet": 3,
       "DDoS": 1
@@ -209,6 +209,32 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-03T08:01:07.164683+09:00",
+      "type": "single",
+      "title": "CVE-2026-98432: A Remote Use-After-Free in the Linux Kernel's TCP Stack",
+      "url": "https://www.akamai.com/blog/security-research/2026/nov/cve-2026-98432-remote-uaf-linux-kernels-tcp-stack",
+      "source": "Akamai Blog (보안리서치/위협분석) [RSS]",
+      "published": "2026-11-02T21:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-98432"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-98432",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": null,
+          "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nipv4: free inet_opt and ireq_opt after an RCU grace period\n\ntcp_v4_syn_recv_sock() transfers ownership of ireq->ireq_opt to the\nchild socket (newinet->inet_opt) without copying it.\n\nAnother cpu can concurrently process a retransmitted SYN for the same\nrequest socket, and send a SYNACK from tcp_check_req().\ntcp_v4_send_synack() and inet_csk_route_req() read ireq->ireq_opt\nunder rcu_read_lock() only, and ip_build_and_send_pkt() a",
+          "epss_score": 0.00457,
+          "kev": false
+        }
+      ]
     }
   ]
 }
