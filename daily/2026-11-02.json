@@ -2,21 +2,22 @@
   "date": "2026-11-02",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 15,
+    "scan_runs": 16,
     "total_articles_max": 1801,
     "matched_articles_max": 179,
-    "new_alerts": 3,
-    "cve_total": 2,
-    "alerts_with_cve": 2,
-    "cve_count": 2,
+    "new_alerts": 4,
+    "cve_total": 3,
+    "alerts_with_cve": 3,
+    "cve_count": 3,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2026-120263",
-      "CVE-2026-120307"
+      "CVE-2026-120307",
+      "CVE-2026-98432"
     ],
     "keywords_hit": {
-      "CVE": 3
+      "CVE": 4
     }
   },
   "alerts": [
@@ -85,6 +86,32 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-02T15:01:13.354369+09:00",
+      "type": "single",
+      "title": "리눅스 커널서 원격 루트 탈취 취약점 발견",
+      "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=711828",
+      "source": "디지털투데이 (전체기사) [RSS]",
+      "published": "2026-11-02T04:28:25+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-98432"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-98432",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": null,
+          "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nipv4: free inet_opt and ireq_opt after an RCU grace period\n\ntcp_v4_syn_recv_sock() transfers ownership of ireq->ireq_opt to the\nchild socket (newinet->inet_opt) without copying it.\n\nAnother cpu can concurrently process a retransmitted SYN for the same\nrequest socket, and send a SYNACK from tcp_check_req().\ntcp_v4_send_synack() and inet_csk_route_req() read ireq->ireq_opt\nunder rcu_read_lock() only, and ip_build_and_send_pkt() a",
+          "epss_score": 0.00457,
+          "kev": false
+        }
+      ]
     }
   ]
 }
