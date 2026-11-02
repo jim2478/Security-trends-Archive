@@ -2,17 +2,89 @@
   "date": "2026-11-02",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 11,
+    "scan_runs": 12,
     "total_articles_max": 1801,
     "matched_articles_max": 179,
-    "new_alerts": 0,
-    "cve_total": 0,
-    "alerts_with_cve": 0,
-    "cve_count": 0,
+    "new_alerts": 3,
+    "cve_total": 2,
+    "alerts_with_cve": 2,
+    "cve_count": 2,
     "ioc_count": 0,
     "merged_count": 0,
-    "unique_cves": [],
-    "keywords_hit": {}
+    "unique_cves": [
+      "CVE-2026-120263",
+      "CVE-2026-120307"
+    ],
+    "keywords_hit": {
+      "CVE": 3
+    }
   },
-  "alerts": []
+  "alerts": [
+    {
+      "scan_time_kst": "2026-11-02T11:01:28.993025+09:00",
+      "type": "single",
+      "title": "오픈소스 코드 저장소 관리 플랫폼 기티아, 관리자 계정 탈취 가능한 취약점 주의",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=209247",
+      "source": "데일리시큐 (전체) [RSS]",
+      "published": "2026-11-02T10:48:15+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-120263"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-120263",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": "CWE-287 (Authentication Bypass)",
+          "description": "When `[oauth2_client].ACCOUNT_LINKING` is set to `auto` (not the default) and registration is enabled, the link-account sign-up form looked up the existing account to link by the user name or email submitted in the form instead of the identity asserted by the OAuth2 provider. An attacker with an account on a configured OAuth2 provider could submit another user's name, link their external identity to that Gitea account and be signed in as it without its password, including as an administrator. Th",
+          "epss_score": 0.00198,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-02T11:01:28.993025+09:00",
+      "type": "single",
+      "title": "AI 플랫폼 베타9에 CVSS 9.9 취약점 3건…다른 고객 데이터 접근 위험",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=209245",
+      "source": "데일리시큐 (전체) [RSS]",
+      "published": "2026-11-02T10:29:21+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-120307"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-120307",
+          "cvss_score": 9.9,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-22 (Path Traversal)",
+          "description": "The Beta9 worker serves the sandbox file API from outside the container. getHostPathFromContainerPath turns the tenant's container path into a worker path. If the unresolved path starts with a mount destination, including the default upload mount at /tmp/.beta9, the remainder is joined onto that mount's source with filepath.Join, which cleans parent-directory segments after the prefix check. A long enough run of those segments names any absolute path on the worker. A path that matches no mount i",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-02T11:01:28.993025+09:00",
+      "type": "single",
+      "title": "[주의] 워드프레스 북잇, 인증 없는 SQL 삽입 취약점…2.6.0.7 업데이트 필수",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=209246",
+      "source": "데일리시큐 (전체) [RSS]",
+      "published": "2026-11-02T10:39:21+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
 }
