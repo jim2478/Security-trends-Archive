@@ -2,18 +2,19 @@
   "date": "2026-11-03",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 16,
+    "scan_runs": 17,
     "total_articles_max": 1801,
     "matched_articles_max": 183,
-    "new_alerts": 16,
-    "cve_total": 10,
-    "alerts_with_cve": 8,
-    "cve_count": 10,
+    "new_alerts": 18,
+    "cve_total": 11,
+    "alerts_with_cve": 9,
+    "cve_count": 11,
     "ioc_count": 14,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2026-104935",
       "CVE-2026-111357",
+      "CVE-2026-111497",
       "CVE-2026-118527",
       "CVE-2026-120283",
       "CVE-2026-58115",
@@ -22,10 +23,10 @@
       "CVE-2026-98432"
     ],
     "keywords_hit": {
-      "CVE": 10,
+      "CVE": 11,
       "Malware": 4,
       "Botnet": 4,
-      "DDoS": 2
+      "DDoS": 3
     }
   },
   "alerts": [
@@ -372,6 +373,46 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-11-03T16:01:09.349549+09:00",
+      "type": "single",
+      "title": "Product showcase: Sweet Virtual Patching stops HTTP2Shell while fixes catch up",
+      "url": "https://www.helpnetsecurity.com/2026/11/03/product-showcase-sweet-security-virtual-patching/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-11-03T06:00:18+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-111497"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-111497",
+          "cvss_score": 9.2,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-252",
+          "description": "A buffer overflow vulnerability in the Brotli decoder (c/dec/decode.c) in Google Brotli versions 1.0.3 through 1.2.0 on all platforms allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause a denial of service, or potentially execute arbitrary code using a crafted Brotli-compressed stream.\n\n\n\n\n\nUsers need to update any Brotli libraries or binaries between 1.0.3 through 1.2.0 to the latest available version: 1.0.10 or 1.1.1 or 1",
+          "epss_score": 0.82641,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-03T16:01:09.349549+09:00",
+      "type": "single",
+      "title": "초대형 공격 줄고 소규모 공격 폭증…달라진 DDoS 위협",
+      "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=712230",
+      "source": "디지털투데이 (전체기사) [RSS]",
+      "published": "2026-11-03T06:22:56+00:00",
+      "keywords": [
+        "DDoS"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
