@@ -2,13 +2,13 @@
   "date": "2026-11-03",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 23,
+    "scan_runs": 24,
     "total_articles_max": 1801,
     "matched_articles_max": 185,
-    "new_alerts": 25,
-    "cve_total": 13,
-    "alerts_with_cve": 11,
-    "cve_count": 13,
+    "new_alerts": 26,
+    "cve_total": 14,
+    "alerts_with_cve": 12,
+    "cve_count": 14,
     "ioc_count": 14,
     "merged_count": 0,
     "unique_cves": [
@@ -25,7 +25,7 @@
     ],
     "keywords_hit": {
       "CVE": 12,
-      "Malware": 8,
+      "Malware": 9,
       "Botnet": 7,
       "DDoS": 3
     }
@@ -537,6 +537,32 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-03T23:01:20.166694+09:00",
+      "type": "single",
+      "title": "Russia-linked cyber spies target Ukraine's war crimes investigations, military aid routes",
+      "url": "https://therecord.media/russia-linked-cyber-spies-target-ukraine-war-support",
+      "source": "The Record by Recorded Future (위협뉴스) [RSS]",
+      "published": "2026-11-03T13:39:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2025-8088"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2025-8088",
+          "cvss_score": 8.4,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-35",
+          "description": "A path traversal vulnerability affecting the Windows version of WinRAR allows the attackers to execute arbitrary code by crafting malicious archive files. This vulnerability was exploited in the wild and was discovered by Anton Cherepanov, Peter Košinár, and Peter Strýček\n     from ESET.",
+          "epss_score": 0.94008,
+          "kev": true
+        }
+      ]
     }
   ]
 }
