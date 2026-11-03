@@ -2,21 +2,22 @@
   "date": "2026-11-04",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
+    "scan_runs": 4,
     "total_articles_max": 1801,
     "matched_articles_max": 189,
-    "new_alerts": 6,
-    "cve_total": 2,
-    "alerts_with_cve": 1,
-    "cve_count": 2,
+    "new_alerts": 7,
+    "cve_total": 3,
+    "alerts_with_cve": 2,
+    "cve_count": 3,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
+      "CVE-2026-116606",
       "CVE-2026-63017",
       "CVE-2026-63774"
     ],
     "keywords_hit": {
-      "CVE": 3,
+      "CVE": 4,
       "Malware": 2,
       "Botnet": 1
     }
@@ -124,6 +125,32 @@
           "cwe": null,
           "description": null,
           "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-04T03:01:45.993967+09:00",
+      "type": "single",
+      "title": "Barracuda Flaws Could Be Chained to Bypass Authorization and Gain Root Access",
+      "url": "https://thehackernews.com/2026/11/barracuda-flaws-could-be-chained-to.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-11-03T15:59:19+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-116606"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-116606",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-288",
+          "description": "An authentication bypass in Barracuda Email Security Gateway versions earlier than 9.4.0.030 allows an unauthenticated remote attacker to invoke a configuration-import function and restore a crafted, compatible backup archive, resulting in unauthorized modification of the appliance’s global configuration.",
+          "epss_score": 0.00728,
           "kev": false
         }
       ]
