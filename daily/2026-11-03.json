@@ -2,10 +2,10 @@
   "date": "2026-11-03",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 21,
+    "scan_runs": 22,
     "total_articles_max": 1801,
     "matched_articles_max": 185,
-    "new_alerts": 22,
+    "new_alerts": 23,
     "cve_total": 12,
     "alerts_with_cve": 10,
     "cve_count": 12,
@@ -26,7 +26,7 @@
     "keywords_hit": {
       "CVE": 11,
       "Botnet": 7,
-      "Malware": 6,
+      "Malware": 7,
       "DDoS": 3
     }
   },
@@ -483,6 +483,20 @@
           "kev": true
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-11-03T21:01:17.814072+09:00",
+      "type": "single",
+      "title": "NCSC Chief Warns of Imminent AI Ransomware Threat to UK Critical Infrastructure",
+      "url": "https://www.infosecurity-magazine.com/news/ncsc-ai-ransomware-threat-uk-cni/",
+      "source": "Infosecurity Magazine (보안뉴스) [RSS]",
+      "published": "2026-11-03T11:45:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
