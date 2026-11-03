@@ -2,13 +2,13 @@
   "date": "2026-11-03",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 15,
+    "scan_runs": 16,
     "total_articles_max": 1801,
-    "matched_articles_max": 180,
-    "new_alerts": 14,
-    "cve_total": 8,
-    "alerts_with_cve": 6,
-    "cve_count": 8,
+    "matched_articles_max": 183,
+    "new_alerts": 16,
+    "cve_total": 10,
+    "alerts_with_cve": 8,
+    "cve_count": 10,
     "ioc_count": 14,
     "merged_count": 0,
     "unique_cves": [
@@ -16,11 +16,13 @@
       "CVE-2026-111357",
       "CVE-2026-118527",
       "CVE-2026-120283",
+      "CVE-2026-58115",
       "CVE-2026-75650",
+      "CVE-2026-81648",
       "CVE-2026-98432"
     ],
     "keywords_hit": {
-      "CVE": 8,
+      "CVE": 10,
       "Malware": 4,
       "Botnet": 4,
       "DDoS": 2
@@ -318,6 +320,58 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-03T15:01:27.499716+09:00",
+      "type": "single",
+      "title": "Attackers Exploit Critical Siemens IoT2050 Flaw to Plant Remote Command Backdoors",
+      "url": "https://thehackernews.com/2026/11/attackers-exploit-critical-siemens.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-11-03T05:34:41+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-58115"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-58115",
+          "cvss_score": 10.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-306 (Missing Authentication)",
+          "description": "A vulnerability has been identified in SIMATIC IoT2050 Advanced (6ES7647-0BA00-1YA2) (All versions < V4.3.4.1 running Industrial OS with Node-RED installed). Affected devices do not enforce authentication on the Node-RED HTTP interface, allowing unauthenticated access to programming nodes that are capable of executing system commands on the server.\r\nThis could allow an unauthenticated remote attacker to create malicious flows through the HTTP interface in order to execute arbitrary code on the u",
+          "epss_score": 0.00953,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-03T15:01:27.499716+09:00",
+      "type": "single",
+      "title": "Attackers Target Unpatched CryptoPayment Gateway Flaw That Can Expose Wallet Credentials",
+      "url": "https://thehackernews.com/2026/11/attackers-target-unpatched.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-11-03T05:34:37+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-81648"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-81648",
+          "cvss_score": 10.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-862 (Missing Authorization)",
+          "description": "The CryptoPayment Gateway WordPress plugin from 1.2.1 to 1.2.2 does not apply an authorization check on one of its AJAX endpoints, allowing unauthenticated users to invoke administrative operations, including deleting arbitrary files on the server, overwriting the payment gateway configuration and recovering stored wallet credentials in cleartext.",
+          "epss_score": 0.00498,
+          "kev": false
+        }
+      ]
     }
   ]
 }
