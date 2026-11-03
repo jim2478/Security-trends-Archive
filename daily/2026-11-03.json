@@ -2,13 +2,13 @@
   "date": "2026-11-03",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 22,
+    "scan_runs": 23,
     "total_articles_max": 1801,
     "matched_articles_max": 185,
-    "new_alerts": 23,
-    "cve_total": 12,
-    "alerts_with_cve": 10,
-    "cve_count": 12,
+    "new_alerts": 25,
+    "cve_total": 13,
+    "alerts_with_cve": 11,
+    "cve_count": 13,
     "ioc_count": 14,
     "merged_count": 0,
     "unique_cves": [
@@ -24,9 +24,9 @@
       "CVE-2026-98432"
     ],
     "keywords_hit": {
-      "CVE": 11,
+      "CVE": 12,
+      "Malware": 8,
       "Botnet": 7,
-      "Malware": 7,
       "DDoS": 3
     }
   },
@@ -491,6 +491,46 @@
       "url": "https://www.infosecurity-magazine.com/news/ncsc-ai-ransomware-threat-uk-cni/",
       "source": "Infosecurity Magazine (보안뉴스) [RSS]",
       "published": "2026-11-03T11:45:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-03T22:01:22.937300+09:00",
+      "type": "single",
+      "title": "Red Hat Patches 9.8-Rated Linux TCP RCE Flaw While Ubuntu Releases Fixes for Testing",
+      "url": "https://thehackernews.com/2026/11/red-hat-patches-98-rated-linux-tcp-rce.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-11-03T11:23:53+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-98432"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-98432",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": null,
+          "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nipv4: free inet_opt and ireq_opt after an RCU grace period\n\ntcp_v4_syn_recv_sock() transfers ownership of ireq->ireq_opt to the\nchild socket (newinet->inet_opt) without copying it.\n\nAnother cpu can concurrently process a retransmitted SYN for the same\nrequest socket, and send a SYNACK from tcp_check_req().\ntcp_v4_send_synack() and inet_csk_route_req() read ireq->ireq_opt\nunder rcu_read_lock() only, and ip_build_and_send_pkt() a",
+          "epss_score": 0.00457,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-03T22:01:22.937300+09:00",
+      "type": "single",
+      "title": "Russia-Aligned Gorbag Hackers Exploit WinRAR Flaw to Deploy Data-Stealing Malware",
+      "url": "https://thehackernews.com/2026/11/russia-aligned-gorbag-hackers-exploit.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-11-03T11:00:45+00:00",
       "keywords": [
         "Malware"
       ],
