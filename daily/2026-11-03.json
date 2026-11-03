@@ -2,26 +2,27 @@
   "date": "2026-11-03",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 12,
+    "scan_runs": 13,
     "total_articles_max": 1801,
     "matched_articles_max": 180,
-    "new_alerts": 11,
-    "cve_total": 7,
-    "alerts_with_cve": 5,
-    "cve_count": 7,
+    "new_alerts": 13,
+    "cve_total": 8,
+    "alerts_with_cve": 6,
+    "cve_count": 8,
     "ioc_count": 14,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2026-104935",
       "CVE-2026-111357",
       "CVE-2026-118527",
+      "CVE-2026-120283",
       "CVE-2026-75650",
       "CVE-2026-98432"
     ],
     "keywords_hit": {
-      "CVE": 7,
+      "CVE": 8,
       "Malware": 4,
-      "Botnet": 3,
+      "Botnet": 4,
       "DDoS": 1
     }
   },
@@ -263,6 +264,46 @@
           "kev": true
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-11-03T12:01:14.275613+09:00",
+      "type": "single",
+      "title": "링크시스 E8450 공유기에 최고위험 취약점 주의…인증 없이 원격 공격 가능",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=209282",
+      "source": "데일리시큐 (전체) [RSS]",
+      "published": "2026-11-03T11:43:01+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-120283"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-120283",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-119 (Buffer Overflow)",
+          "description": "A vulnerability was identified in Linksys E8450 1.2.00.360516. Affected is the function strcpy of the file /www/cgi-bin/portal.cgi. Such manipulation of the argument hidden_timezone leads to stack-based buffer overflow. The attack can be executed remotely. The vendor was contacted early about this disclosure but did not respond in any way.",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-03T12:01:14.275613+09:00",
+      "type": "single",
+      "title": "Tech Firms Dismantle Botnet That Turned 1.3M TV Boxes Into Proxies",
+      "url": "https://krebsonsecurity.com/2026/11/tech-firms-dismantle-botnet-that-turned-1-3m-tv-boxes-into-proxies/",
+      "source": "Krebs on Security (사이버범죄/보안심층분석) [RSS]",
+      "published": "2026-11-03T02:24:31+00:00",
+      "keywords": [
+        "Botnet"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
