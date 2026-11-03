@@ -2,10 +2,10 @@
   "date": "2026-11-03",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 19,
+    "scan_runs": 20,
     "total_articles_max": 1801,
     "matched_articles_max": 185,
-    "new_alerts": 18,
+    "new_alerts": 21,
     "cve_total": 11,
     "alerts_with_cve": 9,
     "cve_count": 11,
@@ -24,8 +24,8 @@
     ],
     "keywords_hit": {
       "CVE": 11,
-      "Malware": 4,
-      "Botnet": 4,
+      "Botnet": 7,
+      "Malware": 5,
       "DDoS": 3
     }
   },
@@ -409,6 +409,49 @@
       "published": "2026-11-03T06:22:56+00:00",
       "keywords": [
         "DDoS"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-03T19:01:53.235775+09:00",
+      "type": "single",
+      "title": "Google Dismantles XCPE Botnet of 1.3 Million Android Devices",
+      "url": "https://www.securityweek.com/google-dismantles-xcpe-botnet-of-1-3-million-android-devices/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-11-03T09:22:09+00:00",
+      "keywords": [
+        "Botnet"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-03T19:01:53.235775+09:00",
+      "type": "single",
+      "title": "Inside XCPE, the botnet that turned set-top boxes into proxy servers",
+      "url": "https://securityaffairs.com/202323/malware/inside-xcpe-the-botnet-that-turned-set-top-boxes-into-proxy-servers.html",
+      "source": "Security Affairs (보안뉴스/위협동향) [RSS]",
+      "published": "2026-11-03T09:52:37+00:00",
+      "keywords": [
+        "Botnet",
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-03T19:01:53.235775+09:00",
+      "type": "single",
+      "title": "Police and Tech Firms Team Up to Dismantle XCPE Botnet",
+      "url": "https://www.infosecurity-magazine.com/news/police-tech-firms-team-up-to/",
+      "source": "Infosecurity Magazine (보안뉴스) [RSS]",
+      "published": "2026-11-03T09:35:00+00:00",
+      "keywords": [
+        "Botnet"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
