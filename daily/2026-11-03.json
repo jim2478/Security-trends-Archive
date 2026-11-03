@@ -2,24 +2,25 @@
   "date": "2026-11-03",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 10,
-    "total_articles_max": 1791,
-    "matched_articles_max": 178,
-    "new_alerts": 10,
-    "cve_total": 6,
-    "alerts_with_cve": 4,
-    "cve_count": 6,
-    "ioc_count": 0,
+    "scan_runs": 11,
+    "total_articles_max": 1801,
+    "matched_articles_max": 180,
+    "new_alerts": 11,
+    "cve_total": 7,
+    "alerts_with_cve": 5,
+    "cve_count": 7,
+    "ioc_count": 14,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2026-104935",
       "CVE-2026-111357",
       "CVE-2026-118527",
+      "CVE-2026-75650",
       "CVE-2026-98432"
     ],
     "keywords_hit": {
-      "CVE": 6,
-      "Malware": 3,
+      "CVE": 7,
+      "Malware": 4,
       "Botnet": 3,
       "DDoS": 1
     }
@@ -233,6 +234,33 @@
           "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nipv4: free inet_opt and ireq_opt after an RCU grace period\n\ntcp_v4_syn_recv_sock() transfers ownership of ireq->ireq_opt to the\nchild socket (newinet->inet_opt) without copying it.\n\nAnother cpu can concurrently process a retransmitted SYN for the same\nrequest socket, and send a SYNACK from tcp_check_req().\ntcp_v4_send_synack() and inet_csk_route_req() read ireq->ireq_opt\nunder rcu_read_lock() only, and ip_build_and_send_pkt() a",
           "epss_score": 0.00457,
           "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-03T10:01:12.696913+09:00",
+      "type": "single",
+      "title": "StyleSmuggler Exploitation Deploys PSK Agent RAT Against Magento Stores",
+      "url": "https://www.imperva.com/blog/stylesmuggler-exploitation-deploys-psk-agent-rat-against-magento-stores/",
+      "source": "Imperva Blog (DDoS/봇 방어) [RSS]",
+      "published": "2026-11-02T20:26:20+00:00",
+      "keywords": [
+        "CVE",
+        "Malware"
+      ],
+      "ioc_raw_text": "[IP] 132[.]243[.]238[.]178\n[IP] 86[.]107[.]100[.]105\n[IP] 185[.]18[.]222[.]13\n[IP] 64[.]204[.]130[.]9\n[IP] 99[.]84[.]67[.]186\n[IP] 185[.]157[.]160[.]251\n[Domain] ntp[.]timesync[.]to\n[Domain] transfer[.]chinow[.]abrdns[.]com\n[Domain] transfer[.]onlypsk[.]abrdns[.]com\n[Domain] 0f851bdc9d[.]ddns[.]1433[.]eu[.]org\n[Domain] windwsecurity[.]run\n[SHA256] 1811a1d63310737e969348d16d95f80bf56f8e8896fc64eb5d6d6dc314e2a547\n[SHA256] 6dbfb04c063170af13a8151346898ebcb9c4b827fa8d16a96018419b746601a6\n[SHA256] fc9bcdb3a442880e585d6fe4ddaec62d62af641f8ac3cceeb6a553985a7d9094",
+      "cve_ids": [
+        "CVE-2026-75650"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-75650",
+          "cvss_score": 10.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-1336",
+          "description": "Adobe Commerce is affected by an Improper Neutralization of Special Elements Used in a Template Engine vulnerability that could result in arbitrary code execution in the context of the current user. An attacker could exploit this vulnerability to execute arbitrary code. Exploitation of this issue does not require user interaction. Scope is changed.",
+          "epss_score": 0.03949,
+          "kev": true
         }
       ]
     }
