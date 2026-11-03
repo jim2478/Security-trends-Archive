@@ -1,0 +1,93 @@
+{
+  "date": "2026-11-04",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 1,
+    "total_articles_max": 1781,
+    "matched_articles_max": 189,
+    "new_alerts": 5,
+    "cve_total": 0,
+    "alerts_with_cve": 0,
+    "cve_count": 0,
+    "ioc_count": 0,
+    "merged_count": 0,
+    "unique_cves": [],
+    "keywords_hit": {
+      "CVE": 2,
+      "Malware": 2,
+      "Botnet": 1
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-11-04T00:01:36.502586+09:00",
+      "type": "single",
+      "title": "Novee puts forgotten internet-facing assets through penetration testing",
+      "url": "https://www.helpnetsecurity.com/2026/11/03/novee-external-surface-testing/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-11-03T14:00:26+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-04T00:01:36.502586+09:00",
+      "type": "single",
+      "title": "Assured helps recovery teams find clean backups after ransomware attacks",
+      "url": "https://www.helpnetsecurity.com/2026/11/03/assured-data-protection-cleanroom-scan/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-11-03T13:59:38+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-04T00:01:36.502586+09:00",
+      "type": "single",
+      "title": "Supermarket Freezer Cyberattacks Spread Across Europe as Experts Warn of Wider IoT Risks",
+      "url": "https://www.itsecurityguru.org/2026/11/03/supermarket-freezer-cyberattacks-europe/?utm_source=rss&utm_medium=rss&utm_campaign=supermarket-freezer-cyberattacks-europe",
+      "source": "IT Security Guru (보안뉴스) [RSS]",
+      "published": "2026-11-03T14:12:12+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-04T00:01:36.502586+09:00",
+      "type": "single",
+      "title": "Introducing Zero Wire, a hub for investigating critical Internet vulnerabilities",
+      "url": "https://blog.cloudflare.com/zero-wire/",
+      "source": "Cloudflare Blog (DDoS/웹보안) [RSS]",
+      "published": "2026-11-03T14:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-04T00:01:36.502586+09:00",
+      "type": "single",
+      "title": "A hidden backdoor put 1.3 million TV boxes to work for criminals",
+      "url": "https://www.malwarebytes.com/blog/mobile/2026/11/a-hidden-backdoor-put-1-3-million-tv-boxes-to-work-for-criminals",
+      "source": "Malwarebytes Labs (악성코드/스캠) [RSS]",
+      "published": "2026-11-03T14:11:25+00:00",
+      "keywords": [
+        "Botnet"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
