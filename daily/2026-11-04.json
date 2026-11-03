@@ -2,10 +2,10 @@
   "date": "2026-11-04",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 5,
+    "scan_runs": 6,
     "total_articles_max": 1801,
     "matched_articles_max": 189,
-    "new_alerts": 7,
+    "new_alerts": 8,
     "cve_total": 3,
     "alerts_with_cve": 2,
     "cve_count": 3,
@@ -18,7 +18,7 @@
     ],
     "keywords_hit": {
       "CVE": 4,
-      "Malware": 2,
+      "Malware": 3,
       "Botnet": 1
     }
   },
@@ -154,6 +154,20 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-11-04T05:01:41.472375+09:00",
+      "type": "single",
+      "title": "Binance Hack: How Fake Job Interviews and AI Abuse Led to a $6.34 Billion Attack",
+      "url": "https://securityaffairs.com/202369/cyber-crime/binance-hack-how-fake-job-interviews-and-ai-abuse-led-to-a-6-34-billion-attack.html",
+      "source": "Security Affairs (보안뉴스/위협동향) [RSS]",
+      "published": "2026-11-03T19:44:26+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
