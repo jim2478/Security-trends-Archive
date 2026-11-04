@@ -1,0 +1,35 @@
+{
+  "date": "2026-11-05",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 1,
+    "total_articles_max": 1761,
+    "matched_articles_max": 179,
+    "new_alerts": 1,
+    "cve_total": 0,
+    "alerts_with_cve": 0,
+    "cve_count": 0,
+    "ioc_count": 0,
+    "merged_count": 0,
+    "unique_cves": [],
+    "keywords_hit": {
+      "Malware": 1
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-11-05T00:01:32.737144+09:00",
+      "type": "single",
+      "title": "China-Aligned Group Abuses Sogou Input Method to Deliver Malware",
+      "url": "https://www.infosecurity-magazine.com/news/slippynunchucks-sogou-dns-hijacking/",
+      "source": "Infosecurity Magazine (보안뉴스) [RSS]",
+      "published": "2026-11-04T15:00:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
