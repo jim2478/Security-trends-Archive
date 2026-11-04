@@ -2,16 +2,17 @@
   "date": "2026-11-04",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 23,
+    "scan_runs": 24,
     "total_articles_max": 1801,
     "matched_articles_max": 189,
-    "new_alerts": 16,
-    "cve_total": 9,
-    "alerts_with_cve": 7,
-    "cve_count": 9,
+    "new_alerts": 17,
+    "cve_total": 10,
+    "alerts_with_cve": 8,
+    "cve_count": 10,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
+      "CVE-2000-0411",
       "CVE-2026-109618",
       "CVE-2026-109619",
       "CVE-2026-116606",
@@ -21,7 +22,7 @@
       "CVE-2026-63774"
     ],
     "keywords_hit": {
-      "CVE": 10,
+      "CVE": 11,
       "Malware": 4,
       "Botnet": 1,
       "봇넷": 1
@@ -355,6 +356,32 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-04T23:01:51.800561+09:00",
+      "type": "single",
+      "title": "The Classics Return: Vulnerable E-Mail Scripts, (Wed, Nov 4th)",
+      "url": "https://isc.sans.edu/diary/rss/33488",
+      "source": "SANS ISC (인터넷폭풍센터) [RSS]",
+      "published": "2026-11-04T13:24:13+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2000-0411"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2000-0411",
+          "cvss_score": 5.0,
+          "cvss_severity": "MEDIUM",
+          "cwe": "NVD-CWE-Other (Other)",
+          "description": "Matt Wright's FormMail CGI script allows remote attackers to obtain environmental variables via the env_report parameter.",
+          "epss_score": 0.07501,
+          "kev": false
+        }
+      ]
     }
   ]
 }
