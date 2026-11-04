@@ -2,24 +2,25 @@
   "date": "2026-11-05",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
+    "scan_runs": 4,
     "total_articles_max": 1801,
     "matched_articles_max": 183,
-    "new_alerts": 4,
-    "cve_total": 4,
-    "alerts_with_cve": 1,
-    "cve_count": 4,
+    "new_alerts": 5,
+    "cve_total": 5,
+    "alerts_with_cve": 2,
+    "cve_count": 5,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2026-105482",
       "CVE-2026-105483",
       "CVE-2026-106069",
+      "CVE-2026-109593",
       "CVE-2026-111497"
     ],
     "keywords_hit": {
       "Malware": 2,
-      "CVE": 1,
+      "CVE": 2,
       "Botnet": 1
     }
   },
@@ -121,6 +122,32 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-05T03:02:01.509518+09:00",
+      "type": "single",
+      "title": "SonicWall Won't Patch EoL GMS Flaws That Could Expose Files, Alter Database Records",
+      "url": "https://thehackernews.com/2026/11/sonicwall-wont-patch-eol-gms-flaws-that.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-11-04T17:00:38+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-109593"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-109593",
+          "cvss_score": 9.1,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-636",
+          "description": "An unauthenticated attacker with network access to the SonicWall GMS 9.5.2 and earlier versions may be able to read internal GMS files, potentially exposing sensitive information.",
+          "epss_score": 0.00521,
+          "kev": false
+        }
+      ]
     }
   ]
 }
