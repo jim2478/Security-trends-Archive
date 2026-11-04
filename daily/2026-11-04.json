@@ -2,23 +2,26 @@
   "date": "2026-11-04",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 19,
+    "scan_runs": 20,
     "total_articles_max": 1801,
     "matched_articles_max": 189,
-    "new_alerts": 11,
-    "cve_total": 4,
-    "alerts_with_cve": 3,
-    "cve_count": 4,
+    "new_alerts": 14,
+    "cve_total": 8,
+    "alerts_with_cve": 6,
+    "cve_count": 8,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
+      "CVE-2026-109618",
+      "CVE-2026-109619",
       "CVE-2026-116606",
       "CVE-2026-119977",
+      "CVE-2026-58868",
       "CVE-2026-63017",
       "CVE-2026-63774"
     ],
     "keywords_hit": {
-      "CVE": 5,
+      "CVE": 8,
       "Malware": 4,
       "Botnet": 1,
       "봇넷": 1
@@ -224,6 +227,94 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-04T19:01:20.980362+09:00",
+      "type": "single",
+      "title": "Google Issues Patches for Critical Android Flaw That Could Allow RCE Without User Interaction",
+      "url": "https://thehackernews.com/2026/11/google-patches-critical-android-flaw.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-11-04T07:46:15+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-58868"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-58868",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": "In onOutputReceived of FrameDecoder.cpp, there is a possible out-of-bounds write due to a heap buffer overflow. This could lead to remote code execution with no additional execution privileges needed. User interaction is not needed for exploitation.",
+          "epss_score": 0.00211,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-04T19:01:20.980362+09:00",
+      "type": "single",
+      "title": "U.S. CISA adds WordPress flaw to its Known Exploited Vulnerabilities catalog",
+      "url": "https://securityaffairs.com/202394/security/u-s-cisa-adds-wordpress-flaw-to-its-known-exploited-vulnerabilities-catalog-2.html",
+      "source": "Security Affairs (보안뉴스/위협동향) [RSS]",
+      "published": "2026-11-04T09:16:37+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-119977"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-119977",
+          "cvss_score": 8.1,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-367",
+          "description": "WordPress Core is vulnerable to Remote Code Execution in versions 4.7 through 7.1.3. This is due to predictable, web-accessible staging paths used during full-package core upgrades. This makes it possible for unauthenticated attackers to execute code on the server during the upgrade window.",
+          "epss_score": 0.006,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-04T19:01:20.980362+09:00",
+      "type": "single",
+      "title": "PHP2Shell on Windows and macOS: Automating the PHP Upgrade, With or Without an Agent",
+      "url": "https://blog.qualys.com/category/product-tech",
+      "source": "Qualys Blog (취약점관리) [RSS]",
+      "published": "2026-11-04T09:20:32+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-109618",
+        "CVE-2026-109619"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-109618",
+          "cvss_score": 9.2,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-416 (Use After Free)",
+          "description": "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. Some contexts may not properly account for this scenario and leave request memory in an uninitialized state before performing an allocation. The subsequent request cleanup procedure may read or branch on this memory. Multiple OOM strategies can consistently trigger this condition and lead to remote code execution (RCE).",
+          "epss_score": 0.99999,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-109619",
+          "cvss_score": 9.2,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-416 (Use After Free)",
+          "description": "PHP has various global state that temporarily points into request memory. In some scenarios, global state may not be correctly reset, or may be repopulated after being reset. The global state may then refer to request memory even after it has been freed. Subsequent requests may read or branch on this stale state before it is fully initialized. Multiple strategies can trigger this condition and produce remote code execution (RCE).",
+          "epss_score": 0.99999,
+          "kev": true
+        }
+      ]
     }
   ]
 }
