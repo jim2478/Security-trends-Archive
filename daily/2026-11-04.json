@@ -2,13 +2,13 @@
   "date": "2026-11-04",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 20,
+    "scan_runs": 21,
     "total_articles_max": 1801,
     "matched_articles_max": 189,
-    "new_alerts": 14,
-    "cve_total": 8,
-    "alerts_with_cve": 6,
-    "cve_count": 8,
+    "new_alerts": 16,
+    "cve_total": 9,
+    "alerts_with_cve": 7,
+    "cve_count": 9,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -21,7 +21,7 @@
       "CVE-2026-63774"
     ],
     "keywords_hit": {
-      "CVE": 8,
+      "CVE": 10,
       "Malware": 4,
       "Botnet": 1,
       "봇넷": 1
@@ -315,6 +315,46 @@
           "kev": true
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-11-04T20:01:25.769545+09:00",
+      "type": "single",
+      "title": "CVE-2026-58868: Critical Android Bug Could Let Attackers Run Remote Code",
+      "url": "https://securityaffairs.com/202414/mobile-2/cve-2026-58868-critical-android-bug-could-let-attackers-run-remote-code.html",
+      "source": "Security Affairs (보안뉴스/위협동향) [RSS]",
+      "published": "2026-11-04T10:26:52+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-58868"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-58868",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": "In onOutputReceived of FrameDecoder.cpp, there is a possible out-of-bounds write due to a heap buffer overflow. This could lead to remote code execution with no additional execution privileges needed. User interaction is not needed for exploitation.",
+          "epss_score": 0.00211,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-04T20:01:25.769545+09:00",
+      "type": "single",
+      "title": "모니터랩, 에이아이랩스 신버전 출시…\"AI와 대화하듯 위협 정보 검색\"",
+      "url": "https://zdnet.co.kr/view/?no=20261104185325",
+      "source": "지디넷코리아 [RSS]",
+      "published": "2026-11-04T09:54:58+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
