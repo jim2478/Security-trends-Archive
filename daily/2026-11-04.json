@@ -2,10 +2,10 @@
   "date": "2026-11-04",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 10,
+    "scan_runs": 11,
     "total_articles_max": 1801,
     "matched_articles_max": 189,
-    "new_alerts": 8,
+    "new_alerts": 9,
     "cve_total": 3,
     "alerts_with_cve": 2,
     "cve_count": 3,
@@ -19,7 +19,8 @@
     "keywords_hit": {
       "CVE": 4,
       "Malware": 3,
-      "Botnet": 1
+      "Botnet": 1,
+      "봇넷": 1
     }
   },
   "alerts": [
@@ -164,6 +165,20 @@
       "published": "2026-11-03T19:44:26+00:00",
       "keywords": [
         "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-04T10:01:11.119947+09:00",
+      "type": "single",
+      "title": "구글, 악성코드 심긴 안드로이드TV 130만대 원격 통제 차단…펌웨어엔 여전히 잔존",
+      "url": "https://www.digitaltoday.co.kr/news/articleView.html?idxno=712445",
+      "source": "디지털투데이 (전체기사) [RSS]",
+      "published": "2026-11-04T00:47:51+00:00",
+      "keywords": [
+        "봇넷"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
