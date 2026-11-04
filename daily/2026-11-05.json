@@ -2,13 +2,13 @@
   "date": "2026-11-05",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 7,
+    "scan_runs": 8,
     "total_articles_max": 1801,
     "matched_articles_max": 183,
-    "new_alerts": 6,
-    "cve_total": 5,
-    "alerts_with_cve": 2,
-    "cve_count": 5,
+    "new_alerts": 8,
+    "cve_total": 7,
+    "alerts_with_cve": 3,
+    "cve_count": 7,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -16,11 +16,13 @@
       "CVE-2026-105483",
       "CVE-2026-106069",
       "CVE-2026-109593",
-      "CVE-2026-111497"
+      "CVE-2026-111497",
+      "CVE-2026-111560",
+      "CVE-2026-116606"
     ],
     "keywords_hit": {
-      "Malware": 3,
-      "CVE": 2,
+      "Malware": 4,
+      "CVE": 3,
       "Botnet": 1
     }
   },
@@ -156,6 +158,56 @@
       "url": "https://hackread.com/fake-gta-vi-download-sites-malware-launch/",
       "source": "HackRead (해킹/데이터유출) [RSS]",
       "published": "2026-11-04T18:16:17+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-05T07:01:31.923985+09:00",
+      "type": "single",
+      "title": "Two Barracuda ESG Flaws Could Be Combined for Full Root Access; Patches Released",
+      "url": "https://securityaffairs.com/202440/security/two-barracuda-esg-flaws-could-be-combined-for-full-root-access-patches-released.html",
+      "source": "Security Affairs (보안뉴스/위협동향) [RSS]",
+      "published": "2026-11-04T21:04:35+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-116606",
+        "CVE-2026-111560"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-116606",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-288",
+          "description": "An authentication bypass in Barracuda Email Security Gateway versions earlier than 9.4.0.030 allows an unauthenticated remote attacker to invoke a configuration-import function and restore a crafted, compatible backup archive, resulting in unauthorized modification of the appliance’s global configuration.",
+          "epss_score": 0.00728,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-111560",
+          "cvss_score": 8.6,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-78 (OS Command Injection)",
+          "description": "Improper neutralization of shell metacharacters in the timezone configuration field in certain Barracuda appliance products using common Barracuda code allows an authenticated administrator to inject OS commands that execute with root privileges when the crafted timezone value is subsequently processed.",
+          "epss_score": 0.00471,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-05T07:01:31.923985+09:00",
+      "type": "single",
+      "title": "Vercel rolls out new protection against stolen session cookie attacks",
+      "url": "https://www.bleepingcomputer.com/news/security/vercel-rolls-out-new-protection-against-stolen-session-cookie-attacks/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-11-04T21:31:18+00:00",
       "keywords": [
         "Malware"
       ],
