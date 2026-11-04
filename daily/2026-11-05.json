@@ -2,18 +2,24 @@
   "date": "2026-11-05",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 1,
-    "total_articles_max": 1761,
-    "matched_articles_max": 179,
-    "new_alerts": 1,
-    "cve_total": 0,
-    "alerts_with_cve": 0,
-    "cve_count": 0,
+    "scan_runs": 2,
+    "total_articles_max": 1801,
+    "matched_articles_max": 181,
+    "new_alerts": 2,
+    "cve_total": 4,
+    "alerts_with_cve": 1,
+    "cve_count": 4,
     "ioc_count": 0,
     "merged_count": 0,
-    "unique_cves": [],
+    "unique_cves": [
+      "CVE-2026-105482",
+      "CVE-2026-105483",
+      "CVE-2026-106069",
+      "CVE-2026-111497"
+    ],
     "keywords_hit": {
-      "Malware": 1
+      "Malware": 1,
+      "CVE": 1
     }
   },
   "alerts": [
@@ -30,6 +36,62 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-05T01:01:26.664159+09:00",
+      "type": "single",
+      "title": "퓨쳐시스템, Node.js 취약점 4건 대응…위가디아 통합관리 제품 업데이트 제공",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=209312",
+      "source": "데일리시큐 (전체) [RSS]",
+      "published": "2026-11-05T00:32:16+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-111497",
+        "CVE-2026-105482",
+        "CVE-2026-105483",
+        "CVE-2026-106069"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-111497",
+          "cvss_score": 9.2,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-252",
+          "description": "A buffer overflow vulnerability in the Brotli decoder (c/dec/decode.c) in Google Brotli versions 1.0.3 through 1.2.0 on all platforms allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause a denial of service, or potentially execute arbitrary code using a crafted Brotli-compressed stream.\n\n\n\n\n\nUsers need to update any Brotli libraries or binaries between 1.0.3 through 1.2.0 to the latest available version: 1.0.10 or 1.1.1 or 1",
+          "epss_score": 0.82641,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-105482",
+          "cvss_score": 7.4,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-284 (Improper Access Control)",
+          "description": "A flaw in Node.js DNS resolution allows hostnames containing a NUL byte to be silently truncated by the dns.resolve*() functions and dns.reverse(). This is an incomplete fix of CVE-2026-48930, which only covered dns.lookup() and the net/tls host options.\r\n\r\nBecause the name is passed to c-ares as a C string, resolving attacker.example\\0.trusted.example queries attacker.example and returns its records without any error. Applications that validate a hostname, for example against a domain allowlist",
+          "epss_score": 0.00468,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-105483",
+          "cvss_score": 7.4,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-295",
+          "description": "A flaw in Node.js TLS hostname verification allows a certificate without a matching IP address SAN to authenticate a connection to an IPv4 address when the host is written with non-ASCII characters, such as fullwidth digits (`１２７.0.0.1`).\n\n`tls.checkServerIdentity()` did not recognize such hosts as IP addresses, even though they normalize and resolve to a regular IPv4 address, and matched them against the certificate DNS names and Common Name instead. A certificate containing `DNS:127.0.0.1` or ",
+          "epss_score": 0.00304,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-106069",
+          "cvss_score": 7.4,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-295",
+          "description": "A flaw in Node.js TLS hostname verification can cause a server certificate to be validated against a different IP address than the one the client connected to, when the host is a non-canonical IPv4 literal with a leading zero, such as `0127.0.0.1`.\n\n`tls.checkServerIdentity()` normalizes the host following the WHATWG URL rules, which read a leading-zero octet as octal (`0127.0.0.1` becomes `87.0.0.1`), while the connection is made through the operating system resolver, which on some platforms su",
+          "epss_score": 0.00304,
+          "kev": false
+        }
+      ]
     }
   ]
 }
