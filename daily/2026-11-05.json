@@ -2,13 +2,13 @@
   "date": "2026-11-05",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 20,
+    "scan_runs": 21,
     "total_articles_max": 1801,
     "matched_articles_max": 183,
-    "new_alerts": 11,
-    "cve_total": 10,
-    "alerts_with_cve": 5,
-    "cve_count": 10,
+    "new_alerts": 12,
+    "cve_total": 12,
+    "alerts_with_cve": 6,
+    "cve_count": 12,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -18,14 +18,16 @@
       "CVE-2026-105482",
       "CVE-2026-105483",
       "CVE-2026-106069",
+      "CVE-2026-107441",
       "CVE-2026-109593",
       "CVE-2026-111497",
       "CVE-2026-111560",
-      "CVE-2026-116606"
+      "CVE-2026-116606",
+      "CVE-2026-7273"
     ],
     "keywords_hit": {
       "Malware": 6,
-      "CVE": 5,
+      "CVE": 6,
       "Botnet": 1
     }
   },
@@ -294,6 +296,42 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-05T20:01:12.272402+09:00",
+      "type": "single",
+      "title": "Zyxel Switch Hacks Blamed on Patched Flaw Actually Exploited a Zero-Day",
+      "url": "https://www.securityweek.com/zyxel-switch-hacks-blamed-on-patched-flaw-actually-exploited-a-zero-day/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-11-05T10:56:41+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-107441",
+        "CVE-2026-7273"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-107441",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-787 (Out-of-bounds Write)",
+          "description": "An out-of-bounds write vulnerability in the CGI program of Zyxel GS1900-24E firmware versions through 2.90(AAHK.2)C0 could allow an unauthenticated adjacent attacker  to exploit the flaw and potentially execute OS commands via a crafted HTTP request.",
+          "epss_score": 0.00293,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-7273",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-121",
+          "description": "A stack-based buffer overflow vulnerability in the CGI program of Zyxel GS1900-48HPv2 firmware versions through 2.90(ABTQ.1)C0 could allow a LAN-based, unauthenticated attacker to exploit the flaw and potentially execute OS commands via a crafted HTTP request.",
+          "epss_score": 0.02778,
+          "kev": true
+        }
+      ]
     }
   ]
 }
