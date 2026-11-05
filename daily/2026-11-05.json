@@ -2,16 +2,17 @@
   "date": "2026-11-05",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 21,
+    "scan_runs": 22,
     "total_articles_max": 1801,
     "matched_articles_max": 183,
-    "new_alerts": 12,
-    "cve_total": 12,
-    "alerts_with_cve": 6,
-    "cve_count": 12,
+    "new_alerts": 14,
+    "cve_total": 14,
+    "alerts_with_cve": 7,
+    "cve_count": 14,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
+      "CVE-2019-3462",
       "CVE-2024-27834",
       "CVE-2024-31853",
       "CVE-2024-31854",
@@ -19,6 +20,7 @@
       "CVE-2026-105483",
       "CVE-2026-106069",
       "CVE-2026-107441",
+      "CVE-2026-109518",
       "CVE-2026-109593",
       "CVE-2026-111497",
       "CVE-2026-111560",
@@ -26,8 +28,8 @@
       "CVE-2026-7273"
     ],
     "keywords_hit": {
-      "Malware": 6,
-      "CVE": 6,
+      "Malware": 7,
+      "CVE": 7,
       "Botnet": 1
     }
   },
@@ -332,6 +334,56 @@
           "kev": true
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-11-05T21:01:23.285073+09:00",
+      "type": "single",
+      "title": "CVE-2026-109518: apt Flaw Lets Attackers Swap Packages After Verification and Run Code as Root",
+      "url": "https://www.stepsecurity.io/blog/cve-2026-109518-apt-package-swap-root",
+      "source": "StepSecurity (CI/CD 보안) [RSS]",
+      "published": "2026-11-05T11:49:11+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-109518",
+        "CVE-2019-3462"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-109518",
+          "cvss_score": 7.7,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-62",
+          "description": "On Debian, Ubuntu, and derivative Linux distributions, an on-path attacker who can manipulate the HTTP traffic (including a malicious mirror or proxy) between an APT client and an archive server triggered by a package install can trick the client into installing an attacker-controlled unverified package and achieve remote code execution with root privileges.\n\n\n\nThe vulnerability is caused by the reuse of hard links and requires the client to follow redirects and retry the download of package fil",
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2019-3462",
+          "cvss_score": 8.1,
+          "cvss_severity": "HIGH",
+          "cwe": "NVD-CWE-noinfo (Insufficient Information)",
+          "description": "Incorrect sanitation of the 302 redirect field in HTTP transport method of apt versions 1.4.8 and earlier can lead to content injection by a MITM attacker, potentially leading to remote code execution on the target machine.",
+          "epss_score": 0.14555,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-05T21:01:23.285073+09:00",
+      "type": "single",
+      "title": "Scammers capitalize on GTA 6 hype to push malware and crypto cons",
+      "url": "https://www.helpnetsecurity.com/2026/11/05/gta-6-scams-fake-leaks-early-access/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-11-05T11:41:50+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
