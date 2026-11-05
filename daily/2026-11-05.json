@@ -2,13 +2,13 @@
   "date": "2026-11-05",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 22,
+    "scan_runs": 23,
     "total_articles_max": 1801,
     "matched_articles_max": 183,
-    "new_alerts": 14,
-    "cve_total": 14,
-    "alerts_with_cve": 7,
-    "cve_count": 14,
+    "new_alerts": 15,
+    "cve_total": 16,
+    "alerts_with_cve": 8,
+    "cve_count": 16,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -28,8 +28,8 @@
       "CVE-2026-7273"
     ],
     "keywords_hit": {
+      "CVE": 8,
       "Malware": 7,
-      "CVE": 7,
       "Botnet": 1
     }
   },
@@ -384,6 +384,42 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-05T22:01:09.729082+09:00",
+      "type": "single",
+      "title": "Patched Zyxel GS1900 switches remained open to in-the-wild exploit (CVE-2026-107441)",
+      "url": "https://www.helpnetsecurity.com/2026/11/05/zyxel-cve-2026-107441-exploit/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-11-05T12:06:32+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-107441",
+        "CVE-2026-7273"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-107441",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-787 (Out-of-bounds Write)",
+          "description": "An out-of-bounds write vulnerability in the CGI program of Zyxel GS1900-24E firmware versions through 2.90(AAHK.2)C0 could allow an unauthenticated adjacent attacker  to exploit the flaw and potentially execute OS commands via a crafted HTTP request.",
+          "epss_score": 0.00293,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-7273",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-121",
+          "description": "A stack-based buffer overflow vulnerability in the CGI program of Zyxel GS1900-48HPv2 firmware versions through 2.90(ABTQ.1)C0 could allow a LAN-based, unauthenticated attacker to exploit the flaw and potentially execute OS commands via a crafted HTTP request.",
+          "epss_score": 0.02778,
+          "kev": true
+        }
+      ]
     }
   ]
 }
