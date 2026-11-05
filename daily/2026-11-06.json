@@ -1,0 +1,35 @@
+{
+  "date": "2026-11-06",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 1,
+    "total_articles_max": 1761,
+    "matched_articles_max": 170,
+    "new_alerts": 1,
+    "cve_total": 0,
+    "alerts_with_cve": 0,
+    "cve_count": 0,
+    "ioc_count": 0,
+    "merged_count": 0,
+    "unique_cves": [],
+    "keywords_hit": {
+      "Malware": 1
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-11-06T00:01:24.606025+09:00",
+      "type": "single",
+      "title": "Vercel ties login sessions to devices, rolls out AI security reviews in public beta",
+      "url": "https://www.helpnetsecurity.com/2026/11/05/vercel-security-review-session-hijacking/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-11-05T14:37:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
