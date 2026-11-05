@@ -2,16 +2,17 @@
   "date": "2026-11-05",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 16,
+    "scan_runs": 17,
     "total_articles_max": 1801,
     "matched_articles_max": 183,
-    "new_alerts": 9,
-    "cve_total": 9,
-    "alerts_with_cve": 4,
-    "cve_count": 9,
+    "new_alerts": 10,
+    "cve_total": 10,
+    "alerts_with_cve": 5,
+    "cve_count": 10,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
+      "CVE-2024-27834",
       "CVE-2024-31853",
       "CVE-2024-31854",
       "CVE-2026-105482",
@@ -23,8 +24,8 @@
       "CVE-2026-116606"
     ],
     "keywords_hit": {
-      "Malware": 4,
-      "CVE": 4,
+      "Malware": 5,
+      "CVE": 5,
       "Botnet": 1
     }
   },
@@ -250,6 +251,33 @@
           "description": "A vulnerability has been identified in SICAM TOOLBOX II (All versions < V07.11). During establishment of a https connection to the TLS server of a managed device, the affected application doesn't check device's certificate common name against an expected value.\r\nThis could allow an attacker to execute an on-path network (MitM) attack.",
           "epss_score": 0.00203,
           "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-05T16:01:18.218550+09:00",
+      "type": "single",
+      "title": "Hackers Exploit Patched Apple Flaw to Deliver Info-Stealing Malware, CISA Says",
+      "url": "https://thehackernews.com/2026/11/hackers-exploit-patched-apple-flaw-to.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-11-05T05:17:04+00:00",
+      "keywords": [
+        "CVE",
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2024-27834"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2024-27834",
+          "cvss_score": 5.5,
+          "cvss_severity": "MEDIUM",
+          "cwe": "NVD-CWE-noinfo (Insufficient Information)",
+          "description": "The issue was addressed with improved checks. This issue is fixed in Safari 17.5, iOS 16.7.8 and iPadOS 16.7.8, iOS 17.5 and iPadOS 17.5, macOS Sonoma 14.5, tvOS 17.5, watchOS 10.5. An attacker with arbitrary read and write capability may be able to bypass Pointer Authentication.",
+          "epss_score": 0.00598,
+          "kev": true
         }
       ]
     }
