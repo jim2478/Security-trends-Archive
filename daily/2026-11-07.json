@@ -2,20 +2,21 @@
   "date": "2026-11-07",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 8,
+    "scan_runs": 9,
     "total_articles_max": 1801,
     "matched_articles_max": 181,
-    "new_alerts": 2,
-    "cve_total": 1,
-    "alerts_with_cve": 1,
-    "cve_count": 1,
+    "new_alerts": 3,
+    "cve_total": 3,
+    "alerts_with_cve": 2,
+    "cve_count": 3,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
+      "CVE-2016-6210",
       "CVE-2026-123158"
     ],
     "keywords_hit": {
-      "CVE": 1,
+      "CVE": 2,
       "Malware": 1
     }
   },
@@ -59,6 +60,42 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-07T08:01:09.627298+09:00",
+      "type": "single",
+      "title": "CVE-2026-123158 (*sshole): OpenSSH Password Authentication Bypass on Alpine Linux",
+      "url": "https://www.stepsecurity.io/blog/cve-2026-123158-sshhole-openssh-musl-password-bypass",
+      "source": "StepSecurity (CI/CD 보안) [RSS]",
+      "published": "2026-11-06T22:30:16+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-123158",
+        "CVE-2016-6210"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-123158",
+          "cvss_score": 8.1,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-394",
+          "description": "sshd in OpenSSH before 10.6p2 on Linux, when musl libc is used without PAM, lacks a workaround for a password authentication bypass (related to misinterpretation of whether a string is intended to be a password hash). For some configurations of accounts, any password between 256 and 1024 characters succeeds. An example of a platform using musl libc without PAM is Alpine Linux.",
+          "epss_score": 0.00976,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2016-6210",
+          "cvss_score": 5.9,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-200 (Information Exposure)",
+          "description": "sshd in OpenSSH before 7.3, when SHA256 or SHA512 are used for user password hashing, uses BLOWFISH hashing on a static password when the username does not exist, which allows remote attackers to enumerate users by leveraging the timing difference between responses when a large password is provided.",
+          "epss_score": 0.88944,
+          "kev": false
+        }
+      ]
     }
   ]
 }
