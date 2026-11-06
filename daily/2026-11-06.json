@@ -2,25 +2,27 @@
   "date": "2026-11-06",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 22,
+    "scan_runs": 23,
     "total_articles_max": 1801,
     "matched_articles_max": 186,
-    "new_alerts": 7,
-    "cve_total": 7,
-    "alerts_with_cve": 5,
-    "cve_count": 7,
+    "new_alerts": 9,
+    "cve_total": 10,
+    "alerts_with_cve": 7,
+    "cve_count": 10,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
+      "CVE-2016-6210",
       "CVE-2023-20198",
       "CVE-2023-2868",
       "CVE-2026-111560",
       "CVE-2026-116606",
       "CVE-2026-119977",
-      "CVE-2026-123158"
+      "CVE-2026-123158",
+      "CVE-2026-83844"
     ],
     "keywords_hit": {
-      "CVE": 5,
+      "CVE": 7,
       "Malware": 2
     }
   },
@@ -200,6 +202,68 @@
           "description": "WordPress Core is vulnerable to Remote Code Execution in versions 4.7 through 7.1.3. This is due to predictable, web-accessible staging paths used during full-package core upgrades. This makes it possible for unauthenticated attackers to execute code on the server during the upgrade window.",
           "epss_score": 0.01157,
           "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-06T22:01:10.157025+09:00",
+      "type": "single",
+      "title": "Microsoft Paint RCE Fix Now Available, but Windows Update Won't Deliver It",
+      "url": "https://thehackernews.com/2026/11/microsoft-paint-rce-fix-now-available.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-11-06T12:06:43+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-83844"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-83844",
+          "cvss_score": 8.1,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-125 (Out-of-bounds Read)",
+          "description": "Out-of-bounds read in Windows Paint allows an unauthorized attacker to execute code over a network.",
+          "epss_score": 0.00734,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-06T22:01:10.157025+09:00",
+      "type": "single",
+      "title": "OpenSSH flaw exploited in the wild just hours after disclosure (CVE-2026-123158)",
+      "url": "https://www.helpnetsecurity.com/2026/11/06/openssh-sshole-cve-2026-123158-exploitation/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-11-06T12:49:41+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-123158",
+        "CVE-2016-6210"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-123158",
+          "cvss_score": 8.1,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-394",
+          "description": "sshd in OpenSSH before 10.6p2 on Linux, when musl libc is used without PAM, lacks a workaround for a password authentication bypass (related to misinterpretation of whether a string is intended to be a password hash). For some configurations of accounts, any password between 256 and 1024 characters succeeds. An example of a platform using musl libc without PAM is Alpine Linux.",
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2016-6210",
+          "cvss_score": 5.9,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-200 (Information Exposure)",
+          "description": "sshd in OpenSSH before 7.3, when SHA256 or SHA512 are used for user password hashing, uses BLOWFISH hashing on a static password when the username does not exist, which allows remote attackers to enumerate users by leveraging the timing difference between responses when a large password is provided.",
+          "epss_score": 0.88944,
+          "kev": false
         }
       ]
     }
