@@ -2,13 +2,13 @@
   "date": "2026-11-06",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 21,
+    "scan_runs": 22,
     "total_articles_max": 1801,
     "matched_articles_max": 186,
-    "new_alerts": 6,
-    "cve_total": 6,
-    "alerts_with_cve": 4,
-    "cve_count": 6,
+    "new_alerts": 7,
+    "cve_total": 7,
+    "alerts_with_cve": 5,
+    "cve_count": 7,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -16,10 +16,11 @@
       "CVE-2023-2868",
       "CVE-2026-111560",
       "CVE-2026-116606",
+      "CVE-2026-119977",
       "CVE-2026-123158"
     ],
     "keywords_hit": {
-      "CVE": 4,
+      "CVE": 5,
       "Malware": 2
     }
   },
@@ -173,6 +174,32 @@
           "description": "An authentication bypass in Barracuda Email Security Gateway versions earlier than 9.4.0.030 allows an unauthenticated remote attacker to invoke a configuration-import function and restore a crafted, compatible backup archive, resulting in unauthorized modification of the appliance’s global configuration.",
           "epss_score": 0.00728,
           "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-06T21:01:14.750158+09:00",
+      "type": "single",
+      "title": "CISA Warns Hackers Are Exploiting 18-Year-Old WordPress Core Vulnerability",
+      "url": "https://hackread.com/cisa-hackers-exploiting-wordpress-core-vulnerability/",
+      "source": "HackRead (해킹/데이터유출) [RSS]",
+      "published": "2026-11-06T11:24:45+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-119977"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-119977",
+          "cvss_score": 8.1,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-367",
+          "description": "WordPress Core is vulnerable to Remote Code Execution in versions 4.7 through 7.1.3. This is due to predictable, web-accessible staging paths used during full-package core upgrades. This makes it possible for unauthenticated attackers to execute code on the server during the upgrade window.",
+          "epss_score": 0.01157,
+          "kev": true
         }
       ]
     }
