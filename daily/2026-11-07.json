@@ -2,23 +2,25 @@
   "date": "2026-11-07",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 20,
+    "scan_runs": 21,
     "total_articles_max": 1801,
     "matched_articles_max": 181,
-    "new_alerts": 4,
-    "cve_total": 5,
-    "alerts_with_cve": 3,
-    "cve_count": 5,
+    "new_alerts": 5,
+    "cve_total": 7,
+    "alerts_with_cve": 4,
+    "cve_count": 7,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2016-6210",
+      "CVE-2026-102255",
       "CVE-2026-123158",
+      "CVE-2026-19868",
       "CVE-2026-96652",
       "CVE-2026-96654"
     ],
     "keywords_hit": {
-      "CVE": 3,
+      "CVE": 4,
       "Malware": 1
     }
   },
@@ -132,6 +134,42 @@
           "description": "Plex Media Server before 1.43.3.10861 does not correctly neutralize URL values included in 'searchOne,' allowing an attacker to call other plugins' functions and supply their own parameters.",
           "epss_score": 0.01949,
           "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-07T20:01:07.342606+09:00",
+      "type": "single",
+      "title": "SonicWall Patches Exploited SonicOS Vulnerability That Weakens VPN Logins",
+      "url": "https://www.securityweek.com/sonicwall-patches-exploited-sonicos-bug-that-weakens-vpn-logins/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-11-07T10:16:23+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-19868",
+        "CVE-2026-102255"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-19868",
+          "cvss_score": 7.5,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-308",
+          "description": "An authentication enforcement vulnerability in SonicOS SSLVPN service may allow a user with valid credentials for an alternate authentication method to bypass SAML authentication controls. Successful exploitation may also bypass SAML-enforced multi-factor authentication (MFA).",
+          "epss_score": null,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-102255",
+          "cvss_score": 10.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-441",
+          "description": "A Pre-authentication SSRF vulnerability exists in the SMA1000 Appliance Work Place interface due to an unintended alternate access path. By abusing this path, a remote unauthenticated attacker could potentially exploit this vulnerability to direct the appliance to issue requests on their behalf and reach internal functionality and perform unauthorized operations.",
+          "epss_score": 0.00981,
+          "kev": false
         }
       ]
     }
