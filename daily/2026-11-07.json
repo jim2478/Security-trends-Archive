@@ -2,21 +2,23 @@
   "date": "2026-11-07",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 16,
+    "scan_runs": 17,
     "total_articles_max": 1801,
     "matched_articles_max": 181,
-    "new_alerts": 3,
-    "cve_total": 3,
-    "alerts_with_cve": 2,
-    "cve_count": 3,
+    "new_alerts": 4,
+    "cve_total": 5,
+    "alerts_with_cve": 3,
+    "cve_count": 5,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2016-6210",
-      "CVE-2026-123158"
+      "CVE-2026-123158",
+      "CVE-2026-96652",
+      "CVE-2026-96654"
     ],
     "keywords_hit": {
-      "CVE": 2,
+      "CVE": 3,
       "Malware": 1
     }
   },
@@ -94,6 +96,42 @@
           "description": "sshd in OpenSSH before 7.3, when SHA256 or SHA512 are used for user password hashing, uses BLOWFISH hashing on a static password when the username does not exist, which allows remote attackers to enumerate users by leveraging the timing difference between responses when a large password is provided.",
           "epss_score": 0.88944,
           "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-07T16:01:12.318026+09:00",
+      "type": "single",
+      "title": "큐냅 NAS 실제 해킹 피해 확인, 'Plex2Shell' 취약점 긴급 패치 권고",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=209368",
+      "source": "데일리시큐 (전체) [RSS]",
+      "published": "2026-11-07T15:26:55+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-96652",
+        "CVE-2026-96654"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-96652",
+          "cvss_score": 5.3,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-918 (SSRF)",
+          "description": "Plex Media Server before 1.43.3.10861 allows SSRF via '/player/timeline'. An attacker using any X-Plex-Token value can include a full URL in the 'protocol' parameter and force the Plex server to POST to the attacker's chosen destination.",
+          "epss_score": 0.11886,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-96654",
+          "cvss_score": 6.9,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-84",
+          "description": "Plex Media Server before 1.43.3.10861 does not correctly neutralize URL values included in 'searchOne,' allowing an attacker to call other plugins' functions and supply their own parameters.",
+          "epss_score": 0.01949,
+          "kev": true
         }
       ]
     }
