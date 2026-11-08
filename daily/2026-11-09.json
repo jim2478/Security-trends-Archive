@@ -1,0 +1,93 @@
+{
+  "date": "2026-11-09",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 1,
+    "total_articles_max": 1781,
+    "matched_articles_max": 182,
+    "new_alerts": 3,
+    "cve_total": 2,
+    "alerts_with_cve": 2,
+    "cve_count": 2,
+    "ioc_count": 0,
+    "merged_count": 0,
+    "unique_cves": [
+      "CVE-2026-123158",
+      "CVE-2026-19868"
+    ],
+    "keywords_hit": {
+      "CVE": 2,
+      "Botnet": 1,
+      "Malware": 1
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-11-09T00:01:19.843616+09:00",
+      "type": "single",
+      "title": "소닉월 SSL-VPN 인증 우회 취약점 실제 공격에 악용…다중인증도 무력화",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=209394",
+      "source": "데일리시큐 (전체) [RSS]",
+      "published": "2026-11-09T00:00:11+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-19868"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-19868",
+          "cvss_score": 7.5,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-308",
+          "description": "An authentication enforcement vulnerability in SonicOS SSLVPN service may allow a user with valid credentials for an alternate authentication method to bypass SAML authentication controls. Successful exploitation may also bypass SAML-enforced multi-factor authentication (MFA).",
+          "epss_score": 0.00621,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-09T00:01:19.843616+09:00",
+      "type": "single",
+      "title": "[긴급] 오픈SSH 인증 우회 취약점 공개 9시간 만에 실제 공격…KISA도 7일 보안 업데이트 권고",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=209393",
+      "source": "데일리시큐 (전체) [RSS]",
+      "published": "2026-11-08T23:45:01+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-123158"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-123158",
+          "cvss_score": 8.1,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-394",
+          "description": "sshd in OpenSSH before 10.6p2 on Linux, when musl libc is used without PAM, lacks a workaround for a password authentication bypass (related to misinterpretation of whether a string is intended to be a password hash). For some configurations of accounts, any password between 256 and 1024 characters succeeds. An example of a platform using musl libc without PAM is Alpine Linux.",
+          "epss_score": 0.01014,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-09T00:01:19.843616+09:00",
+      "type": "single",
+      "title": "SECURITY AFFAIRS MALWARE NEWSLETTER ROUND 122",
+      "url": "https://securityaffairs.com/202657/malware/security-affairs-malware-newsletter-round-122.html",
+      "source": "Security Affairs (보안뉴스/위협동향) [RSS]",
+      "published": "2026-11-08T14:24:29+00:00",
+      "keywords": [
+        "Botnet",
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
