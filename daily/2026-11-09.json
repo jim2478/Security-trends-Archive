@@ -2,13 +2,13 @@
   "date": "2026-11-09",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 22,
+    "scan_runs": 23,
     "total_articles_max": 1801,
     "matched_articles_max": 183,
-    "new_alerts": 9,
-    "cve_total": 6,
-    "alerts_with_cve": 5,
-    "cve_count": 6,
+    "new_alerts": 10,
+    "cve_total": 7,
+    "alerts_with_cve": 6,
+    "cve_count": 7,
     "ioc_count": 2,
     "merged_count": 0,
     "unique_cves": [
@@ -19,7 +19,7 @@
     "keywords_hit": {
       "CVE": 6,
       "Malware": 3,
-      "Botnet": 1
+      "Botnet": 2
     }
   },
   "alerts": [
@@ -216,6 +216,32 @@
           "cwe": "CWE-305",
           "description": "SSL-VPN MFA Bypass in SonicWALL SSL-VPN can arise in specific cases due to the separate handling of UPN (User Principal Name) and SAM (Security Account Manager) account names when integrated with Microsoft Active Directory, allowing MFA to be configured independently for each login method and potentially enabling attackers to bypass MFA by exploiting the alternative account name.",
           "epss_score": 0.00487,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-09T22:01:15.658083+09:00",
+      "type": "single",
+      "title": "Hackers Exploiting ‘SSHole’ Authentication Bypass in OpenSSH",
+      "url": "https://www.securityweek.com/hackers-exploiting-sshole-authentication-bypass-in-openssh/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-11-09T12:13:32+00:00",
+      "keywords": [
+        "Botnet"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-123158"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-123158",
+          "cvss_score": 8.1,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-394",
+          "description": "sshd in OpenSSH before 10.6p2 on Linux, when musl libc is used without PAM, lacks a workaround for a password authentication bypass (related to misinterpretation of whether a string is intended to be a password hash). For some configurations of accounts, any password between 256 and 1024 characters succeeds. An example of a platform using musl libc without PAM is Alpine Linux.",
+          "epss_score": 0.01014,
           "kev": false
         }
       ]
