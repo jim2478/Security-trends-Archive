@@ -2,13 +2,13 @@
   "date": "2026-11-09",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 16,
+    "scan_runs": 17,
     "total_articles_max": 1801,
     "matched_articles_max": 183,
-    "new_alerts": 5,
-    "cve_total": 3,
-    "alerts_with_cve": 3,
-    "cve_count": 3,
+    "new_alerts": 6,
+    "cve_total": 4,
+    "alerts_with_cve": 4,
+    "cve_count": 4,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -16,7 +16,7 @@
       "CVE-2026-19868"
     ],
     "keywords_hit": {
-      "CVE": 4,
+      "CVE": 5,
       "Botnet": 1,
       "Malware": 1
     }
@@ -128,6 +128,32 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-09T16:01:13.205354+09:00",
+      "type": "single",
+      "title": "CISA Flags SonicWall SonicOS MFA Bypass Flaw Amid Reports of Possible Exploitation",
+      "url": "https://thehackernews.com/2026/11/cisa-flags-sonicwall-sonicos-mfa-bypass.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-11-09T06:05:24+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-19868"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-19868",
+          "cvss_score": 7.5,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-308",
+          "description": "An authentication enforcement vulnerability in SonicOS SSLVPN service may allow a user with valid credentials for an alternate authentication method to bypass SAML authentication controls. Successful exploitation may also bypass SAML-enforced multi-factor authentication (MFA).",
+          "epss_score": 0.00621,
+          "kev": true
+        }
+      ]
     }
   ]
 }
