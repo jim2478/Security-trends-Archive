@@ -2,10 +2,10 @@
   "date": "2026-11-09",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 18,
+    "scan_runs": 19,
     "total_articles_max": 1801,
     "matched_articles_max": 183,
-    "new_alerts": 6,
+    "new_alerts": 7,
     "cve_total": 4,
     "alerts_with_cve": 4,
     "cve_count": 4,
@@ -17,8 +17,8 @@
     ],
     "keywords_hit": {
       "CVE": 5,
-      "Botnet": 1,
-      "Malware": 1
+      "Malware": 2,
+      "Botnet": 1
     }
   },
   "alerts": [
@@ -154,6 +154,20 @@
           "kev": true
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-11-09T18:01:16.194096+09:00",
+      "type": "single",
+      "title": "Fake GitHub Security Tools Infect Over 2,000 PCs With Malware",
+      "url": "https://securityaffairs.com/202717/malware/fake-github-security-tools-infect-over-2000-pcs-with-malware.html",
+      "source": "Security Affairs (보안뉴스/위협동향) [RSS]",
+      "published": "2026-11-09T08:07:39+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
