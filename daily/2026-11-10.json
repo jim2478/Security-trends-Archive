@@ -2,20 +2,22 @@
   "date": "2026-11-10",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
-    "total_articles_max": 1781,
+    "scan_runs": 3,
+    "total_articles_max": 1791,
     "matched_articles_max": 180,
-    "new_alerts": 1,
-    "cve_total": 1,
-    "alerts_with_cve": 1,
-    "cve_count": 1,
+    "new_alerts": 2,
+    "cve_total": 2,
+    "alerts_with_cve": 2,
+    "cve_count": 2,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
+      "CVE-2026-123158",
       "CVE-2026-25085"
     ],
     "keywords_hit": {
-      "Botnet": 1
+      "Botnet": 1,
+      "CVE": 1
     }
   },
   "alerts": [
@@ -42,6 +44,32 @@
           "description": "A vulnerability exists in Copeland XWEB Pro version 1.12.1 and prior, in\n which an unexpected return value from the authentication routine is \nlater on processed as a legitimate value, resulting in an authentication\n bypass.",
           "epss_score": 0.00756,
           "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-10T02:01:25.587707+09:00",
+      "type": "single",
+      "title": "Hackers exploit SSHole OpenSSH flaw to breach Linux systems",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-sshole-openssh-flaw-to-breach-linux-systems/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-11-09T16:04:57+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-123158"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-123158",
+          "cvss_score": 8.1,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-394",
+          "description": "sshd in OpenSSH before 10.6p2 on Linux, when musl libc is used without PAM, lacks a workaround for a password authentication bypass (related to misinterpretation of whether a string is intended to be a password hash). For some configurations of accounts, any password between 256 and 1024 characters succeeds. An example of a platform using musl libc without PAM is Alpine Linux.",
+          "epss_score": 0.01014,
+          "kev": true
         }
       ]
     }
