@@ -2,10 +2,10 @@
   "date": "2026-11-09",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 19,
+    "scan_runs": 20,
     "total_articles_max": 1801,
     "matched_articles_max": 183,
-    "new_alerts": 7,
+    "new_alerts": 8,
     "cve_total": 4,
     "alerts_with_cve": 4,
     "cve_count": 4,
@@ -17,7 +17,7 @@
     ],
     "keywords_hit": {
       "CVE": 5,
-      "Malware": 2,
+      "Malware": 3,
       "Botnet": 1
     }
   },
@@ -162,6 +162,20 @@
       "url": "https://securityaffairs.com/202717/malware/fake-github-security-tools-infect-over-2000-pcs-with-malware.html",
       "source": "Security Affairs (보안뉴스/위협동향) [RSS]",
       "published": "2026-11-09T08:07:39+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-09T19:01:04.726308+09:00",
+      "type": "single",
+      "title": "Product showcase: What the Malwarebytes Claude connector reveals about unexpected texts",
+      "url": "https://www.helpnetsecurity.com/2026/11/09/product-showcase-malwarebytes-claude-scam-detection/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-11-09T09:31:52+00:00",
       "keywords": [
         "Malware"
       ],
