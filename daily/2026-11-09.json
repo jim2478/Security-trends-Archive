@@ -2,21 +2,22 @@
   "date": "2026-11-09",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 20,
+    "scan_runs": 21,
     "total_articles_max": 1801,
     "matched_articles_max": 183,
-    "new_alerts": 8,
-    "cve_total": 4,
-    "alerts_with_cve": 4,
-    "cve_count": 4,
-    "ioc_count": 0,
+    "new_alerts": 9,
+    "cve_total": 6,
+    "alerts_with_cve": 5,
+    "cve_count": 6,
+    "ioc_count": 2,
     "merged_count": 0,
     "unique_cves": [
+      "CVE-2024-12802",
       "CVE-2026-123158",
       "CVE-2026-19868"
     ],
     "keywords_hit": {
-      "CVE": 5,
+      "CVE": 6,
       "Malware": 3,
       "Botnet": 1
     }
@@ -182,6 +183,42 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-09T20:01:20.813047+09:00",
+      "type": "single",
+      "title": "Exploited SonicWall SSL-VPN flaw lets attackers bypass SAML-enforced MFA (CVE-2026-19868)",
+      "url": "https://www.helpnetsecurity.com/2026/11/09/exploited-sonicwall-ssl-vpn-flaw-lets-attackers-bypass-saml-enforced-mfa-cve-2026-19868/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-11-09T10:30:25+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "[CVE] CVE-2024-12802\n[CVE] CVE-2026-19868",
+      "cve_ids": [
+        "CVE-2026-19868",
+        "CVE-2024-12802"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-19868",
+          "cvss_score": 7.5,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-308",
+          "description": "An authentication enforcement vulnerability in SonicOS SSLVPN service may allow a user with valid credentials for an alternate authentication method to bypass SAML authentication controls. Successful exploitation may also bypass SAML-enforced multi-factor authentication (MFA).",
+          "epss_score": 0.00621,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2024-12802",
+          "cvss_score": 9.1,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-305",
+          "description": "SSL-VPN MFA Bypass in SonicWALL SSL-VPN can arise in specific cases due to the separate handling of UPN (User Principal Name) and SAM (Security Account Manager) account names when integrated with Microsoft Active Directory, allowing MFA to be configured independently for each login method and potentially enabling attackers to bypass MFA by exploiting the alternative account name.",
+          "epss_score": 0.00487,
+          "kev": false
+        }
+      ]
     }
   ]
 }
