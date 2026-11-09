@@ -2,10 +2,10 @@
   "date": "2026-11-10",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
-    "total_articles_max": 1791,
-    "matched_articles_max": 180,
-    "new_alerts": 2,
+    "scan_runs": 4,
+    "total_articles_max": 1801,
+    "matched_articles_max": 182,
+    "new_alerts": 3,
     "cve_total": 2,
     "alerts_with_cve": 2,
     "cve_count": 2,
@@ -17,7 +17,8 @@
     ],
     "keywords_hit": {
       "Botnet": 1,
-      "CVE": 1
+      "CVE": 1,
+      "Malware": 1
     }
   },
   "alerts": [
@@ -72,6 +73,20 @@
           "kev": true
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-11-10T03:01:14.352172+09:00",
+      "type": "single",
+      "title": "Russian cloud firm Beget rebuilds from scratch after data wiper attack",
+      "url": "https://www.bleepingcomputer.com/news/security/russian-cloud-firm-beget-rebuilds-from-scratch-after-data-wiper-attack/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-11-09T17:50:32+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
