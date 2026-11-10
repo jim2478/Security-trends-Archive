@@ -2,10 +2,10 @@
   "date": "2026-11-10",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 23,
+    "scan_runs": 24,
     "total_articles_max": 1801,
     "matched_articles_max": 182,
-    "new_alerts": 13,
+    "new_alerts": 14,
     "cve_total": 16,
     "alerts_with_cve": 6,
     "cve_count": 16,
@@ -28,7 +28,7 @@
       "CVE-2026-63077"
     ],
     "keywords_hit": {
-      "Malware": 8,
+      "Malware": 9,
       "CVE": 4,
       "Botnet": 1
     }
@@ -358,6 +358,20 @@
         "Malware"
       ],
       "ioc_raw_text": "[IP] 91[.]234[.]194[.]113\n[IP] 2[.]58[.]67[.]83\n[IP] 5[.]9[.]115[.]199\n[URL] hxxp://www[.]hlushkova[.]top/ef5f/\n[URL] hxxp://www[.]stanbicfinanceug[.]com/9wgi/\n[SHA256] 2974a808e24e76c1a9fecdaaecebefe27e841204bc1aa20536c32c1f0b309f47\n[SHA256] 45e598a8dddd7e9cc7b7e7a2f319c0e9f3f090ad4a089e50c3c9e4d75ee9d718\n[SHA256] 4fd6430a61e5d42a452c3a7de94d03173b9eb02d06aa33357fe5ee9776524aec\n[SHA256] 58eb890b612938867237c3fa1715b8742d9b25a8fe136cd75ea659882b7b7a10\n[SHA256] a970e997093fcd10d108354423c8fa420a6887ed97cbf7c7dbe3551faa4d9b95\n[SHA256] b0ee22dee7a8a9710992294f73069f047d31506b50dc1150ef6013fcd6225ed1\n[SHA256] f5c9a28325ed2eab5c7d029bfed410f05ae858b6b436e3b14891f29a6ec96d73",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-10T23:01:15.963417+09:00",
+      "type": "single",
+      "title": "CISA tweaks cyber incident form to spot attacks that might be linked",
+      "url": "https://www.helpnetsecurity.com/2026/11/10/cisa-incident-reporting-form-update/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-11-10T13:17:50+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
     }
