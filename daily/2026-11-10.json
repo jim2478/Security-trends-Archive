@@ -2,23 +2,24 @@
   "date": "2026-11-10",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 17,
+    "scan_runs": 18,
     "total_articles_max": 1801,
     "matched_articles_max": 182,
-    "new_alerts": 6,
-    "cve_total": 3,
-    "alerts_with_cve": 3,
-    "cve_count": 3,
+    "new_alerts": 7,
+    "cve_total": 4,
+    "alerts_with_cve": 4,
+    "cve_count": 4,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2026-123158",
       "CVE-2026-123218",
+      "CVE-2026-125350",
       "CVE-2026-25085"
     ],
     "keywords_hit": {
       "Malware": 3,
-      "CVE": 2,
+      "CVE": 3,
       "Botnet": 1
     }
   },
@@ -140,6 +141,32 @@
           "description": "IBM Aspera Faspex 5.0.0 through 5.0.19 could allow an authorized user to craft a specific message to bypass user authorization and gain full administrative privileges.",
           "epss_score": 0.00396,
           "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-10T17:01:12.735304+09:00",
+      "type": "single",
+      "title": "Google Issues Chrome Security Update for Eighth Actively Exploited Zero-Day of 2026",
+      "url": "https://thehackernews.com/2026/11/google-issues-chrome-security-update.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-11-10T06:52:54+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-125350"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-125350",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
         }
       ]
     }
