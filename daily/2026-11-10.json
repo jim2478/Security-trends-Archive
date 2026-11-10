@@ -2,19 +2,21 @@
   "date": "2026-11-10",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 19,
+    "scan_runs": 20,
     "total_articles_max": 1801,
     "matched_articles_max": 182,
-    "new_alerts": 8,
-    "cve_total": 12,
-    "alerts_with_cve": 5,
-    "cve_count": 12,
+    "new_alerts": 9,
+    "cve_total": 16,
+    "alerts_with_cve": 6,
+    "cve_count": 16,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2025-14733",
       "CVE-2025-60710",
       "CVE-2026-0257",
+      "CVE-2026-102895",
+      "CVE-2026-116779",
       "CVE-2026-123158",
       "CVE-2026-123218",
       "CVE-2026-125350",
@@ -27,7 +29,7 @@
     ],
     "keywords_hit": {
       "Malware": 4,
-      "CVE": 3,
+      "CVE": 4,
       "Botnet": 1
     }
   },
@@ -243,6 +245,62 @@
           "cwe": "CWE-59",
           "description": "Improper link resolution before file access ('link following') in Host Process for Windows Tasks allows an authorized attacker to elevate privileges locally.",
           "epss_score": 0.04614,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-10T19:01:24.408712+09:00",
+      "type": "single",
+      "title": "IBM Aspera Faspex, SignalWire FreeSwitch Vulnerabilities Exploited in Attacks",
+      "url": "https://www.securityweek.com/ibm-aspera-faspex-signalwire-freeswitch-vulnerabilities-exploited-in-attacks/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-11-10T09:42:27+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-123218",
+        "CVE-2026-116779",
+        "CVE-2026-102895",
+        "CVE-2026-123158"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-123218",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-863",
+          "description": "IBM Aspera Faspex 5.0.0 through 5.0.19 could allow an authorized user to craft a specific message to bypass user authorization and gain full administrative privileges.",
+          "epss_score": 0.00396,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-116779",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-77 (Command Injection)",
+          "description": "FreeSWITCH is a Software Defined Telecom Stack enabling the digital transformation from proprietary telecom switches to a software implementation that runs on any commodity hardware. Prior to 1.11.3, sofia_presence_handle_sip_i_message() split the To user of an inbound SIP MESSAGE on a plus sign and treated the left side as a chat protocol selector. Selecting the api chat proto reached switch_api_execute(), allowing a peer whose MESSAGE was accepted to run FreeSWITCH API commands, including oper",
+          "epss_score": 0.01299,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-102895",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-287 (Authentication Bypass)",
+          "description": "GPUStack is an open-source GPU cluster manager for AI model serving and GPU instance provisioning. Prior to 2.2.0, get_current_user in gpustack/api/auth.py treated a loopback request source as the built-in administrator when force_auth_localhost was false, which was the default. A remote request could appear to originate from 127.0.0.1 because client_ip_getter accepted a same-host reverse proxy peer or a client-supplied X-GPUStack-Real-IP loopback value. The bypass allowed unauthenticated admini",
+          "epss_score": 0.00331,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-123158",
+          "cvss_score": 8.1,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-394",
+          "description": "sshd in OpenSSH before 10.6p2 on Linux, when musl libc is used without PAM, lacks a workaround for a password authentication bypass (related to misinterpretation of whether a string is intended to be a password hash). For some configurations of accounts, any password between 256 and 1024 characters succeeds. An example of a platform using musl libc without PAM is Alpine Linux.",
+          "epss_score": 0.01014,
           "kev": true
         }
       ]
