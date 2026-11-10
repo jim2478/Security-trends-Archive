@@ -2,10 +2,10 @@
   "date": "2026-11-11",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
+    "scan_runs": 4,
     "total_articles_max": 1801,
     "matched_articles_max": 175,
-    "new_alerts": 1,
+    "new_alerts": 2,
     "cve_total": 2,
     "alerts_with_cve": 1,
     "cve_count": 2,
@@ -16,7 +16,8 @@
       "CVE-2026-105134"
     ],
     "keywords_hit": {
-      "CVE": 1
+      "CVE": 1,
+      "Malware": 1
     }
   },
   "alerts": [
@@ -55,6 +56,20 @@
           "kev": true
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-11-11T03:01:13.347539+09:00",
+      "type": "single",
+      "title": "AI-Powered Malware Analysis Uncovers Hidden Phishing Threats and Reduces SOC Workload",
+      "url": "https://hackread.com/ai-powered-malware-analysis-phishing-threats-soc-workload/",
+      "source": "HackRead (해킹/데이터유출) [RSS]",
+      "published": "2026-11-10T17:21:27+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
