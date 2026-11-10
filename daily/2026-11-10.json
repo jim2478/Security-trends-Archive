@@ -2,10 +2,10 @@
   "date": "2026-11-10",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 15,
+    "scan_runs": 16,
     "total_articles_max": 1801,
     "matched_articles_max": 182,
-    "new_alerts": 4,
+    "new_alerts": 5,
     "cve_total": 2,
     "alerts_with_cve": 2,
     "cve_count": 2,
@@ -16,7 +16,7 @@
       "CVE-2026-25085"
     ],
     "keywords_hit": {
-      "Malware": 2,
+      "Malware": 3,
       "Botnet": 1,
       "CVE": 1
     }
@@ -95,6 +95,20 @@
       "url": "https://thehackernews.com/2026/11/hackers-compromise-etherspheres-bee-js.html",
       "source": "The Hacker News (보안뉴스 종합) [RSS]",
       "published": "2026-11-09T17:36:28+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-10T15:01:10.019537+09:00",
+      "type": "single",
+      "title": "Over 575 malicious OpenClaw skills delivered malware to Windows and macOS",
+      "url": "https://www.helpnetsecurity.com/2026/11/10/acronis-ai-agent-cyberattacks-report/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-11-10T05:30:59+00:00",
       "keywords": [
         "Malware"
       ],
