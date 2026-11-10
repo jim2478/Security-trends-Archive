@@ -2,10 +2,10 @@
   "date": "2026-11-10",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 20,
+    "scan_runs": 21,
     "total_articles_max": 1801,
     "matched_articles_max": 182,
-    "new_alerts": 9,
+    "new_alerts": 11,
     "cve_total": 16,
     "alerts_with_cve": 6,
     "cve_count": 16,
@@ -28,7 +28,7 @@
       "CVE-2026-63077"
     ],
     "keywords_hit": {
-      "Malware": 4,
+      "Malware": 6,
       "CVE": 4,
       "Botnet": 1
     }
@@ -304,6 +304,34 @@
           "kev": true
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-11-10T20:01:24.634338+09:00",
+      "type": "single",
+      "title": "Russian Turla Hackers Use New Cereal Malware to Steal Emails From Government Exchange Servers",
+      "url": "https://thehackernews.com/2026/11/russian-turla-hackers-use-new-cereal.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-11-10T10:07:29+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-10T20:01:24.634338+09:00",
+      "type": "single",
+      "title": "Turla’s Cereal malware turns victims’ Exchange servers into spy hubs",
+      "url": "https://www.helpnetsecurity.com/2026/11/10/eset-turla-exchange-malware/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-11-10T10:00:39+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
