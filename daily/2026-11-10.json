@@ -2,23 +2,31 @@
   "date": "2026-11-10",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 18,
+    "scan_runs": 19,
     "total_articles_max": 1801,
     "matched_articles_max": 182,
-    "new_alerts": 7,
-    "cve_total": 4,
-    "alerts_with_cve": 4,
-    "cve_count": 4,
+    "new_alerts": 8,
+    "cve_total": 12,
+    "alerts_with_cve": 5,
+    "cve_count": 12,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
+      "CVE-2025-14733",
+      "CVE-2025-60710",
+      "CVE-2026-0257",
       "CVE-2026-123158",
       "CVE-2026-123218",
       "CVE-2026-125350",
-      "CVE-2026-25085"
+      "CVE-2026-15409",
+      "CVE-2026-15410",
+      "CVE-2026-25085",
+      "CVE-2026-45659",
+      "CVE-2026-59310",
+      "CVE-2026-63077"
     ],
     "keywords_hit": {
-      "Malware": 3,
+      "Malware": 4,
       "CVE": 3,
       "Botnet": 1
     }
@@ -167,6 +175,75 @@
           "description": null,
           "epss_score": null,
           "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-10T18:01:07.018456+09:00",
+      "type": "single",
+      "title": "IT threat evolution in Q3 2026. Non-mobile statistics",
+      "url": "https://securelist.com/malware-report-q3-2026-pc-iot-statistics/121843/",
+      "source": "Kaspersky Securelist (위협분석) [RSS]",
+      "published": "2026-11-10T08:00:37+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-0257",
+        "CVE-2026-15409",
+        "CVE-2026-15410",
+        "CVE-2026-45659",
+        "CVE-2025-60710",
+        "CVE-2026-59310",
+        "CVE-2025-14733",
+        "CVE-2026-63077"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-0257",
+          "cvss_score": 7.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-565",
+          "description": "Authentication bypass vulnerabilities in the GlobalProtect portal and gateway of Palo Alto Networks PAN-OS® software allows the attacker to bypass security restrictions and establish an unauthorized VPN connection.\n\nPanorama and Cloud NGFW are not impacted by these issues.",
+          "epss_score": 0.95642,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-15409",
+          "cvss_score": 10.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-918 (SSRF)",
+          "description": "A Server-side request forgery (SSRF) vulnerability has been identified in the SMA1000 Appliance Work Place interface. A remote unauthenticated attacker could potentially cause the appliance to make requests to unintended location.",
+          "epss_score": 0.06795,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-15410",
+          "cvss_score": 7.2,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-94 (Code Injection)",
+          "description": "Post-authentication improper control of generation of code ('Code Injection') vulnerability has been identified in the SMA1000 Appliance Management Console (AMC) which in specific conditions could potentially enable a remote authenticated attacker as administrator to execute arbitrary OS commands.",
+          "epss_score": 0.11791,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-45659",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-502 (Deserialization)",
+          "description": "Deserialization of untrusted data in Microsoft Office SharePoint allows an authorized attacker to execute code over a network.",
+          "epss_score": 0.80242,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2025-60710",
+          "cvss_score": 7.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-59",
+          "description": "Improper link resolution before file access ('link following') in Host Process for Windows Tasks allows an authorized attacker to elevate privileges locally.",
+          "epss_score": 0.04614,
+          "kev": true
         }
       ]
     }
