@@ -2,23 +2,24 @@
   "date": "2026-11-10",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 16,
+    "scan_runs": 17,
     "total_articles_max": 1801,
     "matched_articles_max": 182,
-    "new_alerts": 5,
-    "cve_total": 2,
-    "alerts_with_cve": 2,
-    "cve_count": 2,
+    "new_alerts": 6,
+    "cve_total": 3,
+    "alerts_with_cve": 3,
+    "cve_count": 3,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2026-123158",
+      "CVE-2026-123218",
       "CVE-2026-25085"
     ],
     "keywords_hit": {
       "Malware": 3,
-      "Botnet": 1,
-      "CVE": 1
+      "CVE": 2,
+      "Botnet": 1
     }
   },
   "alerts": [
@@ -115,6 +116,32 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-10T16:01:17.072742+09:00",
+      "type": "single",
+      "title": "CISA Warns of Active Exploitation of OpenSSH, GPUStack, FreeSWITCH, and IBM Flaws",
+      "url": "https://thehackernews.com/2026/11/cisa-warns-of-active-exploitation-of.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-11-10T06:31:42+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-123218"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-123218",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-863",
+          "description": "IBM Aspera Faspex 5.0.0 through 5.0.19 could allow an authorized user to craft a specific message to bypass user authorization and gain full administrative privileges.",
+          "epss_score": 0.00396,
+          "kev": true
+        }
+      ]
     }
   ]
 }
