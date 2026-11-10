@@ -2,22 +2,24 @@
   "date": "2026-11-11",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 5,
+    "scan_runs": 6,
     "total_articles_max": 1801,
-    "matched_articles_max": 175,
-    "new_alerts": 2,
-    "cve_total": 2,
-    "alerts_with_cve": 1,
-    "cve_count": 2,
+    "matched_articles_max": 176,
+    "new_alerts": 6,
+    "cve_total": 4,
+    "alerts_with_cve": 3,
+    "cve_count": 4,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2026-105133",
-      "CVE-2026-105134"
+      "CVE-2026-105134",
+      "CVE-2026-111760",
+      "CVE-2026-124194"
     ],
     "keywords_hit": {
-      "CVE": 1,
-      "Malware": 1
+      "CVE": 4,
+      "Malware": 2
     }
   },
   "alerts": [
@@ -64,6 +66,86 @@
       "url": "https://hackread.com/ai-powered-malware-analysis-phishing-threats-soc-workload/",
       "source": "HackRead (해킹/데이터유출) [RSS]",
       "published": "2026-11-10T17:21:27+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-11T05:01:22.400516+09:00",
+      "type": "single",
+      "title": "Git Patches Flaw That Lets Malicious Repositories Execute Code During Recursive Clones",
+      "url": "https://thehackernews.com/2026/11/git-patches-flaw-that-lets-malicious.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-11-10T19:23:10+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-111760"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-111760",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-11T05:01:22.400516+09:00",
+      "type": "single",
+      "title": "Exploited Outlook Zero-Day Among 1,094 Flaws Patched by Microsoft",
+      "url": "https://www.securityweek.com/exploited-outlook-zero-day-among-1094-flaws-patched-by-microsoft/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-11-10T19:19:46+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-124194"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-124194",
+          "cvss_score": 6.5,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-356",
+          "description": "Product ui does not warn user of unsafe actions in Microsoft Office Outlook allows an unauthorized attacker to perform spoofing over a network.",
+          "epss_score": null,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-11T05:01:22.400516+09:00",
+      "type": "single",
+      "title": "Hackers Exploit Critical Xen Orchestra Auth Bypass Flaw to Gain Admin Access",
+      "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-xen-orchestra.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-11-10T18:12:21+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-11T05:01:22.400516+09:00",
+      "type": "single",
+      "title": "Three China-Nexus Espionage Campaigns Linked Through Sparrow Malware Ecosystem",
+      "url": "https://thehackernews.com/2026/11/three-china-nexus-espionage-campaigns.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-11-10T17:43:23+00:00",
       "keywords": [
         "Malware"
       ],
