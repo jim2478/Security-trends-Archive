@@ -2,23 +2,25 @@
   "date": "2026-11-12",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 6,
+    "scan_runs": 7,
     "total_articles_max": 1801,
     "matched_articles_max": 170,
-    "new_alerts": 5,
-    "cve_total": 14,
-    "alerts_with_cve": 3,
-    "cve_count": 14,
+    "new_alerts": 6,
+    "cve_total": 16,
+    "alerts_with_cve": 4,
+    "cve_count": 16,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2026-105437",
       "CVE-2026-108186",
+      "CVE-2026-111497",
       "CVE-2026-111760",
       "CVE-2026-113408",
       "CVE-2026-114466",
       "CVE-2026-114467",
       "CVE-2026-114469",
+      "CVE-2026-119618",
       "CVE-2026-125878",
       "CVE-2026-125879",
       "CVE-2026-125880",
@@ -28,7 +30,7 @@
       "CVE-2026-91000"
     ],
     "keywords_hit": {
-      "CVE": 4,
+      "CVE": 5,
       "Malware": 1
     }
   },
@@ -221,6 +223,42 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-12T06:01:21.933121+09:00",
+      "type": "single",
+      "title": "Critical RCE Vulnerability in Apache HTTP Server: Everything You Need To Know",
+      "url": "https://www.wiz.io/blog/cve-2026-119618-rce-apache-http-server-vulnerability",
+      "source": "Wiz Blog (클라우드보안) [RSS]",
+      "published": "2026-11-11T19:49:10+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-119618",
+        "CVE-2026-111497"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-119618",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": "CWE-362",
+          "description": "Concurrent Execution using Shared Resource with Improper Synchronization vulnerability in Apache HTTP Server's mod_http2 in assign_headers() can lead to RCE.\n\nThis issue affects Apache HTTP Server: from 2.4.55 through 2.4.70.\nAffected releases of mod_h2 from GitHub: from 2.0.8 through 2.0.42.",
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-111497",
+          "cvss_score": 9.2,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-252",
+          "description": "A buffer overflow vulnerability in the Brotli decoder (c/dec/decode.c) in Google Brotli versions 1.0.3 through 1.2.0 on all platforms allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause a denial of service, or potentially execute arbitrary code using a crafted Brotli-compressed stream.\n\n\n\n\n\nUsers need to update any Brotli libraries or binaries between 1.0.3 through 1.2.0 to the latest available version: 1.0.10 or 1.1.1 or 1",
+          "epss_score": 0.82641,
+          "kev": true
+        }
+      ]
     }
   ]
 }
