@@ -2,23 +2,24 @@
   "date": "2026-11-11",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 16,
+    "scan_runs": 17,
     "total_articles_max": 1801,
     "matched_articles_max": 176,
-    "new_alerts": 7,
-    "cve_total": 5,
-    "alerts_with_cve": 4,
-    "cve_count": 5,
+    "new_alerts": 8,
+    "cve_total": 6,
+    "alerts_with_cve": 5,
+    "cve_count": 6,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2026-105133",
       "CVE-2026-105134",
       "CVE-2026-111760",
-      "CVE-2026-124194"
+      "CVE-2026-124194",
+      "CVE-2026-20320"
     ],
     "keywords_hit": {
-      "CVE": 5,
+      "CVE": 6,
       "Malware": 2
     }
   },
@@ -175,6 +176,32 @@
           "cwe": "CWE-356",
           "description": "Product ui does not warn user of unsafe actions in Microsoft Office Outlook allows an unauthorized attacker to perform spoofing over a network.",
           "epss_score": null,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-11T16:01:16.836076+09:00",
+      "type": "single",
+      "title": "Cisco BroadWorks and Openwave Flaws Actively Exploited Despite Available Patches",
+      "url": "https://thehackernews.com/2026/11/cisco-broadworks-and-openwave-flaws.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-11-11T06:04:02+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-20320"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-20320",
+          "cvss_score": 7.5,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-611 (XXE)",
+          "description": "A vulnerability in the Open Client Interface (OCI) XML Parser of Cisco BroadWorks could allow an unauthenticated, remote attacker to read sensitive configuration information on an affected system.\r\n\r This vulnerability exists because XML entries are improperly parsed due to external entity resolution being allowed by default. An attacker could exploit this vulnerability by sending a crafted XML message to the Open Client Interface &ndash; Provisioning (OCI-P) service. A successful exploit could ",
+          "epss_score": 0.00385,
           "kev": true
         }
       ]
