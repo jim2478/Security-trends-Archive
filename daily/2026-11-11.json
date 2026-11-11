@@ -2,10 +2,10 @@
   "date": "2026-11-11",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 23,
+    "scan_runs": 24,
     "total_articles_max": 1801,
     "matched_articles_max": 176,
-    "new_alerts": 11,
+    "new_alerts": 12,
     "cve_total": 8,
     "alerts_with_cve": 6,
     "cve_count": 8,
@@ -21,7 +21,7 @@
     ],
     "keywords_hit": {
       "CVE": 8,
-      "Malware": 3
+      "Malware": 4
     }
   },
   "alerts": [
@@ -264,6 +264,20 @@
       "url": "https://hackread.com/tinstaporn-android-malware-casino-app-collect-user-data/",
       "source": "HackRead (해킹/데이터유출) [RSS]",
       "published": "2026-11-11T12:50:06+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-11T23:01:03.430797+09:00",
+      "type": "single",
+      "title": "Remus malware claims Gmail access even after you change your password",
+      "url": "https://www.malwarebytes.com/blog/news/2026/11/remus-malware-claims-gmail-access-even-after-you-change-your-password",
+      "source": "Malwarebytes Labs (악성코드/스캠) [RSS]",
+      "published": "2026-11-11T13:42:10+00:00",
       "keywords": [
         "Malware"
       ],
