@@ -1,0 +1,95 @@
+{
+  "date": "2026-11-12",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 1,
+    "total_articles_max": 1801,
+    "matched_articles_max": 169,
+    "new_alerts": 1,
+    "cve_total": 6,
+    "alerts_with_cve": 1,
+    "cve_count": 6,
+    "ioc_count": 0,
+    "merged_count": 0,
+    "unique_cves": [
+      "CVE-2026-105437",
+      "CVE-2026-111760",
+      "CVE-2026-113408",
+      "CVE-2026-114466",
+      "CVE-2026-114467",
+      "CVE-2026-114469"
+    ],
+    "keywords_hit": {
+      "CVE": 1
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-11-12T00:02:00.572651+09:00",
+      "type": "single",
+      "title": "Git fixes six vulnerabilities, including code execution during recursive clones",
+      "url": "https://www.helpnetsecurity.com/2026/11/11/git-project-security-updates/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-11-11T14:26:12+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-111760",
+        "CVE-2026-113408",
+        "CVE-2026-114467",
+        "CVE-2026-114469",
+        "CVE-2026-105437",
+        "CVE-2026-114466"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-111760",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-113408",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-114467",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-114469",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-105437",
+          "cvss_score": 7.5,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-122",
+          "description": "Affected versions of Git have a heap buffer overflow in the three-way merge\ncode (xdiff), which an attacker can trigger through a repository they\ncontrol.\n\nWhen Git merges a file, it first adds up the size of the merged\noutput, allocates a buffer of that size, and then writes the output into\nit. That total was kept in a 32-bit signed integer. The\nconflict-marker-size attribute, which can be set from a committed\n.gitattributes file, accepts any positive integer, and the markers are\nwritten severa",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    }
+  ]
+}
