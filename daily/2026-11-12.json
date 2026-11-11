@@ -2,10 +2,10 @@
   "date": "2026-11-12",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 8,
+    "scan_runs": 9,
     "total_articles_max": 1801,
     "matched_articles_max": 170,
-    "new_alerts": 6,
+    "new_alerts": 7,
     "cve_total": 16,
     "alerts_with_cve": 4,
     "cve_count": 16,
@@ -31,7 +31,7 @@
     ],
     "keywords_hit": {
       "CVE": 5,
-      "Malware": 1
+      "Malware": 2
     }
   },
   "alerts": [
@@ -259,6 +259,20 @@
           "kev": true
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-11-12T08:01:23.790002+09:00",
+      "type": "single",
+      "title": "Active ScreenConnect attacks breach MSPs, impact dozens of organizations",
+      "url": "https://www.bleepingcomputer.com/news/security/active-screenconnect-attacks-breach-msps-impact-dozens-of-organizations/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-11-11T22:56:21+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
