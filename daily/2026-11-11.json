@@ -2,10 +2,10 @@
   "date": "2026-11-11",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 22,
+    "scan_runs": 23,
     "total_articles_max": 1801,
     "matched_articles_max": 176,
-    "new_alerts": 10,
+    "new_alerts": 11,
     "cve_total": 8,
     "alerts_with_cve": 6,
     "cve_count": 8,
@@ -21,7 +21,7 @@
     ],
     "keywords_hit": {
       "CVE": 8,
-      "Malware": 2
+      "Malware": 3
     }
   },
   "alerts": [
@@ -256,6 +256,20 @@
           "kev": true
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-11-11T22:01:11.102129+09:00",
+      "type": "single",
+      "title": "TinstaPorn Android Malware Poses as Casino App to Collect User Data",
+      "url": "https://hackread.com/tinstaporn-android-malware-casino-app-collect-user-data/",
+      "source": "HackRead (해킹/데이터유출) [RSS]",
+      "published": "2026-11-11T12:50:06+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
