@@ -2,10 +2,10 @@
   "date": "2026-11-12",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 4,
+    "scan_runs": 5,
     "total_articles_max": 1801,
     "matched_articles_max": 170,
-    "new_alerts": 4,
+    "new_alerts": 5,
     "cve_total": 14,
     "alerts_with_cve": 3,
     "cve_count": 14,
@@ -28,7 +28,7 @@
       "CVE-2026-91000"
     ],
     "keywords_hit": {
-      "CVE": 3,
+      "CVE": 4,
       "Malware": 1
     }
   },
@@ -207,6 +207,20 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-11-12T04:01:12.720499+09:00",
+      "type": "single",
+      "title": "Lessons from 59 Linux Kernel Bug Reports",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/11/11/lessons-from-59-linux-kernel-bug-reports/",
+      "source": "Microsoft Security Blog (보안업데이트) [RSS]",
+      "published": "2026-11-11T16:55:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
