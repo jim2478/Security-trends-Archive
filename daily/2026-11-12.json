@@ -2,25 +2,33 @@
   "date": "2026-11-12",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
+    "scan_runs": 4,
     "total_articles_max": 1801,
-    "matched_articles_max": 169,
-    "new_alerts": 2,
-    "cve_total": 6,
-    "alerts_with_cve": 1,
-    "cve_count": 6,
+    "matched_articles_max": 170,
+    "new_alerts": 4,
+    "cve_total": 14,
+    "alerts_with_cve": 3,
+    "cve_count": 14,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2026-105437",
+      "CVE-2026-108186",
       "CVE-2026-111760",
       "CVE-2026-113408",
       "CVE-2026-114466",
       "CVE-2026-114467",
-      "CVE-2026-114469"
+      "CVE-2026-114469",
+      "CVE-2026-125878",
+      "CVE-2026-125879",
+      "CVE-2026-125880",
+      "CVE-2026-125881",
+      "CVE-2026-125882",
+      "CVE-2026-125883",
+      "CVE-2026-91000"
     ],
     "keywords_hit": {
-      "CVE": 1,
+      "CVE": 3,
       "Malware": 1
     }
   },
@@ -105,6 +113,100 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-12T03:01:40.002650+09:00",
+      "type": "single",
+      "title": "Critical Zoom Workplace Flaw Could Allow Unauthenticated Remote Privilege Escalation",
+      "url": "https://thehackernews.com/2026/11/critical-zoom-workplace-flaw-could.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-11-11T16:12:46+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-108186"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-108186",
+          "cvss_score": 9.6,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-20 (Improper Input Validation)",
+          "description": "Improper Input Validation in Zoom Workplace for Windows may allow an unauthenticated user to conduct an escalation of privilege via network access.",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-12T03:01:40.002650+09:00",
+      "type": "single",
+      "title": "N-able Rushes Out N-central Fixes After 33 Zero-Days Go Public",
+      "url": "https://www.infosecurity-magazine.com/news/n-able-n-central-able2shell-0day/",
+      "source": "Infosecurity Magazine (보안뉴스) [RSS]",
+      "published": "2026-11-11T17:15:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-125883",
+        "CVE-2026-125878",
+        "CVE-2026-125879",
+        "CVE-2026-125880",
+        "CVE-2026-125881",
+        "CVE-2026-125882",
+        "CVE-2026-91000"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-125883",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-611 (XXE)",
+          "description": "Improper restriction of XML external entity reference vulnerability in N-able N-central allows XML Schema Poisoning.\n\nThis issue affects N-central: before 26.4.1.",
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-125878",
+          "cvss_score": 8.7,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-79 (XSS)",
+          "description": "Improper neutralization of input during web page generation ('cross-site scripting') vulnerability in N-able N-central allows Resource Injection.\n\nThis issue affects N-central: before 26.4.1.",
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-125879",
+          "cvss_score": 8.6,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-266",
+          "description": "Incorrect privilege assignment vulnerability in N-able N-central allows Privilege Escalation.\n\nThis issue affects N-central: before 26.4.1.",
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-125880",
+          "cvss_score": 8.3,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-644",
+          "description": "Improper neutralization of HTTP headers for scripting syntax vulnerability in N-able N-central allows Cross-Site Scripting (XSS).\n\nThis issue affects N-central: before 26.4.1.",
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-125881",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-918 (SSRF)",
+          "description": "Server-Side request forgery (SSRF) vulnerability in N-able N-central allows Server Side Request Forgery.\n\nThis issue affects N-central: before 26.4.1.",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
     }
   ]
 }
