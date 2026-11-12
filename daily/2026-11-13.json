@@ -2,21 +2,25 @@
   "date": "2026-11-13",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 1,
+    "scan_runs": 2,
     "total_articles_max": 1781,
-    "matched_articles_max": 177,
-    "new_alerts": 1,
-    "cve_total": 2,
-    "alerts_with_cve": 1,
-    "cve_count": 2,
+    "matched_articles_max": 179,
+    "new_alerts": 4,
+    "cve_total": 5,
+    "alerts_with_cve": 2,
+    "cve_count": 5,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2025-55182",
+      "CVE-2026-106023",
+      "CVE-2026-109163",
+      "CVE-2026-119618",
       "CVE-2026-126187"
     ],
     "keywords_hit": {
-      "CVE": 1
+      "CVE": 2,
+      "Malware": 2
     }
   },
   "alerts": [
@@ -55,6 +59,80 @@
           "kev": true
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-11-13T01:01:23.211460+09:00",
+      "type": "single",
+      "title": "Apache Patches Critical HTTP Server RCE Found by Anthropic, Google",
+      "url": "https://www.securityweek.com/apache-patches-critical-http-server-rce-found-by-anthropic-google/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-11-12T15:38:31+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-119618",
+        "CVE-2026-106023",
+        "CVE-2026-109163"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-119618",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": "CWE-362",
+          "description": "Concurrent Execution using Shared Resource with Improper Synchronization vulnerability in Apache HTTP Server's mod_http2 in assign_headers() can lead to RCE.\n\nThis issue affects Apache HTTP Server: from 2.4.55 through 2.4.70.\nAffected releases of mod_h2 from GitHub: from 2.0.8 through 2.0.42.",
+          "epss_score": 0.00398,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-106023",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": "CWE-476",
+          "description": "NULL pointer dereference vulnerability in Apache HTTP Server's mod_md during HTTP request processing.\n\n\n\nThis issue affects Apache HTTP Server: from 2.4.30 through 2.4.69.",
+          "epss_score": 0.00296,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-109163",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": "CWE-121",
+          "description": "Stack-based buffer overflow vulnerability in Apache HTTP Server's mod_vhost_alias (after CVE-2026-63292)\n\n\n\nThis issue affects Apache HTTP Server: 2.4.69.",
+          "epss_score": 0.00247,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-13T01:01:23.211460+09:00",
+      "type": "single",
+      "title": "Police dismantle Gootloader, CastleRAT, StealC malware infrastructure",
+      "url": "https://www.bleepingcomputer.com/news/security/police-dismantles-gootloader-castlerat-stealc-malware-infrastructure/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-11-12T15:07:20+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-13T01:01:23.211460+09:00",
+      "type": "single",
+      "title": "Your Endpoint Management Platform Could Be Your Biggest Security Risk",
+      "url": "https://www.bleepingcomputer.com/news/security/your-endpoint-management-platform-could-be-your-biggest-security-risk/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-11-12T15:00:10+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
