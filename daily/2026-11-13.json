@@ -2,13 +2,13 @@
   "date": "2026-11-13",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 8,
+    "scan_runs": 9,
     "total_articles_max": 1801,
     "matched_articles_max": 181,
-    "new_alerts": 12,
-    "cve_total": 19,
-    "alerts_with_cve": 8,
-    "cve_count": 19,
+    "new_alerts": 14,
+    "cve_total": 20,
+    "alerts_with_cve": 9,
+    "cve_count": 20,
     "ioc_count": 0,
     "merged_count": 2,
     "unique_cves": [
@@ -27,7 +27,7 @@
     ],
     "keywords_hit": {
       "CVE": 8,
-      "Malware": 5
+      "Malware": 7
     }
   },
   "alerts": [
@@ -391,6 +391,46 @@
           "kev": true
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-11-13T08:01:18.149596+09:00",
+      "type": "single",
+      "title": "New worm-like 'SCKit' malware targets MSPs in ScreenConnect attacks",
+      "url": "https://www.bleepingcomputer.com/news/security/new-worm-like-sckit-malware-targets-msps-in-screenconnect-attacks/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-11-12T22:53:10+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-84869"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-84869",
+          "cvss_score": 9.9,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-269 (Improper Privilege Management)",
+          "description": "A condition in the ScreenConnect client may allow files to be transferred and executed through an active remote session without authorization or Host confirmation in certain circumstances. ScreenConnect servers are not impacted.",
+          "epss_score": 0.00924,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-13T08:01:18.149596+09:00",
+      "type": "single",
+      "title": "Hackers compromise 4,800 GitHub accounts to steal cloud credentials",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-compromise-4-800-github-accounts-to-steal-cloud-credentials/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-11-12T22:25:30+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
