@@ -2,10 +2,10 @@
   "date": "2026-11-12",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 20,
+    "scan_runs": 21,
     "total_articles_max": 1801,
     "matched_articles_max": 178,
-    "new_alerts": 18,
+    "new_alerts": 19,
     "cve_total": 28,
     "alerts_with_cve": 12,
     "cve_count": 28,
@@ -41,7 +41,7 @@
     ],
     "keywords_hit": {
       "CVE": 14,
-      "Malware": 3,
+      "Malware": 4,
       "Botnet": 1
     }
   },
@@ -568,6 +568,20 @@
       "url": "https://www.helpnetsecurity.com/2026/11/12/wfx-loot-github-actions-secret-stealer/",
       "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
       "published": "2026-11-12T09:24:32+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-12T20:01:07.539136+09:00",
+      "type": "single",
+      "title": "Hackers Deploy Malware in Fresh ScreenConnect Campaign",
+      "url": "https://www.securityweek.com/hackers-deploy-malware-in-fresh-screenconnect-campaign/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-11-12T10:39:34+00:00",
       "keywords": [
         "Malware"
       ],
