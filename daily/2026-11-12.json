@@ -2,16 +2,17 @@
   "date": "2026-11-12",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 21,
+    "scan_runs": 22,
     "total_articles_max": 1801,
     "matched_articles_max": 178,
-    "new_alerts": 19,
-    "cve_total": 28,
-    "alerts_with_cve": 12,
-    "cve_count": 28,
+    "new_alerts": 20,
+    "cve_total": 29,
+    "alerts_with_cve": 13,
+    "cve_count": 29,
     "ioc_count": 4,
     "merged_count": 0,
     "unique_cves": [
+      "CVE-2026-102895",
       "CVE-2026-105437",
       "CVE-2026-108186",
       "CVE-2026-109618",
@@ -40,7 +41,7 @@
       "CVE-2026-91000"
     ],
     "keywords_hit": {
-      "CVE": 14,
+      "CVE": 15,
       "Malware": 4,
       "Botnet": 1
     }
@@ -588,6 +589,32 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-12T21:01:30.006276+09:00",
+      "type": "single",
+      "title": "Exploit Attempts for GPUStack Authentication Bypass (CVE-2026-102895), (Thu, Nov 12th)",
+      "url": "https://isc.sans.edu/diary/rss/33514",
+      "source": "SANS ISC (인터넷폭풍센터) [RSS]",
+      "published": "2026-11-12T11:56:24+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-102895"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-102895",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-287 (Authentication Bypass)",
+          "description": "GPUStack is an open-source GPU cluster manager for AI model serving and GPU instance provisioning. Prior to 2.2.0, get_current_user in gpustack/api/auth.py treated a loopback request source as the built-in administrator when force_auth_localhost was false, which was the default. A remote request could appear to originate from 127.0.0.1 because client_ip_getter accepted a same-host reverse proxy peer or a client-supplied X-GPUStack-Real-IP loopback value. The bypass allowed unauthenticated admini",
+          "epss_score": 0.00555,
+          "kev": true
+        }
+      ]
     }
   ]
 }
