@@ -2,13 +2,13 @@
   "date": "2026-11-13",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 6,
+    "scan_runs": 7,
     "total_articles_max": 1801,
     "matched_articles_max": 181,
-    "new_alerts": 11,
-    "cve_total": 14,
-    "alerts_with_cve": 7,
-    "cve_count": 14,
+    "new_alerts": 12,
+    "cve_total": 19,
+    "alerts_with_cve": 8,
+    "cve_count": 19,
     "ioc_count": 0,
     "merged_count": 2,
     "unique_cves": [
@@ -20,11 +20,13 @@
       "CVE-2026-111497",
       "CVE-2026-119618",
       "CVE-2026-120868",
+      "CVE-2026-123158",
       "CVE-2026-126187",
+      "CVE-2026-20362",
       "CVE-2026-84869"
     ],
     "keywords_hit": {
-      "CVE": 7,
+      "CVE": 8,
       "Malware": 5
     }
   },
@@ -321,6 +323,72 @@
           "description": "Concurrent Execution using Shared Resource with Improper Synchronization vulnerability in Apache HTTP Server's mod_http2 in assign_headers() can lead to RCE.\n\nThis issue affects Apache HTTP Server: from 2.4.55 through 2.4.70.\nAffected releases of mod_h2 from GitHub: from 2.0.8 through 2.0.42.",
           "epss_score": 0.00398,
           "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-13T06:01:20.654049+09:00",
+      "type": "single",
+      "title": "CVE-2026-119618 | Apache HTTP Server mod_http2 Race Condition Remote Code Execution Vulnerability",
+      "url": "https://horizon3.ai/attack-research/vulnerabilities/cve-2026-119618/",
+      "source": "Horizon3.ai (공격시뮬레이션) [RSS]",
+      "published": "2026-11-12T20:17:28+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-119618",
+        "CVE-2026-123158",
+        "CVE-2026-20362",
+        "CVE-2026-109618",
+        "CVE-2026-109619"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-119618",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": "CWE-362",
+          "description": "Concurrent Execution using Shared Resource with Improper Synchronization vulnerability in Apache HTTP Server's mod_http2 in assign_headers() can lead to RCE.\n\nThis issue affects Apache HTTP Server: from 2.4.55 through 2.4.70.\nAffected releases of mod_h2 from GitHub: from 2.0.8 through 2.0.42.",
+          "epss_score": 0.00398,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-123158",
+          "cvss_score": 8.1,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-394",
+          "description": "sshd in OpenSSH before 10.6p2 on Linux, when musl libc is used without PAM, lacks a workaround for a password authentication bypass (related to misinterpretation of whether a string is intended to be a password hash). For some configurations of accounts, any password between 256 and 1024 characters succeeds. An example of a platform using musl libc without PAM is Alpine Linux.",
+          "epss_score": 0.189,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-20362",
+          "cvss_score": 7.2,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-918 (SSRF)",
+          "description": "A vulnerability in the web-based management interface of Cisco Finesse could allow an unauthenticated, remote attacker to conduct server-side request forgery (SSRF) attacks through an affected device.\r\n\r\nThis vulnerability is due to improper input validation for specific HTTP requests. An attacker could exploit this vulnerability by sending a crafted HTTP request to an affected device. A successful exploit could allow the attacker to obtain limited sensitive information for services that are ass",
+          "epss_score": 0.00569,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-109618",
+          "cvss_score": 9.2,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-416 (Use After Free)",
+          "description": "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. Some contexts may not properly account for this scenario and leave request memory in an uninitialized state before performing an allocation. The subsequent request cleanup procedure may read or branch on this memory. Multiple OOM strategies can consistently trigger this condition and lead to remote code execution (RCE).",
+          "epss_score": 0.99999,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-109619",
+          "cvss_score": 9.2,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-416 (Use After Free)",
+          "description": "PHP has various global state that temporarily points into request memory. In some scenarios, global state may not be correctly reset, or may be repopulated after being reset. The global state may then refer to request memory even after it has been freed. Subsequent requests may read or branch on this stale state before it is fully initialized. Multiple strategies can trigger this condition and produce remote code execution (RCE).",
+          "epss_score": 0.99999,
+          "kev": true
         }
       ]
     }
