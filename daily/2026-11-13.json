@@ -2,13 +2,13 @@
   "date": "2026-11-13",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
+    "scan_runs": 4,
     "total_articles_max": 1801,
     "matched_articles_max": 181,
-    "new_alerts": 10,
-    "cve_total": 13,
-    "alerts_with_cve": 6,
-    "cve_count": 13,
+    "new_alerts": 11,
+    "cve_total": 14,
+    "alerts_with_cve": 7,
+    "cve_count": 14,
     "ioc_count": 0,
     "merged_count": 2,
     "unique_cves": [
@@ -24,7 +24,7 @@
       "CVE-2026-84869"
     ],
     "keywords_hit": {
-      "CVE": 6,
+      "CVE": 7,
       "Malware": 5
     }
   },
@@ -297,6 +297,32 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-13T03:01:21.650023+09:00",
+      "type": "single",
+      "title": "Critical Apache HTTP/2 Vulnerability (CVE-2026-119618): How Imperva Protects Customers",
+      "url": "https://www.imperva.com/blog/critical-apache-http-2-vulnerability-cve-2026-119618-how-imperva-protects-customers/",
+      "source": "Imperva Blog (DDoS/봇 방어) [RSS]",
+      "published": "2026-11-12T17:57:05+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-119618"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-119618",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": "CWE-362",
+          "description": "Concurrent Execution using Shared Resource with Improper Synchronization vulnerability in Apache HTTP Server's mod_http2 in assign_headers() can lead to RCE.\n\nThis issue affects Apache HTTP Server: from 2.4.55 through 2.4.70.\nAffected releases of mod_h2 from GitHub: from 2.0.8 through 2.0.42.",
+          "epss_score": 0.00398,
+          "kev": false
+        }
+      ]
     }
   ]
 }
