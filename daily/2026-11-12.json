@@ -2,14 +2,14 @@
   "date": "2026-11-12",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 23,
+    "scan_runs": 24,
     "total_articles_max": 1801,
     "matched_articles_max": 178,
-    "new_alerts": 20,
+    "new_alerts": 23,
     "cve_total": 29,
     "alerts_with_cve": 13,
     "cve_count": 29,
-    "ioc_count": 4,
+    "ioc_count": 41,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2026-102895",
@@ -42,7 +42,7 @@
     ],
     "keywords_hit": {
       "CVE": 15,
-      "Malware": 4,
+      "Malware": 7,
       "Botnet": 1
     }
   },
@@ -615,6 +615,48 @@
           "kev": true
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-11-12T23:01:16.144970+09:00",
+      "type": "single",
+      "title": "Operation Endgame malware takedown turns up over 6 million stolen logins",
+      "url": "https://www.helpnetsecurity.com/2026/11/12/europol-operation-endgame-malware-takedown/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-11-12T13:34:14+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-12T23:01:16.144970+09:00",
+      "type": "single",
+      "title": "Dissecting StrikeStub: ClickFix PowerShell Malware and Modular RAT",
+      "url": "https://www.akamai.com/blog/security-research/2026/nov/strikestub-clickfix-powershell-malware-modular-rat",
+      "source": "Akamai Blog (보안리서치/위협분석) [RSS]",
+      "published": "2026-11-12T14:00:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-12T23:01:16.144970+09:00",
+      "type": "single",
+      "title": "T-SQL Being Abused to Deliver Malware on Compromised MS SQL Servers",
+      "url": "https://www.fortinet.com/blog/threat-research/t-sql-being-abused-to-deliver-malware-on-compromised-ms-sql-servers",
+      "source": "Fortinet FortiGuard Labs (위협연구)",
+      "published": "2026-11-12T14:00:00.000Z",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "[Domain] server[.]vietnam852[.]com\n[Domain] www[.]swordaa[.]com\n[URL] hxxp://site[.]vietnam852[.]com:88/2026/2018.sql\n[URL] hxxp://site[.]vietnam852[.]com:88/2026/dwm.exe\n[URL] hxxp://site[.]vietnam852[.]com:88/2026/go.bat\n[URL] hxxp://site[.]vietnam852[.]com:88/2026/go.vbs\n[URL] hxxp://site[.]vietnam852[.]com:88/2026/out.bat\n[URL] hxxp://site[.]vietnam852[.]com:88/2026/pass.txt\n[URL] hxxp://site[.]vietnam852[.]com:88/2026/sqlcmd.exe\n[URL] hxxp://site[.]vietnam852[.]com:88/2026/user.txt\n[URL] hxxp://site[.]vietnam852[.]com:88/down.exe\n[URL] hxxp://site[.]vietnam852[.]com:88/ip.php\n[URL] hxxp://ftp[.]vietnam852[.]com:88/post.php\n[URL] hxxp://site[.]jiancai008[.]com:88/test/dllhost.exe\n[URL] hxxp://site[.]jiancai008[.]com:88/test/winlogon.exe\n[URL] hxxp://site[.]jiancai008[.]com:88/test/WinRing0x64.sys\n[URL] hxxp://site[.]jiancai008[.]com:88/test/MicrosoftEdgeUpdate.exe\n[URL] hxxp://ftp[.]vietnam852[.]com:88/test/WinRing0x64.sys\n[URL] hxxp://ftp[.]vietnam852[.]com:88/test/MicrosoftEdgeUpdate.exe\n[URL] hxxp://ftp[.]vietnam852[.]com:88/test/winlogon.exe\n[URL] hxxp://ftp[.]vietnam852[.]com:88/test/dllhost.exe\n[URL] hxxp://ftp[.]vietnam852[.]com:88/test/sihost.exe\n[URL] hxxp://site[.]vietnam852[.]com/tj/xmr.php?data=\n[URL] hxxp://site[.]hfgjjkrewjk[.]com/tj/xmr.php?data=\n[SHA256] 124774698FD3EDE0800015D19C2BD6C1869D03BBC2E6E8DBE2F69D2978F7F4D0\n[SHA256] 125D3A0EFE7699BB20397C13F0F4993AD893952727487B4D190E386A5B14C427\n[SHA256] 20983573B840447E1AACD6D3F6DD240732B15037D268D6456F0D3C4EC5051CB0\n[SHA256] 2A0D2889241885D5EA6FE7DD1B1ADC83653A0C07B8AAA1B0832E5F9C0225B379\n[SHA256] 2A23E10BFC097E98295CBFF8124BD403C4CB677E709B48CCC53D6ACA216C3061\n[SHA256] 3F64B0146B323C5716043360E84384A5A197A897F46088DF93A910470A29E1A0\n[SHA256] 58DB0CA2054ABE2989412D7A1C8ED16718577F893C196825C848FCD56C7E8F05\n[SHA256] 79596CF6E267EF5CB658BD97D04E42A41001D36595E370441ADB3C2B5DD5666C\n[SHA256] 8CE2CD98EF6CEEECE8239936E4AEA042C41807F632CD691D5091705BF6C0076D\n[SHA256] D6E3FD28F479138B336E2C2088AD2E86B7646A163AA453B1703905A4B359070F\n[SHA256] DA4128AA5D006E05C58F0D240C2D8E5FB02774B6ACF314F1230059C7A3498724\n[SHA256] E9D3FD9093C476B8B5DE19AA00C50758568649DEF6491F54FA3E0ABA4EA31AC9\n[SHA256] F5444E8E9E9E019693AACB363B7441AC0B8ECFE96A77FD94B9C312A017588EB4",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
