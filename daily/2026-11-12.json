@@ -2,14 +2,14 @@
   "date": "2026-11-12",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 17,
+    "scan_runs": 18,
     "total_articles_max": 1801,
-    "matched_articles_max": 177,
-    "new_alerts": 14,
+    "matched_articles_max": 178,
+    "new_alerts": 15,
     "cve_total": 24,
     "alerts_with_cve": 10,
     "cve_count": 24,
-    "ioc_count": 0,
+    "ioc_count": 4,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2026-105437",
@@ -38,7 +38,8 @@
     ],
     "keywords_hit": {
       "CVE": 12,
-      "Malware": 2
+      "Malware": 2,
+      "Botnet": 1
     }
   },
   "alerts": [
@@ -470,6 +471,20 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-11-12T17:01:12.080212+09:00",
+      "type": "single",
+      "title": "WFX Phantom: The GitHub Actions Secret Stealer That Deletes Its Tracks",
+      "url": "https://www.stepsecurity.io/blog/wfx-phantom-the-github-actions-secret-stealer",
+      "source": "StepSecurity (CI/CD 보안) [RSS]",
+      "published": "2026-11-12T07:58:30+00:00",
+      "keywords": [
+        "Botnet"
+      ],
+      "ioc_raw_text": "[IP] 194[.]150[.]166[.]244\n[IP] 18[.]143[.]168[.]96\n[Domain] api[.]telegram[.]org\n[SHA1] ee6e5addfe591923fc385553cb66cf0d25634a6b",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
