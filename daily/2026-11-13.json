@@ -2,25 +2,30 @@
   "date": "2026-11-13",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
-    "total_articles_max": 1781,
-    "matched_articles_max": 179,
-    "new_alerts": 4,
-    "cve_total": 5,
-    "alerts_with_cve": 2,
-    "cve_count": 5,
+    "scan_runs": 3,
+    "total_articles_max": 1801,
+    "matched_articles_max": 181,
+    "new_alerts": 10,
+    "cve_total": 13,
+    "alerts_with_cve": 6,
+    "cve_count": 13,
     "ioc_count": 0,
-    "merged_count": 0,
+    "merged_count": 2,
     "unique_cves": [
       "CVE-2025-55182",
       "CVE-2026-106023",
       "CVE-2026-109163",
+      "CVE-2026-109618",
+      "CVE-2026-109619",
+      "CVE-2026-111497",
       "CVE-2026-119618",
-      "CVE-2026-126187"
+      "CVE-2026-120868",
+      "CVE-2026-126187",
+      "CVE-2026-84869"
     ],
     "keywords_hit": {
-      "CVE": 2,
-      "Malware": 2
+      "CVE": 6,
+      "Malware": 5
     }
   },
   "alerts": [
@@ -127,6 +132,165 @@
       "url": "https://www.bleepingcomputer.com/news/security/your-endpoint-management-platform-could-be-your-biggest-security-risk/",
       "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
       "published": "2026-11-12T15:00:10+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-13T02:01:49.029398+09:00",
+      "type": "single",
+      "title": "Citrix Patches 12 NetScaler and Secure Access Client Flaws, Including Authentication Bypass",
+      "url": "https://thehackernews.com/2026/11/citrix-patches-12-netscaler-and-secure.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-11-12T15:38:49+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-120868"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-120868",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-13T02:01:49.029398+09:00",
+      "type": "single",
+      "title": "SCKit Malware Turns ScreenConnect Support Sessions Into Potential MSP Attack Paths",
+      "url": "https://thehackernews.com/2026/11/sckit-malware-targets-screenconnect.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-11-12T13:08:28+00:00",
+      "keywords": [
+        "CVE",
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-84869"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-84869",
+          "cvss_score": 9.9,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-269 (Improper Privilege Management)",
+          "description": "A condition in the ScreenConnect client may allow files to be transferred and executed through an active remote session without authorization or Host confirmation in certain circumstances. ScreenConnect servers are not impacted.",
+          "epss_score": 0.00924,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-13T02:01:49.029398+09:00",
+      "type": "merged",
+      "cve_ids": [
+        "CVE-2026-111497"
+      ],
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "sources": [
+        {
+          "title": "Siemens Desigo, Gridscale",
+          "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-02",
+          "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]"
+        },
+        {
+          "title": "Siemens Industrial Edge Management",
+          "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-03",
+          "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]"
+        }
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-111497",
+          "cvss_score": 9.2,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-252",
+          "description": "A buffer overflow vulnerability in the Brotli decoder (c/dec/decode.c) in Google Brotli versions 1.0.3 through 1.2.0 on all platforms allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause a denial of service, or potentially execute arbitrary code using a crafted Brotli-compressed stream.\n\n\n\n\n\nUsers need to update any Brotli libraries or binaries between 1.0.3 through 1.2.0 to the latest available version: 1.0.10 or 1.1.1 or 1",
+          "epss_score": 0.82641,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-13T02:01:49.029398+09:00",
+      "type": "merged",
+      "cve_ids": [
+        "CVE-2026-109618",
+        "CVE-2026-109619"
+      ],
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "sources": [
+        {
+          "title": "Siemens RUGGEDCOM APE1808",
+          "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-05",
+          "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]"
+        },
+        {
+          "title": "Siemens Building Automation and Energy Products",
+          "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-316-01",
+          "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]"
+        }
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-109618",
+          "cvss_score": 9.2,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-416 (Use After Free)",
+          "description": "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. Some contexts may not properly account for this scenario and leave request memory in an uninitialized state before performing an allocation. The subsequent request cleanup procedure may read or branch on this memory. Multiple OOM strategies can consistently trigger this condition and lead to remote code execution (RCE).",
+          "epss_score": 0.99999,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-109619",
+          "cvss_score": 9.2,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-416 (Use After Free)",
+          "description": "PHP has various global state that temporarily points into request memory. In some scenarios, global state may not be correctly reset, or may be repopulated after being reset. The global state may then refer to request memory even after it has been freed. Subsequent requests may read or branch on this stale state before it is fully initialized. Multiple strategies can trigger this condition and produce remote code execution (RCE).",
+          "epss_score": 0.99999,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-13T02:01:49.029398+09:00",
+      "type": "single",
+      "title": "186 Fake AI Domains Redirect Users to ClickFix Lures, Browser Malware, and Search Hijackers",
+      "url": "https://thehackernews.com/2026/11/186-fake-ai-domains-redirect-users-to.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-11-12T15:15:40+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-13T02:01:49.029398+09:00",
+      "type": "single",
+      "title": "European authorities take down SteaIC malware servers for second time this year",
+      "url": "https://therecord.media/european-authorities-take-down-stealic-malware-second-time",
+      "source": "The Record by Recorded Future (위협뉴스) [RSS]",
+      "published": "2026-11-12T16:21:00+00:00",
       "keywords": [
         "Malware"
       ],
