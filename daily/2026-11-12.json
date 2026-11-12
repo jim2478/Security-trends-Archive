@@ -2,13 +2,13 @@
   "date": "2026-11-12",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 15,
+    "scan_runs": 16,
     "total_articles_max": 1801,
-    "matched_articles_max": 170,
-    "new_alerts": 7,
-    "cve_total": 16,
-    "alerts_with_cve": 4,
-    "cve_count": 16,
+    "matched_articles_max": 171,
+    "new_alerts": 13,
+    "cve_total": 23,
+    "alerts_with_cve": 9,
+    "cve_count": 23,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -21,16 +21,22 @@
       "CVE-2026-114467",
       "CVE-2026-114469",
       "CVE-2026-119618",
+      "CVE-2026-121351",
+      "CVE-2026-121352",
+      "CVE-2026-121356",
+      "CVE-2026-121653",
+      "CVE-2026-124907",
       "CVE-2026-125878",
       "CVE-2026-125879",
       "CVE-2026-125880",
       "CVE-2026-125881",
       "CVE-2026-125882",
       "CVE-2026-125883",
+      "CVE-2026-20320",
       "CVE-2026-91000"
     ],
     "keywords_hit": {
-      "CVE": 5,
+      "CVE": 11,
       "Malware": 2
     }
   },
@@ -269,6 +275,170 @@
       "published": "2026-11-11T22:56:21+00:00",
       "keywords": [
         "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-12T15:01:50.305585+09:00",
+      "type": "single",
+      "title": "Critical Apache HTTP/2 Flaw Could Let Unauthenticated Attackers Execute Code Remotely",
+      "url": "https://thehackernews.com/2026/11/critical-apache-http2-flaw-could-let.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-11-12T05:12:26+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-119618"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-119618",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": "CWE-362",
+          "description": "Concurrent Execution using Shared Resource with Improper Synchronization vulnerability in Apache HTTP Server's mod_http2 in assign_headers() can lead to RCE.\n\nThis issue affects Apache HTTP Server: from 2.4.55 through 2.4.70.\nAffected releases of mod_h2 from GitHub: from 2.0.8 through 2.0.42.",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-12T15:01:50.305585+09:00",
+      "type": "single",
+      "title": "파이어폭스 160, 보안 취약점 99건 수정…WebGL 격리 우회 결함 포함",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=209473",
+      "source": "데일리시큐 (전체) [RSS]",
+      "published": "2026-11-12T14:56:32+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-124907"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-124907",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-416 (Use After Free)",
+          "description": "Privilege escalation, sandbox escape due to use-after-free in the Graphics: CanvasWebGL component. This vulnerability was fixed in Firefox 160, Firefox ESR 153.7, Thunderbird 160, and Thunderbird 153.7.",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-12T15:01:50.305585+09:00",
+      "type": "single",
+      "title": "이반티 엔드포인트 매니저, 로그인 없이 악용 가능한 SQL 삽입 취약점 수정",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=209472",
+      "source": "데일리시큐 (전체) [RSS]",
+      "published": "2026-11-12T14:53:34+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-121653"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-121653",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-89 (SQL Injection)",
+          "description": "SQL injection in the Core of Ivanti Endpoint Manager before version 2024 SU8 allows a remote unauthenticated attacker to achieve remote code execution.",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-12T15:01:50.305585+09:00",
+      "type": "single",
+      "title": "어도비 커넥트 취약점 24건 수정…CVSS 10.0 결함도 포함",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=209471",
+      "source": "데일리시큐 (전체) [RSS]",
+      "published": "2026-11-12T14:50:32+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-121351",
+        "CVE-2026-121356",
+        "CVE-2026-121352"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-121351",
+          "cvss_score": 10.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-22 (Path Traversal)",
+          "description": "Adobe Connect is affected by an Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability that could lead to arbitrary file system read. An attacker could exploit this vulnerability to access sensitive files and directories outside the intended access scope. Exploitation of this issue does not require user interaction. Scope is changed.",
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-121356",
+          "cvss_score": 10.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-918 (SSRF)",
+          "description": "Adobe Connect is affected by a Server-Side Request Forgery (SSRF) vulnerability that could result in privilege escalation. Exploitation of this issue does not require user interaction. Scope is changed.",
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-121352",
+          "cvss_score": 10.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-863",
+          "description": "Adobe Connect is affected by an Incorrect Authorization vulnerability that could result in privilege escalation. An attacker could exploit this vulnerability to gain unauthorized access to sensitive resources. Exploitation of this issue does not require user interaction. Scope is changed.",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-12T15:01:50.305585+09:00",
+      "type": "single",
+      "title": "시스코 브로드웍스 취약점, 패치 공개 약 석 달 만에 실제 공격에 악용",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=209468",
+      "source": "데일리시큐 (전체) [RSS]",
+      "published": "2026-11-12T14:46:39+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-20320"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-20320",
+          "cvss_score": 7.5,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-611 (XXE)",
+          "description": "A vulnerability in the Open Client Interface (OCI) XML Parser of Cisco BroadWorks could allow an unauthenticated, remote attacker to read sensitive configuration information on an affected system.\r\n\r This vulnerability exists because XML entries are improperly parsed due to external entity resolution being allowed by default. An attacker could exploit this vulnerability by sending a crafted XML message to the Open Client Interface &ndash; Provisioning (OCI-P) service. A successful exploit could ",
+          "epss_score": 0.00385,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-12T15:01:50.305585+09:00",
+      "type": "single",
+      "title": "젠 오케스트라 인증 우회 실제 악용…가상화 호스트까지 장악 가능",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=209467",
+      "source": "데일리시큐 (전체) [RSS]",
+      "published": "2026-11-12T14:38:44+00:00",
+      "keywords": [
+        "CVE"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
