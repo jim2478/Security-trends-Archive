@@ -2,13 +2,13 @@
   "date": "2026-11-13",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 16,
+    "scan_runs": 17,
     "total_articles_max": 1801,
     "matched_articles_max": 181,
-    "new_alerts": 19,
-    "cve_total": 24,
-    "alerts_with_cve": 13,
-    "cve_count": 24,
+    "new_alerts": 21,
+    "cve_total": 28,
+    "alerts_with_cve": 15,
+    "cve_count": 28,
     "ioc_count": 0,
     "merged_count": 2,
     "unique_cves": [
@@ -23,13 +23,16 @@
       "CVE-2026-119618",
       "CVE-2026-120868",
       "CVE-2026-123158",
+      "CVE-2026-126170",
       "CVE-2026-126187",
+      "CVE-2026-126253",
+      "CVE-2026-126262",
       "CVE-2026-20362",
       "CVE-2026-84869",
       "CVE-2026-9661"
     ],
     "keywords_hit": {
-      "CVE": 13,
+      "CVE": 15,
       "Malware": 7
     }
   },
@@ -544,6 +547,78 @@
       "cve_details": [
         {
           "cve_id": "CVE-2026-120868",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-13T16:02:01.663579+09:00",
+      "type": "single",
+      "title": "포티넷 제품군 취약점 98건 공개…방화벽·관리 서버 점검 필요",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=209510",
+      "source": "데일리시큐 (전체) [RSS]",
+      "published": "2026-11-13T15:57:28+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-126170",
+        "CVE-2026-126262",
+        "CVE-2026-126253"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-126170",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-126262",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-126253",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-13T16:02:01.663579+09:00",
+      "type": "single",
+      "title": "아파치 HTTP 서버 2.4.71 공개…HTTP/2 원격 코드 실행 취약점 수정",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=209506",
+      "source": "데일리시큐 (전체) [RSS]",
+      "published": "2026-11-13T15:02:23+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-119618"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-119618",
           "cvss_score": null,
           "cvss_severity": null,
           "cwe": null,
