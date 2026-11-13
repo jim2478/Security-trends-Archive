@@ -2,10 +2,10 @@
   "date": "2026-11-14",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 8,
+    "scan_runs": 9,
     "total_articles_max": 1801,
     "matched_articles_max": 179,
-    "new_alerts": 6,
+    "new_alerts": 7,
     "cve_total": 4,
     "alerts_with_cve": 2,
     "cve_count": 4,
@@ -18,7 +18,7 @@
       "CVE-2026-6460"
     ],
     "keywords_hit": {
-      "Malware": 5,
+      "Malware": 6,
       "CVE": 1
     }
   },
@@ -150,6 +150,20 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-11-14T08:01:16.886382+09:00",
+      "type": "single",
+      "title": "ArcticRAT Cybercrime Gang Profiles Victim Finances With AI",
+      "url": "https://www.darkreading.com/mobile-security/arcticrat-cybercrime-gang-profiles-victim-finances-ai",
+      "source": "Dark Reading (보안뉴스 종합) [RSS]",
+      "published": "2026-11-13T20:20:27+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
