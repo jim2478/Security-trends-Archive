@@ -2,13 +2,13 @@
   "date": "2026-11-13",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 15,
+    "scan_runs": 16,
     "total_articles_max": 1801,
     "matched_articles_max": 181,
-    "new_alerts": 18,
-    "cve_total": 23,
-    "alerts_with_cve": 12,
-    "cve_count": 23,
+    "new_alerts": 19,
+    "cve_total": 24,
+    "alerts_with_cve": 13,
+    "cve_count": 24,
     "ioc_count": 0,
     "merged_count": 2,
     "unique_cves": [
@@ -29,7 +29,7 @@
       "CVE-2026-9661"
     ],
     "keywords_hit": {
-      "CVE": 12,
+      "CVE": 13,
       "Malware": 7
     }
   },
@@ -523,6 +523,32 @@
           "cwe": "CWE-290",
           "description": "N-able Mail Assure through April 2026 contains a design-level authorization flaw that allows an authenticated SMTP user to send outbound email using MAIL FROM addresses belonging to other tenants. When connecting to the SMTP TCP port and performing SMTP AUTH with valid credentials, the server accepts arbitrary sender domains without enforcing any domain-to-account binding. As a result, an attacker from any tenant can impersonate other tenant domains, producing messages that pass SPF and DMARC va",
           "epss_score": 0.00336,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-13T15:01:15.541384+09:00",
+      "type": "single",
+      "title": "시트릭스 넥스케일러 메모리 결함 28개 수정…기본 설정 장비도 영향",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=209502",
+      "source": "데일리시큐 (전체) [RSS]",
+      "published": "2026-11-13T14:31:36+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-120868"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-120868",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
           "kev": false
         }
       ]
