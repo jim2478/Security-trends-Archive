@@ -2,10 +2,10 @@
   "date": "2026-11-13",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 9,
+    "scan_runs": 10,
     "total_articles_max": 1801,
     "matched_articles_max": 181,
-    "new_alerts": 14,
+    "new_alerts": 15,
     "cve_total": 20,
     "alerts_with_cve": 9,
     "cve_count": 20,
@@ -26,7 +26,7 @@
       "CVE-2026-84869"
     ],
     "keywords_hit": {
-      "CVE": 8,
+      "CVE": 9,
       "Malware": 7
     }
   },
@@ -427,6 +427,20 @@
       "published": "2026-11-12T22:25:30+00:00",
       "keywords": [
         "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-13T09:01:12.072725+09:00",
+      "type": "single",
+      "title": "PostgreSQL security update fixes 52 vulnerabilities, ends support for PostgreSQL 14",
+      "url": "https://www.helpnetsecurity.com/2026/11/13/postgresql-security-update-november-2026/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-11-12T23:05:33+00:00",
+      "keywords": [
+        "CVE"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
