@@ -2,10 +2,10 @@
   "date": "2026-11-13",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 22,
+    "scan_runs": 23,
     "total_articles_max": 1801,
     "matched_articles_max": 181,
-    "new_alerts": 24,
+    "new_alerts": 25,
     "cve_total": 31,
     "alerts_with_cve": 16,
     "cve_count": 31,
@@ -34,7 +34,7 @@
     ],
     "keywords_hit": {
       "CVE": 16,
-      "Malware": 9
+      "Malware": 10
     }
   },
   "alerts": [
@@ -696,6 +696,20 @@
       "url": "https://thehackernews.com/2026/11/operation-endgame-takes-down-gootloader.html",
       "source": "The Hacker News (보안뉴스 종합) [RSS]",
       "published": "2026-11-13T10:55:03+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-13T22:01:13.640954+09:00",
+      "type": "single",
+      "title": "Europol malware crackdown exposes 6.4M stolen logins",
+      "url": "https://cybernews.com/news/europol-disrupts-gootloader-malware-network/",
+      "source": "CyberNews [RSS]",
+      "published": "2026-11-13T09:47:11+00:00",
       "keywords": [
         "Malware"
       ],
