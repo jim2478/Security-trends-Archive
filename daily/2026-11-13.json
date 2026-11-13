@@ -2,10 +2,10 @@
   "date": "2026-11-13",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 18,
+    "scan_runs": 19,
     "total_articles_max": 1801,
     "matched_articles_max": 181,
-    "new_alerts": 22,
+    "new_alerts": 23,
     "cve_total": 31,
     "alerts_with_cve": 16,
     "cve_count": 31,
@@ -34,7 +34,7 @@
     ],
     "keywords_hit": {
       "CVE": 16,
-      "Malware": 7
+      "Malware": 8
     }
   },
   "alerts": [
@@ -674,6 +674,20 @@
           "kev": true
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-11-13T18:01:03.554565+09:00",
+      "type": "single",
+      "title": "Nightmare Eclipse Drops Windows Zero-Day Exploit ‘SignDrop’",
+      "url": "https://www.securityweek.com/nightmare-eclipse-drops-windows-zero-day-exploit-signdrop/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-11-13T08:50:36+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
