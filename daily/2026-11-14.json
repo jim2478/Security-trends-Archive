@@ -2,10 +2,10 @@
   "date": "2026-11-14",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 1,
-    "total_articles_max": 1761,
-    "matched_articles_max": 175,
-    "new_alerts": 1,
+    "scan_runs": 2,
+    "total_articles_max": 1801,
+    "matched_articles_max": 177,
+    "new_alerts": 3,
     "cve_total": 0,
     "alerts_with_cve": 0,
     "cve_count": 0,
@@ -13,7 +13,7 @@
     "merged_count": 0,
     "unique_cves": [],
     "keywords_hit": {
-      "Malware": 1
+      "Malware": 3
     }
   },
   "alerts": [
@@ -24,6 +24,34 @@
       "url": "https://www.itsecurityguru.org/2026/11/13/hackers-exploit-exposed-geovision-cctv-software-to-disable-defender-and-deploy-cryptominers/?utm_source=rss&utm_medium=rss&utm_campaign=hackers-exploit-exposed-geovision-cctv-software-to-disable-defender-and-deploy-cryptominers",
       "source": "IT Security Guru (보안뉴스) [RSS]",
       "published": "2026-11-13T14:05:30+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-14T01:01:14.389866+09:00",
+      "type": "single",
+      "title": "Fake GTA 6 download goes after Steam logins and crypto wallet data",
+      "url": "https://www.helpnetsecurity.com/2026/11/13/fake-gta-6-download-scam/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-11-13T15:00:59+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-14T01:01:14.389866+09:00",
+      "type": "single",
+      "title": "Gootloader Malware Disrupted After Infecting 25,000 Computers",
+      "url": "https://securityaffairs.com/202997/cyber-crime/gootloader-malware-disrupted-after-infecting-25000-computers.html",
+      "source": "Security Affairs (보안뉴스/위협동향) [RSS]",
+      "published": "2026-11-13T14:35:44+00:00",
       "keywords": [
         "Malware"
       ],
