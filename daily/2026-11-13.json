@@ -2,17 +2,19 @@
   "date": "2026-11-13",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 11,
+    "scan_runs": 12,
     "total_articles_max": 1801,
     "matched_articles_max": 181,
-    "new_alerts": 15,
-    "cve_total": 20,
-    "alerts_with_cve": 9,
-    "cve_count": 20,
+    "new_alerts": 18,
+    "cve_total": 23,
+    "alerts_with_cve": 12,
+    "cve_count": 23,
     "ioc_count": 0,
     "merged_count": 2,
     "unique_cves": [
+      "CVE-2025-15603",
       "CVE-2025-55182",
+      "CVE-2025-68624",
       "CVE-2026-106023",
       "CVE-2026-109163",
       "CVE-2026-109618",
@@ -23,10 +25,11 @@
       "CVE-2026-123158",
       "CVE-2026-126187",
       "CVE-2026-20362",
-      "CVE-2026-84869"
+      "CVE-2026-84869",
+      "CVE-2026-9661"
     ],
     "keywords_hit": {
-      "CVE": 9,
+      "CVE": 12,
       "Malware": 7
     }
   },
@@ -445,6 +448,84 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-13T11:01:40.669410+09:00",
+      "type": "single",
+      "title": "Open WebUI: the Windows installer mints the master key from the install second — CVE-2025-15603 was rejected; here is the measurement",
+      "url": "https://seclists.org/fulldisclosure/2026/Nov/21",
+      "source": "SecLists Full Disclosure (취약점공개)",
+      "published": "2026-11-13T01:45:08+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2025-15603"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2025-15603",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": "Rejected reason: ** REJECT ** DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was withdrawn by its CNA. Further investigation showed that it was not a security issue. Notes: The vendor explains: \"The 't0p-s3cr3t' default was dead code on every supported startup path: start.sh, start_windows.bat and `open-webui serve` all set or auto-generate WEBUI_SECRET_KEY before the backend imports env.py. It was only ever reachable by invoking uvicorn directly, which is unsupported",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-13T11:01:40.669410+09:00",
+      "type": "single",
+      "title": "Postecert FIRMAOK! - Local Privilege Escalation Vulnerability via OpenSSL Configuration (CVE-2026-9661)",
+      "url": "https://seclists.org/fulldisclosure/2026/Nov/14",
+      "source": "SecLists Full Disclosure (취약점공개)",
+      "published": "2026-11-13T01:26:56+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-9661"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-9661",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-13T11:01:40.669410+09:00",
+      "type": "single",
+      "title": "Update: CVE-2025-68624 (N-able Mail Assure cross-tenant spoofing): fix declared by the vendor",
+      "url": "https://seclists.org/fulldisclosure/2026/Nov/13",
+      "source": "SecLists Full Disclosure (취약점공개)",
+      "published": "2026-11-13T01:26:46+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2025-68624"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2025-68624",
+          "cvss_score": 4.3,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-290",
+          "description": "N-able Mail Assure through April 2026 contains a design-level authorization flaw that allows an authenticated SMTP user to send outbound email using MAIL FROM addresses belonging to other tenants. When connecting to the SMTP TCP port and performing SMTP AUTH with valid credentials, the server accepts arbitrary sender domains without enforcing any domain-to-account binding. As a result, an attacker from any tenant can impersonate other tenant domains, producing messages that pass SPF and DMARC va",
+          "epss_score": 0.00336,
+          "kev": false
+        }
+      ]
     }
   ]
 }
