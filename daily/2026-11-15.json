@@ -2,17 +2,59 @@
   "date": "2026-11-15",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 16,
+    "scan_runs": 17,
     "total_articles_max": 1797,
     "matched_articles_max": 176,
-    "new_alerts": 0,
-    "cve_total": 0,
-    "alerts_with_cve": 0,
-    "cve_count": 0,
+    "new_alerts": 1,
+    "cve_total": 2,
+    "alerts_with_cve": 1,
+    "cve_count": 2,
     "ioc_count": 0,
     "merged_count": 0,
-    "unique_cves": [],
-    "keywords_hit": {}
+    "unique_cves": [
+      "CVE-2026-109618",
+      "CVE-2026-109619"
+    ],
+    "keywords_hit": {
+      "CVE": 1
+    }
   },
-  "alerts": []
+  "alerts": [
+    {
+      "scan_time_kst": "2026-11-15T16:01:15.868442+09:00",
+      "type": "single",
+      "title": "북한 해킹조직, 정부·금융 서버 겨냥…국내 30곳 표적 명단 확인",
+      "url": "https://zdnet.co.kr/view/?no=20261115140951",
+      "source": "지디넷코리아 [RSS]",
+      "published": "2026-11-15T06:12:23+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-109618",
+        "CVE-2026-109619"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-109618",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-109619",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": true
+        }
+      ]
+    }
+  ]
 }
