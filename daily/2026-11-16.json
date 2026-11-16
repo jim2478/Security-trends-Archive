@@ -2,10 +2,10 @@
   "date": "2026-11-16",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 18,
+    "scan_runs": 19,
     "total_articles_max": 1801,
     "matched_articles_max": 174,
-    "new_alerts": 1,
+    "new_alerts": 2,
     "cve_total": 0,
     "alerts_with_cve": 0,
     "cve_count": 0,
@@ -13,7 +13,7 @@
     "merged_count": 0,
     "unique_cves": [],
     "keywords_hit": {
-      "Malware": 1
+      "Malware": 2
     }
   },
   "alerts": [
@@ -24,6 +24,20 @@
       "url": "https://www.kaspersky.co.uk/blog/retadup-worm-resurrected-brings-coffeeloader-infections/31055/",
       "source": "Kaspersky Blog UK (보안뉴스) [RSS]",
       "published": "2026-11-16T07:00:27+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-16T18:01:11.910245+09:00",
+      "type": "single",
+      "title": "ArcticRAT Android Malware Uses Grok AI to Analyse Stolen Banking Texts",
+      "url": "https://hackread.com/arcticrat-android-malware-grok-ai-analyse-banking-texts/",
+      "source": "HackRead (해킹/데이터유출) [RSS]",
+      "published": "2026-11-16T08:28:18+00:00",
       "keywords": [
         "Malware"
       ],
