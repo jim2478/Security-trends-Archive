@@ -2,10 +2,10 @@
   "date": "2026-11-16",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 20,
+    "scan_runs": 21,
     "total_articles_max": 1801,
     "matched_articles_max": 174,
-    "new_alerts": 2,
+    "new_alerts": 3,
     "cve_total": 0,
     "alerts_with_cve": 0,
     "cve_count": 0,
@@ -13,7 +13,7 @@
     "merged_count": 0,
     "unique_cves": [],
     "keywords_hit": {
-      "Malware": 2
+      "Malware": 3
     }
   },
   "alerts": [
@@ -38,6 +38,20 @@
       "url": "https://hackread.com/arcticrat-android-malware-grok-ai-analyse-banking-texts/",
       "source": "HackRead (해킹/데이터유출) [RSS]",
       "published": "2026-11-16T08:28:18+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-16T20:01:14.935995+09:00",
+      "type": "single",
+      "title": "SANSAR Linux Cryptomining Malware Uses Modified NVIDIA Library to Hide GPU Activity",
+      "url": "https://thehackernews.com/2026/11/sansar-linux-cryptomining-malware-uses.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-11-16T09:32:57+00:00",
       "keywords": [
         "Malware"
       ],
