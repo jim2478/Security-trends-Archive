@@ -2,10 +2,10 @@
   "date": "2026-11-16",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 22,
+    "scan_runs": 23,
     "total_articles_max": 1801,
     "matched_articles_max": 174,
-    "new_alerts": 3,
+    "new_alerts": 5,
     "cve_total": 0,
     "alerts_with_cve": 0,
     "cve_count": 0,
@@ -13,7 +13,7 @@
     "merged_count": 0,
     "unique_cves": [],
     "keywords_hit": {
-      "Malware": 3
+      "Malware": 5
     }
   },
   "alerts": [
@@ -52,6 +52,34 @@
       "url": "https://thehackernews.com/2026/11/sansar-linux-cryptomining-malware-uses.html",
       "source": "The Hacker News (보안뉴스 종합) [RSS]",
       "published": "2026-11-16T09:32:57+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-16T22:01:22.168196+09:00",
+      "type": "single",
+      "title": "Telegram Widgets Hit by RCE Demos, Malware Warning Days After Launch",
+      "url": "https://www.securityweek.com/telegram-widgets-hit-by-rce-demos-malware-warning-days-after-launch/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-11-16T12:48:03+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-16T22:01:22.168196+09:00",
+      "type": "single",
+      "title": "From Report to Tested Detection in Hours: The ARTEX Signature Pack",
+      "url": "https://securityaffairs.com/203230/hacking/from-report-to-tested-detection-in-hours-the-artex-signature-pack.html",
+      "source": "Security Affairs (보안뉴스/위협동향) [RSS]",
+      "published": "2026-11-16T11:50:46+00:00",
       "keywords": [
         "Malware"
       ],
