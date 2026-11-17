@@ -2,10 +2,10 @@
   "date": "2026-11-17",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 12,
+    "scan_runs": 13,
     "total_articles_max": 1801,
     "matched_articles_max": 173,
-    "new_alerts": 3,
+    "new_alerts": 4,
     "cve_total": 1,
     "alerts_with_cve": 1,
     "cve_count": 1,
@@ -15,7 +15,7 @@
       "CVE-2026-119618"
     ],
     "keywords_hit": {
-      "Malware": 2,
+      "Malware": 3,
       "CVE": 1
     }
   },
@@ -67,6 +67,20 @@
       "url": "https://www.darkreading.com/vulnerabilities-threats/sleeper-agent-tactic-payloads-open-weight-ai-models",
       "source": "Dark Reading (보안뉴스 종합) [RSS]",
       "published": "2026-11-16T19:10:03+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-17T12:01:04.037035+09:00",
+      "type": "single",
+      "title": "Optimizely supply chain attack infects major brands' sites with malware",
+      "url": "https://www.bleepingcomputer.com/news/security/optimizely-supply-chain-attack-infects-major-brands-sites-with-malware/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-11-17T02:12:17+00:00",
       "keywords": [
         "Malware"
       ],
