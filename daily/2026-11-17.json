@@ -2,20 +2,20 @@
   "date": "2026-11-17",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 21,
+    "scan_runs": 22,
     "total_articles_max": 1801,
-    "matched_articles_max": 175,
-    "new_alerts": 9,
+    "matched_articles_max": 177,
+    "new_alerts": 11,
     "cve_total": 1,
     "alerts_with_cve": 1,
     "cve_count": 1,
-    "ioc_count": 0,
+    "ioc_count": 4,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2026-119618"
     ],
     "keywords_hit": {
-      "Malware": 6,
+      "Malware": 8,
       "CVE": 2,
       "DDoS": 1
     }
@@ -156,6 +156,34 @@
         "Malware"
       ],
       "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-17T21:01:26.209057+09:00",
+      "type": "single",
+      "title": "Malware spread through Optimizely hits 178 organizations, including BBC, CNN and Zoom",
+      "url": "https://www.helpnetsecurity.com/2026/11/17/optimizely-vulnerability-malicious-javascript/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-11-17T11:53:40+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-17T21:01:26.209057+09:00",
+      "type": "single",
+      "title": "3 Cybercrime Campaigns Targeting US Logistics: How Attackers Exploit Freight Workflows",
+      "url": "https://any.run/cybersecurity-blog/us-logistics-cyber-threats-3-campaigns/",
+      "source": "ANY.RUN (악성코드샌드박스분석) [RSS]",
+      "published": "2026-11-17T11:32:09+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "[Domain] dotcompanyinfo[.]com\n[Domain] dot[.]fmcsa[.]saferprofilereview[.]info\n[Domain] motus[.]relayconsolidation[.]online\n[Domain] motus[.]iconnectdataconsolidation[.]online",
       "cve_ids": [],
       "cve_details": []
     }
