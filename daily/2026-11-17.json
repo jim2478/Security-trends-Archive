@@ -2,10 +2,10 @@
   "date": "2026-11-17",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 17,
+    "scan_runs": 18,
     "total_articles_max": 1801,
     "matched_articles_max": 173,
-    "new_alerts": 4,
+    "new_alerts": 5,
     "cve_total": 1,
     "alerts_with_cve": 1,
     "cve_count": 1,
@@ -16,7 +16,8 @@
     ],
     "keywords_hit": {
       "Malware": 3,
-      "CVE": 1
+      "CVE": 1,
+      "DDoS": 1
     }
   },
   "alerts": [
@@ -83,6 +84,20 @@
       "published": "2026-11-17T02:12:17+00:00",
       "keywords": [
         "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-17T17:01:13.936037+09:00",
+      "type": "single",
+      "title": "2026년 10월 다크웹 위협 행위자 동향 보고서",
+      "url": "https://asec.ahnlab.com/ko/96578/",
+      "source": "AhnLab ASEC (악성코드분석) [RSS]",
+      "published": "2026-11-17T07:16:06+00:00",
+      "keywords": [
+        "DDoS"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
