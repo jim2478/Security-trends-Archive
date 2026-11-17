@@ -2,13 +2,13 @@
   "date": "2026-11-18",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 5,
+    "scan_runs": 6,
     "total_articles_max": 1801,
-    "matched_articles_max": 178,
-    "new_alerts": 10,
-    "cve_total": 15,
-    "alerts_with_cve": 8,
-    "cve_count": 15,
+    "matched_articles_max": 179,
+    "new_alerts": 12,
+    "cve_total": 19,
+    "alerts_with_cve": 10,
+    "cve_count": 19,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -16,6 +16,7 @@
       "CVE-2026-109830",
       "CVE-2026-111497",
       "CVE-2026-111560",
+      "CVE-2026-114938",
       "CVE-2026-116606",
       "CVE-2026-117659",
       "CVE-2026-120157",
@@ -23,13 +24,16 @@
       "CVE-2026-120260",
       "CVE-2026-120271",
       "CVE-2026-120298",
+      "CVE-2026-44756",
       "CVE-2026-59082",
       "CVE-2026-64629",
+      "CVE-2026-76964",
       "CVE-2026-85114",
-      "CVE-2026-85115"
+      "CVE-2026-85115",
+      "CVE-2026-89126"
     ],
     "keywords_hit": {
-      "CVE": 8,
+      "CVE": 10,
       "Malware": 1,
       "DDoS": 1
     }
@@ -331,6 +335,78 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-18T05:01:42.987504+09:00",
+      "type": "single",
+      "title": "Oracle to Patch 11 Java Flaws Today as Critical OpenJDK RCE (CVE-2026-114938) Report Emerges",
+      "url": "https://thehackernews.com/2026/11/oracle-to-patch-11-java-flaws-today-as.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-11-17T15:17:36+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-114938"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-114938",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-18T05:01:42.987504+09:00",
+      "type": "single",
+      "title": "SAPBleed: Pre-Auth Memory Disclosure and RCE in SAP NetWeaver, Web Dispatcher and HANA XS (CVE-2026-76964, CVE-2026-89126)",
+      "url": "https://seclists.org/fulldisclosure/2026/Nov/36",
+      "source": "SecLists Full Disclosure (취약점공개)",
+      "published": "2026-11-17T19:15:53+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-76964",
+        "CVE-2026-89126",
+        "CVE-2026-44756"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-76964",
+          "cvss_score": 10.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-1287",
+          "description": "SAP NetWeaver Application Server ABAP does not sufficiently validate certain network input processed by an internal component. An unauthenticated attacker could send specially crafted network traffic to trigger a memory corruption condition in the affected functionality. Successful exploitation could allow the attacker to execute arbitrary code and fully compromise the system, resulting in a high impact on confidentiality, integrity and availability of the system.",
+          "epss_score": 0.00431,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-89126",
+          "cvss_score": 10.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-122",
+          "description": "SAP Web Dispatcher does not sufficiently validate certain network input processed by an internal component. An unauthenticated attacker could send specially crafted network traffic to trigger a memory corruption condition in the affected functionality. Successful exploitation could allow the attacker to execute arbitrary code and fully compromise the system, resulting in a high impact on confidentiality, integrity and availability of the system.",
+          "epss_score": 0.00431,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-44756",
+          "cvss_score": 10.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-120",
+          "description": "A memory safety vulnerability exists in the Extended Passport Protocol (EPP) processing library. Under specific conditions, an unauthenticated attacker could exploit a crafted network request containing a malformed EPP header, potentially resulting in undefined behavior and abnormal program termination. Successful exploitation may have a high impact on the confidentiality, integrity, and availability of the application.",
+          "epss_score": 0.01399,
+          "kev": false
+        }
+      ]
     }
   ]
 }
