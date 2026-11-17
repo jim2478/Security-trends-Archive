@@ -2,21 +2,22 @@
   "date": "2026-11-17",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 23,
+    "scan_runs": 24,
     "total_articles_max": 1801,
     "matched_articles_max": 177,
-    "new_alerts": 11,
-    "cve_total": 1,
-    "alerts_with_cve": 1,
-    "cve_count": 1,
-    "ioc_count": 4,
+    "new_alerts": 13,
+    "cve_total": 2,
+    "alerts_with_cve": 2,
+    "cve_count": 2,
+    "ioc_count": 17,
     "merged_count": 0,
     "unique_cves": [
-      "CVE-2026-119618"
+      "CVE-2026-119618",
+      "CVE-2026-84869"
     ],
     "keywords_hit": {
-      "Malware": 8,
-      "CVE": 2,
+      "Malware": 9,
+      "CVE": 3,
       "DDoS": 1
     }
   },
@@ -184,6 +185,46 @@
         "Malware"
       ],
       "ioc_raw_text": "[Domain] dotcompanyinfo[.]com\n[Domain] dot[.]fmcsa[.]saferprofilereview[.]info\n[Domain] motus[.]relayconsolidation[.]online\n[Domain] motus[.]iconnectdataconsolidation[.]online",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-17T23:01:35.706549+09:00",
+      "type": "single",
+      "title": "MSP ScreenConnect Servers Targeted in Month-Long Campaign",
+      "url": "https://www.securityweek.com/msp-screenconnect-servers-targeted-in-month-long-campaign/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-11-17T13:24:43+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-84869"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-84869",
+          "cvss_score": 9.9,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-269 (Improper Privilege Management)",
+          "description": "A condition in the ScreenConnect client may allow files to be transferred and executed through an active remote session without authorization or Host confirmation in certain circumstances. ScreenConnect servers are not impacted.",
+          "epss_score": 0.01173,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-17T23:01:35.706549+09:00",
+      "type": "single",
+      "title": "Fake FMCSA, DAT, and TIMOCOM Portals: 3 Cyberattacks Targeting US Logistics",
+      "url": "https://any.run/cybersecurity-blog/us-logistics-cyber-threats-3-campaigns/",
+      "source": "ANY.RUN (악성코드샌드박스분석) [RSS]",
+      "published": "2026-11-17T11:32:09+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "[IP] 45[.]139[.]84[.]200\n[IP] 87[.]120[.]104[.]213\n[Domain] dotcompanyinfo[.]com\n[Domain] dot[.]fmcsa[.]saferprofilereview[.]info\n[Domain] motus[.]relayconsolidation[.]online\n[Domain] motus[.]iconnectdataconsolidation[.]online\n[Domain] highwayonboarding[.]net\n[Domain] smart-url-worker[.]denisfsr-kemp[.]workers[.]dev\n[Domain] foundation[.]forum\n[Domain] update-dat[.]com\n[Domain] termsconditionsrelease[.]pro\n[SHA256] 56970620ba88b24aa993099cebbe7d5e118447b52450e886f9f896abc88ceab0\n[SHA256] 925a9d35a32e1a6a1ce1ae4b9ff09e289184d4d925d700752c99f15ab04296dd",
       "cve_ids": [],
       "cve_details": []
     }
