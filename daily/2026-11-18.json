@@ -2,15 +2,15 @@
   "date": "2026-11-18",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 8,
+    "scan_runs": 9,
     "total_articles_max": 1801,
-    "matched_articles_max": 179,
-    "new_alerts": 12,
-    "cve_total": 19,
-    "alerts_with_cve": 10,
-    "cve_count": 19,
+    "matched_articles_max": 181,
+    "new_alerts": 14,
+    "cve_total": 22,
+    "alerts_with_cve": 11,
+    "cve_count": 22,
     "ioc_count": 0,
-    "merged_count": 0,
+    "merged_count": 2,
     "unique_cves": [
       "CVE-2026-109097",
       "CVE-2026-109830",
@@ -33,8 +33,8 @@
       "CVE-2026-89126"
     ],
     "keywords_hit": {
-      "CVE": 10,
-      "Malware": 1,
+      "CVE": 11,
+      "Malware": 2,
       "DDoS": 1
     }
   },
@@ -407,6 +407,59 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-11-18T08:01:21.814928+09:00",
+      "type": "merged",
+      "cve_ids": [
+        "CVE-2026-114938"
+      ],
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "sources": [
+        {
+          "title": "[긴급] PHP 이어 자바도 원격 해킹 위험…기업 서버, 실행환경까지 점검해야",
+          "url": "https://www.dailysecu.com/news/articleView.html?idxno=209581",
+          "source": "데일리시큐 (전체) [RSS]"
+        },
+        {
+          "title": "[긴급] 자바 ‘Java4Shell’ 취약점 공개…국내 기업, 외부 서비스·내장 자바 긴급 점검해야",
+          "url": "https://www.dailysecu.com/news/articleView.html?idxno=209580",
+          "source": "데일리시큐 (전체) [RSS]"
+        },
+        {
+          "title": "CVE-2026-114938 RCE in OpenJDK: Everything You Need to Know",
+          "url": "https://www.wiz.io/blog/cve-2026-114938-rce-java4shell-openjdk",
+          "source": "Wiz Blog (클라우드보안) [RSS]"
+        }
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-114938",
+          "cvss_score": 8.1,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-122",
+          "description": "Vulnerability in the Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition product of Oracle Java SE (component: Compiler).  Supported versions that are affected are Oracle Java SE: 8u511b33-perf, 17.0.21.0.3, 21.0.13.0.3, 25.0.5.0.3, 27.0.1.0.3; Oracle GraalVM for JDK: 17.0.21.0.3 and  21.0.13.0.3; Oracle GraalVM Enterprise Edition: 21.3.20.0.3. Difficult to exploit vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Oracle ",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-18T08:01:21.814928+09:00",
+      "type": "single",
+      "title": "Optimizely Malware Attacks Highlight Third-Party Vendor Risks",
+      "url": "https://www.darkreading.com/cyber-risk/optimizely-malware-attacks-third-party-vendor-risks",
+      "source": "Dark Reading (보안뉴스 종합) [RSS]",
+      "published": "2026-11-17T22:34:22+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
