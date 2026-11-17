@@ -2,10 +2,10 @@
   "date": "2026-11-18",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 4,
+    "scan_runs": 5,
     "total_articles_max": 1801,
-    "matched_articles_max": 177,
-    "new_alerts": 9,
+    "matched_articles_max": 178,
+    "new_alerts": 10,
     "cve_total": 15,
     "alerts_with_cve": 8,
     "cve_count": 15,
@@ -30,7 +30,8 @@
     ],
     "keywords_hit": {
       "CVE": 8,
-      "Malware": 1
+      "Malware": 1,
+      "DDoS": 1
     }
   },
   "alerts": [
@@ -312,6 +313,20 @@
       "published": "2026-11-17T16:00:00+00:00",
       "keywords": [
         "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-18T04:01:06.770943+09:00",
+      "type": "single",
+      "title": "Tor releases emergency update amid ongoing DDoS attack",
+      "url": "https://www.bleepingcomputer.com/news/security/tor-releases-emergency-update-amid-ongoing-ddos-attack/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-11-17T18:04:15+00:00",
+      "keywords": [
+        "DDoS"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
