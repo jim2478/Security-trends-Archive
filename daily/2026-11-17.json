@@ -2,10 +2,10 @@
   "date": "2026-11-17",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 18,
+    "scan_runs": 19,
     "total_articles_max": 1801,
-    "matched_articles_max": 173,
-    "new_alerts": 5,
+    "matched_articles_max": 175,
+    "new_alerts": 6,
     "cve_total": 1,
     "alerts_with_cve": 1,
     "cve_count": 1,
@@ -16,7 +16,7 @@
     ],
     "keywords_hit": {
       "Malware": 3,
-      "CVE": 1,
+      "CVE": 2,
       "DDoS": 1
     }
   },
@@ -98,6 +98,20 @@
       "published": "2026-11-17T07:16:06+00:00",
       "keywords": [
         "DDoS"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-17T18:01:03.125430+09:00",
+      "type": "single",
+      "title": "SM솔루션즈, 운영서버 취약점 실시간 관리 솔루션 '센티온 서버실드' 출시",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=209574",
+      "source": "데일리시큐 (전체) [RSS]",
+      "published": "2026-11-17T17:02:49+00:00",
+      "keywords": [
+        "CVE"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
