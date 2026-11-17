@@ -1,0 +1,60 @@
+{
+  "date": "2026-11-18",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 1,
+    "total_articles_max": 1761,
+    "matched_articles_max": 176,
+    "new_alerts": 1,
+    "cve_total": 2,
+    "alerts_with_cve": 1,
+    "cve_count": 2,
+    "ioc_count": 0,
+    "merged_count": 0,
+    "unique_cves": [
+      "CVE-2026-111560",
+      "CVE-2026-116606"
+    ],
+    "keywords_hit": {
+      "CVE": 1
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-11-18T00:01:25.234489+09:00",
+      "type": "single",
+      "title": "바라쿠다 이메일 보안 장비 취약점 2건 실제 악용",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=209578",
+      "source": "데일리시큐 (전체) [RSS]",
+      "published": "2026-11-17T23:53:57+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-116606",
+        "CVE-2026-111560"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-116606",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-288",
+          "description": "An authentication bypass in Barracuda Email Security Gateway versions earlier than 9.4.0.030 allows an unauthenticated remote attacker to invoke a configuration-import function and restore a crafted, compatible backup archive, resulting in unauthorized modification of the appliance’s global configuration.",
+          "epss_score": 0.10947,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-111560",
+          "cvss_score": 8.6,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-78 (OS Command Injection)",
+          "description": "Improper neutralization of shell metacharacters in the timezone configuration field in certain Barracuda appliance products using common Barracuda code allows an authenticated administrator to inject OS commands that execute with root privileges when the crafted timezone value is subsequently processed.",
+          "epss_score": 0.09082,
+          "kev": true
+        }
+      ]
+    }
+  ]
+}
