@@ -2,10 +2,10 @@
   "date": "2026-11-17",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 20,
+    "scan_runs": 21,
     "total_articles_max": 1801,
     "matched_articles_max": 175,
-    "new_alerts": 6,
+    "new_alerts": 9,
     "cve_total": 1,
     "alerts_with_cve": 1,
     "cve_count": 1,
@@ -15,7 +15,7 @@
       "CVE-2026-119618"
     ],
     "keywords_hit": {
-      "Malware": 3,
+      "Malware": 6,
       "CVE": 2,
       "DDoS": 1
     }
@@ -112,6 +112,48 @@
       "published": "2026-11-17T17:02:49+00:00",
       "keywords": [
         "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-17T20:01:19.562210+09:00",
+      "type": "single",
+      "title": "Optimizely Vulnerability Exploited to Serve Malware on Major Websites",
+      "url": "https://www.securityweek.com/optimizely-vulnerability-exploited-to-serve-malware-on-major-websites/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-11-17T10:22:20+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-17T20:01:19.562210+09:00",
+      "type": "single",
+      "title": "Optimizely Hack Serves Malware Through Scripts Used by 178 Organisations",
+      "url": "https://hackread.com/optimizely-hack-malware-scripts-178-organisations/",
+      "source": "HackRead (해킹/데이터유출) [RSS]",
+      "published": "2026-11-17T10:44:45+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-17T20:01:19.562210+09:00",
+      "type": "single",
+      "title": "OPTIMJACK: BBC, CNN and Zoom Among Targets of Optimizely Script Hijacking",
+      "url": "https://securityaffairs.com/203289/malware/optimjack-bbc-cnn-and-zoom-among-targets-of-optimizely-script-hijacking.html",
+      "source": "Security Affairs (보안뉴스/위협동향) [RSS]",
+      "published": "2026-11-17T09:38:44+00:00",
+      "keywords": [
+        "Malware"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
