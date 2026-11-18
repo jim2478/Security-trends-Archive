@@ -2,13 +2,13 @@
   "date": "2026-11-18",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 14,
+    "scan_runs": 15,
     "total_articles_max": 1801,
     "matched_articles_max": 187,
-    "new_alerts": 18,
-    "cve_total": 28,
-    "alerts_with_cve": 13,
-    "cve_count": 28,
+    "new_alerts": 19,
+    "cve_total": 29,
+    "alerts_with_cve": 14,
+    "cve_count": 29,
     "ioc_count": 0,
     "merged_count": 3,
     "unique_cves": [
@@ -36,7 +36,7 @@
       "CVE-2026-89126"
     ],
     "keywords_hit": {
-      "CVE": 13,
+      "CVE": 14,
       "Malware": 3,
       "DDoS": 2
     }
@@ -581,6 +581,32 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-18T14:01:04.314085+09:00",
+      "type": "single",
+      "title": "정부, Java4Shell 긴급 대응…민·관·군 점검하고 기업에 보안 업데이트 권고",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=209588",
+      "source": "데일리시큐 (전체) [RSS]",
+      "published": "2026-11-18T13:03:27+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-114938"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-114938",
+          "cvss_score": 8.1,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-122",
+          "description": "Vulnerability in the Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition product of Oracle Java SE (component: Compiler).  Supported versions that are affected are Oracle Java SE: 8u511b33-perf, 17.0.21.0.3, 21.0.13.0.3, 25.0.5.0.3, 27.0.1.0.3; Oracle GraalVM for JDK: 17.0.21.0.3 and  21.0.13.0.3; Oracle GraalVM Enterprise Edition: 21.3.20.0.3. Difficult to exploit vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Oracle ",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
     }
   ]
 }
