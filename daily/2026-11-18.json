@@ -2,10 +2,10 @@
   "date": "2026-11-18",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 16,
+    "scan_runs": 17,
     "total_articles_max": 1801,
     "matched_articles_max": 187,
-    "new_alerts": 20,
+    "new_alerts": 21,
     "cve_total": 30,
     "alerts_with_cve": 15,
     "cve_count": 30,
@@ -37,7 +37,7 @@
     ],
     "keywords_hit": {
       "CVE": 15,
-      "Malware": 3,
+      "Malware": 4,
       "DDoS": 2
     }
   },
@@ -633,6 +633,20 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-11-18T16:01:24.809974+09:00",
+      "type": "single",
+      "title": "BubbleLoader malware turns copies of WinRAR and Windows Media Player into carriers",
+      "url": "https://www.helpnetsecurity.com/2026/11/18/winrar-bubbleloader-malware/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-11-18T06:00:03+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
