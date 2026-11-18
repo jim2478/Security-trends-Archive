@@ -2,13 +2,13 @@
   "date": "2026-11-18",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 10,
+    "scan_runs": 11,
     "total_articles_max": 1801,
-    "matched_articles_max": 183,
-    "new_alerts": 15,
-    "cve_total": 24,
-    "alerts_with_cve": 12,
-    "cve_count": 24,
+    "matched_articles_max": 187,
+    "new_alerts": 16,
+    "cve_total": 28,
+    "alerts_with_cve": 13,
+    "cve_count": 28,
     "ioc_count": 0,
     "merged_count": 3,
     "unique_cves": [
@@ -19,11 +19,14 @@
       "CVE-2026-114938",
       "CVE-2026-116606",
       "CVE-2026-117659",
+      "CVE-2026-119618",
       "CVE-2026-120157",
       "CVE-2026-120255",
       "CVE-2026-120260",
       "CVE-2026-120271",
       "CVE-2026-120298",
+      "CVE-2026-123158",
+      "CVE-2026-20362",
       "CVE-2026-44756",
       "CVE-2026-59082",
       "CVE-2026-64629",
@@ -33,7 +36,7 @@
       "CVE-2026-89126"
     ],
     "keywords_hit": {
-      "CVE": 12,
+      "CVE": 13,
       "Malware": 2,
       "DDoS": 1
     }
@@ -491,6 +494,62 @@
           "cwe": "CWE-122",
           "description": "Vulnerability in the Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition product of Oracle Java SE (component: Compiler).  Supported versions that are affected are Oracle Java SE: 8u511b33-perf, 17.0.21.0.3, 21.0.13.0.3, 25.0.5.0.3, 27.0.1.0.3; Oracle GraalVM for JDK: 17.0.21.0.3 and  21.0.13.0.3; Oracle GraalVM Enterprise Edition: 21.3.20.0.3. Difficult to exploit vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Oracle ",
           "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-18T10:01:17.618458+09:00",
+      "type": "single",
+      "title": "CVE-2026-114938 | Oracle Java SE and OpenJDK Base64 Decoder Heap Buffer Overflow Vulnerability (Java4Shell)",
+      "url": "https://horizon3.ai/attack-research/vulnerabilities/cve-2026-114938/",
+      "source": "Horizon3.ai (공격시뮬레이션) [RSS]",
+      "published": "2026-11-18T00:31:13+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-114938",
+        "CVE-2026-119618",
+        "CVE-2026-123158",
+        "CVE-2026-20362"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-114938",
+          "cvss_score": 8.1,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-122",
+          "description": "Vulnerability in the Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition product of Oracle Java SE (component: Compiler).  Supported versions that are affected are Oracle Java SE: 8u511b33-perf, 17.0.21.0.3, 21.0.13.0.3, 25.0.5.0.3, 27.0.1.0.3; Oracle GraalVM for JDK: 17.0.21.0.3 and  21.0.13.0.3; Oracle GraalVM Enterprise Edition: 21.3.20.0.3. Difficult to exploit vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Oracle ",
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-119618",
+          "cvss_score": 8.1,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-362",
+          "description": "Concurrent Execution using Shared Resource with Improper Synchronization vulnerability in Apache HTTP Server's mod_http2 in assign_headers() can lead to RCE.\n\nThis issue affects Apache HTTP Server: from 2.4.55 through 2.4.70.\nAffected releases of mod_h2 from GitHub: from 2.0.8 through 2.0.42.",
+          "epss_score": 0.01583,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-123158",
+          "cvss_score": 8.1,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-394",
+          "description": "sshd in OpenSSH before 10.6p2 on Linux, when musl libc is used without PAM, lacks a workaround for a password authentication bypass (related to misinterpretation of whether a string is intended to be a password hash). For some configurations of accounts, any password between 256 and 1024 characters succeeds. An example of a platform using musl libc without PAM is Alpine Linux.",
+          "epss_score": 0.189,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-20362",
+          "cvss_score": 7.2,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-918 (SSRF)",
+          "description": "A vulnerability in the web-based management interface of Cisco Finesse could allow an unauthenticated, remote attacker to conduct server-side request forgery (SSRF) attacks through an affected device.\r\n\r\nThis vulnerability is due to improper input validation for specific HTTP requests. An attacker could exploit this vulnerability by sending a crafted HTTP request to an affected device. A successful exploit could allow the attacker to obtain limited sensitive information for services that are ass",
+          "epss_score": 0.00569,
           "kev": false
         }
       ]
