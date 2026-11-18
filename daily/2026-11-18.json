@@ -2,13 +2,13 @@
   "date": "2026-11-18",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 15,
+    "scan_runs": 16,
     "total_articles_max": 1801,
     "matched_articles_max": 187,
-    "new_alerts": 19,
-    "cve_total": 29,
-    "alerts_with_cve": 14,
-    "cve_count": 29,
+    "new_alerts": 20,
+    "cve_total": 30,
+    "alerts_with_cve": 15,
+    "cve_count": 30,
     "ioc_count": 0,
     "merged_count": 3,
     "unique_cves": [
@@ -36,7 +36,7 @@
       "CVE-2026-89126"
     ],
     "keywords_hit": {
-      "CVE": 14,
+      "CVE": 15,
       "Malware": 3,
       "DDoS": 2
     }
@@ -589,6 +589,32 @@
       "url": "https://www.dailysecu.com/news/articleView.html?idxno=209588",
       "source": "데일리시큐 (전체) [RSS]",
       "published": "2026-11-18T13:03:27+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-114938"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-114938",
+          "cvss_score": 8.1,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-122",
+          "description": "Vulnerability in the Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition product of Oracle Java SE (component: Compiler).  Supported versions that are affected are Oracle Java SE: 8u511b33-perf, 17.0.21.0.3, 21.0.13.0.3, 25.0.5.0.3, 27.0.1.0.3; Oracle GraalVM for JDK: 17.0.21.0.3 and  21.0.13.0.3; Oracle GraalVM Enterprise Edition: 21.3.20.0.3. Difficult to exploit vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Oracle ",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-18T15:01:09.409119+09:00",
+      "type": "single",
+      "title": "Java4Shell (CVE-2026-114938) Enables Pre-Auth RCE in Jira, Jenkins, Keycloak on Java 17+ AVX-512 VBMI Servers",
+      "url": "https://thehackernews.com/2026/11/java4shell-cve-2026-114938-enables-pre.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-11-18T04:27:41+00:00",
       "keywords": [
         "CVE"
       ],
