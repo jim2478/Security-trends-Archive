@@ -2,10 +2,10 @@
   "date": "2026-11-18",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 12,
+    "scan_runs": 13,
     "total_articles_max": 1801,
     "matched_articles_max": 187,
-    "new_alerts": 16,
+    "new_alerts": 18,
     "cve_total": 28,
     "alerts_with_cve": 13,
     "cve_count": 28,
@@ -37,8 +37,8 @@
     ],
     "keywords_hit": {
       "CVE": 13,
-      "Malware": 2,
-      "DDoS": 1
+      "Malware": 3,
+      "DDoS": 2
     }
   },
   "alerts": [
@@ -553,6 +553,34 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-11-18T12:01:13.555143+09:00",
+      "type": "single",
+      "title": "Attackers Used Optimizely to A/B Test Malware on Top Websites",
+      "url": "https://krebsonsecurity.com/2026/11/attackers-used-optimizely-to-a-b-test-malware-on-top-websites/",
+      "source": "Krebs on Security (사이버범죄/보안심층분석) [RSS]",
+      "published": "2026-11-18T02:52:04+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-18T12:01:13.555143+09:00",
+      "type": "single",
+      "title": "F5, 2027년 사이버보안 3대 전망 발표…AI 시대 국내 기업 보안 전략 제시",
+      "url": "https://zdnet.co.kr/view/?no=20261118105635",
+      "source": "지디넷코리아 [RSS]",
+      "published": "2026-11-18T01:56:35+00:00",
+      "keywords": [
+        "DDoS"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
