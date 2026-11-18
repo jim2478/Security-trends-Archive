@@ -2,21 +2,22 @@
   "date": "2026-11-18",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 19,
+    "scan_runs": 20,
     "total_articles_max": 1801,
     "matched_articles_max": 187,
-    "new_alerts": 23,
-    "cve_total": 33,
-    "alerts_with_cve": 17,
-    "cve_count": 33,
+    "new_alerts": 25,
+    "cve_total": 37,
+    "alerts_with_cve": 19,
+    "cve_count": 37,
     "ioc_count": 0,
-    "merged_count": 4,
+    "merged_count": 6,
     "unique_cves": [
       "CVE-2026-109097",
       "CVE-2026-109830",
       "CVE-2026-111497",
       "CVE-2026-111560",
       "CVE-2026-114938",
+      "CVE-2026-115731",
       "CVE-2026-116606",
       "CVE-2026-117659",
       "CVE-2026-119618",
@@ -36,7 +37,7 @@
       "CVE-2026-89126"
     ],
     "keywords_hit": {
-      "CVE": 17,
+      "CVE": 19,
       "Malware": 4,
       "DDoS": 2
     }
@@ -695,6 +696,71 @@
       "ioc_raw_text": "",
       "cve_ids": [
         "CVE-2026-114938"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-114938",
+          "cvss_score": 8.1,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-122",
+          "description": "Vulnerability in the Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition product of Oracle Java SE (component: Compiler).  Supported versions that are affected are Oracle Java SE: 8u511b33-perf, 17.0.21.0.3, 21.0.13.0.3, 25.0.5.0.3, 27.0.1.0.3; Oracle GraalVM for JDK: 17.0.21.0.3 and  21.0.13.0.3; Oracle GraalVM Enterprise Edition: 21.3.20.0.3. Difficult to exploit vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Oracle ",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-18T19:01:25.710549+09:00",
+      "type": "single",
+      "title": "Hackers Exploiting Critical Puppet RCE Flaw Affecting Enterprise Management Servers",
+      "url": "https://thehackernews.com/2026/11/hackers-exploiting-critical-puppet-rce.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-11-18T08:24:31+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-115731"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-115731",
+          "cvss_score": 9.4,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-94 (Code Injection)",
+          "description": "Deserialization of untrusted data in the report-processing code of Puppet, as used by Puppet Server, in the affected releases, allows a client that holds any CA-signed agent certificate to execute arbitrary code on the Puppet Server as its service user by submitting a report containing a crafted rich-data type via PUT request. Where the certificate authority autosigns requests without strong verification, an unauthenticated network attacker can obtain such a certificate.",
+          "epss_score": 0.00366,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-18T19:01:25.710549+09:00",
+      "type": "merged",
+      "cve_ids": [
+        "CVE-2026-114938"
+      ],
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "sources": [
+        {
+          "title": "CISA Urges Immediate Patching of Java4Shell Flaw That Could Allow Remote Code Execution",
+          "url": "https://thehackernews.com/2026/11/cisa-urges-immediate-patching-of.html",
+          "source": "The Hacker News (보안뉴스 종합) [RSS]"
+        },
+        {
+          "title": "Java4Shell Flaw Lets Attackers Target Java Servers Without Logging In",
+          "url": "https://hackread.com/java4shell-flaw-run-code-java-servers-logging-in/",
+          "source": "HackRead (해킹/데이터유출) [RSS]"
+        },
+        {
+          "title": "PHP 이어 자바서도 고위험 취약점…정부, 긴급 점검 권고",
+          "url": "https://www.itdaily.kr/news/articleView.html?idxno=243016",
+          "source": "아이티데일리 [RSS]"
+        }
       ],
       "cve_details": [
         {
