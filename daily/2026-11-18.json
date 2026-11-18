@@ -2,15 +2,15 @@
   "date": "2026-11-18",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 9,
+    "scan_runs": 10,
     "total_articles_max": 1801,
-    "matched_articles_max": 181,
-    "new_alerts": 14,
-    "cve_total": 22,
-    "alerts_with_cve": 11,
-    "cve_count": 22,
+    "matched_articles_max": 183,
+    "new_alerts": 15,
+    "cve_total": 24,
+    "alerts_with_cve": 12,
+    "cve_count": 24,
     "ioc_count": 0,
-    "merged_count": 2,
+    "merged_count": 3,
     "unique_cves": [
       "CVE-2026-109097",
       "CVE-2026-109830",
@@ -33,7 +33,7 @@
       "CVE-2026-89126"
     ],
     "keywords_hit": {
-      "CVE": 11,
+      "CVE": 12,
       "Malware": 2,
       "DDoS": 1
     }
@@ -460,6 +460,40 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-18T09:01:21.418366+09:00",
+      "type": "merged",
+      "cve_ids": [
+        "CVE-2026-114938"
+      ],
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "sources": [
+        {
+          "title": "[긴급] KISA, Java4Shell 업데이트 권고…티오리 임시 완화 도구·안랩 패치 지침 공개",
+          "url": "https://www.dailysecu.com/news/articleView.html?idxno=209582",
+          "source": "데일리시큐 (전체) [RSS]"
+        },
+        {
+          "title": "‘자바’ 심각한 취약점 발견에…과기정통부, 긴급 점검·보안조치 당부",
+          "url": "https://www.donga.com/news/It/article/all/20261118/135043670/1",
+          "source": "동아일보 (사회) [RSS]"
+        }
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-114938",
+          "cvss_score": 8.1,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-122",
+          "description": "Vulnerability in the Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition product of Oracle Java SE (component: Compiler).  Supported versions that are affected are Oracle Java SE: 8u511b33-perf, 17.0.21.0.3, 21.0.13.0.3, 25.0.5.0.3, 27.0.1.0.3; Oracle GraalVM for JDK: 17.0.21.0.3 and  21.0.13.0.3; Oracle GraalVM Enterprise Edition: 21.3.20.0.3. Difficult to exploit vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Oracle ",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
     }
   ]
 }
