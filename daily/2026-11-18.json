@@ -2,15 +2,15 @@
   "date": "2026-11-18",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 17,
+    "scan_runs": 18,
     "total_articles_max": 1801,
     "matched_articles_max": 187,
-    "new_alerts": 21,
-    "cve_total": 30,
-    "alerts_with_cve": 15,
-    "cve_count": 30,
+    "new_alerts": 22,
+    "cve_total": 32,
+    "alerts_with_cve": 16,
+    "cve_count": 32,
     "ioc_count": 0,
-    "merged_count": 3,
+    "merged_count": 4,
     "unique_cves": [
       "CVE-2026-109097",
       "CVE-2026-109830",
@@ -36,7 +36,7 @@
       "CVE-2026-89126"
     ],
     "keywords_hit": {
-      "CVE": 15,
+      "CVE": 16,
       "Malware": 4,
       "DDoS": 2
     }
@@ -647,6 +647,40 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-18T17:01:06.666171+09:00",
+      "type": "merged",
+      "cve_ids": [
+        "CVE-2026-114938"
+      ],
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "sources": [
+        {
+          "title": "이스트시큐리티, Java 고위험 취약점 점검 스캐너 긴급 배포",
+          "url": "https://www.dailysecu.com/news/articleView.html?idxno=209602",
+          "source": "데일리시큐 (전체) [RSS]"
+        },
+        {
+          "title": "에버스핀, 자바 치명적 취약점 ‘Java4shell’도 에버세이프 웹으로 차단",
+          "url": "https://zdnet.co.kr/view/?no=20261118161739",
+          "source": "지디넷코리아 [RSS]"
+        }
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-114938",
+          "cvss_score": 8.1,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-122",
+          "description": "Vulnerability in the Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition product of Oracle Java SE (component: Compiler).  Supported versions that are affected are Oracle Java SE: 8u511b33-perf, 17.0.21.0.3, 21.0.13.0.3, 25.0.5.0.3, 27.0.1.0.3; Oracle GraalVM for JDK: 17.0.21.0.3 and  21.0.13.0.3; Oracle GraalVM Enterprise Edition: 21.3.20.0.3. Difficult to exploit vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Oracle ",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
     }
   ]
 }
