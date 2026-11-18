@@ -2,16 +2,17 @@
   "date": "2026-11-18",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 23,
+    "scan_runs": 24,
     "total_articles_max": 1801,
     "matched_articles_max": 188,
-    "new_alerts": 28,
-    "cve_total": 41,
-    "alerts_with_cve": 21,
-    "cve_count": 41,
+    "new_alerts": 30,
+    "cve_total": 42,
+    "alerts_with_cve": 22,
+    "cve_count": 42,
     "ioc_count": 0,
     "merged_count": 7,
     "unique_cves": [
+      "CVE-2025-6965",
       "CVE-2026-109097",
       "CVE-2026-109830",
       "CVE-2026-111497",
@@ -39,7 +40,7 @@
     ],
     "keywords_hit": {
       "CVE": 21,
-      "Malware": 5,
+      "Malware": 7,
       "DDoS": 2
     }
   },
@@ -858,6 +859,46 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-11-18T23:01:08.641726+09:00",
+      "type": "single",
+      "title": "Who protects the antivirus? How we secure Malwarebytes itself",
+      "url": "https://www.malwarebytes.com/blog/inside-malwarebytes/2026/11/who-protects-the-antivirus-how-we-secure-malwarebytes-itself",
+      "source": "Malwarebytes Labs (악성코드/스캠) [RSS]",
+      "published": "2026-11-18T13:32:54+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2025-6965"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2025-6965",
+          "cvss_score": 7.2,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-197",
+          "description": "There exists a vulnerability in SQLite versions before 3.50.2 where the number of aggregate terms could exceed the number of columns available. This could lead to a memory corruption issue. We recommend upgrading to version 3.50.2 or above.",
+          "epss_score": 0.73452,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-18T23:01:08.641726+09:00",
+      "type": "single",
+      "title": "Suspected Chinese APT Rebuilds EggStreme Malware After Exposure",
+      "url": "https://www.infosecurity-magazine.com/news/eggstreme-malware-rebuilt-after/",
+      "source": "Infosecurity Magazine (보안뉴스) [RSS]",
+      "published": "2026-11-18T14:00:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
