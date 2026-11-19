@@ -2,17 +2,151 @@
   "date": "2026-11-20",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 1,
-    "total_articles_max": 1751,
+    "scan_runs": 2,
+    "total_articles_max": 1781,
     "matched_articles_max": 186,
-    "new_alerts": 0,
-    "cve_total": 0,
-    "alerts_with_cve": 0,
-    "cve_count": 0,
+    "new_alerts": 4,
+    "cve_total": 6,
+    "alerts_with_cve": 4,
+    "cve_count": 6,
     "ioc_count": 0,
     "merged_count": 0,
-    "unique_cves": [],
-    "keywords_hit": {}
+    "unique_cves": [
+      "CVE-2026-115560",
+      "CVE-2026-124281",
+      "CVE-2026-125132",
+      "CVE-2026-125273",
+      "CVE-2026-126088",
+      "CVE-2026-96805"
+    ],
+    "keywords_hit": {
+      "CVE": 4
+    }
   },
-  "alerts": []
+  "alerts": [
+    {
+      "scan_time_kst": "2026-11-20T01:01:29.997587+09:00",
+      "type": "single",
+      "title": "PHP Fixes 7 Critical Flaws, Including Bugs That Could Allow Remote Code Execution",
+      "url": "https://thehackernews.com/2026/11/php-fixes-7-critical-flaws-including.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-11-19T15:18:07+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-115560"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-115560",
+          "cvss_score": 9.2,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-20 (Improper Input Validation)",
+          "description": "Session serializer mismatch can lead to remote code execution.\n\nSession upload progress, when enabled, can store attacker-controlled data in a session key using the php_binary or php_serialize session serializer. If the same session is later read with the php serializer, because session.serialize_handler is changed at runtime or differs between applications sharing a session store, bytes inside the key can be passed to the unserializer. A remote attacker able to submit a multipart upload can inj",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-20T01:01:29.997587+09:00",
+      "type": "single",
+      "title": "Elecbrakes EB2, VM1, ELBC2000",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-323-02",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-11-19T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-124281",
+        "CVE-2026-125273",
+        "CVE-2026-96805"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-124281",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-125273",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-96805",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-20T01:01:29.997587+09:00",
+      "type": "single",
+      "title": "libumqtt",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-323-03",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-11-19T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-125132"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-125132",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-20T01:01:29.997587+09:00",
+      "type": "single",
+      "title": "Autonomy Logic OpenPLC Runtime",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-323-01",
+      "source": "CISA 사이버보안 권고 (미국 CERT) [RSS]",
+      "published": "2026-11-19T12:00:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-126088"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-126088",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    }
+  ]
 }
