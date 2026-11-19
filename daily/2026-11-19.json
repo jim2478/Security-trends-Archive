@@ -2,19 +2,21 @@
   "date": "2026-11-19",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 17,
+    "scan_runs": 18,
     "total_articles_max": 1801,
     "matched_articles_max": 190,
-    "new_alerts": 11,
-    "cve_total": 17,
-    "alerts_with_cve": 8,
-    "cve_count": 17,
+    "new_alerts": 13,
+    "cve_total": 19,
+    "alerts_with_cve": 9,
+    "cve_count": 19,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2026-109618",
+      "CVE-2026-109619",
       "CVE-2026-113425",
       "CVE-2026-114938",
+      "CVE-2026-115560",
       "CVE-2026-121810",
       "CVE-2026-123007",
       "CVE-2026-123633",
@@ -22,8 +24,8 @@
       "CVE-2026-129448"
     ],
     "keywords_hit": {
-      "CVE": 9,
-      "Malware": 1,
+      "CVE": 10,
+      "Malware": 2,
       "봇넷": 1
     }
   },
@@ -367,6 +369,56 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-11-19T17:01:30.315251+09:00",
+      "type": "single",
+      "title": "PHP Readies Critical Security Updates to Patch Another RCE Flaw",
+      "url": "https://www.securityweek.com/php-readies-critical-security-updates-to-patch-another-rce-flaw/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-11-19T07:45:17+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-115560",
+        "CVE-2026-109619"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-115560",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-109619",
+          "cvss_score": 9.2,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-416 (Use After Free)",
+          "description": "PHP has various global state that temporarily points into request memory. In some scenarios, global state may not be correctly reset, or may be repopulated after being reset. The global state may then refer to request memory even after it has been freed. Subsequent requests may read or branch on this stale state before it is fully initialized. Multiple strategies can trigger this condition and produce remote code execution (RCE).",
+          "epss_score": 0.99999,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-19T17:01:30.315251+09:00",
+      "type": "single",
+      "title": "How Agentic Polymorphic Malware emerged as a major Cyber Threat",
+      "url": "https://www.cybersecurity-insiders.com/how-agentic-polymorphic-malware-emerged-as-a-major-cyber-threat/",
+      "source": "Cybersecurity Insiders (보안인사이트)",
+      "published": "2026-11-19T06:07:39+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
