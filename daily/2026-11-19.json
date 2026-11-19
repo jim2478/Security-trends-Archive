@@ -2,13 +2,13 @@
   "date": "2026-11-19",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 23,
+    "scan_runs": 24,
     "total_articles_max": 1801,
     "matched_articles_max": 190,
-    "new_alerts": 16,
-    "cve_total": 22,
-    "alerts_with_cve": 11,
-    "cve_count": 22,
+    "new_alerts": 17,
+    "cve_total": 24,
+    "alerts_with_cve": 12,
+    "cve_count": 24,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -17,6 +17,8 @@
       "CVE-2026-113425",
       "CVE-2026-114938",
       "CVE-2026-115560",
+      "CVE-2026-115731",
+      "CVE-2026-115732",
       "CVE-2026-121810",
       "CVE-2026-123007",
       "CVE-2026-123633",
@@ -24,7 +26,7 @@
       "CVE-2026-129448"
     ],
     "keywords_hit": {
-      "CVE": 12,
+      "CVE": 13,
       "Malware": 3,
       "봇넷": 1
     }
@@ -493,6 +495,42 @@
           "description": "PHP has various global state that temporarily points into request memory. In some scenarios, global state may not be correctly reset, or may be repopulated after being reset. The global state may then refer to request memory even after it has been freed. Subsequent requests may read or branch on this stale state before it is fully initialized. Multiple strategies can trigger this condition and produce remote code execution (RCE).",
           "epss_score": 0.99999,
           "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-19T23:01:24.107924+09:00",
+      "type": "single",
+      "title": "Exploited Puppet flaw puts the server that configures your endpoint fleet at risk (CVE-2026-115731)",
+      "url": "https://www.helpnetsecurity.com/2026/11/19/puppet-enterprise-vulnerability-cve-2026-115731-exploited/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-11-19T13:07:41+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-115731",
+        "CVE-2026-115732"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-115731",
+          "cvss_score": 9.4,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-94 (Code Injection)",
+          "description": "Deserialization of untrusted data in the report-processing code of Puppet, as used by Puppet Server, in the affected releases, allows a client that holds any CA-signed agent certificate to execute arbitrary code on the Puppet Server as its service user by submitting a report containing a crafted rich-data type via PUT request. Where the certificate authority autosigns requests without strong verification, an unauthenticated network attacker can obtain such a certificate.",
+          "epss_score": 0.00691,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-115732",
+          "cvss_score": 9.0,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-697",
+          "description": "Incorrect authorization in the certificate-name matching of trapperkeeper-authorization, as used by Puppet Server, in the affected products, allows a client that holds a CA-signed certificate whose name extends or shortens an authorized hostname to be authorized as that host. This enables impersonation of other nodes and, in Puppet Enterprise, access to certificate-authority administration and remote command execution on managed nodes. Exploitation requires a certificate with a colliding name, w",
+          "epss_score": 0.00745,
+          "kev": false
         }
       ]
     }
