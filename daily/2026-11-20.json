@@ -2,13 +2,13 @@
   "date": "2026-11-20",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
-    "total_articles_max": 1781,
-    "matched_articles_max": 186,
-    "new_alerts": 4,
-    "cve_total": 6,
-    "alerts_with_cve": 4,
-    "cve_count": 6,
+    "scan_runs": 4,
+    "total_articles_max": 1791,
+    "matched_articles_max": 189,
+    "new_alerts": 5,
+    "cve_total": 7,
+    "alerts_with_cve": 5,
+    "cve_count": 7,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -17,10 +17,11 @@
       "CVE-2026-125132",
       "CVE-2026-125273",
       "CVE-2026-126088",
+      "CVE-2026-126714",
       "CVE-2026-96805"
     ],
     "keywords_hit": {
-      "CVE": 4
+      "CVE": 5
     }
   },
   "alerts": [
@@ -143,6 +144,32 @@
           "cvss_severity": null,
           "cwe": null,
           "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-20T03:01:09.191327+09:00",
+      "type": "single",
+      "title": "phpAfterShell Explained: How Hackers Could Turn a PHP Session Flaw Into Code Execution",
+      "url": "https://thehackernews.com/2026/11/phpaftershell-explained-how-hackers.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-11-19T16:59:56+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-126714"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-126714",
+          "cvss_score": 9.2,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-367",
+          "description": "Partially overwritten session files can lead to remote code execution.\n\nThe files session save handler, which is the default, writes updated session data into the existing session file without first clearing it. If a write is interrupted, the file can contain the beginning of the new session followed by the end of the old one, and bytes of an ordinary string can later be unserialized as objects. An attacker who can influence the session data, for example through session upload progress, and inte",
           "epss_score": null,
           "kev": false
         }
