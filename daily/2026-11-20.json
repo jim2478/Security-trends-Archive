@@ -2,10 +2,10 @@
   "date": "2026-11-20",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 6,
+    "scan_runs": 7,
     "total_articles_max": 1791,
     "matched_articles_max": 191,
-    "new_alerts": 7,
+    "new_alerts": 8,
     "cve_total": 13,
     "alerts_with_cve": 7,
     "cve_count": 13,
@@ -27,7 +27,8 @@
       "CVE-2026-96805"
     ],
     "keywords_hit": {
-      "CVE": 7
+      "CVE": 7,
+      "Malware": 1
     }
   },
   "alerts": [
@@ -272,6 +273,20 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-11-20T06:01:13.213910+09:00",
+      "type": "single",
+      "title": "ThreatsDay: GPT-6.2 Jailbreak Flaws, BubbleLoader PNG Malware, $500M Ransom Demands + 17 More Stories",
+      "url": "https://thehackernews.com/2026/11/threatsday-gpt-62-jailbreak-flaws.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-11-19T18:47:58+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
