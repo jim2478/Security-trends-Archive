@@ -2,16 +2,17 @@
   "date": "2026-11-19",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 14,
+    "scan_runs": 15,
     "total_articles_max": 1801,
-    "matched_articles_max": 187,
-    "new_alerts": 8,
-    "cve_total": 11,
-    "alerts_with_cve": 6,
-    "cve_count": 11,
+    "matched_articles_max": 190,
+    "new_alerts": 10,
+    "cve_total": 12,
+    "alerts_with_cve": 7,
+    "cve_count": 12,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
+      "CVE-2026-109618",
       "CVE-2026-113425",
       "CVE-2026-114938",
       "CVE-2026-121810",
@@ -21,7 +22,7 @@
       "CVE-2026-129448"
     ],
     "keywords_hit": {
-      "CVE": 6,
+      "CVE": 8,
       "Malware": 1,
       "봇넷": 1
     }
@@ -256,6 +257,46 @@
       "published": "2026-11-19T12:53:08+00:00",
       "keywords": [
         "봇넷"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-19T14:01:17.181176+09:00",
+      "type": "single",
+      "title": "'PHP2Shell' 등 고위험 취약점 선제 대응...GS네오텍 '시큐리티 렌즈' 활용",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=209617",
+      "source": "데일리시큐 (전체) [RSS]",
+      "published": "2026-11-19T13:22:47+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-109618"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-109618",
+          "cvss_score": 9.2,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-416 (Use After Free)",
+          "description": "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. Some contexts may not properly account for this scenario and leave request memory in an uninitialized state before performing an allocation. The subsequent request cleanup procedure may read or branch on this memory. Multiple OOM strategies can consistently trigger this condition and lead to remote code execution (RCE).",
+          "epss_score": 0.99999,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-19T14:01:17.181176+09:00",
+      "type": "single",
+      "title": "Fastly Next-Gen WAF (Signal Sciences) agent fails open before rules load in Kubernetes sidecar deployments (vendor disputes; CVE pending)",
+      "url": "https://seclists.org/fulldisclosure/2026/Nov/40",
+      "source": "SecLists Full Disclosure (취약점공개)",
+      "published": "2026-11-19T04:19:37+00:00",
+      "keywords": [
+        "CVE"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
