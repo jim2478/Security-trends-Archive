@@ -2,13 +2,13 @@
   "date": "2026-11-19",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 19,
+    "scan_runs": 20,
     "total_articles_max": 1801,
     "matched_articles_max": 190,
-    "new_alerts": 13,
-    "cve_total": 19,
-    "alerts_with_cve": 9,
-    "cve_count": 19,
+    "new_alerts": 14,
+    "cve_total": 20,
+    "alerts_with_cve": 10,
+    "cve_count": 20,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -24,7 +24,7 @@
       "CVE-2026-129448"
     ],
     "keywords_hit": {
-      "CVE": 10,
+      "CVE": 11,
       "Malware": 2,
       "봇넷": 1
     }
@@ -419,6 +419,32 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-19T19:01:05.963051+09:00",
+      "type": "single",
+      "title": "nginx2root:AI Discovers Five Critical nginx Flaws and a Path to Root",
+      "url": "https://securityaffairs.com/203440/hacking/nginx2rootai-discovers-five-critical-nginx-flaws-and-a-path-to-root.html",
+      "source": "Security Affairs (보안뉴스/위협동향) [RSS]",
+      "published": "2026-11-19T09:21:19+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-123007"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-123007",
+          "cvss_score": 9.2,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-191",
+          "description": "This issue affects NGINX Plus or NGINX Open Source configurations that use HTTP/2. When NGINX processes undisclosed traffic, the flow control window can exceed the allowed threshold, potentially resulting in a heap buffer overflow typically followed by an NGINX worker segmentation fault. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact: An attacker could leverage this vulnerability to crash t",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
     }
   ]
 }
