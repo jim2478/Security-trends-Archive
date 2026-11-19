@@ -2,10 +2,10 @@
   "date": "2026-11-19",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 20,
+    "scan_runs": 21,
     "total_articles_max": 1801,
     "matched_articles_max": 190,
-    "new_alerts": 14,
+    "new_alerts": 15,
     "cve_total": 20,
     "alerts_with_cve": 10,
     "cve_count": 20,
@@ -25,7 +25,7 @@
     ],
     "keywords_hit": {
       "CVE": 11,
-      "Malware": 2,
+      "Malware": 3,
       "봇넷": 1
     }
   },
@@ -445,6 +445,20 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-11-19T20:01:11.851497+09:00",
+      "type": "single",
+      "title": "GTA 6 scams are after your Google password, money, and crypto wallet",
+      "url": "https://www.helpnetsecurity.com/2026/11/19/gta-6-scams-threats/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-11-19T10:09:31+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
