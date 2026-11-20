@@ -2,13 +2,13 @@
   "date": "2026-11-20",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 20,
+    "scan_runs": 21,
     "total_articles_max": 1791,
     "matched_articles_max": 192,
-    "new_alerts": 12,
-    "cve_total": 16,
-    "alerts_with_cve": 10,
-    "cve_count": 16,
+    "new_alerts": 13,
+    "cve_total": 17,
+    "alerts_with_cve": 11,
+    "cve_count": 17,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -26,10 +26,11 @@
       "CVE-2026-125273",
       "CVE-2026-126088",
       "CVE-2026-126714",
+      "CVE-2026-132825",
       "CVE-2026-96805"
     ],
     "keywords_hit": {
-      "CVE": 10,
+      "CVE": 11,
       "Malware": 2
     }
   },
@@ -378,6 +379,32 @@
           "cwe": "CWE-121",
           "description": "When BIG-IP APM is provisioned and a per-request policy that includes the Client Information agent and Endpoint Security agents is applied to a virtual server, undisclosed requests can cause the Traffic Management Microkernel (TMM) to terminate and may lead to remote code execution (RCE).\n\nImpact:\n\nTraffic is disrupted while the TMM process restarts. This vulnerability allows a remote, unauthenticated attacker to cause a denial-of-service (DoS) on the BIG-IP system and may allow the attacker to ",
           "epss_score": 0.00772,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-20T20:01:12.498430+09:00",
+      "type": "single",
+      "title": "Ruby Patches Ruby2Shell Vulnerability That Could Lead to RCE",
+      "url": "https://www.securityweek.com/ruby-patches-ruby2shell-vulnerability-that-could-lead-to-rce/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-11-20T10:34:10+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-132825"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-132825",
+          "cvss_score": 7.4,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-122",
+          "description": "Ruby before 3.3.14, 3.4.13, and 4.0.10 has a heap-based buffer overflow during case conversion. One byte can be written outside a buffer for, for example, ISO-8859-1 or Windows-1252.",
+          "epss_score": 0.00174,
           "kev": false
         }
       ]
