@@ -2,18 +2,23 @@
   "date": "2026-11-21",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
+    "scan_runs": 3,
     "total_articles_max": 1791,
     "matched_articles_max": 189,
-    "new_alerts": 1,
-    "cve_total": 0,
-    "alerts_with_cve": 0,
-    "cve_count": 0,
+    "new_alerts": 2,
+    "cve_total": 3,
+    "alerts_with_cve": 1,
+    "cve_count": 3,
     "ioc_count": 0,
     "merged_count": 0,
-    "unique_cves": [],
+    "unique_cves": [
+      "CVE-2026-102769",
+      "CVE-2026-23871",
+      "CVE-2026-44908"
+    ],
     "keywords_hit": {
-      "Malware": 1
+      "Malware": 1,
+      "CVE": 1
     }
   },
   "alerts": [
@@ -30,6 +35,52 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-21T02:01:26.050885+09:00",
+      "type": "single",
+      "title": "WhatsApp Fixes Flaw Uncovered While Disrupting Scam Campaign",
+      "url": "https://www.securityweek.com/whatsapp-fixes-flaw-uncovered-while-disrupting-scam-campaign/",
+      "source": "SecurityWeek (보안뉴스 종합) [RSS]",
+      "published": "2026-11-20T16:01:02+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-23871",
+        "CVE-2026-102769",
+        "CVE-2026-44908"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-23871",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-102769",
+          "cvss_score": 6.8,
+          "cvss_severity": "MEDIUM",
+          "cwe": null,
+          "description": "A SQL injection vulnerability when the recipient tapped on a specially crafted “order details” message from an unofficial client in WhatsApp for Android prior to version 2.26.35.74 could have allowed deletion of locally-stored WhatsApp files and, only if the user is online at time of receipt, leaked one bit of information asked by the attacker about the user’s chat database via an induced-crash delivery receipt timing sidechannel. We have not seen evidence of exploitation in the wild.",
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-44908",
+          "cvss_score": 4.8,
+          "cvss_severity": "MEDIUM",
+          "cwe": null,
+          "description": "Improper following of a certificate’s chain of trust in the remote-attestation verifier used to establish trust with Meta AI's confidential computing backend in WhatsApp for iOS before 2.26.24.72, WhatsApp Business for iOS and WhatsApp for Mac Desktop before v2.26.23.72, WhatsApp for Android before v2.26.23.74, and WhatsApp Business for Android before v2.26.23.70 could have allowed someone positioned within Meta infrastructure to bypass the hardware root of trust by presenting clients with a VCE",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
     }
   ]
 }
