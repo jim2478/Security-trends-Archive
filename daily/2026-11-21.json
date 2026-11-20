@@ -2,24 +2,25 @@
   "date": "2026-11-21",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 5,
+    "scan_runs": 6,
     "total_articles_max": 1791,
     "matched_articles_max": 191,
-    "new_alerts": 4,
-    "cve_total": 4,
-    "alerts_with_cve": 2,
-    "cve_count": 4,
+    "new_alerts": 6,
+    "cve_total": 6,
+    "alerts_with_cve": 4,
+    "cve_count": 6,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2026-102769",
       "CVE-2026-114938",
+      "CVE-2026-132825",
       "CVE-2026-23871",
       "CVE-2026-44908"
     ],
     "keywords_hit": {
-      "Malware": 2,
-      "CVE": 2
+      "CVE": 4,
+      "Malware": 2
     }
   },
   "alerts": [
@@ -122,6 +123,58 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-21T05:01:29.690349+09:00",
+      "type": "single",
+      "title": "WhatsApp Patches 3 Security Flaws, Including Android Bug Suspected of Use in Scams",
+      "url": "https://thehackernews.com/2026/11/whatsapp-patches-3-security-flaws.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-11-20T17:57:20+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-23871"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-23871",
+          "cvss_score": 3.5,
+          "cvss_severity": "LOW",
+          "cwe": null,
+          "description": "Incomplete validation of external ad-reply URLs in WhatsApp for Android and WhatsApp Business for Android before 2.26.17.4 could have caused a target's device to reveal its IP information to an attacker if an attacker sent media from an attacker-controlled URL when a crafted Click to WhatsApp ad-reply message was rendered and displayed in a message thread. This issue may have been abused in conjunction with specific spam messages.",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-21T05:01:29.690349+09:00",
+      "type": "single",
+      "title": "Critical Ruby String Case-Conversion Vulnerabilities Could Lead to Remote Code Execution",
+      "url": "https://www.imperva.com/blog/critical-ruby-string-case-conversion-vulnerabilities-could-lead-to-remote-code-execution/",
+      "source": "Imperva Blog (DDoS/봇 방어) [RSS]",
+      "published": "2026-11-20T16:12:42+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-132825"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-132825",
+          "cvss_score": 7.4,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-122",
+          "description": "Ruby before 3.3.14, 3.4.13, and 4.0.10 has a heap-based buffer overflow during case conversion. One byte can be written outside a buffer for, for example, ISO-8859-1 or Windows-1252.",
+          "epss_score": 0.00191,
+          "kev": false
+        }
+      ]
     }
   ]
 }
