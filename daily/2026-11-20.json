@@ -2,13 +2,13 @@
   "date": "2026-11-20",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 21,
+    "scan_runs": 22,
     "total_articles_max": 1791,
     "matched_articles_max": 192,
-    "new_alerts": 13,
-    "cve_total": 17,
-    "alerts_with_cve": 11,
-    "cve_count": 17,
+    "new_alerts": 14,
+    "cve_total": 18,
+    "alerts_with_cve": 12,
+    "cve_count": 18,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -27,10 +27,11 @@
       "CVE-2026-126088",
       "CVE-2026-126714",
       "CVE-2026-132825",
+      "CVE-2026-76466",
       "CVE-2026-96805"
     ],
     "keywords_hit": {
-      "CVE": 11,
+      "CVE": 12,
       "Malware": 2
     }
   },
@@ -405,6 +406,32 @@
           "cwe": "CWE-122",
           "description": "Ruby before 3.3.14, 3.4.13, and 4.0.10 has a heap-based buffer overflow during case conversion. One byte can be written outside a buffer for, for example, ISO-8859-1 or Windows-1252.",
           "epss_score": 0.00174,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-20T21:01:15.827177+09:00",
+      "type": "single",
+      "title": "Hackers Exploit Critical Cisco Expressway Flaw, Breach Four Devices and Reach Internal Network",
+      "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-cisco.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-11-20T10:32:50+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-76466"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-76466",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-798 (Hard-coded Credentials)",
+          "description": "A vulnerability in the database service feature of Cisco Expressway Series could allow an unauthenticated, remote attacker with network access to a Cisco Expressway device to execute arbitrary operating system commands as&nbsp;root.\r\n\r\nThis vulnerability is due to the use of persistent cookies. Additionally, there is insufficient validation of client certificates when the TLS Verify Mode is set to Enabled for clustering, which means that client certificates are not validated. An attacker with po",
+          "epss_score": 0.00417,
           "kev": false
         }
       ]
