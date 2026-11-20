@@ -2,23 +2,24 @@
   "date": "2026-11-21",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 3,
+    "scan_runs": 4,
     "total_articles_max": 1791,
-    "matched_articles_max": 189,
-    "new_alerts": 2,
-    "cve_total": 3,
-    "alerts_with_cve": 1,
-    "cve_count": 3,
+    "matched_articles_max": 191,
+    "new_alerts": 4,
+    "cve_total": 4,
+    "alerts_with_cve": 2,
+    "cve_count": 4,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2026-102769",
+      "CVE-2026-114938",
       "CVE-2026-23871",
       "CVE-2026-44908"
     ],
     "keywords_hit": {
-      "Malware": 1,
-      "CVE": 1
+      "Malware": 2,
+      "CVE": 2
     }
   },
   "alerts": [
@@ -81,6 +82,46 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-11-21T03:01:23.301367+09:00",
+      "type": "single",
+      "title": "A Technical Guide to Mitigate Java4Shell with TruRisk Eliminate",
+      "url": "https://blog.qualys.com/category/qualys-insights",
+      "source": "Qualys Blog (취약점관리) [RSS]",
+      "published": "2026-11-20T17:29:31+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-114938"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-114938",
+          "cvss_score": 8.1,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-122",
+          "description": "Vulnerability in the Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition product of Oracle Java SE (component: Compiler).  Supported versions that are affected are Oracle Java SE: 8u511b33-perf, 17.0.21.0.3, 21.0.13.0.3, 25.0.5.0.3, 27.0.1.0.3; Oracle GraalVM for JDK: 17.0.21.0.3 and  21.0.13.0.3; Oracle GraalVM Enterprise Edition: 21.3.20.0.3. Difficult to exploit vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Oracle ",
+          "epss_score": 0.00907,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-21T03:01:23.301367+09:00",
+      "type": "single",
+      "title": "Bazuka Android Malware Uses Fake Screen Overlays to Hide Credential Theft and Device Control",
+      "url": "https://thehackernews.com/2026/11/bazuka-android-malware-uses-fake-screen.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-11-20T16:58:16+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
