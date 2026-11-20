@@ -2,16 +2,17 @@
   "date": "2026-11-20",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 22,
+    "scan_runs": 23,
     "total_articles_max": 1791,
     "matched_articles_max": 192,
-    "new_alerts": 14,
-    "cve_total": 18,
-    "alerts_with_cve": 12,
-    "cve_count": 18,
+    "new_alerts": 16,
+    "cve_total": 22,
+    "alerts_with_cve": 14,
+    "cve_count": 22,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
+      "CVE-2026-102764",
       "CVE-2026-113425",
       "CVE-2026-114938",
       "CVE-2026-115560",
@@ -27,11 +28,13 @@
       "CVE-2026-126088",
       "CVE-2026-126714",
       "CVE-2026-132825",
+      "CVE-2026-59309",
       "CVE-2026-76466",
-      "CVE-2026-96805"
+      "CVE-2026-96805",
+      "CVE-2026-99312"
     ],
     "keywords_hit": {
-      "CVE": 12,
+      "CVE": 14,
       "Malware": 2
     }
   },
@@ -432,6 +435,78 @@
           "cwe": "CWE-798 (Hard-coded Credentials)",
           "description": "A vulnerability in the database service feature of Cisco Expressway Series could allow an unauthenticated, remote attacker with network access to a Cisco Expressway device to execute arbitrary operating system commands as&nbsp;root.\r\n\r\nThis vulnerability is due to the use of persistent cookies. Additionally, there is insufficient validation of client certificates when the TLS Verify Mode is set to Enabled for clustering, which means that client certificates are not validated. An attacker with po",
           "epss_score": 0.00417,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-20T22:01:23.045122+09:00",
+      "type": "single",
+      "title": "Linux KVM Flaw CVE-2026-99312 Lets Guest VMs Access Host Memory on AMD Hosts",
+      "url": "https://thehackernews.com/2026/11/new-linux-kvm-flaw-cve-2026-99312-lets.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-11-20T12:20:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-99312"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-99312",
+          "cvss_score": 8.8,
+          "cvss_severity": "HIGH",
+          "cwe": null,
+          "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nKVM: x86: Unconditionally reset MMU context when emulating INIT\n\nForce an MMU reset when emulating an INIT even if paging was already\ndisabled, as the MMU page role includes guest_mode (L2), i.e. an INIT while\nL2 is running with CR0.PG=0 will result in KVM running L1 with a stale MMU\ncontext.\n\nAlternatively, the reset could be scoped strictly to paging being enabled\nor L2 being active, but SMM is also encoded in the page role. ",
+          "epss_score": 0.00187,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-20T22:01:23.045122+09:00",
+      "type": "single",
+      "title": "VMware vCenter zero-day exploited for months before patch (CVE-2026-123890)",
+      "url": "https://www.helpnetsecurity.com/2026/11/20/vmware-vcenter-zero-day-cve-2026-123890-exploited/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-11-20T12:30:19+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-123890",
+        "CVE-2026-102764",
+        "CVE-2026-59309"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-123890",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-288",
+          "description": "VMware vCenter contains an authentication bypass vulnerability in the VMware Directory Service.\nAffected versions: 9.1.x (fixed in 9.1.1.0200); 9.0.x (fixed in 9.0.2.0200); 8.0 (fixed in 8.0 U3m); 5.x (fixed in 5.2.5).\nTelco Cloud Platform 3.0, 4.x, 5.0.x, 5.1.x, 5.2 and Telco Cloud Infrastructure 3.0 are also affected (see KB463116).",
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-102764",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-290",
+          "description": "The vulnerability exists within internal components of BeyondTrust’s Remote Support product. The components did not adequately validate the origin of the messages it received. Under the right conditions, this could allow an attacker to perform file operations on the appliance.",
+          "epss_score": 0.50694,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-59309",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-303",
+          "description": "VMware vCenter contains an authentication bypass vulnerability in the VMware Directory Service. A malicious actor with network access to vCenter may exploit this issue to bypass authentication and gain unauthorized access to the system.",
+          "epss_score": 0.2286,
           "kev": false
         }
       ]
