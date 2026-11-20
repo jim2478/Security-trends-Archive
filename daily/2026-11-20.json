@@ -2,13 +2,13 @@
   "date": "2026-11-20",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 19,
+    "scan_runs": 20,
     "total_articles_max": 1791,
     "matched_articles_max": 192,
-    "new_alerts": 11,
-    "cve_total": 15,
-    "alerts_with_cve": 9,
-    "cve_count": 15,
+    "new_alerts": 12,
+    "cve_total": 16,
+    "alerts_with_cve": 10,
+    "cve_count": 16,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -19,6 +19,7 @@
       "CVE-2026-123007",
       "CVE-2026-123633",
       "CVE-2026-123634",
+      "CVE-2026-123637",
       "CVE-2026-123890",
       "CVE-2026-124281",
       "CVE-2026-125132",
@@ -28,7 +29,7 @@
       "CVE-2026-96805"
     ],
     "keywords_hit": {
-      "CVE": 9,
+      "CVE": 10,
       "Malware": 2
     }
   },
@@ -354,6 +355,32 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-20T19:01:29.109671+09:00",
+      "type": "single",
+      "title": "F5 BIG-IP, 인증 없는 원격 코드 실행 위험…APM·트래픽 처리 설정 점검 필요",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=209642",
+      "source": "데일리시큐 (전체) [RSS]",
+      "published": "2026-11-20T18:16:43+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-123637"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-123637",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-121",
+          "description": "When BIG-IP APM is provisioned and a per-request policy that includes the Client Information agent and Endpoint Security agents is applied to a virtual server, undisclosed requests can cause the Traffic Management Microkernel (TMM) to terminate and may lead to remote code execution (RCE).\n\nImpact:\n\nTraffic is disrupted while the TMM process restarts. This vulnerability allows a remote, unauthenticated attacker to cause a denial-of-service (DoS) on the BIG-IP system and may allow the attacker to ",
+          "epss_score": 0.00772,
+          "kev": false
+        }
+      ]
     }
   ]
 }
