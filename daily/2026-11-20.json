@@ -2,13 +2,13 @@
   "date": "2026-11-20",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 12,
+    "scan_runs": 13,
     "total_articles_max": 1791,
     "matched_articles_max": 192,
-    "new_alerts": 8,
-    "cve_total": 13,
-    "alerts_with_cve": 7,
-    "cve_count": 13,
+    "new_alerts": 9,
+    "cve_total": 14,
+    "alerts_with_cve": 8,
+    "cve_count": 14,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -27,7 +27,7 @@
       "CVE-2026-96805"
     ],
     "keywords_hit": {
-      "CVE": 7,
+      "CVE": 8,
       "Malware": 1
     }
   },
@@ -287,6 +287,32 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-20T12:01:06.511790+09:00",
+      "type": "single",
+      "title": "엔키화이트햇, 자바포셸 점검 스크립트 배포",
+      "url": "https://zdnet.co.kr/view/?no=20261120111711",
+      "source": "지디넷코리아 [RSS]",
+      "published": "2026-11-20T02:19:16+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-114938"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-114938",
+          "cvss_score": 8.1,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-122",
+          "description": "Vulnerability in the Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition product of Oracle Java SE (component: Compiler).  Supported versions that are affected are Oracle Java SE: 8u511b33-perf, 17.0.21.0.3, 21.0.13.0.3, 25.0.5.0.3, 27.0.1.0.3; Oracle GraalVM for JDK: 17.0.21.0.3 and  21.0.13.0.3; Oracle GraalVM Enterprise Edition: 21.3.20.0.3. Difficult to exploit vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Oracle ",
+          "epss_score": 0.00753,
+          "kev": false
+        }
+      ]
     }
   ]
 }
