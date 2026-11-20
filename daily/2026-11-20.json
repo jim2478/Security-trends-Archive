@@ -2,10 +2,10 @@
   "date": "2026-11-20",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 17,
+    "scan_runs": 18,
     "total_articles_max": 1791,
     "matched_articles_max": 192,
-    "new_alerts": 10,
+    "new_alerts": 11,
     "cve_total": 15,
     "alerts_with_cve": 9,
     "cve_count": 15,
@@ -29,7 +29,7 @@
     ],
     "keywords_hit": {
       "CVE": 9,
-      "Malware": 1
+      "Malware": 2
     }
   },
   "alerts": [
@@ -340,6 +340,20 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-11-20T17:01:04.939851+09:00",
+      "type": "single",
+      "title": "ROMULUS ClickFix Attacks Deliver RAT That Can Spy on Users and Control PCs",
+      "url": "https://thehackernews.com/2026/11/romulus-clickfix-attacks-deliver-rat.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-11-20T07:11:39+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
