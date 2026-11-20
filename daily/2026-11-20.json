@@ -2,13 +2,13 @@
   "date": "2026-11-20",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 23,
+    "scan_runs": 24,
     "total_articles_max": 1791,
     "matched_articles_max": 192,
-    "new_alerts": 16,
-    "cve_total": 22,
-    "alerts_with_cve": 14,
-    "cve_count": 22,
+    "new_alerts": 17,
+    "cve_total": 23,
+    "alerts_with_cve": 15,
+    "cve_count": 23,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -34,7 +34,7 @@
       "CVE-2026-99312"
     ],
     "keywords_hit": {
-      "CVE": 14,
+      "CVE": 15,
       "Malware": 2
     }
   },
@@ -507,6 +507,32 @@
           "cwe": "CWE-303",
           "description": "VMware vCenter contains an authentication bypass vulnerability in the VMware Directory Service. A malicious actor with network access to vCenter may exploit this issue to bypass authentication and gain unauthorized access to the system.",
           "epss_score": 0.2286,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-20T23:01:21.021703+09:00",
+      "type": "single",
+      "title": "Hackers Exploit Cisco Expressway Flaw CVE-2026-76466 to Breach Russian Organization",
+      "url": "https://securityaffairs.com/203598/hacking/hackers-exploit-cisco-expressway-flaw-cve-2026-76466-to-breach-russian-organization.html",
+      "source": "Security Affairs (보안뉴스/위협동향) [RSS]",
+      "published": "2026-11-20T12:52:40+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-76466"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-76466",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-798 (Hard-coded Credentials)",
+          "description": "A vulnerability in the database service feature of Cisco Expressway Series could allow an unauthenticated, remote attacker with network access to a Cisco Expressway device to execute arbitrary operating system commands as&nbsp;root.\r\n\r\nThis vulnerability is due to the use of persistent cookies. Additionally, there is insufficient validation of client certificates when the TLS Verify Mode is set to Enabled for clustering, which means that client certificates are not validated. An attacker with po",
+          "epss_score": 0.00417,
           "kev": false
         }
       ]
