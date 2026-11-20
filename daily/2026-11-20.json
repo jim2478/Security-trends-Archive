@@ -2,13 +2,13 @@
   "date": "2026-11-20",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 16,
+    "scan_runs": 17,
     "total_articles_max": 1791,
     "matched_articles_max": 192,
-    "new_alerts": 9,
-    "cve_total": 14,
-    "alerts_with_cve": 8,
-    "cve_count": 14,
+    "new_alerts": 10,
+    "cve_total": 15,
+    "alerts_with_cve": 9,
+    "cve_count": 15,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -19,6 +19,7 @@
       "CVE-2026-123007",
       "CVE-2026-123633",
       "CVE-2026-123634",
+      "CVE-2026-123890",
       "CVE-2026-124281",
       "CVE-2026-125132",
       "CVE-2026-125273",
@@ -27,7 +28,7 @@
       "CVE-2026-96805"
     ],
     "keywords_hit": {
-      "CVE": 8,
+      "CVE": 9,
       "Malware": 1
     }
   },
@@ -310,6 +311,32 @@
           "cwe": "CWE-122",
           "description": "Vulnerability in the Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition product of Oracle Java SE (component: Compiler).  Supported versions that are affected are Oracle Java SE: 8u511b33-perf, 17.0.21.0.3, 21.0.13.0.3, 25.0.5.0.3, 27.0.1.0.3; Oracle GraalVM for JDK: 17.0.21.0.3 and  21.0.13.0.3; Oracle GraalVM Enterprise Edition: 21.3.20.0.3. Difficult to exploit vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Oracle ",
           "epss_score": 0.00753,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-20T16:01:04.758770+09:00",
+      "type": "single",
+      "title": "China-Linked Hackers Exploit Critical VMware vCenter Zero-Day to Gain Admin Access and Steal Data",
+      "url": "https://thehackernews.com/2026/11/china-linked-hackers-exploit-critical.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-11-20T06:33:31+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-123890"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-123890",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-288",
+          "description": "VMware vCenter contains an authentication bypass vulnerability in the VMware Directory Service.\nAffected versions: 9.1.x (fixed in 9.1.1.0200); 9.0.x (fixed in 9.0.2.0200); 8.0 (fixed in 8.0 U3m); 5.x (fixed in 5.2.5).\nTelco Cloud Platform 3.0, 4.x, 5.0.x, 5.1.x, 5.2 and Telco Cloud Infrastructure 3.0 are also affected (see KB463116).",
+          "epss_score": null,
           "kev": false
         }
       ]
