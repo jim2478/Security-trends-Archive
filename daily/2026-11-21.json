@@ -2,13 +2,13 @@
   "date": "2026-11-21",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 8,
+    "scan_runs": 9,
     "total_articles_max": 1791,
     "matched_articles_max": 191,
-    "new_alerts": 6,
-    "cve_total": 6,
-    "alerts_with_cve": 4,
-    "cve_count": 6,
+    "new_alerts": 7,
+    "cve_total": 7,
+    "alerts_with_cve": 5,
+    "cve_count": 7,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
@@ -19,7 +19,7 @@
       "CVE-2026-44908"
     ],
     "keywords_hit": {
-      "CVE": 4,
+      "CVE": 5,
       "Malware": 2
     }
   },
@@ -172,6 +172,32 @@
           "cwe": "CWE-122",
           "description": "Ruby before 3.3.14, 3.4.13, and 4.0.10 has a heap-based buffer overflow during case conversion. One byte can be written outside a buffer for, for example, ISO-8859-1 or Windows-1252.",
           "epss_score": 0.00191,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-21T08:01:23.932419+09:00",
+      "type": "single",
+      "title": "CVE-2026-23871: WhatsApp Bug Helped Scammers Make Messages Look Legitimate",
+      "url": "https://securityaffairs.com/203622/security/cve-2026-23871-whatsapp-bug-helped-scammers-make-messages-look-legitimate.html",
+      "source": "Security Affairs (보안뉴스/위협동향) [RSS]",
+      "published": "2026-11-20T22:21:12+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-23871"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-23871",
+          "cvss_score": 3.5,
+          "cvss_severity": "LOW",
+          "cwe": "CWE-918 (SSRF)",
+          "description": "Incomplete validation of external ad-reply URLs in WhatsApp for Android and WhatsApp Business for Android before 2.26.17.4 could have caused a target's device to reveal its IP information to an attacker if an attacker sent media from an attacker-controlled URL when a crafted Click to WhatsApp ad-reply message was rendered and displayed in a message thread. This issue may have been abused in conjunction with specific spam messages.",
+          "epss_score": null,
           "kev": false
         }
       ]
