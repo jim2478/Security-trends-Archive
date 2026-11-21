@@ -2,24 +2,25 @@
   "date": "2026-11-21",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 19,
+    "scan_runs": 20,
     "total_articles_max": 1791,
     "matched_articles_max": 191,
-    "new_alerts": 8,
-    "cve_total": 7,
-    "alerts_with_cve": 5,
-    "cve_count": 7,
+    "new_alerts": 9,
+    "cve_total": 8,
+    "alerts_with_cve": 6,
+    "cve_count": 8,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2026-102769",
       "CVE-2026-114938",
+      "CVE-2026-129448",
       "CVE-2026-132825",
       "CVE-2026-23871",
       "CVE-2026-44908"
     ],
     "keywords_hit": {
-      "CVE": 5,
+      "CVE": 6,
       "Malware": 3
     }
   },
@@ -215,6 +216,32 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-21T19:01:21.987506+09:00",
+      "type": "single",
+      "title": "Hackers Exploit Critical VMware, Cisco, and Apache Flaws as Espionage Attacks Emerge",
+      "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-vmware-cisco.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-11-21T08:49:13+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-129448"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-129448",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-502 (Deserialization)",
+          "description": "Deserialization of Untrusted Data in Apache Roller versions 4.0.0 through 6.1.4 allows an unauthenticated remote attacker to execute arbitrary code. The XML-RPC endpoint accepts vendor extension types and deserializes them before authenticating the requester.\n\nThis is the same vulnerability as CVE-2026-82384, which listed only Apache Roller 6.1.5 as affected. This issue is being actively exploited.\n\nUsers are recommended to upgrade to Apache Roller 6.1.6 or later, which disables the extension ty",
+          "epss_score": 0.01191,
+          "kev": true
+        }
+      ]
     }
   ]
 }
