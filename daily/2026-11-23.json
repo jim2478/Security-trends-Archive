@@ -2,17 +2,34 @@
   "date": "2026-11-23",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 4,
+    "scan_runs": 5,
     "total_articles_max": 1791,
-    "matched_articles_max": 192,
-    "new_alerts": 0,
+    "matched_articles_max": 193,
+    "new_alerts": 1,
     "cve_total": 0,
     "alerts_with_cve": 0,
     "cve_count": 0,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [],
-    "keywords_hit": {}
+    "keywords_hit": {
+      "Malware": 1
+    }
   },
-  "alerts": []
+  "alerts": [
+    {
+      "scan_time_kst": "2026-11-23T04:01:05.061476+09:00",
+      "type": "single",
+      "title": "Hackers exploit GL.iNet cloud flaw to infect routers, KVM devices",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-glinet-cloud-flaw-to-infect-routers-kvm-devices/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-11-22T18:45:37+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
 }
