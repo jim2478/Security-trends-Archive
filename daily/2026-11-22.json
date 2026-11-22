@@ -2,19 +2,24 @@
   "date": "2026-11-22",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 19,
+    "scan_runs": 20,
     "total_articles_max": 1791,
     "matched_articles_max": 192,
-    "new_alerts": 1,
-    "cve_total": 0,
-    "alerts_with_cve": 0,
-    "cve_count": 0,
+    "new_alerts": 2,
+    "cve_total": 3,
+    "alerts_with_cve": 1,
+    "cve_count": 3,
     "ioc_count": 0,
     "merged_count": 0,
-    "unique_cves": [],
+    "unique_cves": [
+      "CVE-2026-114938",
+      "CVE-2026-115731",
+      "CVE-2026-123890"
+    ],
     "keywords_hit": {
+      "Malware": 2,
       "Botnet": 1,
-      "Malware": 1
+      "CVE": 1
     }
   },
   "alerts": [
@@ -32,6 +37,53 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-22T19:01:23.304443+09:00",
+      "type": "single",
+      "title": "Week in review: Java4Shell proves tricky to exploit, malware planted via Optimizely hits 178 orgs",
+      "url": "https://www.helpnetsecurity.com/2026/11/22/week-in-review-java4shell-proves-tricky-to-exploit-malware-planted-via-optimizely-hits-178-orgs/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-11-22T09:00:25+00:00",
+      "keywords": [
+        "CVE",
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-114938",
+        "CVE-2026-115731",
+        "CVE-2026-123890"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-114938",
+          "cvss_score": 8.1,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-122",
+          "description": "Vulnerability in the Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition product of Oracle Java SE (component: Compiler).  Supported versions that are affected are Oracle Java SE: 8u511b33-perf, 17.0.21.0.3, 21.0.13.0.3, 25.0.5.0.3, 27.0.1.0.3; Oracle GraalVM for JDK: 17.0.21.0.3 and  21.0.13.0.3; Oracle GraalVM Enterprise Edition: 21.3.20.0.3. Difficult to exploit vulnerability allows unauthenticated attacker with network access via multiple protocols to compromise Oracle ",
+          "epss_score": 0.45636,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-115731",
+          "cvss_score": 9.4,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-94 (Code Injection)",
+          "description": "Deserialization of untrusted data in the report-processing code of Puppet, as used by Puppet Server, in the affected releases, allows a client that holds any CA-signed agent certificate to execute arbitrary code on the Puppet Server as its service user by submitting a report containing a crafted rich-data type via PUT request. Where the certificate authority autosigns requests without strong verification, an unauthenticated network attacker can obtain such a certificate.",
+          "epss_score": 0.01231,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-123890",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-288",
+          "description": "VMware vCenter contains an authentication bypass vulnerability in the VMware Directory Service.\nAffected versions: 9.1.x (fixed in 9.1.1.0200); 9.0.x (fixed in 9.0.2.0200); 8.0 (fixed in 8.0 U3m); 5.x (fixed in 5.2.5).\nTelco Cloud Platform 3.0, 4.x, 5.0.x, 5.1.x, 5.2 and Telco Cloud Infrastructure 3.0 are also affected (see KB463116).",
+          "epss_score": 0.02985,
+          "kev": true
+        }
+      ]
     }
   ]
 }
