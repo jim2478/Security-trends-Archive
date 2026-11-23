@@ -2,18 +2,21 @@
   "date": "2026-11-23",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 14,
+    "scan_runs": 15,
     "total_articles_max": 1791,
     "matched_articles_max": 193,
-    "new_alerts": 1,
-    "cve_total": 0,
-    "alerts_with_cve": 0,
-    "cve_count": 0,
+    "new_alerts": 2,
+    "cve_total": 1,
+    "alerts_with_cve": 1,
+    "cve_count": 1,
     "ioc_count": 0,
     "merged_count": 0,
-    "unique_cves": [],
+    "unique_cves": [
+      "CVE-2026-123890"
+    ],
     "keywords_hit": {
-      "Malware": 1
+      "Malware": 1,
+      "CVE": 1
     }
   },
   "alerts": [
@@ -30,6 +33,32 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-23T14:01:07.280230+09:00",
+      "type": "single",
+      "title": "VMware vCenter 치명적 제로데이 취약점, 중국 연계 해커조직 실제 공격 악용",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=209663",
+      "source": "데일리시큐 (전체) [RSS]",
+      "published": "2026-11-23T13:11:44+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-123890"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-123890",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-288",
+          "description": "VMware vCenter contains an authentication bypass vulnerability in the VMware Directory Service.\nAffected versions: 9.1.x (fixed in 9.1.1.0200); 9.0.x (fixed in 9.0.2.0200); 8.0 (fixed in 8.0 U3m); 5.x (fixed in 5.2.5).\nTelco Cloud Platform 3.0, 4.x, 5.0.x, 5.1.x, 5.2 and Telco Cloud Infrastructure 3.0 are also affected (see KB463116).",
+          "epss_score": 0.03526,
+          "kev": true
+        }
+      ]
     }
   ]
 }
