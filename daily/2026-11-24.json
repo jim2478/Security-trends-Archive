@@ -1,0 +1,71 @@
+{
+  "date": "2026-11-24",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 1,
+    "total_articles_max": 1781,
+    "matched_articles_max": 190,
+    "new_alerts": 1,
+    "cve_total": 3,
+    "alerts_with_cve": 1,
+    "cve_count": 3,
+    "ioc_count": 0,
+    "merged_count": 0,
+    "unique_cves": [
+      "CVE-2020-5902",
+      "CVE-2022-1388",
+      "CVE-2026-94127"
+    ],
+    "keywords_hit": {
+      "CVE": 1
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-11-24T00:01:21.341424+09:00",
+      "type": "single",
+      "title": "Old CVEs Never Die",
+      "url": "https://www.cybersecurity-insiders.com/old-cves-never-die/",
+      "source": "Cybersecurity Insiders (보안인사이트)",
+      "published": "2026-11-23T13:31:49+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-94127",
+        "CVE-2020-5902",
+        "CVE-2022-1388"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-94127",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-122",
+          "description": "When a BIG-IP APM access policy and an OAuth profile are configured on a virtual server, specific malicious traffic can lead to remote code execution (RCE). This vulnerability is only present when BIG-IP APM is configured as an OAuth Authorization Server. Deployments using APM strictly as an OAuth Client / Resource Server (without OAuth authorization server profiles configured) are not affected by this vulnerability.\n\nImpact:\nThis vulnerability allows an unauthenticated attacker to perform remot",
+          "epss_score": 0.2655,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2020-5902",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-22 (Path Traversal)",
+          "description": "In BIG-IP versions 15.0.0-15.1.0.3, 14.1.0-14.1.2.5, 13.1.0-13.1.3.3, 12.1.0-12.1.5.1, and 11.6.1-11.6.5.1, the Traffic Management User Interface (TMUI), also referred to as the Configuration utility, has a Remote Code Execution (RCE) vulnerability in undisclosed pages.",
+          "epss_score": 0.99999,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2022-1388",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-306 (Missing Authentication)",
+          "description": "On F5 BIG-IP 16.1.x versions prior to 16.1.2.2, 15.1.x versions prior to 15.1.5.1, 14.1.x versions prior to 14.1.4.6, 13.1.x versions prior to 13.1.5, and all 12.1.x and 11.6.x versions, undisclosed requests may bypass iControl REST authentication. Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated",
+          "epss_score": 0.99954,
+          "kev": true
+        }
+      ]
+    }
+  ]
+}
