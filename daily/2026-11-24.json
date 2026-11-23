@@ -2,10 +2,10 @@
   "date": "2026-11-24",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 4,
+    "scan_runs": 5,
     "total_articles_max": 1811,
     "matched_articles_max": 190,
-    "new_alerts": 2,
+    "new_alerts": 3,
     "cve_total": 3,
     "alerts_with_cve": 1,
     "cve_count": 3,
@@ -17,8 +17,8 @@
       "CVE-2026-94127"
     ],
     "keywords_hit": {
-      "CVE": 1,
-      "Malware": 1
+      "Malware": 2,
+      "CVE": 1
     }
   },
   "alerts": [
@@ -79,6 +79,20 @@
         "Malware"
       ],
       "ioc_raw_text": "[Domain] gl[.]inet",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-24T04:01:10.801611+09:00",
+      "type": "single",
+      "title": "Malicious Google Ads Target Mac Users with Fake Codex and Claude Code Downloads",
+      "url": "https://hackread.com/google-ads-mac-malware-fake-codex-claude-code/",
+      "source": "HackRead (해킹/데이터유출) [RSS]",
+      "published": "2026-11-23T18:21:45+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
     }
