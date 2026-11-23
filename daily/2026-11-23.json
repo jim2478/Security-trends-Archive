@@ -2,21 +2,22 @@
   "date": "2026-11-23",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 20,
+    "scan_runs": 21,
     "total_articles_max": 1791,
     "matched_articles_max": 193,
-    "new_alerts": 3,
-    "cve_total": 1,
-    "alerts_with_cve": 1,
-    "cve_count": 1,
+    "new_alerts": 5,
+    "cve_total": 2,
+    "alerts_with_cve": 2,
+    "cve_count": 2,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
-      "CVE-2026-123890"
+      "CVE-2026-123890",
+      "CVE-2026-131914"
     ],
     "keywords_hit": {
-      "Malware": 1,
-      "CVE": 1,
+      "Malware": 2,
+      "CVE": 2,
       "Botnet": 1
     }
   },
@@ -70,6 +71,46 @@
       "published": "2026-11-23T07:44:44+00:00",
       "keywords": [
         "Botnet"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-23T20:01:21.580371+09:00",
+      "type": "single",
+      "title": "Hackers Exploit Critical ASP.NET Anti-CSRF Library Flaw Allowing Unauthenticated RCE",
+      "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-aspnet-anti.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-11-23T09:11:56+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-131914"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-131914",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-502 (Deserialization)",
+          "description": "Deserialization of untrusted data in double-submit cookie vs. form field validation in Idunno.AntiCsrf versions through 0.9.1 Beta on ASP.NET allows remote unauthenticated attackers to execute code via object injection",
+          "epss_score": 0.00614,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-23T20:01:21.580371+09:00",
+      "type": "single",
+      "title": "Black Friday, red flags: too-good-to-be-true deals hiding real threats",
+      "url": "https://securelist.com/black-friday-threat-report-2026/122061/",
+      "source": "Kaspersky Securelist (위협분석) [RSS]",
+      "published": "2026-11-23T10:00:43+00:00",
+      "keywords": [
+        "Malware"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
