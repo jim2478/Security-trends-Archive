@@ -2,22 +2,25 @@
   "date": "2026-11-23",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 22,
+    "scan_runs": 23,
     "total_articles_max": 1791,
     "matched_articles_max": 193,
-    "new_alerts": 5,
-    "cve_total": 2,
-    "alerts_with_cve": 2,
-    "cve_count": 2,
-    "ioc_count": 0,
+    "new_alerts": 9,
+    "cve_total": 6,
+    "alerts_with_cve": 5,
+    "cve_count": 6,
+    "ioc_count": 14,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2026-123890",
-      "CVE-2026-131914"
+      "CVE-2026-131914",
+      "CVE-2026-134624",
+      "CVE-2026-76466",
+      "CVE-2026-84869"
     ],
     "keywords_hit": {
-      "Malware": 2,
-      "CVE": 2,
+      "CVE": 5,
+      "Malware": 3,
       "Botnet": 1
     }
   },
@@ -113,6 +116,108 @@
         "Malware"
       ],
       "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-23T22:01:29.193679+09:00",
+      "type": "single",
+      "title": "Hackers Exploit Critical ScreenConnect Flaw to Hijack MSP Technician PCs Without Warning",
+      "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-screenconnect.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-11-23T12:41:04+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-84869"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-84869",
+          "cvss_score": 9.9,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-269 (Improper Privilege Management)",
+          "description": "A condition in the ScreenConnect client may allow files to be transferred and executed through an active remote session without authorization or Host confirmation in certain circumstances. ScreenConnect servers are not impacted.",
+          "epss_score": 0.01173,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-23T22:01:29.193679+09:00",
+      "type": "single",
+      "title": "N-able Discloses Critical Mail Assure Vulnerability Found During Breach Investigation",
+      "url": "https://thehackernews.com/2026/11/n-able-discloses-critical-mail-assure.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-11-23T12:28:09+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-134624"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-134624",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-918 (SSRF)",
+          "description": "N-able MailAssure (SpamExperts) before 20261121.1943 does not restrict the destination of the LDAP synchronisation connection check performed when a relay is configured. An authenticated API user can cause the server to connect to arbitrary internal hosts and ports, determine which are reachable, and send crafted data to internal services.",
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-23T22:01:29.193679+09:00",
+      "type": "single",
+      "title": "Cisco Expressway vulnerability exploited to breach internal networks (CVE-2026-76466)",
+      "url": "https://www.helpnetsecurity.com/2026/11/23/cisco-expressway-vulnerability-exploited-cve-2026-76466/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-11-23T12:26:10+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-76466",
+        "CVE-2026-123890"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-76466",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-798 (Hard-coded Credentials)",
+          "description": "A vulnerability in the database service feature of Cisco Expressway Series could allow an unauthenticated, remote attacker with network access to a Cisco Expressway device to execute arbitrary operating system commands as&nbsp;root.\r\n\r\nThis vulnerability is due to the use of persistent cookies. Additionally, there is insufficient validation of client certificates when the TLS Verify Mode is set to Enabled for clustering, which means that client certificates are not validated. An attacker with po",
+          "epss_score": 0.02187,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-123890",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-288",
+          "description": "VMware vCenter contains an authentication bypass vulnerability in the VMware Directory Service.\nAffected versions: 9.1.x (fixed in 9.1.1.0200); 9.0.x (fixed in 9.0.2.0200); 8.0 (fixed in 8.0 U3m); 5.x (fixed in 5.2.5).\nTelco Cloud Platform 3.0, 4.x, 5.0.x, 5.1.x, 5.2 and Telco Cloud Infrastructure 3.0 are also affected (see KB463116).",
+          "epss_score": 0.03526,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-23T22:01:29.193679+09:00",
+      "type": "single",
+      "title": "OXLoader abuses DLL hijacking to distribute different malware families",
+      "url": "https://www.malwarebytes.com/blog/threat-intel/2026/11/oxloader-abuses-dll-hijacking-to-distribute-different-malware-families",
+      "source": "Malwarebytes Labs (악성코드/스캠) [RSS]",
+      "published": "2026-11-23T11:35:39+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "[IP] 217[.]60[.]102[.]123\n[IP] 91[.]92[.]243[.]204\n[Domain] guestsisfilesjpmp[.]com\n[Domain] wovplaying[.]help\n[Domain] biklonasmain[.]net\n[Domain] videohostinginsort[.]net\n[Domain] videovisitors[.]com\n[Domain] oz-cloud[.]com\n[Domain] smartkitcheneg[.]com\n[MD5] 27b3fd4a4ac2c2f62f7b175ca904c8f7\n[MD5] 5A0B0BAE87A464228398696517FCF6F5\n[MD5] A9D620B690F84D552986A4872D57849E\n[MD5] AC8547F5AF42DC6932367EBCB162FB0E\n[MD5] B97730BA59B158F400E67050406CB3EA",
       "cve_ids": [],
       "cve_details": []
     }
