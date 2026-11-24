@@ -2,24 +2,25 @@
   "date": "2026-11-24",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 22,
+    "scan_runs": 23,
     "total_articles_max": 1821,
     "matched_articles_max": 190,
-    "new_alerts": 6,
-    "cve_total": 4,
-    "alerts_with_cve": 2,
-    "cve_count": 4,
+    "new_alerts": 7,
+    "cve_total": 5,
+    "alerts_with_cve": 3,
+    "cve_count": 5,
     "ioc_count": 1,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2020-5902",
       "CVE-2022-1388",
       "CVE-2026-134624",
+      "CVE-2026-87268",
       "CVE-2026-94127"
     ],
     "keywords_hit": {
       "Malware": 4,
-      "CVE": 2
+      "CVE": 3
     }
   },
   "alerts": [
@@ -150,6 +151,32 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-24T22:01:10.679656+09:00",
+      "type": "single",
+      "title": "Google Researcher Shows How a Single Bit Change in .NET Files Bypassed Windows Code Integrity",
+      "url": "https://thehackernews.com/2026/11/google-researcher-shows-how-single-bit.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-11-24T12:02:00+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-87268"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-87268",
+          "cvss_score": 7.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-269 (Improper Privilege Management)",
+          "description": "Vulnerability in the Oracle VM VirtualBox product of Oracle Virtualization (component: Core).   The supported version that is affected is 7.2.16. Easily exploitable vulnerability allows low privileged attacker with logon to the infrastructure where Oracle VM VirtualBox executes to compromise Oracle VM VirtualBox.  Successful attacks of this vulnerability can result in takeover of Oracle VM VirtualBox. Note: This vulnerability applies to Windows host only. CVSS 3.1 Base Score 7.8 (Confidentiality",
+          "epss_score": 0.00161,
+          "kev": false
+        }
+      ]
     }
   ]
 }
