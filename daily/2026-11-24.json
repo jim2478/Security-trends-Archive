@@ -2,10 +2,10 @@
   "date": "2026-11-24",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 19,
-    "total_articles_max": 1811,
+    "scan_runs": 20,
+    "total_articles_max": 1821,
     "matched_articles_max": 190,
-    "new_alerts": 4,
+    "new_alerts": 6,
     "cve_total": 4,
     "alerts_with_cve": 2,
     "cve_count": 4,
@@ -18,7 +18,7 @@
       "CVE-2026-94127"
     ],
     "keywords_hit": {
-      "Malware": 2,
+      "Malware": 4,
       "CVE": 2
     }
   },
@@ -122,6 +122,34 @@
           "kev": true
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-11-24T19:01:16.046311+09:00",
+      "type": "single",
+      "title": "Researchers Find a New AI Attack Path: Agent Instructions",
+      "url": "https://www.infosecurity-magazine.com/news/researchers-new-ai-attack-path/",
+      "source": "Infosecurity Magazine (보안뉴스) [RSS]",
+      "published": "2026-11-24T09:30:00+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-24T19:01:16.046311+09:00",
+      "type": "single",
+      "title": "LATAM’s Financial Fraud Ecosystem: Key Threats and Strategies for Business Protection",
+      "url": "https://any.run/cybersecurity-blog/latams-financial-fraud/",
+      "source": "ANY.RUN (악성코드샌드박스분석) [RSS]",
+      "published": "2026-11-24T09:44:36+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
