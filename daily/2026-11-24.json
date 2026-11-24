@@ -2,25 +2,26 @@
   "date": "2026-11-24",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 23,
+    "scan_runs": 24,
     "total_articles_max": 1821,
     "matched_articles_max": 190,
-    "new_alerts": 7,
-    "cve_total": 5,
-    "alerts_with_cve": 3,
-    "cve_count": 5,
+    "new_alerts": 8,
+    "cve_total": 6,
+    "alerts_with_cve": 4,
+    "cve_count": 6,
     "ioc_count": 1,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2020-5902",
       "CVE-2022-1388",
+      "CVE-2026-123903",
       "CVE-2026-134624",
       "CVE-2026-87268",
       "CVE-2026-94127"
     ],
     "keywords_hit": {
       "Malware": 4,
-      "CVE": 3
+      "CVE": 4
     }
   },
   "alerts": [
@@ -174,6 +175,32 @@
           "cwe": "CWE-269 (Improper Privilege Management)",
           "description": "Vulnerability in the Oracle VM VirtualBox product of Oracle Virtualization (component: Core).   The supported version that is affected is 7.2.16. Easily exploitable vulnerability allows low privileged attacker with logon to the infrastructure where Oracle VM VirtualBox executes to compromise Oracle VM VirtualBox.  Successful attacks of this vulnerability can result in takeover of Oracle VM VirtualBox. Note: This vulnerability applies to Windows host only. CVSS 3.1 Base Score 7.8 (Confidentiality",
           "epss_score": 0.00161,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-24T23:01:24.416641+09:00",
+      "type": "single",
+      "title": "VMware vCenter Hit by Another Critical 9.8-Rated Auth Bypass Flaw After Zero-Day Exploitation",
+      "url": "https://thehackernews.com/2026/11/vmware-vcenter-hit-by-another-critical.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-11-24T13:28:26+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-123903"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-123903",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
           "kev": false
         }
       ]
