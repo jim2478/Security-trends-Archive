@@ -2,23 +2,24 @@
   "date": "2026-11-24",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 16,
+    "scan_runs": 17,
     "total_articles_max": 1811,
     "matched_articles_max": 190,
-    "new_alerts": 3,
-    "cve_total": 3,
-    "alerts_with_cve": 1,
-    "cve_count": 3,
+    "new_alerts": 4,
+    "cve_total": 4,
+    "alerts_with_cve": 2,
+    "cve_count": 4,
     "ioc_count": 1,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2020-5902",
       "CVE-2022-1388",
+      "CVE-2026-134624",
       "CVE-2026-94127"
     ],
     "keywords_hit": {
       "Malware": 2,
-      "CVE": 1
+      "CVE": 2
     }
   },
   "alerts": [
@@ -95,6 +96,32 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-24T16:01:12.321596+09:00",
+      "type": "single",
+      "title": "Hackers Exploit N-able MailAssure Flaw While AI Agents Exploit MONAI Label Zero-Day",
+      "url": "https://thehackernews.com/2026/11/hackers-exploit-n-able-mailassure-flaw.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-11-24T06:02:45+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-134624"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-134624",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-918 (SSRF)",
+          "description": "N-able MailAssure (SpamExperts) before 20261121.1943 does not restrict the destination of the LDAP synchronisation connection check performed when a relay is configured. An authenticated API user can cause the server to connect to arbitrary internal hosts and ports, determine which are reachable, and send crafted data to internal services.",
+          "epss_score": 0.00354,
+          "kev": true
+        }
+      ]
     }
   ]
 }
