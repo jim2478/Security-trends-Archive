@@ -1,0 +1,35 @@
+{
+  "date": "2026-11-25",
+  "tz": "Asia/Seoul",
+  "stats": {
+    "scan_runs": 1,
+    "total_articles_max": 1821,
+    "matched_articles_max": 179,
+    "new_alerts": 1,
+    "cve_total": 0,
+    "alerts_with_cve": 0,
+    "cve_count": 0,
+    "ioc_count": 0,
+    "merged_count": 0,
+    "unique_cves": [],
+    "keywords_hit": {
+      "Botnet": 1
+    }
+  },
+  "alerts": [
+    {
+      "scan_time_kst": "2026-11-25T00:01:07.257726+09:00",
+      "type": "single",
+      "title": "Researchers Disrupt Massive BADBOX 3.0 Ad Fraud and Proxy Botnet",
+      "url": "https://hackread.com/badbox-3-0-ad-fraud-botnet-disrupted-android-tv-boxes/",
+      "source": "HackRead (해킹/데이터유출) [RSS]",
+      "published": "2026-11-24T14:34:34+00:00",
+      "keywords": [
+        "Botnet"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
+}
