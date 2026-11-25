@@ -2,19 +2,27 @@
   "date": "2026-11-25",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 20,
+    "scan_runs": 21,
     "total_articles_max": 1821,
     "matched_articles_max": 179,
-    "new_alerts": 11,
-    "cve_total": 16,
-    "alerts_with_cve": 10,
-    "cve_count": 16,
-    "ioc_count": 1,
+    "new_alerts": 12,
+    "cve_total": 24,
+    "alerts_with_cve": 11,
+    "cve_count": 24,
+    "ioc_count": 37,
     "merged_count": 0,
     "unique_cves": [
+      "CVE-2014-8361",
+      "CVE-2016-10372",
+      "CVE-2016-20016",
+      "CVE-2021-3539",
+      "CVE-2023-26801",
+      "CVE-2023-41011",
       "CVE-2024-29291",
+      "CVE-2024-3721",
       "CVE-2025-29927",
       "CVE-2025-30208",
+      "CVE-2025-34037",
       "CVE-2026-123633",
       "CVE-2026-123634",
       "CVE-2026-123903",
@@ -30,8 +38,8 @@
     ],
     "keywords_hit": {
       "CVE": 9,
-      "Botnet": 1,
-      "Malware": 1
+      "Botnet": 2,
+      "Malware": 2
     }
   },
   "alerts": [
@@ -366,6 +374,76 @@
           "description": "Deserialization of untrusted data in double-submit cookie vs. form field validation in Idunno.AntiCsrf versions through 0.9.1 Beta on ASP.NET allows remote unauthenticated attackers to execute code via object injection",
           "epss_score": 0.00614,
           "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-25T20:01:29.635049+09:00",
+      "type": "single",
+      "title": "Risk Alert: Widespread Spread of a New Variant of the Cling Remote-Access Botnet",
+      "url": "https://nsfocusglobal.com/risk-alert-widespread-spread-of-a-new-variant-of-the-cling-remote-access-botnet/",
+      "source": "NSFOCUS (DDoS/위협연구) [RSS]",
+      "published": "2026-11-25T06:30:59+00:00",
+      "keywords": [
+        "Botnet",
+        "Malware"
+      ],
+      "ioc_raw_text": "[IP] 209[.]99[.]188[.]119\n[Domain] alya[.]mipsel\n[Domain] alya[.]arc\n[Domain] alya[.]mips\n[Domain] alya[.]sparc\n[Domain] alya[.]powerpc\n[URL] hxxp://202[.]110[.]70[.]60:800/alya.x86\n[URL] hxxp://202[.]110[.]70[.]60:800/alya.mipsel\n[URL] hxxp://202[.]110[.]70[.]60:800/alya.arc\n[URL] hxxp://202[.]110[.]70[.]60:800/alya.mips\n[URL] hxxp://202[.]110[.]70[.]60:800/alya.x86_64\n[URL] hxxp://202[.]110[.]70[.]60:800/alya.m68k\n[URL] hxxp://202[.]110[.]70[.]60:800/alya.i486\n[URL] hxxp://202[.]110[.]70[.]60:800/alya.sparc\n[URL] hxxp://202[.]110[.]70[.]60:800/alya.powerpc\n[URL] hxxp://58[.]211[.]144[.]243:800/alya.mipsel\n[URL] hxxp://58[.]211[.]144[.]243:800/alya.mips\n[URL] hxxp://58[.]211[.]144[.]243:800/alya.x86_64\n[URL] hxxp://58[.]211[.]144[.]243:800/alya.i486\n[URL] hxxp://58[.]211[.]144[.]243:800/alya.arc\n[URL] hxxp://58[.]211[.]144[.]243:800/alya.powerpc\n[URL] hxxp://58[.]211[.]144[.]243:800/alya.m68k\n[URL] hxxp://118[.]45[.]196[.]225:800\n[URL] hxxp://120[.]193[.]219[.]210:800\n[MD5] 16ef618bf21a3322c6793be87d553f08\n[MD5] 606f2fee6fa4b3ca556187c9ee709f3d\n[MD5] 65d94c9dddea41ef4690f193fbc54ec3\n[MD5] 76021af2d82cade790dd87d3af0f80c9\n[MD5] 79de772daa218e25a812ecbedca08476\n[MD5] 84ced85e53bc326f8b11115ae4bc24a7\n[MD5] 92533318fb6f0365eefd25090e7df146\n[MD5] b672e3238742504faa93d5a7cb8d0ea0\n[MD5] be719987bf96fa16ac98b7c2a280cc74\n[MD5] dc11a0e68e5235e36480ddf14f08afbe\n[MD5] e37b94dfcaa56924142c344edcb3652a\n[MD5] fe35c5b3cfa118fdf8e1afb9a134e084",
+      "cve_ids": [
+        "CVE-2021-3539",
+        "CVE-2016-10372",
+        "CVE-2023-41011",
+        "CVE-2014-8361",
+        "CVE-2023-26801",
+        "CVE-2024-3721",
+        "CVE-2025-34037",
+        "CVE-2016-20016"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2021-3539",
+          "cvss_score": 6.3,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-79 (XSS)",
+          "description": "EspoCRM 6.1.6 and prior suffers from a persistent (type II) cross-site scripting (XSS) vulnerability in processing user-supplied avatar images. This issue was fixed in version 6.1.7 of the product.",
+          "epss_score": 0.00583,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2016-10372",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-264",
+          "description": "The Eir D1000 modem does not properly restrict the TR-064 protocol, which allows remote attackers to execute arbitrary commands via TCP port 7547, as demonstrated by opening WAN access to TCP port 80, retrieving the login password (which defaults to the Wi-Fi password), and using the NewNTPServer feature.",
+          "epss_score": 0.81899,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2023-41011",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-77 (Command Injection)",
+          "description": "Command Execution vulnerability in China Mobile Communications China Mobile Intelligent Home Gateway v.HG6543C4 allows a remote attacker to execute arbitrary code via the shortcut_telnet.cg component.",
+          "epss_score": 0.03106,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2014-8361",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "NVD-CWE-noinfo (Insufficient Information)",
+          "description": "The miniigd SOAP service in Realtek SDK allows remote attackers to execute arbitrary code via a crafted NewInternalClient request, as exploited in the wild through 2023.",
+          "epss_score": 0.99971,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2023-26801",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-77 (Command Injection)",
+          "description": "LB-LINK BL-AC1900_2.0 v1.0.1, LB-LINK BL-WR9000 v2.4.9, LB-LINK BL-X26 v1.2.5, and LB-LINK BL-LTE300 v1.0.8 were discovered to contain a command injection vulnerability via the mac, time1, and time2 parameters at /goform/set_LimitClient_cfg.",
+          "epss_score": 0.77539,
+          "kev": false
         }
       ]
     }
