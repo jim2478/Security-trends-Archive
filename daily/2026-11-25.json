@@ -2,13 +2,13 @@
   "date": "2026-11-25",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 23,
+    "scan_runs": 24,
     "total_articles_max": 1821,
     "matched_articles_max": 179,
-    "new_alerts": 13,
-    "cve_total": 25,
-    "alerts_with_cve": 12,
-    "cve_count": 25,
+    "new_alerts": 15,
+    "cve_total": 28,
+    "alerts_with_cve": 14,
+    "cve_count": 28,
     "ioc_count": 37,
     "merged_count": 0,
     "unique_cves": [
@@ -23,10 +23,12 @@
       "CVE-2025-29927",
       "CVE-2025-30208",
       "CVE-2025-34037",
+      "CVE-2026-120705",
       "CVE-2026-123633",
       "CVE-2026-123634",
       "CVE-2026-123903",
       "CVE-2026-127280",
+      "CVE-2026-129243",
       "CVE-2026-129713",
       "CVE-2026-131914",
       "CVE-2026-132165",
@@ -37,7 +39,7 @@
       "CVE-2026-21859"
     ],
     "keywords_hit": {
-      "CVE": 10,
+      "CVE": 12,
       "Botnet": 2,
       "Malware": 2
     }
@@ -454,6 +456,68 @@
       "url": "https://thehackernews.com/2026/11/drupal-fail2install-exploit-details.html",
       "source": "The Hacker News (보안뉴스 종합) [RSS]",
       "published": "2026-11-25T11:23:26+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-132165"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-132165",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-25T23:01:36.340032+09:00",
+      "type": "single",
+      "title": "Hackers Exploit Two GeoServer Flaws as Researchers Warn of Unauthenticated RCE Chains",
+      "url": "https://thehackernews.com/2026/11/hackers-exploit-two-geoserver-flaws-as.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-11-25T12:48:54+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-120705",
+        "CVE-2026-129243"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-120705",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-129243",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-25T23:01:36.340032+09:00",
+      "type": "single",
+      "title": "Critical Drupal installer flaw under active attack (CVE-2026-132165)",
+      "url": "https://www.helpnetsecurity.com/2026/11/25/drupal-installer-rce-cve-2026-132165-exploited/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-11-25T13:37:28+00:00",
       "keywords": [
         "CVE"
       ],
