@@ -2,13 +2,13 @@
   "date": "2026-11-25",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 17,
+    "scan_runs": 18,
     "total_articles_max": 1821,
     "matched_articles_max": 179,
-    "new_alerts": 9,
-    "cve_total": 12,
-    "alerts_with_cve": 8,
-    "cve_count": 12,
+    "new_alerts": 10,
+    "cve_total": 15,
+    "alerts_with_cve": 9,
+    "cve_count": 15,
     "ioc_count": 1,
     "merged_count": 0,
     "unique_cves": [
@@ -20,13 +20,16 @@
       "CVE-2026-123903",
       "CVE-2026-127280",
       "CVE-2026-129713",
+      "CVE-2026-131914",
+      "CVE-2026-132165",
+      "CVE-2026-132224",
       "CVE-2026-133880",
       "CVE-2026-134401",
       "CVE-2026-134624",
       "CVE-2026-21859"
     ],
     "keywords_hit": {
-      "CVE": 7,
+      "CVE": 8,
       "Botnet": 1,
       "Malware": 1
     }
@@ -291,6 +294,52 @@
           "description": null,
           "epss_score": null,
           "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-25T17:01:16.712897+09:00",
+      "type": "single",
+      "title": "Exploited: Abandoned Idunno.AntiCsrf library opens legacy ASP.NET apps to RCE (CVE-2026-131914)",
+      "url": "https://www.helpnetsecurity.com/2026/11/25/idunno-anticsrf-rce-cve-2026-131914-exploited/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-11-25T07:22:32+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-131914",
+        "CVE-2026-132224",
+        "CVE-2026-132165"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-131914",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-502 (Deserialization)",
+          "description": "Deserialization of untrusted data in double-submit cookie vs. form field validation in Idunno.AntiCsrf versions through 0.9.1 Beta on ASP.NET allows remote unauthenticated attackers to execute code via object injection",
+          "epss_score": 0.00614,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-132224",
+          "cvss_score": 7.1,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-642",
+          "description": "Optimizely Web Experimentation before 2026-11-17 mishandles the account signup flow, leading to presence of attacker-controlled code in the projectJS (aka Project JavaScript) field of certain cdn.optimizely.com assets.",
+          "epss_score": 0.00411,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-132165",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": true
         }
       ]
     }
