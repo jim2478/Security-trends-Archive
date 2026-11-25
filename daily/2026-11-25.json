@@ -2,22 +2,24 @@
   "date": "2026-11-25",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 9,
+    "scan_runs": 10,
     "total_articles_max": 1821,
     "matched_articles_max": 179,
-    "new_alerts": 4,
-    "cve_total": 3,
-    "alerts_with_cve": 3,
-    "cve_count": 3,
-    "ioc_count": 0,
+    "new_alerts": 5,
+    "cve_total": 5,
+    "alerts_with_cve": 4,
+    "cve_count": 5,
+    "ioc_count": 1,
     "merged_count": 0,
     "unique_cves": [
+      "CVE-2026-123633",
+      "CVE-2026-123634",
       "CVE-2026-127280",
       "CVE-2026-129713",
       "CVE-2026-134624"
     ],
     "keywords_hit": {
-      "CVE": 2,
+      "CVE": 3,
       "Botnet": 1,
       "Malware": 1
     }
@@ -112,6 +114,42 @@
           "description": null,
           "epss_score": null,
           "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-25T09:01:23.996894+09:00",
+      "type": "single",
+      "title": "NGINX HTTP/2 Use-After-Free: CVE-2026-123633",
+      "url": "https://unit42.paloaltonetworks.com/cve-2026-123633-nginx-http2-vulnerability/",
+      "source": "Palo Alto Unit42 (위협리서치) [RSS]",
+      "published": "2026-11-24T23:00:14+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "[CVE] CVE-2026-123633",
+      "cve_ids": [
+        "CVE-2026-123633",
+        "CVE-2026-123634"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-123633",
+          "cvss_score": 9.2,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-416 (Use After Free)",
+          "description": "When NGINX Plus or NGINX Open Source is configured to use HTTP/2 for client connections and proxy client requests to a backend, a specially crafted request can result in use-after-free in the worker process, if this process is running low on worker_connections. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\n\n\n\nImpact:\n\n\n\nThis vulnerability may allow remote attackers to cause a denial-of-service (D",
+          "epss_score": 0.2211,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-123634",
+          "cvss_score": 9.2,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-416 (Use After Free)",
+          "description": "This issue occurs when NGINX Plus or NGINX Open Source is configured as a proxy, the proxied server name includes variables, and a Server Side Includes (SSI) or mirror directive sends a subrequest to a location that resolves the same server name. Under these conditions, a specially crafted HTTP request may cause a use-after-free condition in a worker process. An attacker may also be able to execute code if Address Space Layout Randomization (ASLR) is disabled or the attacker can bypass ASLR.\n\nIm",
+          "epss_score": 0.18839,
+          "kev": false
         }
       ]
     }
