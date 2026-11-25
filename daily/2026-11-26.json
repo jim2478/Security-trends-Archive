@@ -2,17 +2,34 @@
   "date": "2026-11-26",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 2,
-    "total_articles_max": 1781,
-    "matched_articles_max": 174,
-    "new_alerts": 0,
+    "scan_runs": 3,
+    "total_articles_max": 1791,
+    "matched_articles_max": 175,
+    "new_alerts": 1,
     "cve_total": 0,
     "alerts_with_cve": 0,
     "cve_count": 0,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [],
-    "keywords_hit": {}
+    "keywords_hit": {
+      "Malware": 1
+    }
   },
-  "alerts": []
+  "alerts": [
+    {
+      "scan_time_kst": "2026-11-26T02:01:09.885723+09:00",
+      "type": "single",
+      "title": "Attackers Target .NET Developers With Poisoned Job Assessments",
+      "url": "https://www.darkreading.com/threat-intelligence/attackers-net-developers-poisoned-job-assessments",
+      "source": "Dark Reading (보안뉴스 종합) [RSS]",
+      "published": "2026-11-25T15:48:04+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
 }
