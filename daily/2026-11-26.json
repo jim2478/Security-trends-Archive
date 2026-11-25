@@ -2,14 +2,14 @@
   "date": "2026-11-26",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 7,
+    "scan_runs": 8,
     "total_articles_max": 1811,
     "matched_articles_max": 175,
-    "new_alerts": 2,
+    "new_alerts": 3,
     "cve_total": 20,
     "alerts_with_cve": 1,
     "cve_count": 20,
-    "ioc_count": 0,
+    "ioc_count": 26,
     "merged_count": 0,
     "unique_cves": [
       "CVE-2018-13379",
@@ -34,7 +34,7 @@
       "CVE-2026-86207"
     ],
     "keywords_hit": {
-      "Malware": 1,
+      "Malware": 2,
       "CVE": 1
     }
   },
@@ -133,6 +133,20 @@
           "kev": true
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-11-26T07:01:18.945795+09:00",
+      "type": "single",
+      "title": "PolinRider Malware Force-Pushed Into AsyncAPI, CircuitVerse and Open Food Facts Pull Requests",
+      "url": "https://www.stepsecurity.io/blog/polinrider-malware-open-source-pull-requests",
+      "source": "StepSecurity (CI/CD 보안) [RSS]",
+      "published": "2026-11-25T21:59:41+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "[IP] 95[.]135[.]181[.]84\n[IP] 95[.]135[.]181[.]151\n[IP] 103[.]179[.]143[.]219\n[IP] 23[.]27[.]13[.]72\n[IP] 166[.]88[.]134[.]75\n[Domain] 1rpc[.]io\n[Domain] eth[.]drpc[.]org\n[Domain] ethereum-rpc[.]publicnode[.]com\n[Domain] eth-mainnet[.]public[.]blastapi[.]io\n[Domain] eth[.]blockscout[.]com\n[Domain] api[.]jswithnode\n[Domain] fa-solid[.]lkfor[.]lfk\n[Domain] tasks[.]jsontaskeslint\n[Domain] batin[.]gitignore\n[Domain] fa-solid[.]lkf\n[SHA256] 3ae470cabb9412bf5f0e64e1f71b458e14eb10b19070845597d5b8230b27d552\n[SHA256] 41a69ba3946396d2d1c15f2e43be705f0793e8773dee0f3dda89a541d31c00d9\n[SHA256] b02a81974810532fff8f76903e09b20431857bfaff00f2473421f4a4fb8162b5\n[SHA1] 05e3ffbbfcdf5ab9e8f31b9313e46bef3ae35d6a\n[SHA1] 0e2d8001ae47ec85b75295585ff982f2e8f65527\n[SHA1] 86016a03178a2314cdb0bfbbc14dc6db5d6efa6b\n[SHA1] 91557f66b31c5ab0b5bb95895cb1d2717524b0b1\n[SHA1] a6569a93cf547382dfe69cd126c846f6af4e7df9\n[SHA1] a89182973f350b1500ab4bedb1faa5a3928fb810\n[SHA1] c3d3f36443c98c6ee8473a87deeb1e4ce8a81bee\n[SHA1] edb26d5a44e40a9e3266ee8a83a0b2902fd93b6d",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
