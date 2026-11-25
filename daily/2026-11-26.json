@@ -2,13 +2,13 @@
   "date": "2026-11-26",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 8,
+    "scan_runs": 9,
     "total_articles_max": 1811,
-    "matched_articles_max": 175,
-    "new_alerts": 3,
-    "cve_total": 20,
-    "alerts_with_cve": 1,
-    "cve_count": 20,
+    "matched_articles_max": 176,
+    "new_alerts": 4,
+    "cve_total": 26,
+    "alerts_with_cve": 2,
+    "cve_count": 26,
     "ioc_count": 26,
     "merged_count": 0,
     "unique_cves": [
@@ -29,13 +29,19 @@
       "CVE-2025-64446",
       "CVE-2026-104935",
       "CVE-2026-111357",
+      "CVE-2026-114924",
+      "CVE-2026-114925",
+      "CVE-2026-114938",
       "CVE-2026-118527",
+      "CVE-2026-123890",
+      "CVE-2026-132165",
+      "CVE-2026-59309",
       "CVE-2026-86206",
       "CVE-2026-86207"
     ],
     "keywords_hit": {
       "Malware": 2,
-      "CVE": 1
+      "CVE": 2
     }
   },
   "alerts": [
@@ -147,6 +153,73 @@
       "ioc_raw_text": "[IP] 95[.]135[.]181[.]84\n[IP] 95[.]135[.]181[.]151\n[IP] 103[.]179[.]143[.]219\n[IP] 23[.]27[.]13[.]72\n[IP] 166[.]88[.]134[.]75\n[Domain] 1rpc[.]io\n[Domain] eth[.]drpc[.]org\n[Domain] ethereum-rpc[.]publicnode[.]com\n[Domain] eth-mainnet[.]public[.]blastapi[.]io\n[Domain] eth[.]blockscout[.]com\n[Domain] api[.]jswithnode\n[Domain] fa-solid[.]lkfor[.]lfk\n[Domain] tasks[.]jsontaskeslint\n[Domain] batin[.]gitignore\n[Domain] fa-solid[.]lkf\n[SHA256] 3ae470cabb9412bf5f0e64e1f71b458e14eb10b19070845597d5b8230b27d552\n[SHA256] 41a69ba3946396d2d1c15f2e43be705f0793e8773dee0f3dda89a541d31c00d9\n[SHA256] b02a81974810532fff8f76903e09b20431857bfaff00f2473421f4a4fb8162b5\n[SHA1] 05e3ffbbfcdf5ab9e8f31b9313e46bef3ae35d6a\n[SHA1] 0e2d8001ae47ec85b75295585ff982f2e8f65527\n[SHA1] 86016a03178a2314cdb0bfbbc14dc6db5d6efa6b\n[SHA1] 91557f66b31c5ab0b5bb95895cb1d2717524b0b1\n[SHA1] a6569a93cf547382dfe69cd126c846f6af4e7df9\n[SHA1] a89182973f350b1500ab4bedb1faa5a3928fb810\n[SHA1] c3d3f36443c98c6ee8473a87deeb1e4ce8a81bee\n[SHA1] edb26d5a44e40a9e3266ee8a83a0b2902fd93b6d",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-26T08:01:31.778737+09:00",
+      "type": "single",
+      "title": "CVE-2026-123890 | VMware vCenter Directory Service Authentication Bypass Vulnerability",
+      "url": "https://horizon3.ai/attack-research/vulnerabilities/cve-2026-123890/",
+      "source": "Horizon3.ai (공격시뮬레이션) [RSS]",
+      "published": "2026-11-25T22:09:46+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-123890",
+        "CVE-2026-59309",
+        "CVE-2026-114924",
+        "CVE-2026-114925",
+        "CVE-2026-132165",
+        "CVE-2026-114938"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-123890",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-288",
+          "description": "VMware vCenter contains an authentication bypass vulnerability in the VMware Directory Service.\nAffected versions: 9.1.x (fixed in 9.1.1.0200); 9.0.x (fixed in 9.0.2.0200); 8.0 (fixed in 8.0 U3m); 5.x (fixed in 5.2.5).\nTelco Cloud Platform 3.0, 4.x, 5.0.x, 5.1.x, 5.2 and Telco Cloud Infrastructure 3.0 are also affected (see KB463116).",
+          "epss_score": 0.05009,
+          "kev": true
+        },
+        {
+          "cve_id": "CVE-2026-59309",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-303",
+          "description": "VMware vCenter contains an authentication bypass vulnerability in the VMware Directory Service. A malicious actor with network access to vCenter may exploit this issue to bypass authentication and gain unauthorized access to the system.",
+          "epss_score": 0.02284,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-114924",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-306 (Missing Authentication)",
+          "description": "Vulnerability in the Oracle Application Object Library product of Oracle E-Business Suite (component: Core).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Application Object Library.  Successful attacks of this vulnerability can result in takeover of Oracle Application Object Library. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability impacts).  CVSS Ve",
+          "epss_score": 0.00483,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-114925",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-306 (Missing Authentication)",
+          "description": "Vulnerability in the Oracle Applications Framework product of Oracle E-Business Suite (component: REST Services).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allows unauthenticated attacker with network access via HTTP to compromise Oracle Applications Framework.  Successful attacks of this vulnerability can result in takeover of Oracle Applications Framework. CVSS 3.1 Base Score 9.8 (Confidentiality, Integrity and Availability impacts).  CVSS Vecto",
+          "epss_score": 0.00483,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-132165",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": null,
+          "description": null,
+          "epss_score": null,
+          "kev": true
+        }
+      ]
     }
   ]
 }
