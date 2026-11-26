@@ -2,13 +2,13 @@
   "date": "2026-11-26",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 17,
+    "scan_runs": 18,
     "total_articles_max": 1811,
     "matched_articles_max": 177,
-    "new_alerts": 6,
-    "cve_total": 26,
-    "alerts_with_cve": 2,
-    "cve_count": 26,
+    "new_alerts": 8,
+    "cve_total": 29,
+    "alerts_with_cve": 4,
+    "cve_count": 29,
     "ioc_count": 26,
     "merged_count": 0,
     "unique_cves": [
@@ -35,13 +35,15 @@
       "CVE-2026-118527",
       "CVE-2026-123890",
       "CVE-2026-132165",
+      "CVE-2026-133275",
+      "CVE-2026-136716",
       "CVE-2026-59309",
       "CVE-2026-86206",
       "CVE-2026-86207"
     ],
     "keywords_hit": {
+      "CVE": 4,
       "Malware": 3,
-      "CVE": 2,
       "DDoS": 1
     }
   },
@@ -249,6 +251,68 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-26T17:01:34.997497+09:00",
+      "type": "single",
+      "title": "Drupal Warns of New Highly Critical Site Takeover Vulnerability Under Active Exploitation",
+      "url": "https://thehackernews.com/2026/11/drupal-warns-of-new-highly-critical.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-11-26T07:02:34+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-136716",
+        "CVE-2026-132165"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-136716",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": "CWE-754",
+          "description": "Improper Check for Unusual or Exceptional Conditions vulnerability in Drupal Drupal core allows Forceful Browsing. This issue affects Drupal core versions: from 0.0.0 to 10.6.23, from 11.0.0 to 11.3.23, from 11.4.0 to 11.4.14.",
+          "epss_score": null,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-132165",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": "CWE-306 (Missing Authentication)",
+          "description": "Missing Authentication for Critical Function vulnerability in Drupal Drupal core allows Exploiting Incorrectly Configured Access Control Security Levels. This issue affects Drupal core versions: from 0.0.0 to 10.6.22, from 11.0.0 to 11.3.22, from 11.4.0 to 11.4.13.",
+          "epss_score": null,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-26T17:01:34.997497+09:00",
+      "type": "single",
+      "title": "Hackers Exploit 10 Vulnerabilities Across Mitel, Juniper, Vates, and Danfoss Products",
+      "url": "https://thehackernews.com/2026/11/hackers-exploit-10-vulnerabilities.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-11-26T06:44:46+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-133275"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-133275",
+          "cvss_score": 5.3,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-434 (Unrestricted File Upload)",
+          "description": "A vulnerability in the Audio, Web, and Video Conferencing (AWV) component of Mitel MiCollab through 10.3 (10.3.0.18) could allow an unauthenticated attacker to conduct an arbitrary file upload attack due to insufficient file type validation. A successful exploit could allow an attacker to upload arbitrary files to the target system. This is MTLVULN-1861.",
+          "epss_score": 0.00315,
+          "kev": true
+        }
+      ]
     }
   ]
 }
