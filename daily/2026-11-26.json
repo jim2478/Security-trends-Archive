@@ -2,10 +2,10 @@
   "date": "2026-11-26",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 22,
+    "scan_runs": 23,
     "total_articles_max": 1811,
     "matched_articles_max": 177,
-    "new_alerts": 9,
+    "new_alerts": 10,
     "cve_total": 29,
     "alerts_with_cve": 4,
     "cve_count": 29,
@@ -42,8 +42,8 @@
       "CVE-2026-86207"
     ],
     "keywords_hit": {
+      "Malware": 5,
       "CVE": 4,
-      "Malware": 4,
       "DDoS": 1
     }
   },
@@ -321,6 +321,20 @@
       "url": "https://www.bleepingcomputer.com/news/security/sys010-malware-abuses-browser-management-to-spy-on-gmail-outlook/",
       "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
       "published": "2026-11-26T11:50:17+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-26T22:01:12.935271+09:00",
+      "type": "single",
+      "title": "Preinstalled Keenadu malware turns up on 220,000+ Android devices",
+      "url": "https://www.helpnetsecurity.com/2026/11/26/keenadu-malware-android-devices/",
+      "source": "Help Net Security (보안뉴스/제품리뷰) [RSS]",
+      "published": "2026-11-26T12:57:58+00:00",
       "keywords": [
         "Malware"
       ],
