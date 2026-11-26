@@ -2,17 +2,62 @@
   "date": "2026-11-27",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 1,
-    "total_articles_max": 1781,
-    "matched_articles_max": 177,
-    "new_alerts": 0,
+    "scan_runs": 2,
+    "total_articles_max": 1791,
+    "matched_articles_max": 179,
+    "new_alerts": 3,
     "cve_total": 0,
     "alerts_with_cve": 0,
     "cve_count": 0,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [],
-    "keywords_hit": {}
+    "keywords_hit": {
+      "Malware": 3
+    }
   },
-  "alerts": []
+  "alerts": [
+    {
+      "scan_time_kst": "2026-11-27T01:01:27.326058+09:00",
+      "type": "single",
+      "title": "North Korea-Linked PolinRider Poisons Over 7,600 GitHub Repositories to Spread Malware",
+      "url": "https://thehackernews.com/2026/11/north-korea-linked-polinrider-poisons.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-11-26T15:13:41+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-27T01:01:27.326058+09:00",
+      "type": "single",
+      "title": "Remus malware steals Gmail messages via fake Google Sheets extension",
+      "url": "https://www.bleepingcomputer.com/news/security/remus-malware-steals-gmail-messages-via-fake-google-sheets-extension/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-11-26T15:23:28+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-27T01:01:27.326058+09:00",
+      "type": "single",
+      "title": "Linux/EasyShell: MalwareMustDie Identifies One of the Earliest Publicly Documented RATs Built for LoongArch Linux",
+      "url": "https://securityaffairs.com/204067/malware/linux-easyshell-malwaremustdie-identifies-one-of-the-earliest-publicly-documented-rats-built-for-loongarch-linux.html",
+      "source": "Security Affairs (보안뉴스/위협동향) [RSS]",
+      "published": "2026-11-26T14:42:59+00:00",
+      "keywords": [
+        "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    }
+  ]
 }
