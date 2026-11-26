@@ -2,10 +2,10 @@
   "date": "2026-11-26",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 16,
+    "scan_runs": 17,
     "total_articles_max": 1811,
     "matched_articles_max": 177,
-    "new_alerts": 5,
+    "new_alerts": 6,
     "cve_total": 26,
     "alerts_with_cve": 2,
     "cve_count": 26,
@@ -41,7 +41,8 @@
     ],
     "keywords_hit": {
       "Malware": 3,
-      "CVE": 2
+      "CVE": 2,
+      "DDoS": 1
     }
   },
   "alerts": [
@@ -230,6 +231,20 @@
       "published": "2026-11-26T03:48:52+00:00",
       "keywords": [
         "Malware"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-26T16:01:16.098218+09:00",
+      "type": "single",
+      "title": "NSFOCUS Wins Two Frost & Sullivan Awards, Earning International Recognition for AI Security Innovation Leadership",
+      "url": "https://nsfocusglobal.com/nsfocus-wins-two-frost-sullivan-awards-earning-international-recognition-for-ai-security-innovation-leadership/",
+      "source": "NSFOCUS (DDoS/위협연구) [RSS]",
+      "published": "2026-11-26T04:06:46+00:00",
+      "keywords": [
+        "DDoS"
       ],
       "ioc_raw_text": "",
       "cve_ids": [],
