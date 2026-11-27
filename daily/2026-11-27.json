@@ -2,10 +2,10 @@
   "date": "2026-11-27",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 16,
+    "scan_runs": 17,
     "total_articles_max": 1791,
     "matched_articles_max": 179,
-    "new_alerts": 5,
+    "new_alerts": 6,
     "cve_total": 1,
     "alerts_with_cve": 1,
     "cve_count": 1,
@@ -16,7 +16,7 @@
     ],
     "keywords_hit": {
       "Malware": 4,
-      "CVE": 1
+      "CVE": 2
     }
   },
   "alerts": [
@@ -101,6 +101,20 @@
           "kev": false
         }
       ]
+    },
+    {
+      "scan_time_kst": "2026-11-27T16:01:14.752129+09:00",
+      "type": "single",
+      "title": "Unpatched Cacti Zero-Day Enables RCE in Just Four HTTP Requests via Guest Access",
+      "url": "https://thehackernews.com/2026/11/unpatched-cacti-zero-day-enables-rce-in.html",
+      "source": "The Hacker News (보안뉴스 종합) [RSS]",
+      "published": "2026-11-27T05:48:20+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [],
+      "cve_details": []
     }
   ]
 }
