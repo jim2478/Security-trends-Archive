@@ -2,21 +2,22 @@
   "date": "2026-11-27",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 18,
+    "scan_runs": 19,
     "total_articles_max": 1791,
     "matched_articles_max": 179,
-    "new_alerts": 6,
-    "cve_total": 1,
-    "alerts_with_cve": 1,
-    "cve_count": 1,
+    "new_alerts": 7,
+    "cve_total": 2,
+    "alerts_with_cve": 2,
+    "cve_count": 2,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
-      "CVE-2026-136716"
+      "CVE-2026-136716",
+      "CVE-2026-99362"
     ],
     "keywords_hit": {
       "Malware": 4,
-      "CVE": 2
+      "CVE": 3
     }
   },
   "alerts": [
@@ -115,6 +116,32 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-27T18:01:14.499664+09:00",
+      "type": "single",
+      "title": "New NFS2ROOT Linux flaw can let attackers gain root privileges",
+      "url": "https://www.bleepingcomputer.com/news/security/new-nfs2root-linux-flaw-can-let-attackers-gain-root-privileges/",
+      "source": "BleepingComputer (보안뉴스/랜섬웨어) [RSS]",
+      "published": "2026-11-27T08:06:58+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-99362"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-99362",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": null,
+          "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nnfsd: preflight SEQUENCE replies before accepting a slot\n\nnfsd4_sequence() narrows the reply buffer to the session's cached\nreply limit before it accepts the slot seqid. A client may negotiate\nca_maxresponsesize_cached down to NFSD_MIN_HDR_SEQ_SZ, and\nnfsd4_alloc_slot() then gives every slot a zero-length sl_data[]. A\nCOMPOUND tag can fill that narrowed buffer until it holds the\nSEQUENCE opcode but not the status word that foll",
+          "epss_score": 0.00755,
+          "kev": false
+        }
+      ]
     }
   ]
 }
