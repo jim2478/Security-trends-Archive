@@ -2,22 +2,23 @@
   "date": "2026-11-27",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 19,
+    "scan_runs": 20,
     "total_articles_max": 1791,
-    "matched_articles_max": 179,
-    "new_alerts": 7,
-    "cve_total": 2,
-    "alerts_with_cve": 2,
-    "cve_count": 2,
+    "matched_articles_max": 181,
+    "new_alerts": 8,
+    "cve_total": 3,
+    "alerts_with_cve": 3,
+    "cve_count": 3,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
+      "CVE-2026-132165",
       "CVE-2026-136716",
       "CVE-2026-99362"
     ],
     "keywords_hit": {
       "Malware": 4,
-      "CVE": 3
+      "CVE": 4
     }
   },
   "alerts": [
@@ -140,6 +141,32 @@
           "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nnfsd: preflight SEQUENCE replies before accepting a slot\n\nnfsd4_sequence() narrows the reply buffer to the session's cached\nreply limit before it accepts the slot seqid. A client may negotiate\nca_maxresponsesize_cached down to NFSD_MIN_HDR_SEQ_SZ, and\nnfsd4_alloc_slot() then gives every slot a zero-length sl_data[]. A\nCOMPOUND tag can fill that narrowed buffer until it holds the\nSEQUENCE opcode but not the status word that foll",
           "epss_score": 0.00755,
           "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-27T19:01:20.162337+09:00",
+      "type": "single",
+      "title": "Drupal Remote Code Execution Vulnerability (CVE-2026-132165) Advisory",
+      "url": "https://nsfocusglobal.com/drupal-remote-code-execution-vulnerability-cve-2026-132165-advisory/",
+      "source": "NSFOCUS (DDoS/위협연구) [RSS]",
+      "published": "2026-11-27T09:16:24+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-132165"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-132165",
+          "cvss_score": null,
+          "cvss_severity": null,
+          "cwe": "CWE-306 (Missing Authentication)",
+          "description": "Missing Authentication for Critical Function vulnerability in Drupal Drupal core allows Exploiting Incorrectly Configured Access Control Security Levels. This issue affects Drupal core versions: from 0.0.0 to 10.6.22, from 11.0.0 to 11.3.22, from 11.4.0 to 11.4.13.",
+          "epss_score": 0.11053,
+          "kev": true
         }
       ]
     }
