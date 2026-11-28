@@ -2,21 +2,27 @@
   "date": "2026-11-28",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 12,
+    "scan_runs": 13,
     "total_articles_max": 1791,
-    "matched_articles_max": 184,
-    "new_alerts": 4,
-    "cve_total": 1,
-    "alerts_with_cve": 1,
-    "cve_count": 1,
+    "matched_articles_max": 186,
+    "new_alerts": 8,
+    "cve_total": 7,
+    "alerts_with_cve": 5,
+    "cve_count": 7,
     "ioc_count": 0,
     "merged_count": 0,
     "unique_cves": [
-      "CVE-2026-136716"
+      "CVE-2026-119452",
+      "CVE-2026-123167",
+      "CVE-2026-123172",
+      "CVE-2026-129713",
+      "CVE-2026-136716",
+      "CVE-2026-46300",
+      "CVE-2026-82322"
     ],
     "keywords_hit": {
-      "Malware": 3,
-      "CVE": 1
+      "CVE": 5,
+      "Malware": 3
     }
   },
   "alerts": [
@@ -85,6 +91,130 @@
           "description": "Improper Check for Unusual or Exceptional Conditions vulnerability in Drupal Drupal core allows Forceful Browsing. This issue affects Drupal core versions: from 0.0.0 to 10.6.23, from 11.0.0 to 11.3.23, from 11.4.0 to 11.4.14.",
           "epss_score": 0.01212,
           "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-28T12:01:34.274276+09:00",
+      "type": "single",
+      "title": "다른 사람의 로그인 상태를 가로챌 수 있었다…깃랩, 자체 구축판 보안 패치",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=209813",
+      "source": "데일리시큐 (전체) [RSS]",
+      "published": "2026-11-28T11:45:08+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-119452"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-119452",
+          "cvss_score": 6.7,
+          "cvss_severity": "MEDIUM",
+          "cwe": "CWE-384",
+          "description": "GitLab has remediated an issue in GitLab CE/EE affecting all versions from 13.7.0 before 19.4.11, 19.5 before 19.5.9, and 19.6 before 19.6.2 that under certain conditions could have allowed an authenticated user with Maintainer-role permissions to obtain another user's authenticated session cookie and gain unauthorized access to that user's account due to improper session storage handling in the dependency proxy authentication flow when a redirect-pending state was triggered.",
+          "epss_score": 0.00421,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-28T12:01:34.274276+09:00",
+      "type": "single",
+      "title": "인터넷에 열린 방화벽 관리 화면이 공격 통로로…팔로알토네트웍스, PAN-OS 취약점 악용 확인",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=209810",
+      "source": "데일리시큐 (전체) [RSS]",
+      "published": "2026-11-28T11:30:05+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-46300"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-46300",
+          "cvss_score": 7.8,
+          "cvss_severity": "HIGH",
+          "cwe": "CWE-787 (Out-of-bounds Write)",
+          "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nnet: skbuff: preserve shared-frag marker during coalescing\n\nskb_try_coalesce() can attach paged frags from @from to @to.  If @from\nhas SKBFL_SHARED_FRAG set, the resulting @to skb can contain the same\nexternally-owned or page-cache-backed frags, but the shared-frag marker\nis currently lost.\n\nThat breaks the invariant relied on by later in-place writers.  In\nparticular, ESP input checks skb_has_shared_frag() before deciding\nwhet",
+          "epss_score": 0.02959,
+          "kev": true
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-28T12:01:34.274276+09:00",
+      "type": "single",
+      "title": "협력사 파일 오가는 Serv-U 서버에 치명적 결함…솔라윈즈, 2026.4 배포",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=209807",
+      "source": "데일리시큐 (전체) [RSS]",
+      "published": "2026-11-28T11:18:17+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-123167",
+        "CVE-2026-123172",
+        "CVE-2026-82322"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-123167",
+          "cvss_score": 9.1,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-35",
+          "description": "SolarWinds Serv-U is affected by a privilege escalation vulnerability that, when exploited, can allow a domain administrator to access files that otherwise would require elevated privileges. The risk is lower for Windows installations.",
+          "epss_score": 0.00943,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-123172",
+          "cvss_score": 9.1,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-250",
+          "description": "Solarwinds Serv-U is affected by a privilege escalation vulnerability that, when exploited, could lead to the escalation of privileges to root for Linux installations. The risk is lower for Windows installations.",
+          "epss_score": 0.00878,
+          "kev": false
+        },
+        {
+          "cve_id": "CVE-2026-82322",
+          "cvss_score": 9.1,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-284 (Improper Access Control)",
+          "description": "SolarWinds Serv-U is affected by an Insecure Direct Object Reference (IDOR) vulnerability that allows a domain group administrator to bypass restrictions and escalate privileges to the server administrator level. The risk is lower for Windows installations.",
+          "epss_score": 0.00862,
+          "kev": false
+        }
+      ]
+    },
+    {
+      "scan_time_kst": "2026-11-28T12:01:34.274276+09:00",
+      "type": "single",
+      "title": "마트 냉장·공조 관리하는 댄포스 제어기 취약점…패치 전 외부 접속 차단 권고",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=209806",
+      "source": "데일리시큐 (전체) [RSS]",
+      "published": "2026-11-28T11:15:12+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-129713"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-129713",
+          "cvss_score": 9.3,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-121",
+          "description": "A stack-based buffer overflow in an unauthenticated CGI handler of the\nDanfoss AK-SM 8xxA Series controller allows remote attackers to send specially\ncrafted HTTP/S POST requests, leading to memory corruption, webserver restart\nand hypothetically potential arbitrary code execution with webserver privileges.\nAuthentication is not required to exploit this vulnerability.",
+          "epss_score": 0.01899,
+          "kev": false
         }
       ]
     }
