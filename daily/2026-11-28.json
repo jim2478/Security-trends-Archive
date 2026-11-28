@@ -2,18 +2,21 @@
   "date": "2026-11-28",
   "tz": "Asia/Seoul",
   "stats": {
-    "scan_runs": 11,
+    "scan_runs": 12,
     "total_articles_max": 1791,
     "matched_articles_max": 184,
-    "new_alerts": 3,
-    "cve_total": 0,
-    "alerts_with_cve": 0,
-    "cve_count": 0,
+    "new_alerts": 4,
+    "cve_total": 1,
+    "alerts_with_cve": 1,
+    "cve_count": 1,
     "ioc_count": 0,
     "merged_count": 0,
-    "unique_cves": [],
+    "unique_cves": [
+      "CVE-2026-136716"
+    ],
     "keywords_hit": {
-      "Malware": 3
+      "Malware": 3,
+      "CVE": 1
     }
   },
   "alerts": [
@@ -58,6 +61,32 @@
       "ioc_raw_text": "",
       "cve_ids": [],
       "cve_details": []
+    },
+    {
+      "scan_time_kst": "2026-11-28T11:01:06.284209+09:00",
+      "type": "single",
+      "title": "드루팔 지난주 패치했어도 안심 못 한다…새 취약점 실제 악용",
+      "url": "https://www.dailysecu.com/news/articleView.html?idxno=209802",
+      "source": "데일리시큐 (전체) [RSS]",
+      "published": "2026-11-28T10:59:33+00:00",
+      "keywords": [
+        "CVE"
+      ],
+      "ioc_raw_text": "",
+      "cve_ids": [
+        "CVE-2026-136716"
+      ],
+      "cve_details": [
+        {
+          "cve_id": "CVE-2026-136716",
+          "cvss_score": 9.8,
+          "cvss_severity": "CRITICAL",
+          "cwe": "CWE-754",
+          "description": "Improper Check for Unusual or Exceptional Conditions vulnerability in Drupal Drupal core allows Forceful Browsing. This issue affects Drupal core versions: from 0.0.0 to 10.6.23, from 11.0.0 to 11.3.23, from 11.4.0 to 11.4.14.",
+          "epss_score": 0.01212,
+          "kev": true
+        }
+      ]
     }
   ]
 }
